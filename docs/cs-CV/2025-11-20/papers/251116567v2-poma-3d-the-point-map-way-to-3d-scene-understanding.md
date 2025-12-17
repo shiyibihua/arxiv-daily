@@ -5,7 +5,22 @@ title: POMA-3D: The Point Map Way to 3D Scene Understanding
 
 # POMA-3D: The Point Map Way to 3D Scene Understanding
 
-**arXiv**: [2511.16567v2](https://arxiv.org/abs/2511.16567) | [PDF](https://arxiv.org/pdf/2511.16567.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.16567" target="_blank" class="toolbar-btn">arXiv: 2511.16567v2</a>
+    <a href="https://arxiv.org/pdf/2511.16567.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.16567v2" 
+            onclick="toggleFavorite(this, '2511.16567v2', 'POMA-3D: The Point Map Way to 3D Scene Understanding')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Ye Mao, Weixun Luo, Ranran Huang, Junpeng Jing, Krystian Mikolajczyk
 

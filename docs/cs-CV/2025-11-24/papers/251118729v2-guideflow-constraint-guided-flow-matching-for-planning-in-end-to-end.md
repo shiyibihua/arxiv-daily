@@ -5,7 +5,22 @@ title: GuideFlow: Constraint-Guided Flow Matching for Planning in End-to-End Aut
 
 # GuideFlow: Constraint-Guided Flow Matching for Planning in End-to-End Autonomous Driving
 
-**arXiv**: [2511.18729v2](https://arxiv.org/abs/2511.18729) | [PDF](https://arxiv.org/pdf/2511.18729.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.18729" target="_blank" class="toolbar-btn">arXiv: 2511.18729v2</a>
+    <a href="https://arxiv.org/pdf/2511.18729.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.18729v2" 
+            onclick="toggleFavorite(this, '2511.18729v2', 'GuideFlow: Constraint-Guided Flow Matching for Planning in End-to-End Autonomous Driving')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Lin Liu, Caiyan Jia, Guanyi Yu, Ziying Song, JunQiao Li, Feiyang Jia, Peiliang Wu, Xiaoshuai Hao, Yandan Luo
 

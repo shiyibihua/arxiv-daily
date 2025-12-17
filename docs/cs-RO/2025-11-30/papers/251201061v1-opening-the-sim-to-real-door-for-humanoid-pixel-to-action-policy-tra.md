@@ -5,7 +5,22 @@ title: Opening the Sim-to-Real Door for Humanoid Pixel-to-Action Policy Transfer
 
 # Opening the Sim-to-Real Door for Humanoid Pixel-to-Action Policy Transfer
 
-**arXiv**: [2512.01061v1](https://arxiv.org/abs/2512.01061) | [PDF](https://arxiv.org/pdf/2512.01061.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.01061" target="_blank" class="toolbar-btn">arXiv: 2512.01061v1</a>
+    <a href="https://arxiv.org/pdf/2512.01061.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.01061v1" 
+            onclick="toggleFavorite(this, '2512.01061v1', 'Opening the Sim-to-Real Door for Humanoid Pixel-to-Action Policy Transfer')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Haoru Xue, Tairan He, Zi Wang, Qingwei Ben, Wenli Xiao, Zhengyi Luo, Xingye Da, Fernando Castañeda, Guanya Shi, Shankar Sastry, Linxi "Jim" Fan, Yuke Zhu
 

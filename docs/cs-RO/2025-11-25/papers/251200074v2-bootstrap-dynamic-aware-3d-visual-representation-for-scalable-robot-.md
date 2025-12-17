@@ -5,7 +5,22 @@ title: Bootstrap Dynamic-Aware 3D Visual Representation for Scalable Robot Learn
 
 # Bootstrap Dynamic-Aware 3D Visual Representation for Scalable Robot Learning
 
-**arXiv**: [2512.00074v2](https://arxiv.org/abs/2512.00074) | [PDF](https://arxiv.org/pdf/2512.00074.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.00074" target="_blank" class="toolbar-btn">arXiv: 2512.00074v2</a>
+    <a href="https://arxiv.org/pdf/2512.00074.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.00074v2" 
+            onclick="toggleFavorite(this, '2512.00074v2', 'Bootstrap Dynamic-Aware 3D Visual Representation for Scalable Robot Learning')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Qiwei Liang, Boyang Cai, Minghao Lai, Sitong Zhuang, Tao Lin, Yan Qin, Yixuan Ye, Jiaming Liang, Renjing Xu
 

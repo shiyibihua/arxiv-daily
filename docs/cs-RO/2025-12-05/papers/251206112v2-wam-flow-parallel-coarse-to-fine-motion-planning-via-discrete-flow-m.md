@@ -5,7 +5,22 @@ title: WAM-Flow: Parallel Coarse-to-Fine Motion Planning via Discrete Flow Match
 
 # WAM-Flow: Parallel Coarse-to-Fine Motion Planning via Discrete Flow Matching for Autonomous Driving
 
-**arXiv**: [2512.06112v2](https://arxiv.org/abs/2512.06112) | [PDF](https://arxiv.org/pdf/2512.06112.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.06112" target="_blank" class="toolbar-btn">arXiv: 2512.06112v2</a>
+    <a href="https://arxiv.org/pdf/2512.06112.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.06112v2" 
+            onclick="toggleFavorite(this, '2512.06112v2', 'WAM-Flow: Parallel Coarse-to-Fine Motion Planning via Discrete Flow Matching for Autonomous Driving')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Yifang Xu, Jiahao Cui, Feipeng Cai, Zhihao Zhu, Hanlin Shang, Shan Luan, Mingwang Xu, Neng Zhang, Yaoyi Li, Jia Cai, Siyu Zhu
 

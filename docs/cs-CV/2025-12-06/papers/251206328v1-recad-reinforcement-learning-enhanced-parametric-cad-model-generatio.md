@@ -5,7 +5,22 @@ title: ReCAD: Reinforcement Learning Enhanced Parametric CAD Model Generation wi
 
 # ReCAD: Reinforcement Learning Enhanced Parametric CAD Model Generation with Vision-Language Models
 
-**arXiv**: [2512.06328v1](https://arxiv.org/abs/2512.06328) | [PDF](https://arxiv.org/pdf/2512.06328.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.06328" target="_blank" class="toolbar-btn">arXiv: 2512.06328v1</a>
+    <a href="https://arxiv.org/pdf/2512.06328.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.06328v1" 
+            onclick="toggleFavorite(this, '2512.06328v1', 'ReCAD: Reinforcement Learning Enhanced Parametric CAD Model Generation with Vision-Language Models')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Jiahao Li, Yusheng Luo, Yunzhong Lou, Xiangdong Zhou
 

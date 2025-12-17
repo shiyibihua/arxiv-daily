@@ -5,7 +5,22 @@ title: LiDAR-GS++:Improving LiDAR Gaussian Reconstruction via Diffusion Priors
 
 # LiDAR-GS++:Improving LiDAR Gaussian Reconstruction via Diffusion Priors
 
-**arXiv**: [2511.12304v1](https://arxiv.org/abs/2511.12304) | [PDF](https://arxiv.org/pdf/2511.12304.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.12304" target="_blank" class="toolbar-btn">arXiv: 2511.12304v1</a>
+    <a href="https://arxiv.org/pdf/2511.12304.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.12304v1" 
+            onclick="toggleFavorite(this, '2511.12304v1', 'LiDAR-GS++:Improving LiDAR Gaussian Reconstruction via Diffusion Priors')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Qifeng Chen, Jiarun Liu, Rengan Xie, Tao Tang, Sicong Du, Yiru Zhao, Yuchi Huo, Sheng Yang
 

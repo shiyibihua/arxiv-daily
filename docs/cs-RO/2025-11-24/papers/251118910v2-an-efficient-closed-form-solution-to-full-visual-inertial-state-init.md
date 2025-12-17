@@ -5,7 +5,22 @@ title: An Efficient Closed-Form Solution to Full Visual-Inertial State Initializ
 
 # An Efficient Closed-Form Solution to Full Visual-Inertial State Initialization
 
-**arXiv**: [2511.18910v2](https://arxiv.org/abs/2511.18910) | [PDF](https://arxiv.org/pdf/2511.18910.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.18910" target="_blank" class="toolbar-btn">arXiv: 2511.18910v2</a>
+    <a href="https://arxiv.org/pdf/2511.18910.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.18910v2" 
+            onclick="toggleFavorite(this, '2511.18910v2', 'An Efficient Closed-Form Solution to Full Visual-Inertial State Initialization')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Samuel Cerezo, Seong Hun Lee, Javier Civera
 

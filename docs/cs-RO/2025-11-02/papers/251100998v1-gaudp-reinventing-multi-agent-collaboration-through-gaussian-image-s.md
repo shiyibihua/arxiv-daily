@@ -5,7 +5,22 @@ title: GauDP: Reinventing Multi-Agent Collaboration through Gaussian-Image Syner
 
 # GauDP: Reinventing Multi-Agent Collaboration through Gaussian-Image Synergy in Diffusion Policies
 
-**arXiv**: [2511.00998v1](https://arxiv.org/abs/2511.00998) | [PDF](https://arxiv.org/pdf/2511.00998.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.00998" target="_blank" class="toolbar-btn">arXiv: 2511.00998v1</a>
+    <a href="https://arxiv.org/pdf/2511.00998.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.00998v1" 
+            onclick="toggleFavorite(this, '2511.00998v1', 'GauDP: Reinventing Multi-Agent Collaboration through Gaussian-Image Synergy in Diffusion Policies')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Ziye Wang, Li Kang, Yiran Qin, Jiahua Ma, Zhanglin Peng, Lei Bai, Ruimao Zhang
 

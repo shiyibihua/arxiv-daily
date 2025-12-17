@@ -5,7 +5,22 @@ title: Robust Single-shot Structured Light 3D Imaging via Neural Feature Decodin
 
 # Robust Single-shot Structured Light 3D Imaging via Neural Feature Decoding
 
-**arXiv**: [2512.14028v1](https://arxiv.org/abs/2512.14028) | [PDF](https://arxiv.org/pdf/2512.14028.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.14028" target="_blank" class="toolbar-btn">arXiv: 2512.14028v1</a>
+    <a href="https://arxiv.org/pdf/2512.14028.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.14028v1" 
+            onclick="toggleFavorite(this, '2512.14028v1', 'Robust Single-shot Structured Light 3D Imaging via Neural Feature Decoding')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Jiaheng Li, Qiyu Dai, Lihan Li, Praneeth Chakravarthula, He Sun, Baoquan Chen, Wenzheng Chen
 

@@ -5,7 +5,22 @@ title: PAN: A World Model for General, Interactable, and Long-Horizon World Simu
 
 # PAN: A World Model for General, Interactable, and Long-Horizon World Simulation
 
-**arXiv**: [2511.09057v3](https://arxiv.org/abs/2511.09057) | [PDF](https://arxiv.org/pdf/2511.09057.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.09057" target="_blank" class="toolbar-btn">arXiv: 2511.09057v3</a>
+    <a href="https://arxiv.org/pdf/2511.09057.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.09057v3" 
+            onclick="toggleFavorite(this, '2511.09057v3', 'PAN: A World Model for General, Interactable, and Long-Horizon World Simulation')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: PAN Team, Jiannan Xiang, Yi Gu, Zihan Liu, Zeyu Feng, Qiyue Gao, Yiyan Hu, Benhao Huang, Guangyi Liu, Yichi Yang, Kun Zhou, Davit Abrahamyan, Arif Ahmad, Ganesh Bannur, Junrong Chen, Kimi Chen, Mingkai Deng, Ruobing Han, Xinqi Huang, Haoqiang Kang, Zheqi Liu, Enze Ma, Hector Ren, Yashowardhan Shinde, Rohan Shingre, Ramsundar Tanikella, Kaiming Tao, Dequan Yang, Xinle Yu, Cong Zeng, Binglin Zhou, Zhengzhong Liu, Zhiting Hu, Eric P. Xing
 

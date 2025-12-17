@@ -5,7 +5,22 @@ title: PathReasoning: A multimodal reasoning agent for query-based ROI navigatio
 
 # PathReasoning: A multimodal reasoning agent for query-based ROI navigation on whole-slide images
 
-**arXiv**: [2511.21902v1](https://arxiv.org/abs/2511.21902) | [PDF](https://arxiv.org/pdf/2511.21902.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.21902" target="_blank" class="toolbar-btn">arXiv: 2511.21902v1</a>
+    <a href="https://arxiv.org/pdf/2511.21902.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.21902v1" 
+            onclick="toggleFavorite(this, '2511.21902v1', 'PathReasoning: A multimodal reasoning agent for query-based ROI navigation on whole-slide images')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Kunpeng Zhang, Hanwen Xu, Sheng Wang
 

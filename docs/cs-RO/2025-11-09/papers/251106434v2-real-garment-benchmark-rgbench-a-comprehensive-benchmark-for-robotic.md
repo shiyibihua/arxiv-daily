@@ -5,7 +5,22 @@ title: Real Garment Benchmark (RGBench): A Comprehensive Benchmark for Robotic G
 
 # Real Garment Benchmark (RGBench): A Comprehensive Benchmark for Robotic Garment Manipulation featuring a High-Fidelity Scalable Simulator
 
-**arXiv**: [2511.06434v2](https://arxiv.org/abs/2511.06434) | [PDF](https://arxiv.org/pdf/2511.06434.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.06434" target="_blank" class="toolbar-btn">arXiv: 2511.06434v2</a>
+    <a href="https://arxiv.org/pdf/2511.06434.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.06434v2" 
+            onclick="toggleFavorite(this, '2511.06434v2', 'Real Garment Benchmark (RGBench): A Comprehensive Benchmark for Robotic Garment Manipulation featuring a High-Fidelity Scalable Simulator')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Wenkang Hu, Xincheng Tang, Yanzhi E, Yitong Li, Zhengjie Shu, Wei Li, Huamin Wang, Ruigang Yang
 

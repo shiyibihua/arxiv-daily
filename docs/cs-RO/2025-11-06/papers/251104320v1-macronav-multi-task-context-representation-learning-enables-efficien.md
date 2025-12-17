@@ -5,7 +5,22 @@ title: MacroNav: Multi-Task Context Representation Learning Enables Efficient Na
 
 # MacroNav: Multi-Task Context Representation Learning Enables Efficient Navigation in Unknown Environments
 
-**arXiv**: [2511.04320v1](https://arxiv.org/abs/2511.04320) | [PDF](https://arxiv.org/pdf/2511.04320.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.04320" target="_blank" class="toolbar-btn">arXiv: 2511.04320v1</a>
+    <a href="https://arxiv.org/pdf/2511.04320.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.04320v1" 
+            onclick="toggleFavorite(this, '2511.04320v1', 'MacroNav: Multi-Task Context Representation Learning Enables Efficient Navigation in Unknown Environments')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Kuankuan Sima, Longbin Tang, Haozhe Ma, Lin Zhao
 

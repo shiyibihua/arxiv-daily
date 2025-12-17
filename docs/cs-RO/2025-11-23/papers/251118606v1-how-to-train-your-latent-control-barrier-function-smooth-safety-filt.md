@@ -5,7 +5,22 @@ title: How to Train Your Latent Control Barrier Function: Smooth Safety Filterin
 
 # How to Train Your Latent Control Barrier Function: Smooth Safety Filtering Under Hard-to-Model Constraints
 
-**arXiv**: [2511.18606v1](https://arxiv.org/abs/2511.18606) | [PDF](https://arxiv.org/pdf/2511.18606.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.18606" target="_blank" class="toolbar-btn">arXiv: 2511.18606v1</a>
+    <a href="https://arxiv.org/pdf/2511.18606.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.18606v1" 
+            onclick="toggleFavorite(this, '2511.18606v1', 'How to Train Your Latent Control Barrier Function: Smooth Safety Filtering Under Hard-to-Model Constraints')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Kensuke Nakamura, Arun L. Bishop, Steven Man, Aaron M. Johnson, Zachary Manchester, Andrea Bajcsy
 

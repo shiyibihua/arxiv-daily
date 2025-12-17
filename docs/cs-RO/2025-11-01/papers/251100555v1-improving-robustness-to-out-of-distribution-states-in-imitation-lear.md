@@ -5,7 +5,22 @@ title: Improving Robustness to Out-of-Distribution States in Imitation Learning 
 
 # Improving Robustness to Out-of-Distribution States in Imitation Learning via Deep Koopman-Boosted Diffusion Policy
 
-**arXiv**: [2511.00555v1](https://arxiv.org/abs/2511.00555) | [PDF](https://arxiv.org/pdf/2511.00555.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.00555" target="_blank" class="toolbar-btn">arXiv: 2511.00555v1</a>
+    <a href="https://arxiv.org/pdf/2511.00555.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.00555v1" 
+            onclick="toggleFavorite(this, '2511.00555v1', 'Improving Robustness to Out-of-Distribution States in Imitation Learning via Deep Koopman-Boosted Diffusion Policy')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Dianye Huang, Nassir Navab, Zhongliang Jiang
 

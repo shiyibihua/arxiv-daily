@@ -5,7 +5,22 @@ title: Omni-View: Unlocking How Generation Facilitates Understanding in Unified 
 
 # Omni-View: Unlocking How Generation Facilitates Understanding in Unified 3D Model based on Multiview images
 
-**arXiv**: [2511.07222v1](https://arxiv.org/abs/2511.07222) | [PDF](https://arxiv.org/pdf/2511.07222.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.07222" target="_blank" class="toolbar-btn">arXiv: 2511.07222v1</a>
+    <a href="https://arxiv.org/pdf/2511.07222.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.07222v1" 
+            onclick="toggleFavorite(this, '2511.07222v1', 'Omni-View: Unlocking How Generation Facilitates Understanding in Unified 3D Model based on Multiview images')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: JiaKui Hu, Shanshan Zhao, Qing-Guo Chen, Xuerui Qiu, Jialun Liu, Zhao Xu, Weihua Luo, Kaifu Zhang, Yanye Lu
 

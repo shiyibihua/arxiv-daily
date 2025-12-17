@@ -5,7 +5,22 @@ title: MPCFormer: A physics-informed data-driven approach for explainable social
 
 # MPCFormer: A physics-informed data-driven approach for explainable socially-aware autonomous driving
 
-**arXiv**: [2512.03795v1](https://arxiv.org/abs/2512.03795) | [PDF](https://arxiv.org/pdf/2512.03795.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.03795" target="_blank" class="toolbar-btn">arXiv: 2512.03795v1</a>
+    <a href="https://arxiv.org/pdf/2512.03795.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.03795v1" 
+            onclick="toggleFavorite(this, '2512.03795v1', 'MPCFormer: A physics-informed data-driven approach for explainable socially-aware autonomous driving')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Jia Hu, Zhexi Lian, Xuerun Yan, Ruiang Bi, Dou Shen, Yu Ruan, Haoran Wang
 

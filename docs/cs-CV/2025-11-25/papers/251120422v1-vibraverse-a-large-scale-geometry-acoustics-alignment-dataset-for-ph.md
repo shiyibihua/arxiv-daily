@@ -5,7 +5,22 @@ title: VibraVerse: A Large-Scale Geometry-Acoustics Alignment Dataset for Physic
 
 # VibraVerse: A Large-Scale Geometry-Acoustics Alignment Dataset for Physically-Consistent Multimodal Learning
 
-**arXiv**: [2511.20422v1](https://arxiv.org/abs/2511.20422) | [PDF](https://arxiv.org/pdf/2511.20422.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.20422" target="_blank" class="toolbar-btn">arXiv: 2511.20422v1</a>
+    <a href="https://arxiv.org/pdf/2511.20422.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.20422v1" 
+            onclick="toggleFavorite(this, '2511.20422v1', 'VibraVerse: A Large-Scale Geometry-Acoustics Alignment Dataset for Physically-Consistent Multimodal Learning')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Bo Pang, Chenxi Xu, Jierui Ren, Guoping Wang, Sheng Li
 

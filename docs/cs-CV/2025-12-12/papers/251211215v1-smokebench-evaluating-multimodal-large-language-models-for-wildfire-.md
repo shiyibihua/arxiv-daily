@@ -5,7 +5,22 @@ title: SmokeBench: Evaluating Multimodal Large Language Models for Wildfire Smok
 
 # SmokeBench: Evaluating Multimodal Large Language Models for Wildfire Smoke Detection
 
-**arXiv**: [2512.11215v1](https://arxiv.org/abs/2512.11215) | [PDF](https://arxiv.org/pdf/2512.11215.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.11215" target="_blank" class="toolbar-btn">arXiv: 2512.11215v1</a>
+    <a href="https://arxiv.org/pdf/2512.11215.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.11215v1" 
+            onclick="toggleFavorite(this, '2512.11215v1', 'SmokeBench: Evaluating Multimodal Large Language Models for Wildfire Smoke Detection')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Tianye Qi, Weihao Li, Nick Barnes
 

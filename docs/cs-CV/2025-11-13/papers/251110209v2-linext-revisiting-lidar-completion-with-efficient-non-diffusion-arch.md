@@ -5,7 +5,22 @@ title: LiNeXt: Revisiting LiDAR Completion with Efficient Non-Diffusion Architec
 
 # LiNeXt: Revisiting LiDAR Completion with Efficient Non-Diffusion Architectures
 
-**arXiv**: [2511.10209v2](https://arxiv.org/abs/2511.10209) | [PDF](https://arxiv.org/pdf/2511.10209.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.10209" target="_blank" class="toolbar-btn">arXiv: 2511.10209v2</a>
+    <a href="https://arxiv.org/pdf/2511.10209.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.10209v2" 
+            onclick="toggleFavorite(this, '2511.10209v2', 'LiNeXt: Revisiting LiDAR Completion with Efficient Non-Diffusion Architectures')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Wenzhe He, Xiaojun Chen, Ruiqi Wang, Ruihui Li, Huilong Pi, Jiapeng Zhang, Zhuo Tang, Kenli Li
 

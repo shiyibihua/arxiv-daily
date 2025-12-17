@@ -5,7 +5,22 @@ title: TSPE-GS: Probabilistic Depth Extraction for Semi-Transparent Surface Reco
 
 # TSPE-GS: Probabilistic Depth Extraction for Semi-Transparent Surface Reconstruction via 3D Gaussian Splatting
 
-**arXiv**: [2511.09944v1](https://arxiv.org/abs/2511.09944) | [PDF](https://arxiv.org/pdf/2511.09944.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.09944" target="_blank" class="toolbar-btn">arXiv: 2511.09944v1</a>
+    <a href="https://arxiv.org/pdf/2511.09944.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.09944v1" 
+            onclick="toggleFavorite(this, '2511.09944v1', 'TSPE-GS: Probabilistic Depth Extraction for Semi-Transparent Surface Reconstruction via 3D Gaussian Splatting')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Zhiyuan Xu, Nan Min, Yuhang Guo, Tong Wei
 

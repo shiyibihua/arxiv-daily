@@ -5,7 +5,22 @@ title: BBox DocVQA: A Large Scale Bounding Box Grounded Dataset for Enhancing Re
 
 # BBox DocVQA: A Large Scale Bounding Box Grounded Dataset for Enhancing Reasoning in Document Visual Question Answer
 
-**arXiv**: [2511.15090v1](https://arxiv.org/abs/2511.15090) | [PDF](https://arxiv.org/pdf/2511.15090.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.15090" target="_blank" class="toolbar-btn">arXiv: 2511.15090v1</a>
+    <a href="https://arxiv.org/pdf/2511.15090.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.15090v1" 
+            onclick="toggleFavorite(this, '2511.15090v1', 'BBox DocVQA: A Large Scale Bounding Box Grounded Dataset for Enhancing Reasoning in Document Visual Question Answer')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Wenhan Yu, Wang Chen, Guanqiang Qi, Weikang Li, Yang Li, Lei Sha, Deguo Xia, Jizhou Huang
 

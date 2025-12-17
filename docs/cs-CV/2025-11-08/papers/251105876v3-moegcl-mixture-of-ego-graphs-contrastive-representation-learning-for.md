@@ -5,7 +5,22 @@ title: MoEGCL: Mixture of Ego-Graphs Contrastive Representation Learning for Mul
 
 # MoEGCL: Mixture of Ego-Graphs Contrastive Representation Learning for Multi-View Clustering
 
-**arXiv**: [2511.05876v3](https://arxiv.org/abs/2511.05876) | [PDF](https://arxiv.org/pdf/2511.05876.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.05876" target="_blank" class="toolbar-btn">arXiv: 2511.05876v3</a>
+    <a href="https://arxiv.org/pdf/2511.05876.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.05876v3" 
+            onclick="toggleFavorite(this, '2511.05876v3', 'MoEGCL: Mixture of Ego-Graphs Contrastive Representation Learning for Multi-View Clustering')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Jian Zhu, Xin Zou, Jun Sun, Cheng Luo, Lei Liu, Lingfang Zeng, Ning Zhang, Bian Wu, Chang Tang, Lirong Dai
 

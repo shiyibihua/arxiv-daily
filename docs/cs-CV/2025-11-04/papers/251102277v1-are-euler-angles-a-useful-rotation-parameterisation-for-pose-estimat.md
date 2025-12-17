@@ -5,7 +5,22 @@ title: Are Euler angles a useful rotation parameterisation for pose estimation w
 
 # Are Euler angles a useful rotation parameterisation for pose estimation with Normalizing Flows?
 
-**arXiv**: [2511.02277v1](https://arxiv.org/abs/2511.02277) | [PDF](https://arxiv.org/pdf/2511.02277.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.02277" target="_blank" class="toolbar-btn">arXiv: 2511.02277v1</a>
+    <a href="https://arxiv.org/pdf/2511.02277.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.02277v1" 
+            onclick="toggleFavorite(this, '2511.02277v1', 'Are Euler angles a useful rotation parameterisation for pose estimation with Normalizing Flows?')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Giorgos Sfikas, Konstantina Nikolaidou, Foteini Papadopoulou, George Retsinas, Anastasios L. Kesidis
 

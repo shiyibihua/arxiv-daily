@@ -5,7 +5,22 @@ title: LASER: Layer-wise Scale Alignment for Training-Free Streaming 4D Reconstr
 
 # LASER: Layer-wise Scale Alignment for Training-Free Streaming 4D Reconstruction
 
-**arXiv**: [2512.13680v1](https://arxiv.org/abs/2512.13680) | [PDF](https://arxiv.org/pdf/2512.13680.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.13680" target="_blank" class="toolbar-btn">arXiv: 2512.13680v1</a>
+    <a href="https://arxiv.org/pdf/2512.13680.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.13680v1" 
+            onclick="toggleFavorite(this, '2512.13680v1', 'LASER: Layer-wise Scale Alignment for Training-Free Streaming 4D Reconstruction')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Tianye Ding, Yiming Xie, Yiqing Liang, Moitreya Chatterjee, Pedro Miraldo, Huaizu Jiang
 

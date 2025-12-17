@@ -5,7 +5,22 @@ title: FASTer: Toward Efficient Autoregressive Vision Language Action Modeling v
 
 # FASTer: Toward Efficient Autoregressive Vision Language Action Modeling via Neural Action Tokenization
 
-**arXiv**: [2512.04952v2](https://arxiv.org/abs/2512.04952) | [PDF](https://arxiv.org/pdf/2512.04952.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.04952" target="_blank" class="toolbar-btn">arXiv: 2512.04952v2</a>
+    <a href="https://arxiv.org/pdf/2512.04952.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.04952v2" 
+            onclick="toggleFavorite(this, '2512.04952v2', 'FASTer: Toward Efficient Autoregressive Vision Language Action Modeling via Neural Action Tokenization')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Yicheng Liu, Shiduo Zhang, Zibin Dong, Baijun Ye, Tianyuan Yuan, Xiaopeng Yu, Linqi Yin, Chenhao Lu, Junhao Shi, Luca Jiang-Tao Yu, Liangtao Zheng, Tao Jiang, Jingjing Gong, Xipeng Qiu, Hang Zhao
 

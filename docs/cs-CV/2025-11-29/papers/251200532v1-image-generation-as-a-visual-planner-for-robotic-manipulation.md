@@ -5,7 +5,22 @@ title: Image Generation as a Visual Planner for Robotic Manipulation
 
 # Image Generation as a Visual Planner for Robotic Manipulation
 
-**arXiv**: [2512.00532v1](https://arxiv.org/abs/2512.00532) | [PDF](https://arxiv.org/pdf/2512.00532.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.00532" target="_blank" class="toolbar-btn">arXiv: 2512.00532v1</a>
+    <a href="https://arxiv.org/pdf/2512.00532.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.00532v1" 
+            onclick="toggleFavorite(this, '2512.00532v1', 'Image Generation as a Visual Planner for Robotic Manipulation')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Ye Pang
 

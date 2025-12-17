@@ -5,7 +5,22 @@ title: UniMo: Unifying 2D Video and 3D Human Motion with an Autoregressive Frame
 
 # UniMo: Unifying 2D Video and 3D Human Motion with an Autoregressive Framework
 
-**arXiv**: [2512.03918v1](https://arxiv.org/abs/2512.03918) | [PDF](https://arxiv.org/pdf/2512.03918.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.03918" target="_blank" class="toolbar-btn">arXiv: 2512.03918v1</a>
+    <a href="https://arxiv.org/pdf/2512.03918.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.03918v1" 
+            onclick="toggleFavorite(this, '2512.03918v1', 'UniMo: Unifying 2D Video and 3D Human Motion with an Autoregressive Framework')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Youxin Pang, Yong Zhang, Ruizhi Shao, Xiang Deng, Feng Gao, Xu Xiaoming, Xiaoming Wei, Yebin Liu
 

@@ -5,7 +5,22 @@ title: CM-LIUW-Odometry: Robust and High-Precision LiDAR-Inertial-UWB-Wheel Odom
 
 # CM-LIUW-Odometry: Robust and High-Precision LiDAR-Inertial-UWB-Wheel Odometry for Extreme Degradation Coal Mine Tunnels
 
-**arXiv**: [2511.01379v1](https://arxiv.org/abs/2511.01379) | [PDF](https://arxiv.org/pdf/2511.01379.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.01379" target="_blank" class="toolbar-btn">arXiv: 2511.01379v1</a>
+    <a href="https://arxiv.org/pdf/2511.01379.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.01379v1" 
+            onclick="toggleFavorite(this, '2511.01379v1', 'CM-LIUW-Odometry: Robust and High-Precision LiDAR-Inertial-UWB-Wheel Odometry for Extreme Degradation Coal Mine Tunnels')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Kun Hu, Menggang Li, Zhiwen Jin, Chaoquan Tang, Eryi Hu, Gongbo Zhou
 

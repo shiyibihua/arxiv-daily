@@ -5,7 +5,22 @@ title: KlingAvatar 2.0 Technical Report
 
 # KlingAvatar 2.0 Technical Report
 
-**arXiv**: [2512.13313v1](https://arxiv.org/abs/2512.13313) | [PDF](https://arxiv.org/pdf/2512.13313.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.13313" target="_blank" class="toolbar-btn">arXiv: 2512.13313v1</a>
+    <a href="https://arxiv.org/pdf/2512.13313.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.13313v1" 
+            onclick="toggleFavorite(this, '2512.13313v1', 'KlingAvatar 2.0 Technical Report')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Kling Team, Jialu Chen, Yikang Ding, Zhixue Fang, Kun Gai, Yuan Gao, Kang He, Jingyun Hua, Boyuan Jiang, Mingming Lao, Xiaohan Li, Hui Liu, Jiwen Liu, Xiaoqiang Liu, Yuan Liu, Shun Lu, Yongsen Mao, Yingchao Shao, Huafeng Shi, Xiaoyu Shi, Peiqin Sun, Songlin Tang, Pengfei Wan, Chao Wang, Xuebo Wang, Haoxian Zhang, Yuanxing Zhang, Yan Zhou
 

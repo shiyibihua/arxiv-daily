@@ -5,7 +5,22 @@ title: MODEST: Multi-Optics Depth-of-Field Stereo Dataset
 
 # MODEST: Multi-Optics Depth-of-Field Stereo Dataset
 
-**arXiv**: [2511.20853v2](https://arxiv.org/abs/2511.20853) | [PDF](https://arxiv.org/pdf/2511.20853.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.20853" target="_blank" class="toolbar-btn">arXiv: 2511.20853v2</a>
+    <a href="https://arxiv.org/pdf/2511.20853.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.20853v2" 
+            onclick="toggleFavorite(this, '2511.20853v2', 'MODEST: Multi-Optics Depth-of-Field Stereo Dataset')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Nisarg K. Trivedi, Vinayak A. Belludi, Li-Yun Wang, Pardis Taghavi, Dante Lok
 

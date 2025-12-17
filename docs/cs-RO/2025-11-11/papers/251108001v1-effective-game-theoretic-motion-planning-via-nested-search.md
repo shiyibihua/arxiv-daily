@@ -5,7 +5,22 @@ title: Effective Game-Theoretic Motion Planning via Nested Search
 
 # Effective Game-Theoretic Motion Planning via Nested Search
 
-**arXiv**: [2511.08001v1](https://arxiv.org/abs/2511.08001) | [PDF](https://arxiv.org/pdf/2511.08001.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.08001" target="_blank" class="toolbar-btn">arXiv: 2511.08001v1</a>
+    <a href="https://arxiv.org/pdf/2511.08001.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.08001v1" 
+            onclick="toggleFavorite(this, '2511.08001v1', 'Effective Game-Theoretic Motion Planning via Nested Search')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Avishav Engle, Andrey Zhitnikov, Oren Salzman, Omer Ben-Porat, Kiril Solovey
 

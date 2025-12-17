@@ -5,7 +5,22 @@ title: Cross-Stain Contrastive Learning for Paired Immunohistochemistry and Hist
 
 # Cross-Stain Contrastive Learning for Paired Immunohistochemistry and Histopathology Slide Representation Learning
 
-**arXiv**: [2512.03577v1](https://arxiv.org/abs/2512.03577) | [PDF](https://arxiv.org/pdf/2512.03577.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.03577" target="_blank" class="toolbar-btn">arXiv: 2512.03577v1</a>
+    <a href="https://arxiv.org/pdf/2512.03577.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.03577v1" 
+            onclick="toggleFavorite(this, '2512.03577v1', 'Cross-Stain Contrastive Learning for Paired Immunohistochemistry and Histopathology Slide Representation Learning')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Yizhi Zhang, Lei Fan, Zhulin Tao, Donglin Di, Yang Song, Sidong Liu, Cong Cong
 

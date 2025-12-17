@@ -5,7 +5,22 @@ title: Mixture of Horizons in Action Chunking
 
 # Mixture of Horizons in Action Chunking
 
-**arXiv**: [2511.19433v1](https://arxiv.org/abs/2511.19433) | [PDF](https://arxiv.org/pdf/2511.19433.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.19433" target="_blank" class="toolbar-btn">arXiv: 2511.19433v1</a>
+    <a href="https://arxiv.org/pdf/2511.19433.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.19433v1" 
+            onclick="toggleFavorite(this, '2511.19433v1', 'Mixture of Horizons in Action Chunking')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Dong Jing, Gang Wang, Jiaqi Liu, Weiliang Tang, Zelong Sun, Yunchao Yao, Zhenyu Wei, Yunhui Liu, Zhiwu Lu, Mingyu Ding
 

@@ -5,7 +5,22 @@ title: Beyond Success: Refining Elegant Robot Manipulation from Mixed-Quality Da
 
 # Beyond Success: Refining Elegant Robot Manipulation from Mixed-Quality Data via Just-in-Time Intervention
 
-**arXiv**: [2511.22555v1](https://arxiv.org/abs/2511.22555) | [PDF](https://arxiv.org/pdf/2511.22555.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.22555" target="_blank" class="toolbar-btn">arXiv: 2511.22555v1</a>
+    <a href="https://arxiv.org/pdf/2511.22555.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.22555v1" 
+            onclick="toggleFavorite(this, '2511.22555v1', 'Beyond Success: Refining Elegant Robot Manipulation from Mixed-Quality Data via Just-in-Time Intervention')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Yanbo Mao, Jianlong Fu, Ruoxuan Zhang, Hongxia Xie, Meibao Yao
 

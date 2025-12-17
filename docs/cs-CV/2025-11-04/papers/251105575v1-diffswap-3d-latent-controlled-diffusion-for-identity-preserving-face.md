@@ -5,7 +5,22 @@ title: DiffSwap++: 3D Latent-Controlled Diffusion for Identity-Preserving Face S
 
 # DiffSwap++: 3D Latent-Controlled Diffusion for Identity-Preserving Face Swapping
 
-**arXiv**: [2511.05575v1](https://arxiv.org/abs/2511.05575) | [PDF](https://arxiv.org/pdf/2511.05575.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.05575" target="_blank" class="toolbar-btn">arXiv: 2511.05575v1</a>
+    <a href="https://arxiv.org/pdf/2511.05575.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.05575v1" 
+            onclick="toggleFavorite(this, '2511.05575v1', 'DiffSwap++: 3D Latent-Controlled Diffusion for Identity-Preserving Face Swapping')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Weston Bondurant, Arkaprava Sinha, Hieu Le, Srijan Das, Stephanie Schuckers
 

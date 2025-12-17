@@ -5,7 +5,22 @@ title: ProbeMDE: Uncertainty-Guided Active Proprioception for Monocular Depth Es
 
 # ProbeMDE: Uncertainty-Guided Active Proprioception for Monocular Depth Estimation in Surgical Robotics
 
-**arXiv**: [2512.11773v1](https://arxiv.org/abs/2512.11773) | [PDF](https://arxiv.org/pdf/2512.11773.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.11773" target="_blank" class="toolbar-btn">arXiv: 2512.11773v1</a>
+    <a href="https://arxiv.org/pdf/2512.11773.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.11773v1" 
+            onclick="toggleFavorite(this, '2512.11773v1', 'ProbeMDE: Uncertainty-Guided Active Proprioception for Monocular Depth Estimation in Surgical Robotics')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Britton Jordan, Jordan Thompson, Jesse F. d'Almeida, Hao Li, Nithesh Kumar, Susheela Sharma Stern, Ipek Oguz, Robert J. Webster, Daniel Brown, Alan Kuntz, James Ferguson
 

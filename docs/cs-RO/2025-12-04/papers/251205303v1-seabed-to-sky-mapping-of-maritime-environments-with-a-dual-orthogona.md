@@ -5,7 +5,22 @@ title: Seabed-to-Sky Mapping of Maritime Environments with a Dual Orthogonal SON
 
 # Seabed-to-Sky Mapping of Maritime Environments with a Dual Orthogonal SONAR and LiDAR Sensor Suite
 
-**arXiv**: [2512.05303v1](https://arxiv.org/abs/2512.05303) | [PDF](https://arxiv.org/pdf/2512.05303.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.05303" target="_blank" class="toolbar-btn">arXiv: 2512.05303v1</a>
+    <a href="https://arxiv.org/pdf/2512.05303.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.05303v1" 
+            onclick="toggleFavorite(this, '2512.05303v1', 'Seabed-to-Sky Mapping of Maritime Environments with a Dual Orthogonal SONAR and LiDAR Sensor Suite')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Christian Westerdahl, Jonas Poulsen, Daniel Holmelund, Peter Nicholas Hansen, Fletcher Thompson, Roberto Galeazzi
 

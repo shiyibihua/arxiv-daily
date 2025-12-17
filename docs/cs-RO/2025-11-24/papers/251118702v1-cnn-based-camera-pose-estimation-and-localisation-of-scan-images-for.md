@@ -5,7 +5,22 @@ title: CNN-Based Camera Pose Estimation and Localisation of Scan Images for Airc
 
 # CNN-Based Camera Pose Estimation and Localisation of Scan Images for Aircraft Visual Inspection
 
-**arXiv**: [2511.18702v1](https://arxiv.org/abs/2511.18702) | [PDF](https://arxiv.org/pdf/2511.18702.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.18702" target="_blank" class="toolbar-btn">arXiv: 2511.18702v1</a>
+    <a href="https://arxiv.org/pdf/2511.18702.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.18702v1" 
+            onclick="toggleFavorite(this, '2511.18702v1', 'CNN-Based Camera Pose Estimation and Localisation of Scan Images for Aircraft Visual Inspection')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Xueyan Oh, Leonard Loh, Shaohui Foong, Zhong Bao Andy Koh, Kow Leong Ng, Poh Kang Tan, Pei Lin Pearlin Toh, U-Xuan Tan
 

@@ -5,7 +5,22 @@ title: CARI4D: Category Agnostic 4D Reconstruction of Human-Object Interaction
 
 # CARI4D: Category Agnostic 4D Reconstruction of Human-Object Interaction
 
-**arXiv**: [2512.11988v1](https://arxiv.org/abs/2512.11988) | [PDF](https://arxiv.org/pdf/2512.11988.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.11988" target="_blank" class="toolbar-btn">arXiv: 2512.11988v1</a>
+    <a href="https://arxiv.org/pdf/2512.11988.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.11988v1" 
+            onclick="toggleFavorite(this, '2512.11988v1', 'CARI4D: Category Agnostic 4D Reconstruction of Human-Object Interaction')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Xianghui Xie, Bowen Wen, Yan Chang, Hesam Rabeti, Jiefeng Li, Ye Yuan, Gerard Pons-Moll, Stan Birchfield
 

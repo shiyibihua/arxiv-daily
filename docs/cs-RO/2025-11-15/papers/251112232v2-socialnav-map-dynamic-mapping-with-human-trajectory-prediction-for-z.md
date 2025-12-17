@@ -5,7 +5,22 @@ title: SocialNav-Map: Dynamic Mapping with Human Trajectory Prediction for Zero-
 
 # SocialNav-Map: Dynamic Mapping with Human Trajectory Prediction for Zero-Shot Social Navigation
 
-**arXiv**: [2511.12232v2](https://arxiv.org/abs/2511.12232) | [PDF](https://arxiv.org/pdf/2511.12232.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.12232" target="_blank" class="toolbar-btn">arXiv: 2511.12232v2</a>
+    <a href="https://arxiv.org/pdf/2511.12232.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.12232v2" 
+            onclick="toggleFavorite(this, '2511.12232v2', 'SocialNav-Map: Dynamic Mapping with Human Trajectory Prediction for Zero-Shot Social Navigation')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Lingfeng Zhang, Erjia Xiao, Xiaoshuai Hao, Haoxiang Fu, Zeying Gong, Long Chen, Xiaojun Liang, Renjing Xu, Hangjun Ye, Wenbo Ding
 

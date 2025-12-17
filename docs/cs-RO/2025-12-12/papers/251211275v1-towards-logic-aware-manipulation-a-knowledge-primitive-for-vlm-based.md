@@ -5,7 +5,22 @@ title: Towards Logic-Aware Manipulation: A Knowledge Primitive for VLM-Based Ass
 
 # Towards Logic-Aware Manipulation: A Knowledge Primitive for VLM-Based Assistants in Smart Manufacturing
 
-**arXiv**: [2512.11275v1](https://arxiv.org/abs/2512.11275) | [PDF](https://arxiv.org/pdf/2512.11275.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.11275" target="_blank" class="toolbar-btn">arXiv: 2512.11275v1</a>
+    <a href="https://arxiv.org/pdf/2512.11275.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.11275v1" 
+            onclick="toggleFavorite(this, '2512.11275v1', 'Towards Logic-Aware Manipulation: A Knowledge Primitive for VLM-Based Assistants in Smart Manufacturing')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Suchang Chen, Daqiang Guo
 

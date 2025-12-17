@@ -5,7 +5,22 @@ title: TrueCity: Real and Simulated Urban Data for Cross-Domain 3D Scene Underst
 
 # TrueCity: Real and Simulated Urban Data for Cross-Domain 3D Scene Understanding
 
-**arXiv**: [2511.07007v1](https://arxiv.org/abs/2511.07007) | [PDF](https://arxiv.org/pdf/2511.07007.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.07007" target="_blank" class="toolbar-btn">arXiv: 2511.07007v1</a>
+    <a href="https://arxiv.org/pdf/2511.07007.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.07007v1" 
+            onclick="toggleFavorite(this, '2511.07007v1', 'TrueCity: Real and Simulated Urban Data for Cross-Domain 3D Scene Understanding')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Duc Nguyen, Yan-Ling Lai, Qilin Zhang, Prabin Gyawali, Benedikt Schwab, Olaf Wysocki, Thomas H. Kolbe
 

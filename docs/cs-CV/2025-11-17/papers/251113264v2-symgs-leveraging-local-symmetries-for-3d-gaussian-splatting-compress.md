@@ -5,7 +5,22 @@ title: SymGS : Leveraging Local Symmetries for 3D Gaussian Splatting Compression
 
 # SymGS : Leveraging Local Symmetries for 3D Gaussian Splatting Compression
 
-**arXiv**: [2511.13264v2](https://arxiv.org/abs/2511.13264) | [PDF](https://arxiv.org/pdf/2511.13264.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.13264" target="_blank" class="toolbar-btn">arXiv: 2511.13264v2</a>
+    <a href="https://arxiv.org/pdf/2511.13264.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.13264v2" 
+            onclick="toggleFavorite(this, '2511.13264v2', 'SymGS : Leveraging Local Symmetries for 3D Gaussian Splatting Compression')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Keshav Gupta, Akshat Sanghvi, Shreyas Reddy Palley, Astitva Srivastava, Charu Sharma, Avinash Sharma
 

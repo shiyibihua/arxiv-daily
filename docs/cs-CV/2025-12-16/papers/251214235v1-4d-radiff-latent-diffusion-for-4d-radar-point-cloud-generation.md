@@ -5,7 +5,22 @@ title: 4D-RaDiff: Latent Diffusion for 4D Radar Point Cloud Generation
 
 # 4D-RaDiff: Latent Diffusion for 4D Radar Point Cloud Generation
 
-**arXiv**: [2512.14235v1](https://arxiv.org/abs/2512.14235) | [PDF](https://arxiv.org/pdf/2512.14235.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.14235" target="_blank" class="toolbar-btn">arXiv: 2512.14235v1</a>
+    <a href="https://arxiv.org/pdf/2512.14235.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.14235v1" 
+            onclick="toggleFavorite(this, '2512.14235v1', '4D-RaDiff: Latent Diffusion for 4D Radar Point Cloud Generation')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Jimmie Kwok, Holger Caesar, Andras Palffy
 

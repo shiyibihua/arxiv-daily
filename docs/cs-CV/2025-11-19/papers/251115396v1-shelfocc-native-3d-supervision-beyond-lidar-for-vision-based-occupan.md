@@ -5,7 +5,22 @@ title: ShelfOcc: Native 3D Supervision beyond LiDAR for Vision-Based Occupancy E
 
 # ShelfOcc: Native 3D Supervision beyond LiDAR for Vision-Based Occupancy Estimation
 
-**arXiv**: [2511.15396v1](https://arxiv.org/abs/2511.15396) | [PDF](https://arxiv.org/pdf/2511.15396.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.15396" target="_blank" class="toolbar-btn">arXiv: 2511.15396v1</a>
+    <a href="https://arxiv.org/pdf/2511.15396.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.15396v1" 
+            onclick="toggleFavorite(this, '2511.15396v1', 'ShelfOcc: Native 3D Supervision beyond LiDAR for Vision-Based Occupancy Estimation')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Simon Boeder, Fabian Gigengack, Simon Roesler, Holger Caesar, Benjamin Risse
 

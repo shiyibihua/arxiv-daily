@@ -5,7 +5,22 @@ title: Co-Me: Confidence-Guided Token Merging for Visual Geometric Transformers
 
 # Co-Me: Confidence-Guided Token Merging for Visual Geometric Transformers
 
-**arXiv**: [2511.14751v1](https://arxiv.org/abs/2511.14751) | [PDF](https://arxiv.org/pdf/2511.14751.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.14751" target="_blank" class="toolbar-btn">arXiv: 2511.14751v1</a>
+    <a href="https://arxiv.org/pdf/2511.14751.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.14751v1" 
+            onclick="toggleFavorite(this, '2511.14751v1', 'Co-Me: Confidence-Guided Token Merging for Visual Geometric Transformers')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Yutian Chen, Yuheng Qiu, Ruogu Li, Ali Agha, Shayegan Omidshafiei, Jay Patrikar, Sebastian Scherer
 

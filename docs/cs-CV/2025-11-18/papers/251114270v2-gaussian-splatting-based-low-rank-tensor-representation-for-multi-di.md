@@ -5,7 +5,22 @@ title: Gaussian Splatting-based Low-Rank Tensor Representation for Multi-Dimensi
 
 # Gaussian Splatting-based Low-Rank Tensor Representation for Multi-Dimensional Image Recovery
 
-**arXiv**: [2511.14270v2](https://arxiv.org/abs/2511.14270) | [PDF](https://arxiv.org/pdf/2511.14270.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.14270" target="_blank" class="toolbar-btn">arXiv: 2511.14270v2</a>
+    <a href="https://arxiv.org/pdf/2511.14270.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.14270v2" 
+            onclick="toggleFavorite(this, '2511.14270v2', 'Gaussian Splatting-based Low-Rank Tensor Representation for Multi-Dimensional Image Recovery')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Yiming Zeng, Xi-Le Zhao, Wei-Hao Wu, Teng-Yu Ji, Chao Wang
 

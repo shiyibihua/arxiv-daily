@@ -5,7 +5,22 @@ title: Visual-Geometry Diffusion Policy: Robust Generalization via Complementari
 
 # Visual-Geometry Diffusion Policy: Robust Generalization via Complementarity-Aware Multimodal Fusion
 
-**arXiv**: [2511.22445v1](https://arxiv.org/abs/2511.22445) | [PDF](https://arxiv.org/pdf/2511.22445.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.22445" target="_blank" class="toolbar-btn">arXiv: 2511.22445v1</a>
+    <a href="https://arxiv.org/pdf/2511.22445.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.22445v1" 
+            onclick="toggleFavorite(this, '2511.22445v1', 'Visual-Geometry Diffusion Policy: Robust Generalization via Complementarity-Aware Multimodal Fusion')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Yikai Tang, Haoran Geng, Sheng Zang, Pieter Abbeel, Jitendra Malik
 

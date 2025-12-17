@@ -5,7 +5,22 @@ title: Multi-modal On-Device Learning for Monocular Depth Estimation on Ultra-lo
 
 # Multi-modal On-Device Learning for Monocular Depth Estimation on Ultra-low-power MCUs
 
-**arXiv**: [2512.00086v1](https://arxiv.org/abs/2512.00086) | [PDF](https://arxiv.org/pdf/2512.00086.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.00086" target="_blank" class="toolbar-btn">arXiv: 2512.00086v1</a>
+    <a href="https://arxiv.org/pdf/2512.00086.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.00086v1" 
+            onclick="toggleFavorite(this, '2512.00086v1', 'Multi-modal On-Device Learning for Monocular Depth Estimation on Ultra-low-power MCUs')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Davide Nadalini, Manuele Rusci, Elia Cereda, Luca Benini, Francesco Conti, Daniele Palossi
 

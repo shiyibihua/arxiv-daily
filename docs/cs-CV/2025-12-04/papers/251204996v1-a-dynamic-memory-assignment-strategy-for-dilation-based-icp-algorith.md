@@ -5,7 +5,22 @@ title: A dynamic memory assignment strategy for dilation-based ICP algorithm on 
 
 # A dynamic memory assignment strategy for dilation-based ICP algorithm on embedded GPUs
 
-**arXiv**: [2512.04996v1](https://arxiv.org/abs/2512.04996) | [PDF](https://arxiv.org/pdf/2512.04996.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.04996" target="_blank" class="toolbar-btn">arXiv: 2512.04996v1</a>
+    <a href="https://arxiv.org/pdf/2512.04996.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.04996v1" 
+            onclick="toggleFavorite(this, '2512.04996v1', 'A dynamic memory assignment strategy for dilation-based ICP algorithm on embedded GPUs')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Qiong Chang, Weimin Wang, Junpei Zhong, Jun Miyazaki
 

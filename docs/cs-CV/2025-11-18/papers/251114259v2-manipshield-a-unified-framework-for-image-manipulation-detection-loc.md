@@ -5,7 +5,22 @@ title: ManipShield: A Unified Framework for Image Manipulation Detection, Locali
 
 # ManipShield: A Unified Framework for Image Manipulation Detection, Localization and Explanation
 
-**arXiv**: [2511.14259v2](https://arxiv.org/abs/2511.14259) | [PDF](https://arxiv.org/pdf/2511.14259.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.14259" target="_blank" class="toolbar-btn">arXiv: 2511.14259v2</a>
+    <a href="https://arxiv.org/pdf/2511.14259.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.14259v2" 
+            onclick="toggleFavorite(this, '2511.14259v2', 'ManipShield: A Unified Framework for Image Manipulation Detection, Localization and Explanation')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Zitong Xu, Huiyu Duan, Xiaoyu Wang, Zhaolin Cai, Kaiwei Zhang, Qiang Hu, Jing Liu, Xiongkuo Min, Guangtao Zhai
 

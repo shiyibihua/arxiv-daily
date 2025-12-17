@@ -5,7 +5,22 @@ title: RoboTracer: Mastering Spatial Trace with Reasoning in Vision-Language Mod
 
 # RoboTracer: Mastering Spatial Trace with Reasoning in Vision-Language Models for Robotics
 
-**arXiv**: [2512.13660v1](https://arxiv.org/abs/2512.13660) | [PDF](https://arxiv.org/pdf/2512.13660.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.13660" target="_blank" class="toolbar-btn">arXiv: 2512.13660v1</a>
+    <a href="https://arxiv.org/pdf/2512.13660.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.13660v1" 
+            onclick="toggleFavorite(this, '2512.13660v1', 'RoboTracer: Mastering Spatial Trace with Reasoning in Vision-Language Models for Robotics')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Enshen Zhou, Cheng Chi, Yibo Li, Jingkun An, Jiayuan Zhang, Shanyu Rong, Yi Han, Yuheng Ji, Mengzhen Liu, Pengwei Wang, Zhongyuan Wang, Lu Sheng, Shanghang Zhang
 

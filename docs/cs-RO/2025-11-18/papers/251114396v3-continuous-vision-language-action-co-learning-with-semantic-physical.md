@@ -5,7 +5,22 @@ title: Continuous Vision-Language-Action Co-Learning with Semantic-Physical Alig
 
 # Continuous Vision-Language-Action Co-Learning with Semantic-Physical Alignment for Behavioral Cloning
 
-**arXiv**: [2511.14396v3](https://arxiv.org/abs/2511.14396) | [PDF](https://arxiv.org/pdf/2511.14396.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.14396" target="_blank" class="toolbar-btn">arXiv: 2511.14396v3</a>
+    <a href="https://arxiv.org/pdf/2511.14396.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.14396v3" 
+            onclick="toggleFavorite(this, '2511.14396v3', 'Continuous Vision-Language-Action Co-Learning with Semantic-Physical Alignment for Behavioral Cloning')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Xiuxiu Qi, Yu Yang, Jiannong Cao, Luyao Bai, Chongshan Fan, Chengtai Cao, Hongpeng Wang
 

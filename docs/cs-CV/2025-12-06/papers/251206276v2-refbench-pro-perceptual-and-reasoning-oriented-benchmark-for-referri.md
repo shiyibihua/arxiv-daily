@@ -5,7 +5,22 @@ title: RefBench-PRO: Perceptual and Reasoning Oriented Benchmark for Referring E
 
 # RefBench-PRO: Perceptual and Reasoning Oriented Benchmark for Referring Expression Comprehension
 
-**arXiv**: [2512.06276v2](https://arxiv.org/abs/2512.06276) | [PDF](https://arxiv.org/pdf/2512.06276.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.06276" target="_blank" class="toolbar-btn">arXiv: 2512.06276v2</a>
+    <a href="https://arxiv.org/pdf/2512.06276.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.06276v2" 
+            onclick="toggleFavorite(this, '2512.06276v2', 'RefBench-PRO: Perceptual and Reasoning Oriented Benchmark for Referring Expression Comprehension')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Tianyi Gao, Hao Li, Han Fang, Xin Wei, Xiaodong Dong, Hongbo Sun, Ye Yuan, Zhongjiang He, Jinglin Xu, Jingmin Xin, Hao Sun
 

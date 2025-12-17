@@ -5,7 +5,22 @@ title: FloraForge: LLM-Assisted Procedural Generation of Editable and Analysis-R
 
 # FloraForge: LLM-Assisted Procedural Generation of Editable and Analysis-Ready 3D Plant Geometric Models For Agricultural Applications
 
-**arXiv**: [2512.11925v1](https://arxiv.org/abs/2512.11925) | [PDF](https://arxiv.org/pdf/2512.11925.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.11925" target="_blank" class="toolbar-btn">arXiv: 2512.11925v1</a>
+    <a href="https://arxiv.org/pdf/2512.11925.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.11925v1" 
+            onclick="toggleFavorite(this, '2512.11925v1', 'FloraForge: LLM-Assisted Procedural Generation of Editable and Analysis-Ready 3D Plant Geometric Models For Agricultural Applications')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Mozhgan Hadadi, Talukder Z. Jubery, Patrick S. Schnable, Arti Singh, Bedrich Benes, Adarsh Krishnamurthy, Baskar Ganapathysubramanian
 

@@ -5,7 +5,22 @@ title: CycleManip: Enabling Cyclic Task Manipulation via Effective Historical Pe
 
 # CycleManip: Enabling Cyclic Task Manipulation via Effective Historical Perception and Understanding
 
-**arXiv**: [2512.01022v1](https://arxiv.org/abs/2512.01022) | [PDF](https://arxiv.org/pdf/2512.01022.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.01022" target="_blank" class="toolbar-btn">arXiv: 2512.01022v1</a>
+    <a href="https://arxiv.org/pdf/2512.01022.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.01022v1" 
+            onclick="toggleFavorite(this, '2512.01022v1', 'CycleManip: Enabling Cyclic Task Manipulation via Effective Historical Perception and Understanding')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Yi-Lin Wei, Haoran Liao, Yuhao Lin, Pengyue Wang, Zhizhao Liang, Guiliang Liu, Wei-Shi Zheng
 

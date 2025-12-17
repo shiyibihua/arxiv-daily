@@ -5,7 +5,22 @@ title: Design and Fabrication of Origami-Inspired Knitted Fabrics for Soft Robot
 
 # Design and Fabrication of Origami-Inspired Knitted Fabrics for Soft Robotics
 
-**arXiv**: [2511.01272v1](https://arxiv.org/abs/2511.01272) | [PDF](https://arxiv.org/pdf/2511.01272.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.01272" target="_blank" class="toolbar-btn">arXiv: 2511.01272v1</a>
+    <a href="https://arxiv.org/pdf/2511.01272.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.01272v1" 
+            onclick="toggleFavorite(this, '2511.01272v1', 'Design and Fabrication of Origami-Inspired Knitted Fabrics for Soft Robotics')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Sehui Jeong, Magaly C. Aviles, Athena X. Naylor, Cynthia Sung, Allison M. Okamura
 

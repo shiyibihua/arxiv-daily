@@ -5,7 +5,22 @@ title: Physics-Informed Deformable Gaussian Splatting: Towards Unified Constitut
 
 # Physics-Informed Deformable Gaussian Splatting: Towards Unified Constitutive Laws for Time-Evolving Material Field
 
-**arXiv**: [2511.06299v3](https://arxiv.org/abs/2511.06299) | [PDF](https://arxiv.org/pdf/2511.06299.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.06299" target="_blank" class="toolbar-btn">arXiv: 2511.06299v3</a>
+    <a href="https://arxiv.org/pdf/2511.06299.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.06299v3" 
+            onclick="toggleFavorite(this, '2511.06299v3', 'Physics-Informed Deformable Gaussian Splatting: Towards Unified Constitutive Laws for Time-Evolving Material Field')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Haoqin Hong, Ding Fan, Fubin Dou, Zhi-Li Zhou, Haoran Sun, Congcong Zhu, Jingrun Chen
 

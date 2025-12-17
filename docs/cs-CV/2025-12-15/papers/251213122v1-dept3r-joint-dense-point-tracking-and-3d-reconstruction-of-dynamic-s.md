@@ -5,7 +5,22 @@ title: DePT3R: Joint Dense Point Tracking and 3D Reconstruction of Dynamic Scene
 
 # DePT3R: Joint Dense Point Tracking and 3D Reconstruction of Dynamic Scenes in a Single Forward Pass
 
-**arXiv**: [2512.13122v1](https://arxiv.org/abs/2512.13122) | [PDF](https://arxiv.org/pdf/2512.13122.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.13122" target="_blank" class="toolbar-btn">arXiv: 2512.13122v1</a>
+    <a href="https://arxiv.org/pdf/2512.13122.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.13122v1" 
+            onclick="toggleFavorite(this, '2512.13122v1', 'DePT3R: Joint Dense Point Tracking and 3D Reconstruction of Dynamic Scenes in a Single Forward Pass')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Vivek Alumootil, Tuan-Anh Vu, M. Khalid Jawed
 

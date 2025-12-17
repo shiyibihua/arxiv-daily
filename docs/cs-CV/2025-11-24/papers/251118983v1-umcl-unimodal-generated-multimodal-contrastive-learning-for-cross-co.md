@@ -5,7 +5,22 @@ title: UMCL: Unimodal-generated Multimodal Contrastive Learning for Cross-compre
 
 # UMCL: Unimodal-generated Multimodal Contrastive Learning for Cross-compression-rate Deepfake Detection
 
-**arXiv**: [2511.18983v1](https://arxiv.org/abs/2511.18983) | [PDF](https://arxiv.org/pdf/2511.18983.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.18983" target="_blank" class="toolbar-btn">arXiv: 2511.18983v1</a>
+    <a href="https://arxiv.org/pdf/2511.18983.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.18983v1" 
+            onclick="toggleFavorite(this, '2511.18983v1', 'UMCL: Unimodal-generated Multimodal Contrastive Learning for Cross-compression-rate Deepfake Detection')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Ching-Yi Lai, Chih-Yu Jian, Pei-Cheng Chuang, Chia-Ming Lee, Chih-Chung Hsu, Chiou-Ting Hsu, Chia-Wen Lin
 

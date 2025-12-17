@@ -5,7 +5,22 @@ title: Improving Deepfake Detection with Reinforcement Learning-Based Adaptive D
 
 # Improving Deepfake Detection with Reinforcement Learning-Based Adaptive Data Augmentation
 
-**arXiv**: [2511.07051v1](https://arxiv.org/abs/2511.07051) | [PDF](https://arxiv.org/pdf/2511.07051.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.07051" target="_blank" class="toolbar-btn">arXiv: 2511.07051v1</a>
+    <a href="https://arxiv.org/pdf/2511.07051.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.07051v1" 
+            onclick="toggleFavorite(this, '2511.07051v1', 'Improving Deepfake Detection with Reinforcement Learning-Based Adaptive Data Augmentation')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Yuxuan Zhou, Tao Yu, Wen Huang, Yuheng Zhang, Tao Dai, Shu-Tao Xia
 

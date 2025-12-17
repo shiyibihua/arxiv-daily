@@ -5,7 +5,22 @@ title: SRPO: Self-Referential Policy Optimization for Vision-Language-Action Mod
 
 # SRPO: Self-Referential Policy Optimization for Vision-Language-Action Models
 
-**arXiv**: [2511.15605v2](https://arxiv.org/abs/2511.15605) | [PDF](https://arxiv.org/pdf/2511.15605.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.15605" target="_blank" class="toolbar-btn">arXiv: 2511.15605v2</a>
+    <a href="https://arxiv.org/pdf/2511.15605.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.15605v2" 
+            onclick="toggleFavorite(this, '2511.15605v2', 'SRPO: Self-Referential Policy Optimization for Vision-Language-Action Models')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Senyu Fei, Siyin Wang, Li Ji, Ao Li, Shiduo Zhang, Liming Liu, Jinlong Hou, Jingjing Gong, Xianzhong Zhao, Xipeng Qiu
 

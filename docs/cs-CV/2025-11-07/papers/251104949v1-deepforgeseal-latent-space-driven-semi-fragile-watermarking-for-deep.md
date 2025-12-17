@@ -5,7 +5,22 @@ title: DeepForgeSeal: Latent Space-Driven Semi-Fragile Watermarking for Deepfake
 
 # DeepForgeSeal: Latent Space-Driven Semi-Fragile Watermarking for Deepfake Detection Using Multi-Agent Adversarial Reinforcement Learning
 
-**arXiv**: [2511.04949v1](https://arxiv.org/abs/2511.04949) | [PDF](https://arxiv.org/pdf/2511.04949.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.04949" target="_blank" class="toolbar-btn">arXiv: 2511.04949v1</a>
+    <a href="https://arxiv.org/pdf/2511.04949.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.04949v1" 
+            onclick="toggleFavorite(this, '2511.04949v1', 'DeepForgeSeal: Latent Space-Driven Semi-Fragile Watermarking for Deepfake Detection Using Multi-Agent Adversarial Reinforcement Learning')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Tharindu Fernando, Clinton Fookes, Sridha Sridharan
 

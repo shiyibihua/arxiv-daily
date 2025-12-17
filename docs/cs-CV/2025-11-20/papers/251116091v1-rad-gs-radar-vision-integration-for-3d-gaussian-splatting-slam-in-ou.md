@@ -5,7 +5,22 @@ title: Rad-GS: Radar-Vision Integration for 3D Gaussian Splatting SLAM in Outdoo
 
 # Rad-GS: Radar-Vision Integration for 3D Gaussian Splatting SLAM in Outdoor Environments
 
-**arXiv**: [2511.16091v1](https://arxiv.org/abs/2511.16091) | [PDF](https://arxiv.org/pdf/2511.16091.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.16091" target="_blank" class="toolbar-btn">arXiv: 2511.16091v1</a>
+    <a href="https://arxiv.org/pdf/2511.16091.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.16091v1" 
+            onclick="toggleFavorite(this, '2511.16091v1', 'Rad-GS: Radar-Vision Integration for 3D Gaussian Splatting SLAM in Outdoor Environments')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Renxiang Xiao, Wei Liu, Yuanfan Zhang, Yushuai Chen, Jinming Chen, Zilu Wang, Liang Hu
 

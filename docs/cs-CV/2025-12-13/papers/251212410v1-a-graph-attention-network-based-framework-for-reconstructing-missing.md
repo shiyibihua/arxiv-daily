@@ -5,7 +5,22 @@ title: A Graph Attention Network-Based Framework for Reconstructing Missing LiDA
 
 # A Graph Attention Network-Based Framework for Reconstructing Missing LiDAR Beams
 
-**arXiv**: [2512.12410v1](https://arxiv.org/abs/2512.12410) | [PDF](https://arxiv.org/pdf/2512.12410.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.12410" target="_blank" class="toolbar-btn">arXiv: 2512.12410v1</a>
+    <a href="https://arxiv.org/pdf/2512.12410.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.12410v1" 
+            onclick="toggleFavorite(this, '2512.12410v1', 'A Graph Attention Network-Based Framework for Reconstructing Missing LiDAR Beams')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Khalfalla Awedat, Mohamed Abidalrekab, Mohammad El-Yabroudi
 

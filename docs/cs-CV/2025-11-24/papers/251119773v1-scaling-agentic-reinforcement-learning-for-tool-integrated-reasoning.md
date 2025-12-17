@@ -5,7 +5,22 @@ title: Scaling Agentic Reinforcement Learning for Tool-Integrated Reasoning in V
 
 # Scaling Agentic Reinforcement Learning for Tool-Integrated Reasoning in VLMs
 
-**arXiv**: [2511.19773v1](https://arxiv.org/abs/2511.19773) | [PDF](https://arxiv.org/pdf/2511.19773.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.19773" target="_blank" class="toolbar-btn">arXiv: 2511.19773v1</a>
+    <a href="https://arxiv.org/pdf/2511.19773.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.19773v1" 
+            onclick="toggleFavorite(this, '2511.19773v1', 'Scaling Agentic Reinforcement Learning for Tool-Integrated Reasoning in VLMs')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Meng Lu, Ran Xu, Yi Fang, Wenxuan Zhang, Yue Yu, Gaurav Srivastava, Yuchen Zhuang, Mohamed Elhoseiny, Charles Fleming, Carl Yang, Zhengzhong Tu, Yang Xie, Guanghua Xiao, Hanrui Wang, Di Jin, Wenqi Shi, Xuan Wang
 

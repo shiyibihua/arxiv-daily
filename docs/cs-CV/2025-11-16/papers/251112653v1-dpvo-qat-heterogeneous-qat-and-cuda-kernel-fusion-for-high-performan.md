@@ -5,7 +5,22 @@ title: DPVO-QAT++: Heterogeneous QAT and CUDA Kernel Fusion for High-Performance
 
 # DPVO-QAT++: Heterogeneous QAT and CUDA Kernel Fusion for High-Performance Deep Patch Visual Odometry
 
-**arXiv**: [2511.12653v1](https://arxiv.org/abs/2511.12653) | [PDF](https://arxiv.org/pdf/2511.12653.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.12653" target="_blank" class="toolbar-btn">arXiv: 2511.12653v1</a>
+    <a href="https://arxiv.org/pdf/2511.12653.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.12653v1" 
+            onclick="toggleFavorite(this, '2511.12653v1', 'DPVO-QAT++: Heterogeneous QAT and CUDA Kernel Fusion for High-Performance Deep Patch Visual Odometry')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Cheng Liao
 

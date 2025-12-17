@@ -5,7 +5,22 @@ title: MoRel: Long-Range Flicker-Free 4D Motion Modeling via Anchor Relay-based 
 
 # MoRel: Long-Range Flicker-Free 4D Motion Modeling via Anchor Relay-based Bidirectional Blending with Hierarchical Densification
 
-**arXiv**: [2512.09270v1](https://arxiv.org/abs/2512.09270) | [PDF](https://arxiv.org/pdf/2512.09270.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.09270" target="_blank" class="toolbar-btn">arXiv: 2512.09270v1</a>
+    <a href="https://arxiv.org/pdf/2512.09270.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.09270v1" 
+            onclick="toggleFavorite(this, '2512.09270v1', 'MoRel: Long-Range Flicker-Free 4D Motion Modeling via Anchor Relay-based Bidirectional Blending with Hierarchical Densification')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Sangwoon Kwak, Weeyoung Kwon, Jun Young Jeong, Geonho Kim, Won-Sik Cheong, Jihyong Oh
 

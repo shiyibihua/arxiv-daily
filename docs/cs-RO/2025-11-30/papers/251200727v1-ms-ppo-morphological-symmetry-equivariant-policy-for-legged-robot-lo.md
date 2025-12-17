@@ -5,7 +5,22 @@ title: MS-PPO: Morphological-Symmetry-Equivariant Policy for Legged Robot Locomo
 
 # MS-PPO: Morphological-Symmetry-Equivariant Policy for Legged Robot Locomotion
 
-**arXiv**: [2512.00727v1](https://arxiv.org/abs/2512.00727) | [PDF](https://arxiv.org/pdf/2512.00727.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.00727" target="_blank" class="toolbar-btn">arXiv: 2512.00727v1</a>
+    <a href="https://arxiv.org/pdf/2512.00727.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.00727v1" 
+            onclick="toggleFavorite(this, '2512.00727v1', 'MS-PPO: Morphological-Symmetry-Equivariant Policy for Legged Robot Locomotion')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Sizhe Wei, Xulin Chen, Fengze Xie, Garrett Ethan Katz, Zhenyu Gan, Lu Gan
 

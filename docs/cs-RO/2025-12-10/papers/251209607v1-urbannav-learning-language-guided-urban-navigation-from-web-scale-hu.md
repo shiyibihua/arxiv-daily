@@ -5,7 +5,22 @@ title: UrbanNav: Learning Language-Guided Urban Navigation from Web-Scale Human 
 
 # UrbanNav: Learning Language-Guided Urban Navigation from Web-Scale Human Trajectories
 
-**arXiv**: [2512.09607v1](https://arxiv.org/abs/2512.09607) | [PDF](https://arxiv.org/pdf/2512.09607.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.09607" target="_blank" class="toolbar-btn">arXiv: 2512.09607v1</a>
+    <a href="https://arxiv.org/pdf/2512.09607.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.09607v1" 
+            onclick="toggleFavorite(this, '2512.09607v1', 'UrbanNav: Learning Language-Guided Urban Navigation from Web-Scale Human Trajectories')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Yanghong Mei, Yirong Yang, Longteng Guo, Qunbo Wang, Ming-Ming Yu, Xingjian He, Wenjun Wu, Jing Liu
 

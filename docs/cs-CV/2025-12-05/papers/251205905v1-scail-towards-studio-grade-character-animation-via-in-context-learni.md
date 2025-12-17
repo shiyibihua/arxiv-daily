@@ -5,7 +5,22 @@ title: SCAIL: Towards Studio-Grade Character Animation via In-Context Learning o
 
 # SCAIL: Towards Studio-Grade Character Animation via In-Context Learning of 3D-Consistent Pose Representations
 
-**arXiv**: [2512.05905v1](https://arxiv.org/abs/2512.05905) | [PDF](https://arxiv.org/pdf/2512.05905.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.05905" target="_blank" class="toolbar-btn">arXiv: 2512.05905v1</a>
+    <a href="https://arxiv.org/pdf/2512.05905.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.05905v1" 
+            onclick="toggleFavorite(this, '2512.05905v1', 'SCAIL: Towards Studio-Grade Character Animation via In-Context Learning of 3D-Consistent Pose Representations')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Wenhao Yan, Sheng Ye, Zhuoyi Yang, Jiayan Teng, ZhenHui Dong, Kairui Wen, Xiaotao Gu, Yong-Jin Liu, Jie Tang
 

@@ -5,7 +5,22 @@ title: Text Condition Embedded Regression Network for Automated Dental Abutment 
 
 # Text Condition Embedded Regression Network for Automated Dental Abutment Design
 
-**arXiv**: [2511.22578v1](https://arxiv.org/abs/2511.22578) | [PDF](https://arxiv.org/pdf/2511.22578.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.22578" target="_blank" class="toolbar-btn">arXiv: 2511.22578v1</a>
+    <a href="https://arxiv.org/pdf/2511.22578.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.22578v1" 
+            onclick="toggleFavorite(this, '2511.22578v1', 'Text Condition Embedded Regression Network for Automated Dental Abutment Design')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Mianjie Zheng, Xinquan Yang, Xuguang Li, Xiaoling Luo, Xuefen Liu, Kun Tang, He Meng, Linlin Shen
 

@@ -5,7 +5,22 @@ title: RobustSplat++: Decoupling Densification, Dynamics, and Illumination for I
 
 # RobustSplat++: Decoupling Densification, Dynamics, and Illumination for In-the-Wild 3DGS
 
-**arXiv**: [2512.04815v1](https://arxiv.org/abs/2512.04815) | [PDF](https://arxiv.org/pdf/2512.04815.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.04815" target="_blank" class="toolbar-btn">arXiv: 2512.04815v1</a>
+    <a href="https://arxiv.org/pdf/2512.04815.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.04815v1" 
+            onclick="toggleFavorite(this, '2512.04815v1', 'RobustSplat++: Decoupling Densification, Dynamics, and Illumination for In-the-Wild 3DGS')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Chuanyu Fu, Guanying Chen, Yuqi Zhang, Kunbin Yao, Yuan Xiong, Chuan Huang, Shuguang Cui, Yasuyuki Matsushita, Xiaochun Cao
 

@@ -5,7 +5,22 @@ title: Multitask GLocal OBIA-Mamba for Sentinel-2 Landcover Mapping
 
 # Multitask GLocal OBIA-Mamba for Sentinel-2 Landcover Mapping
 
-**arXiv**: [2511.10604v1](https://arxiv.org/abs/2511.10604) | [PDF](https://arxiv.org/pdf/2511.10604.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.10604" target="_blank" class="toolbar-btn">arXiv: 2511.10604v1</a>
+    <a href="https://arxiv.org/pdf/2511.10604.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.10604v1" 
+            onclick="toggleFavorite(this, '2511.10604v1', 'Multitask GLocal OBIA-Mamba for Sentinel-2 Landcover Mapping')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Zack Dewis, Yimin Zhu, Zhengsen Xu, Mabel Heffring, Saeid Taleghanidoozdoozan, Kaylee Xiao, Motasem Alkayid, Lincoln Linlin Xu
 

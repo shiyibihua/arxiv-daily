@@ -5,7 +5,22 @@ title: Self-Supervised Ultrasound Representation Learning for Renal Anomaly Pred
 
 # Self-Supervised Ultrasound Representation Learning for Renal Anomaly Prediction in Prenatal Imaging
 
-**arXiv**: [2512.13434v1](https://arxiv.org/abs/2512.13434) | [PDF](https://arxiv.org/pdf/2512.13434.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.13434" target="_blank" class="toolbar-btn">arXiv: 2512.13434v1</a>
+    <a href="https://arxiv.org/pdf/2512.13434.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.13434v1" 
+            onclick="toggleFavorite(this, '2512.13434v1', 'Self-Supervised Ultrasound Representation Learning for Renal Anomaly Prediction in Prenatal Imaging')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Youssef Megahed, Inok Lee, Robin Ducharme, Kevin Dick, Adrian D. C. Chan, Steven Hawken, Mark C. Walker
 

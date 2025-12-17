@@ -5,7 +5,22 @@ title: Mr. Virgil: Learning Multi-robot Visual-range Relative Localization
 
 # Mr. Virgil: Learning Multi-robot Visual-range Relative Localization
 
-**arXiv**: [2512.10540v1](https://arxiv.org/abs/2512.10540) | [PDF](https://arxiv.org/pdf/2512.10540.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.10540" target="_blank" class="toolbar-btn">arXiv: 2512.10540v1</a>
+    <a href="https://arxiv.org/pdf/2512.10540.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.10540v1" 
+            onclick="toggleFavorite(this, '2512.10540v1', 'Mr. Virgil: Learning Multi-robot Visual-range Relative Localization')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Si Wang, Zhehan Li, Jiadong Lu, Rong Xiong, Yanjun Cao, Yue Wang
 

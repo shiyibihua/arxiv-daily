@@ -5,7 +5,22 @@ title: HAFO: A Force-Adaptive Control Framework for Humanoid Robots in Intense I
 
 # HAFO: A Force-Adaptive Control Framework for Humanoid Robots in Intense Interaction Environments
 
-**arXiv**: [2511.20275v3](https://arxiv.org/abs/2511.20275) | [PDF](https://arxiv.org/pdf/2511.20275.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.20275" target="_blank" class="toolbar-btn">arXiv: 2511.20275v3</a>
+    <a href="https://arxiv.org/pdf/2511.20275.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.20275v3" 
+            onclick="toggleFavorite(this, '2511.20275v3', 'HAFO: A Force-Adaptive Control Framework for Humanoid Robots in Intense Interaction Environments')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Chenhui Dong, Haozhe Xu, Wenhao Feng, Zhipeng Wang, Yanmin Zhou, Yifei Zhao, Bin He
 

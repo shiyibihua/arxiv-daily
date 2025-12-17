@@ -5,7 +5,22 @@ title: Hoi! -- A Multimodal Dataset for Force-Grounded, Cross-View Articulated M
 
 # Hoi! -- A Multimodal Dataset for Force-Grounded, Cross-View Articulated Manipulation
 
-**arXiv**: [2512.04884v1](https://arxiv.org/abs/2512.04884) | [PDF](https://arxiv.org/pdf/2512.04884.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.04884" target="_blank" class="toolbar-btn">arXiv: 2512.04884v1</a>
+    <a href="https://arxiv.org/pdf/2512.04884.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.04884v1" 
+            onclick="toggleFavorite(this, '2512.04884v1', 'Hoi! -- A Multimodal Dataset for Force-Grounded, Cross-View Articulated Manipulation')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Tim Engelbracht, René Zurbrügg, Matteo Wohlrapp, Martin Büchner, Abhinav Valada, Marc Pollefeys, Hermann Blum, Zuria Bauer
 

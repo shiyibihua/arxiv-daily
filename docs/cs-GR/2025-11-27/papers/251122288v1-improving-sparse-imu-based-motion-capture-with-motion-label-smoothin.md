@@ -5,7 +5,22 @@ title: Improving Sparse IMU-based Motion Capture with Motion Label Smoothing
 
 # Improving Sparse IMU-based Motion Capture with Motion Label Smoothing
 
-**arXiv**: [2511.22288v1](https://arxiv.org/abs/2511.22288) | [PDF](https://arxiv.org/pdf/2511.22288.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.22288" target="_blank" class="toolbar-btn">arXiv: 2511.22288v1</a>
+    <a href="https://arxiv.org/pdf/2511.22288.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.22288v1" 
+            onclick="toggleFavorite(this, '2511.22288v1', 'Improving Sparse IMU-based Motion Capture with Motion Label Smoothing')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Zhaorui Meng, Lu Yin, Yangqing Hou, Anjun Chen, Shihui Guo, Yipeng Qin
 

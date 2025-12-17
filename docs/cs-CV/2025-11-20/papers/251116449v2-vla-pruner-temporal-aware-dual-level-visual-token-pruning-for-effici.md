@@ -5,7 +5,22 @@ title: VLA-Pruner: Temporal-Aware Dual-Level Visual Token Pruning for Efficient 
 
 # VLA-Pruner: Temporal-Aware Dual-Level Visual Token Pruning for Efficient Vision-Language-Action Inference
 
-**arXiv**: [2511.16449v2](https://arxiv.org/abs/2511.16449) | [PDF](https://arxiv.org/pdf/2511.16449.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.16449" target="_blank" class="toolbar-btn">arXiv: 2511.16449v2</a>
+    <a href="https://arxiv.org/pdf/2511.16449.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.16449v2" 
+            onclick="toggleFavorite(this, '2511.16449v2', 'VLA-Pruner: Temporal-Aware Dual-Level Visual Token Pruning for Efficient Vision-Language-Action Inference')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Ziyan Liu, Yeqiu Chen, Hongyi Cai, Tao Lin, Shuo Yang, Zheng Liu, Bo Zhao
 

@@ -5,7 +5,22 @@ title: Hardware-Software Collaborative Computing of Photonic Spiking Reinforceme
 
 # Hardware-Software Collaborative Computing of Photonic Spiking Reinforcement Learning for Robotic Continuous Control
 
-**arXiv**: [2512.00427v1](https://arxiv.org/abs/2512.00427) | [PDF](https://arxiv.org/pdf/2512.00427.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.00427" target="_blank" class="toolbar-btn">arXiv: 2512.00427v1</a>
+    <a href="https://arxiv.org/pdf/2512.00427.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.00427v1" 
+            onclick="toggleFavorite(this, '2512.00427v1', 'Hardware-Software Collaborative Computing of Photonic Spiking Reinforcement Learning for Robotic Continuous Control')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Mengting Yu, Shuiying Xiang, Changjian Xie, Yonghang Chen, Haowen Zhao, Xingxing Guo, Yahui Zhang, Yanan Han, Yue Hao
 

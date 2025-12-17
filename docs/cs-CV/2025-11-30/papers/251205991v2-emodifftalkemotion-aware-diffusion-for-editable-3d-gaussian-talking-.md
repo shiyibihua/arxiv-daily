@@ -5,7 +5,22 @@ title: EmoDiffTalk:Emotion-aware Diffusion for Editable 3D Gaussian Talking Head
 
 # EmoDiffTalk:Emotion-aware Diffusion for Editable 3D Gaussian Talking Head
 
-**arXiv**: [2512.05991v2](https://arxiv.org/abs/2512.05991) | [PDF](https://arxiv.org/pdf/2512.05991.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.05991" target="_blank" class="toolbar-btn">arXiv: 2512.05991v2</a>
+    <a href="https://arxiv.org/pdf/2512.05991.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.05991v2" 
+            onclick="toggleFavorite(this, '2512.05991v2', 'EmoDiffTalk:Emotion-aware Diffusion for Editable 3D Gaussian Talking Head')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Chang Liu, Tianjiao Jing, Chengcheng Ma, Xuanqi Zhou, Zhengxuan Lian, Qin Jin, Hongliang Yuan, Shi-Sheng Huang
 

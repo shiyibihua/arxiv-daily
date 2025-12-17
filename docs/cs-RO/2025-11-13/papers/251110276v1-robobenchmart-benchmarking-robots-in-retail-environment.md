@@ -5,7 +5,22 @@ title: RoboBenchMart: Benchmarking Robots in Retail Environment
 
 # RoboBenchMart: Benchmarking Robots in Retail Environment
 
-**arXiv**: [2511.10276v1](https://arxiv.org/abs/2511.10276) | [PDF](https://arxiv.org/pdf/2511.10276.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.10276" target="_blank" class="toolbar-btn">arXiv: 2511.10276v1</a>
+    <a href="https://arxiv.org/pdf/2511.10276.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.10276v1" 
+            onclick="toggleFavorite(this, '2511.10276v1', 'RoboBenchMart: Benchmarking Robots in Retail Environment')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Konstantin Soshin, Alexander Krapukhin, Andrei Spiridonov, Denis Shepelev, Gregorii Bukhtuev, Andrey Kuznetsov, Vlad Shakhuro
 

@@ -5,7 +5,22 @@ title: LoG3D: Ultra-High-Resolution 3D Shape Modeling via Local-to-Global Partit
 
 # LoG3D: Ultra-High-Resolution 3D Shape Modeling via Local-to-Global Partitioning
 
-**arXiv**: [2511.10040v2](https://arxiv.org/abs/2511.10040) | [PDF](https://arxiv.org/pdf/2511.10040.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.10040" target="_blank" class="toolbar-btn">arXiv: 2511.10040v2</a>
+    <a href="https://arxiv.org/pdf/2511.10040.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.10040v2" 
+            onclick="toggleFavorite(this, '2511.10040v2', 'LoG3D: Ultra-High-Resolution 3D Shape Modeling via Local-to-Global Partitioning')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Xinran Yang, Shuichang Lai, Jiangjing Lyu, Hongjie Li, Bowen Pan, Yuanqi Li, Jie Guo, Zhengkang Zhou, Yanwen Guo
 

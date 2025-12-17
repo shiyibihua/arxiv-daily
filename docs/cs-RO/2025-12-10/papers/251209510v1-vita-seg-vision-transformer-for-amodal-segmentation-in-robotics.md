@@ -5,7 +5,22 @@ title: ViTA-Seg: Vision Transformer for Amodal Segmentation in Robotics
 
 # ViTA-Seg: Vision Transformer for Amodal Segmentation in Robotics
 
-**arXiv**: [2512.09510v1](https://arxiv.org/abs/2512.09510) | [PDF](https://arxiv.org/pdf/2512.09510.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.09510" target="_blank" class="toolbar-btn">arXiv: 2512.09510v1</a>
+    <a href="https://arxiv.org/pdf/2512.09510.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.09510v1" 
+            onclick="toggleFavorite(this, '2512.09510v1', 'ViTA-Seg: Vision Transformer for Amodal Segmentation in Robotics')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Donato Caramia, Florian T. Pokorny, Giuseppe Triggiani, Denis Ruffino, David Naso, Paolo Roberto Massenio
 

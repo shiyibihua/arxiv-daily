@@ -5,7 +5,22 @@ title: MRI-Based Brain Age Estimation with Supervised Contrastive Learning of Co
 
 # MRI-Based Brain Age Estimation with Supervised Contrastive Learning of Continuous Representation
 
-**arXiv**: [2511.22102v1](https://arxiv.org/abs/2511.22102) | [PDF](https://arxiv.org/pdf/2511.22102.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.22102" target="_blank" class="toolbar-btn">arXiv: 2511.22102v1</a>
+    <a href="https://arxiv.org/pdf/2511.22102.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.22102v1" 
+            onclick="toggleFavorite(this, '2511.22102v1', 'MRI-Based Brain Age Estimation with Supervised Contrastive Learning of Continuous Representation')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Simon Joseph Clément Crête, Marta Kersten-Oertel, Yiming Xiao
 

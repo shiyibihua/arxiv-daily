@@ -5,7 +5,22 @@ title: BIM-Discrepancy-Driven Active Sensing for Risk-Aware UAV-UGV Navigation
 
 # BIM-Discrepancy-Driven Active Sensing for Risk-Aware UAV-UGV Navigation
 
-**arXiv**: [2511.14037v1](https://arxiv.org/abs/2511.14037) | [PDF](https://arxiv.org/pdf/2511.14037.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.14037" target="_blank" class="toolbar-btn">arXiv: 2511.14037v1</a>
+    <a href="https://arxiv.org/pdf/2511.14037.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.14037v1" 
+            onclick="toggleFavorite(this, '2511.14037v1', 'BIM-Discrepancy-Driven Active Sensing for Risk-Aware UAV-UGV Navigation')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Hesam Mojtahedi, Reza Akhavian
 

@@ -5,7 +5,22 @@ title: Beyond Softmax: Dual-Branch Sigmoid Architecture for Accurate Class Activ
 
 # Beyond Softmax: Dual-Branch Sigmoid Architecture for Accurate Class Activation Maps
 
-**arXiv**: [2511.05590v1](https://arxiv.org/abs/2511.05590) | [PDF](https://arxiv.org/pdf/2511.05590.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.05590" target="_blank" class="toolbar-btn">arXiv: 2511.05590v1</a>
+    <a href="https://arxiv.org/pdf/2511.05590.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.05590v1" 
+            onclick="toggleFavorite(this, '2511.05590v1', 'Beyond Softmax: Dual-Branch Sigmoid Architecture for Accurate Class Activation Maps')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Yoojin Oh, Junhyug Noh
 

@@ -5,7 +5,22 @@ title: AERMANI-VLM: Structured Prompting and Reasoning for Aerial Manipulation w
 
 # AERMANI-VLM: Structured Prompting and Reasoning for Aerial Manipulation with Vision Language Models
 
-**arXiv**: [2511.01472v1](https://arxiv.org/abs/2511.01472) | [PDF](https://arxiv.org/pdf/2511.01472.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.01472" target="_blank" class="toolbar-btn">arXiv: 2511.01472v1</a>
+    <a href="https://arxiv.org/pdf/2511.01472.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.01472v1" 
+            onclick="toggleFavorite(this, '2511.01472v1', 'AERMANI-VLM: Structured Prompting and Reasoning for Aerial Manipulation with Vision Language Models')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Sarthak Mishra, Rishabh Dev Yadav, Avirup Das, Saksham Gupta, Wei Pan, Spandan Roy
 

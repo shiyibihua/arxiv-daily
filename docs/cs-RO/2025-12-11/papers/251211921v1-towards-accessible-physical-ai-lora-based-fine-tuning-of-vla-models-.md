@@ -5,7 +5,22 @@ title: Towards Accessible Physical AI: LoRA-Based Fine-Tuning of VLA Models for 
 
 # Towards Accessible Physical AI: LoRA-Based Fine-Tuning of VLA Models for Real-World Robot Control
 
-**arXiv**: [2512.11921v1](https://arxiv.org/abs/2512.11921) | [PDF](https://arxiv.org/pdf/2512.11921.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.11921" target="_blank" class="toolbar-btn">arXiv: 2512.11921v1</a>
+    <a href="https://arxiv.org/pdf/2512.11921.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.11921v1" 
+            onclick="toggleFavorite(this, '2512.11921v1', 'Towards Accessible Physical AI: LoRA-Based Fine-Tuning of VLA Models for Real-World Robot Control')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Abdullah Yahya Abdullah Omaisan, Ibrahim Sheikh Mohamed
 

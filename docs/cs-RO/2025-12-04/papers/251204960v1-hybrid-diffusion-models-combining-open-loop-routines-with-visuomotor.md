@@ -5,7 +5,22 @@ title: Hybrid-Diffusion Models: Combining Open-loop Routines with Visuomotor Dif
 
 # Hybrid-Diffusion Models: Combining Open-loop Routines with Visuomotor Diffusion Policies
 
-**arXiv**: [2512.04960v1](https://arxiv.org/abs/2512.04960) | [PDF](https://arxiv.org/pdf/2512.04960.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.04960" target="_blank" class="toolbar-btn">arXiv: 2512.04960v1</a>
+    <a href="https://arxiv.org/pdf/2512.04960.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.04960v1" 
+            onclick="toggleFavorite(this, '2512.04960v1', 'Hybrid-Diffusion Models: Combining Open-loop Routines with Visuomotor Diffusion Policies')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Jonne Van Haastregt, Bastian Orthmann, Michael C. Welle, Yuchong Zhang, Danica Kragic
 

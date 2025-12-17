@@ -5,7 +5,22 @@ title: Inference-time Stochastic Refinement of GRU-Normalizing Flow for Real-tim
 
 # Inference-time Stochastic Refinement of GRU-Normalizing Flow for Real-time Video Motion Transfer
 
-**arXiv**: [2512.04282v1](https://arxiv.org/abs/2512.04282) | [PDF](https://arxiv.org/pdf/2512.04282.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.04282" target="_blank" class="toolbar-btn">arXiv: 2512.04282v1</a>
+    <a href="https://arxiv.org/pdf/2512.04282.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.04282v1" 
+            onclick="toggleFavorite(this, '2512.04282v1', 'Inference-time Stochastic Refinement of GRU-Normalizing Flow for Real-time Video Motion Transfer')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Tasmiah Haque, Srinjoy Das
 

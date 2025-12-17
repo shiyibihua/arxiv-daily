@@ -5,7 +5,22 @@ title: Perceptual Taxonomy: Evaluating and Guiding Hierarchical Scene Reasoning 
 
 # Perceptual Taxonomy: Evaluating and Guiding Hierarchical Scene Reasoning in Vision-Language Models
 
-**arXiv**: [2511.19526v1](https://arxiv.org/abs/2511.19526) | [PDF](https://arxiv.org/pdf/2511.19526.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.19526" target="_blank" class="toolbar-btn">arXiv: 2511.19526v1</a>
+    <a href="https://arxiv.org/pdf/2511.19526.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.19526v1" 
+            onclick="toggleFavorite(this, '2511.19526v1', 'Perceptual Taxonomy: Evaluating and Guiding Hierarchical Scene Reasoning in Vision-Language Models')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Jonathan Lee, Xingrui Wang, Jiawei Peng, Luoxin Ye, Zehan Zheng, Tiezheng Zhang, Tao Wang, Wufei Ma, Siyi Chen, Yu-Cheng Chou, Prakhar Kaushik, Alan Yuille
 

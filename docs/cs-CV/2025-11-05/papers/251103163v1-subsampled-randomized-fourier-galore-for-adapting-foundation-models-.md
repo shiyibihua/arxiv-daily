@@ -5,7 +5,22 @@ title: Subsampled Randomized Fourier GaLore for Adapting Foundation Models in De
 
 # Subsampled Randomized Fourier GaLore for Adapting Foundation Models in Depth-Driven Liver Landmark Segmentation
 
-**arXiv**: [2511.03163v1](https://arxiv.org/abs/2511.03163) | [PDF](https://arxiv.org/pdf/2511.03163.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.03163" target="_blank" class="toolbar-btn">arXiv: 2511.03163v1</a>
+    <a href="https://arxiv.org/pdf/2511.03163.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.03163v1" 
+            onclick="toggleFavorite(this, '2511.03163v1', 'Subsampled Randomized Fourier GaLore for Adapting Foundation Models in Depth-Driven Liver Landmark Segmentation')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Yun-Chen Lin, Jiayuan Huang, Hanyuan Zhang, Sergi Kavtaradze, Matthew J. Clarkson, Mobarak I. Hoque
 

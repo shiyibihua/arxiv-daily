@@ -5,7 +5,22 @@ title: HOTFLoc++: End-to-End Hierarchical LiDAR Place Recognition, Re-Ranking, a
 
 # HOTFLoc++: End-to-End Hierarchical LiDAR Place Recognition, Re-Ranking, and 6-DoF Metric Localisation in Forests
 
-**arXiv**: [2511.09170v1](https://arxiv.org/abs/2511.09170) | [PDF](https://arxiv.org/pdf/2511.09170.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.09170" target="_blank" class="toolbar-btn">arXiv: 2511.09170v1</a>
+    <a href="https://arxiv.org/pdf/2511.09170.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.09170v1" 
+            onclick="toggleFavorite(this, '2511.09170v1', 'HOTFLoc++: End-to-End Hierarchical LiDAR Place Recognition, Re-Ranking, and 6-DoF Metric Localisation in Forests')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Ethan Griffiths, Maryam Haghighat, Simon Denman, Clinton Fookes, Milad Ramezani
 

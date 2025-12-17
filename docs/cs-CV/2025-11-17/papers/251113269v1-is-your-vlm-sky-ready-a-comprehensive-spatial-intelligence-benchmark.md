@@ -5,7 +5,22 @@ title: Is your VLM Sky-Ready? A Comprehensive Spatial Intelligence Benchmark for
 
 # Is your VLM Sky-Ready? A Comprehensive Spatial Intelligence Benchmark for UAV Navigation
 
-**arXiv**: [2511.13269v1](https://arxiv.org/abs/2511.13269) | [PDF](https://arxiv.org/pdf/2511.13269.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.13269" target="_blank" class="toolbar-btn">arXiv: 2511.13269v1</a>
+    <a href="https://arxiv.org/pdf/2511.13269.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.13269v1" 
+            onclick="toggleFavorite(this, '2511.13269v1', 'Is your VLM Sky-Ready? A Comprehensive Spatial Intelligence Benchmark for UAV Navigation')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Lingfeng Zhang, Yuchen Zhang, Hongsheng Li, Haoxiang Fu, Yingbo Tang, Hangjun Ye, Long Chen, Xiaojun Liang, Xiaoshuai Hao, Wenbo Ding
 

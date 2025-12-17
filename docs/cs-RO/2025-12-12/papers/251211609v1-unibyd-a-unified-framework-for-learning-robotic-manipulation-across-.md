@@ -5,7 +5,22 @@ title: UniBYD: A Unified Framework for Learning Robotic Manipulation Across Embo
 
 # UniBYD: A Unified Framework for Learning Robotic Manipulation Across Embodiments Beyond Imitation of Human Demonstrations
 
-**arXiv**: [2512.11609v1](https://arxiv.org/abs/2512.11609) | [PDF](https://arxiv.org/pdf/2512.11609.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.11609" target="_blank" class="toolbar-btn">arXiv: 2512.11609v1</a>
+    <a href="https://arxiv.org/pdf/2512.11609.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.11609v1" 
+            onclick="toggleFavorite(this, '2512.11609v1', 'UniBYD: A Unified Framework for Learning Robotic Manipulation Across Embodiments Beyond Imitation of Human Demonstrations')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Tingyu Yuan, Biaoliang Guan, Wen Ye, Ziyan Tian, Yi Yang, Weijie Zhou, Yan Huang, Peng Wang, Chaoyang Zhao, Jinqiao Wang
 

@@ -5,7 +5,22 @@ title: Learning Vision-Driven Reactive Soccer Skills for Humanoid Robots
 
 # Learning Vision-Driven Reactive Soccer Skills for Humanoid Robots
 
-**arXiv**: [2511.03996v1](https://arxiv.org/abs/2511.03996) | [PDF](https://arxiv.org/pdf/2511.03996.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.03996" target="_blank" class="toolbar-btn">arXiv: 2511.03996v1</a>
+    <a href="https://arxiv.org/pdf/2511.03996.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.03996v1" 
+            onclick="toggleFavorite(this, '2511.03996v1', 'Learning Vision-Driven Reactive Soccer Skills for Humanoid Robots')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Yushi Wang, Changsheng Luo, Penghui Chen, Jianran Liu, Weijian Sun, Tong Guo, Kechang Yang, Biao Hu, Yangang Zhang, Mingguo Zhao
 

@@ -5,7 +5,22 @@ title: RemedyGS: Defend 3D Gaussian Splatting against Computation Cost Attacks
 
 # RemedyGS: Defend 3D Gaussian Splatting against Computation Cost Attacks
 
-**arXiv**: [2511.22147v1](https://arxiv.org/abs/2511.22147) | [PDF](https://arxiv.org/pdf/2511.22147.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.22147" target="_blank" class="toolbar-btn">arXiv: 2511.22147v1</a>
+    <a href="https://arxiv.org/pdf/2511.22147.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.22147v1" 
+            onclick="toggleFavorite(this, '2511.22147v1', 'RemedyGS: Defend 3D Gaussian Splatting against Computation Cost Attacks')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Yanping Li, Zhening Liu, Zijian Li, Zehong Lin, Jun Zhang
 

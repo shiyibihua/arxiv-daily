@@ -5,7 +5,22 @@ title: Masked Autoencoder Pretraining on Strong-Lensing Images for Joint Dark-Ma
 
 # Masked Autoencoder Pretraining on Strong-Lensing Images for Joint Dark-Matter Model Classification and Super-Resolution
 
-**arXiv**: [2512.06642v1](https://arxiv.org/abs/2512.06642) | [PDF](https://arxiv.org/pdf/2512.06642.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.06642" target="_blank" class="toolbar-btn">arXiv: 2512.06642v1</a>
+    <a href="https://arxiv.org/pdf/2512.06642.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.06642v1" 
+            onclick="toggleFavorite(this, '2512.06642v1', 'Masked Autoencoder Pretraining on Strong-Lensing Images for Joint Dark-Matter Model Classification and Super-Resolution')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Achmad Ardani Prasha, Clavino Ourizqi Rachmadi, Muhamad Fauzan Ibnu Syahlan, Naufal Rahfi Anugerah, Nanda Garin Raditya, Putri Amelia, Sabrina Laila Mutiara, Hilman Syachr Ramadhan
 

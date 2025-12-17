@@ -5,7 +5,22 @@ title: NORA-1.5: A Vision-Language-Action Model Trained using World Model- and A
 
 # NORA-1.5: A Vision-Language-Action Model Trained using World Model- and Action-based Preference Rewards
 
-**arXiv**: [2511.14659v1](https://arxiv.org/abs/2511.14659) | [PDF](https://arxiv.org/pdf/2511.14659.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.14659" target="_blank" class="toolbar-btn">arXiv: 2511.14659v1</a>
+    <a href="https://arxiv.org/pdf/2511.14659.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.14659v1" 
+            onclick="toggleFavorite(this, '2511.14659v1', 'NORA-1.5: A Vision-Language-Action Model Trained using World Model- and Action-based Preference Rewards')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Chia-Yu Hung, Navonil Majumder, Haoyuan Deng, Liu Renhang, Yankang Ang, Amir Zadeh, Chuan Li, Dorien Herremans, Ziwei Wang, Soujanya Poria
 

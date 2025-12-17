@@ -5,7 +5,22 @@ title: When Alignment Fails: Multimodal Adversarial Attacks on Vision-Language-A
 
 # When Alignment Fails: Multimodal Adversarial Attacks on Vision-Language-Action Models
 
-**arXiv**: [2511.16203v3](https://arxiv.org/abs/2511.16203) | [PDF](https://arxiv.org/pdf/2511.16203.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.16203" target="_blank" class="toolbar-btn">arXiv: 2511.16203v3</a>
+    <a href="https://arxiv.org/pdf/2511.16203.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.16203v3" 
+            onclick="toggleFavorite(this, '2511.16203v3', 'When Alignment Fails: Multimodal Adversarial Attacks on Vision-Language-Action Models')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Yuping Yan, Yuhan Xie, Yixin Zhang, Lingjuan Lyu, Handing Wang, Yaochu Jin
 

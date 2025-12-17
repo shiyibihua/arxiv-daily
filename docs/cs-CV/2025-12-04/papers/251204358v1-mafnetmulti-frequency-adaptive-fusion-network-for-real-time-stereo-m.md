@@ -5,7 +5,22 @@ title: MAFNet:Multi-frequency Adaptive Fusion Network for Real-time Stereo Match
 
 # MAFNet:Multi-frequency Adaptive Fusion Network for Real-time Stereo Matching
 
-**arXiv**: [2512.04358v1](https://arxiv.org/abs/2512.04358) | [PDF](https://arxiv.org/pdf/2512.04358.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.04358" target="_blank" class="toolbar-btn">arXiv: 2512.04358v1</a>
+    <a href="https://arxiv.org/pdf/2512.04358.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.04358v1" 
+            onclick="toggleFavorite(this, '2512.04358v1', 'MAFNet:Multi-frequency Adaptive Fusion Network for Real-time Stereo Matching')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Ao Xu, Rujin Zhao, Xiong Xu, Boceng Huang, Yujia Jia, Hongfeng Long, Fuxuan Chen, Zilong Cao, Fangyuan Chen
 

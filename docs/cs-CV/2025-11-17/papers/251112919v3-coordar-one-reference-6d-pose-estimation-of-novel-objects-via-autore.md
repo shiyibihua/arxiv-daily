@@ -5,7 +5,22 @@ title: CoordAR: One-Reference 6D Pose Estimation of Novel Objects via Autoregres
 
 # CoordAR: One-Reference 6D Pose Estimation of Novel Objects via Autoregressive Coordinate Map Generation
 
-**arXiv**: [2511.12919v3](https://arxiv.org/abs/2511.12919) | [PDF](https://arxiv.org/pdf/2511.12919.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.12919" target="_blank" class="toolbar-btn">arXiv: 2511.12919v3</a>
+    <a href="https://arxiv.org/pdf/2511.12919.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.12919v3" 
+            onclick="toggleFavorite(this, '2511.12919v3', 'CoordAR: One-Reference 6D Pose Estimation of Novel Objects via Autoregressive Coordinate Map Generation')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Dexin Zuo, Ang Li, Wei Wang, Wenxian Yu, Danping Zou
 

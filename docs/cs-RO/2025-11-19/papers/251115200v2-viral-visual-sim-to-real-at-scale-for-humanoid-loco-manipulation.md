@@ -5,7 +5,22 @@ title: VIRAL: Visual Sim-to-Real at Scale for Humanoid Loco-Manipulation
 
 # VIRAL: Visual Sim-to-Real at Scale for Humanoid Loco-Manipulation
 
-**arXiv**: [2511.15200v2](https://arxiv.org/abs/2511.15200) | [PDF](https://arxiv.org/pdf/2511.15200.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.15200" target="_blank" class="toolbar-btn">arXiv: 2511.15200v2</a>
+    <a href="https://arxiv.org/pdf/2511.15200.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.15200v2" 
+            onclick="toggleFavorite(this, '2511.15200v2', 'VIRAL: Visual Sim-to-Real at Scale for Humanoid Loco-Manipulation')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Tairan He, Zi Wang, Haoru Xue, Qingwei Ben, Zhengyi Luo, Wenli Xiao, Ye Yuan, Xingye Da, Fernando Castañeda, Shankar Sastry, Changliu Liu, Guanya Shi, Linxi Fan, Yuke Zhu
 

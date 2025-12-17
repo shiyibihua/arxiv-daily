@@ -5,7 +5,22 @@ title: VISTA: A Vision and Intent-Aware Social Attention Framework for Multi-Age
 
 # VISTA: A Vision and Intent-Aware Social Attention Framework for Multi-Agent Trajectory Prediction
 
-**arXiv**: [2511.10203v1](https://arxiv.org/abs/2511.10203) | [PDF](https://arxiv.org/pdf/2511.10203.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.10203" target="_blank" class="toolbar-btn">arXiv: 2511.10203v1</a>
+    <a href="https://arxiv.org/pdf/2511.10203.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.10203v1" 
+            onclick="toggleFavorite(this, '2511.10203v1', 'VISTA: A Vision and Intent-Aware Social Attention Framework for Multi-Agent Trajectory Prediction')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Stephane Da Silva Martins, Emanuel Aldea, Sylvie Le Hégarat-Mascle
 

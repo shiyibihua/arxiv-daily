@@ -5,7 +5,22 @@ title: C3Net: Context-Contrast Network for Camouflaged Object Detection
 
 # C3Net: Context-Contrast Network for Camouflaged Object Detection
 
-**arXiv**: [2511.12627v1](https://arxiv.org/abs/2511.12627) | [PDF](https://arxiv.org/pdf/2511.12627.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.12627" target="_blank" class="toolbar-btn">arXiv: 2511.12627v1</a>
+    <a href="https://arxiv.org/pdf/2511.12627.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.12627v1" 
+            onclick="toggleFavorite(this, '2511.12627v1', 'C3Net: Context-Contrast Network for Camouflaged Object Detection')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Baber Jan, Aiman H. El-Maleh, Abdul Jabbar Siddiqui, Abdul Bais, Saeed Anwar
 

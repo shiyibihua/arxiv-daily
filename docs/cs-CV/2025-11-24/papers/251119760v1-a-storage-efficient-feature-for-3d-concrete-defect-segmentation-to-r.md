@@ -5,7 +5,22 @@ title: A Storage-Efficient Feature for 3D Concrete Defect Segmentation to Replac
 
 # A Storage-Efficient Feature for 3D Concrete Defect Segmentation to Replace Normal Vector
 
-**arXiv**: [2511.19760v1](https://arxiv.org/abs/2511.19760) | [PDF](https://arxiv.org/pdf/2511.19760.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.19760" target="_blank" class="toolbar-btn">arXiv: 2511.19760v1</a>
+    <a href="https://arxiv.org/pdf/2511.19760.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.19760v1" 
+            onclick="toggleFavorite(this, '2511.19760v1', 'A Storage-Efficient Feature for 3D Concrete Defect Segmentation to Replace Normal Vector')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Linxin Hua, Jianghua Deng, Ye Lu
 

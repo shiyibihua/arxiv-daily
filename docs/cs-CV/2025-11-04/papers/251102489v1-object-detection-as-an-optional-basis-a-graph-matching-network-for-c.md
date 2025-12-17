@@ -5,7 +5,22 @@ title: Object Detection as an Optional Basis: A Graph Matching Network for Cross
 
 # Object Detection as an Optional Basis: A Graph Matching Network for Cross-View UAV Localization
 
-**arXiv**: [2511.02489v1](https://arxiv.org/abs/2511.02489) | [PDF](https://arxiv.org/pdf/2511.02489.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.02489" target="_blank" class="toolbar-btn">arXiv: 2511.02489v1</a>
+    <a href="https://arxiv.org/pdf/2511.02489.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.02489v1" 
+            onclick="toggleFavorite(this, '2511.02489v1', 'Object Detection as an Optional Basis: A Graph Matching Network for Cross-View UAV Localization')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Tao Liu, Kan Ren, Qian Chen
 

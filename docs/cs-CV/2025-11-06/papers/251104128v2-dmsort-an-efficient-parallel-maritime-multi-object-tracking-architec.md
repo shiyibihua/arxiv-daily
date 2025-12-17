@@ -5,7 +5,22 @@ title: DMSORT: An efficient parallel maritime multi-object tracking architecture
 
 # DMSORT: An efficient parallel maritime multi-object tracking architecture for unmanned vessel platforms
 
-**arXiv**: [2511.04128v2](https://arxiv.org/abs/2511.04128) | [PDF](https://arxiv.org/pdf/2511.04128.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.04128" target="_blank" class="toolbar-btn">arXiv: 2511.04128v2</a>
+    <a href="https://arxiv.org/pdf/2511.04128.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.04128v2" 
+            onclick="toggleFavorite(this, '2511.04128v2', 'DMSORT: An efficient parallel maritime multi-object tracking architecture for unmanned vessel platforms')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Shengyu Tang, Zeyuan Lu, Jiazhi Dong, Changdong Yu, Xiaoyu Wang, Yaohui Lyu, Weihao Xia
 

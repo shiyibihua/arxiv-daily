@@ -5,7 +5,22 @@ title: Curvature-Regularized Variational Autoencoder for 3D Scene Reconstruction
 
 # Curvature-Regularized Variational Autoencoder for 3D Scene Reconstruction from Sparse Depth
 
-**arXiv**: [2512.05783v1](https://arxiv.org/abs/2512.05783) | [PDF](https://arxiv.org/pdf/2512.05783.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.05783" target="_blank" class="toolbar-btn">arXiv: 2512.05783v1</a>
+    <a href="https://arxiv.org/pdf/2512.05783.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.05783v1" 
+            onclick="toggleFavorite(this, '2512.05783v1', 'Curvature-Regularized Variational Autoencoder for 3D Scene Reconstruction from Sparse Depth')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Maryam Yousefi, Soodeh Bakhshandeh
 

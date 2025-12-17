@@ -5,7 +5,22 @@ title: BINDER: Instantly Adaptive Mobile Manipulation with Open-Vocabulary Comma
 
 # BINDER: Instantly Adaptive Mobile Manipulation with Open-Vocabulary Commands
 
-**arXiv**: [2511.22364v1](https://arxiv.org/abs/2511.22364) | [PDF](https://arxiv.org/pdf/2511.22364.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.22364" target="_blank" class="toolbar-btn">arXiv: 2511.22364v1</a>
+    <a href="https://arxiv.org/pdf/2511.22364.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.22364v1" 
+            onclick="toggleFavorite(this, '2511.22364v1', 'BINDER: Instantly Adaptive Mobile Manipulation with Open-Vocabulary Commands')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Seongwon Cho, Daechul Ahn, Donghyun Shin, Hyeonbeom Choi, San Kim, Jonghyun Choi
 

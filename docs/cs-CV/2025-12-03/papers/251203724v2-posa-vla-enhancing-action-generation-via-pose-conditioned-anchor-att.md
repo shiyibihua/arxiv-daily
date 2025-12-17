@@ -5,7 +5,22 @@ title: PosA-VLA: Enhancing Action Generation via Pose-Conditioned Anchor Attenti
 
 # PosA-VLA: Enhancing Action Generation via Pose-Conditioned Anchor Attention
 
-**arXiv**: [2512.03724v2](https://arxiv.org/abs/2512.03724) | [PDF](https://arxiv.org/pdf/2512.03724.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.03724" target="_blank" class="toolbar-btn">arXiv: 2512.03724v2</a>
+    <a href="https://arxiv.org/pdf/2512.03724.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.03724v2" 
+            onclick="toggleFavorite(this, '2512.03724v2', 'PosA-VLA: Enhancing Action Generation via Pose-Conditioned Anchor Attention')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Ziwen Li, Xin Wang, Hanlue Zhang, Runnan Chen, Runqi Lin, Xiao He, Han Huang, Yandong Guo, Fakhri Karray, Tongliang Liu, Mingming Gong
 

@@ -5,7 +5,22 @@ title: Training Multi-Image Vision Agents via End2End Reinforcement Learning
 
 # Training Multi-Image Vision Agents via End2End Reinforcement Learning
 
-**arXiv**: [2512.08980v2](https://arxiv.org/abs/2512.08980) | [PDF](https://arxiv.org/pdf/2512.08980.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.08980" target="_blank" class="toolbar-btn">arXiv: 2512.08980v2</a>
+    <a href="https://arxiv.org/pdf/2512.08980.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.08980v2" 
+            onclick="toggleFavorite(this, '2512.08980v2', 'Training Multi-Image Vision Agents via End2End Reinforcement Learning')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Chengqi Dong, Chuhuai Yue, Hang He, Rongge Mao, Fenghe Tang, S Kevin Zhou, Zekun Xu, Xiaohan Wang, Jiajun Chai, Wei Lin, Guojun Yin
 

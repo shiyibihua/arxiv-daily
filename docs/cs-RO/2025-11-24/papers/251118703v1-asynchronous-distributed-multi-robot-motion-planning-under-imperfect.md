@@ -5,7 +5,22 @@ title: Asynchronous Distributed Multi-Robot Motion Planning Under Imperfect Comm
 
 # Asynchronous Distributed Multi-Robot Motion Planning Under Imperfect Communication
 
-**arXiv**: [2511.18703v1](https://arxiv.org/abs/2511.18703) | [PDF](https://arxiv.org/pdf/2511.18703.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.18703" target="_blank" class="toolbar-btn">arXiv: 2511.18703v1</a>
+    <a href="https://arxiv.org/pdf/2511.18703.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.18703v1" 
+            onclick="toggleFavorite(this, '2511.18703v1', 'Asynchronous Distributed Multi-Robot Motion Planning Under Imperfect Communication')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Ardalan Tajbakhsh, Augustinos Saravanos, James Zhu, Evangelos A. Theodorou, Lorenz T. Biegler, Aaron M. Johnson
 

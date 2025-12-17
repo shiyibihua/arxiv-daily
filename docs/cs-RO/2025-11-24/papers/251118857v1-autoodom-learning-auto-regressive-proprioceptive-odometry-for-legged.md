@@ -5,7 +5,22 @@ title: AutoOdom: Learning Auto-regressive Proprioceptive Odometry for Legged Loc
 
 # AutoOdom: Learning Auto-regressive Proprioceptive Odometry for Legged Locomotion
 
-**arXiv**: [2511.18857v1](https://arxiv.org/abs/2511.18857) | [PDF](https://arxiv.org/pdf/2511.18857.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.18857" target="_blank" class="toolbar-btn">arXiv: 2511.18857v1</a>
+    <a href="https://arxiv.org/pdf/2511.18857.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.18857v1" 
+            onclick="toggleFavorite(this, '2511.18857v1', 'AutoOdom: Learning Auto-regressive Proprioceptive Odometry for Legged Locomotion')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Changsheng Luo, Yushi Wang, Wenhan Cai, Mingguo Zhao
 

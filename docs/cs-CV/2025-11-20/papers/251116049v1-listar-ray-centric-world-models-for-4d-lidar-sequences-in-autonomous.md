@@ -5,7 +5,22 @@ title: LiSTAR: Ray-Centric World Models for 4D LiDAR Sequences in Autonomous Dri
 
 # LiSTAR: Ray-Centric World Models for 4D LiDAR Sequences in Autonomous Driving
 
-**arXiv**: [2511.16049v1](https://arxiv.org/abs/2511.16049) | [PDF](https://arxiv.org/pdf/2511.16049.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.16049" target="_blank" class="toolbar-btn">arXiv: 2511.16049v1</a>
+    <a href="https://arxiv.org/pdf/2511.16049.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.16049v1" 
+            onclick="toggleFavorite(this, '2511.16049v1', 'LiSTAR: Ray-Centric World Models for 4D LiDAR Sequences in Autonomous Driving')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Pei Liu, Songtao Wang, Lang Zhang, Xingyue Peng, Yuandong Lyu, Jiaxin Deng, Songxin Lu, Weiliang Ma, Xueyang Zhang, Yifei Zhan, XianPeng Lang, Jun Ma
 

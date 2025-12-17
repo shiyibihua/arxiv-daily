@@ -5,7 +5,22 @@ title: PuzzlePoles: Cylindrical Fiducial Markers Based on the PuzzleBoard Patter
 
 # PuzzlePoles: Cylindrical Fiducial Markers Based on the PuzzleBoard Pattern
 
-**arXiv**: [2511.19448v1](https://arxiv.org/abs/2511.19448) | [PDF](https://arxiv.org/pdf/2511.19448.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.19448" target="_blank" class="toolbar-btn">arXiv: 2511.19448v1</a>
+    <a href="https://arxiv.org/pdf/2511.19448.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.19448v1" 
+            onclick="toggleFavorite(this, '2511.19448v1', 'PuzzlePoles: Cylindrical Fiducial Markers Based on the PuzzleBoard Pattern')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Juri Zach, Peer Stelldinger
 

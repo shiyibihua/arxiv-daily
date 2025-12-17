@@ -5,7 +5,22 @@ title: PartDiffuser: Part-wise 3D Mesh Generation via Discrete Diffusion
 
 # PartDiffuser: Part-wise 3D Mesh Generation via Discrete Diffusion
 
-**arXiv**: [2511.18801v1](https://arxiv.org/abs/2511.18801) | [PDF](https://arxiv.org/pdf/2511.18801.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.18801" target="_blank" class="toolbar-btn">arXiv: 2511.18801v1</a>
+    <a href="https://arxiv.org/pdf/2511.18801.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.18801v1" 
+            onclick="toggleFavorite(this, '2511.18801v1', 'PartDiffuser: Part-wise 3D Mesh Generation via Discrete Diffusion')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Yichen Yang, Hong Li, Haodong Zhu, Linin Yang, Guojun Lei, Sheng Xu, Baochang Zhang
 

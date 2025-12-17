@@ -5,7 +5,22 @@ title: RealD$^2$iff: Bridging Real-World Gap in Robot Manipulation via Depth Dif
 
 # RealD$^2$iff: Bridging Real-World Gap in Robot Manipulation via Depth Diffusion
 
-**arXiv**: [2511.22505v2](https://arxiv.org/abs/2511.22505) | [PDF](https://arxiv.org/pdf/2511.22505.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.22505" target="_blank" class="toolbar-btn">arXiv: 2511.22505v2</a>
+    <a href="https://arxiv.org/pdf/2511.22505.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.22505v2" 
+            onclick="toggleFavorite(this, '2511.22505v2', 'RealD$^2$iff: Bridging Real-World Gap in Robot Manipulation via Depth Diffusion')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Xiujian Liang, Jiacheng Liu, Mingyang Sun, Qichen He, Cewu Lu, Jianhua Sun
 

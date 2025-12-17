@@ -5,7 +5,22 @@ title: RoMa v2: Harder Better Faster Denser Feature Matching
 
 # RoMa v2: Harder Better Faster Denser Feature Matching
 
-**arXiv**: [2511.15706v2](https://arxiv.org/abs/2511.15706) | [PDF](https://arxiv.org/pdf/2511.15706.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.15706" target="_blank" class="toolbar-btn">arXiv: 2511.15706v2</a>
+    <a href="https://arxiv.org/pdf/2511.15706.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.15706v2" 
+            onclick="toggleFavorite(this, '2511.15706v2', 'RoMa v2: Harder Better Faster Denser Feature Matching')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Johan Edstedt, David Nordström, Yushan Zhang, Georg Bökman, Jonathan Astermark, Viktor Larsson, Anders Heyden, Fredrik Kahl, Mårten Wadenbäck, Michael Felsberg
 

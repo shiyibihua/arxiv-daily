@@ -5,7 +5,22 @@ title: Cross Modal Fine-Grained Alignment via Granularity-Aware and Region-Uncer
 
 # Cross Modal Fine-Grained Alignment via Granularity-Aware and Region-Uncertain Modeling
 
-**arXiv**: [2511.07710v3](https://arxiv.org/abs/2511.07710) | [PDF](https://arxiv.org/pdf/2511.07710.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.07710" target="_blank" class="toolbar-btn">arXiv: 2511.07710v3</a>
+    <a href="https://arxiv.org/pdf/2511.07710.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.07710v3" 
+            onclick="toggleFavorite(this, '2511.07710v3', 'Cross Modal Fine-Grained Alignment via Granularity-Aware and Region-Uncertain Modeling')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Jiale Liu, Haoming Zhou, Yishu Liu, Bingzhi Chen, Yuncheng Jiang
 

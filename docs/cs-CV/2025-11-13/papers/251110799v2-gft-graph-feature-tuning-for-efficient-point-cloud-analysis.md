@@ -5,7 +5,22 @@ title: GFT: Graph Feature Tuning for Efficient Point Cloud Analysis
 
 # GFT: Graph Feature Tuning for Efficient Point Cloud Analysis
 
-**arXiv**: [2511.10799v2](https://arxiv.org/abs/2511.10799) | [PDF](https://arxiv.org/pdf/2511.10799.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.10799" target="_blank" class="toolbar-btn">arXiv: 2511.10799v2</a>
+    <a href="https://arxiv.org/pdf/2511.10799.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.10799v2" 
+            onclick="toggleFavorite(this, '2511.10799v2', 'GFT: Graph Feature Tuning for Efficient Point Cloud Analysis')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Manish Dhakal, Venkat R. Dasari, Rajshekhar Sunderraman, Yi Ding
 

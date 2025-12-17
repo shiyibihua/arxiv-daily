@@ -5,7 +5,22 @@ title: A Shared-Autonomy Construction Robotic System for Overhead Works
 
 # A Shared-Autonomy Construction Robotic System for Overhead Works
 
-**arXiv**: [2511.09695v1](https://arxiv.org/abs/2511.09695) | [PDF](https://arxiv.org/pdf/2511.09695.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.09695" target="_blank" class="toolbar-btn">arXiv: 2511.09695v1</a>
+    <a href="https://arxiv.org/pdf/2511.09695.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.09695v1" 
+            onclick="toggleFavorite(this, '2511.09695v1', 'A Shared-Autonomy Construction Robotic System for Overhead Works')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: David Minkwan Kim, K. M. Brian Lee, Yong Hyeok Seo, Nikola Raicevic, Runfa Blark Li, Kehan Long, Chan Seon Yoon, Dong Min Kang, Byeong Jo Lim, Young Pyoung Kim, Nikolay Atanasov, Truong Nguyen, Se Woong Jun, Young Wook Kim
 

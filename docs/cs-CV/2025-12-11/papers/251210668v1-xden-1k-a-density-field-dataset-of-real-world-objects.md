@@ -5,7 +5,22 @@ title: XDen-1K: A Density Field Dataset of Real-World Objects
 
 # XDen-1K: A Density Field Dataset of Real-World Objects
 
-**arXiv**: [2512.10668v1](https://arxiv.org/abs/2512.10668) | [PDF](https://arxiv.org/pdf/2512.10668.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.10668" target="_blank" class="toolbar-btn">arXiv: 2512.10668v1</a>
+    <a href="https://arxiv.org/pdf/2512.10668.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.10668v1" 
+            onclick="toggleFavorite(this, '2512.10668v1', 'XDen-1K: A Density Field Dataset of Real-World Objects')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Jingxuan Zhang, Tianqi Yu, Yatu Zhang, Jinze Wu, Kaixin Yao, Jingyang Liu, Yuyao Zhang, Jiayuan Gu, Jingyi Yu
 

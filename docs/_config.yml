@@ -1,5 +1,4 @@
-# 不使用主题，完全使用自定义布局
-baseurl: /arxiv-daily
+theme: jekyll-theme-cayman
 markdown: kramdown
 kramdown:
   input: GFM

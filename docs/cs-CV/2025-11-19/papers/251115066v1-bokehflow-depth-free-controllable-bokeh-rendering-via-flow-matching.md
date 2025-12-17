@@ -5,7 +5,22 @@ title: BokehFlow: Depth-Free Controllable Bokeh Rendering via Flow Matching
 
 # BokehFlow: Depth-Free Controllable Bokeh Rendering via Flow Matching
 
-**arXiv**: [2511.15066v1](https://arxiv.org/abs/2511.15066) | [PDF](https://arxiv.org/pdf/2511.15066.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.15066" target="_blank" class="toolbar-btn">arXiv: 2511.15066v1</a>
+    <a href="https://arxiv.org/pdf/2511.15066.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.15066v1" 
+            onclick="toggleFavorite(this, '2511.15066v1', 'BokehFlow: Depth-Free Controllable Bokeh Rendering via Flow Matching')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Yachuan Huang, Xianrui Luo, Qiwen Wang, Liao Shen, Jiaqi Li, Huiqiang Sun, Zihao Huang, Wei Jiang, Zhiguo Cao
 

@@ -5,7 +5,22 @@ title: LeAD-M3D: Leveraging Asymmetric Distillation for Real-time Monocular 3D D
 
 # LeAD-M3D: Leveraging Asymmetric Distillation for Real-time Monocular 3D Detection
 
-**arXiv**: [2512.05663v1](https://arxiv.org/abs/2512.05663) | [PDF](https://arxiv.org/pdf/2512.05663.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.05663" target="_blank" class="toolbar-btn">arXiv: 2512.05663v1</a>
+    <a href="https://arxiv.org/pdf/2512.05663.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.05663v1" 
+            onclick="toggleFavorite(this, '2512.05663v1', 'LeAD-M3D: Leveraging Asymmetric Distillation for Real-time Monocular 3D Detection')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Johannes Meier, Jonathan Michel, Oussema Dhaouadi, Yung-Hsu Yang, Christoph Reich, Zuria Bauer, Stefan Roth, Marc Pollefeys, Jacques Kaiser, Daniel Cremers
 

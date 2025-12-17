@@ -5,7 +5,22 @@ title: DINO-MX: A Modular & Flexible Framework for Self-Supervised Learning
 
 # DINO-MX: A Modular & Flexible Framework for Self-Supervised Learning
 
-**arXiv**: [2511.01610v1](https://arxiv.org/abs/2511.01610) | [PDF](https://arxiv.org/pdf/2511.01610.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.01610" target="_blank" class="toolbar-btn">arXiv: 2511.01610v1</a>
+    <a href="https://arxiv.org/pdf/2511.01610.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.01610v1" 
+            onclick="toggleFavorite(this, '2511.01610v1', 'DINO-MX: A Modular & Flexible Framework for Self-Supervised Learning')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Mahmut Selman Gokmen, Cody Bumgardner
 

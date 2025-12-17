@@ -5,7 +5,22 @@ title: XR-1: Towards Versatile Vision-Language-Action Models via Learning Unifie
 
 # XR-1: Towards Versatile Vision-Language-Action Models via Learning Unified Vision-Motion Representations
 
-**arXiv**: [2511.02776v1](https://arxiv.org/abs/2511.02776) | [PDF](https://arxiv.org/pdf/2511.02776.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.02776" target="_blank" class="toolbar-btn">arXiv: 2511.02776v1</a>
+    <a href="https://arxiv.org/pdf/2511.02776.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.02776v1" 
+            onclick="toggleFavorite(this, '2511.02776v1', 'XR-1: Towards Versatile Vision-Language-Action Models via Learning Unified Vision-Motion Representations')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Shichao Fan, Kun Wu, Zhengping Che, Xinhua Wang, Di Wu, Fei Liao, Ning Liu, Yixue Zhang, Zhen Zhao, Zhiyuan Xu, Meng Li, Qingjie Liu, Shanghang Zhang, Min Wan, Jian Tang
 

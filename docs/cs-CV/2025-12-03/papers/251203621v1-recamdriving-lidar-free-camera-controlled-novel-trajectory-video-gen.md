@@ -5,7 +5,22 @@ title: ReCamDriving: LiDAR-Free Camera-Controlled Novel Trajectory Video Generat
 
 # ReCamDriving: LiDAR-Free Camera-Controlled Novel Trajectory Video Generation
 
-**arXiv**: [2512.03621v1](https://arxiv.org/abs/2512.03621) | [PDF](https://arxiv.org/pdf/2512.03621.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.03621" target="_blank" class="toolbar-btn">arXiv: 2512.03621v1</a>
+    <a href="https://arxiv.org/pdf/2512.03621.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.03621v1" 
+            onclick="toggleFavorite(this, '2512.03621v1', 'ReCamDriving: LiDAR-Free Camera-Controlled Novel Trajectory Video Generation')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Yaokun Li, Shuaixian Wang, Mantang Guo, Jiehui Huang, Taojun Ding, Mu Hu, Kaixuan Wang, Shaojie Shen, Guang Tan
 

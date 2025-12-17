@@ -5,7 +5,22 @@ title: DoGCLR: Dominance-Game Contrastive Learning Network for Skeleton-Based Ac
 
 # DoGCLR: Dominance-Game Contrastive Learning Network for Skeleton-Based Action Recognition
 
-**arXiv**: [2511.14179v2](https://arxiv.org/abs/2511.14179) | [PDF](https://arxiv.org/pdf/2511.14179.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.14179" target="_blank" class="toolbar-btn">arXiv: 2511.14179v2</a>
+    <a href="https://arxiv.org/pdf/2511.14179.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.14179v2" 
+            onclick="toggleFavorite(this, '2511.14179v2', 'DoGCLR: Dominance-Game Contrastive Learning Network for Skeleton-Based Action Recognition')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Yanshan Li, Ke Ma, Miaomiao Wei, Linhui Dai
 

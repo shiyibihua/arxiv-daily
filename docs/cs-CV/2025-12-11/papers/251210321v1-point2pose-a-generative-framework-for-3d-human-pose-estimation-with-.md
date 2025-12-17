@@ -5,7 +5,22 @@ title: Point2Pose: A Generative Framework for 3D Human Pose Estimation with Mult
 
 # Point2Pose: A Generative Framework for 3D Human Pose Estimation with Multi-View Point Cloud Dataset
 
-**arXiv**: [2512.10321v1](https://arxiv.org/abs/2512.10321) | [PDF](https://arxiv.org/pdf/2512.10321.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.10321" target="_blank" class="toolbar-btn">arXiv: 2512.10321v1</a>
+    <a href="https://arxiv.org/pdf/2512.10321.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.10321v1" 
+            onclick="toggleFavorite(this, '2512.10321v1', 'Point2Pose: A Generative Framework for 3D Human Pose Estimation with Multi-View Point Cloud Dataset')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Hyunsoo Lee, Daeum Jeon, Hyeokjae Oh
 

@@ -5,7 +5,22 @@ title: You Only Train Once (YOTO): A Retraining-Free Object Detection Framework
 
 # You Only Train Once (YOTO): A Retraining-Free Object Detection Framework
 
-**arXiv**: [2512.04888v2](https://arxiv.org/abs/2512.04888) | [PDF](https://arxiv.org/pdf/2512.04888.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.04888" target="_blank" class="toolbar-btn">arXiv: 2512.04888v2</a>
+    <a href="https://arxiv.org/pdf/2512.04888.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.04888v2" 
+            onclick="toggleFavorite(this, '2512.04888v2', 'You Only Train Once (YOTO): A Retraining-Free Object Detection Framework')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Priyanto Hidayatullah, Nurjannah Syakrani, Yudi Widhiyasana, Muhammad Rizqi Sholahuddin, Refdinal Tubagus, Zahri Al Adzani Hidayat, Hanri Fajar Ramadhan, Dafa Alfarizki Pratama, Farhan Muhammad Yasin
 

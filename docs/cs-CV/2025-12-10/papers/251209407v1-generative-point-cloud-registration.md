@@ -5,7 +5,22 @@ title: Generative Point Cloud Registration
 
 # Generative Point Cloud Registration
 
-**arXiv**: [2512.09407v1](https://arxiv.org/abs/2512.09407) | [PDF](https://arxiv.org/pdf/2512.09407.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.09407" target="_blank" class="toolbar-btn">arXiv: 2512.09407v1</a>
+    <a href="https://arxiv.org/pdf/2512.09407.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.09407v1" 
+            onclick="toggleFavorite(this, '2512.09407v1', 'Generative Point Cloud Registration')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Haobo Jiang, Jin Xie, Jian Yang, Liang Yu, Jianmin Zheng
 

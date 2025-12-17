@@ -5,7 +5,22 @@ title: SFHand: A Streaming Framework for Language-guided 3D Hand Forecasting and
 
 # SFHand: A Streaming Framework for Language-guided 3D Hand Forecasting and Embodied Manipulation
 
-**arXiv**: [2511.18127v1](https://arxiv.org/abs/2511.18127) | [PDF](https://arxiv.org/pdf/2511.18127.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.18127" target="_blank" class="toolbar-btn">arXiv: 2511.18127v1</a>
+    <a href="https://arxiv.org/pdf/2511.18127.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.18127v1" 
+            onclick="toggleFavorite(this, '2511.18127v1', 'SFHand: A Streaming Framework for Language-guided 3D Hand Forecasting and Embodied Manipulation')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Ruicong Liu, Yifei Huang, Liangyang Ouyang, Caixin Kang, Yoichi Sato
 

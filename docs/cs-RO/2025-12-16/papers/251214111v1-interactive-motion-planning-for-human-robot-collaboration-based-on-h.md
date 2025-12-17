@@ -5,7 +5,22 @@ title: Interactive Motion Planning for Human-Robot Collaboration Based on Human-
 
 # Interactive Motion Planning for Human-Robot Collaboration Based on Human-Centric Configuration Space Ergonomic Field
 
-**arXiv**: [2512.14111v1](https://arxiv.org/abs/2512.14111) | [PDF](https://arxiv.org/pdf/2512.14111.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.14111" target="_blank" class="toolbar-btn">arXiv: 2512.14111v1</a>
+    <a href="https://arxiv.org/pdf/2512.14111.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.14111v1" 
+            onclick="toggleFavorite(this, '2512.14111v1', 'Interactive Motion Planning for Human-Robot Collaboration Based on Human-Centric Configuration Space Ergonomic Field')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Chenzui Li, Yiming Chen, Xi Wu, Tao Teng, Sylvain Calinon, Darwin Caldwell, Fei Chen
 

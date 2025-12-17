@@ -5,7 +5,22 @@ title: SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Contro
 
 # SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control
 
-**arXiv**: [2511.07820v2](https://arxiv.org/abs/2511.07820) | [PDF](https://arxiv.org/pdf/2511.07820.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.07820" target="_blank" class="toolbar-btn">arXiv: 2511.07820v2</a>
+    <a href="https://arxiv.org/pdf/2511.07820.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.07820v2" 
+            onclick="toggleFavorite(this, '2511.07820v2', 'SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Zhengyi Luo, Ye Yuan, Tingwu Wang, Chenran Li, Sirui Chen, Fernando Castañeda, Zi-Ang Cao, Jiefeng Li, David Minor, Qingwei Ben, Xingye Da, Runyu Ding, Cyrus Hogg, Lina Song, Edy Lim, Eugene Jeong, Tairan He, Haoru Xue, Wenli Xiao, Zi Wang, Simon Yuen, Jan Kautz, Yan Chang, Umar Iqbal, Linxi "Jim" Fan, Yuke Zhu
 

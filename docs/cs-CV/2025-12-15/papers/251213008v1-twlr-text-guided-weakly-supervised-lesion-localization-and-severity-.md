@@ -5,7 +5,22 @@ title: TWLR: Text-Guided Weakly-Supervised Lesion Localization and Severity Regr
 
 # TWLR: Text-Guided Weakly-Supervised Lesion Localization and Severity Regression for Explainable Diabetic Retinopathy Grading
 
-**arXiv**: [2512.13008v1](https://arxiv.org/abs/2512.13008) | [PDF](https://arxiv.org/pdf/2512.13008.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.13008" target="_blank" class="toolbar-btn">arXiv: 2512.13008v1</a>
+    <a href="https://arxiv.org/pdf/2512.13008.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.13008v1" 
+            onclick="toggleFavorite(this, '2512.13008v1', 'TWLR: Text-Guided Weakly-Supervised Lesion Localization and Severity Regression for Explainable Diabetic Retinopathy Grading')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Xi Luo, Shixin Xu, Ying Xie, JianZhong Hu, Yuwei He, Yuhui Deng, Huaxiong Huang
 

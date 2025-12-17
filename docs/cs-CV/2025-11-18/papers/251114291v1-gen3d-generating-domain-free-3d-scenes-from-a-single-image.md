@@ -5,7 +5,22 @@ title: GEN3D: Generating Domain-Free 3D Scenes from a Single Image
 
 # GEN3D: Generating Domain-Free 3D Scenes from a Single Image
 
-**arXiv**: [2511.14291v1](https://arxiv.org/abs/2511.14291) | [PDF](https://arxiv.org/pdf/2511.14291.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.14291" target="_blank" class="toolbar-btn">arXiv: 2511.14291v1</a>
+    <a href="https://arxiv.org/pdf/2511.14291.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.14291v1" 
+            onclick="toggleFavorite(this, '2511.14291v1', 'GEN3D: Generating Domain-Free 3D Scenes from a Single Image')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Yuxin Zhang, Ziyu Lu, Hongbo Duan, Keyu Fan, Pengting Luo, Peiyu Zhuang, Mengyu Yang, Houde Liu
 

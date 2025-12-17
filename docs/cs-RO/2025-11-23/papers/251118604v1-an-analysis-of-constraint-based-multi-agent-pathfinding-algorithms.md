@@ -5,7 +5,22 @@ title: An Analysis of Constraint-Based Multi-Agent Pathfinding Algorithms
 
 # An Analysis of Constraint-Based Multi-Agent Pathfinding Algorithms
 
-**arXiv**: [2511.18604v1](https://arxiv.org/abs/2511.18604) | [PDF](https://arxiv.org/pdf/2511.18604.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.18604" target="_blank" class="toolbar-btn">arXiv: 2511.18604v1</a>
+    <a href="https://arxiv.org/pdf/2511.18604.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.18604v1" 
+            onclick="toggleFavorite(this, '2511.18604v1', 'An Analysis of Constraint-Based Multi-Agent Pathfinding Algorithms')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Hannah Lee, James D. Motes, Marco Morales, Nancy M. Amato
 

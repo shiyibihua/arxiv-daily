@@ -5,7 +5,22 @@ title: Towards Deploying VLA without Fine-Tuning: Plug-and-Play Inference-Time V
 
 # Towards Deploying VLA without Fine-Tuning: Plug-and-Play Inference-Time VLA Policy Steering via Embodied Evolutionary Diffusion
 
-**arXiv**: [2511.14178v1](https://arxiv.org/abs/2511.14178) | [PDF](https://arxiv.org/pdf/2511.14178.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.14178" target="_blank" class="toolbar-btn">arXiv: 2511.14178v1</a>
+    <a href="https://arxiv.org/pdf/2511.14178.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.14178v1" 
+            onclick="toggleFavorite(this, '2511.14178v1', 'Towards Deploying VLA without Fine-Tuning: Plug-and-Play Inference-Time VLA Policy Steering via Embodied Evolutionary Diffusion')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Zhuo Li, Junjia Liu, Zhipeng Dong, Tao Teng, Quentin Rouxel, Darwin Caldwell, Fei Chen
 

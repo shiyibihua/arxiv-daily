@@ -5,7 +5,22 @@ title: APEX: Action Priors Enable Efficient Exploration for Robust Motion Tracki
 
 # APEX: Action Priors Enable Efficient Exploration for Robust Motion Tracking on Legged Robots
 
-**arXiv**: [2511.09091v2](https://arxiv.org/abs/2511.09091) | [PDF](https://arxiv.org/pdf/2511.09091.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.09091" target="_blank" class="toolbar-btn">arXiv: 2511.09091v2</a>
+    <a href="https://arxiv.org/pdf/2511.09091.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.09091v2" 
+            onclick="toggleFavorite(this, '2511.09091v2', 'APEX: Action Priors Enable Efficient Exploration for Robust Motion Tracking on Legged Robots')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Shivam Sood, Laukik Nakhwa, Sun Ge, Yuhong Cao, Jin Cheng, Fatemah Zargarbashi, Taerim Yoon, Sungjoon Choi, Stelian Coros, Guillaume Sartoretti
 

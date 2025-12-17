@@ -5,7 +5,22 @@ title: Semantic-Drive: Democratizing Long-Tail Data Curation via Open-Vocabulary
 
 # Semantic-Drive: Democratizing Long-Tail Data Curation via Open-Vocabulary Grounding and Neuro-Symbolic VLM Consensus
 
-**arXiv**: [2512.12012v2](https://arxiv.org/abs/2512.12012) | [PDF](https://arxiv.org/pdf/2512.12012.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.12012" target="_blank" class="toolbar-btn">arXiv: 2512.12012v2</a>
+    <a href="https://arxiv.org/pdf/2512.12012.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.12012v2" 
+            onclick="toggleFavorite(this, '2512.12012v2', 'Semantic-Drive: Democratizing Long-Tail Data Curation via Open-Vocabulary Grounding and Neuro-Symbolic VLM Consensus')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Antonio Guillen-Perez
 

@@ -5,7 +5,22 @@ title: Koopman global linearization of contact dynamics for robot locomotion and
 
 # Koopman global linearization of contact dynamics for robot locomotion and manipulation enables elaborate control
 
-**arXiv**: [2511.06515v1](https://arxiv.org/abs/2511.06515) | [PDF](https://arxiv.org/pdf/2511.06515.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.06515" target="_blank" class="toolbar-btn">arXiv: 2511.06515v1</a>
+    <a href="https://arxiv.org/pdf/2511.06515.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.06515v1" 
+            onclick="toggleFavorite(this, '2511.06515v1', 'Koopman global linearization of contact dynamics for robot locomotion and manipulation enables elaborate control')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Cormac O'Neill, Jasmine Terrones, H. Harry Asada
 

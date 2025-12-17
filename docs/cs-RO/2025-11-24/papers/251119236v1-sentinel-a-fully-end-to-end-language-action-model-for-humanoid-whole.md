@@ -5,7 +5,22 @@ title: SENTINEL: A Fully End-to-End Language-Action Model for Humanoid Whole Bod
 
 # SENTINEL: A Fully End-to-End Language-Action Model for Humanoid Whole Body Control
 
-**arXiv**: [2511.19236v1](https://arxiv.org/abs/2511.19236) | [PDF](https://arxiv.org/pdf/2511.19236.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.19236" target="_blank" class="toolbar-btn">arXiv: 2511.19236v1</a>
+    <a href="https://arxiv.org/pdf/2511.19236.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.19236v1" 
+            onclick="toggleFavorite(this, '2511.19236v1', 'SENTINEL: A Fully End-to-End Language-Action Model for Humanoid Whole Body Control')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Yuxuan Wang, Haobin Jiang, Shiqing Yao, Ziluo Ding, Zongqing Lu
 

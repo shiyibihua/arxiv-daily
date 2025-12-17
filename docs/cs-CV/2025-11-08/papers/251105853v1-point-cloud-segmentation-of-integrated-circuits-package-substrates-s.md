@@ -5,7 +5,22 @@ title: Point Cloud Segmentation of Integrated Circuits Package Substrates Surfac
 
 # Point Cloud Segmentation of Integrated Circuits Package Substrates Surface Defects Using Causal Inference: Dataset Construction and Methodology
 
-**arXiv**: [2511.05853v1](https://arxiv.org/abs/2511.05853) | [PDF](https://arxiv.org/pdf/2511.05853.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.05853" target="_blank" class="toolbar-btn">arXiv: 2511.05853v1</a>
+    <a href="https://arxiv.org/pdf/2511.05853.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.05853v1" 
+            onclick="toggleFavorite(this, '2511.05853v1', 'Point Cloud Segmentation of Integrated Circuits Package Substrates Surface Defects Using Causal Inference: Dataset Construction and Methodology')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Bingyang Guo, Qiang Zuo, Ruiyun Yu
 

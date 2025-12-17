@@ -5,7 +5,22 @@ title: Taxonomy and Modular Tool System for Versatile and Effective Non-Prehensi
 
 # Taxonomy and Modular Tool System for Versatile and Effective Non-Prehensile Manipulations
 
-**arXiv**: [2512.11080v1](https://arxiv.org/abs/2512.11080) | [PDF](https://arxiv.org/pdf/2512.11080.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.11080" target="_blank" class="toolbar-btn">arXiv: 2512.11080v1</a>
+    <a href="https://arxiv.org/pdf/2512.11080.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.11080v1" 
+            onclick="toggleFavorite(this, '2512.11080v1', 'Taxonomy and Modular Tool System for Versatile and Effective Non-Prehensile Manipulations')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Cedric-Pascal Sommer, Robert J. Wood, Justin Werfel
 

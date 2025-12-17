@@ -5,7 +5,22 @@ title: GigaWorld-0: World Models as Data Engine to Empower Embodied AI
 
 # GigaWorld-0: World Models as Data Engine to Empower Embodied AI
 
-**arXiv**: [2511.19861v2](https://arxiv.org/abs/2511.19861) | [PDF](https://arxiv.org/pdf/2511.19861.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.19861" target="_blank" class="toolbar-btn">arXiv: 2511.19861v2</a>
+    <a href="https://arxiv.org/pdf/2511.19861.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.19861v2" 
+            onclick="toggleFavorite(this, '2511.19861v2', 'GigaWorld-0: World Models as Data Engine to Empower Embodied AI')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: GigaWorld Team, Angen Ye, Boyuan Wang, Chaojun Ni, Guan Huang, Guosheng Zhao, Haoyun Li, Jiagang Zhu, Kerui Li, Mengyuan Xu, Qiuping Deng, Siting Wang, Wenkang Qin, Xinze Chen, Xiaofeng Wang, Yankai Wang, Yu Cao, Yifan Chang, Yuan Xu, Yun Ye, Yang Wang, Yukun Zhou, Zhengyuan Zhang, Zhehao Dong, Zheng Zhu
 

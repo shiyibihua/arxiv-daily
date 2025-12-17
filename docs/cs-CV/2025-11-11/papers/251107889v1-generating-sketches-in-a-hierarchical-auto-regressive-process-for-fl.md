@@ -5,7 +5,22 @@ title: Generating Sketches in a Hierarchical Auto-Regressive Process for Flexibl
 
 # Generating Sketches in a Hierarchical Auto-Regressive Process for Flexible Sketch Drawing Manipulation at Stroke-Level
 
-**arXiv**: [2511.07889v1](https://arxiv.org/abs/2511.07889) | [PDF](https://arxiv.org/pdf/2511.07889.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.07889" target="_blank" class="toolbar-btn">arXiv: 2511.07889v1</a>
+    <a href="https://arxiv.org/pdf/2511.07889.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.07889v1" 
+            onclick="toggleFavorite(this, '2511.07889v1', 'Generating Sketches in a Hierarchical Auto-Regressive Process for Flexible Sketch Drawing Manipulation at Stroke-Level')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Sicong Zang, Shuhui Gao, Zhijun Fang
 

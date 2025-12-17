@@ -5,7 +5,22 @@ title: ImplicitRDP: An End-to-End Visual-Force Diffusion Policy with Structural 
 
 # ImplicitRDP: An End-to-End Visual-Force Diffusion Policy with Structural Slow-Fast Learning
 
-**arXiv**: [2512.10946v1](https://arxiv.org/abs/2512.10946) | [PDF](https://arxiv.org/pdf/2512.10946.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.10946" target="_blank" class="toolbar-btn">arXiv: 2512.10946v1</a>
+    <a href="https://arxiv.org/pdf/2512.10946.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.10946v1" 
+            onclick="toggleFavorite(this, '2512.10946v1', 'ImplicitRDP: An End-to-End Visual-Force Diffusion Policy with Structural Slow-Fast Learning')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Wendi Chen, Han Xue, Yi Wang, Fangyuan Zhou, Jun Lv, Yang Jin, Shirun Tang, Chuan Wen, Cewu Lu
 

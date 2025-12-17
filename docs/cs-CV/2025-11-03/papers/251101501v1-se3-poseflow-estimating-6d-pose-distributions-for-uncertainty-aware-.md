@@ -5,7 +5,22 @@ title: SE(3)-PoseFlow: Estimating 6D Pose Distributions for Uncertainty-Aware Ro
 
 # SE(3)-PoseFlow: Estimating 6D Pose Distributions for Uncertainty-Aware Robotic Manipulation
 
-**arXiv**: [2511.01501v1](https://arxiv.org/abs/2511.01501) | [PDF](https://arxiv.org/pdf/2511.01501.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.01501" target="_blank" class="toolbar-btn">arXiv: 2511.01501v1</a>
+    <a href="https://arxiv.org/pdf/2511.01501.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.01501v1" 
+            onclick="toggleFavorite(this, '2511.01501v1', 'SE(3)-PoseFlow: Estimating 6D Pose Distributions for Uncertainty-Aware Robotic Manipulation')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Yufeng Jin, Niklas Funk, Vignesh Prasad, Zechu Li, Mathias Franzius, Jan Peters, Georgia Chalvatzaki
 

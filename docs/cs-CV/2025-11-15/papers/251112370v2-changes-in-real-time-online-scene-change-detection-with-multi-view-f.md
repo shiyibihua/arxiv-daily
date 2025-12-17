@@ -5,7 +5,22 @@ title: Changes in Real Time: Online Scene Change Detection with Multi-View Fusio
 
 # Changes in Real Time: Online Scene Change Detection with Multi-View Fusion
 
-**arXiv**: [2511.12370v2](https://arxiv.org/abs/2511.12370) | [PDF](https://arxiv.org/pdf/2511.12370.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.12370" target="_blank" class="toolbar-btn">arXiv: 2511.12370v2</a>
+    <a href="https://arxiv.org/pdf/2511.12370.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.12370v2" 
+            onclick="toggleFavorite(this, '2511.12370v2', 'Changes in Real Time: Online Scene Change Detection with Multi-View Fusion')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Chamuditha Jayanga Galappaththige, Jason Lai, Lloyd Windrim, Donald Dansereau, Niko Sünderhauf, Dimity Miller
 

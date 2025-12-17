@@ -5,7 +5,22 @@ title: 3D Cal: An Open-Source Software Library for Calibrating Tactile Sensors
 
 # 3D Cal: An Open-Source Software Library for Calibrating Tactile Sensors
 
-**arXiv**: [2511.03078v2](https://arxiv.org/abs/2511.03078) | [PDF](https://arxiv.org/pdf/2511.03078.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.03078" target="_blank" class="toolbar-btn">arXiv: 2511.03078v2</a>
+    <a href="https://arxiv.org/pdf/2511.03078.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.03078v2" 
+            onclick="toggleFavorite(this, '2511.03078v2', '3D Cal: An Open-Source Software Library for Calibrating Tactile Sensors')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Rohan Kota, Kaival Shah, J. Edward Colgate, Gregory Reardon
 

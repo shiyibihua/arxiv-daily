@@ -5,7 +5,22 @@ title: Dexterous Robotic Piano Playing at Scale
 
 # Dexterous Robotic Piano Playing at Scale
 
-**arXiv**: [2511.02504v1](https://arxiv.org/abs/2511.02504) | [PDF](https://arxiv.org/pdf/2511.02504.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.02504" target="_blank" class="toolbar-btn">arXiv: 2511.02504v1</a>
+    <a href="https://arxiv.org/pdf/2511.02504.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.02504v1" 
+            onclick="toggleFavorite(this, '2511.02504v1', 'Dexterous Robotic Piano Playing at Scale')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Le Chen, Yi Zhao, Jan Schneider, Quankai Gao, Simon Guist, Cheng Qian, Juho Kannala, Bernhard Schölkopf, Joni Pajarinen, Dieter Büchler
 

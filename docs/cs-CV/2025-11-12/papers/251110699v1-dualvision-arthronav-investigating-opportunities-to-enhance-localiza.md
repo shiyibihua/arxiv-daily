@@ -5,7 +5,22 @@ title: DualVision ArthroNav: Investigating Opportunities to Enhance Localization
 
 # DualVision ArthroNav: Investigating Opportunities to Enhance Localization and Reconstruction in Image-based Arthroscopy Navigation via External Cameras
 
-**arXiv**: [2511.10699v1](https://arxiv.org/abs/2511.10699) | [PDF](https://arxiv.org/pdf/2511.10699.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.10699" target="_blank" class="toolbar-btn">arXiv: 2511.10699v1</a>
+    <a href="https://arxiv.org/pdf/2511.10699.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.10699v1" 
+            onclick="toggleFavorite(this, '2511.10699v1', 'DualVision ArthroNav: Investigating Opportunities to Enhance Localization and Reconstruction in Image-based Arthroscopy Navigation via External Cameras')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Hongchao Shu, Lalithkumar Seenivasan, Mingxu Liu, Yunseo Hwang, Yu-Chun Ku, Jonathan Knopf, Alejandro Martin-Gomez, Mehran Armand, Mathias Unberath
 

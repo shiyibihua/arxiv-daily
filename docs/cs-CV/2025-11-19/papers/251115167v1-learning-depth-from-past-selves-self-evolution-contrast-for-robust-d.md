@@ -5,7 +5,22 @@ title: Learning Depth from Past Selves: Self-Evolution Contrast for Robust Depth
 
 # Learning Depth from Past Selves: Self-Evolution Contrast for Robust Depth Estimation
 
-**arXiv**: [2511.15167v1](https://arxiv.org/abs/2511.15167) | [PDF](https://arxiv.org/pdf/2511.15167.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.15167" target="_blank" class="toolbar-btn">arXiv: 2511.15167v1</a>
+    <a href="https://arxiv.org/pdf/2511.15167.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.15167v1" 
+            onclick="toggleFavorite(this, '2511.15167v1', 'Learning Depth from Past Selves: Self-Evolution Contrast for Robust Depth Estimation')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Jing Cao, Kui Jiang, Shenyi Li, Xiaocheng Feng, Yong Huang
 

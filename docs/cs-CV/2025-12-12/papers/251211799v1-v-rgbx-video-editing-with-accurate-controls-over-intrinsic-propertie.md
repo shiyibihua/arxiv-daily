@@ -5,7 +5,22 @@ title: V-RGBX: Video Editing with Accurate Controls over Intrinsic Properties
 
 # V-RGBX: Video Editing with Accurate Controls over Intrinsic Properties
 
-**arXiv**: [2512.11799v1](https://arxiv.org/abs/2512.11799) | [PDF](https://arxiv.org/pdf/2512.11799.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.11799" target="_blank" class="toolbar-btn">arXiv: 2512.11799v1</a>
+    <a href="https://arxiv.org/pdf/2512.11799.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.11799v1" 
+            onclick="toggleFavorite(this, '2512.11799v1', 'V-RGBX: Video Editing with Accurate Controls over Intrinsic Properties')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Ye Fang, Tong Wu, Valentin Deschaintre, Duygu Ceylan, Iliyan Georgiev, Chun-Hao Paul Huang, Yiwei Hu, Xuelin Chen, Tuanfeng Yang Wang
 

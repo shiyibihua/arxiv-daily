@@ -5,7 +5,22 @@ title: One algebra for all : Geometric Algebra methods for neurosymbolic XR scen
 
 # One algebra for all : Geometric Algebra methods for neurosymbolic XR scene authoring, animation and neural rendering
 
-**arXiv**: [2511.15398v1](https://arxiv.org/abs/2511.15398) | [PDF](https://arxiv.org/pdf/2511.15398.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.15398" target="_blank" class="toolbar-btn">arXiv: 2511.15398v1</a>
+    <a href="https://arxiv.org/pdf/2511.15398.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.15398v1" 
+            onclick="toggleFavorite(this, '2511.15398v1', 'One algebra for all : Geometric Algebra methods for neurosymbolic XR scene authoring, animation and neural rendering')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Manos Kamarianakis, Antonis Protopsaltis, George Papagiannakis
 

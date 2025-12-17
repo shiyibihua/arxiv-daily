@@ -5,7 +5,22 @@ title: MIND-V: Hierarchical Video Generation for Long-Horizon Robotic Manipulati
 
 # MIND-V: Hierarchical Video Generation for Long-Horizon Robotic Manipulation with RL-based Physical Alignment
 
-**arXiv**: [2512.06628v1](https://arxiv.org/abs/2512.06628) | [PDF](https://arxiv.org/pdf/2512.06628.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.06628" target="_blank" class="toolbar-btn">arXiv: 2512.06628v1</a>
+    <a href="https://arxiv.org/pdf/2512.06628.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.06628v1" 
+            onclick="toggleFavorite(this, '2512.06628v1', 'MIND-V: Hierarchical Video Generation for Long-Horizon Robotic Manipulation with RL-based Physical Alignment')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Ruicheng Zhang, Mingyang Zhang, Jun Zhou, Zhangrui Guo, Xiaofan Liu, Zunnan Xu, Zhizhou Zhong, Puxin Yan, Haocheng Luo, Xiu Li
 

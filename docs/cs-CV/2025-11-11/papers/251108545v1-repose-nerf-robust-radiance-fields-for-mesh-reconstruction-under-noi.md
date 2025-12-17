@@ -5,7 +5,22 @@ title: RePose-NeRF: Robust Radiance Fields for Mesh Reconstruction under Noisy C
 
 # RePose-NeRF: Robust Radiance Fields for Mesh Reconstruction under Noisy Camera Poses
 
-**arXiv**: [2511.08545v1](https://arxiv.org/abs/2511.08545) | [PDF](https://arxiv.org/pdf/2511.08545.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.08545" target="_blank" class="toolbar-btn">arXiv: 2511.08545v1</a>
+    <a href="https://arxiv.org/pdf/2511.08545.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.08545v1" 
+            onclick="toggleFavorite(this, '2511.08545v1', 'RePose-NeRF: Robust Radiance Fields for Mesh Reconstruction under Noisy Camera Poses')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Sriram Srinivasan, Gautam Ramachandra
 

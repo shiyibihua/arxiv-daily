@@ -5,7 +5,22 @@ title: MirrorMamba: Towards Scalable and Robust Mirror Detection in Videos
 
 # MirrorMamba: Towards Scalable and Robust Mirror Detection in Videos
 
-**arXiv**: [2511.06716v1](https://arxiv.org/abs/2511.06716) | [PDF](https://arxiv.org/pdf/2511.06716.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.06716" target="_blank" class="toolbar-btn">arXiv: 2511.06716v1</a>
+    <a href="https://arxiv.org/pdf/2511.06716.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.06716v1" 
+            onclick="toggleFavorite(this, '2511.06716v1', 'MirrorMamba: Towards Scalable and Robust Mirror Detection in Videos')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Rui Song, Jiaying Lin, Rynson W. H. Lau
 

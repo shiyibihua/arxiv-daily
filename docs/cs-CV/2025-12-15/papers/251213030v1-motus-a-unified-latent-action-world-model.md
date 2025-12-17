@@ -5,7 +5,22 @@ title: Motus: A Unified Latent Action World Model
 
 # Motus: A Unified Latent Action World Model
 
-**arXiv**: [2512.13030v1](https://arxiv.org/abs/2512.13030) | [PDF](https://arxiv.org/pdf/2512.13030.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.13030" target="_blank" class="toolbar-btn">arXiv: 2512.13030v1</a>
+    <a href="https://arxiv.org/pdf/2512.13030.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.13030v1" 
+            onclick="toggleFavorite(this, '2512.13030v1', 'Motus: A Unified Latent Action World Model')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Hongzhe Bi, Hengkai Tan, Shenghao Xie, Zeyuan Wang, Shuhe Huang, Haitian Liu, Ruowen Zhao, Yao Feng, Chendong Xiang, Yinze Rong, Hongyan Zhao, Hanyu Liu, Zhizhong Su, Lei Ma, Hang Su, Jun Zhu
 

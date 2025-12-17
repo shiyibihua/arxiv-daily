@@ -5,7 +5,22 @@ title: Moment-Based 3D Gaussian Splatting: Resolving Volumetric Occlusion with O
 
 # Moment-Based 3D Gaussian Splatting: Resolving Volumetric Occlusion with Order-Independent Transmittance
 
-**arXiv**: [2512.11800v1](https://arxiv.org/abs/2512.11800) | [PDF](https://arxiv.org/pdf/2512.11800.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.11800" target="_blank" class="toolbar-btn">arXiv: 2512.11800v1</a>
+    <a href="https://arxiv.org/pdf/2512.11800.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.11800v1" 
+            onclick="toggleFavorite(this, '2512.11800v1', 'Moment-Based 3D Gaussian Splatting: Resolving Volumetric Occlusion with Order-Independent Transmittance')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Jan U. Müller, Robin Tim Landsgesell, Leif Van Holland, Patrick Stotko, Reinhard Klein
 

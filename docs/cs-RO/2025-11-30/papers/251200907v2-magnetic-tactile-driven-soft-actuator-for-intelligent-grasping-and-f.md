@@ -5,7 +5,22 @@ title: Magnetic Tactile-Driven Soft Actuator for Intelligent Grasping and Firmne
 
 # Magnetic Tactile-Driven Soft Actuator for Intelligent Grasping and Firmness Evaluation
 
-**arXiv**: [2512.00907v2](https://arxiv.org/abs/2512.00907) | [PDF](https://arxiv.org/pdf/2512.00907.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.00907" target="_blank" class="toolbar-btn">arXiv: 2512.00907v2</a>
+    <a href="https://arxiv.org/pdf/2512.00907.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.00907v2" 
+            onclick="toggleFavorite(this, '2512.00907v2', 'Magnetic Tactile-Driven Soft Actuator for Intelligent Grasping and Firmness Evaluation')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Chengjin Du, Federico Bernabei, Zhengyin Du, Sergio Decherchi, Matteo Lo Preti, Lucia Beccai
 

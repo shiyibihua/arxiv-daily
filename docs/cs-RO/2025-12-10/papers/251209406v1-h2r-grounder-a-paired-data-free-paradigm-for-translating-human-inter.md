@@ -5,7 +5,22 @@ title: H2R-Grounder: A Paired-Data-Free Paradigm for Translating Human Interacti
 
 # H2R-Grounder: A Paired-Data-Free Paradigm for Translating Human Interaction Videos into Physically Grounded Robot Videos
 
-**arXiv**: [2512.09406v1](https://arxiv.org/abs/2512.09406) | [PDF](https://arxiv.org/pdf/2512.09406.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.09406" target="_blank" class="toolbar-btn">arXiv: 2512.09406v1</a>
+    <a href="https://arxiv.org/pdf/2512.09406.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.09406v1" 
+            onclick="toggleFavorite(this, '2512.09406v1', 'H2R-Grounder: A Paired-Data-Free Paradigm for Translating Human Interaction Videos into Physically Grounded Robot Videos')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Hai Ci, Xiaokang Liu, Pei Yang, Yiren Song, Mike Zheng Shou
 

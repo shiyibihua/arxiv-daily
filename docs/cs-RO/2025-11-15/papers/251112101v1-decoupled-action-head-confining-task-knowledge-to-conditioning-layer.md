@@ -5,7 +5,22 @@ title: Decoupled Action Head: Confining Task Knowledge to Conditioning Layers
 
 # Decoupled Action Head: Confining Task Knowledge to Conditioning Layers
 
-**arXiv**: [2511.12101v1](https://arxiv.org/abs/2511.12101) | [PDF](https://arxiv.org/pdf/2511.12101.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.12101" target="_blank" class="toolbar-btn">arXiv: 2511.12101v1</a>
+    <a href="https://arxiv.org/pdf/2511.12101.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.12101v1" 
+            onclick="toggleFavorite(this, '2511.12101v1', 'Decoupled Action Head: Confining Task Knowledge to Conditioning Layers')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Jian Zhou, Sihao Lin, Shuai Fu, Qi WU
 

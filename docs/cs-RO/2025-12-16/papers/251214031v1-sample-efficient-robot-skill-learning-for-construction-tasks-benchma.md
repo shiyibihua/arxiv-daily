@@ -5,7 +5,22 @@ title: Sample-Efficient Robot Skill Learning for Construction Tasks: Benchmarkin
 
 # Sample-Efficient Robot Skill Learning for Construction Tasks: Benchmarking Hierarchical Reinforcement Learning and Vision-Language-Action VLA Model
 
-**arXiv**: [2512.14031v1](https://arxiv.org/abs/2512.14031) | [PDF](https://arxiv.org/pdf/2512.14031.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2512.14031" target="_blank" class="toolbar-btn">arXiv: 2512.14031v1</a>
+    <a href="https://arxiv.org/pdf/2512.14031.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2512.14031v1" 
+            onclick="toggleFavorite(this, '2512.14031v1', 'Sample-Efficient Robot Skill Learning for Construction Tasks: Benchmarking Hierarchical Reinforcement Learning and Vision-Language-Action VLA Model')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Zhaofeng Hu, Hongrui Yu, Vaidhyanathan Chandramouli, Ci-Jyun Liang
 

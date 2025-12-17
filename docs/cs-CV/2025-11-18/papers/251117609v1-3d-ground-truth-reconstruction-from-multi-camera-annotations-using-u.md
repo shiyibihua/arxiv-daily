@@ -5,7 +5,22 @@ title: 3D Ground Truth Reconstruction from Multi-Camera Annotations Using UKF
 
 # 3D Ground Truth Reconstruction from Multi-Camera Annotations Using UKF
 
-**arXiv**: [2511.17609v1](https://arxiv.org/abs/2511.17609) | [PDF](https://arxiv.org/pdf/2511.17609.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.17609" target="_blank" class="toolbar-btn">arXiv: 2511.17609v1</a>
+    <a href="https://arxiv.org/pdf/2511.17609.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.17609v1" 
+            onclick="toggleFavorite(this, '2511.17609v1', '3D Ground Truth Reconstruction from Multi-Camera Annotations Using UKF')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Linh Van Ma, Unse Fatima, Tepy Sokun Chriv, Haroon Imran, Moongu Jeon
 

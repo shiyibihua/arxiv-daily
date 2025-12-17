@@ -5,7 +5,22 @@ title: Head Stabilization for Wheeled Bipedal Robots via Force-Estimation-Based 
 
 # Head Stabilization for Wheeled Bipedal Robots via Force-Estimation-Based Admittance Control
 
-**arXiv**: [2511.18712v1](https://arxiv.org/abs/2511.18712) | [PDF](https://arxiv.org/pdf/2511.18712.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.18712" target="_blank" class="toolbar-btn">arXiv: 2511.18712v1</a>
+    <a href="https://arxiv.org/pdf/2511.18712.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.18712v1" 
+            onclick="toggleFavorite(this, '2511.18712v1', 'Head Stabilization for Wheeled Bipedal Robots via Force-Estimation-Based Admittance Control')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Tianyu Wang, Chunxiang Yan, Xuanhong Liao, Tao Zhang, Ping Wang, Cong Wen, Dingchuan Liu, Haowen Yu, Ximin Lyu
 

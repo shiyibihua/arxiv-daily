@@ -5,7 +5,22 @@ title: LiDAR-VGGT: Cross-Modal Coarse-to-Fine Fusion for Globally Consistent and
 
 # LiDAR-VGGT: Cross-Modal Coarse-to-Fine Fusion for Globally Consistent and Metric-Scale Dense Mapping
 
-**arXiv**: [2511.01186v1](https://arxiv.org/abs/2511.01186) | [PDF](https://arxiv.org/pdf/2511.01186.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.01186" target="_blank" class="toolbar-btn">arXiv: 2511.01186v1</a>
+    <a href="https://arxiv.org/pdf/2511.01186.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.01186v1" 
+            onclick="toggleFavorite(this, '2511.01186v1', 'LiDAR-VGGT: Cross-Modal Coarse-to-Fine Fusion for Globally Consistent and Metric-Scale Dense Mapping')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Lijie Wang, Lianjie Guo, Ziyi Xu, Qianhao Wang, Fei Gao, Xieyuanli Chen
 

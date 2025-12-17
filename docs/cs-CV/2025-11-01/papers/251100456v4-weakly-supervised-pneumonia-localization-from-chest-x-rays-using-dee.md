@@ -5,7 +5,22 @@ title: Weakly Supervised Pneumonia Localization from Chest X-Rays Using Deep Neu
 
 # Weakly Supervised Pneumonia Localization from Chest X-Rays Using Deep Neural Network and Grad-CAM Explanations
 
-**arXiv**: [2511.00456v4](https://arxiv.org/abs/2511.00456) | [PDF](https://arxiv.org/pdf/2511.00456.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.00456" target="_blank" class="toolbar-btn">arXiv: 2511.00456v4</a>
+    <a href="https://arxiv.org/pdf/2511.00456.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.00456v4" 
+            onclick="toggleFavorite(this, '2511.00456v4', 'Weakly Supervised Pneumonia Localization from Chest X-Rays Using Deep Neural Network and Grad-CAM Explanations')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Kiran Shahi, Anup Bagale
 

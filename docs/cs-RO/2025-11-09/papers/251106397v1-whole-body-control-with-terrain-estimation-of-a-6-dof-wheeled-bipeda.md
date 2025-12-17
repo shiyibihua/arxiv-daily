@@ -5,7 +5,22 @@ title: Whole-Body Control With Terrain Estimation of A 6-DoF Wheeled Bipedal Rob
 
 # Whole-Body Control With Terrain Estimation of A 6-DoF Wheeled Bipedal Robot
 
-**arXiv**: [2511.06397v1](https://arxiv.org/abs/2511.06397) | [PDF](https://arxiv.org/pdf/2511.06397.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.06397" target="_blank" class="toolbar-btn">arXiv: 2511.06397v1</a>
+    <a href="https://arxiv.org/pdf/2511.06397.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.06397v1" 
+            onclick="toggleFavorite(this, '2511.06397v1', 'Whole-Body Control With Terrain Estimation of A 6-DoF Wheeled Bipedal Robot')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Cong Wen, Yunfei Li, Kexin Liu, Yixin Qiu, Xuanhong Liao, Tianyu Wang, Dingchuan Liu, Tao Zhang, Ximin Lyu
 

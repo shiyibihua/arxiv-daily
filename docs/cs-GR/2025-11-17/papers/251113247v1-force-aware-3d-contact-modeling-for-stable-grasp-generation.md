@@ -5,7 +5,22 @@ title: Force-Aware 3D Contact Modeling for Stable Grasp Generation
 
 # Force-Aware 3D Contact Modeling for Stable Grasp Generation
 
-**arXiv**: [2511.13247v1](https://arxiv.org/abs/2511.13247) | [PDF](https://arxiv.org/pdf/2511.13247.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.13247" target="_blank" class="toolbar-btn">arXiv: 2511.13247v1</a>
+    <a href="https://arxiv.org/pdf/2511.13247.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.13247v1" 
+            onclick="toggleFavorite(this, '2511.13247v1', 'Force-Aware 3D Contact Modeling for Stable Grasp Generation')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Zhuo Chen, Zhongqun Zhang, Yihua Cheng, Ales Leonardis, Hyung Jin Chang
 

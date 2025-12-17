@@ -5,7 +5,22 @@ title: Can MLLMs Read the Room? A Multimodal Benchmark for Assessing Deception i
 
 # Can MLLMs Read the Room? A Multimodal Benchmark for Assessing Deception in Multi-Party Social Interactions
 
-**arXiv**: [2511.16221v1](https://arxiv.org/abs/2511.16221) | [PDF](https://arxiv.org/pdf/2511.16221.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.16221" target="_blank" class="toolbar-btn">arXiv: 2511.16221v1</a>
+    <a href="https://arxiv.org/pdf/2511.16221.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.16221v1" 
+            onclick="toggleFavorite(this, '2511.16221v1', 'Can MLLMs Read the Room? A Multimodal Benchmark for Assessing Deception in Multi-Party Social Interactions')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Caixin Kang, Yifei Huang, Liangyang Ouyang, Mingfang Zhang, Ruicong Liu, Yoichi Sato
 

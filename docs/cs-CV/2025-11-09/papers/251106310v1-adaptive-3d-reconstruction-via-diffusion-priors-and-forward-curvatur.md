@@ -5,7 +5,22 @@ title: Adaptive 3D Reconstruction via Diffusion Priors and Forward Curvature-Mat
 
 # Adaptive 3D Reconstruction via Diffusion Priors and Forward Curvature-Matching Likelihood Updates
 
-**arXiv**: [2511.06310v1](https://arxiv.org/abs/2511.06310) | [PDF](https://arxiv.org/pdf/2511.06310.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.06310" target="_blank" class="toolbar-btn">arXiv: 2511.06310v1</a>
+    <a href="https://arxiv.org/pdf/2511.06310.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.06310v1" 
+            onclick="toggleFavorite(this, '2511.06310v1', 'Adaptive 3D Reconstruction via Diffusion Priors and Forward Curvature-Matching Likelihood Updates')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Seunghyeok Shin, Dabin Kim, Hongki Lim
 

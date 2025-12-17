@@ -5,7 +5,22 @@ title: SpatialActor: Exploring Disentangled Spatial Representations for Robust R
 
 # SpatialActor: Exploring Disentangled Spatial Representations for Robust Robotic Manipulation
 
-**arXiv**: [2511.09555v1](https://arxiv.org/abs/2511.09555) | [PDF](https://arxiv.org/pdf/2511.09555.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.09555" target="_blank" class="toolbar-btn">arXiv: 2511.09555v1</a>
+    <a href="https://arxiv.org/pdf/2511.09555.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.09555v1" 
+            onclick="toggleFavorite(this, '2511.09555v1', 'SpatialActor: Exploring Disentangled Spatial Representations for Robust Robotic Manipulation')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Hao Shi, Bin Xie, Yingfei Liu, Yang Yue, Tiancai Wang, Haoqiang Fan, Xiangyu Zhang, Gao Huang
 

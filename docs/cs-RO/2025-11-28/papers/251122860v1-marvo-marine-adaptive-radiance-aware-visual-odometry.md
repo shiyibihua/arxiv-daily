@@ -5,7 +5,22 @@ title: MARVO: Marine-Adaptive Radiance-aware Visual Odometry
 
 # MARVO: Marine-Adaptive Radiance-aware Visual Odometry
 
-**arXiv**: [2511.22860v1](https://arxiv.org/abs/2511.22860) | [PDF](https://arxiv.org/pdf/2511.22860.pdf)
+<div class="paper-toolbar">
+  <div class="toolbar-left">
+    <a href="https://arxiv.org/abs/2511.22860" target="_blank" class="toolbar-btn">arXiv: 2511.22860v1</a>
+    <a href="https://arxiv.org/pdf/2511.22860.pdf" target="_blank" class="toolbar-btn">PDF</a>
+  </div>
+  <div class="toolbar-right">
+    <button class="toolbar-btn favorite-btn" data-arxiv-id="2511.22860v1" 
+            onclick="toggleFavorite(this, '2511.22860v1', 'MARVO: Marine-Adaptive Radiance-aware Visual Odometry')" title="收藏">
+      ☆ 收藏
+    </button>
+    <button class="toolbar-btn share-btn" onclick="copyLink()" title="复制链接">
+      🔗 分享
+    </button>
+  </div>
+</div>
+
 
 **作者**: Sacchin Sundar, Atman Kikani, Aaliya Alam, Sumukh Shrote, A. Nayeemulla Khan, A. Shahina
 
