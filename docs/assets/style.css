@@ -499,6 +499,15 @@ code {
   color: rgba(255,255,255,0.8);
 }
 
+.date-btn-more {
+  border-style: dashed;
+  color: var(--primary) !important;
+}
+
+.date-btn-more:hover {
+  border-style: solid;
+}
+
 /* 最近论文列表 */
 .recent-papers {
   margin: 1rem 0;

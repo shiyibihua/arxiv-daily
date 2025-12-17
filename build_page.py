@@ -427,6 +427,9 @@ def build_home_md(tags: List[str], tag_stats: Dict[str, Dict], site_title: str) 
             for d in recent_dates[:7]:
                 paper_count = date_paper_counts.get(d, 0)
                 lines.append(f'<a href="{safe_tag}/{d}/index.html" class="date-btn">{d} <small>({paper_count}篇)</small></a>')
+            # 更多日期按钮放在日期列表最后
+            if len(dates) > 7:
+                lines.append(f'<a href="{safe_tag}/index.html" class="date-btn date-btn-more">更多... <small>({len(dates)})</small></a>')
             lines.append('</div>')
             lines.append('</div>')
         
@@ -449,12 +452,6 @@ def build_home_md(tags: List[str], tag_stats: Dict[str, Dict], site_title: str) 
                 lines.append(f'<li><a href="{safe_tag}/{paper_date}/papers/{slug}.html">{title}</a> {has_code}<br><small>{headline}</small></li>')
             lines.append('</ul>')
             lines.append('</div>')
-        
-        # 操作按钮
-        lines.append('<div class="tag-actions">')
-        lines.append(f'<a class="btn btn-primary" href="{safe_tag}/{latest_date}/index.html">查看最新</a>')
-        lines.append(f'<a class="btn btn-secondary" href="{safe_tag}/index.html">更多日期 ({len(dates)})</a>')
-        lines.append('</div>')
         
         lines.append('</div>')  # tag-content
         lines.append('</div>')  # tag-section
