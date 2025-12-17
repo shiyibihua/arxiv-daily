@@ -39,8 +39,8 @@ def main():
                         help="不使用兴趣筛选，抓取所有论文")
     parser.add_argument("--skip-ai", action="store_true",
                         help="跳过AI分析，仅抓取论文")
-    parser.add_argument("--extract-images", action="store_true",
-                        help="提取论文关键图片（从ar5iv HTML版）")
+    parser.add_argument("--no-images", action="store_true",
+                        help="不提取论文图片（默认会提取）")
     parser.add_argument("--max-images", type=int, default=3,
                         help="每篇论文最多提取图片数 (默认: 3)")
     args = parser.parse_args()
@@ -102,8 +102,8 @@ def main():
         temperature=args.temperature
     ))
     
-    # 图片提取（可选）
-    if args.extract_images:
+    # 图片提取（默认启用）
+    if not args.no_images:
         print(f"\n🖼️ 正在提取论文图片...")
         image_results = asyncio.run(batch_extract_images(
             papers=results,
