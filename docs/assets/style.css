@@ -9,6 +9,56 @@
   --border: #e2e8f0;
   --success: #22c55e;
   --code-bg: #f1f5f9;
+  --nav-bg: #1e293b;
+}
+
+/* ===== 顶部导航栏 ===== */
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--nav-bg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.nav-brand:hover {
+  opacity: 0.9;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-link {
+  padding: 0.5rem 0.85rem;
+  color: rgba(255,255,255,0.85) !important;
+  text-decoration: none !important;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.nav-link:hover {
+  background: rgba(255,255,255,0.15);
+  color: white !important;
 }
 
 .container {
@@ -370,8 +420,89 @@ code {
   color: var(--text) !important;
 }
 
+/* ===== 日历视图样式 ===== */
+.calendar-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.calendar-month {
+  flex: 1 1 280px;
+  max-width: 320px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.month-title {
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-align: center;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.cal-header {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding: 0.25rem;
+}
+
+.cal-day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.cal-day.empty {
+  visibility: hidden;
+}
+
+.cal-day.has-data {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white !important;
+  font-weight: 600;
+  text-decoration: none !important;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.3);
+}
+
+.cal-day.has-data:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
 /* 响应式 */
 @media (max-width: 768px) {
+  /* 导航栏 */
+  .nav-container { padding: 0.5rem 1rem; flex-wrap: wrap; gap: 0.5rem; }
+  .nav-brand { font-size: 1rem; }
+  .nav-links { gap: 0.25rem; }
+  .nav-link { padding: 0.4rem 0.6rem; font-size: 0.8rem; }
+  /* 日历 */
+  .calendar-container { gap: 1rem; }
+  .calendar-month { flex: 1 1 100%; max-width: 100%; }
+  .cal-day { font-size: 0.8rem; }
+  /* 其他 */
   .container { padding: 0 1rem; }
   h1 { font-size: 1.4rem; }
   table { font-size: 0.8rem; }
