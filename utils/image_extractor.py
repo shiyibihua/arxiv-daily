@@ -40,56 +40,87 @@ def parse_images_from_html(html: str, arxiv_id: str) -> List[Dict]:
     返回: [{"url": "...", "caption": "...", "figure_id": "figure1"}, ...]
     """
     images = []
-    base_url = f"{AR5IV_BASE}{arxiv_id}/"
+    seen_urls = set()
+    
+    # 过滤词（跳过网站图标等）
+    skip_keywords = ['icon', 'logo', 'badge', 'button', 'social', 'static/browse', 'cornell', 'arxiv-logo']
+    
+    def should_skip(src):
+        src_lower = src.lower()
+        return any(kw in src_lower for kw in skip_keywords)
+    
+    def build_url(img_src):
+        if img_src.startswith('http'):
+            return img_src
+        elif img_src.startswith('/'):
+            return f"https://ar5iv.labs.arxiv.org{img_src}"
+        else:
+            return f"{AR5IV_BASE}{arxiv_id}/{img_src}"
     
     # 方法1: 匹配 figure 标签中的图片
     figure_pattern = re.compile(
-        r'<figure[^>]*id=["\']([^"\']*)["\'][^>]*>.*?'
+        r'<figure[^>]*(?:id=["\']([^"\']*)["\'])?[^>]*>.*?'
         r'<img[^>]*src=["\']([^"\']+)["\'][^>]*>.*?'
         r'(?:<figcaption[^>]*>(.*?)</figcaption>)?.*?</figure>',
         re.DOTALL | re.IGNORECASE
     )
     
     for match in figure_pattern.finditer(html):
-        fig_id = match.group(1)
+        fig_id = match.group(1) or f"fig_{len(images)}"
         img_src = match.group(2)
         caption = match.group(3) or ""
+        
+        if should_skip(img_src):
+            continue
         
         # 清理 caption 中的 HTML 标签
         caption = re.sub(r'<[^>]+>', '', caption).strip()
         caption = ' '.join(caption.split())[:200]
         
-        # 构建完整 URL
-        if img_src.startswith('http'):
-            img_url = img_src
-        elif img_src.startswith('/'):
-            img_url = f"https://ar5iv.labs.arxiv.org{img_src}"
-        else:
-            img_url = base_url + img_src
+        img_url = build_url(img_src)
         
-        # 过滤掉太小的图片
-        if any(skip in img_src.lower() for skip in ['icon', 'logo', 'badge', 'button']):
-            continue
-            
-        images.append({
-            "url": img_url,
-            "caption": caption,
-            "figure_id": fig_id
-        })
+        if img_url not in seen_urls:
+            images.append({
+                "url": img_url,
+                "caption": caption,
+                "figure_id": fig_id
+            })
+            seen_urls.add(img_url)
     
-    # 方法2: 如果 figure 匹配少，尝试直接匹配主要图片
-    if len(images) < 2:
-        img_pattern = re.compile(r'<img[^>]*src=["\']([^"\']*x\d+\.(png|jpg|jpeg|gif|svg))["\']', re.IGNORECASE)
-        seen_urls = {img["url"] for img in images}
+    # 方法2: 直接匹配 assets 目录中的图片（ar5iv 常用格式）
+    asset_pattern = re.compile(
+        r'<img[^>]*src=["\']([^"\']*(?:/assets/|/x\d+)[^"\']*\.(png|jpg|jpeg|gif))["\']',
+        re.IGNORECASE
+    )
+    
+    for match in asset_pattern.finditer(html):
+        img_src = match.group(1)
+        if should_skip(img_src):
+            continue
         
-        for match in img_pattern.finditer(html):
+        img_url = build_url(img_src)
+        
+        if img_url not in seen_urls:
+            images.append({
+                "url": img_url,
+                "caption": "",
+                "figure_id": f"img_{len(images)}"
+            })
+            seen_urls.add(img_url)
+    
+    # 方法3: 匹配其他主要图片（png/jpg）
+    if len(images) < 3:
+        general_pattern = re.compile(
+            r'<img[^>]*src=["\']([^"\']+\.(png|jpg|jpeg))["\']',
+            re.IGNORECASE
+        )
+        
+        for match in general_pattern.finditer(html):
             img_src = match.group(1)
-            if img_src.startswith('http'):
-                img_url = img_src
-            elif img_src.startswith('/'):
-                img_url = f"https://ar5iv.labs.arxiv.org{img_src}"
-            else:
-                img_url = base_url + img_src
+            if should_skip(img_src):
+                continue
+            
+            img_url = build_url(img_src)
             
             if img_url not in seen_urls:
                 images.append({
