@@ -43,6 +43,7 @@ title: arXiv 中文要点汇总
 <a href="cs-RO/2025-12-11/index.html" class="date-btn">2025-12-11 <small>(17篇)</small></a>
 <a href="cs-RO/2025-12-10/index.html" class="date-btn">2025-12-10 <small>(26篇)</small></a>
 <a href="cs-RO/2025-12-07/index.html" class="date-btn">2025-12-07 <small>(2篇)</small></a>
+<a href="cs-RO/index.html" class="date-btn date-btn-more">更多... <small>(70)</small></a>
 </div>
 </div>
 <div class="recent-papers">
@@ -54,10 +55,6 @@ title: arXiv 中文要点汇总
 <li><a href="cs-RO/2025-12-16/papers/251214270v1-cafe-television-a-coarse-to-fine-teleoperation-system-with-immersive.html">CaFe-TeleVision: A Coarse-to-Fine Teleoperation System with ...</a> 🔗<br><small>CaFe-TeleVision：基于粗细粒度控制和沉浸式可视化的人形机器人遥操作...</small></li>
 <li><a href="cs-RO/2025-12-16/papers/251214111v1-interactive-motion-planning-for-human-robot-collaboration-based-on-h.html">Interactive Motion Planning for Human-Robot Collaboration Ba...</a> <br><small>提出基于人机协作构型空间人体工学场的交互式机器人运动规划方法</small></li>
 </ul>
-</div>
-<div class="tag-actions">
-<a class="btn btn-primary" href="cs-RO/2025-12-16/index.html">查看最新</a>
-<a class="btn btn-secondary" href="cs-RO/index.html">更多日期 (70)</a>
 </div>
 </div>
 </div>
@@ -101,6 +98,7 @@ title: arXiv 中文要点汇总
 <a href="cs-CV/2025-12-12/index.html" class="date-btn">2025-12-12 <small>(33篇)</small></a>
 <a href="cs-CV/2025-12-11/index.html" class="date-btn">2025-12-11 <small>(39篇)</small></a>
 <a href="cs-CV/2025-12-10/index.html" class="date-btn">2025-12-10 <small>(19篇)</small></a>
+<a href="cs-CV/index.html" class="date-btn date-btn-more">更多... <small>(75)</small></a>
 </div>
 </div>
 <div class="recent-papers">
@@ -112,10 +110,6 @@ title: arXiv 中文要点汇总
 <li><a href="cs-CV/2025-12-16/papers/251214200v1-beyond-a-single-light-a-large-scale-aerial-dataset-for-urban-scene-r.html">Beyond a Single Light: A Large-Scale Aerial Dataset for Urba...</a> <br><small>SkyLume：一个大规模多光照城市重建航拍数据集，用于解决光照变化下的三维重建...</small></li>
 <li><a href="cs-CV/2025-12-16/papers/251214020v1-deep-learning-perspective-of-scene-understanding-in-autonomous-robot.html">Deep Learning Perspective of Scene Understanding in Autonomo...</a> <br><small>综述深度学习在自主机器人场景理解中的应用，提升机器人感知与决策能力</small></li>
 </ul>
-</div>
-<div class="tag-actions">
-<a class="btn btn-primary" href="cs-CV/2025-12-16/index.html">查看最新</a>
-<a class="btn btn-secondary" href="cs-CV/index.html">更多日期 (75)</a>
 </div>
 </div>
 </div>
@@ -157,6 +151,7 @@ title: arXiv 中文要点汇总
 <a href="cs-GR/2025-11-26/index.html" class="date-btn">2025-11-26 <small>(1篇)</small></a>
 <a href="cs-GR/2025-11-24/index.html" class="date-btn">2025-11-24 <small>(2篇)</small></a>
 <a href="cs-GR/2025-11-22/index.html" class="date-btn">2025-11-22 <small>(1篇)</small></a>
+<a href="cs-GR/index.html" class="date-btn date-btn-more">更多... <small>(33)</small></a>
 </div>
 </div>
 <div class="recent-papers">
@@ -168,10 +163,6 @@ title: arXiv 中文要点汇总
 <li><a href="cs-GR/2025-12-03/papers/251204076v1-radiance-meshes-for-volumetric-reconstruction.html">Radiance Meshes for Volumetric Reconstruction</a> <br><small>提出基于Delaunay三角剖分的辐射网格，实现快速高质量的体渲染</small></li>
 <li><a href="cs-GR/2025-11-27/papers/251122288v1-improving-sparse-imu-based-motion-capture-with-motion-label-smoothin.html">Improving Sparse IMU-based Motion Capture with Motion Label ...</a> <br><small>提出基于运动标签平滑的稀疏IMU人体运动捕捉方法，提升模型泛化性。</small></li>
 </ul>
-</div>
-<div class="tag-actions">
-<a class="btn btn-primary" href="cs-GR/2025-12-11/index.html">查看最新</a>
-<a class="btn btn-secondary" href="cs-GR/index.html">更多日期 (33)</a>
 </div>
 </div>
 </div>
@@ -210,6 +201,7 @@ title: arXiv 中文要点汇总
 <a href="cs-LG/2025-12-10/index.html" class="date-btn">2025-12-10 <small>(1篇)</small></a>
 <a href="cs-LG/2025-12-04/index.html" class="date-btn">2025-12-04 <small>(1篇)</small></a>
 <a href="cs-LG/2025-12-03/index.html" class="date-btn">2025-12-03 <small>(1篇)</small></a>
+<a href="cs-LG/index.html" class="date-btn date-btn-more">更多... <small>(47)</small></a>
 </div>
 </div>
 <div class="recent-papers">
@@ -221,10 +213,6 @@ title: arXiv 中文要点汇总
 <li><a href="cs-LG/2025-12-12/papers/251212046v1-goal-reaching-with-eikonal-constrained-hierarchical-quasimetric-rein.html">Goal Reaching with Eikonal-Constrained Hierarchical Quasimet...</a> <br><small>提出Eik-HiQRL，结合Eikonal方程与分层强化学习解决复杂环境下的目标...</small></li>
 <li><a href="cs-LG/2025-12-11/papers/251210925v1-digital-twin-supervised-reinforcement-learning-framework-for-autonom.html">Digital Twin Supervised Reinforcement Learning Framework for...</a> <br><small>提出基于数字孪生监督强化学习的水下自主导航框架，提升复杂环境适应性。</small></li>
 </ul>
-</div>
-<div class="tag-actions">
-<a class="btn btn-primary" href="cs-LG/2025-12-15/index.html">查看最新</a>
-<a class="btn btn-secondary" href="cs-LG/index.html">更多日期 (47)</a>
 </div>
 </div>
 </div>
@@ -263,6 +251,7 @@ title: arXiv 中文要点汇总
 <a href="cs-AI/2025-11-18/index.html" class="date-btn">2025-11-18 <small>(1篇)</small></a>
 <a href="cs-AI/2025-11-17/index.html" class="date-btn">2025-11-17 <small>(3篇)</small></a>
 <a href="cs-AI/2025-11-15/index.html" class="date-btn">2025-11-15 <small>(1篇)</small></a>
+<a href="cs-AI/index.html" class="date-btn date-btn-more">更多... <small>(34)</small></a>
 </div>
 </div>
 <div class="recent-papers">
@@ -274,10 +263,6 @@ title: arXiv 中文要点汇总
 <li><a href="cs-AI/2025-11-24/papers/251119396v1-real-time-object-tracking-with-on-device-deep-learning-for-adaptive-.html">Real-Time Object Tracking with On-Device Deep Learning for A...</a> <br><small>提出一种基于设备端深度学习的目标跟踪与波束成形实时嵌入式系统</small></li>
 <li><a href="cs-AI/2025-11-20/papers/251116183v1-footpass-a-multi-modal-multi-agent-tactical-context-dataset-for-play.html">FOOTPASS: A Multi-Modal Multi-Agent Tactical Context Dataset...</a> <br><small>提出FOOTPASS数据集，用于足球广播视频中基于战术上下文的多模态多智能体行为...</small></li>
 </ul>
-</div>
-<div class="tag-actions">
-<a class="btn btn-primary" href="cs-AI/2025-11-25/index.html">查看最新</a>
-<a class="btn btn-secondary" href="cs-AI/index.html">更多日期 (34)</a>
 </div>
 </div>
 </div>
@@ -315,6 +300,7 @@ title: arXiv 中文要点汇总
 <a href="cs-CL/2025-10-22/index.html" class="date-btn">2025-10-22 <small>(1篇)</small></a>
 <a href="cs-CL/2025-10-20/index.html" class="date-btn">2025-10-20 <small>(1篇)</small></a>
 <a href="cs-CL/2025-10-17/index.html" class="date-btn">2025-10-17 <small>(2篇)</small></a>
+<a href="cs-CL/index.html" class="date-btn date-btn-more">更多... <small>(17)</small></a>
 </div>
 </div>
 <div class="recent-papers">
@@ -326,10 +312,6 @@ title: arXiv 中文要点汇总
 <li><a href="cs-CL/2025-10-24/papers/251021445v1-remoni-an-autonomous-system-integrating-wearables-and-multimodal-lar.html">REMONI: An Autonomous System Integrating Wearables and Multi...</a> <br><small>REMONI：集成可穿戴设备与多模态大语言模型的自主远程健康监测系统</small></li>
 <li><a href="cs-CL/2025-10-24/papers/251021270v1-sparser-block-sparse-attention-via-token-permutation.html">Sparser Block-Sparse Attention via Token Permutation</a> 🔗<br><small>提出基于Token置换的稀疏块注意力机制PBS-Attn，加速长文本LLM预填充...</small></li>
 </ul>
-</div>
-<div class="tag-actions">
-<a class="btn btn-primary" href="cs-CL/2025-11-25/index.html">查看最新</a>
-<a class="btn btn-secondary" href="cs-CL/index.html">更多日期 (17)</a>
 </div>
 </div>
 </div>
@@ -365,6 +347,7 @@ title: arXiv 中文要点汇总
 <a href="eess-SY/2025-11-27/index.html" class="date-btn">2025-11-27 <small>(1篇)</small></a>
 <a href="eess-SY/2025-11-19/index.html" class="date-btn">2025-11-19 <small>(1篇)</small></a>
 <a href="eess-SY/2025-11-18/index.html" class="date-btn">2025-11-18 <small>(1篇)</small></a>
+<a href="eess-SY/index.html" class="date-btn date-btn-more">更多... <small>(16)</small></a>
 </div>
 </div>
 <div class="recent-papers">
@@ -376,10 +359,6 @@ title: arXiv 中文要点汇总
 <li><a href="eess-SY/2025-12-04/papers/251205299v1-arcas-an-augmented-reality-collision-avoidance-system-with-slam-base.html">ARCAS: An Augmented Reality Collision Avoidance System with ...</a> <br><small>ARCAS：基于SLAM的增强现实碰撞避免系统，提升弱势道路使用者安全</small></li>
 <li><a href="eess-SY/2025-12-04/papers/251204579v1-gauss-newton-accelerated-mppi-control.html">Gauss-Newton accelerated MPPI Control</a> <br><small>提出Gauss-Newton加速的MPPI控制，提升高维控制问题的计算效率。</small></li>
 </ul>
-</div>
-<div class="tag-actions">
-<a class="btn btn-primary" href="eess-SY/2025-12-12/index.html">查看最新</a>
-<a class="btn btn-secondary" href="eess-SY/index.html">更多日期 (16)</a>
 </div>
 </div>
 </div>
