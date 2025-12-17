@@ -147,19 +147,23 @@ def _cross_validate(hit_groups: Dict, rules: List[Dict]) -> Tuple[bool, List[str
 
 def match_interests(paper: Dict, interests_config: Dict) -> Dict:
     """
-    五大支柱匹配系统
+    多支柱匹配系统 (v5.1 - 九大支柱)
     
     核心逻辑：
     1. 负面关键词一票否决（严格过滤）
-    2. 匹配五大支柱（OR逻辑）：命中任意一个支柱即可
-    3. 计算加权得分
+    2. 匹配支柱（OR逻辑）：命中任意一个支柱即可
+    3. 计算加权得分（标题权重更高）
     
-    五大支柱：
-    - 支柱一：机器人控制（移动、操作、Sim2Real）
-    - 支柱二：前沿算法（RL、世界模型、网络架构）
-    - 支柱三：感知与SLAM（深度估计、里程计、建图）
-    - 支柱四：动作来源（重定向、生成、匹配）
-    - 支柱五：物理动画（Character Control、AMP）
+    九大支柱：
+    - 支柱一：机器人控制（移动、操作、Sim2Real、Loco-Manipulation）
+    - 支柱二：RL算法与架构（强化学习、离线RL、DPO、网络架构）
+    - 支柱三：空间感知与语义（深度估计、SLAM、3DGS、语义理解）
+    - 支柱四：生成式动作（MDM、Text-to-Motion、Diffusion）
+    - 支柱五：交互与反应（HOI、HSI、反应合成）
+    - 支柱六：视频提取与匹配（HMR、Egocentric、Motion Matching）
+    - 支柱七：动作重定向（Human-to-Robot、跨体态迁移）
+    - 支柱八：物理动画（DeepMimic、AMP、Character Control）
+    - 支柱九：具身大模型（VLA、VLN、指令跟随）
     """
     if not interests_config:
         return {
@@ -220,19 +224,12 @@ def match_interests(paper: Dict, interests_config: Dict) -> Dict:
 
 def filter_by_interests(papers: List[Dict], interests_file: str = "interests.json") -> List[Dict]:
     """
-    五大支柱筛选系统
+    多支柱筛选系统 (动态支持 interests.json 中定义的所有支柱)
     
     核心逻辑：
     1. 负面关键词严格过滤（医学/金融/NLP等）
-    2. 五大支柱 OR 逻辑：命中任意一个支柱即保留
+    2. OR 逻辑：命中任意一个支柱即保留
     3. 分数阈值过滤
-    
-    五大支柱：
-    - 支柱一：机器人控制（移动、操作、Sim2Real）
-    - 支柱二：前沿算法（RL、世界模型、网络架构）  
-    - 支柱三：感知与SLAM（深度估计、里程计、建图）
-    - 支柱四：动作来源（重定向、生成、匹配）
-    - 支柱五：物理动画（Character Control、AMP）
     """
     interests_config = load_interests(interests_file)
     
@@ -273,7 +270,7 @@ def filter_by_interests(papers: List[Dict], interests_file: str = "interests.jso
     
     # 打印统计信息
     print(f"\n{'='*60}")
-    print(f"📊 五大支柱筛选统计 (OR逻辑)")
+    print(f"📊 多支柱筛选统计 (OR逻辑)")
     print(f"{'='*60}")
     print(f"   原始论文数: {len(papers)}")
     print(f"   ✅ 通过筛选: {len(filtered)} 篇 (命中支柱 + 分数 ≥ {min_threshold})")
@@ -291,7 +288,7 @@ def filter_by_interests(papers: List[Dict], interests_file: str = "interests.jso
             pillar_scores[name] = pillar_scores.get(name, 0) + m.get("score", 0)
     
     if pillar_counts:
-        print(f"\n📈 五大支柱命中统计:")
+        print(f"\n📈 各支柱命中统计:")
         for name, count in sorted(pillar_counts.items(), key=lambda x: -x[1]):
             avg_score = pillar_scores[name] / count if count > 0 else 0
             print(f"   {name}: {count} 篇 (平均分: {avg_score:.1f})")
