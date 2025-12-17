@@ -105,11 +105,18 @@ def main():
     # 图片提取（默认启用）
     if not args.no_images:
         print(f"\n🖼️ 正在提取论文图片...")
-        image_results = asyncio.run(batch_extract_images(
-            papers=results,
-            max_images_per_paper=args.max_images,
-            concurrency=5
-        ))
+        # 创建新的事件循环来运行图片提取（避免 Event loop is closed 错误）
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+        try:
+            image_results = loop.run_until_complete(batch_extract_images(
+                papers=results,
+                max_images_per_paper=args.max_images,
+                concurrency=5
+            ))
+        finally:
+            loop.close()
+        
         # 将图片信息合并到结果中
         for paper in results:
             arxiv_id = paper.get("arxiv_id", "")
