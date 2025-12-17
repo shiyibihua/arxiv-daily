@@ -1,9 +1,9 @@
 ---
 layout: default
-title: arXiv 中文要点汇总（with DeepSeek） - cs.RO
+title: arXiv 中文要点汇总（with DeepSeek） - cs.GR
 ---
 
-# cs.RO
+# cs.GR
 
 > 选择日期查看该分类下的论文
 

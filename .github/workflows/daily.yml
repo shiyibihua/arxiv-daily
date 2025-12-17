@@ -18,7 +18,7 @@ env:
   TZ: Asia/Shanghai  # 仅影响日志时间显示
   DATA_DIR: data
   DOCS_DIR: docs
-  SITE_TITLE: "arXiv·cs.CV 中文要点汇总"
+  SITE_TITLE: "arXiv 中文要点汇总"
 
 jobs:
   build:
@@ -49,12 +49,30 @@ jobs:
 
       - name: Run main.py to fetch & summarize today
         env:
-          # DeepSeek API 配置
-          LLM_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-          LLM_BASE_URL: "https://api.deepseek.com"
-          LLM_MODEL: "deepseek-chat"
+          # ============================================
+          # API 配置（按优先级：Gemini > OpenAI > DeepSeek）
+          # 主 API 失败时自动切换到备用 API
+          # 所有配置项都可以通过 Secrets 设置
+          # ============================================
+          
+          # Gemini API（主 API，速度快）
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_BASE_URL: ${{ secrets.GEMINI_BASE_URL || 'https://generativelanguage.googleapis.com/v1beta/openai/' }}
+          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL || 'gemini-2.0-flash' }}
+          
+          # OpenAI API（备用）
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL || 'https://api.openai.com/v1' }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
+          
+          # DeepSeek API（备用）
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_BASE_URL: ${{ secrets.DEEPSEEK_BASE_URL || 'https://api.deepseek.com' }}
+          DEEPSEEK_MODEL: ${{ secrets.DEEPSEEK_MODEL || 'deepseek-chat' }}
+          
         run: |
-          # 抓取最近 arXiv 公告窗口的论文 -> 调用 DeepSeek API 生成中文摘要
+          # 抓取最近 arXiv 公告窗口的论文
+          # 调用 LLM API 生成中文摘要（自动选择可用 API，支持故障转移）
           # 输出到 data/<YYYY-MM-DD>/ai_summary.json
           python main.py
 

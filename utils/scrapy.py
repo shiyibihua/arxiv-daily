@@ -26,13 +26,71 @@ def load_interests(interests_file: str) -> Dict:
         return None
 
 
+def _keyword_match(keyword: str, text: str) -> bool:
+    """
+    智能关键词匹配：
+    - 短关键词（<=4字符）使用词边界匹配，避免误匹配
+    - 长关键词使用子串匹配
+    - 支持连字符和空格的变体匹配
+    """
+    kw = keyword.lower()
+    
+    # 生成变体：连字符 <-> 空格
+    variants = [kw]
+    if '-' in kw:
+        variants.append(kw.replace('-', ' '))
+        variants.append(kw.replace('-', ''))
+    if ' ' in kw:
+        variants.append(kw.replace(' ', '-'))
+        variants.append(kw.replace(' ', ''))
+    
+    for variant in variants:
+        # 短关键词使用词边界匹配（避免 "VO" 匹配 "evolution"）
+        if len(variant) <= 4:
+            pattern = r'\b' + re.escape(variant) + r'\b'
+            if re.search(pattern, text, re.IGNORECASE):
+                return True
+        else:
+            # 长关键词使用子串匹配
+            if variant in text:
+                return True
+    
+    return False
+
+
+def _check_exclusions(paper: Dict, exclusions_config: Dict) -> Tuple[bool, List[str]]:
+    """
+    检查论文是否应该被排除
+    返回: (是否排除, 匹配到的排除关键词列表)
+    """
+    if not exclusions_config or not exclusions_config.get("enabled", False):
+        return False, []
+    
+    title = paper.get("title", "").lower()
+    summary = paper.get("summary", "").lower()
+    text = f"{title} {summary}"
+    
+    exclusion_keywords = exclusions_config.get("keywords", [])
+    matched_exclusions = []
+    
+    for kw in exclusion_keywords:
+        if _keyword_match(kw, text):
+            matched_exclusions.append(kw)
+    
+    # 如果匹配了太多排除关键词，则排除该论文
+    # 但如果论文同时强匹配兴趣关键词，可以考虑保留（在 match_interests 中处理）
+    should_exclude = len(matched_exclusions) >= 1
+    
+    return should_exclude, matched_exclusions
+
+
 def match_interests(paper: Dict, interests_config: Dict) -> Dict:
     """
     检查论文是否匹配用户感兴趣的领域
     返回匹配信息：匹配的领域列表和相关性分数
     """
     if not interests_config:
-        return {"matched_interests": [], "relevance_score": 0}
+        return {"matched_interests": [], "relevance_score": 0, "excluded": False, "exclusion_keywords": []}
     
     interests = interests_config.get("interests", [])
     filter_mode = interests_config.get("filter_mode", "any")  # "any" 或 "all"
@@ -55,7 +113,7 @@ def match_interests(paper: Dict, interests_config: Dict) -> Dict:
         match_count = 0
         matched_keywords = []
         for kw in keywords:
-            if kw.lower() in text:
+            if _keyword_match(kw, text):
                 match_count += 1
                 matched_keywords.append(kw)
         
@@ -67,9 +125,19 @@ def match_interests(paper: Dict, interests_config: Dict) -> Dict:
             })
             total_score += match_count
     
+    # 检查排除关键词
+    exclusions_config = interests_config.get("exclusions", {})
+    should_exclude, exclusion_keywords = _check_exclusions(paper, exclusions_config)
+    
+    # 如果论文强匹配兴趣（分数 >= 2），则不排除
+    if should_exclude and total_score >= 2:
+        should_exclude = False
+    
     return {
         "matched_interests": matched,
-        "relevance_score": total_score
+        "relevance_score": total_score,
+        "excluded": should_exclude,
+        "exclusion_keywords": exclusion_keywords
     }
 
 
@@ -82,12 +150,20 @@ def filter_by_interests(papers: List[Dict], interests_file: str = "interests.jso
         return papers
     
     min_score = interests_config.get("min_relevance_score", 1)
+    exclusions_enabled = interests_config.get("exclusions", {}).get("enabled", False)
     
     filtered = []
+    excluded_count = 0
+    
     for paper in papers:
         match_info = match_interests(paper, interests_config)
         paper["matched_interests"] = match_info["matched_interests"]
         paper["relevance_score"] = match_info["relevance_score"]
+        
+        # 检查是否被排除
+        if match_info.get("excluded", False):
+            excluded_count += 1
+            continue
         
         if match_info["relevance_score"] >= min_score:
             filtered.append(paper)
@@ -96,6 +172,8 @@ def filter_by_interests(papers: List[Dict], interests_file: str = "interests.jso
     filtered.sort(key=lambda x: x.get("relevance_score", 0), reverse=True)
     
     print(f"[INFO] 兴趣筛选: {len(papers)} → {len(filtered)} 篇论文")
+    if exclusions_enabled and excluded_count > 0:
+        print(f"[INFO] 排除关键词过滤: 排除了 {excluded_count} 篇不相关论文")
     
     # 显示匹配统计
     interest_counts = {}
