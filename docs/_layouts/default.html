@@ -99,7 +99,9 @@
     function getFolders() {
       try {
         var data = localStorage.getItem('arxiv_folders');
-        return data ? JSON.parse(data) : DEFAULT_FOLDERS.slice();
+        if (!data) return DEFAULT_FOLDERS.slice();
+        var parsed = JSON.parse(data);
+        return Array.isArray(parsed) ? parsed : DEFAULT_FOLDERS.slice();
       } catch (e) { return DEFAULT_FOLDERS.slice(); }
     }
 
@@ -112,7 +114,9 @@
     function getFavorites() {
       try {
         var data = localStorage.getItem('arxiv_favorites');
-        return data ? JSON.parse(data) : [];
+        if (!data) return [];
+        var parsed = JSON.parse(data);
+        return Array.isArray(parsed) ? parsed : [];
       } catch (e) { return []; }
     }
 
@@ -278,6 +282,7 @@
       var folders = getFolders();
       var favs = getFavorites();
       var container = document.getElementById('folder-tabs');
+      if (!container) return;
 
       var allCount = favs.length;
       var html = '<button class="folder-tab ' + (currentViewFolder === 'all' ? 'active' : '') + '" onclick="switchFolder(\'all\')">' +
@@ -285,7 +290,10 @@
 
       for (var i = 0; i < folders.length; i++) {
         var f = folders[i];
-        var count = favs.filter(function (fav) { return fav.folder === f.id; }).length;
+        var count = 0;
+        for (var j = 0; j < favs.length; j++) {
+          if (favs[j].folder === f.id) count++;
+        }
         html += '<button class="folder-tab ' + (currentViewFolder === f.id ? 'active' : '') + '" ' +
           'style="--folder-color:' + f.color + '" onclick="switchFolder(\'' + f.id + '\')">' +
           f.name + ' <span class="folder-count">' + count + '</span></button>';
