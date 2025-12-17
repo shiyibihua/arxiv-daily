@@ -17,7 +17,7 @@ title: PerfCoder: Large Language Models for Interpretable Code Performance Optim
 
 ## 💡 一句话要点
 
-**提出PerfCoder模型，通过可解释的定制化优化生成高性能代码，解决大语言模型在代码性能优化方面的不足。**
+**提出PerfCoder系列大语言模型，通过可解释的定制化优化生成高性能代码，解决现有模型性能优化能力不足的问题。**
 
 🎯 **匹配领域**: **强化学习**
 
