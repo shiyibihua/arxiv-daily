@@ -90,17 +90,17 @@
 
   <script>
     // 收藏夹颜色选项
-    const FOLDER_COLORS = ['#2563eb', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899', '#14b8a6', '#f97316'];
+    var FOLDER_COLORS = ['#2563eb', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899', '#14b8a6', '#f97316'];
 
     // 默认收藏夹
-    const DEFAULT_FOLDERS = [{ id: 'default', name: '默认收藏', color: '#2563eb', system: true }];
+    var DEFAULT_FOLDERS = [{ id: 'default', name: '默认收藏', color: '#2563eb', system: true }];
 
     // 获取收藏夹列表
     function getFolders() {
       try {
-        const data = localStorage.getItem('arxiv_folders');
-        return data ? JSON.parse(data) : [...DEFAULT_FOLDERS];
-      } catch { return [...DEFAULT_FOLDERS]; }
+        var data = localStorage.getItem('arxiv_folders');
+        return data ? JSON.parse(data) : DEFAULT_FOLDERS.slice();
+      } catch (e) { return DEFAULT_FOLDERS.slice(); }
     }
 
     // 保存收藏夹列表
@@ -111,9 +111,9 @@
     // 获取收藏
     function getFavorites() {
       try {
-        const data = localStorage.getItem('arxiv_favorites');
+        var data = localStorage.getItem('arxiv_favorites');
         return data ? JSON.parse(data) : [];
-      } catch { return []; }
+      } catch (e) { return []; }
     }
 
     // 保存收藏
@@ -124,8 +124,8 @@
 
     // 更新收藏计数
     function updateFavoriteCount() {
-      const count = getFavorites().length;
-      const badge = document.getElementById('favorites-count');
+      var count = getFavorites().length;
+      var badge = document.getElementById('favorites-count');
       if (badge) {
         badge.textContent = count;
         badge.style.display = count > 0 ? 'inline' : 'none';
@@ -134,8 +134,11 @@
 
     // 添加到收藏夹
     function addToFolder(arxivId, title, folderId) {
-      const favs = getFavorites();
-      const idx = favs.findIndex(f => f.id === arxivId);
+      var favs = getFavorites();
+      var idx = -1;
+      for (var i = 0; i < favs.length; i++) {
+        if (favs[i].id === arxivId) { idx = i; break; }
+      }
       if (idx >= 0) favs.splice(idx, 1);
       favs.push({
         id: arxivId,
@@ -149,23 +152,27 @@
 
     // 从收藏夹移除
     function removeFromFavorites(arxivId) {
-      const favs = getFavorites().filter(f => f.id !== arxivId);
+      var favs = getFavorites().filter(function (f) { return f.id !== arxivId; });
       saveFavorites(favs);
       updatePageFavorites();
     }
 
     // 获取论文所在收藏夹
     function getPaperFolder(arxivId) {
-      const fav = getFavorites().find(f => f.id === arxivId);
-      return fav ? fav.folder : null;
+      var favs = getFavorites();
+      for (var i = 0; i < favs.length; i++) {
+        if (favs[i].id === arxivId) return favs[i].folder;
+      }
+      return null;
     }
 
     // 更新页面上的收藏按钮状态
     function updatePageFavorites() {
-      document.querySelectorAll('.favorite-btn, .toolbar-btn.favorite-btn').forEach(btn => {
-        const arxivId = btn.dataset.arxivId;
+      var btns = document.querySelectorAll('.favorite-btn, .toolbar-btn.favorite-btn');
+      btns.forEach(function (btn) {
+        var arxivId = btn.getAttribute('data-arxiv-id');
         if (arxivId) {
-          const folderId = getPaperFolder(arxivId);
+          var folderId = getPaperFolder(arxivId);
           if (folderId) {
             btn.classList.add('favorited');
             if (btn.classList.contains('toolbar-btn')) {
@@ -188,56 +195,61 @@
 
     // 显示收藏夹选择菜单
     function showFolderMenu(btn, arxivId, title) {
-      document.querySelectorAll('.folder-menu').forEach(m => m.remove());
+      // 移除已有菜单
+      var oldMenus = document.querySelectorAll('.folder-menu');
+      oldMenus.forEach(function (m) { m.remove(); });
 
-      const folders = getFolders();
-      const currentFolder = getPaperFolder(arxivId);
+      var folders = getFolders();
+      var currentFolder = getPaperFolder(arxivId);
+      var safeTitle = title.replace(/'/g, "\\'").replace(/"/g, '\\"');
 
-      const menu = document.createElement('div');
+      var menu = document.createElement('div');
       menu.className = 'folder-menu';
-      menu.innerHTML = `
-    <div class="folder-menu-title">选择收藏夹</div>
-    ${folders.map(f => `
-      <div class="folder-menu-item ${f.id === currentFolder ? 'active' : ''}" onclick="selectFolder('${arxivId}','${title.replace(/'/g, "\\'")}','${f.id}')">
-        <span class="folder-dot" style="background:${f.color}"></span>
-        <span>${f.name}</span>
-        ${f.id === currentFolder ? '<span class="folder-check">✓</span>' : ''}
-      </div>
-    `).join('')}
-    <div class="folder-menu-divider"></div>
-    <div class="folder-menu-item" onclick="showNewFolderModal('${arxivId}','${title.replace(/'/g, "\\'")}')">
-      <span style="color:var(--primary)">＋ 新建收藏夹</span>
-    </div>
-    ${currentFolder ? `
-      <div class="folder-menu-divider"></div>
-      <div class="folder-menu-item remove" onclick="removeFromFavorites('${arxivId}');closeFolderMenu()">
-        <span>✕ 取消收藏</span>
-      </div>
-    ` : ''}
-  `;
 
-      const rect = btn.getBoundingClientRect();
+      var html = '<div class="folder-menu-title">选择收藏夹</div>';
+      for (var i = 0; i < folders.length; i++) {
+        var f = folders[i];
+        var isActive = f.id === currentFolder ? 'active' : '';
+        var checkMark = f.id === currentFolder ? '<span class="folder-check">✓</span>' : '';
+        html += '<div class="folder-menu-item ' + isActive + '" onclick="selectFolder(\'' + arxivId + '\',\'' + safeTitle + '\',\'' + f.id + '\')">' +
+          '<span class="folder-dot" style="background:' + f.color + '"></span>' +
+          '<span>' + f.name + '</span>' + checkMark + '</div>';
+      }
+      html += '<div class="folder-menu-divider"></div>';
+      html += '<div class="folder-menu-item" onclick="showNewFolderModal(\'' + arxivId + '\',\'' + safeTitle + '\')">' +
+        '<span style="color:var(--primary)">＋ 新建收藏夹</span></div>';
+
+      if (currentFolder) {
+        html += '<div class="folder-menu-divider"></div>';
+        html += '<div class="folder-menu-item remove" onclick="removeFromFavorites(\'' + arxivId + '\');closeFolderMenu()">' +
+          '<span>✕ 取消收藏</span></div>';
+      }
+
+      menu.innerHTML = html;
+
+      var rect = btn.getBoundingClientRect();
       menu.style.position = 'fixed';
       menu.style.top = (rect.bottom + 5) + 'px';
-      menu.style.left = rect.left + 'px';
+      menu.style.left = Math.min(rect.left, window.innerWidth - 180) + 'px';
 
       document.body.appendChild(menu);
 
-      setTimeout(() => {
-        document.addEventListener('click', closeFolderMenuOnClick, { once: true });
+      setTimeout(function () {
+        document.addEventListener('click', closeFolderMenuOnClick);
       }, 10);
     }
 
     function closeFolderMenuOnClick(e) {
       if (!e.target.closest('.folder-menu') && !e.target.closest('.favorite-btn')) {
         closeFolderMenu();
-      } else {
-        document.addEventListener('click', closeFolderMenuOnClick, { once: true });
+        document.removeEventListener('click', closeFolderMenuOnClick);
       }
     }
 
     function closeFolderMenu() {
-      document.querySelectorAll('.folder-menu').forEach(m => m.remove());
+      var menus = document.querySelectorAll('.folder-menu');
+      menus.forEach(function (m) { m.remove(); });
+      document.removeEventListener('click', closeFolderMenuOnClick);
     }
 
     function selectFolder(arxivId, title, folderId) {
@@ -245,8 +257,13 @@
       closeFolderMenu();
     }
 
+    // 收藏按钮点击处理
+    function toggleFavorite(btn, arxivId, title) {
+      showFolderMenu(btn, arxivId, title);
+    }
+
     // 显示收藏夹弹窗
-    let currentViewFolder = 'all';
+    var currentViewFolder = 'all';
     function showFavorites() {
       renderFolderTabs();
       renderFavoritesList();
@@ -258,22 +275,21 @@
     }
 
     function renderFolderTabs() {
-      const folders = getFolders();
-      const favs = getFavorites();
-      const container = document.getElementById('folder-tabs');
+      var folders = getFolders();
+      var favs = getFavorites();
+      var container = document.getElementById('folder-tabs');
 
-      const allCount = favs.length;
-      let html = `<button class="folder-tab ${currentViewFolder === 'all' ? 'active' : ''}" onclick="switchFolder('all')">
-    全部 <span class="folder-count">${allCount}</span>
-  </button>`;
+      var allCount = favs.length;
+      var html = '<button class="folder-tab ' + (currentViewFolder === 'all' ? 'active' : '') + '" onclick="switchFolder(\'all\')">' +
+        '全部 <span class="folder-count">' + allCount + '</span></button>';
 
-      folders.forEach(f => {
-        const count = favs.filter(fav => fav.folder === f.id).length;
-        html += `<button class="folder-tab ${currentViewFolder === f.id ? 'active' : ''}" 
-      style="--folder-color:${f.color}" onclick="switchFolder('${f.id}')">
-      ${f.name} <span class="folder-count">${count}</span>
-    </button>`;
-      });
+      for (var i = 0; i < folders.length; i++) {
+        var f = folders[i];
+        var count = favs.filter(function (fav) { return fav.folder === f.id; }).length;
+        html += '<button class="folder-tab ' + (currentViewFolder === f.id ? 'active' : '') + '" ' +
+          'style="--folder-color:' + f.color + '" onclick="switchFolder(\'' + f.id + '\')">' +
+          f.name + ' <span class="folder-count">' + count + '</span></button>';
+      }
 
       container.innerHTML = html;
     }
@@ -285,36 +301,44 @@
     }
 
     function renderFavoritesList() {
-      const folders = getFolders();
-      let favs = getFavorites();
+      var folders = getFolders();
+      var favs = getFavorites();
 
       if (currentViewFolder !== 'all') {
-        favs = favs.filter(f => f.folder === currentViewFolder);
+        favs = favs.filter(function (f) { return f.folder === currentViewFolder; });
       }
 
-      const container = document.getElementById('favorites-list');
+      var container = document.getElementById('favorites-list');
 
       if (favs.length === 0) {
         container.innerHTML = '<p style="text-align:center;color:var(--text-secondary);padding:2rem">暂无收藏</p>';
         return;
       }
 
-      favs.sort((a, b) => new Date(b.time) - new Date(a.time));
+      // 按时间倒序
+      favs.sort(function (a, b) { return new Date(b.time) - new Date(a.time); });
 
-      container.innerHTML = favs.map(fav => {
-        const folder = folders.find(f => f.id === fav.folder) || { name: '未知', color: '#888' };
-        return `<div class="favorite-item">
-      <a href="https://arxiv.org/abs/${fav.id}" target="_blank" class="favorite-title">${fav.title}</a>
-      <div class="favorite-meta">
-        <span><span class="folder-dot" style="background:${folder.color};display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px"></span>${folder.name} · ${fav.id}</span>
-        <button class="remove-favorite" onclick="removeFromFavorites('${fav.id}');renderFavoritesList()">删除</button>
-      </div>
-    </div>`;
-      }).join('');
+      var html = '';
+      for (var i = 0; i < favs.length; i++) {
+        var fav = favs[i];
+        var folder = null;
+        for (var j = 0; j < folders.length; j++) {
+          if (folders[j].id === fav.folder) { folder = folders[j]; break; }
+        }
+        if (!folder) folder = { name: '未知', color: '#888' };
+
+        html += '<div class="favorite-item">' +
+          '<a href="https://arxiv.org/abs/' + fav.id + '" target="_blank" class="favorite-title">' + fav.title + '</a>' +
+          '<div class="favorite-meta">' +
+          '<span><span class="folder-dot" style="background:' + folder.color + ';display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px"></span>' + folder.name + ' · ' + fav.id + '</span>' +
+          '<button class="remove-favorite" onclick="removeFromFavorites(\'' + fav.id + '\');renderFavoritesList()">删除</button>' +
+          '</div></div>';
+      }
+      container.innerHTML = html;
     }
 
     // 新建收藏夹
-    let pendingPaper = null;
+    var pendingPaper = null;
     function showNewFolderModal(arxivId, title) {
       closeFolderMenu();
       pendingPaper = arxivId ? { id: arxivId, title: title } : null;
@@ -328,12 +352,15 @@
       pendingPaper = null;
     }
 
-    let selectedColor = FOLDER_COLORS[0];
+    var selectedColor = FOLDER_COLORS[0];
     function renderColorPicker() {
-      const container = document.getElementById('color-picker');
-      container.innerHTML = FOLDER_COLORS.map(c =>
-        `<button class="color-btn ${c === selectedColor ? 'selected' : ''}" style="background:${c}" onclick="selectColor('${c}')"></button>`
-      ).join('');
+      var container = document.getElementById('color-picker');
+      var html = '';
+      for (var i = 0; i < FOLDER_COLORS.length; i++) {
+        var c = FOLDER_COLORS[i];
+        html += '<button class="color-btn ' + (c === selectedColor ? 'selected' : '') + '" style="background:' + c + '" onclick="selectColor(\'' + c + '\')"></button>';
+      }
+      container.innerHTML = html;
     }
 
     function selectColor(color) {
@@ -342,13 +369,15 @@
     }
 
     function createFolder() {
-      const name = document.getElementById('new-folder-name').value.trim();
+      var name = document.getElementById('new-folder-name').value.trim();
       if (!name) { alert('请输入收藏夹名称'); return; }
 
-      const folders = getFolders();
-      if (folders.some(f => f.name === name)) { alert('该名称已存在'); return; }
+      var folders = getFolders();
+      for (var i = 0; i < folders.length; i++) {
+        if (folders[i].name === name) { alert('该名称已存在'); return; }
+      }
 
-      const newFolder = {
+      var newFolder = {
         id: 'folder_' + Date.now(),
         name: name,
         color: selectedColor,
@@ -380,31 +409,38 @@
     }
 
     function renderManageFoldersList() {
-      const folders = getFolders();
-      const favs = getFavorites();
-      const container = document.getElementById('manage-folders-list');
+      var folders = getFolders();
+      var favs = getFavorites();
+      var container = document.getElementById('manage-folders-list');
 
-      container.innerHTML = folders.map(f => {
-        const count = favs.filter(fav => fav.folder === f.id).length;
-        return `<div class="manage-folder-item">
-      <span class="folder-dot" style="background:${f.color}"></span>
-      <span class="folder-name">${f.name}</span>
-      <span class="folder-count">(${count})</span>
-      ${!f.system ? `<button class="remove-folder" onclick="deleteFolder('${f.id}')">删除</button>` : ''}
-    </div>`;
-      }).join('');
+      var html = '';
+      for (var i = 0; i < folders.length; i++) {
+        var f = folders[i];
+        var count = favs.filter(function (fav) { return fav.folder === f.id; }).length;
+        html += '<div class="manage-folder-item">' +
+          '<span class="folder-dot" style="background:' + f.color + '"></span>' +
+          '<span class="folder-name">' + f.name + '</span>' +
+          '<span class="folder-count">(' + count + ')</span>';
+        if (!f.system) {
+          html += '<button class="remove-folder" onclick="deleteFolder(\'' + f.id + '\')">删除</button>';
+        }
+        html += '</div>';
+      }
 
-      container.innerHTML += `<button class="btn btn-secondary" style="margin-top:0.5rem" onclick="showNewFolderModal()">＋ 新建收藏夹</button>`;
+      html += '<button class="btn btn-secondary" style="margin-top:0.5rem" onclick="showNewFolderModal()">＋ 新建收藏夹</button>';
+      container.innerHTML = html;
     }
 
     function deleteFolder(folderId) {
       if (!confirm('删除该收藏夹？收藏的论文将移至默认收藏夹')) return;
 
-      const favs = getFavorites();
-      favs.forEach(f => { if (f.folder === folderId) f.folder = 'default'; });
+      var favs = getFavorites();
+      for (var i = 0; i < favs.length; i++) {
+        if (favs[i].folder === folderId) favs[i].folder = 'default';
+      }
       saveFavorites(favs);
 
-      const folders = getFolders().filter(f => f.id !== folderId);
+      var folders = getFolders().filter(function (f) { return f.id !== folderId; });
       saveFolders(folders);
 
       renderManageFoldersList();
@@ -414,26 +450,28 @@
 
     // 导出收藏
     function exportFavorites() {
-      const favs = getFavorites();
+      var favs = getFavorites();
       if (favs.length === 0) { alert('暂无收藏可导出'); return; }
 
-      const folders = getFolders();
-      let text = '# arXiv Daily 收藏导出\n';
-      text += `# 导出时间: ${new Date().toLocaleString()}\n\n`;
+      var folders = getFolders();
+      var text = '# arXiv Daily 收藏导出\n';
+      text += '# 导出时间: ' + new Date().toLocaleString() + '\n\n';
 
-      folders.forEach(folder => {
-        const folderFavs = favs.filter(f => f.folder === folder.id);
+      for (var i = 0; i < folders.length; i++) {
+        var folder = folders[i];
+        var folderFavs = favs.filter(function (f) { return f.folder === folder.id; });
         if (folderFavs.length > 0) {
-          text += `## ${folder.name}\n\n`;
-          folderFavs.forEach(f => {
-            text += `- ${f.title}\n  https://arxiv.org/abs/${f.id}\n\n`;
-          });
+          text += '## ' + folder.name + '\n\n';
+          for (var j = 0; j < folderFavs.length; j++) {
+            var f = folderFavs[j];
+            text += '- ' + f.title + '\n  https://arxiv.org/abs/' + f.id + '\n\n';
+          }
         }
-      });
+      }
 
-      const blob = new Blob([text], { type: 'text/plain' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
+      var blob = new Blob([text], { type: 'text/plain' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
       a.href = url;
       a.download = 'arxiv_favorites.txt';
       a.click();
@@ -442,21 +480,16 @@
 
     // 复制链接
     function copyLinkToClipboard(btn) {
-      const url = window.location.href;
-      navigator.clipboard.writeText(url).then(() => {
+      var url = window.location.href;
+      navigator.clipboard.writeText(url).then(function () {
         btn.classList.add('copied');
-        const orig = btn.innerHTML;
+        var orig = btn.innerHTML;
         btn.innerHTML = '✓ 已复制';
-        setTimeout(() => {
+        setTimeout(function () {
           btn.classList.remove('copied');
           btn.innerHTML = orig;
         }, 1500);
       });
-    }
-
-    // 收藏按钮点击处理（表格中使用）
-    function toggleFavorite(btn, arxivId, title) {
-      showFolderMenu(btn, arxivId, title);
     }
 
     // 页面加载完成后初始化
@@ -465,13 +498,14 @@
       updatePageFavorites();
 
       // 让外部链接在新标签页打开
-      document.querySelectorAll('a[href]').forEach(function (link) {
-        const href = link.getAttribute('href');
+      var links = document.querySelectorAll('a[href]');
+      links.forEach(function (link) {
+        var href = link.getAttribute('href');
         if (href && (
-          href.startsWith('http') ||
-          href.includes('arxiv.org') ||
-          href.includes('github.com') ||
-          href.endsWith('.pdf')
+          href.indexOf('http') === 0 ||
+          href.indexOf('arxiv.org') >= 0 ||
+          href.indexOf('github.com') >= 0 ||
+          href.indexOf('.pdf') >= 0
         )) {
           link.setAttribute('target', '_blank');
           link.setAttribute('rel', 'noopener noreferrer');
