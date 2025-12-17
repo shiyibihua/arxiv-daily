@@ -93,7 +93,10 @@
     var FOLDER_COLORS = ['#2563eb', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899', '#14b8a6', '#f97316'];
 
     // 默认收藏夹
-    var DEFAULT_FOLDERS = [{ id: 'default', name: '默认收藏', color: '#2563eb', system: true }];
+    var DEFAULT_FOLDERS = [
+      { id: 'default', name: '默认收藏', color: '#2563eb', system: true },
+      { id: 'to_read', name: '待读', color: '#f59e0b', system: true }
+    ];
 
     // 获取收藏夹列表
     function getFolders() {
