@@ -5,16 +5,16 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-19
 
 # cs.CV（2025-11-19）
 
-📊 共 **21** 篇论文
+📊 共 **18** 篇论文
  | 🔗 **4** 篇有代码
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
-<a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (7 🔗3)</a>
-<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (7)</a>
-<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (5)</a>
+<a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (6 🔗3)</a>
+<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (6)</a>
+<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (4)</a>
 <a href="#支柱五交互与反应-interaction-reaction" class="interest-badge">支柱五：交互与反应 (Interaction & Reaction) (1)</a>
 <a href="#支柱六视频提取与匹配-video-extraction-matching" class="interest-badge">支柱六：视频提取与匹配 (Video Extraction & Matching) (1 🔗1)</a>
 </div>
@@ -22,7 +22,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-19
 ---
 
 
-<h2 id="支柱三空间感知-perception-slam">🔬 支柱三：空间感知 (Perception & SLAM) (7 篇)</h2>
+<h2 id="支柱三空间感知-perception-slam">🔬 支柱三：空间感知 (Perception & SLAM) (6 篇)</h2>
 
 <table>
 <thead>
@@ -71,18 +71,11 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-19
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2511.15311v2" onclick="toggleFavorite(this, '2511.15311v2', 'Adapt-As-You-Walk Through the Clouds: Training-Free Online Test-Time Adaptation of 3D Vision-Language Foundation Models')" title="添加到收藏夹">☆</button></td>
 </tr>
-<tr>
-  <td>7</td>
-  <td><a href="./papers/251115090v1-bbox-docvqa-a-large-scale-bounding-box-grounded-dataset-for-enhancin.html">BBox DocVQA: A Large Scale Bounding Box Grounded Dataset for Enhancing Reasoning in Document Visual Question Answer</a></td>
-  <td>提出BBox DocVQA数据集，增强文档视觉问答中空间推理能力。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.15090v1" onclick="toggleFavorite(this, '2511.15090v1', 'BBox DocVQA: A Large Scale Bounding Box Grounded Dataset for Enhancing Reasoning in Document Visual Question Answer')" title="添加到收藏夹">☆</button></td>
-</tr>
 </tbody>
 </table>
 
 
-<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (7 篇)</h2>
+<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (6 篇)</h2>
 
 <table>
 <thead>
@@ -90,49 +83,42 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-19
 </thead>
 <tbody>
 <tr>
-  <td>8</td>
+  <td>7</td>
   <td><a href="./papers/251115308v1-text2loc-generalizing-3d-point-cloud-localization-from-natural-langu.html">Text2Loc++: Generalizing 3D Point Cloud Localization from Natural Language</a></td>
   <td>Text2Loc++：提出一种基于自然语言的通用3D点云定位方法</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.15308v1" onclick="toggleFavorite(this, '2511.15308v1', 'Text2Loc++: Generalizing 3D Point Cloud Localization from Natural Language')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>9</td>
+  <td>8</td>
   <td><a href="./papers/251115077v1-mambatrack3d-a-state-space-model-framework-for-lidar-based-object-tr.html">MambaTrack3D: A State Space Model Framework for LiDAR-Based Object Tracking under High Temporal Variation</a></td>
   <td>MambaTrack3D：基于状态空间模型的LiDAR高时间变化目标跟踪框架</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.15077v1" onclick="toggleFavorite(this, '2511.15077v1', 'MambaTrack3D: A State Space Model Framework for LiDAR-Based Object Tracking under High Temporal Variation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>10</td>
+  <td>9</td>
   <td><a href="./papers/251115167v1-learning-depth-from-past-selves-self-evolution-contrast-for-robust-d.html">Learning Depth from Past Selves: Self-Evolution Contrast for Robust Depth Estimation</a></td>
   <td>提出自进化对比学习框架SEC-Depth，提升恶劣天气下自监督深度估计的鲁棒性</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.15167v1" onclick="toggleFavorite(this, '2511.15167v1', 'Learning Depth from Past Selves: Self-Evolution Contrast for Robust Depth Estimation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>11</td>
+  <td>10</td>
   <td><a href="./papers/251115645v1-mambaio-global-coordinate-inertial-odometry-for-pedestrians-via-mult.html">MambaIO: Global-Coordinate Inertial Odometry for Pedestrians via Multi-Scale Frequency-Decoupled Modeling</a></td>
   <td>MambaIO：面向行人惯性里程计的多尺度解耦建模方法</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.15645v1" onclick="toggleFavorite(this, '2511.15645v1', 'MambaIO: Global-Coordinate Inertial Odometry for Pedestrians via Multi-Scale Frequency-Decoupled Modeling')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>12</td>
-  <td><a href="./papers/251115256v1-grpo-rm-fine-tuning-representation-models-via-grpo-driven-reinforcem.html">GRPO-RM: Fine-Tuning Representation Models via GRPO-Driven Reinforcement Learning</a></td>
-  <td>提出GRPO-RM，通过GRPO驱动的强化学习微调表征模型</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.15256v1" onclick="toggleFavorite(this, '2511.15256v1', 'GRPO-RM: Fine-Tuning Representation Models via GRPO-Driven Reinforcement Learning')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>13</td>
+  <td>11</td>
   <td><a href="./papers/251115201v1-towards-unbiased-cross-modal-representation-learning-for-food-image-.html">Towards Unbiased Cross-Modal Representation Learning for Food Image-to-Recipe Retrieval</a></td>
   <td>提出基于因果推断的解偏方法，提升食物图像-菜谱跨模态检索性能</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.15201v1" onclick="toggleFavorite(this, '2511.15201v1', 'Towards Unbiased Cross-Modal Representation Learning for Food Image-to-Recipe Retrieval')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>14</td>
+  <td>12</td>
   <td><a href="./papers/251115066v1-bokehflow-depth-free-controllable-bokeh-rendering-via-flow-matching.html">BokehFlow: Depth-Free Controllable Bokeh Rendering via Flow Matching</a></td>
   <td>提出BokehFlow，一种基于Flow Matching的无深度信息可控焦外成像方法</td>
   <td></td>
@@ -142,7 +128,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-19
 </table>
 
 
-<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (5 篇)</h2>
+<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (4 篇)</h2>
 
 <table>
 <thead>
@@ -150,35 +136,28 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-19
 </thead>
 <tbody>
 <tr>
-  <td>15</td>
+  <td>13</td>
   <td><a href="./papers/251115705v1-geovista-web-augmented-agentic-visual-reasoning-for-geolocalization.html">GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization</a></td>
   <td>提出GeoVista，一个基于Web增强的Agentic视觉推理模型，用于地理定位任务。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.15705v1" onclick="toggleFavorite(this, '2511.15705v1', 'GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>16</td>
+  <td>14</td>
   <td><a href="./papers/251115884v1-box6d-zero-shot-category-level-6d-pose-estimation-of-warehouse-boxes.html">Box6D : Zero-shot Category-level 6D Pose Estimation of Warehouse Boxes</a></td>
   <td>Box6D：面向仓库箱体的零样本类别级6D位姿估计</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.15884v1" onclick="toggleFavorite(this, '2511.15884v1', 'Box6D : Zero-shot Category-level 6D Pose Estimation of Warehouse Boxes')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>17</td>
+  <td>15</td>
   <td><a href="./papers/251115580v3-comptrack-information-bottleneck-guided-low-rank-dynamic-token-compr.html">CompTrack: Information Bottleneck-Guided Low-Rank Dynamic Token Compression for Point Cloud Tracking</a></td>
   <td>CompTrack：信息瓶颈引导的低秩动态Token压缩，用于点云单目标跟踪。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.15580v3" onclick="toggleFavorite(this, '2511.15580v3', 'CompTrack: Information Bottleneck-Guided Low-Rank Dynamic Token Compression for Point Cloud Tracking')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>18</td>
-  <td><a href="./papers/251115351v2-octopus-agentic-multimodal-reasoning-with-six-capability-orchestrati.html">Octopus: Agentic Multimodal Reasoning with Six-Capability Orchestration</a></td>
-  <td>Octopus：基于六大能力编排的Agentic多模态推理框架</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.15351v2" onclick="toggleFavorite(this, '2511.15351v2', 'Octopus: Agentic Multimodal Reasoning with Six-Capability Orchestration')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>19</td>
+  <td>16</td>
   <td><a href="./papers/251115322v1-adaptive-thresholding-pattern-for-fingerprint-forgery-detection.html">Adaptive thresholding pattern for fingerprint forgery detection</a></td>
   <td>提出基于自适应阈值模式的指纹伪造检测算法，提升抗干扰能力。</td>
   <td></td>
@@ -196,7 +175,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-19
 </thead>
 <tbody>
 <tr>
-  <td>20</td>
+  <td>17</td>
   <td><a href="./papers/251115046v1-unihoi-unified-human-object-interaction-understanding-via-unified-to.html">UniHOI: Unified Human-Object Interaction Understanding via Unified Token Space</a></td>
   <td>UniHOI：通过统一Token空间实现统一的人-物交互理解</td>
   <td></td>
@@ -214,7 +193,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-19
 </thead>
 <tbody>
 <tr>
-  <td>21</td>
+  <td>18</td>
   <td><a href="./papers/251115706v2-roma-v2-harder-better-faster-denser-feature-matching.html">RoMa v2: Harder Better Faster Denser Feature Matching</a></td>
   <td>RoMa v2：通过架构、训练和优化，显著提升密集特征匹配的精度与速度。</td>
   <td>✅</td>

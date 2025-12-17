@@ -5,7 +5,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-03
 
 # cs.RO（2025-10-03）
 
-📊 共 **16** 篇论文
+📊 共 **15** 篇论文
  | 🔗 **2** 篇有代码
 
 
@@ -13,8 +13,8 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-03
 
 <div class="interest-nav">
 <a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (11 🔗2)</a>
-<a href="#支柱九具身大模型-embodied-foundation-models" class="interest-badge">支柱九：具身大模型 (Embodied Foundation Models) (3)</a>
 <a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (2)</a>
+<a href="#支柱九具身大模型-embodied-foundation-models" class="interest-badge">支柱九：具身大模型 (Embodied Foundation Models) (2)</a>
 </div>
 
 ---
@@ -108,38 +108,6 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-03
 </table>
 
 
-<h2 id="支柱九具身大模型-embodied-foundation-models">🔬 支柱九：具身大模型 (Embodied Foundation Models) (3 篇)</h2>
-
-<table>
-<thead>
-<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
-</thead>
-<tbody>
-<tr>
-  <td>12</td>
-  <td><a href="./papers/251003153v1-improving-cooperation-in-collaborative-embodied-ai.html">Improving Cooperation in Collaborative Embodied AI</a></td>
-  <td>通过提示工程优化，提升具身AI协作环境中的智能体合作性能</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.03153v1" onclick="toggleFavorite(this, '2510.03153v1', 'Improving Cooperation in Collaborative Embodied AI')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>13</td>
-  <td><a href="./papers/251002728v2-team-xiaomi-ev-ad-vla-caption-guided-retrieval-system-for-cross-moda.html">Team Xiaomi EV-AD VLA: Caption-Guided Retrieval System for Cross-Modal Drone Navigation -- Technical Report for IROS 2025 RoboSense Challenge Track 4</a></td>
-  <td>提出Caption引导的检索系统，提升跨模态无人机导航中图文检索的精度。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.02728v2" onclick="toggleFavorite(this, '2510.02728v2', 'Team Xiaomi EV-AD VLA: Caption-Guided Retrieval System for Cross-Modal Drone Navigation -- Technical Report for IROS 2025 RoboSense Challenge Track 4')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>14</td>
-  <td><a href="./papers/251002716v2-a-1000times-faster-llm-enhanced-algorithm-for-path-planning-in-large.html">A $1000\times$ Faster LLM-enhanced Algorithm For Path Planning in Large-scale Grid Maps</a></td>
-  <td>提出iLLM-A*算法，加速LLM增强的大规模栅格地图路径规划超1000倍</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.02716v2" onclick="toggleFavorite(this, '2510.02716v2', 'A $1000\times$ Faster LLM-enhanced Algorithm For Path Planning in Large-scale Grid Maps')" title="添加到收藏夹">☆</button></td>
-</tr>
-</tbody>
-</table>
-
-
 <h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (2 篇)</h2>
 
 <table>
@@ -148,18 +116,43 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-03
 </thead>
 <tbody>
 <tr>
-  <td>15</td>
+  <td>12</td>
   <td><a href="./papers/251003142v1-mm-nav-multi-view-vla-model-for-robust-visual-navigation-via-multi-e.html">MM-Nav: Multi-View VLA Model for Robust Visual Navigation via Multi-Expert Learning</a></td>
   <td>提出MM-Nav：一种基于多视角VLA模型和多专家学习的鲁棒视觉导航方法</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.03142v1" onclick="toggleFavorite(this, '2510.03142v1', 'MM-Nav: Multi-View VLA Model for Robust Visual Navigation via Multi-Expert Learning')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>16</td>
+  <td>13</td>
   <td><a href="./papers/251003011v1-3d-covdiffusion-3d-aware-diffusion-policy-for-coverage-path-planning.html">3D-CovDiffusion: 3D-Aware Diffusion Policy for Coverage Path Planning</a></td>
   <td>提出3D-CovDiffusion，用于生成高覆盖率的工业表面处理轨迹</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.03011v1" onclick="toggleFavorite(this, '2510.03011v1', '3D-CovDiffusion: 3D-Aware Diffusion Policy for Coverage Path Planning')" title="添加到收藏夹">☆</button></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 id="支柱九具身大模型-embodied-foundation-models">🔬 支柱九：具身大模型 (Embodied Foundation Models) (2 篇)</h2>
+
+<table>
+<thead>
+<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td>14</td>
+  <td><a href="./papers/251002728v2-team-xiaomi-ev-ad-vla-caption-guided-retrieval-system-for-cross-moda.html">Team Xiaomi EV-AD VLA: Caption-Guided Retrieval System for Cross-Modal Drone Navigation -- Technical Report for IROS 2025 RoboSense Challenge Track 4</a></td>
+  <td>提出Caption引导的检索系统，提升跨模态无人机导航中图文检索的精度。</td>
+  <td></td>
+  <td><button class="favorite-btn" data-arxiv-id="2510.02728v2" onclick="toggleFavorite(this, '2510.02728v2', 'Team Xiaomi EV-AD VLA: Caption-Guided Retrieval System for Cross-Modal Drone Navigation -- Technical Report for IROS 2025 RoboSense Challenge Track 4')" title="添加到收藏夹">☆</button></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td><a href="./papers/251002716v2-a-1000times-faster-llm-enhanced-algorithm-for-path-planning-in-large.html">A $1000\times$ Faster LLM-enhanced Algorithm For Path Planning in Large-scale Grid Maps</a></td>
+  <td>提出iLLM-A*算法，加速LLM增强的大规模栅格地图路径规划超1000倍</td>
+  <td></td>
+  <td><button class="favorite-btn" data-arxiv-id="2510.02716v2" onclick="toggleFavorite(this, '2510.02716v2', 'A $1000\times$ Faster LLM-enhanced Algorithm For Path Planning in Large-scale Grid Maps')" title="添加到收藏夹">☆</button></td>
 </tr>
 </tbody>
 </table>

@@ -5,7 +5,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-04
 
 # cs.RO（2025-11-04）
 
-📊 共 **11** 篇论文
+📊 共 **10** 篇论文
  | 🔗 **2** 篇有代码
 
 
@@ -13,7 +13,6 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-04
 
 <div class="interest-nav">
 <a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (10 🔗2)</a>
-<a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (1)</a>
 </div>
 
 ---
@@ -95,24 +94,6 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-04
   <td>3D Cal：开源触觉传感器标定库，利用3D打印机实现自动化标定。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.03078v2" onclick="toggleFavorite(this, '2511.03078v2', '3D Cal: An Open-Source Software Library for Calibrating Tactile Sensors')" title="添加到收藏夹">☆</button></td>
-</tr>
-</tbody>
-</table>
-
-
-<h2 id="支柱三空间感知-perception-slam">🔬 支柱三：空间感知 (Perception & SLAM) (1 篇)</h2>
-
-<table>
-<thead>
-<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
-</thead>
-<tbody>
-<tr>
-  <td>11</td>
-  <td><a href="./papers/251102526v1-many-vs-many-missile-guidance-via-virtual-targets.html">Many-vs-Many Missile Guidance via Virtual Targets</a></td>
-  <td>提出基于虚拟目标的导弹制导方法，解决多对多导弹拦截问题。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.02526v1" onclick="toggleFavorite(this, '2511.02526v1', 'Many-vs-Many Missile Guidance via Virtual Targets')" title="添加到收藏夹">☆</button></td>
 </tr>
 </tbody>
 </table>

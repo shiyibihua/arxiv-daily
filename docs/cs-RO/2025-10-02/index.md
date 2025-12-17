@@ -5,14 +5,14 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-02
 
 # cs.RO（2025-10-02）
 
-📊 共 **29** 篇论文
- | 🔗 **5** 篇有代码
+📊 共 **27** 篇论文
+ | 🔗 **4** 篇有代码
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
-<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (25 🔗5)</a>
+<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (23 🔗4)</a>
 <a href="#支柱三空间感知与语义-perception-semantics" class="interest-badge">支柱三：空间感知与语义 (Perception & Semantics) (3)</a>
 <a href="#支柱九具身大模型-embodied-foundation-models" class="interest-badge">支柱九：具身大模型 (Embodied Foundation Models) (1)</a>
 </div>
@@ -20,7 +20,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-02
 ---
 
 
-<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (25 篇)</h2>
+<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (23 篇)</h2>
 
 <table>
 <thead>
@@ -141,62 +141,48 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-02
 </tr>
 <tr>
   <td>17</td>
-  <td><a href="./papers/251001545v2-predictive-preference-learning-from-human-interventions.html">Predictive Preference Learning from Human Interventions</a></td>
-  <td>提出PPL：一种基于人类干预的预测偏好学习方法，提升交互式模仿学习效率。</td>
-  <td>✅</td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.01545v2" onclick="toggleFavorite(this, '2510.01545v2', 'Predictive Preference Learning from Human Interventions')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>18</td>
   <td><a href="./papers/251002298v1-armada-autonomous-online-failure-detection-and-human-shared-control-.html">ARMADA: Autonomous Online Failure Detection and Human Shared Control Empower Scalable Real-world Deployment and Adaptation</a></td>
   <td>ARMADA：结合自主故障检测与人机共享控制，实现机器人部署与自适应的扩展</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.02298v1" onclick="toggleFavorite(this, '2510.02298v1', 'ARMADA: Autonomous Online Failure Detection and Human Shared Control Empower Scalable Real-world Deployment and Adaptation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>19</td>
+  <td>18</td>
   <td><a href="./papers/251002104v1-langgrasp-leveraging-fine-tuned-llms-for-language-interactive-robot-.html">LangGrasp: Leveraging Fine-Tuned LLMs for Language Interactive Robot Grasping with Ambiguous Instructions</a></td>
   <td>LangGrasp：利用微调LLM实现语言交互式机器人抓取，解决指令歧义问题</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2510.02104v1" onclick="toggleFavorite(this, '2510.02104v1', 'LangGrasp: Leveraging Fine-Tuned LLMs for Language Interactive Robot Grasping with Ambiguous Instructions')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>20</td>
-  <td><a href="./papers/251001531v1-information-seeking-for-robust-decision-making-under-partial-observa.html">Information Seeking for Robust Decision Making under Partial Observability</a></td>
-  <td>InfoSeeker：结合信息搜寻的LLM决策框架，提升部分可观测环境下的决策鲁棒性</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.01531v1" onclick="toggleFavorite(this, '2510.01531v1', 'Information Seeking for Robust Decision Making under Partial Observability')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>21</td>
+  <td>19</td>
   <td><a href="./papers/251002464v1-erupt-an-open-toolkit-for-interfacing-with-robot-motion-planners-in-.html">ERUPT: An Open Toolkit for Interfacing with Robot Motion Planners in Extended Reality</a></td>
   <td>ERUPT：用于扩展现实中机器人运动规划交互的开放工具包</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.02464v1" onclick="toggleFavorite(this, '2510.02464v1', 'ERUPT: An Open Toolkit for Interfacing with Robot Motion Planners in Extended Reality')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>22</td>
+  <td>20</td>
   <td><a href="./papers/251002129v1-stand-up-nao-increasing-the-reliability-of-stand-up-motions-through-.html">Stand Up, NAO! Increasing the Reliability of Stand-Up Motions Through Error Compensation in Position Control</a></td>
   <td>针对NAO机器人，提出基于误差补偿的站立运动可靠性提升方案</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.02129v1" onclick="toggleFavorite(this, '2510.02129v1', 'Stand Up, NAO! Increasing the Reliability of Stand-Up Motions Through Error Compensation in Position Control')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>23</td>
+  <td>21</td>
   <td><a href="./papers/251001986v1-reducing-discomfort-in-driving-simulators-motion-cueing-for-motion-s.html">Reducing Discomfort in Driving Simulators: Motion Cueing for Motion Sickness Mitigation</a></td>
   <td>提出基于MPC的运动提示算法，降低驾驶模拟器中的晕动症</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.01986v1" onclick="toggleFavorite(this, '2510.01986v1', 'Reducing Discomfort in Driving Simulators: Motion Cueing for Motion Sickness Mitigation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>24</td>
+  <td>22</td>
   <td><a href="./papers/251002614v2-umi-on-air-embodiment-aware-guidance-for-embodiment-agnostic-visuomo.html">UMI-on-Air: Embodiment-Aware Guidance for Embodiment-Agnostic Visuomotor Policies</a></td>
   <td>UMI-on-Air：提出具身感知引导的通用操作策略，解决空中机器人操作难题。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.02614v2" onclick="toggleFavorite(this, '2510.02614v2', 'UMI-on-Air: Embodiment-Aware Guidance for Embodiment-Agnostic Visuomotor Policies')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>25</td>
+  <td>23</td>
   <td><a href="./papers/251001675v2-geometric-backstepping-control-of-omnidirectional-tiltrotors-incorpo.html">Geometric Backstepping Control of Omnidirectional Tiltrotors Incorporating Servo-Rotor Dynamics for Robustness against Sudden Disturbances</a></td>
   <td>针对倾转旋翼飞行器，提出考虑伺服-旋翼动态特性的几何反步控制，提升抗扰动能力。</td>
   <td></td>
@@ -214,21 +200,21 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-02
 </thead>
 <tbody>
 <tr>
-  <td>26</td>
+  <td>24</td>
   <td><a href="./papers/251002616v1-rsv-slam-toward-real-time-semantic-visual-slam-in-indoor-dynamic-env.html">RSV-SLAM: Toward Real-Time Semantic Visual SLAM in Indoor Dynamic Environments</a></td>
   <td>提出RSV-SLAM，用于室内动态环境中实时语义视觉SLAM</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.02616v1" onclick="toggleFavorite(this, '2510.02616v1', 'RSV-SLAM: Toward Real-Time Semantic Visual SLAM in Indoor Dynamic Environments')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>27</td>
+  <td>25</td>
   <td><a href="./papers/251001648v1-statistical-uncertainty-learning-for-robust-visual-inertial-state-es.html">Statistical Uncertainty Learning for Robust Visual-Inertial State Estimation</a></td>
   <td>提出基于统计不确定性学习的鲁棒视觉惯性状态估计方法</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.01648v1" onclick="toggleFavorite(this, '2510.01648v1', 'Statistical Uncertainty Learning for Robust Visual-Inertial State Estimation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>28</td>
+  <td>26</td>
   <td><a href="./papers/251001848v1-greenhousesplat-a-dataset-of-photorealistic-greenhouse-simulations-f.html">GreenhouseSplat: A Dataset of Photorealistic Greenhouse Simulations for Mobile Robotics</a></td>
   <td>GreenhouseSplat：用于移动机器人的光照逼真温室模拟数据集</td>
   <td></td>
@@ -246,7 +232,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-02
 </thead>
 <tbody>
 <tr>
-  <td>29</td>
+  <td>27</td>
   <td><a href="./papers/251003342v3-gemini-robotics-15-pushing-the-frontier-of-generalist-robots-with-ad.html">Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer</a></td>
   <td>Gemini Robotics 1.5：通过具身推理、思考和运动迁移推进通用机器人前沿</td>
   <td></td>

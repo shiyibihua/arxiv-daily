@@ -5,7 +5,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-24
 
 # cs.RO（2025-11-24）
 
-📊 共 **24** 篇论文
+📊 共 **22** 篇论文
  | 🔗 **1** 篇有代码
 
 
@@ -14,7 +14,6 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-24
 <div class="interest-nav">
 <a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (15 🔗1)</a>
 <a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (6)</a>
-<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (2)</a>
 <a href="#支柱七动作重定向-motion-retargeting" class="interest-badge">支柱七：动作重定向 (Motion Retargeting) (1)</a>
 </div>
 
@@ -190,31 +189,6 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-24
 </table>
 
 
-<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (2 篇)</h2>
-
-<table>
-<thead>
-<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
-</thead>
-<tbody>
-<tr>
-  <td>22</td>
-  <td><a href="./papers/251119165v1-first-order-sobolev-reinforcement-learning.html">First-order Sobolev Reinforcement Learning</a></td>
-  <td>提出一阶Sobolev强化学习，通过梯度一致性加速critic收敛并稳定策略梯度。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.19165v1" onclick="toggleFavorite(this, '2511.19165v1', 'First-order Sobolev Reinforcement Learning')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>23</td>
-  <td><a href="./papers/251119355v1-leveraging-llms-for-reward-function-design-in-reinforcement-learning.html">Leveraging LLMs for reward function design in reinforcement learning control tasks</a></td>
-  <td>提出LEARN-Opt，利用LLM自主设计强化学习控制任务的奖励函数，无需人工干预。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.19355v1" onclick="toggleFavorite(this, '2511.19355v1', 'Leveraging LLMs for reward function design in reinforcement learning control tasks')" title="添加到收藏夹">☆</button></td>
-</tr>
-</tbody>
-</table>
-
-
 <h2 id="支柱七动作重定向-motion-retargeting">🔬 支柱七：动作重定向 (Motion Retargeting) (1 篇)</h2>
 
 <table>
@@ -223,7 +197,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-24
 </thead>
 <tbody>
 <tr>
-  <td>24</td>
+  <td>22</td>
   <td><a href="./papers/251119543v1-a-virtual-mechanical-interaction-layer-enables-resilient-human-to-ro.html">A Virtual Mechanical Interaction Layer Enables Resilient Human-to-Robot Object Handovers</a></td>
   <td>提出基于虚拟机械交互层的机器人控制方法，提升人机物体递送的鲁棒性</td>
   <td></td>

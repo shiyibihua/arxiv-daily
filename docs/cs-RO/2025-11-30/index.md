@@ -5,14 +5,14 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-30
 
 # cs.RO（2025-11-30）
 
-📊 共 **14** 篇论文
+📊 共 **12** 篇论文
  | 🔗 **1** 篇有代码
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
-<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (11 🔗1)</a>
+<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (9 🔗1)</a>
 <a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (2)</a>
 <a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (1)</a>
 </div>
@@ -20,7 +20,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-30
 ---
 
 
-<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (11 篇)</h2>
+<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (9 篇)</h2>
 
 <table>
 <thead>
@@ -78,27 +78,13 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-30
 </tr>
 <tr>
   <td>8</td>
-  <td><a href="./papers/251200915v1-partially-equivariant-reinforcement-learning-in-symmetry-breaking-en.html">Partially Equivariant Reinforcement Learning in Symmetry-Breaking Environments</a></td>
-  <td>提出部分等变强化学习，解决对称破缺环境下的泛化问题</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2512.00915v1" onclick="toggleFavorite(this, '2512.00915v1', 'Partially Equivariant Reinforcement Learning in Symmetry-Breaking Environments')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>9</td>
   <td><a href="./papers/251200797v1-transforming-monolithic-foundation-models-into-embodied-multi-agent-.html">Transforming Monolithic Foundation Models into Embodied Multi-Agent Architectures for Human-Robot Collaboration</a></td>
   <td>InteractGen：将单体模型转化为具身多智能体架构，促进人机协作</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.00797v1" onclick="toggleFavorite(this, '2512.00797v1', 'Transforming Monolithic Foundation Models into Embodied Multi-Agent Architectures for Human-Robot Collaboration')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>10</td>
-  <td><a href="./papers/251200783v2-sigma-the-key-for-vision-language-action-models-toward-telepathic-al.html">Sigma: The Key for Vision-Language-Action Models toward Telepathic Alignment</a></td>
-  <td>Sigma：面向心电感应对齐的视觉-语言-动作模型，解决人型机器人认知系统语义鸿沟</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2512.00783v2" onclick="toggleFavorite(this, '2512.00783v2', 'Sigma: The Key for Vision-Language-Action Models toward Telepathic Alignment')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>11</td>
+  <td>9</td>
   <td><a href="./papers/251200775v1-sagas-semantic-aware-graph-assisted-stitching-for-offline-temporal-l.html">SAGAS: Semantic-Aware Graph-Assisted Stitching for Offline Temporal Logic Planning</a></td>
   <td>SAGAS：一种用于离线时序逻辑规划的语义感知图辅助拼接方法</td>
   <td></td>
@@ -116,14 +102,14 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-30
 </thead>
 <tbody>
 <tr>
-  <td>12</td>
+  <td>10</td>
   <td><a href="./papers/251201009v1-fom-nav-frontier-object-maps-for-object-goal-navigation.html">FOM-Nav: Frontier-Object Maps for Object Goal Navigation</a></td>
   <td>提出FOM-Nav，利用前沿-物体地图提升物体目标导航效率</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.01009v1" onclick="toggleFavorite(this, '2512.01009v1', 'FOM-Nav: Frontier-Object Maps for Object Goal Navigation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>13</td>
+  <td>11</td>
   <td><a href="./papers/251201018v1-integration-of-uwb-radar-on-mobile-robots-for-continuous-obstacle-an.html">Integration of UWB Radar on Mobile Robots for Continuous Obstacle and Environment Mapping</a></td>
   <td>提出一种基于移动机器人UWB雷达的连续障碍物与环境地图构建方法</td>
   <td></td>
@@ -141,7 +127,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-30
 </thead>
 <tbody>
 <tr>
-  <td>14</td>
+  <td>12</td>
   <td><a href="./papers/251201066v1-reinforcement-learning-for-gliding-projectile-guidance-and-control.html">Reinforcement Learning for Gliding Projectile Guidance and Control</a></td>
   <td>提出基于强化学习的光学制导滑翔弹控制方法，提升动态环境下的导航自主性和灵活性。</td>
   <td></td>

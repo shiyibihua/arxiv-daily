@@ -5,7 +5,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-18
 
 # cs.CV（2025-11-18）
 
-📊 共 **36** 篇论文
+📊 共 **35** 篇论文
  | 🔗 **5** 篇有代码
 
 
@@ -13,7 +13,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-18
 
 <div class="interest-nav">
 <a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (26 🔗3)</a>
-<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (6 🔗1)</a>
+<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (5 🔗1)</a>
 <a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (2)</a>
 <a href="#支柱四生成式动作-generative-motion" class="interest-badge">支柱四：生成式动作 (Generative Motion) (1)</a>
 <a href="#支柱八物理动画-physics-based-animation" class="interest-badge">支柱八：物理动画 (Physics-based Animation) (1 🔗1)</a>
@@ -215,7 +215,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-18
 </table>
 
 
-<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (6 篇)</h2>
+<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (5 篇)</h2>
 
 <table>
 <thead>
@@ -252,13 +252,6 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-18
 </tr>
 <tr>
   <td>31</td>
-  <td><a href="./papers/251114515v2-imse-efficient-u-net-based-speech-enhancement-using-inception-depthw.html">IMSE: Efficient U-Net-based Speech Enhancement using Inception Depthwise Convolution and Amplitude-Aware Linear Attention</a></td>
-  <td>IMSE：利用Inception深度可分离卷积和幅度感知线性注意力的高效U-Net语音增强</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.14515v2" onclick="toggleFavorite(this, '2511.14515v2', 'IMSE: Efficient U-Net-based Speech Enhancement using Inception Depthwise Convolution and Amplitude-Aware Linear Attention')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>32</td>
   <td><a href="./papers/251114100v1-text-driven-reasoning-video-editing-via-reinforcement-learning-on-di.html">Text-Driven Reasoning Video Editing via Reinforcement Learning on Digital Twin Representations</a></td>
   <td>提出RIVER模型，通过数字孪生和强化学习解决文本驱动的推理视频编辑任务。</td>
   <td></td>
@@ -276,14 +269,14 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-18
 </thead>
 <tbody>
 <tr>
-  <td>33</td>
+  <td>32</td>
   <td><a href="./papers/251114259v2-manipshield-a-unified-framework-for-image-manipulation-detection-loc.html">ManipShield: A Unified Framework for Image Manipulation Detection, Localization and Explanation</a></td>
   <td>提出ManipShield，一个统一的图像篡改检测、定位和解释框架，并构建大规模基准测试集ManipBench。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.14259v2" onclick="toggleFavorite(this, '2511.14259v2', 'ManipShield: A Unified Framework for Image Manipulation Detection, Localization and Explanation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>34</td>
+  <td>33</td>
   <td><a href="./papers/251114086v1-error-driven-scene-editing-for-3d-grounding-in-large-language-models.html">Error-Driven Scene Editing for 3D Grounding in Large Language Models</a></td>
   <td>提出DEER-3D框架，通过误差驱动的场景编辑提升3D-LLM的空间理解能力</td>
   <td></td>
@@ -301,7 +294,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-18
 </thead>
 <tbody>
 <tr>
-  <td>35</td>
+  <td>34</td>
   <td><a href="./papers/251114716v1-diffusion-as-self-distillation-end-to-end-latent-diffusion-in-one-mo.html">Diffusion As Self-Distillation: End-to-End Latent Diffusion In One Model</a></td>
   <td>提出DSD框架，实现端到端潜在扩散模型单网络训练，解决多阶段训练低效问题。</td>
   <td></td>
@@ -319,7 +312,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-18
 </thead>
 <tbody>
 <tr>
-  <td>36</td>
+  <td>35</td>
   <td><a href="./papers/251114654v1-improving-segmentation-of-retinal-arteries-and-veins-using-cardiac-s.html">Improving segmentation of retinal arteries and veins using cardiac signal in doppler holograms</a></td>
   <td>利用心动信号增强多普勒全息图中视网膜动静脉分割</td>
   <td>✅</td>

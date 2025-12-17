@@ -5,14 +5,13 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-04
 
 # cs.RO（2025-10-04）
 
-📊 共 **10** 篇论文
+📊 共 **8** 篇论文
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
 <a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (7)</a>
-<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (2)</a>
 <a href="#支柱三空间感知与语义-perception-semantics" class="interest-badge">支柱三：空间感知与语义 (Perception & Semantics) (1)</a>
 </div>
 
@@ -79,31 +78,6 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-04
 </table>
 
 
-<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (2 篇)</h2>
-
-<table>
-<thead>
-<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
-</thead>
-<tbody>
-<tr>
-  <td>8</td>
-  <td><a href="./papers/251003592v1-deep-reinforcement-learning-for-multi-agent-coordination.html">Deep Reinforcement Learning for Multi-Agent Coordination</a></td>
-  <td>提出基于虚拟信息素的S-MADRL框架，解决拥挤环境中多智能体高效协同问题</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.03592v1" onclick="toggleFavorite(this, '2510.03592v1', 'Deep Reinforcement Learning for Multi-Agent Coordination')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>9</td>
-  <td><a href="./papers/251003823v1-distributed-area-coverage-with-high-altitude-balloons-using-multi-ag.html">Distributed Area Coverage with High Altitude Balloons Using Multi-Agent Reinforcement Learning</a></td>
-  <td>提出基于多智能体强化学习的高空气球分布式区域覆盖方法</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.03823v1" onclick="toggleFavorite(this, '2510.03823v1', 'Distributed Area Coverage with High Altitude Balloons Using Multi-Agent Reinforcement Learning')" title="添加到收藏夹">☆</button></td>
-</tr>
-</tbody>
-</table>
-
-
 <h2 id="支柱三空间感知与语义-perception-semantics">🔬 支柱三：空间感知与语义 (Perception & Semantics) (1 篇)</h2>
 
 <table>
@@ -112,7 +86,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-04
 </thead>
 <tbody>
 <tr>
-  <td>10</td>
+  <td>8</td>
   <td><a href="./papers/251003919v1-tcb-vio-tightly-coupled-focal-plane-binary-enhanced-visual-inertial-.html">TCB-VIO: Tightly-Coupled Focal-Plane Binary-Enhanced Visual Inertial Odometry</a></td>
   <td>提出TCB-VIO，一种基于焦平面传感器的高帧率紧耦合视觉惯性里程计</td>
   <td></td>

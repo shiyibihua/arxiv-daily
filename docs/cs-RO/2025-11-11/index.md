@@ -5,23 +5,22 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-11
 
 # cs.RO（2025-11-11）
 
-📊 共 **26** 篇论文
+📊 共 **23** 篇论文
  | 🔗 **1** 篇有代码
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
-<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (18 🔗1)</a>
-<a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (6)</a>
-<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (1)</a>
+<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (17 🔗1)</a>
+<a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (5)</a>
 <a href="#支柱七动作重定向-motion-retargeting" class="interest-badge">支柱七：动作重定向 (Motion Retargeting) (1)</a>
 </div>
 
 ---
 
 
-<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (18 篇)</h2>
+<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (17 篇)</h2>
 
 <table>
 <thead>
@@ -107,48 +106,41 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-11
 </tr>
 <tr>
   <td>12</td>
-  <td><a href="./papers/251107730v2-multistep-quasimetric-learning-for-scalable-goal-conditioned-reinfor.html">Multistep Quasimetric Learning for Scalable Goal-conditioned Reinforcement Learning</a></td>
-  <td>提出多步准度量学习，解决可扩展的、长时程目标条件强化学习问题</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.07730v2" onclick="toggleFavorite(this, '2511.07730v2', 'Multistep Quasimetric Learning for Scalable Goal-conditioned Reinforcement Learning')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>13</td>
   <td><a href="./papers/251108377v1-human-motion-intent-inferencing-in-teleoperation-through-a-sindy-par.html">Human Motion Intent Inferencing in Teleoperation Through a SINDy Paradigm</a></td>
   <td>Psychic：利用SINDy范式进行遥操作中人类运动意图推断</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.08377v1" onclick="toggleFavorite(this, '2511.08377v1', 'Human Motion Intent Inferencing in Teleoperation Through a SINDy Paradigm')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>14</td>
+  <td>13</td>
   <td><a href="./papers/251108277v1-x-ionet-cross-platform-inertial-odometry-network-with-dual-stage-att.html">X-IONet: Cross-Platform Inertial Odometry Network with Dual-Stage Attention</a></td>
   <td>X-IONet：基于双阶段注意力的跨平台惯性里程计网络，提升行人和四足机器人导航精度。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.08277v1" onclick="toggleFavorite(this, '2511.08277v1', 'X-IONet: Cross-Platform Inertial Odometry Network with Dual-Stage Attention')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>15</td>
+  <td>14</td>
   <td><a href="./papers/251108001v1-effective-game-theoretic-motion-planning-via-nested-search.html">Effective Game-Theoretic Motion Planning via Nested Search</a></td>
   <td>提出博弈论嵌套搜索算法，高效解决动态系统中纳什均衡的运动规划问题</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.08001v1" onclick="toggleFavorite(this, '2511.08001v1', 'Effective Game-Theoretic Motion Planning via Nested Search')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>16</td>
+  <td>15</td>
   <td><a href="./papers/251108454v1-intuitive-control-of-supernumerary-robotic-limbs-through-a-tactile-e.html">Intuitive control of supernumerary robotic limbs through a tactile-encoded neural interface</a></td>
   <td>提出一种触觉编码神经接口，实现对额外机械肢的直观控制</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.08454v1" onclick="toggleFavorite(this, '2511.08454v1', 'Intuitive control of supernumerary robotic limbs through a tactile-encoded neural interface')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>17</td>
+  <td>16</td>
   <td><a href="./papers/251108741v2-atom-cbf-adaptive-safe-perception-based-control-under-out-of-distrib.html">ATOM-CBF: Adaptive Safe Perception-Based Control under Out-of-Distribution Measurements</a></td>
   <td>提出ATOM-CBF，解决感知不确定性下的机器人安全控制问题</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.08741v2" onclick="toggleFavorite(this, '2511.08741v2', 'ATOM-CBF: Adaptive Safe Perception-Based Control under Out-of-Distribution Measurements')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>18</td>
+  <td>17</td>
   <td><a href="./papers/251107717v1-robotag-end-to-end-robot-configuration-estimation-via-topological-al.html">RoboTAG: End-to-end Robot Configuration Estimation via Topological Alignment Graph</a></td>
   <td>RoboTAG：通过拓扑对齐图实现端到端机器人配置估计</td>
   <td></td>
@@ -158,7 +150,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-11
 </table>
 
 
-<h2 id="支柱三空间感知-perception-slam">🔬 支柱三：空间感知 (Perception & SLAM) (6 篇)</h2>
+<h2 id="支柱三空间感知-perception-slam">🔬 支柱三：空间感知 (Perception & SLAM) (5 篇)</h2>
 
 <table>
 <thead>
@@ -166,64 +158,39 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-11
 </thead>
 <tbody>
 <tr>
-  <td>19</td>
+  <td>18</td>
   <td><a href="./papers/251108822v1-low-cost-multi-agent-fleet-for-acoustic-cooperative-localization-res.html">Low-cost Multi-agent Fleet for Acoustic Cooperative Localization Research</a></td>
   <td>提出低成本可配置水下机器人集群CoUGARs，用于水声协同定位研究</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.08822v1" onclick="toggleFavorite(this, '2511.08822v1', 'Low-cost Multi-agent Fleet for Acoustic Cooperative Localization Research')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>20</td>
+  <td>19</td>
   <td><a href="./papers/251115677v1-real-time-point-cloud-data-transmission-via-l4s-for-5g-edge-assisted.html">Real-time Point Cloud Data Transmission via L4S for 5G-Edge-Assisted Robotics</a></td>
   <td>提出一种基于L4S的实时LiDAR点云传输框架，用于5G边缘辅助机器人。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.15677v1" onclick="toggleFavorite(this, '2511.15677v1', 'Real-time Point Cloud Data Transmission via L4S for 5G-Edge-Assisted Robotics')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>21</td>
-  <td><a href="./papers/251108752v1-information-driven-fault-detection-and-identification-for-multi-agen.html">Information-Driven Fault Detection and Identification for Multi-Agent Spacecraft Systems: Collaborative On-Orbit Inspection Mission</a></td>
-  <td>提出信息驱动的容错框架，用于多智能体航天器协同在轨检测任务</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.08752v1" onclick="toggleFavorite(this, '2511.08752v1', 'Information-Driven Fault Detection and Identification for Multi-Agent Spacecraft Systems: Collaborative On-Orbit Inspection Mission')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>22</td>
+  <td>20</td>
   <td><a href="./papers/251108502v1-safe-and-optimal-learning-from-preferences-via-weighted-temporal-log.html">Safe and Optimal Learning from Preferences via Weighted Temporal Logic with Applications in Robotics and Formula 1</a></td>
   <td>提出基于加权时序逻辑的安全最优偏好学习方法，应用于机器人和F1赛车</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.08502v1" onclick="toggleFavorite(this, '2511.08502v1', 'Safe and Optimal Learning from Preferences via Weighted Temporal Logic with Applications in Robotics and Formula 1')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>23</td>
+  <td>21</td>
   <td><a href="./papers/251107950v1-usv-obstacles-detection-and-tracking-in-marine-environments.html">USV Obstacles Detection and Tracking in Marine Environments</a></td>
   <td>针对无人水面艇，提出融合激光雷达与视觉信息的障碍物检测与跟踪方法</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.07950v1" onclick="toggleFavorite(this, '2511.07950v1', 'USV Obstacles Detection and Tracking in Marine Environments')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>24</td>
+  <td>22</td>
   <td><a href="./papers/251107750v1-navigating-the-wild-pareto-optimal-visual-decision-making-in-image-s.html">Navigating the Wild: Pareto-Optimal Visual Decision-Making in Image Space</a></td>
   <td>提出基于图像空间的Pareto最优视觉导航框架，解决复杂环境下的实时导航问题</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.07750v1" onclick="toggleFavorite(this, '2511.07750v1', 'Navigating the Wild: Pareto-Optimal Visual Decision-Making in Image Space')" title="添加到收藏夹">☆</button></td>
-</tr>
-</tbody>
-</table>
-
-
-<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (1 篇)</h2>
-
-<table>
-<thead>
-<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
-</thead>
-<tbody>
-<tr>
-  <td>25</td>
-  <td><a href="./papers/251108086v2-dynamic-sparsity-challenging-common-sparsity-assumptions-for-learnin.html">Dynamic Sparsity: Challenging Common Sparsity Assumptions for Learning World Models in Robotic Reinforcement Learning Benchmarks</a></td>
-  <td>揭示机器人强化学习环境动态稀疏性的挑战与特性，为世界模型学习提供新视角</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.08086v2" onclick="toggleFavorite(this, '2511.08086v2', 'Dynamic Sparsity: Challenging Common Sparsity Assumptions for Learning World Models in Robotic Reinforcement Learning Benchmarks')" title="添加到收藏夹">☆</button></td>
 </tr>
 </tbody>
 </table>
@@ -237,7 +204,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-11
 </thead>
 <tbody>
 <tr>
-  <td>26</td>
+  <td>23</td>
   <td><a href="./papers/251108732v1-intuitive-programming-adaptive-task-planning-and-dynamic-role-alloca.html">Intuitive Programming, Adaptive Task Planning, and Dynamic Role Allocation in Human-Robot Collaboration</a></td>
   <td>综述人机协作中直观编程、自适应任务规划和动态角色分配的关键技术。</td>
   <td></td>

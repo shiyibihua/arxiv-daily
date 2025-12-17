@@ -5,7 +5,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-11
 
 # cs.CV（2025-11-11）
 
-📊 共 **34** 篇论文
+📊 共 **33** 篇论文
  | 🔗 **12** 篇有代码
 
 
@@ -13,7 +13,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-11
 
 <div class="interest-nav">
 <a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (18 🔗4)</a>
-<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (9 🔗6)</a>
+<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (8 🔗6)</a>
 <a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (6 🔗1)</a>
 <a href="#支柱四生成式动作-generative-motion" class="interest-badge">支柱四：生成式动作 (Generative Motion) (1 🔗1)</a>
 </div>
@@ -158,7 +158,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-11
 </table>
 
 
-<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (9 篇)</h2>
+<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (8 篇)</h2>
 
 <table>
 <thead>
@@ -209,20 +209,13 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-11
 </tr>
 <tr>
   <td>25</td>
-  <td><a href="./papers/251108399v1-aligning-by-misaligning-boundary-aware-curriculum-learning-for-multi.html">Aligning by Misaligning: Boundary-aware Curriculum Learning for Multimodal Alignment</a></td>
-  <td>提出边界感知课程学习方法BACL，提升多模态对齐性能。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.08399v1" onclick="toggleFavorite(this, '2511.08399v1', 'Aligning by Misaligning: Boundary-aware Curriculum Learning for Multimodal Alignment')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>26</td>
   <td><a href="./papers/251107808v2-di3cl-contrastive-learning-with-dynamic-instances-and-contour-consis.html">DI3CL: Contrastive Learning With Dynamic Instances and Contour Consistency for SAR Land-Cover Classification Foundation Model</a></td>
   <td>提出DI3CL框架，利用动态实例和轮廓一致性对比学习，构建SAR地物分类基础模型。</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2511.07808v2" onclick="toggleFavorite(this, '2511.07808v2', 'DI3CL: Contrastive Learning With Dynamic Instances and Contour Consistency for SAR Land-Cover Classification Foundation Model')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>27</td>
+  <td>26</td>
   <td><a href="./papers/251108480v1-compression-then-matching-an-efficient-pre-training-paradigm-for-mul.html">Compression then Matching: An Efficient Pre-training Paradigm for Multimodal Embedding</a></td>
   <td>提出CoMa：一种高效的多模态嵌入预训练范式，提升视觉-语言模型性能。</td>
   <td></td>
@@ -240,42 +233,42 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-11
 </thead>
 <tbody>
 <tr>
-  <td>28</td>
+  <td>27</td>
   <td><a href="./papers/251108545v1-repose-nerf-robust-radiance-fields-for-mesh-reconstruction-under-noi.html">RePose-NeRF: Robust Radiance Fields for Mesh Reconstruction under Noisy Camera Poses</a></td>
   <td>RePose-NeRF：提出一种鲁棒的辐射场方法，用于在噪声相机位姿下进行网格重建</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.08545v1" onclick="toggleFavorite(this, '2511.08545v1', 'RePose-NeRF: Robust Radiance Fields for Mesh Reconstruction under Noisy Camera Poses')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>29</td>
+  <td>28</td>
   <td><a href="./papers/251108031v1-multi-modal-deepfake-detection-and-localization-with-fpn-transformer.html">Multi-modal Deepfake Detection and Localization with FPN-Transformer</a></td>
   <td>提出基于FPN-Transformer的多模态深度伪造检测与定位框架，提升跨模态泛化能力和时序边界回归精度。</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2511.08031v1" onclick="toggleFavorite(this, '2511.08031v1', 'Multi-modal Deepfake Detection and Localization with FPN-Transformer')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>30</td>
+  <td>29</td>
   <td><a href="./papers/251107889v1-generating-sketches-in-a-hierarchical-auto-regressive-process-for-fl.html">Generating Sketches in a Hierarchical Auto-Regressive Process for Flexible Sketch Drawing Manipulation at Stroke-Level</a></td>
   <td>提出一种分层自回归草图生成方法，实现笔画级灵活操控</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.07889v1" onclick="toggleFavorite(this, '2511.07889v1', 'Generating Sketches in a Hierarchical Auto-Regressive Process for Flexible Sketch Drawing Manipulation at Stroke-Level')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>31</td>
+  <td>30</td>
   <td><a href="./papers/251108365v1-retrospective-motion-correction-in-mri-using-disentangled-embeddings.html">Retrospective motion correction in MRI using disentangled embeddings</a></td>
   <td>提出基于解耦嵌入的MRI运动伪影矫正方法，提升模型泛化性。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.08365v1" onclick="toggleFavorite(this, '2511.08365v1', 'Retrospective motion correction in MRI using disentangled embeddings')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>32</td>
+  <td>31</td>
   <td><a href="./papers/251108065v1-i2e-real-time-image-to-event-conversion-for-high-performance-spiking.html">I2E: Real-Time Image-to-Event Conversion for High-Performance Spiking Neural Networks</a></td>
   <td>I2E：用于高性能脉冲神经网络的实时图像到事件转换框架</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.08065v1" onclick="toggleFavorite(this, '2511.08065v1', 'I2E: Real-Time Image-to-Event Conversion for High-Performance Spiking Neural Networks')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>33</td>
+  <td>32</td>
   <td><a href="./papers/251108048v1-generalized-scale-object-counting-with-gradual-query-aggregation.html">Generalized-Scale Object Counting with Gradual Query Aggregation</a></td>
   <td>GECO2：通过渐进式查询聚合实现广义尺度目标计数</td>
   <td></td>
@@ -293,7 +286,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-11
 </thead>
 <tbody>
 <tr>
-  <td>34</td>
+  <td>33</td>
   <td><a href="./papers/251107819v1-human-motion-synthesis-in-3d-scenes-via-unified-scene-semantic-occup.html">Human Motion Synthesis in 3D Scenes via Unified Scene Semantic Occupancy</a></td>
   <td>提出SSOMotion，利用统一场景语义占据表示进行3D场景中的人体运动合成。</td>
   <td>✅</td>

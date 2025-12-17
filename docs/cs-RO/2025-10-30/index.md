@@ -5,16 +5,16 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-30
 
 # cs.RO（2025-10-30）
 
-📊 共 **27** 篇论文
+📊 共 **25** 篇论文
  | 🔗 **5** 篇有代码
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
-<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (17 🔗3)</a>
-<a href="#支柱九具身大模型-embodied-foundation-models" class="interest-badge">支柱九：具身大模型 (Embodied Foundation Models) (4 🔗2)</a>
+<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (16 🔗3)</a>
 <a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (4)</a>
+<a href="#支柱九具身大模型-embodied-foundation-models" class="interest-badge">支柱九：具身大模型 (Embodied Foundation Models) (3 🔗2)</a>
 <a href="#支柱三空间感知与语义-perception-semantics" class="interest-badge">支柱三：空间感知与语义 (Perception & Semantics) (1)</a>
 <a href="#支柱四生成式动作-generative-motion" class="interest-badge">支柱四：生成式动作 (Generative Motion) (1)</a>
 </div>
@@ -22,7 +22,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-30
 ---
 
 
-<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (17 篇)</h2>
+<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (16 篇)</h2>
 
 <table>
 <thead>
@@ -115,77 +115,31 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-30
 </tr>
 <tr>
   <td>13</td>
-  <td><a href="./papers/251026531v1-efficient-collision-avoidance-constraints-for-ellipsoidal-obstacles-.html">Efficient Collision-Avoidance Constraints for Ellipsoidal Obstacles in Optimal Control: Application to Path-Following MPC and UAVs</a></td>
-  <td>提出高效椭球避障约束，用于路径跟踪MPC和无人机控制</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.26531v1" onclick="toggleFavorite(this, '2510.26531v1', 'Efficient Collision-Avoidance Constraints for Ellipsoidal Obstacles in Optimal Control: Application to Path-Following MPC and UAVs')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>14</td>
   <td><a href="./papers/251026082v2-beyond-the-uncanny-valley-a-mixed-method-investigation-of-anthropomo.html">Beyond the Uncanny Valley: A Mixed-Method Investigation of Anthropomorphism in Protective Responses to Robot Abuse</a></td>
   <td>研究类人机器人受虐待时，不同程度的拟人化如何影响人类的保护反应。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.26082v2" onclick="toggleFavorite(this, '2510.26082v2', 'Beyond the Uncanny Valley: A Mixed-Method Investigation of Anthropomorphism in Protective Responses to Robot Abuse')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>15</td>
+  <td>14</td>
   <td><a href="./papers/251026909v2-navitrace-evaluating-embodied-navigation-of-vision-language-models.html">NaviTrace: Evaluating Embodied Navigation of Vision-Language Models</a></td>
   <td>NaviTrace：提出视觉-语言模型具身导航评测基准，解决真实机器人导航评估难题</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2510.26909v2" onclick="toggleFavorite(this, '2510.26909v2', 'NaviTrace: Evaluating Embodied Navigation of Vision-Language Models')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>16</td>
+  <td>15</td>
   <td><a href="./papers/251026656v2-heuristic-adaptation-of-potentially-misspecified-domain-support-for-.html">Heuristic Adaptation of Potentially Misspecified Domain Support for Likelihood-Free Inference in Stochastic Dynamical Systems</a></td>
   <td>提出三种启发式LFI变体，自适应调整领域支持，提升随机动力系统中的无似然推理性能</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.26656v2" onclick="toggleFavorite(this, '2510.26656v2', 'Heuristic Adaptation of Potentially Misspecified Domain Support for Likelihood-Free Inference in Stochastic Dynamical Systems')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>17</td>
+  <td>16</td>
   <td><a href="./papers/251026132v1-embodied-intelligence-for-advanced-bioinspired-microrobotics-example.html">Embodied Intelligence for Advanced Bioinspired Microrobotics: Examples and Insights</a></td>
   <td>基于具身智能的微型机器人设计，实现高效自主运动与导航</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.26132v1" onclick="toggleFavorite(this, '2510.26132v1', 'Embodied Intelligence for Advanced Bioinspired Microrobotics: Examples and Insights')" title="添加到收藏夹">☆</button></td>
-</tr>
-</tbody>
-</table>
-
-
-<h2 id="支柱九具身大模型-embodied-foundation-models">🔬 支柱九：具身大模型 (Embodied Foundation Models) (4 篇)</h2>
-
-<table>
-<thead>
-<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
-</thead>
-<tbody>
-<tr>
-  <td>18</td>
-  <td><a href="./papers/251027033v1-a-multi-modal-neuro-symbolic-approach-for-spatial-reasoning-based-vi.html">A Multi-Modal Neuro-Symbolic Approach for Spatial Reasoning-Based Visual Grounding in Robotics</a></td>
-  <td>提出一种多模态神经符号方法，用于机器人中基于空间推理的视觉定位</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.27033v1" onclick="toggleFavorite(this, '2510.27033v1', 'A Multi-Modal Neuro-Symbolic Approach for Spatial Reasoning-Based Visual Grounding in Robotics')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>19</td>
-  <td><a href="./papers/251026536v1-roboos-next-a-unified-memory-based-framework-for-lifelong-scalable-a.html">RoboOS-NeXT: A Unified Memory-based Framework for Lifelong, Scalable, and Robust Multi-Robot Collaboration</a></td>
-  <td>RoboOS-NeXT：面向终身学习、可扩展和鲁棒多机器人协作的统一内存框架</td>
-  <td>✅</td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.26536v1" onclick="toggleFavorite(this, '2510.26536v1', 'RoboOS-NeXT: A Unified Memory-based Framework for Lifelong, Scalable, and Robust Multi-Robot Collaboration')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>20</td>
-  <td><a href="./papers/251100108v2-pelican-vl-10-a-foundation-brain-model-for-embodied-intelligence.html">Pelican-VL 1.0: A Foundation Brain Model for Embodied Intelligence</a></td>
-  <td>Pelican-VL 1.0：用于具身智能的开源基础大脑模型</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.00108v2" onclick="toggleFavorite(this, '2511.00108v2', 'Pelican-VL 1.0: A Foundation Brain Model for Embodied Intelligence')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>21</td>
-  <td><a href="./papers/251026742v1-running-vlas-at-real-time-speed.html">Running VLAs at Real-time Speed</a></td>
-  <td>提出加速策略，单GPU实现30Hz多视角VLA实时运行，赋能动态机器人任务</td>
-  <td>✅</td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.26742v1" onclick="toggleFavorite(this, '2510.26742v1', 'Running VLAs at Real-time Speed')" title="添加到收藏夹">☆</button></td>
 </tr>
 </tbody>
 </table>
@@ -199,32 +153,64 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-30
 </thead>
 <tbody>
 <tr>
-  <td>22</td>
+  <td>17</td>
   <td><a href="./papers/251026646v1-hybrid-dqn-td3-reinforcement-learning-for-autonomous-navigation-in-d.html">Hybrid DQN-TD3 Reinforcement Learning for Autonomous Navigation in Dynamic Environments</a></td>
   <td>提出混合DQN-TD3强化学习方法，用于动态环境中自主导航。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.26646v1" onclick="toggleFavorite(this, '2510.26646v1', 'Hybrid DQN-TD3 Reinforcement Learning for Autonomous Navigation in Dynamic Environments')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>23</td>
+  <td>18</td>
   <td><a href="./papers/251100088v1-alpamayo-r1-bridging-reasoning-and-action-prediction-for-generalizab.html">Alpamayo-R1: Bridging Reasoning and Action Prediction for Generalizable Autonomous Driving in the Long Tail</a></td>
   <td>提出Alpamayo-R1，通过因果推理和轨迹规划提升长尾场景下自动驾驶的泛化能力。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.00088v1" onclick="toggleFavorite(this, '2511.00088v1', 'Alpamayo-R1: Bridging Reasoning and Action Prediction for Generalizable Autonomous Driving in the Long Tail')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>24</td>
+  <td>19</td>
   <td><a href="./papers/251026363v1-towards-reinforcement-learning-based-log-loading-automation.html">Towards Reinforcement Learning Based Log Loading Automation</a></td>
   <td>提出基于强化学习的木材装载自动化方法，提升林业作业效率</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.26363v1" onclick="toggleFavorite(this, '2510.26363v1', 'Towards Reinforcement Learning Based Log Loading Automation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>25</td>
+  <td>20</td>
   <td><a href="./papers/251026040v1-accelerating-real-world-overtaking-in-f1tenth-racing-employing-reinf.html">Accelerating Real-World Overtaking in F1TENTH Racing Employing Reinforcement Learning Methods</a></td>
   <td>提出基于强化学习的F1TENTH赛车超车算法，提升真实场景超车成功率</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.26040v1" onclick="toggleFavorite(this, '2510.26040v1', 'Accelerating Real-World Overtaking in F1TENTH Racing Employing Reinforcement Learning Methods')" title="添加到收藏夹">☆</button></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 id="支柱九具身大模型-embodied-foundation-models">🔬 支柱九：具身大模型 (Embodied Foundation Models) (3 篇)</h2>
+
+<table>
+<thead>
+<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td>21</td>
+  <td><a href="./papers/251027033v1-a-multi-modal-neuro-symbolic-approach-for-spatial-reasoning-based-vi.html">A Multi-Modal Neuro-Symbolic Approach for Spatial Reasoning-Based Visual Grounding in Robotics</a></td>
+  <td>提出一种多模态神经符号方法，用于机器人中基于空间推理的视觉定位</td>
+  <td></td>
+  <td><button class="favorite-btn" data-arxiv-id="2510.27033v1" onclick="toggleFavorite(this, '2510.27033v1', 'A Multi-Modal Neuro-Symbolic Approach for Spatial Reasoning-Based Visual Grounding in Robotics')" title="添加到收藏夹">☆</button></td>
+</tr>
+<tr>
+  <td>22</td>
+  <td><a href="./papers/251026536v1-roboos-next-a-unified-memory-based-framework-for-lifelong-scalable-a.html">RoboOS-NeXT: A Unified Memory-based Framework for Lifelong, Scalable, and Robust Multi-Robot Collaboration</a></td>
+  <td>RoboOS-NeXT：面向终身学习、可扩展和鲁棒多机器人协作的统一内存框架</td>
+  <td>✅</td>
+  <td><button class="favorite-btn" data-arxiv-id="2510.26536v1" onclick="toggleFavorite(this, '2510.26536v1', 'RoboOS-NeXT: A Unified Memory-based Framework for Lifelong, Scalable, and Robust Multi-Robot Collaboration')" title="添加到收藏夹">☆</button></td>
+</tr>
+<tr>
+  <td>23</td>
+  <td><a href="./papers/251026742v1-running-vlas-at-real-time-speed.html">Running VLAs at Real-time Speed</a></td>
+  <td>提出加速策略，单GPU实现30Hz多视角VLA实时运行，赋能动态机器人任务</td>
+  <td>✅</td>
+  <td><button class="favorite-btn" data-arxiv-id="2510.26742v1" onclick="toggleFavorite(this, '2510.26742v1', 'Running VLAs at Real-time Speed')" title="添加到收藏夹">☆</button></td>
 </tr>
 </tbody>
 </table>
@@ -238,7 +224,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-30
 </thead>
 <tbody>
 <tr>
-  <td>26</td>
+  <td>24</td>
   <td><a href="./papers/251026358v1-agrigs-slam-orchard-mapping-across-seasons-via-multi-view-gaussian-s.html">AgriGS-SLAM: Orchard Mapping Across Seasons via Multi-View Gaussian Splatting SLAM</a></td>
   <td>AgriGS-SLAM：基于多视角高斯溅射的果园跨季节建图SLAM</td>
   <td></td>
@@ -256,7 +242,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-30
 </thead>
 <tbody>
 <tr>
-  <td>27</td>
+  <td>25</td>
   <td><a href="./papers/251026142v1-adaptive-trajectory-refinement-for-optimization-based-local-planning.html">Adaptive Trajectory Refinement for Optimization-based Local Planning in Narrow Passages</a></td>
   <td>提出自适应轨迹优化算法，解决移动机器人在狭窄通道中的局部规划问题</td>
   <td></td>

@@ -5,14 +5,14 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-01
 
 # cs.RO（2025-10-01）
 
-📊 共 **21** 篇论文
+📊 共 **20** 篇论文
  | 🔗 **1** 篇有代码
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
-<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (13 🔗1)</a>
+<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (12 🔗1)</a>
 <a href="#支柱三空间感知与语义-perception-semantics" class="interest-badge">支柱三：空间感知与语义 (Perception & Semantics) (3)</a>
 <a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (3)</a>
 <a href="#支柱九具身大模型-embodied-foundation-models" class="interest-badge">支柱九：具身大模型 (Embodied Foundation Models) (2)</a>
@@ -21,7 +21,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-01
 ---
 
 
-<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (13 篇)</h2>
+<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (12 篇)</h2>
 
 <table>
 <thead>
@@ -100,20 +100,13 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-01
 </tr>
 <tr>
   <td>11</td>
-  <td><a href="./papers/251001489v1-a-robust-neural-control-design-for-multi-drone-slung-payload-manipul.html">A Robust Neural Control Design for Multi-drone Slung Payload Manipulation with Control Contraction Metrics</a></td>
-  <td>提出一种基于控制收缩度量的多无人机吊索负载操纵鲁棒神经控制方法</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.01489v1" onclick="toggleFavorite(this, '2510.01489v1', 'A Robust Neural Control Design for Multi-drone Slung Payload Manipulation with Control Contraction Metrics')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>12</td>
   <td><a href="./papers/251000726v1-crostata-cross-state-transition-attention-transformer-for-robotic-ma.html">CroSTAta: Cross-State Transition Attention Transformer for Robotic Manipulation</a></td>
   <td>提出Cross-State Transition Attention Transformer以解决机器人操作中的执行变异问题</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.00726v1" onclick="toggleFavorite(this, '2510.00726v1', 'CroSTAta: Cross-State Transition Attention Transformer for Robotic Manipulation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>13</td>
+  <td>12</td>
   <td><a href="./papers/251001404v1-how-well-do-diffusion-policies-learn-kinematic-constraint-manifolds.html">How Well do Diffusion Policies Learn Kinematic Constraint Manifolds?</a></td>
   <td>研究扩散策略学习运动学约束流形的能力，揭示数据集质量和大小的影响。</td>
   <td></td>
@@ -131,21 +124,21 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-01
 </thead>
 <tbody>
 <tr>
-  <td>14</td>
+  <td>13</td>
   <td><a href="./papers/251001483v1-vl-kng-visual-scene-understanding-for-navigation-goal-identification.html">VL-KnG: Visual Scene Understanding for Navigation Goal Identification using Spatiotemporal Knowledge Graphs</a></td>
   <td>VL-KnG：利用时空知识图谱进行视觉场景理解，实现导航目标识别</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.01483v1" onclick="toggleFavorite(this, '2510.01483v1', 'VL-KnG: Visual Scene Understanding for Navigation Goal Identification using Spatiotemporal Knowledge Graphs')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>15</td>
+  <td>14</td>
   <td><a href="./papers/251001348v1-kilometer-scale-gnss-denied-uav-navigation-via-heightmap-gradients-a.html">Kilometer-Scale GNSS-Denied UAV Navigation via Heightmap Gradients: A Winning System from the SPRIN-D Challenge</a></td>
   <td>提出基于高度图梯度的GNSS拒止无人机导航系统，赢得SPRIN-D挑战赛。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.01348v1" onclick="toggleFavorite(this, '2510.01348v1', 'Kilometer-Scale GNSS-Denied UAV Navigation via Heightmap Gradients: A Winning System from the SPRIN-D Challenge')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>16</td>
+  <td>15</td>
   <td><a href="./papers/251000783v1-semantic-visual-simultaneous-localization-and-mapping-a-survey-on-st.html">Semantic Visual Simultaneous Localization and Mapping: A Survey on State of the Art, Challenges, and Future Directions</a></td>
   <td>综述语义视觉SLAM技术，分析现状、挑战与未来方向</td>
   <td></td>
@@ -163,21 +156,21 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-01
 </thead>
 <tbody>
 <tr>
-  <td>17</td>
+  <td>16</td>
   <td><a href="./papers/251001068v1-compose-your-policies-improving-diffusion-based-or-flow-based-robot-.html">Compose Your Policies! Improving Diffusion-based or Flow-based Robot Policies via Test-time Distribution-level Composition</a></td>
   <td>提出通用策略组合（GPC），无需额外训练即可提升扩散或Flow模型机器人策略性能。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.01068v1" onclick="toggleFavorite(this, '2510.01068v1', 'Compose Your Policies! Improving Diffusion-based or Flow-based Robot Policies via Test-time Distribution-level Composition')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>18</td>
+  <td>17</td>
   <td><a href="./papers/251001519v1-online-hierarchical-policy-learning-using-physics-priors-for-robot-n.html">Online Hierarchical Policy Learning using Physics Priors for Robot Navigation in Unknown Environments</a></td>
   <td>提出基于物理先验的在线分层策略学习方法，用于未知环境下的机器人导航。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.01519v1" onclick="toggleFavorite(this, '2510.01519v1', 'Online Hierarchical Policy Learning using Physics Priors for Robot Navigation in Unknown Environments')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>19</td>
+  <td>18</td>
   <td><a href="./papers/251001388v1-ventura-adapting-image-diffusion-models-for-unified-task-conditioned.html">VENTURA: Adapting Image Diffusion Models for Unified Task Conditioned Navigation</a></td>
   <td>提出VENTURA以解决机器人导航任务中的适应性问题</td>
   <td></td>
@@ -195,14 +188,14 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-01
 </thead>
 <tbody>
 <tr>
-  <td>20</td>
+  <td>19</td>
   <td><a href="./papers/251001389v1-insight-inference-time-sequence-introspection-for-generating-help-tr.html">INSIGHT: INference-time Sequence Introspection for Generating Help Triggers in Vision-Language-Action Models</a></td>
   <td>INSIGHT：提出一种基于序列内省的VLA模型帮助触发生成框架</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.01389v1" onclick="toggleFavorite(this, '2510.01389v1', 'INSIGHT: INference-time Sequence Introspection for Generating Help Triggers in Vision-Language-Action Models')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>21</td>
+  <td>20</td>
   <td><a href="./papers/251000703v1-multiphysio-hrc-multimodal-physiological-signals-dataset-for-industr.html">MultiPhysio-HRC: Multimodal Physiological Signals Dataset for industrial Human-Robot Collaboration</a></td>
   <td>MultiPhysio-HRC：用于工业人机协作的多模态生理信号数据集</td>
   <td></td>

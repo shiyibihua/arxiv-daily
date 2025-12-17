@@ -5,14 +5,14 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-10-29
 
 # cs.CV（2025-10-29）
 
-📊 共 **17** 篇论文
+📊 共 **16** 篇论文
  | 🔗 **5** 篇有代码
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
-<a href="#支柱九具身大模型-embodied-foundation-models" class="interest-badge">支柱九：具身大模型 (Embodied Foundation Models) (7 🔗3)</a>
+<a href="#支柱九具身大模型-embodied-foundation-models" class="interest-badge">支柱九：具身大模型 (Embodied Foundation Models) (6 🔗3)</a>
 <a href="#支柱三空间感知与语义-perception-semantics" class="interest-badge">支柱三：空间感知与语义 (Perception & Semantics) (3)</a>
 <a href="#支柱八物理动画-physics-based-animation" class="interest-badge">支柱八：物理动画 (Physics-based Animation) (2 🔗1)</a>
 <a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (2)</a>
@@ -24,7 +24,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-10-29
 ---
 
 
-<h2 id="支柱九具身大模型-embodied-foundation-models">🔬 支柱九：具身大模型 (Embodied Foundation Models) (7 篇)</h2>
+<h2 id="支柱九具身大模型-embodied-foundation-models">🔬 支柱九：具身大模型 (Embodied Foundation Models) (6 篇)</h2>
 
 <table>
 <thead>
@@ -68,13 +68,6 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-10-29
 </tr>
 <tr>
   <td>6</td>
-  <td><a href="./papers/251025512v1-fact-faithful-concept-traces-for-explaining-neural-network-decisions.html">FaCT: Faithful Concept Traces for Explaining Neural Network Decisions</a></td>
-  <td>FaCT：提出可信的概念追踪方法，用于解释神经网络决策过程</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.25512v1" onclick="toggleFavorite(this, '2510.25512v1', 'FaCT: Faithful Concept Traces for Explaining Neural Network Decisions')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>7</td>
   <td><a href="./papers/251025238v2-vadb-a-large-scale-video-aesthetic-database-with-professional-and-mu.html">VADB: A Large-Scale Video Aesthetic Database with Professional and Multi-Dimensional Annotations</a></td>
   <td>提出VADB数据库与VADB-Net框架以解决视频美学评估问题</td>
   <td>✅</td>
@@ -92,21 +85,21 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-10-29
 </thead>
 <tbody>
 <tr>
-  <td>8</td>
+  <td>7</td>
   <td><a href="./papers/251025173v2-d2gs-dense-depth-regularization-for-lidar-free-urban-scene-reconstru.html">D$^2$GS: Dense Depth Regularization for LiDAR-free Urban Scene Reconstruction</a></td>
   <td>提出D$^2$GS以解决无LiDAR城市场景重建问题</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.25173v2" onclick="toggleFavorite(this, '2510.25173v2', 'D$^2$GS: Dense Depth Regularization for LiDAR-free Urban Scene Reconstruction')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>9</td>
+  <td>8</td>
   <td><a href="./papers/251025263v2-langhops-language-grounded-hierarchical-open-vocabulary-part-segment.html">LangHOPS: Language Grounded Hierarchical Open-Vocabulary Part Segmentation</a></td>
   <td>LangHOPS：提出一种基于多模态大语言模型的开放词汇分层部件分割框架。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.25263v2" onclick="toggleFavorite(this, '2510.25263v2', 'LangHOPS: Language Grounded Hierarchical Open-Vocabulary Part Segmentation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>10</td>
+  <td>9</td>
   <td><a href="./papers/251025463v1-spade-sparsity-adaptive-depth-estimator-for-zero-shot-real-time-mono.html">SPADE: Sparsity Adaptive Depth Estimator for Zero-Shot, Real-Time, Monocular Depth Estimation in Underwater Environments</a></td>
   <td>SPADE：一种水下零样本、实时、单目深度估计的稀疏自适应深度估计器</td>
   <td></td>
@@ -124,14 +117,14 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-10-29
 </thead>
 <tbody>
 <tr>
-  <td>11</td>
+  <td>10</td>
   <td><a href="./papers/251025332v1-streamingcot-a-dataset-for-temporal-dynamics-and-multimodal-chain-of.html">StreamingCoT: A Dataset for Temporal Dynamics and Multimodal Chain-of-Thought Reasoning in Streaming VideoQA</a></td>
   <td>提出StreamingCoT数据集，用于流视频问答中的时序动态理解和多模态思维链推理。</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2510.25332v1" onclick="toggleFavorite(this, '2510.25332v1', 'StreamingCoT: A Dataset for Temporal Dynamics and Multimodal Chain-of-Thought Reasoning in Streaming VideoQA')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>12</td>
+  <td>11</td>
   <td><a href="./papers/251025345v1-informative-sample-selection-model-for-skeleton-based-action-recogni.html">Informative Sample Selection Model for Skeleton-based Action Recognition with Limited Training Samples</a></td>
   <td>提出基于MDP的骨骼动作识别信息样本选择模型，提升有限样本下的识别精度。</td>
   <td></td>
@@ -149,14 +142,14 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-10-29
 </thead>
 <tbody>
 <tr>
-  <td>13</td>
+  <td>12</td>
   <td><a href="./papers/251025257v1-rt-detrv4-painlessly-furthering-real-time-object-detection-with-visi.html">RT-DETRv4: Painlessly Furthering Real-Time Object Detection with Vision Foundation Models</a></td>
   <td>RT-DETRv4：利用视觉基础模型，无痛提升实时目标检测性能</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.25257v1" onclick="toggleFavorite(this, '2510.25257v1', 'RT-DETRv4: Painlessly Furthering Real-Time Object Detection with Vision Foundation Models')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>14</td>
+  <td>13</td>
   <td><a href="./papers/251026001v2-larger-hausdorff-dimension-in-scanning-pattern-facilitates-mamba-bas.html">Larger Hausdorff Dimension in Scanning Pattern Facilitates Mamba-Based Methods in Low-Light Image Enhancement</a></td>
   <td>提出基于Hilbert扫描Mamba的低光图像增强方法，提升细节表现</td>
   <td></td>
@@ -174,7 +167,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-10-29
 </thead>
 <tbody>
 <tr>
-  <td>15</td>
+  <td>14</td>
   <td><a href="./papers/251025760v2-multimodal-spatial-reasoning-in-the-large-model-era-a-survey-and-ben.html">Multimodal Spatial Reasoning in the Large Model Era: A Survey and Benchmarks</a></td>
   <td>综述多模态空间推理大模型，并构建开放基准评测</td>
   <td>✅</td>
@@ -192,7 +185,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-10-29
 </thead>
 <tbody>
 <tr>
-  <td>16</td>
+  <td>15</td>
   <td><a href="./papers/251025976v1-brain-it-image-reconstruction-from-fmri-via-brain-interaction-transf.html">Brain-IT: Image Reconstruction from fMRI via Brain-Interaction Transformer</a></td>
   <td>提出Brain-IT，通过脑交互Transformer实现基于fMRI的图像重建，提升重建图像的真实性。</td>
   <td></td>
@@ -210,7 +203,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-10-29
 </thead>
 <tbody>
 <tr>
-  <td>17</td>
+  <td>16</td>
   <td><a href="./papers/251025279v1-diffusion-driven-progressive-target-manipulation-for-source-free-dom.html">Diffusion-Driven Progressive Target Manipulation for Source-Free Domain Adaptation</a></td>
   <td>提出扩散驱动的渐进式目标域操控方法，解决无源域自适应中的域差异问题。</td>
   <td></td>

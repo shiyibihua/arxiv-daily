@@ -5,14 +5,14 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-06
 
 # cs.RO（2025-10-06）
 
-📊 共 **16** 篇论文
+📊 共 **15** 篇论文
  | 🔗 **2** 篇有代码
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
-<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (10)</a>
+<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (9)</a>
 <a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (3 🔗1)</a>
 <a href="#支柱九具身大模型-embodied-foundation-models" class="interest-badge">支柱九：具身大模型 (Embodied Foundation Models) (2 🔗1)</a>
 <a href="#支柱三空间感知与语义-perception-semantics" class="interest-badge">支柱三：空间感知与语义 (Perception & Semantics) (1)</a>
@@ -21,7 +21,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-06
 ---
 
 
-<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (10 篇)</h2>
+<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (9 篇)</h2>
 
 <table>
 <thead>
@@ -86,13 +86,6 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-06
 </tr>
 <tr>
   <td>9</td>
-  <td><a href="./papers/251004807v1-efficient-probabilistic-planning-with-maximum-coverage-distributiona.html">Efficient Probabilistic Planning with Maximum-Coverage Distributionally Robust Backward Reachable Trees</a></td>
-  <td>提出一种高效的多查询运动规划算法以解决高概率到达问题</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.04807v1" onclick="toggleFavorite(this, '2510.04807v1', 'Efficient Probabilistic Planning with Maximum-Coverage Distributionally Robust Backward Reachable Trees')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>10</td>
   <td><a href="./papers/251004509v1-velocity-form-data-enabled-predictive-control-of-soft-robots-under-u.html">Velocity-Form Data-Enabled Predictive Control of Soft Robots under Unknown External Payloads</a></td>
   <td>提出基于速度形式数据的软体机器人预测控制，解决未知载荷下的鲁棒控制问题</td>
   <td></td>
@@ -110,21 +103,21 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-06
 </thead>
 <tbody>
 <tr>
-  <td>11</td>
+  <td>10</td>
   <td><a href="./papers/251200005v1-dreamer-vxs-a-latent-world-model-for-sample-efficient-agv-exploratio.html">DREAMer-VXS: A Latent World Model for Sample-Efficient AGV Exploration in Stochastic, Unobserved Environments</a></td>
   <td>提出DREAMer-VXS以解决AGV在随机未知环境中的样本效率问题</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.00005v1" onclick="toggleFavorite(this, '2512.00005v1', 'DREAMer-VXS: A Latent World Model for Sample-Efficient AGV Exploration in Stochastic, Unobserved Environments')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>12</td>
+  <td>11</td>
   <td><a href="./papers/251005213v1-ver-vision-expert-transformer-for-robot-learning-via-foundation-dist.html">VER: Vision Expert Transformer for Robot Learning via Foundation Distillation and Dynamic Routing</a></td>
   <td>提出VER，通过专家蒸馏和动态路由实现机器人学习的视觉知识迁移。</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2510.05213v1" onclick="toggleFavorite(this, '2510.05213v1', 'VER: Vision Expert Transformer for Robot Learning via Foundation Distillation and Dynamic Routing')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>13</td>
+  <td>12</td>
   <td><a href="./papers/251005057v1-stamo-unsupervised-learning-of-generalizable-robot-motion-from-compa.html">StaMo: Unsupervised Learning of Generalizable Robot Motion from Compact State Representation</a></td>
   <td>StaMo：基于紧凑状态表征无监督学习通用机器人运动</td>
   <td></td>
@@ -142,14 +135,14 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-06
 </thead>
 <tbody>
 <tr>
-  <td>14</td>
+  <td>13</td>
   <td><a href="./papers/251004898v1-hypervla-efficient-inference-in-vision-language-action-models-via-hy.html">HyperVLA: Efficient Inference in Vision-Language-Action Models via Hypernetworks</a></td>
   <td>HyperVLA：通过超网络实现视觉-语言-动作模型的高效推理</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2510.04898v1" onclick="toggleFavorite(this, '2510.04898v1', 'HyperVLA: Efficient Inference in Vision-Language-Action Models via Hypernetworks')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>15</td>
+  <td>14</td>
   <td><a href="./papers/251005430v1-active-semantic-perception.html">Active Semantic Perception</a></td>
   <td>提出基于语义场景图的主动语义感知方法，用于高效探索复杂室内环境。</td>
   <td></td>
@@ -167,7 +160,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-06
 </thead>
 <tbody>
 <tr>
-  <td>16</td>
+  <td>15</td>
   <td><a href="./papers/251004991v2-efficient-navigation-in-unknown-indoor-environments-with-vision-lang.html">Efficient Navigation in Unknown Indoor Environments with Vision-Language Models</a></td>
   <td>提出基于视觉-语言模型的高效导航框架，解决未知室内环境探索问题</td>
   <td></td>

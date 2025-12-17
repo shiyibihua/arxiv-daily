@@ -5,14 +5,14 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-16
 
 # cs.RO（2025-10-16）
 
-📊 共 **31** 篇论文
+📊 共 **30** 篇论文
  | 🔗 **4** 篇有代码
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
-<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (23 🔗3)</a>
+<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (22 🔗3)</a>
 <a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (3)</a>
 <a href="#支柱三空间感知与语义-perception-semantics" class="interest-badge">支柱三：空间感知与语义 (Perception & Semantics) (2)</a>
 <a href="#支柱五交互与反应-interaction-reaction" class="interest-badge">支柱五：交互与反应 (Interaction & Reaction) (1)</a>
@@ -23,7 +23,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-16
 ---
 
 
-<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (23 篇)</h2>
+<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (22 篇)</h2>
 
 <table>
 <thead>
@@ -144,48 +144,41 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-16
 </tr>
 <tr>
   <td>17</td>
-  <td><a href="./papers/251014828v2-robogpt-r1-enhancing-robot-planning-with-reinforcement-learning.html">RoboGPT-R1: Enhancing Robot Planning with Reinforcement Learning</a></td>
-  <td>RoboGPT-R1：强化学习增强机器人规划能力，提升长时程操作任务性能</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.14828v2" onclick="toggleFavorite(this, '2510.14828v2', 'RoboGPT-R1: Enhancing Robot Planning with Reinforcement Learning')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>18</td>
   <td><a href="./papers/251014612v1-proprioceptive-image-an-image-representation-of-proprioceptive-data-.html">Proprioceptive Image: An Image Representation of Proprioceptive Data from Quadruped Robots for Contact Estimation Learning</a></td>
   <td>提出一种基于本体感受图像的四足机器人接触估计学习方法</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.14612v1" onclick="toggleFavorite(this, '2510.14612v1', 'Proprioceptive Image: An Image Representation of Proprioceptive Data from Quadruped Robots for Contact Estimation Learning')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>19</td>
+  <td>18</td>
   <td><a href="./papers/251014293v1-learning-human-humanoid-coordination-for-collaborative-object-carryi.html">Learning Human-Humanoid Coordination for Collaborative Object Carrying</a></td>
   <td>提出COLA算法，实现基于本体感觉的人形机器人协同搬运，提升人机协作效率。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.14293v1" onclick="toggleFavorite(this, '2510.14293v1', 'Learning Human-Humanoid Coordination for Collaborative Object Carrying')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>20</td>
+  <td>19</td>
   <td><a href="./papers/251014615v1-accelerated-multi-modal-motion-planning-using-context-conditioned-di.html">Accelerated Multi-Modal Motion Planning Using Context-Conditioned Diffusion Models</a></td>
   <td>提出CAMPD，利用上下文条件扩散模型加速多模态运动规划，提升泛化性。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.14615v1" onclick="toggleFavorite(this, '2510.14615v1', 'Accelerated Multi-Modal Motion Planning Using Context-Conditioned Diffusion Models')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>21</td>
+  <td>20</td>
   <td><a href="./papers/251014234v1-prescribed-performance-control-of-deformable-object-manipulation-in-.html">Prescribed Performance Control of Deformable Object Manipulation in Spatial Latent Space</a></td>
   <td>提出一种基于空间潜在空间的柔性物体操作预定性能控制方法</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.14234v1" onclick="toggleFavorite(this, '2510.14234v1', 'Prescribed Performance Control of Deformable Object Manipulation in Spatial Latent Space')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>22</td>
+  <td>21</td>
   <td><a href="./papers/251014968v1-rdd-retrieval-based-demonstration-decomposer-for-planner-alignment-i.html">RDD: Retrieval-Based Demonstration Decomposer for Planner Alignment in Long-Horizon Tasks</a></td>
   <td>提出RDD：一种基于检索的分解器，用于长时任务中规划器对齐</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.14968v1" onclick="toggleFavorite(this, '2510.14968v1', 'RDD: Retrieval-Based Demonstration Decomposer for Planner Alignment in Long-Horizon Tasks')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>23</td>
+  <td>22</td>
   <td><a href="./papers/251014677v1-when-planners-meet-reality-how-learned-reactive-traffic-agents-shift.html">When Planners Meet Reality: How Learned, Reactive Traffic Agents Shift nuPlan Benchmarks</a></td>
   <td>引入SMART智能体，提升nuPlan自动驾驶规划器评估的真实性和可靠性</td>
   <td>✅</td>
@@ -203,21 +196,21 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-16
 </thead>
 <tbody>
 <tr>
-  <td>24</td>
+  <td>23</td>
   <td><a href="./papers/251023615v1-logic-based-task-representation-and-reward-shaping-in-multiagent-rei.html">Logic-based Task Representation and Reward Shaping in Multiagent Reinforcement Learning</a></td>
   <td>提出基于逻辑的任务表示和奖励塑造方法，加速多智能体强化学习。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.23615v1" onclick="toggleFavorite(this, '2510.23615v1', 'Logic-based Task Representation and Reward Shaping in Multiagent Reinforcement Learning')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>25</td>
+  <td>24</td>
   <td><a href="./papers/251014946v1-edgenavmamba-mamba-optimized-object-detection-for-energy-efficient-e.html">EdgeNavMamba: Mamba Optimized Object Detection for Energy Efficient Edge Devices</a></td>
   <td>EdgeNavMamba：面向边缘设备的节能Mamba优化目标检测</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.14946v1" onclick="toggleFavorite(this, '2510.14946v1', 'EdgeNavMamba: Mamba Optimized Object Detection for Energy Efficient Edge Devices')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>26</td>
+  <td>25</td>
   <td><a href="./papers/251014851v1-sadcher-scheduling-using-attention-based-dynamic-coalitions-of-heter.html">SADCHER: Scheduling using Attention-based Dynamic Coalitions of Heterogeneous Robots in Real-Time</a></td>
   <td>SADCHER：基于注意力机制的异构多机器人实时动态联盟调度</td>
   <td></td>
@@ -235,14 +228,14 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-16
 </thead>
 <tbody>
 <tr>
-  <td>27</td>
+  <td>26</td>
   <td><a href="./papers/251014546v1-quash-using-natural-language-heuristics-to-query-visual-language-rob.html">QuASH: Using Natural-Language Heuristics to Query Visual-Language Robotic Maps</a></td>
   <td>QuASH：利用自然语言启发式方法查询视觉-语言机器人地图</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.14546v1" onclick="toggleFavorite(this, '2510.14546v1', 'QuASH: Using Natural-Language Heuristics to Query Visual-Language Robotic Maps')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>28</td>
+  <td>27</td>
   <td><a href="./papers/251014627v2-gopla-generalizable-object-placement-learning-via-synthetic-augmenta.html">GOPLA: Generalizable Object Placement Learning via Synthetic Augmentation of Human Arrangement</a></td>
   <td>GOPLA：通过合成增强人类布置数据，学习可泛化的物体放置</td>
   <td></td>
@@ -260,7 +253,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-16
 </thead>
 <tbody>
 <tr>
-  <td>29</td>
+  <td>28</td>
   <td><a href="./papers/251014511v2-stability-criteria-and-motor-performance-in-delayed-haptic-dyadic-in.html">Stability Criteria and Motor Performance in Delayed Haptic Dyadic Interactions Mediated by Robots</a></td>
   <td>针对时延触觉人机交互，提出机器人调解下的稳定性判据</td>
   <td></td>
@@ -278,7 +271,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-16
 </thead>
 <tbody>
 <tr>
-  <td>30</td>
+  <td>29</td>
   <td><a href="./papers/251014357v1-sum-agrivln-spatial-understanding-memory-for-agricultural-vision-and.html">SUM-AgriVLN: Spatial Understanding Memory for Agricultural Vision-and-Language Navigation</a></td>
   <td>提出SUM-AgriVLN，利用空间记忆提升农业视觉语言导航性能</td>
   <td>✅</td>
@@ -296,7 +289,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-16
 </thead>
 <tbody>
 <tr>
-  <td>31</td>
+  <td>30</td>
   <td><a href="./papers/251014584v1-a-generalized-placeability-metric-for-model-free-unified-pick-and-pl.html">A Generalized Placeability Metric for Model-Free Unified Pick-and-Place Reasoning</a></td>
   <td>提出一种广义可放置性指标，用于无模型统一抓取放置推理</td>
   <td></td>

@@ -5,7 +5,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-26
 
 # cs.RO（2025-11-26）
 
-📊 共 **16** 篇论文
+📊 共 **14** 篇论文
  | 🔗 **3** 篇有代码
 
 
@@ -13,8 +13,8 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-26
 
 <div class="interest-nav">
 <a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (11 🔗1)</a>
-<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (3 🔗1)</a>
 <a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (2 🔗1)</a>
+<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (1 🔗1)</a>
 </div>
 
 ---
@@ -108,38 +108,6 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-26
 </table>
 
 
-<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (3 篇)</h2>
-
-<table>
-<thead>
-<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
-</thead>
-<tbody>
-<tr>
-  <td>12</td>
-  <td><a href="./papers/251121135v1-socialnav-training-human-inspired-foundation-model-for-socially-awar.html">SocialNav: Training Human-Inspired Foundation Model for Socially-Aware Embodied Navigation</a></td>
-  <td>提出SocialNav，用于训练类人社交感知具身导航的基础模型</td>
-  <td>✅</td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.21135v1" onclick="toggleFavorite(this, '2511.21135v1', 'SocialNav: Training Human-Inspired Foundation Model for Socially-Aware Embodied Navigation')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>13</td>
-  <td><a href="./papers/251121848v1-massively-parallel-imitation-learning-of-mouse-forelimb-musculoskele.html">Massively Parallel Imitation Learning of Mouse Forelimb Musculoskeletal Reaching Dynamics</a></td>
-  <td>提出基于大规模并行模仿学习的小鼠前肢肌肉骨骼运动动力学建模方法</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.21848v1" onclick="toggleFavorite(this, '2511.21848v1', 'Massively Parallel Imitation Learning of Mouse Forelimb Musculoskeletal Reaching Dynamics')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>14</td>
-  <td><a href="./papers/251121531v1-predictive-safety-shield-for-dyna-q-reinforcement-learning.html">Predictive Safety Shield for Dyna-Q Reinforcement Learning</a></td>
-  <td>提出基于预测的安全盾，提升Dyna-Q强化学习在离散空间的安全性和性能</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.21531v1" onclick="toggleFavorite(this, '2511.21531v1', 'Predictive Safety Shield for Dyna-Q Reinforcement Learning')" title="添加到收藏夹">☆</button></td>
-</tr>
-</tbody>
-</table>
-
-
 <h2 id="支柱三空间感知-perception-slam">🔬 支柱三：空间感知 (Perception & SLAM) (2 篇)</h2>
 
 <table>
@@ -148,18 +116,36 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-26
 </thead>
 <tbody>
 <tr>
-  <td>15</td>
+  <td>12</td>
   <td><a href="./papers/251121666v1-uncertainty-quantification-for-visual-object-pose-estimation.html">Uncertainty Quantification for Visual Object Pose Estimation</a></td>
   <td>提出SLUE算法，用于单目视觉物体姿态估计的无分布不确定性量化。</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2511.21666v1" onclick="toggleFavorite(this, '2511.21666v1', 'Uncertainty Quantification for Visual Object Pose Estimation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>16</td>
+  <td>13</td>
   <td><a href="./papers/251121189v1-dual-preintegration-for-relative-state-estimation.html">Dual Preintegration for Relative State Estimation</a></td>
   <td>提出双重预积分方法，提升相对状态估计在剧烈旋转下的精度和鲁棒性，尤其适用于VR场景。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.21189v1" onclick="toggleFavorite(this, '2511.21189v1', 'Dual Preintegration for Relative State Estimation')" title="添加到收藏夹">☆</button></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (1 篇)</h2>
+
+<table>
+<thead>
+<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td>14</td>
+  <td><a href="./papers/251121135v1-socialnav-training-human-inspired-foundation-model-for-socially-awar.html">SocialNav: Training Human-Inspired Foundation Model for Socially-Aware Embodied Navigation</a></td>
+  <td>提出SocialNav，用于训练类人社交感知具身导航的基础模型</td>
+  <td>✅</td>
+  <td><button class="favorite-btn" data-arxiv-id="2511.21135v1" onclick="toggleFavorite(this, '2511.21135v1', 'SocialNav: Training Human-Inspired Foundation Model for Socially-Aware Embodied Navigation')" title="添加到收藏夹">☆</button></td>
 </tr>
 </tbody>
 </table>

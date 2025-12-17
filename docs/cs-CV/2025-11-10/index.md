@@ -5,7 +5,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-10
 
 # cs.CV（2025-11-10）
 
-📊 共 **40** 篇论文
+📊 共 **38** 篇论文
  | 🔗 **7** 篇有代码
 
 
@@ -16,8 +16,8 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-10
 <a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (6 🔗1)</a>
 <a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (4 🔗1)</a>
 <a href="#支柱七动作重定向-motion-retargeting" class="interest-badge">支柱七：动作重定向 (Motion Retargeting) (3)</a>
-<a href="#支柱八物理动画-physics-based-animation" class="interest-badge">支柱八：物理动画 (Physics-based Animation) (3)</a>
 <a href="#支柱四生成式动作-generative-motion" class="interest-badge">支柱四：生成式动作 (Generative Motion) (2 🔗1)</a>
+<a href="#支柱八物理动画-physics-based-animation" class="interest-badge">支柱八：物理动画 (Physics-based Animation) (1)</a>
 </div>
 
 ---
@@ -312,38 +312,6 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-10
 </table>
 
 
-<h2 id="支柱八物理动画-physics-based-animation">🔬 支柱八：物理动画 (Physics-based Animation) (3 篇)</h2>
-
-<table>
-<thead>
-<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
-</thead>
-<tbody>
-<tr>
-  <td>36</td>
-  <td><a href="./papers/251107329v1-preparation-of-fractal-inspired-computational-architectures-for-adva.html">Preparation of Fractal-Inspired Computational Architectures for Advanced Large Language Model Analysis</a></td>
-  <td>提出FractalNet，一种分形架构用于高效探索大规模语言模型分析</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.07329v1" onclick="toggleFavorite(this, '2511.07329v1', 'Preparation of Fractal-Inspired Computational Architectures for Advanced Large Language Model Analysis')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>37</td>
-  <td><a href="./papers/251107085v1-achieving-effective-virtual-reality-interactions-via-acoustic-gestur.html">Achieving Effective Virtual Reality Interactions via Acoustic Gesture Recognition based on Large Language Models</a></td>
-  <td>提出基于大语言模型的声学手势识别框架，用于高效虚拟现实交互</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.07085v1" onclick="toggleFavorite(this, '2511.07085v1', 'Achieving Effective Virtual Reality Interactions via Acoustic Gesture Recognition based on Large Language Models')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>38</td>
-  <td><a href="./papers/251106823v1-integrating-reweighted-least-squares-with-plug-and-play-diffusion-pr.html">Integrating Reweighted Least Squares with Plug-and-Play Diffusion Priors for Noisy Image Restoration</a></td>
-  <td>提出基于重加权最小二乘与即插即用扩散先验的图像恢复框架，用于去除噪声。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.06823v1" onclick="toggleFavorite(this, '2511.06823v1', 'Integrating Reweighted Least Squares with Plug-and-Play Diffusion Priors for Noisy Image Restoration')" title="添加到收藏夹">☆</button></td>
-</tr>
-</tbody>
-</table>
-
-
 <h2 id="支柱四生成式动作-generative-motion">🔬 支柱四：生成式动作 (Generative Motion) (2 篇)</h2>
 
 <table>
@@ -352,18 +320,36 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-10
 </thead>
 <tbody>
 <tr>
-  <td>39</td>
+  <td>36</td>
   <td><a href="./papers/251107409v1-dimo-diverse-3d-motion-generation-for-arbitrary-objects.html">DIMO: Diverse 3D Motion Generation for Arbitrary Objects</a></td>
   <td>提出DIMO以生成任意物体的多样化3D运动</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2511.07409v1" onclick="toggleFavorite(this, '2511.07409v1', 'DIMO: Diverse 3D Motion Generation for Arbitrary Objects')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>40</td>
+  <td>37</td>
   <td><a href="./papers/251111644v1-slow-motion-video-synthesis-for-basketball-using-frame-interpolation.html">Slow - Motion Video Synthesis for Basketball Using Frame Interpolation</a></td>
   <td>通过微调RIFE网络，实现高质量篮球赛事慢动作视频合成</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.11644v1" onclick="toggleFavorite(this, '2511.11644v1', 'Slow - Motion Video Synthesis for Basketball Using Frame Interpolation')" title="添加到收藏夹">☆</button></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 id="支柱八物理动画-physics-based-animation">🔬 支柱八：物理动画 (Physics-based Animation) (1 篇)</h2>
+
+<table>
+<thead>
+<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td>38</td>
+  <td><a href="./papers/251106823v1-integrating-reweighted-least-squares-with-plug-and-play-diffusion-pr.html">Integrating Reweighted Least Squares with Plug-and-Play Diffusion Priors for Noisy Image Restoration</a></td>
+  <td>提出基于重加权最小二乘与即插即用扩散先验的图像恢复框架，用于去除噪声。</td>
+  <td></td>
+  <td><button class="favorite-btn" data-arxiv-id="2511.06823v1" onclick="toggleFavorite(this, '2511.06823v1', 'Integrating Reweighted Least Squares with Plug-and-Play Diffusion Priors for Noisy Image Restoration')" title="添加到收藏夹">☆</button></td>
 </tr>
 </tbody>
 </table>

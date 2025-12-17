@@ -5,15 +5,15 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-16
 
 # cs.RO（2025-11-16）
 
-📊 共 **6** 篇论文
+📊 共 **5** 篇论文
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
 <a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (3)</a>
-<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (2)</a>
 <a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (1)</a>
+<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (1)</a>
 </div>
 
 ---
@@ -51,31 +51,6 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-16
 </table>
 
 
-<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (2 篇)</h2>
-
-<table>
-<thead>
-<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
-</thead>
-<tbody>
-<tr>
-  <td>4</td>
-  <td><a href="./papers/251112751v1-are-llms-the-way-forward-a-case-study-on-llm-guided-reinforcement-le.html">Are LLMs The Way Forward? A Case Study on LLM-Guided Reinforcement Learning for Decentralized Autonomous Driving</a></td>
-  <td>探索LLM辅助强化学习在分散式自动驾驶中的应用：奖励塑造的案例研究</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.12751v1" onclick="toggleFavorite(this, '2511.12751v1', 'Are LLMs The Way Forward? A Case Study on LLM-Guided Reinforcement Learning for Decentralized Autonomous Driving')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>5</td>
-  <td><a href="./papers/251112650v1-task-aware-morphology-optimization-of-planar-manipulators-via-reinfo.html">Task-Aware Morphology Optimization of Planar Manipulators via Reinforcement Learning</a></td>
-  <td>提出基于强化学习的平面机械臂形态优化方法，无需解析表达式。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.12650v1" onclick="toggleFavorite(this, '2511.12650v1', 'Task-Aware Morphology Optimization of Planar Manipulators via Reinforcement Learning')" title="添加到收藏夹">☆</button></td>
-</tr>
-</tbody>
-</table>
-
-
 <h2 id="支柱三空间感知-perception-slam">🔬 支柱三：空间感知 (Perception & SLAM) (1 篇)</h2>
 
 <table>
@@ -84,11 +59,29 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-16
 </thead>
 <tbody>
 <tr>
-  <td>6</td>
+  <td>4</td>
   <td><a href="./papers/251112778v1-dr-nav-semantic-geometric-representations-for-proactive-dead-end-rec.html">DR. Nav: Semantic-Geometric Representations for Proactive Dead-End Recovery and Navigation</a></td>
   <td>DR. Nav：面向主动死胡同恢复和导航的语义-几何表示方法</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.12778v1" onclick="toggleFavorite(this, '2511.12778v1', 'DR. Nav: Semantic-Geometric Representations for Proactive Dead-End Recovery and Navigation')" title="添加到收藏夹">☆</button></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (1 篇)</h2>
+
+<table>
+<thead>
+<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td>5</td>
+  <td><a href="./papers/251112650v1-task-aware-morphology-optimization-of-planar-manipulators-via-reinfo.html">Task-Aware Morphology Optimization of Planar Manipulators via Reinforcement Learning</a></td>
+  <td>提出基于强化学习的平面机械臂形态优化方法，无需解析表达式。</td>
+  <td></td>
+  <td><button class="favorite-btn" data-arxiv-id="2511.12650v1" onclick="toggleFavorite(this, '2511.12650v1', 'Task-Aware Morphology Optimization of Planar Manipulators via Reinforcement Learning')" title="添加到收藏夹">☆</button></td>
 </tr>
 </tbody>
 </table>

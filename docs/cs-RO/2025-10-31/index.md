@@ -5,7 +5,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-31
 
 # cs.RO（2025-10-31）
 
-📊 共 **12** 篇论文
+📊 共 **11** 篇论文
  | 🔗 **1** 篇有代码
 
 
@@ -13,8 +13,8 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-31
 
 <div class="interest-nav">
 <a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (8)</a>
-<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (2)</a>
 <a href="#支柱九具身大模型-embodied-foundation-models" class="interest-badge">支柱九：具身大模型 (Embodied Foundation Models) (2 🔗1)</a>
+<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (1)</a>
 </div>
 
 ---
@@ -87,31 +87,6 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-31
 </table>
 
 
-<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (2 篇)</h2>
-
-<table>
-<thead>
-<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
-</thead>
-<tbody>
-<tr>
-  <td>9</td>
-  <td><a href="./papers/251115669v1-deepthinkvla-enhancing-reasoning-capability-of-vision-language-actio.html">DeepThinkVLA: Enhancing Reasoning Capability of Vision-Language-Action Models</a></td>
-  <td>DeepThinkVLA通过混合注意力机制和两阶段训练提升VLA模型推理能力</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.15669v1" onclick="toggleFavorite(this, '2511.15669v1', 'DeepThinkVLA: Enhancing Reasoning Capability of Vision-Language-Action Models')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>10</td>
-  <td><a href="./papers/251027545v1-ebt-policy-energy-unlocks-emergent-physical-reasoning-capabilities.html">EBT-Policy: Energy Unlocks Emergent Physical Reasoning Capabilities</a></td>
-  <td>提出EBT-Policy，利用能量模型提升机器人物理推理能力，解决泛化性问题。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.27545v1" onclick="toggleFavorite(this, '2510.27545v1', 'EBT-Policy: Energy Unlocks Emergent Physical Reasoning Capabilities')" title="添加到收藏夹">☆</button></td>
-</tr>
-</tbody>
-</table>
-
-
 <h2 id="支柱九具身大模型-embodied-foundation-models">🔬 支柱九：具身大模型 (Embodied Foundation Models) (2 篇)</h2>
 
 <table>
@@ -120,18 +95,36 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-31
 </thead>
 <tbody>
 <tr>
-  <td>11</td>
+  <td>9</td>
   <td><a href="./papers/251200021v1-foundation-models-for-trajectory-planning-in-autonomous-driving-a-re.html">Foundation Models for Trajectory Planning in Autonomous Driving: A Review of Progress and Open Challenges</a></td>
   <td>综述：自动驾驶轨迹规划中的Foundation Model进展与挑战</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2512.00021v1" onclick="toggleFavorite(this, '2512.00021v1', 'Foundation Models for Trajectory Planning in Autonomous Driving: A Review of Progress and Open Challenges')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>12</td>
+  <td>10</td>
   <td><a href="./papers/251100193v1-reducing-robotic-upper-limb-assessment-time-while-maintaining-precis.html">Reducing Robotic Upper-Limb Assessment Time While Maintaining Precision: A Time Series Foundation Model Approach</a></td>
   <td>利用时序基础模型，在保证精度的前提下，缩短机器人上肢评估时间</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.00193v1" onclick="toggleFavorite(this, '2511.00193v1', 'Reducing Robotic Upper-Limb Assessment Time While Maintaining Precision: A Time Series Foundation Model Approach')" title="添加到收藏夹">☆</button></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (1 篇)</h2>
+
+<table>
+<thead>
+<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td>11</td>
+  <td><a href="./papers/251027545v1-ebt-policy-energy-unlocks-emergent-physical-reasoning-capabilities.html">EBT-Policy: Energy Unlocks Emergent Physical Reasoning Capabilities</a></td>
+  <td>提出EBT-Policy，利用能量模型提升机器人物理推理能力，解决泛化性问题。</td>
+  <td></td>
+  <td><button class="favorite-btn" data-arxiv-id="2510.27545v1" onclick="toggleFavorite(this, '2510.27545v1', 'EBT-Policy: Energy Unlocks Emergent Physical Reasoning Capabilities')" title="添加到收藏夹">☆</button></td>
 </tr>
 </tbody>
 </table>

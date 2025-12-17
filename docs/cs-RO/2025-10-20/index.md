@@ -5,17 +5,16 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-20
 
 # cs.RO（2025-10-20）
 
-📊 共 **23** 篇论文
- | 🔗 **1** 篇有代码
+📊 共 **21** 篇论文
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
 <a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (16)</a>
-<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (3 🔗1)</a>
 <a href="#支柱九具身大模型-embodied-foundation-models" class="interest-badge">支柱九：具身大模型 (Embodied Foundation Models) (2)</a>
 <a href="#支柱四生成式动作-generative-motion" class="interest-badge">支柱四：生成式动作 (Generative Motion) (2)</a>
+<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (1)</a>
 </div>
 
 ---
@@ -144,38 +143,6 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-20
 </table>
 
 
-<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (3 篇)</h2>
-
-<table>
-<thead>
-<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
-</thead>
-<tbody>
-<tr>
-  <td>17</td>
-  <td><a href="./papers/251018085v1-r2bc-multi-agent-imitation-learning-from-single-agent-demonstrations.html">R2BC: Multi-Agent Imitation Learning from Single-Agent Demonstrations</a></td>
-  <td>R2BC：从单智能体演示中学习多智能体协作策略</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.18085v1" onclick="toggleFavorite(this, '2510.18085v1', 'R2BC: Multi-Agent Imitation Learning from Single-Agent Demonstrations')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>18</td>
-  <td><a href="./papers/251018082v1-provably-optimal-reinforcement-learning-under-safety-filtering.html">Provably Optimal Reinforcement Learning under Safety Filtering</a></td>
-  <td>提出安全过滤下的可证明最优强化学习方法，解决安全约束下的性能损失问题</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.18082v1" onclick="toggleFavorite(this, '2510.18082v1', 'Provably Optimal Reinforcement Learning under Safety Filtering')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>19</td>
-  <td><a href="./papers/251017564v1-an-empirical-study-of-lagrangian-methods-in-safe-reinforcement-learn.html">An Empirical Study of Lagrangian Methods in Safe Reinforcement Learning</a></td>
-  <td>研究安全强化学习中拉格朗日方法的λ敏感性与自动更新策略的鲁棒性。</td>
-  <td>✅</td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.17564v1" onclick="toggleFavorite(this, '2510.17564v1', 'An Empirical Study of Lagrangian Methods in Safe Reinforcement Learning')" title="添加到收藏夹">☆</button></td>
-</tr>
-</tbody>
-</table>
-
-
 <h2 id="支柱九具身大模型-embodied-foundation-models">🔬 支柱九：具身大模型 (Embodied Foundation Models) (2 篇)</h2>
 
 <table>
@@ -184,14 +151,14 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-20
 </thead>
 <tbody>
 <tr>
-  <td>20</td>
+  <td>17</td>
   <td><a href="./papers/251017439v1-from-spatial-to-actions-grounding-vision-language-action-model-in-sp.html">From Spatial to Actions: Grounding Vision-Language-Action Model in Spatial Foundation Priors</a></td>
   <td>FALCON：利用空间基础先验增强视觉-语言-动作模型的3D环境泛化能力</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.17439v1" onclick="toggleFavorite(this, '2510.17439v1', 'From Spatial to Actions: Grounding Vision-Language-Action Model in Spatial Foundation Priors')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>21</td>
+  <td>18</td>
   <td><a href="./papers/251017950v1-robochallenge-large-scale-real-robot-evaluation-of-embodied-policies.html">RoboChallenge: Large-scale Real-robot Evaluation of Embodied Policies</a></td>
   <td>RoboChallenge：大规模真实机器人环境下的具身策略评估系统</td>
   <td></td>
@@ -209,18 +176,36 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-20
 </thead>
 <tbody>
 <tr>
-  <td>22</td>
+  <td>19</td>
   <td><a href="./papers/251017148v4-diffvla-bridging-cognitive-reasoning-and-end-to-end-driving-through-.html">DiffVLA++: Bridging Cognitive Reasoning and End-to-End Driving through Metric-Guided Alignment</a></td>
   <td>DiffVLA++：通过度量引导对齐桥接认知推理与端到端驾驶</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.17148v4" onclick="toggleFavorite(this, '2510.17148v4', 'DiffVLA++: Bridging Cognitive Reasoning and End-to-End Driving through Metric-Guided Alignment')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>23</td>
+  <td>20</td>
   <td><a href="./papers/251018137v1-quality-over-quantity-curating-contact-based-robot-datasets-improves.html">Quality Over Quantity: Curating Contact-Based Robot Datasets Improves Learning</a></td>
   <td>提出基于接触感知的机器人数据筛选方法，提升机器人学习效率与确定性</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.18137v1" onclick="toggleFavorite(this, '2510.18137v1', 'Quality Over Quantity: Curating Contact-Based Robot Datasets Improves Learning')" title="添加到收藏夹">☆</button></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (1 篇)</h2>
+
+<table>
+<thead>
+<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td>21</td>
+  <td><a href="./papers/251018085v1-r2bc-multi-agent-imitation-learning-from-single-agent-demonstrations.html">R2BC: Multi-Agent Imitation Learning from Single-Agent Demonstrations</a></td>
+  <td>R2BC：从单智能体演示中学习多智能体协作策略</td>
+  <td></td>
+  <td><button class="favorite-btn" data-arxiv-id="2510.18085v1" onclick="toggleFavorite(this, '2510.18085v1', 'R2BC: Multi-Agent Imitation Learning from Single-Agent Demonstrations')" title="添加到收藏夹">☆</button></td>
 </tr>
 </tbody>
 </table>

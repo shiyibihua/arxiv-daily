@@ -5,7 +5,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-15
 
 # cs.RO（2025-10-15）
 
-📊 共 **16** 篇论文
+📊 共 **14** 篇论文
  | 🔗 **3** 篇有代码
 
 
@@ -13,8 +13,8 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-15
 
 <div class="interest-nav">
 <a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (12 🔗2)</a>
-<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (3)</a>
 <a href="#支柱九具身大模型-embodied-foundation-models" class="interest-badge">支柱九：具身大模型 (Embodied Foundation Models) (1 🔗1)</a>
+<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (1)</a>
 </div>
 
 ---
@@ -115,38 +115,6 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-15
 </table>
 
 
-<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (3 篇)</h2>
-
-<table>
-<thead>
-<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
-</thead>
-<tbody>
-<tr>
-  <td>13</td>
-  <td><a href="./papers/251014000v1-a-diffusion-refined-planner-with-reinforcement-learning-priors-for-c.html">A Diffusion-Refined Planner with Reinforcement Learning Priors for Confined-Space Parking</a></td>
-  <td>提出DRIP以解决受限空间停车规划问题</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.14000v1" onclick="toggleFavorite(this, '2510.14000v1', 'A Diffusion-Refined Planner with Reinforcement Learning Priors for Confined-Space Parking')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>14</td>
-  <td><a href="./papers/251013704v1-simplicial-embeddings-improve-sample-efficiency-in-actor-critic-agen.html">Simplicial Embeddings Improve Sample Efficiency in Actor-Critic Agents</a></td>
-  <td>提出基于单纯形嵌入的强化学习方法，提升Actor-Critic算法的样本效率。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.13704v1" onclick="toggleFavorite(this, '2510.13704v1', 'Simplicial Embeddings Improve Sample Efficiency in Actor-Critic Agents')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>15</td>
-  <td><a href="./papers/251013367v1-a-new-perspective-on-transformers-in-online-reinforcement-learning-f.html">A New Perspective on Transformers in Online Reinforcement Learning for Continuous Control</a></td>
-  <td>探索Transformer在在线强化学习中的应用，实现连续控制</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.13367v1" onclick="toggleFavorite(this, '2510.13367v1', 'A New Perspective on Transformers in Online Reinforcement Learning for Continuous Control')" title="添加到收藏夹">☆</button></td>
-</tr>
-</tbody>
-</table>
-
-
 <h2 id="支柱九具身大模型-embodied-foundation-models">🔬 支柱九：具身大模型 (Embodied Foundation Models) (1 篇)</h2>
 
 <table>
@@ -155,11 +123,29 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-15
 </thead>
 <tbody>
 <tr>
-  <td>16</td>
+  <td>13</td>
   <td><a href="./papers/251013778v1-internvla-m1-a-spatially-guided-vision-language-action-framework-for.html">InternVLA-M1: A Spatially Guided Vision-Language-Action Framework for Generalist Robot Policy</a></td>
   <td>InternVLA-M1：面向通用机器人策略的空间引导视觉-语言-动作框架</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2510.13778v1" onclick="toggleFavorite(this, '2510.13778v1', 'InternVLA-M1: A Spatially Guided Vision-Language-Action Framework for Generalist Robot Policy')" title="添加到收藏夹">☆</button></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (1 篇)</h2>
+
+<table>
+<thead>
+<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td>14</td>
+  <td><a href="./papers/251014000v1-a-diffusion-refined-planner-with-reinforcement-learning-priors-for-c.html">A Diffusion-Refined Planner with Reinforcement Learning Priors for Confined-Space Parking</a></td>
+  <td>提出DRIP以解决受限空间停车规划问题</td>
+  <td></td>
+  <td><button class="favorite-btn" data-arxiv-id="2510.14000v1" onclick="toggleFavorite(this, '2510.14000v1', 'A Diffusion-Refined Planner with Reinforcement Learning Priors for Confined-Space Parking')" title="添加到收藏夹">☆</button></td>
 </tr>
 </tbody>
 </table>

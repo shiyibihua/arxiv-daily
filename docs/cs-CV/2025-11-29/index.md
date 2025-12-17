@@ -5,7 +5,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-29
 
 # cs.CV（2025-11-29）
 
-📊 共 **13** 篇论文
+📊 共 **12** 篇论文
  | 🔗 **1** 篇有代码
 
 
@@ -14,7 +14,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-29
 <div class="interest-nav">
 <a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (7)</a>
 <a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (3)</a>
-<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (2 🔗1)</a>
+<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (1 🔗1)</a>
 <a href="#支柱六视频提取与匹配-video-extraction-matching" class="interest-badge">支柱六：视频提取与匹配 (Video Extraction & Matching) (1)</a>
 </div>
 
@@ -113,7 +113,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-29
 </table>
 
 
-<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (2 篇)</h2>
+<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (1 篇)</h2>
 
 <table>
 <thead>
@@ -127,13 +127,6 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-29
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2512.00532v1" onclick="toggleFavorite(this, '2512.00532v1', 'Image Generation as a Visual Planner for Robotic Manipulation')" title="添加到收藏夹">☆</button></td>
 </tr>
-<tr>
-  <td>12</td>
-  <td><a href="./papers/251200396v2-time-series-at-the-edge-tiny-separable-cnns-for-wearable-gait-detect.html">Time-Series at the Edge: Tiny Separable CNNs for Wearable Gait Detection and Optimal Sensor Placement</a></td>
-  <td>针对可穿戴设备，提出超轻量级可分离卷积神经网络用于帕金森病步态检测和优化传感器位置。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2512.00396v2" onclick="toggleFavorite(this, '2512.00396v2', 'Time-Series at the Edge: Tiny Separable CNNs for Wearable Gait Detection and Optimal Sensor Placement')" title="添加到收藏夹">☆</button></td>
-</tr>
 </tbody>
 </table>
 
@@ -146,7 +139,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-29
 </thead>
 <tbody>
 <tr>
-  <td>13</td>
+  <td>12</td>
   <td><a href="./papers/251200582v1-satiredecoder-visual-cascaded-decoupling-for-enhancing-satirical-ima.html">SatireDecoder: Visual Cascaded Decoupling for Enhancing Satirical Image Comprehension</a></td>
   <td>提出SatireDecoder，通过视觉级联解耦增强讽刺图像理解能力</td>
   <td></td>

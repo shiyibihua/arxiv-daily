@@ -5,7 +5,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-17
 
 # cs.CV（2025-11-17）
 
-📊 共 **47** 篇论文
+📊 共 **44** 篇论文
  | 🔗 **10** 篇有代码
 
 
@@ -13,8 +13,8 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-17
 
 <div class="interest-nav">
 <a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (25 🔗6)</a>
-<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (16 🔗4)</a>
-<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (5)</a>
+<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (14 🔗4)</a>
+<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (4)</a>
 <a href="#支柱四生成式动作-generative-motion" class="interest-badge">支柱四：生成式动作 (Generative Motion) (1)</a>
 </div>
 
@@ -207,7 +207,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-17
 </table>
 
 
-<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (16 篇)</h2>
+<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (14 篇)</h2>
 
 <table>
 <thead>
@@ -223,104 +223,90 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-17
 </tr>
 <tr>
   <td>27</td>
-  <td><a href="./papers/251113306v1-dap-a-discrete-token-autoregressive-planner-for-autonomous-driving.html">DAP: A Discrete-token Autoregressive Planner for Autonomous Driving</a></td>
-  <td>DAP：一种用于自动驾驶的离散token自回归规划器，实现BEV语义和轨迹联合预测。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.13306v1" onclick="toggleFavorite(this, '2511.13306v1', 'DAP: A Discrete-token Autoregressive Planner for Autonomous Driving')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>28</td>
   <td><a href="./papers/251117596v1-reconstruction-driven-multimodal-representation-learning-for-automat.html">Reconstruction-Driven Multimodal Representation Learning for Automated Media Understanding</a></td>
   <td>提出基于重构驱动的多模态自编码器，用于自动化媒体内容理解。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.17596v1" onclick="toggleFavorite(this, '2511.17596v1', 'Reconstruction-Driven Multimodal Representation Learning for Automated Media Understanding')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>29</td>
+  <td>28</td>
   <td><a href="./papers/251113649v3-distribution-matching-distillation-meets-reinforcement-learning.html">Distribution Matching Distillation Meets Reinforcement Learning</a></td>
   <td>提出DMDR框架，结合强化学习与分布匹配蒸馏，提升少步扩散模型的生成质量。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.13649v3" onclick="toggleFavorite(this, '2511.13649v3', 'Distribution Matching Distillation Meets Reinforcement Learning')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>30</td>
+  <td>29</td>
   <td><a href="./papers/251113545v1-robust-defense-strategies-for-multimodal-contrastive-learning-effici.html">Robust Defense Strategies for Multimodal Contrastive Learning: Efficient Fine-tuning Against Backdoor Attacks</a></td>
   <td>提出一种高效微调策略，增强多模态对比学习模型抵抗后门攻击的鲁棒性</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.13545v1" onclick="toggleFavorite(this, '2511.13545v1', 'Robust Defense Strategies for Multimodal Contrastive Learning: Efficient Fine-tuning Against Backdoor Attacks')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>31</td>
+  <td>30</td>
   <td><a href="./papers/251113222v1-hybrid-domain-adaptative-representation-learning-for-gaze-estimation.html">Hybrid-Domain Adaptative Representation Learning for Gaze Estimation</a></td>
   <td>提出混合领域自适应表示学习以解决注视估计中的跨域问题</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2511.13222v1" onclick="toggleFavorite(this, '2511.13222v1', 'Hybrid-Domain Adaptative Representation Learning for Gaze Estimation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>32</td>
+  <td>31</td>
   <td><a href="./papers/251113168v1-soma-feature-gradient-enhanced-affine-flow-matching-for-sar-optical-.html">SOMA: Feature Gradient Enhanced Affine-Flow Matching for SAR-Optical Registration</a></td>
   <td>SOMA：通过特征梯度增强的仿射流匹配实现SAR-光学图像配准</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.13168v1" onclick="toggleFavorite(this, '2511.13168v1', 'SOMA: Feature Gradient Enhanced Affine-Flow Matching for SAR-Optical Registration')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>33</td>
+  <td>32</td>
   <td><a href="./papers/251112976v1-mcaq-yolo-morphological-complexity-aware-quantization-for-efficient-.html">MCAQ-YOLO: Morphological Complexity-Aware Quantization for Efficient Object Detection with Curriculum Learning</a></td>
   <td>提出MCAQ-YOLO，通过形态复杂度感知量化提升目标检测效率，适用于资源受限场景。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.12976v1" onclick="toggleFavorite(this, '2511.12976v1', 'MCAQ-YOLO: Morphological Complexity-Aware Quantization for Efficient Object Detection with Curriculum Learning')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>34</td>
+  <td>33</td>
   <td><a href="./papers/251112908v1-deepsport-a-multimodal-large-language-model-for-comprehensive-sports.html">DeepSport: A Multimodal Large Language Model for Comprehensive Sports Video Reasoning via Agentic Reinforcement Learning</a></td>
   <td>DeepSport：基于Agent强化学习的多模态大语言模型，用于全面的体育视频推理</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.12908v1" onclick="toggleFavorite(this, '2511.12908v1', 'DeepSport: A Multimodal Large Language Model for Comprehensive Sports Video Reasoning via Agentic Reinforcement Learning')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>35</td>
+  <td>34</td>
   <td><a href="./papers/251113794v1-fusionfm-all-in-one-multi-modal-image-fusion-with-flow-matching.html">FusionFM: All-in-One Multi-Modal Image Fusion with Flow Matching</a></td>
   <td>提出FusionFM，利用Flow Matching实现高效多模态图像融合</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2511.13794v1" onclick="toggleFavorite(this, '2511.13794v1', 'FusionFM: All-in-One Multi-Modal Image Fusion with Flow Matching')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>36</td>
+  <td>35</td>
   <td><a href="./papers/251113924v1-start-small-think-big-curriculum-based-relative-policy-optimization-.html">Start Small, Think Big: Curriculum-based Relative Policy Optimization for Visual Grounding</a></td>
   <td>提出基于课程学习的相对策略优化CuRPO，提升视觉定位任务中CoT推理的性能。</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2511.13924v1" onclick="toggleFavorite(this, '2511.13924v1', 'Start Small, Think Big: Curriculum-based Relative Policy Optimization for Visual Grounding')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>37</td>
+  <td>36</td>
   <td><a href="./papers/251113431v1-fuse-a-flow-based-mapping-between-shapes.html">FUSE: A Flow-based Mapping Between Shapes</a></td>
   <td>提出基于Flow-Matching的形状映射方法，高效支持跨表示形状匹配。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.13431v1" onclick="toggleFavorite(this, '2511.13431v1', 'FUSE: A Flow-based Mapping Between Shapes')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>38</td>
+  <td>37</td>
   <td><a href="./papers/251112909v1-casl-curvature-augmented-self-supervised-learning-for-3d-anomaly-det.html">CASL: Curvature-Augmented Self-supervised Learning for 3D Anomaly Detection</a></td>
   <td>提出CASL：一种曲率增强的自监督学习框架，用于提升3D异常检测性能。</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2511.12909v1" onclick="toggleFavorite(this, '2511.12909v1', 'CASL: Curvature-Augmented Self-supervised Learning for 3D Anomaly Detection')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>39</td>
+  <td>38</td>
   <td><a href="./papers/251113648v1-physx-anything-simulation-ready-physical-3d-assets-from-single-image.html">PhysX-Anything: Simulation-Ready Physical 3D Assets from Single Image</a></td>
   <td>PhysX-Anything：首个单图生成可用于仿真的物理3D资产框架</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.13648v1" onclick="toggleFavorite(this, '2511.13648v1', 'PhysX-Anything: Simulation-Ready Physical 3D Assets from Single Image')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>40</td>
-  <td><a href="./papers/251113798v1-kangura-kolmogorov-arnold-network-based-geometry-aware-learning-with.html">KANGURA: Kolmogorov-Arnold Network-Based Geometry-Aware Learning with Unified Representation Attention for 3D Modeling of Complex Structures</a></td>
-  <td>KANGURA：基于KAN的几何感知学习框架，用于复杂结构的三维建模</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.13798v1" onclick="toggleFavorite(this, '2511.13798v1', 'KANGURA: Kolmogorov-Arnold Network-Based Geometry-Aware Learning with Unified Representation Attention for 3D Modeling of Complex Structures')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>41</td>
+  <td>39</td>
   <td><a href="./papers/251112940v1-recurrent-autoregressive-diffusion-global-memory-meets-local-attenti.html">Recurrent Autoregressive Diffusion: Global Memory Meets Local Attention</a></td>
   <td>提出RAD框架，通过循环自回归扩散模型解决长视频生成中的记忆和时空一致性问题</td>
   <td></td>
@@ -330,7 +316,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-17
 </table>
 
 
-<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (5 篇)</h2>
+<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (4 篇)</h2>
 
 <table>
 <thead>
@@ -338,35 +324,28 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-17
 </thead>
 <tbody>
 <tr>
-  <td>42</td>
+  <td>40</td>
   <td><a href="./papers/251113713v1-free-form-scene-editor-enabling-multi-round-object-manipulation-like.html">Free-Form Scene Editor: Enabling Multi-Round Object Manipulation like in a 3D Engine</a></td>
   <td>提出FFSE，实现3D引擎般的多轮物体操作图像编辑</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.13713v1" onclick="toggleFavorite(this, '2511.13713v1', 'Free-Form Scene Editor: Enabling Multi-Round Object Manipulation like in a 3D Engine')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>43</td>
+  <td>41</td>
   <td><a href="./papers/251113065v1-robustgait-robustness-analysis-for-appearance-based-gait-recognition.html">RobustGait: Robustness Analysis for Appearance Based Gait Recognition</a></td>
   <td>RobustGait：针对基于外观的步态识别的鲁棒性分析框架</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.13065v1" onclick="toggleFavorite(this, '2511.13065v1', 'RobustGait: Robustness Analysis for Appearance Based Gait Recognition')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>44</td>
-  <td><a href="./papers/251113458v1-trust-in-vision-language-models-insights-from-a-participatory-user-w.html">Trust in Vision-Language Models: Insights from a Participatory User Workshop</a></td>
-  <td>通过用户参与式研讨会洞察视觉-语言模型中的用户信任问题</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.13458v1" onclick="toggleFavorite(this, '2511.13458v1', 'Trust in Vision-Language Models: Insights from a Participatory User Workshop')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>45</td>
+  <td>42</td>
   <td><a href="./papers/251112921v1-generative-photographic-control-for-scene-consistent-video-cinematic.html">Generative Photographic Control for Scene-Consistent Video Cinematic Editing</a></td>
   <td>CineCtrl：提出一种生成式视频电影编辑框架，实现对专业相机参数的精细控制。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.12921v1" onclick="toggleFavorite(this, '2511.12921v1', 'Generative Photographic Control for Scene-Consistent Video Cinematic Editing')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>46</td>
+  <td>43</td>
   <td><a href="./papers/251112878v3-uni-hand-universal-hand-motion-forecasting-in-egocentric-views.html">Uni-Hand: Universal Hand Motion Forecasting in Egocentric Views</a></td>
   <td>Uni-Hand：用于第一人称视角的通用手部运动预测框架</td>
   <td></td>
@@ -384,7 +363,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-17
 </thead>
 <tbody>
 <tr>
-  <td>47</td>
+  <td>44</td>
   <td><a href="./papers/251113032v1-uni-inter-unifying-3d-human-motion-synthesis-across-diverse-interact.html">Uni-Inter: Unifying 3D Human Motion Synthesis Across Diverse Interaction Contexts</a></td>
   <td>提出Uni-Inter框架以解决多种交互场景下的人类动作生成问题</td>
   <td></td>

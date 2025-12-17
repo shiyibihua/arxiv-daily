@@ -5,20 +5,20 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-13
 
 # cs.RO（2025-11-13）
 
-📊 共 **12** 篇论文
+📊 共 **11** 篇论文
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
-<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (11)</a>
+<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (10)</a>
 <a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (1)</a>
 </div>
 
 ---
 
 
-<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (11 篇)</h2>
+<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (10 篇)</h2>
 
 <table>
 <thead>
@@ -76,27 +76,20 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-13
 </tr>
 <tr>
   <td>8</td>
-  <td><a href="./papers/251109923v2-harnessing-bounded-support-evolution-strategies-for-policy-refinemen.html">Harnessing Bounded-Support Evolution Strategies for Policy Refinement</a></td>
-  <td>提出三角分布ES算法，用于提升机器人策略的稳定性和性能</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.09923v2" onclick="toggleFavorite(this, '2511.09923v2', 'Harnessing Bounded-Support Evolution Strategies for Policy Refinement')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>9</td>
   <td><a href="./papers/251110816v2-dynamically-extensible-and-retractable-robotic-leg-linkages-for-mult.html">Dynamically Extensible and Retractable Robotic Leg Linkages for Multi-task Execution in Search and Rescue Scenarios</a></td>
   <td>提出一种动态伸缩腿式连杆机构，用于搜索救援机器人执行多任务</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.10816v2" onclick="toggleFavorite(this, '2511.10816v2', 'Dynamically Extensible and Retractable Robotic Leg Linkages for Multi-task Execution in Search and Rescue Scenarios')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>10</td>
+  <td>9</td>
   <td><a href="./papers/251110276v1-robobenchmart-benchmarking-robots-in-retail-environment.html">RoboBenchMart: Benchmarking Robots in Retail Environment</a></td>
   <td>RoboBenchMart：面向零售环境的机器人操作基准测试平台</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.10276v1" onclick="toggleFavorite(this, '2511.10276v1', 'RoboBenchMart: Benchmarking Robots in Retail Environment')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>11</td>
+  <td>10</td>
   <td><a href="./papers/251109836v1-provably-safe-stein-variational-clarity-aware-informative-planning.html">Provably Safe Stein Variational Clarity-Aware Informative Planning</a></td>
   <td>提出基于Stein变分清晰度感知的安全信息规划方法，解决非均匀衰减环境下的信息收集任务。</td>
   <td></td>
@@ -114,7 +107,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-13
 </thead>
 <tbody>
 <tr>
-  <td>12</td>
+  <td>11</td>
   <td><a href="./papers/251200037v1-icd-net-inertial-covariance-displacement-network-for-drone-visual-in.html">ICD-Net: Inertial Covariance Displacement Network for Drone Visual-Inertial SLAM</a></td>
   <td>ICD-Net：用于无人机视觉惯性SLAM的惯性协方差位移网络</td>
   <td></td>

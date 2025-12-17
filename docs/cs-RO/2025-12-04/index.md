@@ -5,21 +5,21 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-12-04
 
 # cs.RO（2025-12-04）
 
-📊 共 **19** 篇论文
+📊 共 **18** 篇论文
  | 🔗 **1** 篇有代码
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
-<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (16 🔗1)</a>
+<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (15 🔗1)</a>
 <a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (3)</a>
 </div>
 
 ---
 
 
-<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (16 篇)</h2>
+<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (15 篇)</h2>
 
 <table>
 <thead>
@@ -84,55 +84,48 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-12-04
 </tr>
 <tr>
   <td>9</td>
-  <td><a href="./papers/251204579v1-gauss-newton-accelerated-mppi-control.html">Gauss-Newton accelerated MPPI Control</a></td>
-  <td>提出Gauss-Newton加速的MPPI控制，提升高维控制问题的计算效率。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2512.04579v1" onclick="toggleFavorite(this, '2512.04579v1', 'Gauss-Newton accelerated MPPI Control')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>10</td>
   <td><a href="./papers/251205107v1-stare-vla-progressive-stage-aware-reinforcement-for-fine-tuning-visi.html">STARE-VLA: Progressive Stage-Aware Reinforcement for Fine-Tuning Vision-Language-Action Models</a></td>
   <td>提出STARE-VLA，通过阶段感知强化学习微调视觉-语言-动作模型，提升机器人操作性能。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.05107v1" onclick="toggleFavorite(this, '2512.05107v1', 'STARE-VLA: Progressive Stage-Aware Reinforcement for Fine-Tuning Vision-Language-Action Models')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>11</td>
+  <td>10</td>
   <td><a href="./papers/251205211v1-wake-vectoring-for-efficient-morphing-flight.html">Wake Vectoring for Efficient Morphing Flight</a></td>
   <td>提出被动尾流导向机制，提升变形飞行器在形态变化期间的推力效率和控制能力</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.05211v1" onclick="toggleFavorite(this, '2512.05211v1', 'Wake Vectoring for Efficient Morphing Flight')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>12</td>
+  <td>11</td>
   <td><a href="./papers/251204973v1-preliminary-analysis-and-simulation-of-a-compact-variable-stiffness-.html">Preliminary Analysis and Simulation of a Compact Variable Stiffness Wrist</a></td>
   <td>提出一种紧凑型变刚度腕部，通过冗余弹性驱动实现高精度位置和刚度控制。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.04973v1" onclick="toggleFavorite(this, '2512.04973v1', 'Preliminary Analysis and Simulation of a Compact Variable Stiffness Wrist')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>13</td>
+  <td>12</td>
   <td><a href="./papers/251204446v1-vision-language-action-models-for-selective-robotic-disassembly-a-ca.html">Vision-Language-Action Models for Selective Robotic Disassembly: A Case Study on Critical Component Extraction from Desktops</a></td>
   <td>针对桌面电脑关键部件拆卸，探索视觉-语言-动作模型的应用潜力</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.04446v1" onclick="toggleFavorite(this, '2512.04446v1', 'Vision-Language-Action Models for Selective Robotic Disassembly: A Case Study on Critical Component Extraction from Desktops')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>14</td>
+  <td>13</td>
   <td><a href="./papers/251204404v1-bridging-probabilistic-inference-and-behavior-trees-an-interactive-f.html">Bridging Probabilistic Inference and Behavior Trees: An Interactive Framework for Adaptive Multi-Robot Cooperation</a></td>
   <td>提出交互式推理行为树，用于多机器人自适应协同</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.04404v1" onclick="toggleFavorite(this, '2512.04404v1', 'Bridging Probabilistic Inference and Behavior Trees: An Interactive Framework for Adaptive Multi-Robot Cooperation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>15</td>
+  <td>14</td>
   <td><a href="./papers/251205008v1-contact-implicit-modeling-and-simulation-of-a-snake-robot-on-complia.html">Contact-Implicit Modeling and Simulation of a Snake Robot on Compliant and Granular Terrain</a></td>
   <td>针对蛇形机器人在复杂地形运动，提出接触隐式建模与仿真框架</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.05008v1" onclick="toggleFavorite(this, '2512.05008v1', 'Contact-Implicit Modeling and Simulation of a Snake Robot on Compliant and Granular Terrain')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>16</td>
+  <td>15</td>
   <td><a href="./papers/251205171v1-two-stage-camera-calibration-method-for-multi-camera-systems-using-s.html">Two-Stage Camera Calibration Method for Multi-Camera Systems Using Scene Geometry</a></td>
   <td>提出一种基于场景几何的多相机系统两阶段标定方法，无需同步视频流。</td>
   <td></td>
@@ -150,21 +143,21 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-12-04
 </thead>
 <tbody>
 <tr>
-  <td>17</td>
+  <td>16</td>
   <td><a href="./papers/251204772v1-tempo-vine-a-multi-temporal-sensor-fusion-dataset-for-localization-a.html">TEMPO-VINE: A Multi-Temporal Sensor Fusion Dataset for Localization and Mapping in Vineyards</a></td>
   <td>TEMPO-VINE：用于葡萄园定位与建图的多时序传感器融合数据集</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.04772v1" onclick="toggleFavorite(this, '2512.04772v1', 'TEMPO-VINE: A Multi-Temporal Sensor Fusion Dataset for Localization and Mapping in Vineyards')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>18</td>
+  <td>17</td>
   <td><a href="./papers/251204373v1-vertical-planetary-landing-on-sloped-terrain-using-optical-flow-dive.html">Vertical Planetary Landing on Sloped Terrain Using Optical Flow Divergence Estimates</a></td>
   <td>提出基于光流散度估计的非线性控制策略，实现斜坡地形上的垂直行星着陆</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.04373v1" onclick="toggleFavorite(this, '2512.04373v1', 'Vertical Planetary Landing on Sloped Terrain Using Optical Flow Divergence Estimates')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>19</td>
+  <td>18</td>
   <td><a href="./papers/251205303v1-seabed-to-sky-mapping-of-maritime-environments-with-a-dual-orthogona.html">Seabed-to-Sky Mapping of Maritime Environments with a Dual Orthogonal SONAR and LiDAR Sensor Suite</a></td>
   <td>提出一种GNSS独立的海洋环境映射系统以解决现有方法的局限性</td>
   <td></td>

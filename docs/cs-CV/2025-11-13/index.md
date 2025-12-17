@@ -5,7 +5,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-13
 
 # cs.CV（2025-11-13）
 
-📊 共 **28** 篇论文
+📊 共 **27** 篇论文
  | 🔗 **4** 篇有代码
 
 
@@ -14,7 +14,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-13
 <div class="interest-nav">
 <a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (18 🔗2)</a>
 <a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (4 🔗1)</a>
-<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (3 🔗1)</a>
+<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (2 🔗1)</a>
 <a href="#支柱五交互与反应-interaction-reaction" class="interest-badge">支柱五：交互与反应 (Interaction & Reaction) (2)</a>
 <a href="#支柱四生成式动作-generative-motion" class="interest-badge">支柱四：生成式动作 (Generative Motion) (1)</a>
 </div>
@@ -198,7 +198,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-13
 </table>
 
 
-<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (3 篇)</h2>
+<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (2 篇)</h2>
 
 <table>
 <thead>
@@ -219,13 +219,6 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-13
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2511.10518v1" onclick="toggleFavorite(this, '2511.10518v1', 'SemanticVLA: Semantic-Aligned Sparsification and Enhancement for Efficient Robotic Manipulation')" title="添加到收藏夹">☆</button></td>
 </tr>
-<tr>
-  <td>25</td>
-  <td><a href="./papers/251110627v1-querying-labeled-time-series-data-with-scenario-programs.html">Querying Labeled Time Series Data with Scenario Programs</a></td>
-  <td>提出基于场景程序的时序数据查询方法，用于验证仿真环境中自动驾驶系统的失效场景。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.10627v1" onclick="toggleFavorite(this, '2511.10627v1', 'Querying Labeled Time Series Data with Scenario Programs')" title="添加到收藏夹">☆</button></td>
-</tr>
 </tbody>
 </table>
 
@@ -238,14 +231,14 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-13
 </thead>
 <tbody>
 <tr>
-  <td>26</td>
+  <td>25</td>
   <td><a href="./papers/251110539v1-dynamic-avatar-scene-rendering-from-human-centric-context.html">Dynamic Avatar-Scene Rendering from Human-centric Context</a></td>
   <td>提出Separate-then-Map策略，解决单目视频中动态人与场景交互的神经渲染问题</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.10539v1" onclick="toggleFavorite(this, '2511.10539v1', 'Dynamic Avatar-Scene Rendering from Human-centric Context')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>27</td>
+  <td>26</td>
   <td><a href="./papers/251110203v1-vista-a-vision-and-intent-aware-social-attention-framework-for-multi.html">VISTA: A Vision and Intent-Aware Social Attention Framework for Multi-Agent Trajectory Prediction</a></td>
   <td>VISTA：一种用于多智能体轨迹预测的视觉和意图感知社交注意力框架</td>
   <td></td>
@@ -263,7 +256,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-13
 </thead>
 <tbody>
 <tr>
-  <td>28</td>
+  <td>27</td>
   <td><a href="./papers/251110076v1-mitigating-error-accumulation-in-co-speech-motion-generation-via-glo.html">Mitigating Error Accumulation in Co-Speech Motion Generation via Global Rotation Diffusion and Multi-Level Constraints</a></td>
   <td>提出GlobalDiff，通过全局旋转扩散和多级约束缓解共语运动生成中的误差累积</td>
   <td></td>

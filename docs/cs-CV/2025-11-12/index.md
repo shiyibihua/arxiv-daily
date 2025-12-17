@@ -5,8 +5,8 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-12
 
 # cs.CV（2025-11-12）
 
-📊 共 **23** 篇论文
- | 🔗 **8** 篇有代码
+📊 共 **22** 篇论文
+ | 🔗 **7** 篇有代码
 
 
 ## 🎯 兴趣领域导航
@@ -14,7 +14,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-12
 <div class="interest-nav">
 <a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (14 🔗3)</a>
 <a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (4 🔗2)</a>
-<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (3 🔗2)</a>
+<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (2 🔗1)</a>
 <a href="#支柱五交互与反应-interaction-reaction" class="interest-badge">支柱五：交互与反应 (Interaction & Reaction) (1 🔗1)</a>
 <a href="#支柱六视频提取与匹配-video-extraction-matching" class="interest-badge">支柱六：视频提取与匹配 (Video Extraction & Matching) (1)</a>
 </div>
@@ -170,7 +170,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-12
 </table>
 
 
-<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (3 篇)</h2>
+<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (2 篇)</h2>
 
 <table>
 <thead>
@@ -186,13 +186,6 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-12
 </tr>
 <tr>
   <td>20</td>
-  <td><a href="./papers/251111681v1-mpcm-net-multi-scale-network-integrates-partial-attention-convolutio.html">MPCM-Net: Multi-scale network integrates partial attention convolution with Mamba for ground-based cloud image segmentation</a></td>
-  <td>提出MPCM-Net，融合部分注意力卷积与Mamba，用于地基云图像分割，提升精度与效率。</td>
-  <td>✅</td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.11681v1" onclick="toggleFavorite(this, '2511.11681v1', 'MPCM-Net: Multi-scale network integrates partial attention convolution with Mamba for ground-based cloud image segmentation')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>21</td>
   <td><a href="./papers/251109554v1-rf-detr-neural-architecture-search-for-real-time-detection-transform.html">RF-DETR: Neural Architecture Search for Real-Time Detection Transformers</a></td>
   <td>RF-DETR：面向实时目标检测Transformer的神经架构搜索</td>
   <td>✅</td>
@@ -210,7 +203,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-12
 </thead>
 <tbody>
 <tr>
-  <td>22</td>
+  <td>21</td>
   <td><a href="./papers/251109147v2-presstrack-hmr-pressure-based-top-down-multi-person-global-human-mes.html">PressTrack-HMR: Pressure-Based Top-Down Multi-Person Global Human Mesh Recovery</a></td>
   <td>PressTrack-HMR：提出基于压力感知的多人全局人体网格重建方法</td>
   <td>✅</td>
@@ -228,7 +221,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-12
 </thead>
 <tbody>
 <tr>
-  <td>23</td>
+  <td>22</td>
   <td><a href="./papers/251109286v1-enriching-knowledge-distillation-with-cross-modal-teacher-fusion.html">Enriching Knowledge Distillation with Cross-Modal Teacher Fusion</a></td>
   <td>提出RichKD，通过跨模态CLIP知识融合提升知识蒸馏效果</td>
   <td></td>

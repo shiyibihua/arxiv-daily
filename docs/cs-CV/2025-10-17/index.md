@@ -5,7 +5,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-10-17
 
 # cs.CV（2025-10-17）
 
-📊 共 **26** 篇论文
+📊 共 **23** 篇论文
  | 🔗 **5** 篇有代码
 
 
@@ -14,9 +14,9 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-10-17
 <div class="interest-nav">
 <a href="#支柱三空间感知与语义-perception-semantics" class="interest-badge">支柱三：空间感知与语义 (Perception & Semantics) (9 🔗1)</a>
 <a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (8 🔗2)</a>
-<a href="#支柱九具身大模型-embodied-foundation-models" class="interest-badge">支柱九：具身大模型 (Embodied Foundation Models) (4)</a>
 <a href="#支柱七动作重定向-motion-retargeting" class="interest-badge">支柱七：动作重定向 (Motion Retargeting) (2 🔗1)</a>
 <a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (1)</a>
+<a href="#支柱九具身大模型-embodied-foundation-models" class="interest-badge">支柱九：具身大模型 (Embodied Foundation Models) (1)</a>
 <a href="#支柱六视频提取与匹配-video-extraction" class="interest-badge">支柱六：视频提取与匹配 (Video Extraction) (1)</a>
 <a href="#支柱八物理动画-physics-based-animation" class="interest-badge">支柱八：物理动画 (Physics-based Animation) (1 🔗1)</a>
 </div>
@@ -165,45 +165,6 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-10-17
 </table>
 
 
-<h2 id="支柱九具身大模型-embodied-foundation-models">🔬 支柱九：具身大模型 (Embodied Foundation Models) (4 篇)</h2>
-
-<table>
-<thead>
-<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
-</thead>
-<tbody>
-<tr>
-  <td>18</td>
-  <td><a href="./papers/251015253v1-scaling-beyond-context-a-survey-of-multimodal-retrieval-augmented-ge.html">Scaling Beyond Context: A Survey of Multimodal Retrieval-Augmented Generation for Document Understanding</a></td>
-  <td>多模态RAG综述：提升文档理解能力，超越上下文限制</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.15253v1" onclick="toggleFavorite(this, '2510.15253v1', 'Scaling Beyond Context: A Survey of Multimodal Retrieval-Augmented Generation for Document Understanding')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>19</td>
-  <td><a href="./papers/251015684v1-towards-label-free-brain-tumor-segmentation-unsupervised-learning-wi.html">Towards Label-Free Brain Tumor Segmentation: Unsupervised Learning with Multimodal MRI</a></td>
-  <td>提出基于多模态MRI的无监督脑肿瘤分割方法，解决标注数据稀缺问题。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.15684v1" onclick="toggleFavorite(this, '2510.15684v1', 'Towards Label-Free Brain Tumor Segmentation: Unsupervised Learning with Multimodal MRI')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>20</td>
-  <td><a href="./papers/251015842v1-paper2web-lets-make-your-paper-alive.html">Paper2Web: Let's Make Your Paper Alive!</a></td>
-  <td>Paper2Web：提出学术网页自动生成框架PWAgent，提升论文传播效果</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.15842v1" onclick="toggleFavorite(this, '2510.15842v1', 'Paper2Web: Let&#39;s Make Your Paper Alive!')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>21</td>
-  <td><a href="./papers/251015202v2-dissecting-mahalanobis-how-feature-geometry-and-normalization-shape-.html">Dissecting Mahalanobis: How Feature Geometry and Normalization Shape OOD Detection</a></td>
-  <td>提出径向缩放的ℓ2归一化以提升OOD检测性能</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.15202v2" onclick="toggleFavorite(this, '2510.15202v2', 'Dissecting Mahalanobis: How Feature Geometry and Normalization Shape OOD Detection')" title="添加到收藏夹">☆</button></td>
-</tr>
-</tbody>
-</table>
-
-
 <h2 id="支柱七动作重定向-motion-retargeting">🔬 支柱七：动作重定向 (Motion Retargeting) (2 篇)</h2>
 
 <table>
@@ -212,14 +173,14 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-10-17
 </thead>
 <tbody>
 <tr>
-  <td>22</td>
+  <td>18</td>
   <td><a href="./papers/251015564v1-imaginarium-vision-guided-high-quality-3d-scene-layout-generation.html">Imaginarium: Vision-guided High-Quality 3D Scene Layout Generation</a></td>
   <td>Imaginarium：提出视觉引导的高质量3D场景布局生成方法，提升场景丰富度和质量。</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2510.15564v1" onclick="toggleFavorite(this, '2510.15564v1', 'Imaginarium: Vision-guided High-Quality 3D Scene Layout Generation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>23</td>
+  <td>19</td>
   <td><a href="./papers/251015467v1-mrasfm-multi-camera-reconstruction-and-aggregation-through-structure.html">MRASfM: Multi-Camera Reconstruction and Aggregation through Structure-from-Motion in Driving Scenes</a></td>
   <td>MRASfM：提出多相机SfM框架，解决自动驾驶场景重建难题。</td>
   <td></td>
@@ -237,11 +198,29 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-10-17
 </thead>
 <tbody>
 <tr>
-  <td>24</td>
+  <td>20</td>
   <td><a href="./papers/251016258v1-embody-3d-a-large-scale-multimodal-motion-and-behavior-dataset.html">Embody 3D: A Large-scale Multimodal Motion and Behavior Dataset</a></td>
   <td>Meta发布Embody 3D：大规模多模态人体运动与行为数据集</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.16258v1" onclick="toggleFavorite(this, '2510.16258v1', 'Embody 3D: A Large-scale Multimodal Motion and Behavior Dataset')" title="添加到收藏夹">☆</button></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 id="支柱九具身大模型-embodied-foundation-models">🔬 支柱九：具身大模型 (Embodied Foundation Models) (1 篇)</h2>
+
+<table>
+<thead>
+<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td>21</td>
+  <td><a href="./papers/251015684v1-towards-label-free-brain-tumor-segmentation-unsupervised-learning-wi.html">Towards Label-Free Brain Tumor Segmentation: Unsupervised Learning with Multimodal MRI</a></td>
+  <td>提出基于多模态MRI的无监督脑肿瘤分割方法，解决标注数据稀缺问题。</td>
+  <td></td>
+  <td><button class="favorite-btn" data-arxiv-id="2510.15684v1" onclick="toggleFavorite(this, '2510.15684v1', 'Towards Label-Free Brain Tumor Segmentation: Unsupervised Learning with Multimodal MRI')" title="添加到收藏夹">☆</button></td>
 </tr>
 </tbody>
 </table>
@@ -255,7 +234,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-10-17
 </thead>
 <tbody>
 <tr>
-  <td>25</td>
+  <td>22</td>
   <td><a href="./papers/251016134v1-aria-gen-2-pilot-dataset.html">Aria Gen 2 Pilot Dataset</a></td>
   <td>发布Aria Gen 2 Pilot Dataset，用于可穿戴设备的第一人称视角多模态感知研究</td>
   <td></td>
@@ -273,7 +252,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-10-17
 </thead>
 <tbody>
 <tr>
-  <td>26</td>
+  <td>23</td>
   <td><a href="./papers/251015392v1-lilac-long-sequence-incremental-low-latency-arbitrary-motion-styliza.html">LILAC: Long-sequence Incremental Low-latency Arbitrary Motion Stylization via Streaming VAE-Diffusion with Causal Decoding</a></td>
   <td>LILAC：基于流式VAE-Diffusion和因果解码的长序列增量低延迟任意动作风格化</td>
   <td>✅</td>

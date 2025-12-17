@@ -5,14 +5,14 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-30
 
 # cs.CV（2025-11-30）
 
-📊 共 **22** 篇论文
+📊 共 **21** 篇论文
  | 🔗 **6** 篇有代码
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
-<a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (12 🔗3)</a>
+<a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (11 🔗3)</a>
 <a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (4)</a>
 <a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (4 🔗2)</a>
 <a href="#支柱五交互与反应-interaction-reaction" class="interest-badge">支柱五：交互与反应 (Interaction & Reaction) (2 🔗1)</a>
@@ -21,7 +21,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-30
 ---
 
 
-<h2 id="支柱三空间感知-perception-slam">🔬 支柱三：空间感知 (Perception & SLAM) (12 篇)</h2>
+<h2 id="支柱三空间感知-perception-slam">🔬 支柱三：空间感知 (Perception & SLAM) (11 篇)</h2>
 
 <table>
 <thead>
@@ -105,13 +105,6 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-30
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.01103v1" onclick="toggleFavorite(this, '2512.01103v1', 'Learning Eigenstructures of Unstructured Data Manifolds')" title="添加到收藏夹">☆</button></td>
 </tr>
-<tr>
-  <td>12</td>
-  <td><a href="./papers/251200736v1-rem-evaluating-llm-embodied-spatial-reasoning-through-multi-frame-tr.html">REM: Evaluating LLM Embodied Spatial Reasoning through Multi-Frame Trajectories</a></td>
-  <td>REM：通过多帧轨迹评估LLM具身空间推理能力</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2512.00736v1" onclick="toggleFavorite(this, '2512.00736v1', 'REM: Evaluating LLM Embodied Spatial Reasoning through Multi-Frame Trajectories')" title="添加到收藏夹">☆</button></td>
-</tr>
 </tbody>
 </table>
 
@@ -124,28 +117,28 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-30
 </thead>
 <tbody>
 <tr>
-  <td>13</td>
+  <td>12</td>
   <td><a href="./papers/251200883v1-audio-visual-world-models-towards-multisensory-imagination-in-sight-.html">Audio-Visual World Models: Towards Multisensory Imagination in Sight and Sound</a></td>
   <td>提出AVWM框架，利用视听信息进行环境建模，提升智能体导航性能</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.00883v1" onclick="toggleFavorite(this, '2512.00883v1', 'Audio-Visual World Models: Towards Multisensory Imagination in Sight and Sound')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>14</td>
+  <td>13</td>
   <td><a href="./papers/251200995v1-s2am3d-scale-controllable-part-segmentation-of-3d-point-cloud.html">S2AM3D: Scale-controllable Part Segmentation of 3D Point Cloud</a></td>
   <td>S2AM3D：提出可控粒度的三维点云部件分割方法</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.00995v1" onclick="toggleFavorite(this, '2512.00995v1', 'S2AM3D: Scale-controllable Part Segmentation of 3D Point Cloud')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>15</td>
+  <td>14</td>
   <td><a href="./papers/251205992v2-stronger-is-not-better-better-augmentations-in-contrastive-learning-.html">Stronger is not better: Better Augmentations in Contrastive Learning for Medical Image Segmentation</a></td>
   <td>针对医学图像分割，研究对比学习中更优的数据增强策略</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.05992v2" onclick="toggleFavorite(this, '2512.05992v2', 'Stronger is not better: Better Augmentations in Contrastive Learning for Medical Image Segmentation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>16</td>
+  <td>15</td>
   <td><a href="./papers/251201094v1-accelerating-inference-of-masked-image-generators-via-reinforcement-.html">Accelerating Inference of Masked Image Generators via Reinforcement Learning</a></td>
   <td>提出Speed-RL，通过强化学习加速掩码图像生成模型推理，显著减少采样步骤。</td>
   <td></td>
@@ -163,28 +156,28 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-30
 </thead>
 <tbody>
 <tr>
-  <td>17</td>
+  <td>16</td>
   <td><a href="./papers/251200691v1-silhouette-based-gait-foundation-model.html">Silhouette-based Gait Foundation Model</a></td>
   <td>提出FoundationGait，首个可扩展的步态自监督预训练框架，提升多种步态任务性能。</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2512.00691v1" onclick="toggleFavorite(this, '2512.00691v1', 'Silhouette-based Gait Foundation Model')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>18</td>
+  <td>17</td>
   <td><a href="./papers/251205991v2-emodifftalkemotion-aware-diffusion-for-editable-3d-gaussian-talking-.html">EmoDiffTalk:Emotion-aware Diffusion for Editable 3D Gaussian Talking Head</a></td>
   <td>EmoDiffTalk：提出情感感知扩散模型，用于可编辑的3D高斯说话头生成。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.05991v2" onclick="toggleFavorite(this, '2512.05991v2', 'EmoDiffTalk:Emotion-aware Diffusion for Editable 3D Gaussian Talking Head')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>19</td>
+  <td>18</td>
   <td><a href="./papers/251200885v1-handyvqa-a-video-qa-benchmark-for-fine-grained-hand-object-interacti.html">HanDyVQA: A Video QA Benchmark for Fine-Grained Hand-Object Interaction Dynamics</a></td>
   <td>HanDyVQA：一个用于细粒度手-物交互动态的视频问答基准</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.00885v1" onclick="toggleFavorite(this, '2512.00885v1', 'HanDyVQA: A Video QA Benchmark for Fine-Grained Hand-Object Interaction Dynamics')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>20</td>
+  <td>19</td>
   <td><a href="./papers/251200752v1-charts-are-not-images-on-the-challenges-of-scientific-chart-editing.html">Charts Are Not Images: On the Challenges of Scientific Chart Editing</a></td>
   <td>提出FigEdit基准，揭示现有生成模型在科学图表编辑中的结构化转换能力不足</td>
   <td>✅</td>
@@ -202,14 +195,14 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-30
 </thead>
 <tbody>
 <tr>
-  <td>21</td>
+  <td>20</td>
   <td><a href="./papers/251200960v2-efficient-and-scalable-monocular-human-object-interaction-motion-rec.html">Efficient and Scalable Monocular Human-Object Interaction Motion Reconstruction</a></td>
   <td>提出4DHOISolver框架，结合人工标注，高效重建单目视频中的人-物交互运动。</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2512.00960v2" onclick="toggleFavorite(this, '2512.00960v2', 'Efficient and Scalable Monocular Human-Object Interaction Motion Reconstruction')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>22</td>
+  <td>21</td>
   <td><a href="./papers/251201148v1-socialfusion-addressing-social-degradation-in-pre-trained-vision-lan.html">SocialFusion: Addressing Social Degradation in Pre-trained Vision-Language Models</a></td>
   <td>提出SocialFusion框架，解决预训练视觉-语言模型中的社会认知退化问题</td>
   <td></td>

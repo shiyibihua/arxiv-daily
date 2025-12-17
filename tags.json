@@ -2,7 +2,11 @@
     "tags": [
         "cs.RO",
         "cs.CV",
-        "cs.GR"
+        "cs.GR",
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "eess.SY"
     ],
-    "_comment": "精简分类以聚焦机器人和相关领域。cs.RO=机器人，cs.CV=视觉(深度估计/SLAM/3D)，cs.GR=图形学(物理动画)"
+    "_comment": "精简分类以聚焦机器人和相关领域。cs.RO=机器人，cs.CV=视觉(深度估计/SLAM/3D)，cs.GR=图形学(物理动画)，cs.LG=机器学习(RL, DPO, Diffusion, World Model)，cs.AI=人工智能(Agents, Planning, Reasoning)，cs.CL=自然语言(VLA, Text-to-Motion, Instruction Following)，eess.SY=系统控制(Hardcore WBC, MPC, Dynamics)"
 }

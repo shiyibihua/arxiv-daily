@@ -5,21 +5,21 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-09
 
 # cs.RO（2025-11-09）
 
-📊 共 **14** 篇论文
+📊 共 **13** 篇论文
  | 🔗 **2** 篇有代码
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
-<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (13 🔗2)</a>
+<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (12 🔗2)</a>
 <a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (1)</a>
 </div>
 
 ---
 
 
-<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (13 篇)</h2>
+<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (12 篇)</h2>
 
 <table>
 <thead>
@@ -91,27 +91,20 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-09
 </tr>
 <tr>
   <td>10</td>
-  <td><a href="./papers/251106471v2-ghost-solving-the-traveling-salesman-problem-on-graphs-of-convex-set.html">GHOST: Solving the Traveling Salesman Problem on Graphs of Convex Sets</a></td>
-  <td>GHOST：求解凸集图上的旅行商问题，用于轨迹规划</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.06471v2" onclick="toggleFavorite(this, '2511.06471v2', 'GHOST: Solving the Traveling Salesman Problem on Graphs of Convex Sets')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>11</td>
   <td><a href="./papers/251106385v1-from-demonstrations-to-safe-deployment-path-consistent-safety-filter.html">From Demonstrations to Safe Deployment: Path-Consistent Safety Filtering for Diffusion Policies</a></td>
   <td>提出路径一致性安全过滤(PACS)方法，保障Diffusion策略在人机交互中的安全部署。</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2511.06385v1" onclick="toggleFavorite(this, '2511.06385v1', 'From Demonstrations to Safe Deployment: Path-Consistent Safety Filtering for Diffusion Policies')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>12</td>
+  <td>11</td>
   <td><a href="./papers/251106311v1-external-photoreflective-tactile-sensing-based-on-surface-deformatio.html">External Photoreflective Tactile Sensing Based on Surface Deformation Measurement</a></td>
   <td>提出一种基于表面形变测量的外置光反射触觉传感方法，用于软体机器人。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.06311v1" onclick="toggleFavorite(this, '2511.06311v1', 'External Photoreflective Tactile Sensing Based on Surface Deformation Measurement')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>13</td>
+  <td>12</td>
   <td><a href="./papers/251106202v1-expres-vla-specializing-vision-language-action-models-through-experi.html">ExpReS-VLA: Specializing Vision-Language-Action Models Through Experience Replay and Retrieval</a></td>
   <td>ExpReS-VLA：通过经验回放与检索实现VLA模型在机器人操作任务中的高效特化</td>
   <td></td>
@@ -129,7 +122,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-09
 </thead>
 <tbody>
 <tr>
-  <td>14</td>
+  <td>13</td>
   <td><a href="./papers/251106182v2-openvln-open-world-aerial-vision-language-navigation.html">OpenVLN: Open-world Aerial Vision-Language Navigation</a></td>
   <td>提出OpenVLN框架，解决开放世界空中视觉-语言导航中的长程规划问题。</td>
   <td></td>

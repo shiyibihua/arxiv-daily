@@ -5,25 +5,30 @@ title: arXiv 中文要点汇总
 
 # arXiv 中文要点汇总
 
-<div class="tag-section" id="cs-RO">
-<div class="tag-header">
-<h2>cs.RO</h2>
+<div class="tag-section collapsed" id="cs-RO">
+<div class="tag-header" onclick="toggleTagSection('cs-RO')">
+<div class="tag-title-wrap">
+<span class="tag-expand-icon">▶</span>
+<h2>🤖 cs.RO</h2>
+<span class="tag-desc">机器人</span>
+</div>
 <div class="tag-meta">
 <span class="date-range">📅 最新: 2025-12-16</span>
-<span class="paper-count">📄 共 1042 篇</span>
+<span class="paper-count">📄 共 972 篇</span>
 </div>
 </div>
+<div class="tag-content">
 <div class="pillar-stats">
 <h4>📊 领域分布</h4>
 <div class="pillar-badges">
-<span class="pillar-badge">机器人控制 <strong>729</strong></span>
-<span class="pillar-badge">RL算法与架构 <strong>117</strong></span>
-<span class="pillar-badge">空间感知 <strong>106</strong></span>
-<span class="pillar-badge">具身大模型 <strong>50</strong></span>
+<span class="pillar-badge">机器人控制 <strong>695</strong></span>
+<span class="pillar-badge">空间感知 <strong>102</strong></span>
+<span class="pillar-badge">RL算法与架构 <strong>96</strong></span>
+<span class="pillar-badge">具身大模型 <strong>41</strong></span>
 <span class="pillar-badge">空间感知与语义 <strong>22</strong></span>
-<span class="pillar-badge">物理动画 <strong>5</strong></span>
 <span class="pillar-badge">生成式动作 <strong>5</strong></span>
 <span class="pillar-badge">动作重定向 <strong>4</strong></span>
+<span class="pillar-badge">物理动画 <strong>3</strong></span>
 <span class="pillar-badge">视频提取与匹配 <strong>3</strong></span>
 <span class="pillar-badge">交互与反应 <strong>1</strong></span>
 </div>
@@ -34,9 +39,9 @@ title: arXiv 中文要点汇总
 <a href="cs-RO/2025-12-16/index.html" class="date-btn">2025-12-16 <small>(30篇)</small></a>
 <a href="cs-RO/2025-12-15/index.html" class="date-btn">2025-12-15 <small>(17篇)</small></a>
 <a href="cs-RO/2025-12-13/index.html" class="date-btn">2025-12-13 <small>(10篇)</small></a>
-<a href="cs-RO/2025-12-12/index.html" class="date-btn">2025-12-12 <small>(12篇)</small></a>
-<a href="cs-RO/2025-12-11/index.html" class="date-btn">2025-12-11 <small>(19篇)</small></a>
-<a href="cs-RO/2025-12-10/index.html" class="date-btn">2025-12-10 <small>(28篇)</small></a>
+<a href="cs-RO/2025-12-12/index.html" class="date-btn">2025-12-12 <small>(10篇)</small></a>
+<a href="cs-RO/2025-12-11/index.html" class="date-btn">2025-12-11 <small>(17篇)</small></a>
+<a href="cs-RO/2025-12-10/index.html" class="date-btn">2025-12-10 <small>(26篇)</small></a>
 <a href="cs-RO/2025-12-07/index.html" class="date-btn">2025-12-07 <small>(2篇)</small></a>
 </div>
 </div>
@@ -52,29 +57,35 @@ title: arXiv 中文要点汇总
 </div>
 <div class="tag-actions">
 <a class="btn btn-primary" href="cs-RO/2025-12-16/index.html">查看最新</a>
-<a class="btn btn-secondary" href="cs-RO/index.html">更多日期 (71)</a>
+<a class="btn btn-secondary" href="cs-RO/index.html">更多日期 (70)</a>
+</div>
 </div>
 </div>
 
-<div class="tag-section" id="cs-CV">
-<div class="tag-header">
-<h2>cs.CV</h2>
+<div class="tag-section collapsed" id="cs-CV">
+<div class="tag-header" onclick="toggleTagSection('cs-CV')">
+<div class="tag-title-wrap">
+<span class="tag-expand-icon">▶</span>
+<h2>👁️ cs.CV</h2>
+<span class="tag-desc">视觉</span>
+</div>
 <div class="tag-meta">
 <span class="date-range">📅 最新: 2025-12-16</span>
-<span class="paper-count">📄 共 1796 篇</span>
+<span class="paper-count">📄 共 1672 篇</span>
 </div>
 </div>
+<div class="tag-content">
 <div class="pillar-stats">
 <h4>📊 领域分布</h4>
 <div class="pillar-badges">
-<span class="pillar-badge">空间感知 <strong>504</strong></span>
-<span class="pillar-badge">RL算法与架构 <strong>428</strong></span>
-<span class="pillar-badge">具身大模型 <strong>344</strong></span>
-<span class="pillar-badge">机器人控制 <strong>173</strong></span>
-<span class="pillar-badge">空间感知与语义 <strong>164</strong></span>
-<span class="pillar-badge">生成式动作 <strong>54</strong></span>
-<span class="pillar-badge">物理动画 <strong>41</strong></span>
-<span class="pillar-badge">视频提取与匹配 <strong>35</strong></span>
+<span class="pillar-badge">空间感知 <strong>496</strong></span>
+<span class="pillar-badge">RL算法与架构 <strong>378</strong></span>
+<span class="pillar-badge">具身大模型 <strong>298</strong></span>
+<span class="pillar-badge">空间感知与语义 <strong>163</strong></span>
+<span class="pillar-badge">机器人控制 <strong>161</strong></span>
+<span class="pillar-badge">生成式动作 <strong>53</strong></span>
+<span class="pillar-badge">物理动画 <strong>37</strong></span>
+<span class="pillar-badge">视频提取与匹配 <strong>33</strong></span>
 <span class="pillar-badge">动作重定向 <strong>27</strong></span>
 <span class="pillar-badge">交互与反应 <strong>20</strong></span>
 <span class="pillar-badge">视频提取与匹配 <strong>6</strong></span>
@@ -84,9 +95,9 @@ title: arXiv 中文要点汇总
 <h4>📆 最近更新</h4>
 <div class="date-buttons">
 <a href="cs-CV/2025-12-16/index.html" class="date-btn">2025-12-16 <small>(58篇)</small></a>
-<a href="cs-CV/2025-12-15/index.html" class="date-btn">2025-12-15 <small>(26篇)</small></a>
+<a href="cs-CV/2025-12-15/index.html" class="date-btn">2025-12-15 <small>(24篇)</small></a>
 <a href="cs-CV/2025-12-14/index.html" class="date-btn">2025-12-14 <small>(1篇)</small></a>
-<a href="cs-CV/2025-12-13/index.html" class="date-btn">2025-12-13 <small>(11篇)</small></a>
+<a href="cs-CV/2025-12-13/index.html" class="date-btn">2025-12-13 <small>(10篇)</small></a>
 <a href="cs-CV/2025-12-12/index.html" class="date-btn">2025-12-12 <small>(33篇)</small></a>
 <a href="cs-CV/2025-12-11/index.html" class="date-btn">2025-12-11 <small>(39篇)</small></a>
 <a href="cs-CV/2025-12-10/index.html" class="date-btn">2025-12-10 <small>(19篇)</small></a>
@@ -107,23 +118,29 @@ title: arXiv 中文要点汇总
 <a class="btn btn-secondary" href="cs-CV/index.html">更多日期 (75)</a>
 </div>
 </div>
+</div>
 
-<div class="tag-section" id="cs-GR">
-<div class="tag-header">
-<h2>cs.GR</h2>
+<div class="tag-section collapsed" id="cs-GR">
+<div class="tag-header" onclick="toggleTagSection('cs-GR')">
+<div class="tag-title-wrap">
+<span class="tag-expand-icon">▶</span>
+<h2>🎨 cs.GR</h2>
+<span class="tag-desc">图形学</span>
+</div>
 <div class="tag-meta">
 <span class="date-range">📅 最新: 2025-12-11</span>
-<span class="paper-count">📄 共 52 篇</span>
+<span class="paper-count">📄 共 50 篇</span>
 </div>
 </div>
+<div class="tag-content">
 <div class="pillar-stats">
 <h4>📊 领域分布</h4>
 <div class="pillar-badges">
 <span class="pillar-badge">机器人控制 <strong>12</strong></span>
 <span class="pillar-badge">空间感知与语义 <strong>12</strong></span>
 <span class="pillar-badge">空间感知 <strong>8</strong></span>
-<span class="pillar-badge">RL算法与架构 <strong>6</strong></span>
 <span class="pillar-badge">物理动画 <strong>5</strong></span>
+<span class="pillar-badge">RL算法与架构 <strong>4</strong></span>
 <span class="pillar-badge">具身大模型 <strong>4</strong></span>
 <span class="pillar-badge">生成式动作 <strong>3</strong></span>
 <span class="pillar-badge">视频提取与匹配 <strong>1</strong></span>
@@ -154,6 +171,215 @@ title: arXiv 中文要点汇总
 </div>
 <div class="tag-actions">
 <a class="btn btn-primary" href="cs-GR/2025-12-11/index.html">查看最新</a>
-<a class="btn btn-secondary" href="cs-GR/index.html">更多日期 (34)</a>
+<a class="btn btn-secondary" href="cs-GR/index.html">更多日期 (33)</a>
+</div>
+</div>
+</div>
+
+<div class="tag-section collapsed" id="cs-LG">
+<div class="tag-header" onclick="toggleTagSection('cs-LG')">
+<div class="tag-title-wrap">
+<span class="tag-expand-icon">▶</span>
+<h2>🧠 cs.LG</h2>
+<span class="tag-desc">机器学习 (RL, Diffusion, World Model)</span>
+</div>
+<div class="tag-meta">
+<span class="date-range">📅 最新: 2025-12-15</span>
+<span class="paper-count">📄 共 95 篇</span>
+</div>
+</div>
+<div class="tag-content">
+<div class="pillar-stats">
+<h4>📊 领域分布</h4>
+<div class="pillar-badges">
+<span class="pillar-badge">RL算法与架构 <strong>51</strong></span>
+<span class="pillar-badge">机器人控制 <strong>21</strong></span>
+<span class="pillar-badge">具身大模型 <strong>15</strong></span>
+<span class="pillar-badge">空间感知 <strong>4</strong></span>
+<span class="pillar-badge">物理动画 <strong>3</strong></span>
+<span class="pillar-badge">生成式动作 <strong>1</strong></span>
+</div>
+</div>
+<div class="recent-dates">
+<h4>📆 最近更新</h4>
+<div class="date-buttons">
+<a href="cs-LG/2025-12-15/index.html" class="date-btn">2025-12-15 <small>(2篇)</small></a>
+<a href="cs-LG/2025-12-13/index.html" class="date-btn">2025-12-13 <small>(1篇)</small></a>
+<a href="cs-LG/2025-12-12/index.html" class="date-btn">2025-12-12 <small>(1篇)</small></a>
+<a href="cs-LG/2025-12-11/index.html" class="date-btn">2025-12-11 <small>(1篇)</small></a>
+<a href="cs-LG/2025-12-10/index.html" class="date-btn">2025-12-10 <small>(1篇)</small></a>
+<a href="cs-LG/2025-12-04/index.html" class="date-btn">2025-12-04 <small>(1篇)</small></a>
+<a href="cs-LG/2025-12-03/index.html" class="date-btn">2025-12-03 <small>(1篇)</small></a>
+</div>
+</div>
+<div class="recent-papers">
+<h4>📝 最新论文</h4>
+<ul class="paper-list">
+<li><a href="cs-LG/2025-12-15/papers/251213770v1-enhancing-semi-supervised-multi-view-graph-convolutional-networks-vi.html">Enhancing Semi-Supervised Multi-View Graph Convolutional Net...</a> 🔗<br><small>提出MV-SupGCN，通过监督对比学习和自训练增强半监督多视图图卷积网络</small></li>
+<li><a href="cs-LG/2025-12-15/papers/251213497v1-on-device-continual-learning-for-unsupervised-visual-anomaly-detecti.html">On-Device Continual Learning for Unsupervised Visual Anomaly...</a> <br><small>提出基于设备端持续学习的PatchCore改进方法，用于动态制造中的无监督视觉异...</small></li>
+<li><a href="cs-LG/2025-12-13/papers/251213729v1-composite-classifier-free-guidance-for-multi-modal-conditioning-in-w.html">Composite Classifier-Free Guidance for Multi-Modal Condition...</a> <br><small>提出复合无分类器引导（CCFG）方法，用于提升风力动力学超分辨率重建质量。</small></li>
+<li><a href="cs-LG/2025-12-12/papers/251212046v1-goal-reaching-with-eikonal-constrained-hierarchical-quasimetric-rein.html">Goal Reaching with Eikonal-Constrained Hierarchical Quasimet...</a> <br><small>提出Eik-HiQRL，结合Eikonal方程与分层强化学习解决复杂环境下的目标...</small></li>
+<li><a href="cs-LG/2025-12-11/papers/251210925v1-digital-twin-supervised-reinforcement-learning-framework-for-autonom.html">Digital Twin Supervised Reinforcement Learning Framework for...</a> <br><small>提出基于数字孪生监督强化学习的水下自主导航框架，提升复杂环境适应性。</small></li>
+</ul>
+</div>
+<div class="tag-actions">
+<a class="btn btn-primary" href="cs-LG/2025-12-15/index.html">查看最新</a>
+<a class="btn btn-secondary" href="cs-LG/index.html">更多日期 (47)</a>
+</div>
+</div>
+</div>
+
+<div class="tag-section collapsed" id="cs-AI">
+<div class="tag-header" onclick="toggleTagSection('cs-AI')">
+<div class="tag-title-wrap">
+<span class="tag-expand-icon">▶</span>
+<h2>🤔 cs.AI</h2>
+<span class="tag-desc">人工智能 (Agents, Planning)</span>
+</div>
+<div class="tag-meta">
+<span class="date-range">📅 最新: 2025-11-25</span>
+<span class="paper-count">📄 共 60 篇</span>
+</div>
+</div>
+<div class="tag-content">
+<div class="pillar-stats">
+<h4>📊 领域分布</h4>
+<div class="pillar-badges">
+<span class="pillar-badge">具身大模型 <strong>23</strong></span>
+<span class="pillar-badge">RL算法与架构 <strong>18</strong></span>
+<span class="pillar-badge">机器人控制 <strong>14</strong></span>
+<span class="pillar-badge">空间感知 <strong>3</strong></span>
+<span class="pillar-badge">物理动画 <strong>1</strong></span>
+<span class="pillar-badge">视频提取与匹配 <strong>1</strong></span>
+</div>
+</div>
+<div class="recent-dates">
+<h4>📆 最近更新</h4>
+<div class="date-buttons">
+<a href="cs-AI/2025-11-25/index.html" class="date-btn">2025-11-25 <small>(2篇)</small></a>
+<a href="cs-AI/2025-11-24/index.html" class="date-btn">2025-11-24 <small>(2篇)</small></a>
+<a href="cs-AI/2025-11-20/index.html" class="date-btn">2025-11-20 <small>(1篇)</small></a>
+<a href="cs-AI/2025-11-19/index.html" class="date-btn">2025-11-19 <small>(3篇)</small></a>
+<a href="cs-AI/2025-11-18/index.html" class="date-btn">2025-11-18 <small>(1篇)</small></a>
+<a href="cs-AI/2025-11-17/index.html" class="date-btn">2025-11-17 <small>(3篇)</small></a>
+<a href="cs-AI/2025-11-15/index.html" class="date-btn">2025-11-15 <small>(1篇)</small></a>
+</div>
+</div>
+<div class="recent-papers">
+<h4>📝 最新论文</h4>
+<ul class="paper-list">
+<li><a href="cs-AI/2025-11-25/papers/251120216v1-costnav-a-navigation-benchmark-for-cost-aware-evaluation-of-embodied.html">CostNav: A Navigation Benchmark for Cost-Aware Evaluation of...</a> <br><small>提出CostNav以解决导航任务经济可行性评估问题</small></li>
+<li><a href="cs-AI/2025-11-25/papers/251120422v1-vibraverse-a-large-scale-geometry-acoustics-alignment-dataset-for-ph.html">VibraVerse: A Large-Scale Geometry-Acoustics Alignment Datas...</a> <br><small>VibraVerse：构建大规模几何-声学对齐数据集，实现物理一致的多模态学习</small></li>
+<li><a href="cs-AI/2025-11-24/papers/251119773v1-scaling-agentic-reinforcement-learning-for-tool-integrated-reasoning.html">Scaling Agentic Reinforcement Learning for Tool-Integrated R...</a> <br><small>VISTA-Gym：通过强化学习提升视觉语言模型在工具集成推理方面的能力</small></li>
+<li><a href="cs-AI/2025-11-24/papers/251119396v1-real-time-object-tracking-with-on-device-deep-learning-for-adaptive-.html">Real-Time Object Tracking with On-Device Deep Learning for A...</a> <br><small>提出一种基于设备端深度学习的目标跟踪与波束成形实时嵌入式系统</small></li>
+<li><a href="cs-AI/2025-11-20/papers/251116183v1-footpass-a-multi-modal-multi-agent-tactical-context-dataset-for-play.html">FOOTPASS: A Multi-Modal Multi-Agent Tactical Context Dataset...</a> <br><small>提出FOOTPASS数据集，用于足球广播视频中基于战术上下文的多模态多智能体行为...</small></li>
+</ul>
+</div>
+<div class="tag-actions">
+<a class="btn btn-primary" href="cs-AI/2025-11-25/index.html">查看最新</a>
+<a class="btn btn-secondary" href="cs-AI/index.html">更多日期 (34)</a>
+</div>
+</div>
+</div>
+
+<div class="tag-section collapsed" id="cs-CL">
+<div class="tag-header" onclick="toggleTagSection('cs-CL')">
+<div class="tag-title-wrap">
+<span class="tag-expand-icon">▶</span>
+<h2>💬 cs.CL</h2>
+<span class="tag-desc">自然语言 (VLA, Text-to-Motion)</span>
+</div>
+<div class="tag-meta">
+<span class="date-range">📅 最新: 2025-11-25</span>
+<span class="paper-count">📄 共 24 篇</span>
+</div>
+</div>
+<div class="tag-content">
+<div class="pillar-stats">
+<h4>📊 领域分布</h4>
+<div class="pillar-badges">
+<span class="pillar-badge">具身大模型 <strong>17</strong></span>
+<span class="pillar-badge">RL算法与架构 <strong>4</strong></span>
+<span class="pillar-badge">空间感知 <strong>1</strong></span>
+<span class="pillar-badge">空间感知与语义 <strong>1</strong></span>
+<span class="pillar-badge">视频提取与匹配 <strong>1</strong></span>
+</div>
+</div>
+<div class="recent-dates">
+<h4>📆 最近更新</h4>
+<div class="date-buttons">
+<a href="cs-CL/2025-11-25/index.html" class="date-btn">2025-11-25 <small>(1篇)</small></a>
+<a href="cs-CL/2025-10-27/index.html" class="date-btn">2025-10-27 <small>(1篇)</small></a>
+<a href="cs-CL/2025-10-25/index.html" class="date-btn">2025-10-25 <small>(1篇)</small></a>
+<a href="cs-CL/2025-10-24/index.html" class="date-btn">2025-10-24 <small>(2篇)</small></a>
+<a href="cs-CL/2025-10-22/index.html" class="date-btn">2025-10-22 <small>(1篇)</small></a>
+<a href="cs-CL/2025-10-20/index.html" class="date-btn">2025-10-20 <small>(1篇)</small></a>
+<a href="cs-CL/2025-10-17/index.html" class="date-btn">2025-10-17 <small>(2篇)</small></a>
+</div>
+</div>
+<div class="recent-papers">
+<h4>📝 最新论文</h4>
+<ul class="paper-list">
+<li><a href="cs-CL/2025-11-25/papers/251211811v2-enhancing-geo-localization-for-crowdsourced-flood-imagery-via-llm-gu.html">Enhancing Geo-localization for Crowdsourced Flood Imagery vi...</a> <br><small>VPR-AttLLM：利用LLM引导的注意力增强众包洪水图像的地理定位</small></li>
+<li><a href="cs-CL/2025-10-27/papers/251023451v1-omni-reward-towards-generalist-omni-modal-reward-modeling-with-free-.html">Omni-Reward: Towards Generalist Omni-Modal Reward Modeling w...</a> <br><small>提出Omni-Reward，用于支持自由形式偏好的通用全模态奖励建模。</small></li>
+<li><a href="cs-CL/2025-10-25/papers/251022373v1-visjudge-bench-aesthetics-and-quality-assessment-of-visualizations.html">VisJudge-Bench: Aesthetics and Quality Assessment of Visuali...</a> 🔗<br><small>提出VisJudge-Bench，用于评估MLLM在可视化美学和质量评估中的性能...</small></li>
+<li><a href="cs-CL/2025-10-24/papers/251021445v1-remoni-an-autonomous-system-integrating-wearables-and-multimodal-lar.html">REMONI: An Autonomous System Integrating Wearables and Multi...</a> <br><small>REMONI：集成可穿戴设备与多模态大语言模型的自主远程健康监测系统</small></li>
+<li><a href="cs-CL/2025-10-24/papers/251021270v1-sparser-block-sparse-attention-via-token-permutation.html">Sparser Block-Sparse Attention via Token Permutation</a> 🔗<br><small>提出基于Token置换的稀疏块注意力机制PBS-Attn，加速长文本LLM预填充...</small></li>
+</ul>
+</div>
+<div class="tag-actions">
+<a class="btn btn-primary" href="cs-CL/2025-11-25/index.html">查看最新</a>
+<a class="btn btn-secondary" href="cs-CL/index.html">更多日期 (17)</a>
+</div>
+</div>
+</div>
+
+<div class="tag-section collapsed" id="eess-SY">
+<div class="tag-header" onclick="toggleTagSection('eess-SY')">
+<div class="tag-title-wrap">
+<span class="tag-expand-icon">▶</span>
+<h2>⚙️ eess.SY</h2>
+<span class="tag-desc">系统控制 (MPC, Dynamics)</span>
+</div>
+<div class="tag-meta">
+<span class="date-range">📅 最新: 2025-12-12</span>
+<span class="paper-count">📄 共 17 篇</span>
+</div>
+</div>
+<div class="tag-content">
+<div class="pillar-stats">
+<h4>📊 领域分布</h4>
+<div class="pillar-badges">
+<span class="pillar-badge">机器人控制 <strong>11</strong></span>
+<span class="pillar-badge">空间感知 <strong>4</strong></span>
+<span class="pillar-badge">物理动画 <strong>2</strong></span>
+</div>
+</div>
+<div class="recent-dates">
+<h4>📆 最近更新</h4>
+<div class="date-buttons">
+<a href="eess-SY/2025-12-12/index.html" class="date-btn">2025-12-12 <small>(1篇)</small></a>
+<a href="eess-SY/2025-12-11/index.html" class="date-btn">2025-12-11 <small>(1篇)</small></a>
+<a href="eess-SY/2025-12-10/index.html" class="date-btn">2025-12-10 <small>(1篇)</small></a>
+<a href="eess-SY/2025-12-04/index.html" class="date-btn">2025-12-04 <small>(2篇)</small></a>
+<a href="eess-SY/2025-11-27/index.html" class="date-btn">2025-11-27 <small>(1篇)</small></a>
+<a href="eess-SY/2025-11-19/index.html" class="date-btn">2025-11-19 <small>(1篇)</small></a>
+<a href="eess-SY/2025-11-18/index.html" class="date-btn">2025-11-18 <small>(1篇)</small></a>
+</div>
+</div>
+<div class="recent-papers">
+<h4>📝 最新论文</h4>
+<ul class="paper-list">
+<li><a href="eess-SY/2025-12-12/papers/251211713v1-two-dimensional-decompositions-of-high-dimensional-configurations-fo.html">Two-dimensional Decompositions of High-dimensional Configura...</a> <br><small>提出基于二维分解的高维配置空间方法，用于智能路口多车辆高效协同</small></li>
+<li><a href="eess-SY/2025-12-11/papers/251210738v1-distribution-free-stochastic-mpc-for-joint-in-time-chance-constraine.html">Distribution-Free Stochastic MPC for Joint-in-Time Chance-Co...</a> <br><small>提出一种基于Conformal Prediction的Distribution-...</small></li>
+<li><a href="eess-SY/2025-12-10/papers/251209213v1-mpc-for-momentum-counter-balanced-and-zero-impulse-contact-with-a-fr.html">MPC for momentum counter-balanced and zero-impulse contact w...</a> <br><small>提出基于MPC的控制框架，实现服务卫星与自由旋转目标卫星的零冲量接触</small></li>
+<li><a href="eess-SY/2025-12-04/papers/251205299v1-arcas-an-augmented-reality-collision-avoidance-system-with-slam-base.html">ARCAS: An Augmented Reality Collision Avoidance System with ...</a> <br><small>ARCAS：基于SLAM的增强现实碰撞避免系统，提升弱势道路使用者安全</small></li>
+<li><a href="eess-SY/2025-12-04/papers/251204579v1-gauss-newton-accelerated-mppi-control.html">Gauss-Newton accelerated MPPI Control</a> <br><small>提出Gauss-Newton加速的MPPI控制，提升高维控制问题的计算效率。</small></li>
+</ul>
+</div>
+<div class="tag-actions">
+<a class="btn btn-primary" href="eess-SY/2025-12-12/index.html">查看最新</a>
+<a class="btn btn-secondary" href="eess-SY/index.html">更多日期 (16)</a>
+</div>
 </div>
 </div>

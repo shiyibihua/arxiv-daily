@@ -583,12 +583,12 @@
       // 关闭其他菜单
       var resourcesMenu = document.getElementById('resources-menu');
       if (resourcesMenu) resourcesMenu.classList.remove('show');
-      
+
       if (menu.classList.contains('show')) {
         menu.classList.remove('show');
       } else {
         menu.classList.add('show');
-        setTimeout(function() {
+        setTimeout(function () {
           document.addEventListener('click', closeCategoriesMenuOnClick);
         }, 10);
       }
@@ -613,13 +613,13 @@
     // 展开所有分类
     function expandAllTags() {
       var sections = document.querySelectorAll('.tag-section');
-      sections.forEach(function(s) { s.classList.remove('collapsed'); });
+      sections.forEach(function (s) { s.classList.remove('collapsed'); });
     }
 
     // 折叠所有分类
     function collapseAllTags() {
       var sections = document.querySelectorAll('.tag-section');
-      sections.forEach(function(s) { s.classList.add('collapsed'); });
+      sections.forEach(function (s) { s.classList.add('collapsed'); });
     }
 
     // 页面加载完成后初始化

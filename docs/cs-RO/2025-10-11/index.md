@@ -5,7 +5,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-11
 
 # cs.RO（2025-10-11）
 
-📊 共 **15** 篇论文
+📊 共 **14** 篇论文
  | 🔗 **2** 篇有代码
 
 
@@ -13,7 +13,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-11
 
 <div class="interest-nav">
 <a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (8)</a>
-<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (5 🔗1)</a>
+<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (4 🔗1)</a>
 <a href="#支柱三空间感知与语义-perception-semantics" class="interest-badge">支柱三：空间感知与语义 (Perception & Semantics) (1 🔗1)</a>
 <a href="#支柱八物理动画-physics-based-animation" class="interest-badge">支柱八：物理动画 (Physics-based Animation) (1)</a>
 </div>
@@ -88,7 +88,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-11
 </table>
 
 
-<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (5 篇)</h2>
+<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (4 篇)</h2>
 
 <table>
 <thead>
@@ -104,27 +104,20 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-11
 </tr>
 <tr>
   <td>10</td>
-  <td><a href="./papers/251009976v1-reinforcement-fine-tuning-of-flow-matching-policies-for-vision-langu.html">Reinforcement Fine-Tuning of Flow-Matching Policies for Vision-Language-Action Models</a></td>
-  <td>提出Flow Policy Optimization (FPO)算法，用于强化微调视觉-语言-动作模型的Flow-Matching策略。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.09976v1" onclick="toggleFavorite(this, '2510.09976v1', 'Reinforcement Fine-Tuning of Flow-Matching Policies for Vision-Language-Action Models')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>11</td>
   <td><a href="./papers/251010217v1-uf-rnn-real-time-adaptive-motion-generation-using-uncertainty-driven.html">UF-RNN: Real-Time Adaptive Motion Generation Using Uncertainty-Driven Foresight Prediction</a></td>
   <td>提出UF-RNN，通过不确定性驱动的预测提升机器人实时自适应运动生成能力</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.10217v1" onclick="toggleFavorite(this, '2510.10217v1', 'UF-RNN: Real-Time Adaptive Motion Generation Using Uncertainty-Driven Foresight Prediction')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>12</td>
+  <td>11</td>
   <td><a href="./papers/251010181v2-dejavu-towards-experience-feedback-learning-for-embodied-intelligenc.html">Dejavu: Towards Experience Feedback Learning for Embodied Intelligence</a></td>
   <td>Dejavu：面向具身智能的经验反馈学习框架，提升部署后智能体性能</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.10181v2" onclick="toggleFavorite(this, '2510.10181v2', 'Dejavu: Towards Experience Feedback Learning for Embodied Intelligence')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>13</td>
+  <td>12</td>
   <td><a href="./papers/251010332v2-towards-safe-maneuvering-of-double-ackermann-steering-robots-with-a-.html">Towards Safe Maneuvering of Double-Ackermann-Steering Robots with a Soft Actor-Critic Framework</a></td>
   <td>提出基于SAC的深度强化学习框架，用于双阿克曼转向机器人的安全操控</td>
   <td></td>
@@ -142,7 +135,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-11
 </thead>
 <tbody>
 <tr>
-  <td>14</td>
+  <td>13</td>
   <td><a href="./papers/251009962v1-vg-mapping-variation-aware-3d-gaussians-for-online-semi-static-scene.html">VG-Mapping: Variation-Aware 3D Gaussians for Online Semi-static Scene Mapping</a></td>
   <td>VG-Mapping：面向半静态场景的变异感知3D高斯在线建图</td>
   <td>✅</td>
@@ -160,7 +153,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-11
 </thead>
 <tbody>
 <tr>
-  <td>15</td>
+  <td>14</td>
   <td><a href="./papers/251010346v1-sqrtvins-robust-and-ultrafast-square-root-filter-based-3d-motion-tra.html">sqrtVINS: Robust and Ultrafast Square-Root Filter-based 3D Motion Tracking</a></td>
   <td>提出基于平方根滤波的sqrtVINS，实现快速、鲁棒的三维运动跟踪。</td>
   <td></td>

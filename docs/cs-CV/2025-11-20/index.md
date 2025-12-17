@@ -5,16 +5,16 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-20
 
 # cs.CV（2025-11-20）
 
-📊 共 **42** 篇论文
+📊 共 **40** 篇论文
  | 🔗 **9** 篇有代码
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
-<a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (22 🔗4)</a>
+<a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (21 🔗4)</a>
 <a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (10 🔗2)</a>
-<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (8 🔗3)</a>
+<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (7 🔗3)</a>
 <a href="#支柱七动作重定向-motion-retargeting" class="interest-badge">支柱七：动作重定向 (Motion Retargeting) (1)</a>
 <a href="#支柱五交互与反应-interaction-reaction" class="interest-badge">支柱五：交互与反应 (Interaction & Reaction) (1)</a>
 </div>
@@ -22,7 +22,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-20
 ---
 
 
-<h2 id="支柱三空间感知-perception-slam">🔬 支柱三：空间感知 (Perception & SLAM) (22 篇)</h2>
+<h2 id="支柱三空间感知-perception-slam">🔬 支柱三：空间感知 (Perception & SLAM) (21 篇)</h2>
 
 <table>
 <thead>
@@ -164,20 +164,13 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-20
 </tr>
 <tr>
   <td>20</td>
-  <td><a href="./papers/251116183v1-footpass-a-multi-modal-multi-agent-tactical-context-dataset-for-play.html">FOOTPASS: A Multi-Modal Multi-Agent Tactical Context Dataset for Play-by-Play Action Spotting in Soccer Broadcast Videos</a></td>
-  <td>提出FOOTPASS数据集，用于足球广播视频中基于战术上下文的多模态多智能体行为定位</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.16183v1" onclick="toggleFavorite(this, '2511.16183v1', 'FOOTPASS: A Multi-Modal Multi-Agent Tactical Context Dataset for Play-by-Play Action Spotting in Soccer Broadcast Videos')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>21</td>
   <td><a href="./papers/251116712v2-pairhuman-a-high-fidelity-photographic-dataset-for-customized-dual-p.html">PairHuman: A High-Fidelity Photographic Dataset for Customized Dual-Person Generation</a></td>
   <td>提出PairHuman数据集，用于高质量定制双人肖像生成，并提出DHumanDiff基线模型。</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2511.16712v2" onclick="toggleFavorite(this, '2511.16712v2', 'PairHuman: A High-Fidelity Photographic Dataset for Customized Dual-Person Generation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>22</td>
+  <td>21</td>
   <td><a href="./papers/251115948v2-click2graph-interactive-panoptic-video-scene-graphs-from-a-single-cl.html">Click2Graph: Interactive Panoptic Video Scene Graphs from a Single Click</a></td>
   <td>提出Click2Graph，通过单次点击实现交互式全景视频场景图生成。</td>
   <td></td>
@@ -195,70 +188,70 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-20
 </thead>
 <tbody>
 <tr>
-  <td>23</td>
+  <td>22</td>
   <td><a href="./papers/251116555v1-lite-any-stereo-efficient-zero-shot-stereo-matching.html">Lite Any Stereo: Efficient Zero-Shot Stereo Matching</a></td>
   <td>提出Lite Any Stereo，实现高效的零样本立体匹配深度估计</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.16555v1" onclick="toggleFavorite(this, '2511.16555v1', 'Lite Any Stereo: Efficient Zero-Shot Stereo Matching')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>24</td>
+  <td>23</td>
   <td><a href="./papers/251116494v1-physics-informed-machine-learning-for-efficient-sim-to-real-data-aug.html">Physics-Informed Machine Learning for Efficient Sim-to-Real Data Augmentation in Micro-Object Pose Estimation</a></td>
   <td>提出物理信息GAN，用于微型物体位姿估计的高效Sim-to-Real数据增强</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.16494v1" onclick="toggleFavorite(this, '2511.16494v1', 'Physics-Informed Machine Learning for Efficient Sim-to-Real Data Augmentation in Micro-Object Pose Estimation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>25</td>
+  <td>24</td>
   <td><a href="./papers/251116264v1-mem-mlp-real-time-3d-human-motion-generation-from-sparse-inputs.html">Mem-MLP: Real-Time 3D Human Motion Generation from Sparse Inputs</a></td>
   <td>Mem-MLP：基于稀疏输入的实时3D人体动作生成</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.16264v1" onclick="toggleFavorite(this, '2511.16264v1', 'Mem-MLP: Real-Time 3D Human Motion Generation from Sparse Inputs')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>26</td>
+  <td>25</td>
   <td><a href="./papers/251116666v1-scenedesigner-controllable-multi-object-image-generation-with-9-dof-.html">SceneDesigner: Controllable Multi-Object Image Generation with 9-DoF Pose Manipulation</a></td>
   <td>SceneDesigner：提出基于CNOCS Map和强化学习的两阶段训练方法，实现多物体9自由度姿态精确控制的图像生成。</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2511.16666v1" onclick="toggleFavorite(this, '2511.16666v1', 'SceneDesigner: Controllable Multi-Object Image Generation with 9-DoF Pose Manipulation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>27</td>
+  <td>26</td>
   <td><a href="./papers/251116857v2-bop-ask-object-interaction-reasoning-for-vision-language-models.html">BOP-ASK: Object-Interaction Reasoning for Vision-Language Models</a></td>
   <td>BOP-ASK：用于视觉-语言模型的目标交互推理数据集与基准</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.16857v2" onclick="toggleFavorite(this, '2511.16857v2', 'BOP-ASK: Object-Interaction Reasoning for Vision-Language Models')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>28</td>
+  <td>27</td>
   <td><a href="./papers/251116166v1-evovla-self-evolving-vision-language-action-model.html">EvoVLA: Self-Evolving Vision-Language-Action Model</a></td>
   <td>EvoVLA：一种自进化视觉-语言-动作模型，解决长时程机器人操作中的阶段幻觉问题。</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2511.16166v1" onclick="toggleFavorite(this, '2511.16166v1', 'EvoVLA: Self-Evolving Vision-Language-Action Model')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>29</td>
+  <td>28</td>
   <td><a href="./papers/251116020v2-physically-realistic-sequence-level-adversarial-clothing-for-robust-.html">Physically Realistic Sequence-Level Adversarial Clothing for Robust Human-Detection Evasion</a></td>
   <td>提出序列级对抗服装生成方法，提升人体检测规避在真实场景下的鲁棒性</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.16020v2" onclick="toggleFavorite(this, '2511.16020v2', 'Physically Realistic Sequence-Level Adversarial Clothing for Robust Human-Detection Evasion')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>30</td>
+  <td>29</td>
   <td><a href="./papers/251116449v2-vla-pruner-temporal-aware-dual-level-visual-token-pruning-for-effici.html">VLA-Pruner: Temporal-Aware Dual-Level Visual Token Pruning for Efficient Vision-Language-Action Inference</a></td>
   <td>VLA-Pruner：面向高效视觉-语言-动作推理的时序感知双层视觉Token剪枝</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.16449v2" onclick="toggleFavorite(this, '2511.16449v2', 'VLA-Pruner: Temporal-Aware Dual-Level Visual Token Pruning for Efficient Vision-Language-Action Inference')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>31</td>
+  <td>30</td>
   <td><a href="./papers/251116203v3-when-alignment-fails-multimodal-adversarial-attacks-on-vision-langua.html">When Alignment Fails: Multimodal Adversarial Attacks on Vision-Language-Action Models</a></td>
   <td>VLA-Fool：针对具身视觉-语言-动作模型的多模态对抗攻击研究</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.16203v3" onclick="toggleFavorite(this, '2511.16203v3', 'When Alignment Fails: Multimodal Adversarial Attacks on Vision-Language-Action Models')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>32</td>
+  <td>31</td>
   <td><a href="./papers/251116175v1-mantis-a-versatile-vision-language-action-model-with-disentangled-vi.html">Mantis: A Versatile Vision-Language-Action Model with Disentangled Visual Foresight</a></td>
   <td>Mantis：一种具有解耦视觉预测的多功能视觉-语言-动作模型</td>
   <td></td>
@@ -268,7 +261,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-20
 </table>
 
 
-<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (8 篇)</h2>
+<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (7 篇)</h2>
 
 <table>
 <thead>
@@ -276,56 +269,49 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-20
 </thead>
 <tbody>
 <tr>
-  <td>33</td>
+  <td>32</td>
   <td><a href="./papers/251116542v1-eogs-earth-observation-gaussian-splatting-with-internal-camera-refin.html">EOGS++: Earth Observation Gaussian Splatting with Internal Camera Refinement and Direct Panchromatic Rendering</a></td>
   <td>EOGS++：结合内部相机优化的地球观测高斯溅射，实现直接全色渲染</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.16542v1" onclick="toggleFavorite(this, '2511.16542v1', 'EOGS++: Earth Observation Gaussian Splatting with Internal Camera Refinement and Direct Panchromatic Rendering')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>34</td>
+  <td>33</td>
   <td><a href="./papers/251116567v2-poma-3d-the-point-map-way-to-3d-scene-understanding.html">POMA-3D: The Point Map Way to 3D Scene Understanding</a></td>
   <td>POMA-3D：提出基于点图的自监督3D场景理解模型，提升多项下游任务性能。</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2511.16567v2" onclick="toggleFavorite(this, '2511.16567v2', 'POMA-3D: The Point Map Way to 3D Scene Understanding')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>35</td>
+  <td>34</td>
   <td><a href="./papers/251116161v1-simba-towards-high-fidelity-and-geometrically-consistent-point-cloud.html">Simba: Towards High-Fidelity and Geometrically-Consistent Point Cloud Completion via Transformation Diffusion</a></td>
   <td>Simba：基于变换扩散的高保真几何一致性点云补全</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.16161v1" onclick="toggleFavorite(this, '2511.16161v1', 'Simba: Towards High-Fidelity and Geometrically-Consistent Point Cloud Completion via Transformation Diffusion')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>36</td>
+  <td>35</td>
   <td><a href="./papers/251116049v1-listar-ray-centric-world-models-for-4d-lidar-sequences-in-autonomous.html">LiSTAR: Ray-Centric World Models for 4D LiDAR Sequences in Autonomous Driving</a></td>
   <td>LiSTAR：面向自动驾驶，提出基于射线中心世界模型的4D激光雷达序列生成方法</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2511.16049v1" onclick="toggleFavorite(this, '2511.16049v1', 'LiSTAR: Ray-Centric World Models for 4D LiDAR Sequences in Autonomous Driving')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>37</td>
+  <td>36</td>
   <td><a href="./papers/251116595v2-timeviper-a-hybrid-mamba-transformer-vision-language-model-for-effic.html">TimeViper: A Hybrid Mamba-Transformer Vision-Language Model for Efficient Long Video Understanding</a></td>
   <td>TimeViper：一种混合Mamba-Transformer视觉-语言模型，用于高效长视频理解</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.16595v2" onclick="toggleFavorite(this, '2511.16595v2', 'TimeViper: A Hybrid Mamba-Transformer Vision-Language Model for Efficient Long Video Understanding')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>38</td>
+  <td>37</td>
   <td><a href="./papers/251116541v2-supervised-contrastive-learning-for-few-shot-ai-generated-image-dete.html">Supervised Contrastive Learning for Few-Shot AI-Generated Image Detection and Attribution</a></td>
   <td>提出基于监督对比学习的框架，用于少样本AI生成图像检测与溯源。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.16541v2" onclick="toggleFavorite(this, '2511.16541v2', 'Supervised Contrastive Learning for Few-Shot AI-Generated Image Detection and Attribution')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>39</td>
-  <td><a href="./papers/251116520v1-saving-foundation-flow-matching-priors-for-inverse-problems.html">Saving Foundation Flow-Matching Priors for Inverse Problems</a></td>
-  <td>提出FMPlug框架，提升Flow-Matching模型在逆问题中的性能</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.16520v1" onclick="toggleFavorite(this, '2511.16520v1', 'Saving Foundation Flow-Matching Priors for Inverse Problems')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>40</td>
+  <td>38</td>
   <td><a href="./papers/251116077v1-videoseg-r1reasoning-video-object-segmentation-via-reinforcement-lea.html">VideoSeg-R1:Reasoning Video Object Segmentation via Reinforcement Learning</a></td>
   <td>提出VideoSeg-R1，首个基于强化学习的视频推理分割框架，提升复杂场景泛化性。</td>
   <td>✅</td>
@@ -343,7 +329,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-20
 </thead>
 <tbody>
 <tr>
-  <td>41</td>
+  <td>39</td>
   <td><a href="./papers/251116711v1-motion-transfer-enhanced-stylegan-for-generating-diverse-macaque-fac.html">Motion Transfer-Enhanced StyleGAN for Generating Diverse Macaque Facial Expressions</a></td>
   <td>提出基于运动迁移增强的StyleGAN，用于生成多样化的猕猴面部表情</td>
   <td></td>
@@ -361,7 +347,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-11-20
 </thead>
 <tbody>
 <tr>
-  <td>42</td>
+  <td>40</td>
   <td><a href="./papers/251116221v1-can-mllms-read-the-room-a-multimodal-benchmark-for-assessing-decepti.html">Can MLLMs Read the Room? A Multimodal Benchmark for Assessing Deception in Multi-Party Social Interactions</a></td>
   <td>提出MIDA基准测试，评估多模态大语言模型在多人社交互动中识别欺骗的能力。</td>
   <td></td>

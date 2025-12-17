@@ -5,13 +5,13 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-05
 
 # cs.RO（2025-10-05）
 
-📊 共 **11** 篇论文
+📊 共 **10** 篇论文
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
-<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (9)</a>
+<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (8)</a>
 <a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (1)</a>
 <a href="#支柱九具身大模型-embodied-foundation-models" class="interest-badge">支柱九：具身大模型 (Embodied Foundation Models) (1)</a>
 </div>
@@ -19,7 +19,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-05
 ---
 
 
-<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (9 篇)</h2>
+<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (8 篇)</h2>
 
 <table>
 <thead>
@@ -82,13 +82,6 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-05
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.04278v1" onclick="toggleFavorite(this, '2510.04278v1', 'Integrated Planning and Control on Manifolds: Factor Graph Representation and Toolkit')" title="添加到收藏夹">☆</button></td>
 </tr>
-<tr>
-  <td>9</td>
-  <td><a href="./papers/251004280v1-a-kl-regularization-framework-for-learning-to-plan-with-adaptive-pri.html">A KL-regularization framework for learning to plan with adaptive priors</a></td>
-  <td>提出PO-MPC框架，通过KL正则化学习自适应先验的规划策略，提升MBRL性能。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.04280v1" onclick="toggleFavorite(this, '2510.04280v1', 'A KL-regularization framework for learning to plan with adaptive priors')" title="添加到收藏夹">☆</button></td>
-</tr>
 </tbody>
 </table>
 
@@ -101,7 +94,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-05
 </thead>
 <tbody>
 <tr>
-  <td>10</td>
+  <td>9</td>
   <td><a href="./papers/251004246v1-contextvla-vision-language-action-model-with-amortized-multi-frame-c.html">ContextVLA: Vision-Language-Action Model with Amortized Multi-Frame Context</a></td>
   <td>ContextVLA：通过分摊多帧上下文的视觉-语言-动作模型，提升机器人任务性能。</td>
   <td></td>
@@ -119,7 +112,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-05
 </thead>
 <tbody>
 <tr>
-  <td>11</td>
+  <td>10</td>
   <td><a href="./papers/251004190v1-zenbo-patrol-a-social-assistive-robot-based-on-multimodal-deep-learn.html">Zenbo Patrol: A Social Assistive Robot Based on Multimodal Deep Learning for Real-time Illegal Parking Recognition and Notification</a></td>
   <td>提出基于多模态深度学习的Zenbo巡逻机器人，用于实时识别和通知违章停车。</td>
   <td></td>

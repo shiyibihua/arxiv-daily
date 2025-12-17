@@ -5,21 +5,21 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-01
 
 # cs.RO（2025-11-01）
 
-📊 共 **6** 篇论文
- | 🔗 **3** 篇有代码
+📊 共 **5** 篇论文
+ | 🔗 **2** 篇有代码
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
-<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (4 🔗2)</a>
+<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (3 🔗1)</a>
 <a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (2 🔗1)</a>
 </div>
 
 ---
 
 
-<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (4 篇)</h2>
+<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (3 篇)</h2>
 
 <table>
 <thead>
@@ -47,13 +47,6 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-01
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.00516v1" onclick="toggleFavorite(this, '2511.00516v1', 'Adaptive and Multi-object Grasping via Deformable Origami Modules')" title="添加到收藏夹">☆</button></td>
 </tr>
-<tr>
-  <td>4</td>
-  <td><a href="./papers/251100423v2-bootstrap-off-policy-with-world-model.html">Bootstrap Off-policy with World Model</a></td>
-  <td>BOOM：通过世界模型引导的离策略强化学习，提升样本效率和性能。</td>
-  <td>✅</td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.00423v2" onclick="toggleFavorite(this, '2511.00423v2', 'Bootstrap Off-policy with World Model')" title="添加到收藏夹">☆</button></td>
-</tr>
 </tbody>
 </table>
 
@@ -66,14 +59,14 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-01
 </thead>
 <tbody>
 <tr>
-  <td>5</td>
+  <td>4</td>
   <td><a href="./papers/251100635v1-multi-mapcher-loop-closure-detection-free-heterogeneous-lidar-multi-.html">Multi-Mapcher: Loop Closure Detection-Free Heterogeneous LiDAR Multi-Session SLAM Leveraging Outlier-Robust Registration for Autonomous Vehicles</a></td>
   <td>提出Multi-Mapcher，一种无需回环检测的异构LiDAR多会话SLAM，用于自动驾驶。</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2511.00635v1" onclick="toggleFavorite(this, '2511.00635v1', 'Multi-Mapcher: Loop Closure Detection-Free Heterogeneous LiDAR Multi-Session SLAM Leveraging Outlier-Robust Registration for Autonomous Vehicles')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>6</td>
+  <td>5</td>
   <td><a href="./papers/251100412v1-runge-kutta-approximations-for-direct-coning-compensation-applying-l.html">Runge-Kutta Approximations for Direct Coning Compensation Applying Lie Theory</a></td>
   <td>提出基于龙格-库塔法的直接锥体误差补偿算法，应用于捷联惯导系统。</td>
   <td></td>

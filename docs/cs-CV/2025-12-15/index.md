@@ -5,15 +5,15 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-12-15
 
 # cs.CV（2025-12-15）
 
-📊 共 **26** 篇论文
- | 🔗 **7** 篇有代码
+📊 共 **24** 篇论文
+ | 🔗 **6** 篇有代码
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
-<a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (12 🔗5)</a>
-<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (10 🔗2)</a>
+<a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (11 🔗5)</a>
+<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (9 🔗1)</a>
 <a href="#支柱四生成式动作-generative-motion" class="interest-badge">支柱四：生成式动作 (Generative Motion) (1)</a>
 <a href="#支柱七动作重定向-motion-retargeting" class="interest-badge">支柱七：动作重定向 (Motion Retargeting) (1)</a>
 <a href="#支柱五交互与反应-interaction-reaction" class="interest-badge">支柱五：交互与反应 (Interaction & Reaction) (1)</a>
@@ -23,7 +23,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-12-15
 ---
 
 
-<h2 id="支柱三空间感知-perception-slam">🔬 支柱三：空间感知 (Perception & SLAM) (12 篇)</h2>
+<h2 id="支柱三空间感知-perception-slam">🔬 支柱三：空间感知 (Perception & SLAM) (11 篇)</h2>
 
 <table>
 <thead>
@@ -95,20 +95,13 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-12-15
 </tr>
 <tr>
   <td>10</td>
-  <td><a href="./papers/251213497v1-on-device-continual-learning-for-unsupervised-visual-anomaly-detecti.html">On-Device Continual Learning for Unsupervised Visual Anomaly Detection in Dynamic Manufacturing</a></td>
-  <td>提出基于设备端持续学习的PatchCore改进方法，用于动态制造中的无监督视觉异常检测。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2512.13497v1" onclick="toggleFavorite(this, '2512.13497v1', 'On-Device Continual Learning for Unsupervised Visual Anomaly Detection in Dynamic Manufacturing')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>11</td>
   <td><a href="./papers/251213122v1-dept3r-joint-dense-point-tracking-and-3d-reconstruction-of-dynamic-s.html">DePT3R: Joint Dense Point Tracking and 3D Reconstruction of Dynamic Scenes in a Single Forward Pass</a></td>
   <td>DePT3R：单次前向传播实现动态场景的联合稠密点追踪与3D重建</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2512.13122v1" onclick="toggleFavorite(this, '2512.13122v1', 'DePT3R: Joint Dense Point Tracking and 3D Reconstruction of Dynamic Scenes in a Single Forward Pass')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>12</td>
+  <td>11</td>
   <td><a href="./papers/251212984v1-vorolight-learning-quality-volumetric-voronoi-meshes-from-general-in.html">VoroLight: Learning Quality Volumetric Voronoi Meshes from General Inputs</a></td>
   <td>VoroLight：提出基于可微Voronoi图的通用输入三维形状重建框架</td>
   <td>✅</td>
@@ -118,7 +111,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-12-15
 </table>
 
 
-<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (10 篇)</h2>
+<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (9 篇)</h2>
 
 <table>
 <thead>
@@ -126,70 +119,63 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-12-15
 </thead>
 <tbody>
 <tr>
-  <td>13</td>
+  <td>12</td>
   <td><a href="./papers/251213030v1-motus-a-unified-latent-action-world-model.html">Motus: A Unified Latent Action World Model</a></td>
   <td>提出Motus以解决多模态生成能力统一问题</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.13030v1" onclick="toggleFavorite(this, '2512.13030v1', 'Motus: A Unified Latent Action World Model')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>14</td>
+  <td>13</td>
   <td><a href="./papers/251213684v1-recurrent-video-masked-autoencoders.html">Recurrent Video Masked Autoencoders</a></td>
   <td>提出RVM：一种基于Transformer循环神经网络的视频掩码自编码器，用于高效视频表征学习。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.13684v1" onclick="toggleFavorite(this, '2512.13684v1', 'Recurrent Video Masked Autoencoders')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>15</td>
+  <td>14</td>
   <td><a href="./papers/251213636v2-minddrive-a-vision-language-action-model-for-autonomous-driving-via-.html">MindDrive: A Vision-Language-Action Model for Autonomous Driving via Online Reinforcement Learning</a></td>
   <td>MindDrive：提出基于在线强化学习的视觉-语言-动作模型，用于自动驾驶。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.13636v2" onclick="toggleFavorite(this, '2512.13636v2', 'MindDrive: A Vision-Language-Action Model for Autonomous Driving via Online Reinforcement Learning')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>16</td>
+  <td>15</td>
   <td><a href="./papers/251213434v1-self-supervised-ultrasound-representation-learning-for-renal-anomaly.html">Self-Supervised Ultrasound Representation Learning for Renal Anomaly Prediction in Prenatal Imaging</a></td>
   <td>提出基于自监督学习的USF-MAE模型，用于产前超声肾脏异常自动预测。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.13434v1" onclick="toggleFavorite(this, '2512.13434v1', 'Self-Supervised Ultrasound Representation Learning for Renal Anomaly Prediction in Prenatal Imaging')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>17</td>
+  <td>16</td>
   <td><a href="./papers/251213874v1-sage-training-smart-any-horizon-agents-for-long-video-reasoning-with.html">SAGE: Training Smart Any-Horizon Agents for Long Video Reasoning with Reinforcement Learning</a></td>
   <td>提出SAGE，利用强化学习训练智能任意时域Agent，用于长视频推理。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.13874v1" onclick="toggleFavorite(this, '2512.13874v1', 'SAGE: Training Smart Any-Horizon Agents for Long Video Reasoning with Reinforcement Learning')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>18</td>
+  <td>17</td>
   <td><a href="./papers/251213604v1-longvie-2-multimodal-controllable-ultra-long-video-world-model.html">LongVie 2: Multimodal Controllable Ultra-Long Video World Model</a></td>
   <td>LongVie 2：多模态可控超长视频世界模型，实现高质量长时序视频生成。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.13604v1" onclick="toggleFavorite(this, '2512.13604v1', 'LongVie 2: Multimodal Controllable Ultra-Long Video World Model')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>19</td>
-  <td><a href="./papers/251213770v1-enhancing-semi-supervised-multi-view-graph-convolutional-networks-vi.html">Enhancing Semi-Supervised Multi-View Graph Convolutional Networks via Supervised Contrastive Learning and Self-Training</a></td>
-  <td>提出MV-SupGCN，通过监督对比学习和自训练增强半监督多视图图卷积网络</td>
-  <td>✅</td>
-  <td><button class="favorite-btn" data-arxiv-id="2512.13770v1" onclick="toggleFavorite(this, '2512.13770v1', 'Enhancing Semi-Supervised Multi-View Graph Convolutional Networks via Supervised Contrastive Learning and Self-Training')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>20</td>
+  <td>18</td>
   <td><a href="./papers/251213095v1-adhint-adaptive-hints-with-difficulty-priors-for-reinforcement-learn.html">ADHint: Adaptive Hints with Difficulty Priors for Reinforcement Learning</a></td>
   <td>ADHint：利用难度先验的自适应提示强化学习，提升推理能力和泛化性</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.13095v1" onclick="toggleFavorite(this, '2512.13095v1', 'ADHint: Adaptive Hints with Difficulty Priors for Reinforcement Learning')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>21</td>
+  <td>19</td>
   <td><a href="./papers/251213421v1-rectok-reconstruction-distillation-along-rectified-flow.html">RecTok: Reconstruction Distillation along Rectified Flow</a></td>
   <td>RecTok：通过校正流上的重构蒸馏，突破高维视觉Tokenizers的性能瓶颈</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2512.13421v1" onclick="toggleFavorite(this, '2512.13421v1', 'RecTok: Reconstruction Distillation along Rectified Flow')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>22</td>
+  <td>20</td>
   <td><a href="./papers/251213671v1-agentiad-tool-augmented-single-agent-for-industrial-anomaly-detectio.html">AgentIAD: Tool-Augmented Single-Agent for Industrial Anomaly Detection</a></td>
   <td>AgentIAD：工具增强的单智能体工业异常检测框架</td>
   <td></td>
@@ -207,7 +193,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-12-15
 </thead>
 <tbody>
 <tr>
-  <td>23</td>
+  <td>21</td>
   <td><a href="./papers/251213840v1-molingo-motion-language-alignment-for-text-to-motion-generation.html">MoLingo: Motion-Language Alignment for Text-to-Motion Generation</a></td>
   <td>MoLingo：通过运动-语言对齐实现文本到动作生成，达到新的SOTA。</td>
   <td></td>
@@ -225,7 +211,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-12-15
 </thead>
 <tbody>
 <tr>
-  <td>24</td>
+  <td>22</td>
   <td><a href="./papers/251213665v1-grab-3d-detecting-ai-generated-videos-from-3d-geometric-temporal-con.html">Grab-3D: Detecting AI-Generated Videos from 3D Geometric Temporal Consistency</a></td>
   <td>提出Grab-3D，利用3D几何时序一致性检测AI生成视频</td>
   <td></td>
@@ -243,7 +229,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-12-15
 </thead>
 <tbody>
 <tr>
-  <td>25</td>
+  <td>23</td>
   <td><a href="./papers/251213560v1-3d-human-human-interaction-anomaly-detection.html">3D Human-Human Interaction Anomaly Detection</a></td>
   <td>提出IADNet，用于检测3D人体交互中的异常行为</td>
   <td></td>
@@ -261,7 +247,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-12-15
 </thead>
 <tbody>
 <tr>
-  <td>26</td>
+  <td>24</td>
   <td><a href="./papers/251213313v1-klingavatar-20-technical-report.html">KlingAvatar 2.0 Technical Report</a></td>
   <td>提出KlingAvatar 2.0以解决长视频生成中的效率与一致性问题</td>
   <td></td>

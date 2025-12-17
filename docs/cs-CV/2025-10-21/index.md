@@ -5,7 +5,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-10-21
 
 # cs.CV（2025-10-21）
 
-📊 共 **8** 篇论文
+📊 共 **7** 篇论文
  | 🔗 **1** 篇有代码
 
 
@@ -15,7 +15,6 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-10-21
 <a href="#支柱三空间感知与语义-perception-semantics" class="interest-badge">支柱三：空间感知与语义 (Perception & Semantics) (4 🔗1)</a>
 <a href="#支柱六视频提取与匹配-video-extraction" class="interest-badge">支柱六：视频提取与匹配 (Video Extraction) (2)</a>
 <a href="#支柱九具身大模型-embodied-foundation-models" class="interest-badge">支柱九：具身大模型 (Embodied Foundation Models) (1)</a>
-<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (1)</a>
 </div>
 
 ---
@@ -98,24 +97,6 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-10-21
   <td>VLSU：构建多模态AI安全评估框架，揭示视觉-语言联合理解的局限性</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.18214v2" onclick="toggleFavorite(this, '2510.18214v2', 'VLSU: Mapping the Limits of Joint Multimodal Understanding for AI Safety')" title="添加到收藏夹">☆</button></td>
-</tr>
-</tbody>
-</table>
-
-
-<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (1 篇)</h2>
-
-<table>
-<thead>
-<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
-</thead>
-<tbody>
-<tr>
-  <td>8</td>
-  <td><a href="./papers/251018263v1-from-competition-to-synergy-unlocking-reinforcement-learning-for-sub.html">From Competition to Synergy: Unlocking Reinforcement Learning for Subject-Driven Image Generation</a></td>
-  <td>提出Customized-GRPO，解决主体驱动图像生成中保真度和可编辑性的trade-off问题</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.18263v1" onclick="toggleFavorite(this, '2510.18263v1', 'From Competition to Synergy: Unlocking Reinforcement Learning for Subject-Driven Image Generation')" title="添加到收藏夹">☆</button></td>
 </tr>
 </tbody>
 </table>

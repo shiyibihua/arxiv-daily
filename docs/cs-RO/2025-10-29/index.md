@@ -5,15 +5,14 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-29
 
 # cs.RO（2025-10-29）
 
-📊 共 **16** 篇论文
+📊 共 **13** 篇论文
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
 <a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (11)</a>
-<a href="#支柱九具身大模型-embodied-foundation-models" class="interest-badge">支柱九：具身大模型 (Embodied Foundation Models) (4)</a>
-<a href="#支柱八物理动画-physics-based-animation" class="interest-badge">支柱八：物理动画 (Physics-based Animation) (1)</a>
+<a href="#支柱九具身大模型-embodied-foundation-models" class="interest-badge">支柱九：具身大模型 (Embodied Foundation Models) (2)</a>
 </div>
 
 ---
@@ -107,7 +106,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-29
 </table>
 
 
-<h2 id="支柱九具身大模型-embodied-foundation-models">🔬 支柱九：具身大模型 (Embodied Foundation Models) (4 篇)</h2>
+<h2 id="支柱九具身大模型-embodied-foundation-models">🔬 支柱九：具身大模型 (Embodied Foundation Models) (2 篇)</h2>
 
 <table>
 <thead>
@@ -123,42 +122,10 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-29
 </tr>
 <tr>
   <td>13</td>
-  <td><a href="./papers/251025616v1-dont-blind-your-vla-aligning-visual-representations-for-ood-generali.html">Don't Blind Your VLA: Aligning Visual Representations for OOD Generalization</a></td>
-  <td>提出视觉表征对齐方法，解决VLA模型OOD泛化能力退化问题</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.25616v1" onclick="toggleFavorite(this, '2510.25616v1', 'Don&#39;t Blind Your VLA: Aligning Visual Representations for OOD Generalization')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>14</td>
-  <td><a href="./papers/251026023v2-large-language-model-assisted-autonomous-vehicle-recovery-from-immob.html">Large Language Model-assisted Autonomous Vehicle Recovery from Immobilization</a></td>
-  <td>提出StuckSolver，利用大语言模型辅助自动驾驶车辆脱困</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.26023v2" onclick="toggleFavorite(this, '2510.26023v2', 'Large Language Model-assisted Autonomous Vehicle Recovery from Immobilization')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>15</td>
   <td><a href="./papers/251025211v1-roadsens-4m-a-multimodal-smartphone-camera-dataset-for-holistic-road.html">RoadSens-4M: A Multimodal Smartphone & Camera Dataset for Holistic Road-way Analysis</a></td>
   <td>RoadSens-4M：提出一个多模态智能手机与相机数据集，用于整体道路分析。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.25211v1" onclick="toggleFavorite(this, '2510.25211v1', 'RoadSens-4M: A Multimodal Smartphone & Camera Dataset for Holistic Road-way Analysis')" title="添加到收藏夹">☆</button></td>
-</tr>
-</tbody>
-</table>
-
-
-<h2 id="支柱八物理动画-physics-based-animation">🔬 支柱八：物理动画 (Physics-based Animation) (1 篇)</h2>
-
-<table>
-<thead>
-<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
-</thead>
-<tbody>
-<tr>
-  <td>16</td>
-  <td><a href="./papers/251025597v1-incorporating-social-awareness-into-control-of-unknown-multi-agent-s.html">Incorporating Social Awareness into Control of Unknown Multi-Agent Systems: A Real-Time Spatiotemporal Tubes Approach</a></td>
-  <td>提出一种社会感知时空管道方法，用于控制未知多智能体系统，实现规定时间内到达目标。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.25597v1" onclick="toggleFavorite(this, '2510.25597v1', 'Incorporating Social Awareness into Control of Unknown Multi-Agent Systems: A Real-Time Spatiotemporal Tubes Approach')" title="添加到收藏夹">☆</button></td>
 </tr>
 </tbody>
 </table>

@@ -5,22 +5,22 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-12
 
 # cs.RO（2025-11-12）
 
-📊 共 **22** 篇论文
+📊 共 **20** 篇论文
  | 🔗 **3** 篇有代码
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
-<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (14 🔗3)</a>
+<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (13 🔗3)</a>
 <a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (5)</a>
-<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (3)</a>
+<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (2)</a>
 </div>
 
 ---
 
 
-<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (14 篇)</h2>
+<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (13 篇)</h2>
 
 <table>
 <thead>
@@ -99,27 +99,20 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-12
 </tr>
 <tr>
   <td>11</td>
-  <td><a href="./papers/251108922v1-diffusion-policies-with-value-conditional-optimization-for-offline-r.html">Diffusion Policies with Value-Conditional Optimization for Offline Reinforcement Learning</a></td>
-  <td>提出DIVO，通过价值条件优化扩散策略解决离线强化学习中的过估计问题。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.08922v1" onclick="toggleFavorite(this, '2511.08922v1', 'Diffusion Policies with Value-Conditional Optimization for Offline Reinforcement Learning')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>12</td>
   <td><a href="./papers/251109555v1-spatialactor-exploring-disentangled-spatial-representations-for-robu.html">SpatialActor: Exploring Disentangled Spatial Representations for Robust Robotic Manipulation</a></td>
   <td>SpatialActor：探索解耦空间表征，提升机器人操作的鲁棒性</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2511.09555v1" onclick="toggleFavorite(this, '2511.09555v1', 'SpatialActor: Exploring Disentangled Spatial Representations for Robust Robotic Manipulation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>13</td>
+  <td>12</td>
   <td><a href="./papers/251109516v1-map-vla-memory-augmented-prompting-for-vision-language-action-model-.html">MAP-VLA: Memory-Augmented Prompting for Vision-Language-Action Model in Robotic Manipulation</a></td>
   <td>MAP-VLA：利用记忆增强提示，提升VLA模型在机器人操作中的长时任务性能</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.09516v1" onclick="toggleFavorite(this, '2511.09516v1', 'MAP-VLA: Memory-Augmented Prompting for Vision-Language-Action Model in Robotic Manipulation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>14</td>
+  <td>13</td>
   <td><a href="./papers/251108912v1-a-shared-control-framework-for-mobile-robots-with-planning-level-int.html">A Shared Control Framework for Mobile Robots with Planning-Level Intention Prediction</a></td>
   <td>提出基于意图域预测的移动机器人共享控制框架，提升人机协作效率与安全性</td>
   <td></td>
@@ -137,35 +130,35 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-12
 </thead>
 <tbody>
 <tr>
-  <td>15</td>
+  <td>14</td>
   <td><a href="./papers/251109072v1-smf-vo-direct-ego-motion-estimation-via-sparse-motion-fields.html">SMF-VO: Direct Ego-Motion Estimation via Sparse Motion Fields</a></td>
   <td>提出基于稀疏运动场的直接视觉里程计SMF-VO，适用于资源受限设备。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.09072v1" onclick="toggleFavorite(this, '2511.09072v1', 'SMF-VO: Direct Ego-Motion Estimation via Sparse Motion Fields')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>16</td>
+  <td>15</td>
   <td><a href="./papers/251109142v1-lodestar-degeneracy-aware-lidar-inertial-odometry-with-adaptive-schm.html">LODESTAR: Degeneracy-Aware LiDAR-Inertial Odometry with Adaptive Schmidt-Kalman Filter and Data Exploitation</a></td>
   <td>LODESTAR：基于自适应Schmidt-Kalman滤波和数据利用的抗退化LiDAR惯性里程计</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.09142v1" onclick="toggleFavorite(this, '2511.09142v1', 'LODESTAR: Degeneracy-Aware LiDAR-Inertial Odometry with Adaptive Schmidt-Kalman Filter and Data Exploitation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>17</td>
+  <td>16</td>
   <td><a href="./papers/251108942v1-think-remember-navigate-zero-shot-object-goal-navigation-with-vlm-po.html">Think, Remember, Navigate: Zero-Shot Object-Goal Navigation with VLM-Powered Reasoning</a></td>
   <td>提出基于VLM推理的零样本物体目标导航方法，提升导航效率。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.08942v1" onclick="toggleFavorite(this, '2511.08942v1', 'Think, Remember, Navigate: Zero-Shot Object-Goal Navigation with VLM-Powered Reasoning')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>18</td>
+  <td>17</td>
   <td><a href="./papers/251108935v1-expand-your-scope-semantic-cognition-over-potential-based-exploratio.html">Expand Your SCOPE: Semantic Cognition over Potential-Based Exploration for Embodied Visual Navigation</a></td>
   <td>提出SCOPE框架以提升具身视觉导航的决策能力</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.08935v1" onclick="toggleFavorite(this, '2511.08935v1', 'Expand Your SCOPE: Semantic Cognition over Potential-Based Exploration for Embodied Visual Navigation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>19</td>
+  <td>18</td>
   <td><a href="./papers/251108863v1-xpress-x-band-radar-place-recognition-via-elliptical-scan-shaping.html">XPRESS: X-Band Radar Place Recognition via Elliptical Scan Shaping</a></td>
   <td>XPRESS：基于椭圆扫描整形X波段雷达的地点识别方法，用于海事自主导航</td>
   <td></td>
@@ -175,7 +168,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-12
 </table>
 
 
-<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (3 篇)</h2>
+<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (2 篇)</h2>
 
 <table>
 <thead>
@@ -183,21 +176,14 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-12
 </thead>
 <tbody>
 <tr>
-  <td>20</td>
-  <td><a href="./papers/251111703v1-enhancing-reinforcement-learning-in-3d-environments-through-semantic.html">Enhancing Reinforcement Learning in 3D Environments through Semantic Segmentation: A Case Study in ViZDoom</a></td>
-  <td>提出基于语义分割的强化学习方法，降低3D环境内存消耗并提升智能体性能</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.11703v1" onclick="toggleFavorite(this, '2511.11703v1', 'Enhancing Reinforcement Learning in 3D Environments through Semantic Segmentation: A Case Study in ViZDoom')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>21</td>
+  <td>19</td>
   <td><a href="./papers/251109331v1-corl-mppi-enhancing-mppi-with-learnable-behaviours-for-efficient-and.html">CoRL-MPPI: Enhancing MPPI With Learnable Behaviours For Efficient And Provably-Safe Multi-Robot Collision Avoidance</a></td>
   <td>CoRL-MPPI：融合强化学习与MPPI，提升多机器人避障效率与安全性</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.09331v1" onclick="toggleFavorite(this, '2511.09331v1', 'CoRL-MPPI: Enhancing MPPI With Learnable Behaviours For Efficient And Provably-Safe Multi-Robot Collision Avoidance')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>22</td>
+  <td>20</td>
   <td><a href="./papers/251109727v1-baby-sophia-a-developmental-approach-to-self-exploration-through-sel.html">Baby Sophia: A Developmental Approach to Self-Exploration through Self-Touch and Hand Regard</a></td>
   <td>Baby Sophia：基于强化学习和自触摸、手部观察的机器人自主探索</td>
   <td></td>

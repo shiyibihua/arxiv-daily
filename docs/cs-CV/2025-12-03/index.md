@@ -5,7 +5,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-12-03
 
 # cs.CV（2025-12-03）
 
-📊 共 **30** 篇论文
+📊 共 **29** 篇论文
  | 🔗 **6** 篇有代码
 
 
@@ -13,7 +13,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-12-03
 
 <div class="interest-nav">
 <a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (14 🔗2)</a>
-<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (7 🔗1)</a>
+<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (6 🔗1)</a>
 <a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (5 🔗2)</a>
 <a href="#支柱四生成式动作-generative-motion" class="interest-badge">支柱四：生成式动作 (Generative Motion) (2 🔗1)</a>
 <a href="#支柱七动作重定向-motion-retargeting" class="interest-badge">支柱七：动作重定向 (Motion Retargeting) (1)</a>
@@ -132,7 +132,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-12-03
 </table>
 
 
-<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (7 篇)</h2>
+<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (6 篇)</h2>
 
 <table>
 <thead>
@@ -176,13 +176,6 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-12-03
 </tr>
 <tr>
   <td>20</td>
-  <td><a href="./papers/251211831v2-on-the-design-of-one-step-diffusion-via-shortcutting-flow-paths.html">On the Design of One-step Diffusion via Shortcutting Flow Paths</a></td>
-  <td>提出单步扩散通用设计框架，显著提升ImageNet图像生成质量，无需预训练。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2512.11831v2" onclick="toggleFavorite(this, '2512.11831v2', 'On the Design of One-step Diffusion via Shortcutting Flow Paths')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>21</td>
   <td><a href="./papers/251204085v1-unique-lives-shared-world-learning-from-single-life-videos.html">Unique Lives, Shared World: Learning from Single-Life Videos</a></td>
   <td>提出单一生涯学习范式，利用个体生活视频自监督学习通用视觉表征。</td>
   <td></td>
@@ -200,35 +193,35 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-12-03
 </thead>
 <tbody>
 <tr>
-  <td>22</td>
+  <td>21</td>
   <td><a href="./papers/251204303v1-gamma-from-mono-road-relative-metric-self-supervised-monocular-geome.html">Gamma-from-Mono: Road-Relative, Metric, Self-Supervised Monocular Geometry for Vehicular Applications</a></td>
   <td>提出Gamma-from-Mono，用于车辆应用中道路相对、度量、自监督单目几何估计</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.04303v1" onclick="toggleFavorite(this, '2512.04303v1', 'Gamma-from-Mono: Road-Relative, Metric, Self-Supervised Monocular Geometry for Vehicular Applications')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>23</td>
+  <td>22</td>
   <td><a href="./papers/251203619v2-lamp-language-assisted-motion-planning-for-controllable-video-genera.html">LAMP: Language-Assisted Motion Planning for Controllable Video Generation</a></td>
   <td>LAMP：利用语言辅助的运动规划实现可控视频生成</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.03619v2" onclick="toggleFavorite(this, '2512.03619v2', 'LAMP: Language-Assisted Motion Planning for Controllable Video Generation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>24</td>
+  <td>23</td>
   <td><a href="./papers/251204069v1-spacetools-tool-augmented-spatial-reasoning-via-double-interactive-r.html">SpaceTools: Tool-Augmented Spatial Reasoning via Double Interactive RL</a></td>
   <td>SpaceTools：通过双重交互强化学习增强工具辅助的空间推理能力</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2512.04069v1" onclick="toggleFavorite(this, '2512.04069v1', 'SpaceTools: Tool-Augmented Spatial Reasoning via Double Interactive RL')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>25</td>
+  <td>24</td>
   <td><a href="./papers/251206013v1-vat-vision-action-transformer-by-unlocking-full-representation-of-vi.html">VAT: Vision Action Transformer by Unlocking Full Representation of ViT</a></td>
   <td>提出Vision Action Transformer (VAT)，充分利用ViT各层特征进行机器人动作学习。</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2512.06013v1" onclick="toggleFavorite(this, '2512.06013v1', 'VAT: Vision Action Transformer by Unlocking Full Representation of ViT')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>26</td>
+  <td>25</td>
   <td><a href="./papers/251203724v2-posa-vla-enhancing-action-generation-via-pose-conditioned-anchor-att.html">PosA-VLA: Enhancing Action Generation via Pose-Conditioned Anchor Attention</a></td>
   <td>PosA-VLA：通过姿态条件锚点注意力增强具身任务中的动作生成</td>
   <td></td>
@@ -246,14 +239,14 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-12-03
 </thead>
 <tbody>
 <tr>
-  <td>27</td>
+  <td>26</td>
   <td><a href="./papers/251203520v1-flooddiffusion-tailored-diffusion-forcing-for-streaming-motion-gener.html">FloodDiffusion: Tailored Diffusion Forcing for Streaming Motion Generation</a></td>
   <td>FloodDiffusion：用于流式运动生成的定制扩散强制框架</td>
   <td>✅</td>
   <td><button class="favorite-btn" data-arxiv-id="2512.03520v1" onclick="toggleFavorite(this, '2512.03520v1', 'FloodDiffusion: Tailored Diffusion Forcing for Streaming Motion Generation')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>28</td>
+  <td>27</td>
   <td><a href="./papers/251203918v1-unimo-unifying-2d-video-and-3d-human-motion-with-an-autoregressive-f.html">UniMo: Unifying 2D Video and 3D Human Motion with an Autoregressive Framework</a></td>
   <td>UniMo：提出一个自回归框架，统一建模2D视频和3D人体运动，实现同步生成与理解。</td>
   <td></td>
@@ -271,7 +264,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-12-03
 </thead>
 <tbody>
 <tr>
-  <td>29</td>
+  <td>28</td>
   <td><a href="./papers/251204282v1-inference-time-stochastic-refinement-of-gru-normalizing-flow-for-rea.html">Inference-time Stochastic Refinement of GRU-Normalizing Flow for Real-time Video Motion Transfer</a></td>
   <td>提出GRU-SNF，通过推理时随机细化GRU-NF，实现实时视频运动迁移中多样性预测。</td>
   <td></td>
@@ -289,7 +282,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-12-03
 </thead>
 <tbody>
 <tr>
-  <td>30</td>
+  <td>29</td>
   <td><a href="./papers/251203848v1-pulse-a-unified-multi-task-architecture-for-cardiac-segmentation-dia.html">PULSE: A Unified Multi-Task Architecture for Cardiac Segmentation, Diagnosis, and Few-Shot Cross-Modality Clinical Adaptation</a></td>
   <td>PULSE：统一多任务架构，用于心脏分割、诊断和少样本跨模态临床自适应</td>
   <td></td>

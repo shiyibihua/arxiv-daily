@@ -5,21 +5,21 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-05
 
 # cs.RO（2025-11-05）
 
-📊 共 **12** 篇论文
- | 🔗 **2** 篇有代码
+📊 共 **10** 篇论文
+ | 🔗 **1** 篇有代码
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
-<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (10 🔗2)</a>
-<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (2)</a>
+<a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (9 🔗1)</a>
+<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (1)</a>
 </div>
 
 ---
 
 
-<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (10 篇)</h2>
+<h2 id="支柱一机器人控制-robot-control">🔬 支柱一：机器人控制 (Robot Control) (9 篇)</h2>
 
 <table>
 <thead>
@@ -89,18 +89,11 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-05
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.03165v1" onclick="toggleFavorite(this, '2511.03165v1', 'SENT Map -- Semantically Enhanced Topological Maps with Foundation Models')" title="添加到收藏夹">☆</button></td>
 </tr>
-<tr>
-  <td>10</td>
-  <td><a href="./papers/251103187v3-periodic-skill-discovery.html">Periodic Skill Discovery</a></td>
-  <td>提出周期性技能发现（PSD）框架，用于无监督地学习机器人周期性运动技能。</td>
-  <td>✅</td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.03187v3" onclick="toggleFavorite(this, '2511.03187v3', 'Periodic Skill Discovery')" title="添加到收藏夹">☆</button></td>
-</tr>
 </tbody>
 </table>
 
 
-<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (2 篇)</h2>
+<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (1 篇)</h2>
 
 <table>
 <thead>
@@ -108,14 +101,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-05
 </thead>
 <tbody>
 <tr>
-  <td>11</td>
-  <td><a href="./papers/251103173v1-optimizing-earth-moon-transfer-and-cislunar-navigation-integrating-l.html">Optimizing Earth-Moon Transfer and Cislunar Navigation: Integrating Low-Energy Trajectories, AI Techniques and GNSS-R Technologies</a></td>
-  <td>融合低能轨道、AI与GNSS-R技术，优化地月转移和月球导航</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.03173v1" onclick="toggleFavorite(this, '2511.03173v1', 'Optimizing Earth-Moon Transfer and Cislunar Navigation: Integrating Low-Energy Trajectories, AI Techniques and GNSS-R Technologies')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>12</td>
+  <td>10</td>
   <td><a href="./papers/251103189v1-collaborative-assembly-policy-learning-of-a-sightless-robot.html">Collaborative Assembly Policy Learning of a Sightless Robot</a></td>
   <td>提出基于强化学习的协作式装配策略，提升无视觉机器人人机协作效率</td>
   <td></td>

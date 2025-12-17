@@ -5,7 +5,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-20
 
 # cs.RO（2025-11-20）
 
-📊 共 **15** 篇论文
+📊 共 **14** 篇论文
  | 🔗 **2** 篇有代码
 
 
@@ -13,8 +13,8 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-20
 
 <div class="interest-nav">
 <a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (8 🔗2)</a>
-<a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (4)</a>
 <a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (3)</a>
+<a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (3)</a>
 </div>
 
 ---
@@ -87,45 +87,6 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-20
 </table>
 
 
-<h2 id="支柱三空间感知-perception-slam">🔬 支柱三：空间感知 (Perception & SLAM) (4 篇)</h2>
-
-<table>
-<thead>
-<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
-</thead>
-<tbody>
-<tr>
-  <td>9</td>
-  <td><a href="./papers/251116048v1-semantic-glitch-agency-and-artistry-in-an-autonomous-pixel-cloud.html">Semantic Glitch: Agency and Artistry in an Autonomous Pixel Cloud</a></td>
-  <td>提出基于多模态大语言模型的低精度自主导航框架，用于软体飞行机器人艺术装置。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.16048v1" onclick="toggleFavorite(this, '2511.16048v1', 'Semantic Glitch: Agency and Artistry in an Autonomous Pixel Cloud')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>10</td>
-  <td><a href="./papers/251117656v1-multi-agent-coordination-in-autonomous-vehicle-routing-a-simulation-.html">Multi-Agent Coordination in Autonomous Vehicle Routing: A Simulation-Based Study of Communication, Memory, and Routing Loops</a></td>
-  <td>提出对象记忆管理机制以解决自主车辆路由中的循环问题</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.17656v1" onclick="toggleFavorite(this, '2511.17656v1', 'Multi-Agent Coordination in Autonomous Vehicle Routing: A Simulation-Based Study of Communication, Memory, and Routing Loops')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>11</td>
-  <td><a href="./papers/251116262v1-how-robot-dogs-see-the-unseeable.html">How Robot Dogs See the Unseeable</a></td>
-  <td>机器人狗通过模仿动物Peering运动，实现合成孔径成像，克服遮挡问题</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.16262v1" onclick="toggleFavorite(this, '2511.16262v1', 'How Robot Dogs See the Unseeable')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>12</td>
-  <td><a href="./papers/251115956v2-the-role-of-consequential-and-functional-sound-in-human-robot-intera.html">The Role of Consequential and Functional Sound in Human-Robot Interaction: Toward Audio Augmented Reality Interfaces</a></td>
-  <td>探索声音在人机交互中的作用，为音频增强现实界面设计提供指导</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2511.15956v2" onclick="toggleFavorite(this, '2511.15956v2', 'The Role of Consequential and Functional Sound in Human-Robot Interaction: Toward Audio Augmented Reality Interfaces')" title="添加到收藏夹">☆</button></td>
-</tr>
-</tbody>
-</table>
-
-
 <h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (3 篇)</h2>
 
 <table>
@@ -134,25 +95,57 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-11-20
 </thead>
 <tbody>
 <tr>
-  <td>13</td>
+  <td>9</td>
   <td><a href="./papers/251116407v1-laof-robust-latent-action-learning-with-optical-flow-constraints.html">LAOF: Robust Latent Action Learning with Optical Flow Constraints</a></td>
   <td>提出LAOF：利用光流约束学习鲁棒的潜在动作表示，提升具身智能预训练效果</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.16407v1" onclick="toggleFavorite(this, '2511.16407v1', 'LAOF: Robust Latent Action Learning with Optical Flow Constraints')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>14</td>
+  <td>10</td>
   <td><a href="./papers/251116330v1-safe-and-optimal-variable-impedance-control-via-certified-reinforcem.html">Safe and Optimal Variable Impedance Control via Certified Reinforcement Learning</a></td>
   <td>提出C-GMS框架，通过认证强化学习实现安全且优化的变阻抗控制</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.16330v1" onclick="toggleFavorite(this, '2511.16330v1', 'Safe and Optimal Variable Impedance Control via Certified Reinforcement Learning')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>15</td>
+  <td>11</td>
   <td><a href="./papers/251116372v2-flow-aided-flight-through-dynamic-clutters-from-point-to-motion.html">Flow-Aided Flight Through Dynamic Clutters From Point To Motion</a></td>
   <td>提出基于点流辅助的强化学习方法，解决动态复杂环境中无人机自主飞行问题。</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2511.16372v2" onclick="toggleFavorite(this, '2511.16372v2', 'Flow-Aided Flight Through Dynamic Clutters From Point To Motion')" title="添加到收藏夹">☆</button></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 id="支柱三空间感知-perception-slam">🔬 支柱三：空间感知 (Perception & SLAM) (3 篇)</h2>
+
+<table>
+<thead>
+<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td>12</td>
+  <td><a href="./papers/251116048v1-semantic-glitch-agency-and-artistry-in-an-autonomous-pixel-cloud.html">Semantic Glitch: Agency and Artistry in an Autonomous Pixel Cloud</a></td>
+  <td>提出基于多模态大语言模型的低精度自主导航框架，用于软体飞行机器人艺术装置。</td>
+  <td></td>
+  <td><button class="favorite-btn" data-arxiv-id="2511.16048v1" onclick="toggleFavorite(this, '2511.16048v1', 'Semantic Glitch: Agency and Artistry in an Autonomous Pixel Cloud')" title="添加到收藏夹">☆</button></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td><a href="./papers/251116262v1-how-robot-dogs-see-the-unseeable.html">How Robot Dogs See the Unseeable</a></td>
+  <td>机器人狗通过模仿动物Peering运动，实现合成孔径成像，克服遮挡问题</td>
+  <td></td>
+  <td><button class="favorite-btn" data-arxiv-id="2511.16262v1" onclick="toggleFavorite(this, '2511.16262v1', 'How Robot Dogs See the Unseeable')" title="添加到收藏夹">☆</button></td>
+</tr>
+<tr>
+  <td>14</td>
+  <td><a href="./papers/251115956v2-the-role-of-consequential-and-functional-sound-in-human-robot-intera.html">The Role of Consequential and Functional Sound in Human-Robot Interaction: Toward Audio Augmented Reality Interfaces</a></td>
+  <td>探索声音在人机交互中的作用，为音频增强现实界面设计提供指导</td>
+  <td></td>
+  <td><button class="favorite-btn" data-arxiv-id="2511.15956v2" onclick="toggleFavorite(this, '2511.15956v2', 'The Role of Consequential and Functional Sound in Human-Robot Interaction: Toward Audio Augmented Reality Interfaces')" title="添加到收藏夹">☆</button></td>
 </tr>
 </tbody>
 </table>

@@ -5,7 +5,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-24
 
 # cs.RO（2025-10-24）
 
-📊 共 **8** 篇论文
+📊 共 **7** 篇论文
  | 🔗 **1** 篇有代码
 
 
@@ -13,7 +13,6 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-24
 
 <div class="interest-nav">
 <a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (7 🔗1)</a>
-<a href="#支柱九具身大模型-embodied-foundation-models" class="interest-badge">支柱九：具身大模型 (Embodied Foundation Models) (1)</a>
 </div>
 
 ---
@@ -74,24 +73,6 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-24
   <td>PREVENT：多模态行为树驱动的移动机器人化学家风险评估与主动任务执行系统</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.21438v1" onclick="toggleFavorite(this, '2510.21438v1', 'PREVENT: Proactive Risk Evaluation and Vigilant Execution of Tasks for Mobile Robotic Chemists using Multi-Modal Behavior Trees')" title="添加到收藏夹">☆</button></td>
-</tr>
-</tbody>
-</table>
-
-
-<h2 id="支柱九具身大模型-embodied-foundation-models">🔬 支柱九：具身大模型 (Embodied Foundation Models) (1 篇)</h2>
-
-<table>
-<thead>
-<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
-</thead>
-<tbody>
-<tr>
-  <td>8</td>
-  <td><a href="./papers/251021302v1-towards-reliable-code-as-policies-a-neuro-symbolic-framework-for-emb.html">Towards Reliable Code-as-Policies: A Neuro-Symbolic Framework for Embodied Task Planning</a></td>
-  <td>提出神经符号框架，提升具身任务规划中代码策略的可靠性</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.21302v1" onclick="toggleFavorite(this, '2510.21302v1', 'Towards Reliable Code-as-Policies: A Neuro-Symbolic Framework for Embodied Task Planning')" title="添加到收藏夹">☆</button></td>
 </tr>
 </tbody>
 </table>

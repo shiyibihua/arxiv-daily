@@ -3,8 +3,17 @@
         "profile": "Robotics & Animation Algorithm Engineer",
         "description": "Full-stack tracking: Control, SOTA Perception, Motion Synthesis, Embodied VLA, and Sim-to-Real.",
         "strategy": "Nine Pillars - Algorithm & Task Focused (九大支柱-算法与任务核心)",
-        "version": "5.1_No_Simulators"
+        "version": "5.2_Multi_Domain_Optimized"
     },
+    "arxiv_categories": [
+        "cs.RO",
+        "cs.CV",
+        "cs.GR",
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "eess.SY"
+    ],
     "filter_settings": {
         "min_relevance_score": 2.0,
         "title_multiplier": 3.0,
@@ -408,10 +417,13 @@
         "stock",
         "trading",
         "blockchain",
+        "cryptocurrency",
         "social network",
         "sentiment analysis",
         "fake news",
         "hate speech",
+        "recommender system",
+        "advertising",
         "face recognition",
         "facial recognition",
         "emotion recognition",
@@ -433,6 +445,10 @@
         "speech recognition",
         "text-to-speech",
         "machine translation",
-        "ASR"
+        "ASR",
+        "chatbot",
+        "question answering",
+        "text summarization",
+        "document classification"
     ]
 }

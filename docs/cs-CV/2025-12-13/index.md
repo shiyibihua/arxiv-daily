@@ -5,7 +5,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-12-13
 
 # cs.CV（2025-12-13）
 
-📊 共 **11** 篇论文
+📊 共 **10** 篇论文
  | 🔗 **1** 篇有代码
 
 
@@ -14,7 +14,6 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-12-13
 <div class="interest-nav">
 <a href="#支柱三空间感知-perception-slam" class="interest-badge">支柱三：空间感知 (Perception & SLAM) (6)</a>
 <a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (2)</a>
-<a href="#支柱四生成式动作-generative-motion" class="interest-badge">支柱四：生成式动作 (Generative Motion) (1)</a>
 <a href="#支柱七动作重定向-motion-retargeting" class="interest-badge">支柱七：动作重定向 (Motion Retargeting) (1 🔗1)</a>
 <a href="#支柱八物理动画-physics-based-animation" class="interest-badge">支柱八：物理动画 (Physics-based Animation) (1)</a>
 </div>
@@ -100,24 +99,6 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-12-13
 </table>
 
 
-<h2 id="支柱四生成式动作-generative-motion">🔬 支柱四：生成式动作 (Generative Motion) (1 篇)</h2>
-
-<table>
-<thead>
-<tr><th>#</th><th>题目</th><th>一句话要点</th><th>🔗</th><th>⭐</th></tr>
-</thead>
-<tbody>
-<tr>
-  <td>9</td>
-  <td><a href="./papers/251213729v1-composite-classifier-free-guidance-for-multi-modal-conditioning-in-w.html">Composite Classifier-Free Guidance for Multi-Modal Conditioning in Wind Dynamics Super-Resolution</a></td>
-  <td>提出复合无分类器引导（CCFG）方法，用于提升风力动力学超分辨率重建质量。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2512.13729v1" onclick="toggleFavorite(this, '2512.13729v1', 'Composite Classifier-Free Guidance for Multi-Modal Conditioning in Wind Dynamics Super-Resolution')" title="添加到收藏夹">☆</button></td>
-</tr>
-</tbody>
-</table>
-
-
 <h2 id="支柱七动作重定向-motion-retargeting">🔬 支柱七：动作重定向 (Motion Retargeting) (1 篇)</h2>
 
 <table>
@@ -126,7 +107,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-12-13
 </thead>
 <tbody>
 <tr>
-  <td>10</td>
+  <td>9</td>
   <td><a href="./papers/251212430v1-endless-world-real-time-3d-aware-long-video-generation.html">Endless World: Real-Time 3D-Aware Long Video Generation</a></td>
   <td>Endless World：实时3D感知无限长视频生成框架</td>
   <td>✅</td>
@@ -144,7 +125,7 @@ title: arXiv 中文要点汇总 - cs.CV - 2025-12-13
 </thead>
 <tbody>
 <tr>
-  <td>11</td>
+  <td>10</td>
   <td><a href="./papers/251212206v1-alert-open-dataset-and-input-size-agnostic-vision-transformer-for-dr.html">ALERT Open Dataset and Input-Size-Agnostic Vision Transformer for Driver Activity Recognition using IR-UWB</a></td>
   <td>提出ISA-ViT和ALERT数据集，用于解决基于IR-UWB雷达的驾驶员行为识别问题</td>
   <td></td>

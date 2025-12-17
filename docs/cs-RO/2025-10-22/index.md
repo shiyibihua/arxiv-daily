@@ -5,15 +5,15 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-22
 
 # cs.RO（2025-10-22）
 
-📊 共 **12** 篇论文
- | 🔗 **3** 篇有代码
+📊 共 **11** 篇论文
+ | 🔗 **2** 篇有代码
 
 
 ## 🎯 兴趣领域导航
 
 <div class="interest-nav">
 <a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (5 🔗2)</a>
-<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (5 🔗1)</a>
+<a href="#支柱二rl算法与架构-rl-architecture" class="interest-badge">支柱二：RL算法与架构 (RL & Architecture) (4)</a>
 <a href="#支柱三空间感知与语义-perception-semantics" class="interest-badge">支柱三：空间感知与语义 (Perception & Semantics) (1)</a>
 <a href="#支柱九具身大模型-embodied-foundation-models" class="interest-badge">支柱九：具身大模型 (Embodied Foundation Models) (1)</a>
 </div>
@@ -67,7 +67,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-22
 </table>
 
 
-<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (5 篇)</h2>
+<h2 id="支柱二rl算法与架构-rl-architecture">🔬 支柱二：RL算法与架构 (RL & Architecture) (4 篇)</h2>
 
 <table>
 <thead>
@@ -97,13 +97,6 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-22
 </tr>
 <tr>
   <td>9</td>
-  <td><a href="./papers/251019818v1-semantic-world-models.html">Semantic World Models</a></td>
-  <td>提出基于视觉语言模型的语义世界模型，提升机器人控制泛化性</td>
-  <td>✅</td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.19818v1" onclick="toggleFavorite(this, '2510.19818v1', 'Semantic World Models')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>10</td>
   <td><a href="./papers/251019268v1-hierarchical-dlo-routing-with-reinforcement-learning-and-in-context-.html">Hierarchical DLO Routing with Reinforcement Learning and In-Context Vision-language Models</a></td>
   <td>提出基于强化学习和视觉语言模型的层级DLO路径规划方法</td>
   <td></td>
@@ -121,7 +114,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-22
 </thead>
 <tbody>
 <tr>
-  <td>11</td>
+  <td>10</td>
   <td><a href="./papers/251019752v1-learning-affordances-at-inference-time-for-vision-language-action-mo.html">Learning Affordances at Inference-Time for Vision-Language-Action Models</a></td>
   <td>提出LITEN，通过推理时学习能力提升VLA模型在复杂机器人任务中的表现</td>
   <td></td>
@@ -139,7 +132,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-22
 </thead>
 <tbody>
 <tr>
-  <td>12</td>
+  <td>11</td>
   <td><a href="./papers/251019655v1-lavira-language-vision-robot-actions-translation-for-zero-shot-visio.html">LaViRA: Language-Vision-Robot Actions Translation for Zero-Shot Vision Language Navigation in Continuous Environments</a></td>
   <td>LaViRA：用于连续环境零样本视觉语言导航的语言-视觉-机器人动作翻译框架</td>
   <td></td>

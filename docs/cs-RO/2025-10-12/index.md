@@ -5,7 +5,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-12
 
 # cs.RO（2025-10-12）
 
-📊 共 **14** 篇论文
+📊 共 **12** 篇论文
  | 🔗 **1** 篇有代码
 
 
@@ -13,7 +13,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-12
 
 <div class="interest-nav">
 <a href="#支柱一机器人控制-robot-control" class="interest-badge">支柱一：机器人控制 (Robot Control) (10 🔗1)</a>
-<a href="#支柱九具身大模型-embodied-foundation-models" class="interest-badge">支柱九：具身大模型 (Embodied Foundation Models) (4)</a>
+<a href="#支柱九具身大模型-embodied-foundation-models" class="interest-badge">支柱九：具身大模型 (Embodied Foundation Models) (2)</a>
 </div>
 
 ---
@@ -100,7 +100,7 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-12
 </table>
 
 
-<h2 id="支柱九具身大模型-embodied-foundation-models">🔬 支柱九：具身大模型 (Embodied Foundation Models) (4 篇)</h2>
+<h2 id="支柱九具身大模型-embodied-foundation-models">🔬 支柱九：具身大模型 (Embodied Foundation Models) (2 篇)</h2>
 
 <table>
 <thead>
@@ -109,27 +109,13 @@ title: arXiv 中文要点汇总 - cs.RO - 2025-10-12
 <tbody>
 <tr>
   <td>11</td>
-  <td><a href="./papers/251011754v1-zero-shot-large-language-model-agents-for-fully-automated-radiothera.html">Zero-Shot Large Language Model Agents for Fully Automated Radiotherapy Treatment Planning</a></td>
-  <td>提出基于零样本大语言模型的全自动放射治疗计划方法，提升计划质量。</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.11754v1" onclick="toggleFavorite(this, '2510.11754v1', 'Zero-Shot Large Language Model Agents for Fully Automated Radiotherapy Treatment Planning')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>12</td>
-  <td><a href="./papers/251010823v1-the-irrational-machine-neurosis-and-the-limits-of-algorithmic-safety.html">The Irrational Machine: Neurosis and the Limits of Algorithmic Safety</a></td>
-  <td>提出神经症框架以解决嵌入式AI的行为不一致问题</td>
-  <td></td>
-  <td><button class="favorite-btn" data-arxiv-id="2510.10823v1" onclick="toggleFavorite(this, '2510.10823v1', 'The Irrational Machine: Neurosis and the Limits of Algorithmic Safety')" title="添加到收藏夹">☆</button></td>
-</tr>
-<tr>
-  <td>13</td>
   <td><a href="./papers/251010731v1-controllable-generative-trajectory-prediction-via-weak-preference-al.html">Controllable Generative Trajectory Prediction via Weak Preference Alignment</a></td>
   <td>提出PrefCVAE以解决可控多样性轨迹预测问题</td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2510.10731v1" onclick="toggleFavorite(this, '2510.10731v1', 'Controllable Generative Trajectory Prediction via Weak Preference Alignment')" title="添加到收藏夹">☆</button></td>
 </tr>
 <tr>
-  <td>14</td>
+  <td>12</td>
   <td><a href="./papers/251010520v2-ai-agents-for-culturally-diverse-online-higher-education-environment.html">AI-Agents for Culturally Diverse Online Higher Education Environments</a></td>
   <td>提出利用生成式AI驱动的文化感知AI-Agent，以提升在线高等教育环境中的学生参与度和学习效果。</td>
   <td></td>

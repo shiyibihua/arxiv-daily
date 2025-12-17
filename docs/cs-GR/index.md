@@ -22,7 +22,6 @@ title: arXiv 中文要点汇总 - cs.GR
 <option value="2025-11-19/index.html" >2025-11-19</option>
 <option value="2025-11-18/index.html" >2025-11-18</option>
 <option value="2025-11-17/index.html" >2025-11-17</option>
-<option value="2025-11-16/index.html" >2025-11-16</option>
 <option value="2025-11-15/index.html" >2025-11-15</option>
 <option value="2025-11-11/index.html" >2025-11-11</option>
 <option value="2025-11-05/index.html" >2025-11-05</option>
@@ -129,7 +128,7 @@ title: arXiv 中文要点汇总 - cs.GR
 <div class="cal-day">13</div>
 <div class="cal-day">14</div>
 <a href="2025-11-15/index.html" class="cal-day has-data">15</a>
-<a href="2025-11-16/index.html" class="cal-day has-data">16</a>
+<div class="cal-day">16</div>
 <a href="2025-11-17/index.html" class="cal-day has-data">17</a>
 <a href="2025-11-18/index.html" class="cal-day has-data">18</a>
 <a href="2025-11-19/index.html" class="cal-day has-data">19</a>
