@@ -14,6 +14,9 @@
       <a href="{{ '/' | relative_url }}#cs-RO" class="nav-link">🤖 cs.RO</a>
       <a href="{{ '/' | relative_url }}#cs-CV" class="nav-link">👁️ cs.CV</a>
       <a href="{{ '/' | relative_url }}#cs-GR" class="nav-link">🎨 cs.GR</a>
+      <button class="nav-favorites" onclick="showFavorites()">
+        ⭐ 收藏夹 <span id="favorites-count" class="favorites-badge" style="display:none">0</span>
+      </button>
     </div>
   </div>
 </nav>
@@ -23,5 +26,206 @@
 <footer class="footer">
   <p>Powered by GitHub Pages · Generated on {{ site.time | date: "%Y-%m-%d" }}</p>
 </footer>
+
+<script>
+// ===== 收藏夹功能 =====
+const FAVORITES_KEY = 'arxiv_favorites';
+
+// 获取收藏列表
+function getFavorites() {
+  try {
+    return JSON.parse(localStorage.getItem(FAVORITES_KEY)) || {};
+  } catch (e) {
+    return {};
+  }
+}
+
+// 保存收藏列表
+function saveFavorites(favorites) {
+  localStorage.setItem(FAVORITES_KEY, JSON.stringify(favorites));
+}
+
+// 切换收藏状态
+function toggleFavorite(btn, arxivId, title) {
+  const favorites = getFavorites();
+  
+  if (favorites[arxivId]) {
+    // 取消收藏
+    delete favorites[arxivId];
+    btn.textContent = '☆';
+    btn.classList.remove('favorited');
+    btn.title = '添加到收藏夹';
+  } else {
+    // 添加收藏
+    favorites[arxivId] = {
+      title: title,
+      addedAt: new Date().toISOString(),
+      url: window.location.href
+    };
+    btn.textContent = '★';
+    btn.classList.add('favorited');
+    btn.title = '取消收藏';
+  }
+  
+  saveFavorites(favorites);
+  updateFavoriteCount();
+}
+
+// 页面加载时恢复收藏状态
+function restoreFavorites() {
+  const favorites = getFavorites();
+  document.querySelectorAll('.favorite-btn').forEach(btn => {
+    const arxivId = btn.getAttribute('data-arxiv-id');
+    if (favorites[arxivId]) {
+      btn.textContent = '★';
+      btn.classList.add('favorited');
+      btn.title = '取消收藏';
+    }
+  });
+  updateFavoriteCount();
+}
+
+// 更新收藏数量显示
+function updateFavoriteCount() {
+  const favorites = getFavorites();
+  const count = Object.keys(favorites).length;
+  const badge = document.getElementById('favorites-count');
+  if (badge) {
+    badge.textContent = count;
+    badge.style.display = count > 0 ? 'inline' : 'none';
+  }
+}
+
+// 显示收藏夹弹窗
+function showFavorites() {
+  const favorites = getFavorites();
+  const entries = Object.entries(favorites);
+  
+  // 创建弹窗
+  let modal = document.getElementById('favorites-modal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'favorites-modal';
+    modal.className = 'modal-overlay';
+    document.body.appendChild(modal);
+  }
+  
+  if (entries.length === 0) {
+    modal.innerHTML = `
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>⭐ 我的收藏夹</h3>
+          <button class="modal-close" onclick="closeFavorites()">✕</button>
+        </div>
+        <div class="modal-body">
+          <p style="color: var(--text-secondary); text-align: center; padding: 2rem;">
+            还没有收藏任何论文<br>
+            <small>点击论文列表中的 ☆ 添加收藏</small>
+          </p>
+        </div>
+      </div>
+    `;
+  } else {
+    const listHtml = entries
+      .sort((a, b) => new Date(b[1].addedAt) - new Date(a[1].addedAt))
+      .map(([id, data]) => `
+        <div class="favorite-item">
+          <a href="${data.url}" class="favorite-title">${data.title}</a>
+          <div class="favorite-meta">
+            <span>arXiv: ${id}</span>
+            <button class="remove-favorite" onclick="removeFavorite('${id}')">移除</button>
+          </div>
+        </div>
+      `).join('');
+    
+    modal.innerHTML = `
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>⭐ 我的收藏夹 (${entries.length})</h3>
+          <button class="modal-close" onclick="closeFavorites()">✕</button>
+        </div>
+        <div class="modal-body">
+          ${listHtml}
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" onclick="exportFavorites()">📤 导出</button>
+          <button class="btn btn-secondary" onclick="clearFavorites()">🗑️ 清空</button>
+        </div>
+      </div>
+    `;
+  }
+  
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+// 关闭收藏夹弹窗
+function closeFavorites() {
+  const modal = document.getElementById('favorites-modal');
+  if (modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+}
+
+// 从收藏夹移除
+function removeFavorite(arxivId) {
+  const favorites = getFavorites();
+  delete favorites[arxivId];
+  saveFavorites(favorites);
+  
+  // 更新页面上的按钮状态
+  const btn = document.querySelector(`.favorite-btn[data-arxiv-id="${arxivId}"]`);
+  if (btn) {
+    btn.textContent = '☆';
+    btn.classList.remove('favorited');
+    btn.title = '添加到收藏夹';
+  }
+  
+  // 刷新弹窗
+  showFavorites();
+  updateFavoriteCount();
+}
+
+// 导出收藏
+function exportFavorites() {
+  const favorites = getFavorites();
+  const text = Object.entries(favorites)
+    .map(([id, data]) => `${data.title}\nhttps://arxiv.org/abs/${id}\n`)
+    .join('\n');
+  
+  const blob = new Blob([text], { type: 'text/plain' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'arxiv_favorites.txt';
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+// 清空收藏
+function clearFavorites() {
+  if (confirm('确定要清空所有收藏吗？')) {
+    localStorage.removeItem(FAVORITES_KEY);
+    document.querySelectorAll('.favorite-btn').forEach(btn => {
+      btn.textContent = '☆';
+      btn.classList.remove('favorited');
+      btn.title = '添加到收藏夹';
+    });
+    closeFavorites();
+    updateFavoriteCount();
+  }
+}
+
+// 页面加载时初始化
+document.addEventListener('DOMContentLoaded', restoreFavorites);
+
+// 点击弹窗外部关闭
+document.addEventListener('click', function(e) {
+  if (e.target.classList.contains('modal-overlay')) {
+    closeFavorites();
+  }
+});
+</script>
 </body>
 </html>
