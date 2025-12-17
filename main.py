@@ -4,13 +4,14 @@
 arXiv 论文日报抓取工具
 
 用法:
-    python main.py                           # 基础抓取
+    python main.py                           # 基础抓取（使用兴趣筛选）
+    python main.py --no-filter               # 不使用兴趣筛选
     python main.py --thumbnails              # 抓取并获取缩略图
     python main.py --max-results 500         # 限制最大论文数
     python main.py --concurrency 16          # 提高AI分析并发数
 """
 
-from utils.scrapy import load_tags, get_today_arxiv
+from utils.scrapy import load_tags, get_today_arxiv, filter_by_interests
 from utils.analyser import get_client, update_ai_summary_async, get_model
 
 import argparse
@@ -31,6 +32,10 @@ def main():
                         help="AI生成温度 (默认: 0.2)")
     parser.add_argument("--tags-file", default="tags.json",
                         help="分类配置文件 (默认: tags.json)")
+    parser.add_argument("--interests-file", default="interests.json",
+                        help="兴趣配置文件 (默认: interests.json)")
+    parser.add_argument("--no-filter", action="store_true",
+                        help="不使用兴趣筛选，抓取所有论文")
     parser.add_argument("--skip-ai", action="store_true",
                         help="跳过AI分析，仅抓取论文")
     args = parser.parse_args()
@@ -47,15 +52,23 @@ def main():
         fetch_thumbnails=args.thumbnails
     )
     
+    metas = result.get("papers", [])
+    print(f"[INFO] 共抓取 {len(metas)} 篇论文")
+    
+    # 兴趣筛选
+    if not args.no_filter:
+        print(f"\n🎯 正在根据兴趣筛选论文...")
+        metas = filter_by_interests(metas, args.interests_file)
+        result["papers"] = metas
+        result["count"] = len(metas)
+        result["filtered"] = True
+    
     # 保存原始数据
     os.makedirs(f'data/{label_date}', exist_ok=True)
     arxiv_path = f'data/{label_date}/arxiv.json'
     with open(arxiv_path, 'w', encoding='utf-8') as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
     print(f"[OK] 保存原始数据: {arxiv_path}")
-    
-    metas = result.get("papers", [])
-    print(f"[INFO] 共抓取 {len(metas)} 篇论文")
     
     # 统计代码链接
     papers_with_code = sum(1 for p in metas if p.get("code_links"))
@@ -68,6 +81,10 @@ def main():
     
     if args.skip_ai:
         print("[INFO] 跳过AI分析")
+        return
+    
+    if len(metas) == 0:
+        print("[WARN] 没有匹配兴趣的论文，跳过AI分析")
         return
     
     # AI 分析

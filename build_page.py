@@ -107,6 +107,12 @@ def render_paper_md(p: Dict[str, Any]) -> str:
         lines.append(f"## 💡 一句话要点\n")
         lines.append(f"**{md_escape(headline)}**\n")
     
+    # 匹配的兴趣领域
+    matched_interests = p.get("matched_interests", [])
+    if matched_interests:
+        interests_str = " ".join([f"**{m['name']}**" for m in matched_interests])
+        lines.append(f"🎯 **匹配领域**: {interests_str}\n")
+    
     # 关键词标签
     if tags:
         tags_html = " ".join([f"`{t}`" for t in tags])

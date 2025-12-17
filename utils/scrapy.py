@@ -16,6 +16,101 @@ def load_tags(tags_file: str) -> List[str]:
         tags = json.load(f)
     return tags['tags']
 
+
+def load_interests(interests_file: str) -> Dict:
+    """加载用户感兴趣的领域配置"""
+    try:
+        with open(interests_file, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return None
+
+
+def match_interests(paper: Dict, interests_config: Dict) -> Dict:
+    """
+    检查论文是否匹配用户感兴趣的领域
+    返回匹配信息：匹配的领域列表和相关性分数
+    """
+    if not interests_config:
+        return {"matched_interests": [], "relevance_score": 0}
+    
+    interests = interests_config.get("interests", [])
+    filter_mode = interests_config.get("filter_mode", "any")  # "any" 或 "all"
+    
+    title = paper.get("title", "").lower()
+    summary = paper.get("summary", "").lower()
+    text = f"{title} {summary}"
+    
+    matched = []
+    total_score = 0
+    
+    for interest in interests:
+        if not interest.get("enabled", True):
+            continue
+        
+        name = interest.get("name", "")
+        keywords = interest.get("keywords", [])
+        
+        # 检查是否匹配任一关键词
+        match_count = 0
+        matched_keywords = []
+        for kw in keywords:
+            if kw.lower() in text:
+                match_count += 1
+                matched_keywords.append(kw)
+        
+        if match_count > 0:
+            matched.append({
+                "name": name,
+                "matched_keywords": matched_keywords,
+                "score": match_count
+            })
+            total_score += match_count
+    
+    return {
+        "matched_interests": matched,
+        "relevance_score": total_score
+    }
+
+
+def filter_by_interests(papers: List[Dict], interests_file: str = "interests.json") -> List[Dict]:
+    """根据用户兴趣筛选论文"""
+    interests_config = load_interests(interests_file)
+    
+    if not interests_config:
+        print("[INFO] 未找到 interests.json，跳过兴趣筛选")
+        return papers
+    
+    min_score = interests_config.get("min_relevance_score", 1)
+    
+    filtered = []
+    for paper in papers:
+        match_info = match_interests(paper, interests_config)
+        paper["matched_interests"] = match_info["matched_interests"]
+        paper["relevance_score"] = match_info["relevance_score"]
+        
+        if match_info["relevance_score"] >= min_score:
+            filtered.append(paper)
+    
+    # 按相关性分数排序
+    filtered.sort(key=lambda x: x.get("relevance_score", 0), reverse=True)
+    
+    print(f"[INFO] 兴趣筛选: {len(papers)} → {len(filtered)} 篇论文")
+    
+    # 显示匹配统计
+    interest_counts = {}
+    for p in filtered:
+        for m in p.get("matched_interests", []):
+            name = m["name"]
+            interest_counts[name] = interest_counts.get(name, 0) + 1
+    
+    if interest_counts:
+        print("[INFO] 各领域匹配数量:")
+        for name, count in sorted(interest_counts.items(), key=lambda x: -x[1]):
+            print(f"       {name}: {count} 篇")
+    
+    return filtered
+
 def get_UTC_range() -> Tuple[str, str, str]:
     fmt = "%Y%m%d%H%M"
     

@@ -1,0 +1,52 @@
+{
+    "interests": [
+        {
+            "name": "四足机器人",
+            "keywords": ["quadruped", "legged robot", "four-legged", "dog robot", "spot robot", "anymal", "go1", "unitree", "legged locomotion"],
+            "enabled": true
+        },
+        {
+            "name": "人形机器人",
+            "keywords": ["humanoid", "bipedal", "humanoid robot", "humanoid control", "human-like robot", "biped", "walking robot", "figure", "atlas", "digit", "optimus"],
+            "enabled": true
+        },
+        {
+            "name": "动作生成",
+            "keywords": ["motion generation", "motion synthesis", "character animation", "motion capture", "mocap", "motion prediction", "human motion", "skeletal animation", "motion diffusion", "motion prior"],
+            "enabled": true
+        },
+        {
+            "name": "物理动作",
+            "keywords": ["physics-based", "physical simulation", "physics simulation", "physics-based animation", "physics-based character", "contact dynamics", "ragdoll", "musculoskeletal", "biomechanics"],
+            "enabled": true
+        },
+        {
+            "name": "自动驾驶",
+            "keywords": ["autonomous driving", "self-driving", "autonomous vehicle", "end-to-end driving", "driving policy", "vehicle control", "lane detection", "traffic", "lidar", "driving scene", "nuScenes", "waymo", "carla"],
+            "enabled": true
+        },
+        {
+            "name": "深度估计",
+            "keywords": ["depth estimation", "monocular depth", "stereo depth", "depth prediction", "metric depth", "depth completion", "depth map", "disparity", "3D reconstruction"],
+            "enabled": true
+        },
+        {
+            "name": "视觉里程计",
+            "keywords": ["visual odometry", "visual SLAM", "VO", "VIO", "visual-inertial", "camera localization", "pose estimation", "ego-motion", "SLAM", "localization", "mapping"],
+            "enabled": true
+        },
+        {
+            "name": "世界模型",
+            "keywords": ["world model", "world simulator", "video prediction", "future prediction", "environment model", "predictive model", "dreamer", "imagination", "latent dynamics"],
+            "enabled": true
+        },
+        {
+            "name": "强化学习",
+            "keywords": ["reinforcement learning", "RL", "policy learning", "reward", "PPO", "SAC", "actor-critic", "imitation learning", "offline RL", "online RL", "sim-to-real", "sim2real"],
+            "enabled": true
+        }
+    ],
+    "filter_mode": "any",
+    "min_relevance_score": 1
+}
+
