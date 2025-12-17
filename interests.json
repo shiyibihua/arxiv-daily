@@ -1,151 +1,158 @@
 {
     "interests": [
         {
-            "name": "四足机器人",
+            "name": "四足机器人 (Quadruped)",
             "keywords": [
                 "quadruped",
                 "legged robot",
-                "four-legged",
-                "dog robot",
-                "spot robot",
-                "anymal",
-                "go1",
+                "legged locomotion",
+                "terrain adaptation",
+                "proprioceptive",
+                "blind locomotion",
+                "parkour",
                 "unitree",
-                "legged locomotion"
+                "anymal",
+                "mini cheetah",
+                "locomotion policy"
             ],
             "enabled": true
         },
         {
-            "name": "人形机器人",
+            "name": "人形/双足机器人 (Humanoid & Biped)",
             "keywords": [
                 "humanoid",
-                "imitation learning",
-                "whole body control",
                 "bipedal",
-                "humanoid robot",
-                "humanoid control",
-                "human-like robot",
                 "biped",
-                "walking robot",
-                "figure",
-                "atlas",
+                "whole body control",
+                "WBC",
+                "humanoid locomotion",
+                "humanoid manipulation",
+                "sim-to-real",
+                "zero-shot transfer",
+                "dynamic walking",
                 "digit",
-                "optimus"
+                "optimus",
+                "atlas",
+                "H1",
+                "G1"
             ],
             "enabled": true
         },
         {
-            "name": "动作生成",
+            "name": "机器人操作与灵巧手 (Manipulation)",
             "keywords": [
-                "motion generation",
-                "motion synthesis",
-                "character animation",
-                "motion capture",
-                "mocap",
-                "motion prediction",
-                "human motion",
-                "skeletal animation",
-                "motion diffusion",
-                "motion prior"
+                "robotic manipulation",
+                "dexterous hand",
+                "mobile manipulation",
+                "grasping",
+                "teleoperation",
+                "visual servoing",
+                "in-hand manipulation",
+                "tactile sensing",
+                "bi-manual",
+                "manipulation policy"
             ],
             "enabled": true
         },
         {
-            "name": "物理动作",
-            "keywords": [
-                "physics-based",
-                "physical simulation",
-                "physics simulation",
-                "physics-based animation",
-                "physics-based character",
-                "contact dynamics",
-                "ragdoll",
-                "musculoskeletal",
-                "biomechanics"
-            ],
-            "enabled": true
-        },
-        {
-            "name": "自动驾驶",
-            "keywords": [
-                "autonomous driving",
-                "self-driving",
-                "autonomous vehicle",
-                "end-to-end driving",
-                "driving policy",
-                "vehicle control",
-                "lane detection",
-                "traffic",
-                "lidar",
-                "driving scene",
-                "nuScenes",
-                "waymo",
-                "carla"
-            ],
-            "enabled": true
-        },
-        {
-            "name": "深度估计",
-            "keywords": [
-                "depth estimation",
-                "monocular depth",
-                "stereo depth",
-                "depth prediction",
-                "metric depth",
-                "depth completion",
-                "depth map",
-                "disparity",
-                "3D reconstruction"
-            ],
-            "enabled": true
-        },
-        {
-            "name": "视觉里程计",
-            "keywords": [
-                "visual odometry",
-                "visual SLAM",
-                "VO",
-                "VIO",
-                "visual-inertial",
-                "camera localization",
-                "pose estimation",
-                "ego-motion",
-                "SLAM",
-                "localization",
-                "mapping"
-            ],
-            "enabled": true
-        },
-        {
-            "name": "世界模型",
-            "keywords": [
-                "world model",
-                "world simulator",
-                "video prediction",
-                "future prediction",
-                "environment model",
-                "predictive model",
-                "dreamer",
-                "imagination",
-                "latent dynamics"
-            ],
-            "enabled": true
-        },
-        {
-            "name": "强化学习",
+            "name": "强化学习与模仿学习 (RL & IL)",
             "keywords": [
                 "reinforcement learning",
-                "RL",
-                "policy learning",
-                "reward",
+                "imitation learning",
+                "behavior cloning",
+                "inverse reinforcement learning",
+                "diffusion policy",
+                "decision transformer",
+                "offline RL",
+                "sim2real",
+                "domain randomization",
+                "reward engineering",
                 "PPO",
                 "SAC",
-                "actor-critic",
-                "imitation learning",
-                "offline RL",
-                "online RL",
-                "sim-to-real",
-                "sim2real"
+                "DDPG"
+            ],
+            "enabled": true
+        },
+        {
+            "name": "动作生成与物理动画 (Animation & Physics)",
+            "keywords": [
+                "motion generation",
+                "motion retargeting",
+                "physics-based animation",
+                "deepmimic",
+                "physically simulated character",
+                "motion matching",
+                "adversarial motion priors",
+                "AMP",
+                "motion tracking",
+                "kinematic retargeting",
+                "skeletal animation"
+            ],
+            "enabled": true
+        },
+        {
+            "name": "具身智能与表征学习 (Embodied AI & Representation)",
+            "keywords": [
+                "embodied AI",
+                "foundation models",
+                "VLA",
+                "vision-language-action",
+                "representation learning",
+                "self-supervised learning",
+                "masked autoencoder",
+                "visual pre-training",
+                "robot learning",
+                "generalist robot policy"
+            ],
+            "enabled": true
+        },
+        {
+            "name": "3D感知与状态估计 (Perception & State Est)",
+            "keywords": [
+                "visual odometry",
+                "VIO",
+                "SLAM",
+                "state estimation",
+                "depth estimation",
+                "monocular depth",
+                "stereo matching",
+                "optical flow",
+                "structure from motion",
+                "nerf",
+                "gaussian splatting",
+                "3D reconstruction",
+                "occupancy grid"
+            ],
+            "enabled": true
+        },
+        {
+            "name": "世界模型与预测 (World Models)",
+            "keywords": [
+                "world model",
+                "video prediction",
+                "predictive model",
+                "latent dynamics",
+                "model-based RL",
+                "dreamer",
+                "environment simulator",
+                "future prediction",
+                "physics prediction"
+            ],
+            "enabled": true
+        },
+        {
+            "name": "自动驾驶 (Autonomous Driving)",
+            "keywords": [
+                "end-to-end driving",
+                "autonomous driving",
+                "planning",
+                "trajectory prediction",
+                "behavior prediction",
+                "waymo",
+                "nuscenes",
+                "uniad",
+                "closed-loop evaluation",
+                "driving policy"
             ],
             "enabled": true
         }
