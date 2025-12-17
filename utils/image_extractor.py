@@ -1,5 +1,6 @@
 """
-从 arXiv HTML 版本 (ar5iv) 提取论文图片
+从 arXiv 官方 HTML 版本提取论文图片
+优先使用 arxiv.org/html/（更新快），回退到 ar5iv
 使用同步请求，避免 asyncio 事件循环冲突
 """
 import re
@@ -9,7 +10,9 @@ from typing import List, Dict, Optional
 from tqdm import tqdm
 
 
-# ar5iv 基础 URL
+# arXiv 官方 HTML 版本（首选，更新更快）
+ARXIV_HTML_BASE = "https://arxiv.org/html/"
+# ar5iv 备选（某些旧论文可能只有这个）
 AR5IV_BASE = "https://ar5iv.labs.arxiv.org/html/"
 
 # 请求超时
@@ -34,16 +37,25 @@ def extract_arxiv_id(arxiv_id: str) -> str:
     return match.group(1) if match else arxiv_id.split('v')[0]
 
 
-def parse_images_from_html(html: str, arxiv_id: str) -> List[Dict]:
+def parse_images_from_html(html: str, arxiv_id: str, base_url: str = None) -> List[Dict]:
     """
-    从 ar5iv HTML 中解析图片
+    从 arXiv HTML 中解析图片
     返回: [{"url": "...", "caption": "...", "figure_id": "figure1"}, ...]
+    
+    Args:
+        html: HTML 内容
+        arxiv_id: arXiv ID
+        base_url: 图片的基础 URL（如 https://arxiv.org/html/2512.14689v1/）
     """
     images = []
     seen_urls = set()
     
+    # 默认使用 arXiv 官方 HTML
+    if base_url is None:
+        base_url = f"{ARXIV_HTML_BASE}{arxiv_id}/"
+    
     # 过滤词（跳过网站图标等）
-    skip_keywords = ['icon', 'logo', 'badge', 'button', 'social', 'static/browse', 'cornell', 'arxiv-logo']
+    skip_keywords = ['icon', 'logo', 'badge', 'button', 'social', 'static/browse', 'cornell', 'arxiv-logo', 'data:image']
     
     def should_skip(src):
         src_lower = src.lower()
@@ -52,10 +64,16 @@ def parse_images_from_html(html: str, arxiv_id: str) -> List[Dict]:
     def build_url(img_src):
         if img_src.startswith('http'):
             return img_src
+        elif img_src.startswith('data:'):
+            return None  # 跳过 data URI
         elif img_src.startswith('/'):
-            return f"https://ar5iv.labs.arxiv.org{img_src}"
+            # 绝对路径，提取域名
+            from urllib.parse import urlparse
+            parsed = urlparse(base_url)
+            return f"{parsed.scheme}://{parsed.netloc}{img_src}"
         else:
-            return f"{AR5IV_BASE}{arxiv_id}/{img_src}"
+            # 相对路径
+            return f"{base_url.rstrip('/')}/{img_src}"
     
     # 方法1: 匹配 figure 标签中的图片
     figure_pattern = re.compile(
@@ -136,6 +154,7 @@ def parse_images_from_html(html: str, arxiv_id: str) -> List[Dict]:
 def extract_paper_images(arxiv_id: str, max_images: int = 5) -> List[Dict]:
     """
     提取单篇论文的图片（同步）
+    优先使用 arxiv.org/html/（官方，更新快），失败则回退到 ar5iv
     
     Args:
         arxiv_id: arXiv ID (如 2512.14689 或 2512.14689v1)
@@ -145,13 +164,25 @@ def extract_paper_images(arxiv_id: str, max_images: int = 5) -> List[Dict]:
         图片列表 [{"url": "...", "caption": "...", "figure_id": "..."}, ...]
     """
     clean_id = extract_arxiv_id(arxiv_id)
-    html_url = f"{AR5IV_BASE}{clean_id}"
     
+    # 优先尝试 arXiv 官方 HTML 版本
+    html_url = f"{ARXIV_HTML_BASE}{arxiv_id}"  # 官方版本需要完整 ID（含版本号）
+    base_url = f"{ARXIV_HTML_BASE}{arxiv_id}/"
     html = fetch_html(html_url)
+    
+    # 如果官方版本失败，回退到 ar5iv
+    if not html:
+        html_url = f"{AR5IV_BASE}{clean_id}"
+        base_url = f"{AR5IV_BASE}{clean_id}/"
+        html = fetch_html(html_url)
+    
     if not html:
         return []
     
-    images = parse_images_from_html(html, clean_id)
+    images = parse_images_from_html(html, arxiv_id, base_url)
+    
+    # 过滤掉 None URL
+    images = [img for img in images if img.get("url")]
     
     # 优先选择有 caption 的图片
     images_with_caption = [img for img in images if img["caption"]]
