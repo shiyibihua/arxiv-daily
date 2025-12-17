@@ -5,11 +5,11 @@ title: arXiv 中文要点汇总 - cs.GR
 
 # cs.GR
 
-> 选择日期查看该分类下的论文
+> 点击日历中高亮的日期查看论文
 
 
 <div class="date-switcher">
-  <label for="date-select"><strong>选择日期：</strong></label>
+  <label for="date-select"><strong>快速跳转：</strong></label>
   <select id="date-select" onchange="location.href=this.value;">
     <option value="2025-12-11/index.html" selected>2025-12-11</option>
 <option value="2025-12-04/index.html" >2025-12-04</option>
@@ -32,23 +32,109 @@ title: arXiv 中文要点汇总 - cs.GR
 </div>
 
 
-## 日期列表
+<div class="calendar-container">
+<div class="calendar-month">
+<h3 class="month-title">2025年12月</h3>
+<div class="calendar-grid">
+<div class="cal-header">日</div>
+<div class="cal-header">一</div>
+<div class="cal-header">二</div>
+<div class="cal-header">三</div>
+<div class="cal-header">四</div>
+<div class="cal-header">五</div>
+<div class="cal-header">六</div>
+<div class="cal-day empty"></div>
+<div class="cal-day">1</div>
+<div class="cal-day">2</div>
+<a href="2025-12-03/index.html" class="cal-day has-data">3</a>
+<a href="2025-12-04/index.html" class="cal-day has-data">4</a>
+<div class="cal-day">5</div>
+<div class="cal-day">6</div>
+<div class="cal-day">7</div>
+<div class="cal-day">8</div>
+<div class="cal-day">9</div>
+<div class="cal-day">10</div>
+<a href="2025-12-11/index.html" class="cal-day has-data">11</a>
+<div class="cal-day">12</div>
+<div class="cal-day">13</div>
+<div class="cal-day">14</div>
+<div class="cal-day">15</div>
+<div class="cal-day">16</div>
+<div class="cal-day">17</div>
+<div class="cal-day">18</div>
+<div class="cal-day">19</div>
+<div class="cal-day">20</div>
+<div class="cal-day">21</div>
+<div class="cal-day">22</div>
+<div class="cal-day">23</div>
+<div class="cal-day">24</div>
+<div class="cal-day">25</div>
+<div class="cal-day">26</div>
+<div class="cal-day">27</div>
+<div class="cal-day">28</div>
+<div class="cal-day">29</div>
+<div class="cal-day">30</div>
+<div class="cal-day">31</div>
+<div class="cal-day empty"></div>
+<div class="cal-day empty"></div>
+<div class="cal-day empty"></div>
+</div>
+</div>
+<div class="calendar-month">
+<h3 class="month-title">2025年11月</h3>
+<div class="calendar-grid">
+<div class="cal-header">日</div>
+<div class="cal-header">一</div>
+<div class="cal-header">二</div>
+<div class="cal-header">三</div>
+<div class="cal-header">四</div>
+<div class="cal-header">五</div>
+<div class="cal-header">六</div>
+<div class="cal-day empty"></div>
+<div class="cal-day empty"></div>
+<div class="cal-day empty"></div>
+<div class="cal-day empty"></div>
+<div class="cal-day empty"></div>
+<div class="cal-day empty"></div>
+<div class="cal-day">1</div>
+<div class="cal-day">2</div>
+<a href="2025-11-03/index.html" class="cal-day has-data">3</a>
+<div class="cal-day">4</div>
+<a href="2025-11-05/index.html" class="cal-day has-data">5</a>
+<div class="cal-day">6</div>
+<div class="cal-day">7</div>
+<div class="cal-day">8</div>
+<div class="cal-day">9</div>
+<div class="cal-day">10</div>
+<a href="2025-11-11/index.html" class="cal-day has-data">11</a>
+<div class="cal-day">12</div>
+<div class="cal-day">13</div>
+<div class="cal-day">14</div>
+<a href="2025-11-15/index.html" class="cal-day has-data">15</a>
+<a href="2025-11-16/index.html" class="cal-day has-data">16</a>
+<a href="2025-11-17/index.html" class="cal-day has-data">17</a>
+<a href="2025-11-18/index.html" class="cal-day has-data">18</a>
+<a href="2025-11-19/index.html" class="cal-day has-data">19</a>
+<a href="2025-11-20/index.html" class="cal-day has-data">20</a>
+<div class="cal-day">21</div>
+<a href="2025-11-22/index.html" class="cal-day has-data">22</a>
+<div class="cal-day">23</div>
+<a href="2025-11-24/index.html" class="cal-day has-data">24</a>
+<div class="cal-day">25</div>
+<a href="2025-11-26/index.html" class="cal-day has-data">26</a>
+<a href="2025-11-27/index.html" class="cal-day has-data">27</a>
+<div class="cal-day">28</div>
+<div class="cal-day">29</div>
+<div class="cal-day">30</div>
+<div class="cal-day empty"></div>
+<div class="cal-day empty"></div>
+<div class="cal-day empty"></div>
+<div class="cal-day empty"></div>
+<div class="cal-day empty"></div>
+<div class="cal-day empty"></div>
+</div>
+</div>
+</div>
 
-- [2025-12-11](2025-12-11/index.html)
-- [2025-12-04](2025-12-04/index.html)
-- [2025-12-03](2025-12-03/index.html)
-- [2025-11-27](2025-11-27/index.html)
-- [2025-11-26](2025-11-26/index.html)
-- [2025-11-24](2025-11-24/index.html)
-- [2025-11-22](2025-11-22/index.html)
-- [2025-11-20](2025-11-20/index.html)
-- [2025-11-19](2025-11-19/index.html)
-- [2025-11-18](2025-11-18/index.html)
-- [2025-11-17](2025-11-17/index.html)
-- [2025-11-16](2025-11-16/index.html)
-- [2025-11-15](2025-11-15/index.html)
-- [2025-11-11](2025-11-11/index.html)
-- [2025-11-05](2025-11-05/index.html)
-- [2025-11-03](2025-11-03/index.html)
 
-[返回主页](../index.html)
+[🏠 返回主页](../index.html)

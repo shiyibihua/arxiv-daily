@@ -256,11 +256,14 @@ def build_tag_date_index_md(tag: str, date_label: str, papers: List[Dict[str, An
     return "\n".join(lines)
 
 def build_tag_index_md(tag: str, dates: List[str], site_title: str) -> str:
-    """生成某分类的首页（日期列表）"""
+    """生成某分类的首页（日历视图）"""
+    from datetime import datetime
+    import calendar
+    
     lines = []
     lines.append(f"---\nlayout: default\ntitle: {site_title} - {tag}\n---\n")
     lines.append(f"# {tag}\n")
-    lines.append("> 选择日期查看该分类下的论文\n")
+    lines.append("> 点击日历中高亮的日期查看论文\n")
     
     # 生成日期选择器
     latest_date = sorted(dates)[-1] if dates else ""
@@ -270,7 +273,7 @@ def build_tag_index_md(tag: str, dates: List[str], site_title: str) -> str:
     )
     html_block = f"""
 <div class="date-switcher">
-  <label for="date-select"><strong>选择日期：</strong></label>
+  <label for="date-select"><strong>快速跳转：</strong></label>
   <select id="date-select" onchange="location.href=this.value;">
     {options_html}
   </select>
@@ -278,11 +281,50 @@ def build_tag_index_md(tag: str, dates: List[str], site_title: str) -> str:
 </div>
 """
     lines.append(html_block)
-    lines.append("\n## 日期列表\n")
-    for d in sorted(dates, reverse=True):
-        lines.append(f"- [{d}]({d}/index.html)")
-    lines.append("")
-    lines.append("[返回主页](../index.html)")
+    
+    # 按月份分组生成日历
+    date_set = set(dates)
+    if dates:
+        # 解析日期并按月份分组
+        date_objs = [datetime.strptime(d, "%Y-%m-%d") for d in dates]
+        months = sorted(set((d.year, d.month) for d in date_objs), reverse=True)
+        
+        lines.append('\n<div class="calendar-container">')
+        
+        for year, month in months:
+            month_name = f"{year}年{month}月"
+            lines.append(f'<div class="calendar-month">')
+            lines.append(f'<h3 class="month-title">{month_name}</h3>')
+            lines.append('<div class="calendar-grid">')
+            lines.append('<div class="cal-header">日</div>')
+            lines.append('<div class="cal-header">一</div>')
+            lines.append('<div class="cal-header">二</div>')
+            lines.append('<div class="cal-header">三</div>')
+            lines.append('<div class="cal-header">四</div>')
+            lines.append('<div class="cal-header">五</div>')
+            lines.append('<div class="cal-header">六</div>')
+            
+            # 获取该月的日历
+            cal = calendar.Calendar(firstweekday=6)  # 周日开始
+            month_days = cal.monthdayscalendar(year, month)
+            
+            for week in month_days:
+                for day in week:
+                    if day == 0:
+                        lines.append('<div class="cal-day empty"></div>')
+                    else:
+                        date_str = f"{year}-{month:02d}-{day:02d}"
+                        if date_str in date_set:
+                            lines.append(f'<a href="{date_str}/index.html" class="cal-day has-data">{day}</a>')
+                        else:
+                            lines.append(f'<div class="cal-day">{day}</div>')
+            
+            lines.append('</div>')  # calendar-grid
+            lines.append('</div>')  # calendar-month
+        
+        lines.append('</div>')  # calendar-container
+    
+    lines.append("\n\n[🏠 返回主页](../index.html)")
     return "\n".join(lines)
 
 def build_home_md(tags: List[str], tag_stats: Dict[str, Dict], site_title: str) -> str:
