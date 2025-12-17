@@ -1,0 +1,572 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import argparse, json, os, re, sys, datetime
+from pathlib import Path
+from typing import List, Dict, Any, Tuple
+from collections import defaultdict
+
+# =============== 基础工具 ===============
+
+def slugify(text: str, maxlen: int = 80) -> str:
+    text = re.sub(r"[^\w\s-]", "", text, flags=re.U).strip().lower()
+    text = re.sub(r"[\s_-]+", "-", text)
+    return text[:maxlen] if maxlen else text
+
+def read_json(p: Path) -> Dict[str, Any]:
+    with p.open("r", encoding="utf-8") as f:
+        return json.load(f)
+
+def ensure_dir(p: Path):
+    p.mkdir(parents=True, exist_ok=True)
+
+def md_escape(s: str) -> str:
+    return s.replace("|", r"\|")
+
+def to_authors(auth_list) -> str:
+    if isinstance(auth_list, list):
+        return ", ".join(auth_list)
+    return str(auth_list)
+
+def load_tags(tags_file: Path) -> List[str]:
+    """加载 tags.json 中的分类列表"""
+    with tags_file.open("r", encoding="utf-8") as f:
+        data = json.load(f)
+    return data.get("tags", [])
+
+# =============== 渲染 ===============
+
+def render_paper_md(p: Dict[str, Any]) -> str:
+    """渲染论文详情页面（增强版）"""
+    title = p.get("title", "").strip()
+    authors = to_authors(p.get("authors", []))
+    arxiv_id = p.get("arxiv_id", "")
+    headline = p.get("headline_zh", "").strip()
+    intro = p.get("intro_zh", [])
+    tags = p.get("tags_zh", [])
+    summary = p.get("summary", "").strip()
+    categories = p.get("categories", [])
+    
+    # 新增字段
+    summary_zh = p.get("summary_zh", "").strip()
+    method_zh = p.get("method_zh", "").strip()
+    application_zh = p.get("application_zh", "").strip()
+    highlight_zh = p.get("highlight_zh", "").strip()
+    thumbnail = p.get("thumbnail", "").strip()
+    code_links = p.get("code_links", [])
+    published = p.get("published", "").strip()
+    updated = p.get("updated", "").strip()
+    comment = p.get("comment", "").strip()
+    doi = p.get("doi", "").strip()
+    journal_ref = p.get("journal_ref", "").strip()
+
+    lines = []
+    lines.append(f"# {md_escape(title)}")
+    
+    # 基础信息区
+    if arxiv_id:
+        base_id = arxiv_id.split('v')[0]
+        abs_url = f"https://arxiv.org/abs/{base_id}"
+        pdf_url = f"https://arxiv.org/pdf/{base_id}.pdf"
+        lines.append(f"\n**arXiv**: [{arxiv_id}]({abs_url}) | [PDF]({pdf_url})")
+    
+    lines.append(f"\n**作者**: {md_escape(authors)}")
+    
+    if categories:
+        lines.append(f"\n**分类**: {', '.join(categories)}")
+    
+    if published:
+        date_info = f"**发布日期**: {published}"
+        if updated and updated != published:
+            date_info += f" (更新: {updated})"
+        lines.append(f"\n{date_info}")
+    
+    if comment:
+        lines.append(f"\n**备注**: {md_escape(comment)}")
+    
+    if journal_ref:
+        lines.append(f"\n**期刊**: {md_escape(journal_ref)}")
+    
+    if doi:
+        lines.append(f"\n**DOI**: [{doi}](https://doi.org/{doi})")
+    
+    # 代码链接
+    if code_links:
+        links_str = " | ".join([f"[{l.get('type', 'code').upper()}]({l['url']})" for l in code_links])
+        lines.append(f"\n**🔗 代码/项目**: {links_str}")
+    
+    lines.append("\n---\n")
+    
+    # 预览图片
+    if thumbnail:
+        lines.append(f"![论文预览图]({thumbnail})")
+        lines.append("")
+    
+    # 一句话要点
+    if headline:
+        lines.append(f"## 💡 一句话要点\n")
+        lines.append(f"**{md_escape(headline)}**\n")
+    
+    # 关键词标签
+    if tags:
+        tags_html = " ".join([f"`{t}`" for t in tags])
+        lines.append(f"**关键词**: {tags_html}\n")
+    
+    # 核心要点（3点简述）
+    if intro and isinstance(intro, list):
+        lines.append("## 📋 核心要点\n")
+        for i, it in enumerate(intro, 1):
+            lines.append(f"{i}. {md_escape(str(it))}")
+        lines.append("")
+    
+    # 中文摘要
+    if summary_zh:
+        lines.append("## 📝 摘要（中文）\n")
+        lines.append(f"{md_escape(summary_zh)}\n")
+    
+    # 方法详解
+    if method_zh:
+        lines.append("## 🔬 方法详解\n")
+        lines.append(f"{md_escape(method_zh)}\n")
+    
+    # 实验亮点
+    if highlight_zh:
+        lines.append("## 📊 实验亮点\n")
+        lines.append(f"{md_escape(highlight_zh)}\n")
+    
+    # 应用场景
+    if application_zh:
+        lines.append("## 🎯 应用场景\n")
+        lines.append(f"{md_escape(application_zh)}\n")
+    
+    # 原文摘要
+    lines.append("## 📄 摘要（原文）\n")
+    lines.append(f"> " + "\n> ".join(md_escape(summary).splitlines()))
+    lines.append("")
+    
+    return "\n".join(lines)
+
+def build_tag_date_index_md(tag: str, date_label: str, papers: List[Dict[str, Any]], site_title: str) -> str:
+    """生成某分类某日期的目录页（增强版）"""
+    lines = []
+    lines.append(f"---\nlayout: default\ntitle: {site_title} - {tag} - {date_label}\n---\n")
+    lines.append(f"# {tag}（{date_label}）\n")
+    
+    # 统计信息
+    papers_with_code = sum(1 for p in papers if p.get("code_links"))
+    lines.append(f"📊 共 **{len(papers)}** 篇论文")
+    if papers_with_code:
+        lines.append(f" | 🔗 **{papers_with_code}** 篇有代码")
+    lines.append("\n")
+    
+    lines.append("| # | 题目 | 一句话要点 | 🔗 |")
+    lines.append("|---:|---|---|:---:|")
+    for i, p in enumerate(papers, 1):
+        title = p.get("title", "").strip()
+        slug = slugify(f"{p.get('arxiv_id','')}-{title}") or f"paper-{i}"
+        headline = md_escape(p.get("headline_zh", ""))
+        # 代码链接标记
+        code_links = p.get("code_links", [])
+        code_icon = "✅" if code_links else ""
+        lines.append(f"| {i} | [{md_escape(title)}](./papers/{slug}.html) | {headline} | {code_icon} |")
+    lines.append("")
+    lines.append(f"[⬅️ 返回 {tag} 首页](../index.html) · [🏠 返回主页](../../index.html)")
+    return "\n".join(lines)
+
+def build_tag_index_md(tag: str, dates: List[str], site_title: str) -> str:
+    """生成某分类的首页（日期列表）"""
+    lines = []
+    lines.append(f"---\nlayout: default\ntitle: {site_title} - {tag}\n---\n")
+    lines.append(f"# {tag}\n")
+    lines.append("> 选择日期查看该分类下的论文\n")
+    
+    # 生成日期选择器
+    latest_date = sorted(dates)[-1] if dates else ""
+    options_html = "\n".join(
+        [f'<option value="{d}/index.html" {"selected" if d == latest_date else ""}>{d}</option>'
+         for d in sorted(dates, reverse=True)]
+    )
+    html_block = f"""
+<div class="date-switcher">
+  <label for="date-select"><strong>选择日期：</strong></label>
+  <select id="date-select" onchange="location.href=this.value;">
+    {options_html}
+  </select>
+  <a class="btn" href="{latest_date}/index.html">前往最新（{latest_date}）</a>
+</div>
+"""
+    lines.append(html_block)
+    lines.append("\n## 日期列表\n")
+    for d in sorted(dates, reverse=True):
+        lines.append(f"- [{d}]({d}/index.html)")
+    lines.append("")
+    lines.append("[返回主页](../index.html)")
+    return "\n".join(lines)
+
+def build_home_md(tags: List[str], tag_latest_dates: Dict[str, str], site_title: str) -> str:
+    """
+    首页：包含分类导航（只显示有数据的分类）
+    """
+    lines = []
+    lines.append(f"---\nlayout: default\ntitle: {site_title}\n---\n")
+    lines.append(f"# {site_title}\n")
+    lines.append("> 选择分类查看论文\n")
+    
+    # 只显示有数据的分类
+    active_tags = [tag for tag in tags if tag in tag_latest_dates and tag_latest_dates[tag]]
+    
+    # 分类卡片
+    lines.append('<div class="tag-grid">')
+    for tag in active_tags:
+        latest = tag_latest_dates[tag]
+        safe_tag = tag.replace(".", "-")
+        lines.append(f'''
+<div class="tag-card">
+  <h3><a href="{safe_tag}/index.html">{tag}</a></h3>
+  <p>最新日期：{latest}</p>
+  <a class="btn" href="{safe_tag}/{latest}/index.html">查看最新</a>
+</div>''')
+    lines.append('</div>\n')
+    
+    lines.append("---\n")
+    lines.append("## 分类列表\n")
+    for tag in active_tags:
+        safe_tag = tag.replace(".", "-")
+        latest = tag_latest_dates[tag]
+        lines.append(f"- **[{tag}]({safe_tag}/index.html)**：最新 {latest}")
+    
+    return "\n".join(lines)
+
+def write_site_scaffold(docs_dir: Path):
+    ensure_dir(docs_dir)
+    ensure_dir(docs_dir / "assets")
+    (docs_dir / "_config.yml").write_text(
+        "theme: jekyll-theme-cayman\nmarkdown: kramdown\nkramdown:\n  input: GFM\n",
+        encoding="utf-8"
+    )
+    (docs_dir / "_layouts").mkdir(exist_ok=True)
+    (docs_dir / "_layouts" / "default.html").write_text(
+        """<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>{{ page.title }}</title>
+<link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<main class="container">
+  {{ content }}
+</main>
+<footer class="footer">
+  <p>Powered by GitHub Pages · Generated on {{ site.time | date: "%Y-%m-%d" }}</p>
+</footer>
+</body>
+</html>
+""",
+        encoding="utf-8"
+    )
+    (docs_dir / "assets" / "style.css").write_text(
+        """/* 基础样式 */
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --bg: #ffffff;
+  --bg-secondary: #f8fafc;
+  --text: #1e293b;
+  --text-secondary: #64748b;
+  --border: #e2e8f0;
+  --success: #22c55e;
+  --code-bg: #f1f5f9;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  font: 16px/1.7 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text);
+}
+
+h1 { font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.3; }
+h2 { font-size: 1.25rem; font-weight: 600; margin: 1.5rem 0 0.75rem; color: var(--text); border-bottom: 2px solid var(--primary); padding-bottom: 0.5rem; }
+h3 { font-size: 1.1rem; font-weight: 600; margin: 1rem 0 0.5rem; }
+
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* 表格样式 */
+table { border-collapse: collapse; width: 100%; margin: 1.5rem 0; font-size: 0.9rem; }
+th, td { border: 1px solid var(--border); padding: 0.75rem; vertical-align: top; text-align: left; }
+th { background: var(--bg-secondary); font-weight: 600; }
+tr:hover { background: var(--bg-secondary); }
+td:first-child { text-align: center; font-weight: 600; color: var(--text-secondary); width: 40px; }
+td:last-child { text-align: center; width: 40px; }
+
+/* 代码样式 */
+code, pre { background: var(--code-bg); padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.85em; }
+pre { padding: 1rem; overflow-x: auto; }
+
+/* 引用块 - 用于原文摘要 */
+blockquote {
+  margin: 1rem 0;
+  padding: 1rem 1.5rem;
+  background: var(--bg-secondary);
+  border-left: 4px solid var(--primary);
+  border-radius: 0 8px 8px 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* 页脚 */
+.footer { margin: 3rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--text-secondary); font-size: 0.85rem; text-align: center; }
+
+/* 日期选择器 */
+.date-switcher {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+}
+.date-switcher select {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background: white;
+}
+.date-switcher .btn {
+  padding: 0.5rem 1rem;
+  background: var(--primary);
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+}
+.date-switcher .btn:hover { background: var(--primary-dark); text-decoration: none; }
+
+/* 分类卡片网格 */
+.tag-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+.tag-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  background: var(--bg);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.tag-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-2px); }
+.tag-card h3 { margin: 0 0 0.5rem; font-size: 1.2rem; }
+.tag-card h3 a { color: var(--text); }
+.tag-card p { margin: 0.5rem 0; color: var(--text-secondary); font-size: 0.9rem; }
+.tag-card .btn {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: var(--primary);
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+}
+.tag-card .btn:hover { background: var(--primary-dark); text-decoration: none; }
+
+/* 论文详情页样式 */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* 关键词标签 */
+code {
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-right: 0.25rem;
+}
+
+/* 信息块 */
+.info-block {
+  background: var(--bg-secondary);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .container { padding: 0 1rem; }
+  h1 { font-size: 1.4rem; }
+  table { font-size: 0.8rem; }
+  th, td { padding: 0.5rem; }
+  .tag-grid { grid-template-columns: 1fr; }
+}
+""",
+        encoding="utf-8"
+    )
+
+# =============== 站点生成 ===============
+
+def collect_dates(data_root: Path) -> List[Tuple[str, Path]]:
+    """
+    扫描 data/*/ai_summary*.json，返回 [(date_label, json_path), ...]，按日期升序。
+    """
+    items = []
+    for p in sorted(data_root.glob("*/ai_summary*.json")):
+        # 从路径或文件名中抽日期
+        m = re.search(r"(\d{4}-\d{2}-\d{2})", str(p))
+        if not m:
+            # 兼容没有日期的路径，用父目录名兜底
+            m = re.search(r"(\d{4}-\d{2}-\d{2})", p.parent.name)
+        if m:
+            date_label = m.group(1)
+        else:
+            # 实在取不到，用文件修改日期
+            ts = datetime.date.fromtimestamp(p.stat().st_mtime).isoformat()
+            date_label = ts
+        items.append((date_label, p))
+    # 去重 & 排序
+    items = sorted(list({(d, str(p)): (d, Path(p)) for d, p in items}.values()), key=lambda x: x[0])
+    return items
+
+def classify_paper(paper: Dict[str, Any], target_tags: List[str]) -> List[str]:
+    """
+    判断论文属于哪些目标分类。
+    返回论文所属的目标分类列表。
+    """
+    paper_categories = paper.get("categories", [])
+    primary_category = paper.get("primary_category", "")
+    
+    matched = []
+    # 优先检查 primary_category
+    if primary_category in target_tags:
+        matched.append(primary_category)
+    
+    # 检查其他 categories
+    for cat in paper_categories:
+        if cat in target_tags and cat not in matched:
+            matched.append(cat)
+    
+    # 如果没有匹配，尝试模糊匹配（如 cs.CV 可能在 cs.cv 里）
+    if not matched:
+        for cat in paper_categories:
+            for tag in target_tags:
+                if cat.lower() == tag.lower() and tag not in matched:
+                    matched.append(tag)
+    
+    return matched
+
+def save_tag_date_site(docs_dir: Path, tag: str, date_label: str, papers: List[Dict[str, Any]], site_title: str):
+    """生成某分类某日期的目录页 + 详情页"""
+    safe_tag = tag.replace(".", "-")
+    day_dir = docs_dir / safe_tag / date_label
+    ensure_dir(day_dir)
+    ensure_dir(day_dir / "papers")
+
+    # date index
+    date_md = build_tag_date_index_md(tag, date_label, papers, site_title)
+    (day_dir / "index.md").write_text(date_md, encoding="utf-8")
+
+    # per-paper pages
+    for i, p in enumerate(papers, 1):
+        title = p.get("title", "").strip()
+        slug = slugify(f"{p.get('arxiv_id','')}-{title}") or f"paper-{i}"
+        body_md = render_paper_md(p)
+        md = f"---\nlayout: default\ntitle: {title}\n---\n\n{body_md}\n"
+        (day_dir / "papers" / f"{slug}.md").write_text(md, encoding="utf-8")
+
+def main():
+    ap = argparse.ArgumentParser(description="Build multi-tag, multi-date GitHub Pages.")
+    ap.add_argument("--data", default="data", help="数据根目录（默认 data/）")
+    ap.add_argument("--outdir", default="docs", help="输出站点目录（默认 docs/）")
+    ap.add_argument("--tags", default="tags.json", help="分类配置文件（默认 tags.json）")
+    ap.add_argument("--title", default="arXiv 中文要点汇总（with DeepSeek）", help="站点标题")
+    args = ap.parse_args()
+
+    data_root = Path(args.data)
+    docs_dir = Path(args.outdir)
+    tags_file = Path(args.tags)
+    site_title = args.title
+
+    # 加载目标分类
+    target_tags = load_tags(tags_file)
+    print(f"[INFO] 目标分类: {target_tags}")
+
+    pairs = collect_dates(data_root)
+    if not pairs:
+        print("[ERR] 未找到 data/*/ai_summary*.json", file=sys.stderr)
+        sys.exit(2)
+
+    write_site_scaffold(docs_dir)
+
+    # 按分类和日期组织论文
+    # tag -> date -> [papers]
+    tag_date_papers: Dict[str, Dict[str, List[Dict[str, Any]]]] = defaultdict(lambda: defaultdict(list))
+    
+    for date_label, json_path in pairs:
+        data = read_json(json_path)
+        papers = data.get("papers", [])
+        if not isinstance(papers, list) or not papers:
+            print(f"[WARN] {json_path} 中 papers 为空，跳过 {date_label}")
+            continue
+        
+        for paper in papers:
+            matched_tags = classify_paper(paper, target_tags)
+            if not matched_tags:
+                # 没有匹配任何目标分类，放到第一个分类（作为默认）
+                matched_tags = [target_tags[0]] if target_tags else []
+            
+            for tag in matched_tags:
+                tag_date_papers[tag][date_label].append(paper)
+    
+    # 统计
+    tag_dates: Dict[str, List[str]] = {}
+    for tag in target_tags:
+        dates = sorted(tag_date_papers[tag].keys())
+        if dates:
+            tag_dates[tag] = dates
+            print(f"[INFO] {tag}: {len(dates)} 个日期")
+
+    if not tag_dates:
+        print("[ERR] 没有可用的分类页面生成", file=sys.stderr)
+        sys.exit(3)
+
+    # 生成每个分类的页面
+    for tag in target_tags:
+        if tag not in tag_dates:
+            continue
+        safe_tag = tag.replace(".", "-")
+        
+        for date_label in tag_dates[tag]:
+            papers = tag_date_papers[tag][date_label]
+            save_tag_date_site(docs_dir, tag, date_label, papers, site_title)
+        
+        # 生成分类首页
+        tag_index_md = build_tag_index_md(tag, tag_dates[tag], site_title)
+        tag_dir = docs_dir / safe_tag
+        ensure_dir(tag_dir)
+        (tag_dir / "index.md").write_text(tag_index_md, encoding="utf-8")
+
+    # 首页：分类导航
+    tag_latest_dates = {tag: sorted(dates)[-1] for tag, dates in tag_dates.items()}
+    home_md = build_home_md(target_tags, tag_latest_dates, site_title)
+    (docs_dir / "index.md").write_text(home_md, encoding="utf-8")
+
+    total_pages = sum(len(dates) for dates in tag_dates.values())
+    print(f"[OK] 生成完成。共 {len(tag_dates)} 个分类，{total_pages} 个日期页面。首页：{docs_dir}/index.md")
+    print("👉 打开 GitHub → Settings → Pages，Source 选 Branch，目录选 docs/，保存即可。")
+
+if __name__ == "__main__":
+    main()
