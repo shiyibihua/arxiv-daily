@@ -21,8 +21,14 @@ TIMEOUT = 30
 
 def fetch_html(url: str) -> Optional[str]:
     """获取 HTML 内容（同步）"""
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.5',
+        'Referer': 'https://arxiv.org/',
+    }
     try:
-        resp = requests.get(url, timeout=TIMEOUT)
+        resp = requests.get(url, headers=headers, timeout=TIMEOUT)
         if resp.status_code == 200:
             return resp.text
         return None
@@ -35,6 +41,15 @@ def extract_arxiv_id(arxiv_id: str) -> str:
     # 2512.14689v1 -> 2512.14689
     match = re.match(r'(\d+\.\d+)', arxiv_id)
     return match.group(1) if match else arxiv_id.split('v')[0]
+
+
+def ensure_version(arxiv_id: str) -> str:
+    """确保 arXiv ID 包含版本号（默认 v1）"""
+    # 如果已有版本号，直接返回
+    if re.search(r'v\d+$', arxiv_id):
+        return arxiv_id
+    # 否则添加 v1
+    return f"{arxiv_id}v1"
 
 
 def parse_images_from_html(html: str, arxiv_id: str, base_url: str = None) -> List[Dict]:
@@ -164,10 +179,11 @@ def extract_paper_images(arxiv_id: str, max_images: int = 5) -> List[Dict]:
         图片列表 [{"url": "...", "caption": "...", "figure_id": "..."}, ...]
     """
     clean_id = extract_arxiv_id(arxiv_id)
+    full_id = ensure_version(arxiv_id)  # 确保有版本号
     
-    # 优先尝试 arXiv 官方 HTML 版本
-    html_url = f"{ARXIV_HTML_BASE}{arxiv_id}"  # 官方版本需要完整 ID（含版本号）
-    base_url = f"{ARXIV_HTML_BASE}{arxiv_id}/"
+    # 优先尝试 arXiv 官方 HTML 版本（需要完整版本号）
+    html_url = f"{ARXIV_HTML_BASE}{full_id}"
+    base_url = f"{ARXIV_HTML_BASE}{full_id}/"
     html = fetch_html(html_url)
     
     # 如果官方版本失败，回退到 ar5iv

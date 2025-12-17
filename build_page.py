@@ -503,7 +503,7 @@ def write_site_scaffold(docs_dir: Path):
     layout_file = docs_dir / "_layouts" / "default.html"
     if not layout_file.exists():
         layout_file.write_text(
-            """<!doctype html>
+        """<!doctype html>
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
@@ -521,13 +521,13 @@ def write_site_scaffold(docs_dir: Path):
 </body>
 </html>
 """,
-            encoding="utf-8"
-        )
+        encoding="utf-8"
+    )
     # 只在 CSS 文件不存在时写入默认样式，避免覆盖自定义样式
     css_file = docs_dir / "assets" / "style.css"
     if not css_file.exists():
         css_file.write_text(
-            """/* 基础样式 */
+        """/* 基础样式 */
 :root {
   --primary: #2563eb;
   --primary-dark: #1d4ed8;
@@ -962,8 +962,8 @@ code {
   .btn { text-align: center; }
 }
 """,
-            encoding="utf-8"
-        )
+        encoding="utf-8"
+    )
 
 # =============== 站点生成 ===============
 

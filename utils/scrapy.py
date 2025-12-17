@@ -625,7 +625,7 @@ def query_arxiv(tags: List[str], time_range: Tuple[str, str], max_results: int =
         
         search = arxiv.Search(
             query=query,
-            max_results=max_results // len(tags) + 50,  # 每个分类的配额
+            max_results=max_results // len(tags) + 50,
             sort_by=arxiv.SortCriterion.SubmittedDate,
             sort_order=arxiv.SortOrder.Descending,
         )
@@ -648,7 +648,7 @@ def query_arxiv(tags: List[str], time_range: Tuple[str, str], max_results: int =
         
         if not api_failed:
             print(f"  ✓ {tag}: {tag_count} 篇")
-        time.sleep(1.0)  # 分类之间增加延迟
+        time.sleep(1.0)
     
     # 如果 API 失败，回退到网页抓取
     if api_failed:
