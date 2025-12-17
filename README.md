@@ -107,7 +107,7 @@ Click **Save**.
 Edit the cron in `daily.yml`:
 ```yaml
 schedule:
-  - cron: "30 4 * * *"  # UTC 4:30 = 北京时间 12:30
+  - cron: "0 19 * * *"  # UTC 19:00 = 北京时间 凌晨3:00
 ```
 
 ### 5. Run the Workflow

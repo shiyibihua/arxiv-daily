@@ -2,8 +2,8 @@ name: Daily arXiv fetch & build
 
 on:
   schedule:
-    # UTC 4:30 = 北京时间 12:30，每天
-    - cron: "30 4 * * *"
+    # UTC 19:00 = 北京时间 凌晨3:00，每天
+    - cron: "0 19 * * *"
   workflow_dispatch: {}  # 可手动触发
 
 permissions:
