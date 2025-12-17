@@ -527,34 +527,151 @@ def _result_to_minimal(r: arxiv.Result) -> Dict:
     }
 
 
+def _scrape_arxiv_list(tag: str) -> List[Dict]:
+    """
+    备用方法：从 arXiv 网页抓取最新论文列表
+    当 API 返回 406 错误时使用
+    """
+    url = f"https://arxiv.org/list/{tag}/new"
+    try:
+        resp = requests.get(url, timeout=30, headers={
+            "User-Agent": "Mozilla/5.0 (compatible; arxiv-daily/1.0)"
+        })
+        if resp.status_code != 200:
+            return []
+        
+        soup = BeautifulSoup(resp.text, 'html.parser')
+        papers = []
+        
+        # 查找论文条目
+        for dt in soup.find_all('dt'):
+            dd = dt.find_next_sibling('dd')
+            if not dd:
+                continue
+            
+            # 提取 arXiv ID
+            span = dt.find('a', {'title': 'Abstract'})
+            if not span:
+                continue
+            arxiv_id = span.text.strip().replace('arXiv:', '')
+            
+            # 提取标题
+            title_div = dd.find('div', class_='list-title')
+            title = title_div.get_text(strip=True).replace('Title:', '').strip() if title_div else ""
+            
+            # 提取作者
+            authors_div = dd.find('div', class_='list-authors')
+            authors = []
+            if authors_div:
+                for a in authors_div.find_all('a'):
+                    authors.append(a.get_text(strip=True))
+            
+            # 提取摘要（简短版本）
+            abstract_p = dd.find('p', class_='mathjax')
+            abstract = abstract_p.get_text(strip=True) if abstract_p else ""
+            
+            # 提取分类
+            subjects_div = dd.find('div', class_='list-subjects')
+            categories = []
+            primary_category = tag
+            if subjects_div:
+                text = subjects_div.get_text()
+                # 提取括号中的分类代码
+                matches = re.findall(r'([a-z]+\.[A-Z]+)', text)
+                categories = matches if matches else [tag]
+                primary_category = categories[0] if categories else tag
+            
+            papers.append({
+                "title": title,
+                "authors": authors,
+                "arxiv_id": arxiv_id,
+                "summary": abstract,
+                "categories": categories,
+                "primary_category": primary_category,
+                "published": datetime.now().strftime("%Y-%m-%d"),
+                "updated": datetime.now().strftime("%Y-%m-%d"),
+                "comment": "",
+                "doi": "",
+                "journal_ref": "",
+                "pdf_url": f"https://arxiv.org/pdf/{arxiv_id}",
+                "code_links": [],
+            })
+        
+        return papers
+    except Exception as e:
+        print(f"  [ERROR] 网页抓取失败: {e}")
+        return []
+
+
 def query_arxiv(tags: List[str], time_range: Tuple[str, str], max_results: int = 500, fetch_thumbnails: bool = False) -> Dict:
+    """
+    分批查询 arXiv API（避免 HTTP 406 错误）
+    每个分类单独查询，然后合并去重
+    如果 API 失败，自动回退到网页抓取
+    """
+    import time
     start, end = time_range
-    tag_clause = " OR ".join(f"cat:{t}" for t in tags)
-    query = f"({tag_clause}) AND submittedDate:[{start} TO {end}]"
-
-    client = arxiv.Client(page_size=200, delay_seconds=1.0, num_retries=3)
-
-    search = arxiv.Search(
-        query=query,
-        max_results=max_results,
-        sort_by=arxiv.SortCriterion.SubmittedDate,
-        sort_order=arxiv.SortOrder.Descending,
-    )
-
+    
+    client = arxiv.Client(page_size=100, delay_seconds=1.5, num_retries=5)
+    
     seen = set()
     papers = []
-    print(f"[INFO] 正在从 arXiv 抓取论文...")
-    for r in tqdm(client.results(search), desc="抓取论文", unit="paper"):
-        item = _result_to_minimal(r)
-        if item["arxiv_id"] in seen:
-            continue
-        seen.add(item["arxiv_id"])
-        papers.append(item)
+    api_failed = False
+    print(f"[INFO] 正在从 arXiv 抓取论文（分 {len(tags)} 个分类）...")
+    
+    # 分批查询每个分类
+    for tag in tags:
+        query = f"cat:{tag} AND submittedDate:[{start} TO {end}]"
+        
+        search = arxiv.Search(
+            query=query,
+            max_results=max_results // len(tags) + 50,  # 每个分类的配额
+            sort_by=arxiv.SortCriterion.SubmittedDate,
+            sort_order=arxiv.SortOrder.Descending,
+        )
+        
+        tag_count = 0
+        try:
+            for r in tqdm(client.results(search), desc=f"  {tag}", unit="paper", leave=False):
+                item = _result_to_minimal(r)
+                if item["arxiv_id"] in seen:
+                    continue
+                seen.add(item["arxiv_id"])
+                papers.append(item)
+                tag_count += 1
+        except Exception as e:
+            if "406" in str(e):
+                api_failed = True
+                print(f"  [WARN] API 返回 406，将使用网页抓取")
+                break
+            print(f"  [WARN] {tag} 查询失败: {e}")
+        
+        if not api_failed:
+            print(f"  ✓ {tag}: {tag_count} 篇")
+        time.sleep(1.0)  # 分类之间增加延迟
+    
+    # 如果 API 失败，回退到网页抓取
+    if api_failed:
+        print(f"\n[INFO] 切换到网页抓取模式...")
+        seen = set()
+        papers = []
+        for tag in tags:
+            tag_papers = _scrape_arxiv_list(tag)
+            tag_count = 0
+            for p in tag_papers:
+                if p["arxiv_id"] in seen:
+                    continue
+                seen.add(p["arxiv_id"])
+                papers.append(p)
+                tag_count += 1
+            print(f"  ✓ {tag}: {tag_count} 篇")
+            time.sleep(0.5)
     
     # 可选：批量抓取缩略图
     if fetch_thumbnails and papers:
         papers = fetch_thumbnails_batch(papers)
     
+    print(f"[OK] 共获取 {len(papers)} 篇论文（去重后）")
     return {"count": len(papers), "papers": papers}
 
 
