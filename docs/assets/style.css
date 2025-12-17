@@ -319,14 +319,60 @@ code {
 
 /* ===== 新版首页样式 ===== */
 
-/* 分类区块 */
+/* 分类区块 - 折叠式 */
 .tag-section {
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   background: var(--bg);
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  overflow: hidden;
+}
+
+.tag-section .tag-content {
+  padding: 0 1.5rem 1.5rem;
+  max-height: 2000px;
+  transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+}
+
+.tag-section.collapsed .tag-content {
+  max-height: 0;
+  padding: 0 1.5rem;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.tag-section .tag-expand-icon {
+  display: inline-block;
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.tag-section:not(.collapsed) .tag-expand-icon {
+  transform: rotate(90deg);
+}
+
+.tag-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag-title-wrap h2 {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 1.3rem;
+}
+
+.tag-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: normal;
 }
 
 .tag-header {
@@ -335,9 +381,18 @@ code {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 1.5rem;
   border-bottom: 2px solid var(--primary);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.tag-header:hover {
+  background: var(--bg-secondary);
+}
+
+.tag-section.collapsed .tag-header {
+  border-bottom-color: transparent;
 }
 
 .tag-header h2 {

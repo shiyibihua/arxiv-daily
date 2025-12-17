@@ -354,6 +354,17 @@ def build_home_md(tags: List[str], tag_stats: Dict[str, Dict], site_title: str) 
         }
     }
     """
+    # 分类信息映射（图标和中文说明）
+    TAG_INFO = {
+        "cs.RO": {"icon": "🤖", "desc": "机器人"},
+        "cs.CV": {"icon": "👁️", "desc": "视觉"},
+        "cs.GR": {"icon": "🎨", "desc": "图形学"},
+        "cs.LG": {"icon": "🧠", "desc": "机器学习 (RL, Diffusion, World Model)"},
+        "cs.AI": {"icon": "🤔", "desc": "人工智能 (Agents, Planning)"},
+        "cs.CL": {"icon": "💬", "desc": "自然语言 (VLA, Text-to-Motion)"},
+        "eess.SY": {"icon": "⚙️", "desc": "系统控制 (MPC, Dynamics)"},
+    }
+    
     lines = []
     lines.append(f"---\nlayout: default\ntitle: {site_title}\n---\n")
     lines.append(f"# {site_title}\n")
@@ -376,14 +387,24 @@ def build_home_md(tags: List[str], tag_stats: Dict[str, Dict], site_title: str) 
         recent_papers = stats.get("recent_papers", [])
         recent_dates = stats.get("recent_dates", [])
         
-        lines.append(f'<div class="tag-section" id="{safe_tag}">')
-        lines.append(f'<div class="tag-header">')
-        lines.append(f'<h2>{tag}</h2>')
+        # 获取分类信息
+        tag_info = TAG_INFO.get(tag, {"icon": "📁", "desc": ""})
+        icon = tag_info["icon"]
+        desc = tag_info["desc"]
+        
+        lines.append(f'<div class="tag-section collapsed" id="{safe_tag}">')
+        lines.append(f'<div class="tag-header" onclick="toggleTagSection(\'{safe_tag}\')">')
+        lines.append(f'<div class="tag-title-wrap">')
+        lines.append(f'<span class="tag-expand-icon">▶</span>')
+        lines.append(f'<h2>{icon} {tag}</h2>')
+        lines.append(f'<span class="tag-desc">{desc}</span>')
+        lines.append(f'</div>')
         lines.append(f'<div class="tag-meta">')
         lines.append(f'<span class="date-range">📅 最新: {latest_date}</span>')
         lines.append(f'<span class="paper-count">📄 共 {total_count} 篇</span>')
         lines.append(f'</div>')
         lines.append(f'</div>')
+        lines.append(f'<div class="tag-content">')
         
         # 支柱统计
         if pillar_stats:
@@ -435,6 +456,7 @@ def build_home_md(tags: List[str], tag_stats: Dict[str, Dict], site_title: str) 
         lines.append(f'<a class="btn btn-secondary" href="{safe_tag}/index.html">更多日期 ({len(dates)})</a>')
         lines.append('</div>')
         
+        lines.append('</div>')  # tag-content
         lines.append('</div>')  # tag-section
         lines.append('')
     

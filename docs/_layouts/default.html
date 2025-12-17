@@ -14,13 +14,39 @@
     <div class="nav-container">
       <a href="{{ '/' | relative_url }}" class="nav-brand">📚 arXiv Daily</a>
       <div class="nav-links">
-        <a href="{{ '/' | relative_url }}#cs-RO" class="nav-link">🤖 cs.RO</a>
-        <a href="{{ '/' | relative_url }}#cs-CV" class="nav-link">👁️ cs.CV</a>
-        <a href="{{ '/' | relative_url }}#cs-GR" class="nav-link">🎨 cs.GR</a>
-        <a href="{{ '/' | relative_url }}#cs-LG" class="nav-link">🧠 cs.LG</a>
-        <a href="{{ '/' | relative_url }}#cs-AI" class="nav-link">🤔 cs.AI</a>
-        <a href="{{ '/' | relative_url }}#cs-CL" class="nav-link">💬 cs.CL</a>
-        <a href="{{ '/' | relative_url }}#eess-SY" class="nav-link">⚙️ eess.SY</a>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-btn" onclick="toggleCategoriesMenu()">📂 分类 ▾</button>
+          <div id="categories-menu" class="dropdown-menu">
+            <a href="{{ '/' | relative_url }}#cs-RO" class="dropdown-item">
+              <span class="dropdown-item-name">🤖 cs.RO</span>
+              <span class="dropdown-item-desc">机器人</span>
+            </a>
+            <a href="{{ '/' | relative_url }}#cs-CV" class="dropdown-item">
+              <span class="dropdown-item-name">👁️ cs.CV</span>
+              <span class="dropdown-item-desc">视觉</span>
+            </a>
+            <a href="{{ '/' | relative_url }}#cs-GR" class="dropdown-item">
+              <span class="dropdown-item-name">🎨 cs.GR</span>
+              <span class="dropdown-item-desc">图形学</span>
+            </a>
+            <a href="{{ '/' | relative_url }}#cs-LG" class="dropdown-item">
+              <span class="dropdown-item-name">🧠 cs.LG</span>
+              <span class="dropdown-item-desc">机器学习 (RL, Diffusion, World Model)</span>
+            </a>
+            <a href="{{ '/' | relative_url }}#cs-AI" class="dropdown-item">
+              <span class="dropdown-item-name">🤔 cs.AI</span>
+              <span class="dropdown-item-desc">人工智能 (Agents, Planning)</span>
+            </a>
+            <a href="{{ '/' | relative_url }}#cs-CL" class="dropdown-item">
+              <span class="dropdown-item-name">💬 cs.CL</span>
+              <span class="dropdown-item-desc">自然语言 (VLA, Text-to-Motion)</span>
+            </a>
+            <a href="{{ '/' | relative_url }}#eess-SY" class="dropdown-item">
+              <span class="dropdown-item-name">⚙️ eess.SY</span>
+              <span class="dropdown-item-desc">系统控制 (MPC, Dynamics)</span>
+            </a>
+          </div>
+        </div>
         <div class="nav-dropdown">
           <button class="nav-link nav-dropdown-btn" onclick="toggleResourcesMenu()">📖 信息资讯 ▾</button>
           <div id="resources-menu" class="dropdown-menu">
@@ -549,6 +575,51 @@
         if (menu) menu.classList.remove('show');
         document.removeEventListener('click', closeResourcesMenuOnClick);
       }
+    }
+
+    // 分类下拉菜单
+    function toggleCategoriesMenu() {
+      var menu = document.getElementById('categories-menu');
+      // 关闭其他菜单
+      var resourcesMenu = document.getElementById('resources-menu');
+      if (resourcesMenu) resourcesMenu.classList.remove('show');
+      
+      if (menu.classList.contains('show')) {
+        menu.classList.remove('show');
+      } else {
+        menu.classList.add('show');
+        setTimeout(function() {
+          document.addEventListener('click', closeCategoriesMenuOnClick);
+        }, 10);
+      }
+    }
+
+    function closeCategoriesMenuOnClick(e) {
+      if (!e.target.closest('.nav-dropdown')) {
+        var menu = document.getElementById('categories-menu');
+        if (menu) menu.classList.remove('show');
+        document.removeEventListener('click', closeCategoriesMenuOnClick);
+      }
+    }
+
+    // 首页分类折叠/展开
+    function toggleTagSection(tagId) {
+      var section = document.getElementById(tagId);
+      if (section) {
+        section.classList.toggle('collapsed');
+      }
+    }
+
+    // 展开所有分类
+    function expandAllTags() {
+      var sections = document.querySelectorAll('.tag-section');
+      sections.forEach(function(s) { s.classList.remove('collapsed'); });
+    }
+
+    // 折叠所有分类
+    function collapseAllTags() {
+      var sections = document.querySelectorAll('.tag-section');
+      sections.forEach(function(s) { s.classList.add('collapsed'); });
     }
 
     // 页面加载完成后初始化
