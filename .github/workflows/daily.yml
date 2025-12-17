@@ -1,4 +1,4 @@
-name: Daily arXiv cs.CV fetch & build
+name: Daily arXiv fetch & build
 
 on:
   schedule:
