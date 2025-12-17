@@ -1,6 +1,6 @@
 ---
 layout: default
-title: arXiv 中文要点汇总（with DeepSeek） - cs.CV - 2025-12-09
+title: arXiv 中文要点汇总 - cs.CV - 2025-12-09
 ---
 
 # cs.CV（2025-12-09）

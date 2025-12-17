@@ -1,9 +1,9 @@
 ---
 layout: default
-title: arXiv 中文要点汇总（with DeepSeek）
+title: arXiv 中文要点汇总
 ---
 
-# arXiv 中文要点汇总（with DeepSeek）
+# arXiv 中文要点汇总
 
 <div class="tag-section" id="cs-RO">
 <div class="tag-header">
@@ -38,11 +38,11 @@ title: arXiv 中文要点汇总（with DeepSeek）
 <div class="recent-papers">
 <h4>📝 最新论文</h4>
 <ul class="paper-list">
-<li><a href="cs-RO/2025-12-16/papers/251214689v1-chip-adaptive-compliance-for-humanoid-control-through-hindsight-pert.html">CHIP: Adaptive Compliance for Humanoid Control through Hinds...</a> <br><small>CHIP：通过后见之明扰动实现人型机器人自适应柔顺控制</small></li>
+<li><a href="cs-RO/2025-12-16/papers/251214689v1-chip-adaptive-compliance-for-humanoid-control-through-hindsight-pert.html">CHIP: Adaptive Compliance for Humanoid Control through Hinds...</a> <br><small>提出CHIP自适应柔顺控制模块，提升人形机器人力操作任务性能</small></li>
 <li><a href="cs-RO/2025-12-16/papers/251214189v1-super-a-framework-for-sensitivity-based-uncertainty-aware-performanc.html">SUPER -- A Framework for Sensitivity-based Uncertainty-aware...</a> <br><small>SUPER：基于敏感度的视觉惯性里程计性能与风险评估框架</small></li>
-<li><a href="cs-RO/2025-12-16/papers/251214428v1-odyssey-an-automotive-lidar-inertial-odometry-dataset-for-gnss-denie.html">Odyssey: An Automotive Lidar-Inertial Odometry Dataset for G...</a> <br><small>Odyssey：面向GNSS拒止环境的车载激光雷达-惯性里程计数据集</small></li>
+<li><a href="cs-RO/2025-12-16/papers/251214428v1-odyssey-an-automotive-lidar-inertial-odometry-dataset-for-gnss-denie.html">Odyssey: An Automotive Lidar-Inertial Odometry Dataset for G...</a> <br><small>Odyssey：面向GNSS拒止环境的车载激光雷达惯性里程计数据集</small></li>
 <li><a href="cs-RO/2025-12-16/papers/251214270v1-cafe-television-a-coarse-to-fine-teleoperation-system-with-immersive.html">CaFe-TeleVision: A Coarse-to-Fine Teleoperation System with ...</a> 🔗<br><small>CaFe-TeleVision：基于粗细粒度控制和沉浸式可视化的人形机器人遥操作...</small></li>
-<li><a href="cs-RO/2025-12-16/papers/251214111v1-interactive-motion-planning-for-human-robot-collaboration-based-on-h.html">Interactive Motion Planning for Human-Robot Collaboration Ba...</a> <br><small>提出基于人机协作构型空间人体工学场的交互式运动规划方法</small></li>
+<li><a href="cs-RO/2025-12-16/papers/251214111v1-interactive-motion-planning-for-human-robot-collaboration-based-on-h.html">Interactive Motion Planning for Human-Robot Collaboration Ba...</a> <br><small>提出基于人机协作构型空间人体工学场的交互式机器人运动规划方法</small></li>
 </ul>
 </div>
 <div class="tag-actions">
@@ -86,10 +86,10 @@ title: arXiv 中文要点汇总（with DeepSeek）
 <div class="recent-papers">
 <h4>📝 最新论文</h4>
 <ul class="paper-list">
-<li><a href="cs-CV/2025-12-16/papers/251214696v1-crisp-contact-guided-real2sim-from-monocular-video-with-planar-scene.html">CRISP: Contact-Guided Real2Sim from Monocular Video with Pla...</a> <br><small>CRISP：基于单目视频和平面场景原语的接触引导Real2Sim</small></li>
+<li><a href="cs-CV/2025-12-16/papers/251214696v1-crisp-contact-guided-real2sim-from-monocular-video-with-planar-scene.html">CRISP: Contact-Guided Real2Sim from Monocular Video with Pla...</a> <br><small>CRISP：基于单目视频和平面场景原语的接触引导Real2Sim方法</small></li>
 <li><a href="cs-CV/2025-12-16/papers/251214095v1-anchorhoi-zero-shot-generation-of-4d-human-object-interaction-via-an.html">AnchorHOI: Zero-shot Generation of 4D Human-Object Interacti...</a> <br><small>AnchorHOI：基于锚点的先验知识蒸馏实现零样本4D人-物交互生成</small></li>
 <li><a href="cs-CV/2025-12-16/papers/251214352v1-hgs-hybrid-gaussian-splatting-with-static-dynamic-decomposition-for-.html">HGS: Hybrid Gaussian Splatting with Static-Dynamic Decomposi...</a> <br><small>提出HGS混合高斯溅射，通过静态-动态分解实现紧凑的动态视角合成</small></li>
-<li><a href="cs-CV/2025-12-16/papers/251214200v1-beyond-a-single-light-a-large-scale-aerial-dataset-for-urban-scene-r.html">Beyond a Single Light: A Large-Scale Aerial Dataset for Urba...</a> <br><small>SkyLume：一个大规模无人机城市重建数据集，用于研究光照变化下的鲁棒性。</small></li>
+<li><a href="cs-CV/2025-12-16/papers/251214200v1-beyond-a-single-light-a-large-scale-aerial-dataset-for-urban-scene-r.html">Beyond a Single Light: A Large-Scale Aerial Dataset for Urba...</a> <br><small>SkyLume：一个大规模多光照城市重建航拍数据集，用于解决光照变化下的三维重建...</small></li>
 <li><a href="cs-CV/2025-12-16/papers/251214020v1-deep-learning-perspective-of-scene-understanding-in-autonomous-robot.html">Deep Learning Perspective of Scene Understanding in Autonomo...</a> <br><small>综述深度学习在自主机器人场景理解中的应用，提升机器人感知与决策能力</small></li>
 </ul>
 </div>

@@ -902,7 +902,7 @@ def main():
     ap.add_argument("--data", default="data", help="数据根目录（默认 data/）")
     ap.add_argument("--outdir", default="docs", help="输出站点目录（默认 docs/）")
     ap.add_argument("--tags", default="tags.json", help="分类配置文件（默认 tags.json）")
-    ap.add_argument("--title", default="arXiv 中文要点汇总（with DeepSeek）", help="站点标题")
+    ap.add_argument("--title", default="arXiv 中文要点汇总", help="站点标题")
     args = ap.parse_args()
 
     data_root = Path(args.data)
