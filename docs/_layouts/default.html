@@ -17,6 +17,10 @@
         <a href="{{ '/' | relative_url }}#cs-RO" class="nav-link">🤖 cs.RO</a>
         <a href="{{ '/' | relative_url }}#cs-CV" class="nav-link">👁️ cs.CV</a>
         <a href="{{ '/' | relative_url }}#cs-GR" class="nav-link">🎨 cs.GR</a>
+        <a href="{{ '/' | relative_url }}#cs-LG" class="nav-link">🧠 cs.LG</a>
+        <a href="{{ '/' | relative_url }}#cs-AI" class="nav-link">🤔 cs.AI</a>
+        <a href="{{ '/' | relative_url }}#cs-CL" class="nav-link">💬 cs.CL</a>
+        <a href="{{ '/' | relative_url }}#eess-SY" class="nav-link">⚙️ eess.SY</a>
         <div class="nav-dropdown">
           <button class="nav-link nav-dropdown-btn" onclick="toggleResourcesMenu()">📖 信息资讯 ▾</button>
           <div id="resources-menu" class="dropdown-menu">
@@ -533,7 +537,7 @@
         menu.classList.remove('show');
       } else {
         menu.classList.add('show');
-        setTimeout(function() {
+        setTimeout(function () {
           document.addEventListener('click', closeResourcesMenuOnClick);
         }, 10);
       }
