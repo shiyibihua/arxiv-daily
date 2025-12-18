@@ -239,20 +239,30 @@ def batch_extract_images(
         images = extract_paper_images(arxiv_id, max_images_per_paper)
         return arxiv_id, images
     
+    success_count = 0
+    fail_count = 0
+    
     with ThreadPoolExecutor(max_workers=concurrency) as executor:
         futures = {executor.submit(extract_one, p): p for p in valid_papers}
         
-        iterator = as_completed(futures)
+        iterator = as_completed(futures, timeout=3600)  # 总超时1小时
         if show_progress:
             iterator = tqdm(iterator, total=len(futures), desc="提取图片", unit="篇")
         
         for future in iterator:
             try:
-                arxiv_id, images = future.result()
+                arxiv_id, images = future.result(timeout=60)  # 单个任务最多等60秒
                 if arxiv_id:
                     results[arxiv_id] = images
+                    if images:
+                        success_count += 1
+                    else:
+                        fail_count += 1
             except Exception as e:
-                pass  # 静默忽略单篇论文的错误
+                fail_count += 1
+    
+    if show_progress:
+        print(f"[INFO] 图片提取: {success_count} 成功, {fail_count} 无图片/失败")
     
     return results
 

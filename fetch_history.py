@@ -10,6 +10,7 @@
     python fetch_history.py --date 2024-06-15           # 获取指定日期的数据
     python fetch_history.py --month 2024-06              # 获取整个月的数据
     python fetch_history.py --months-ago 1 --skip-ai    # 跳过AI分析
+    python fetch_history.py --month 2024-06 --no-images # 不提取图片
     
 注意:
     - arXiv 对历史查询有速率限制，建议每次获取不超过7天的数据
@@ -27,6 +28,7 @@ from calendar import monthrange
 
 from utils.scrapy import load_tags, query_arxiv, filter_by_interests
 from utils.analyser import update_ai_summary_async
+from utils.image_extractor import batch_extract_images
 
 US_EASTERN = ZoneInfo("US/Eastern")
 
@@ -165,6 +167,10 @@ def main():
                        help="AI分析并发数 (默认: 8)")
     parser.add_argument("--temperature", type=float, default=0.2,
                        help="AI生成温度 (默认: 0.2)")
+    parser.add_argument("--no-images", action="store_true",
+                       help="不提取论文图片（默认会提取）")
+    parser.add_argument("--max-images", type=int, default=3,
+                       help="每篇论文最多提取图片数 (默认: 3)")
     
     args = parser.parse_args()
     
@@ -268,6 +274,24 @@ def main():
         concurrency=args.concurrency,
         temperature=args.temperature
     ))
+    
+    # 图片提取（默认启用）
+    if not args.no_images:
+        print(f"\n🖼️ 正在提取论文图片...")
+        image_results = batch_extract_images(
+            papers=results,
+            max_images_per_paper=args.max_images,
+            concurrency=5
+        )
+        
+        # 将图片信息合并到结果中
+        for paper in results:
+            arxiv_id = paper.get("arxiv_id", "")
+            if arxiv_id in image_results:
+                paper["figures"] = image_results[arxiv_id]
+        
+        img_count = sum(len(v) for v in image_results.values())
+        print(f"[OK] 提取图片: {img_count} 张 (来自 {len(image_results)} 篇论文)")
     
     # 保存AI分析结果
     ai_path = f'data/{save_label}/ai_summary.json'
