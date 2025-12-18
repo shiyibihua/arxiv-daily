@@ -1195,6 +1195,134 @@ code {
   font-size: 0.8rem;
 }
 
+/* ===== 搜索功能 ===== */
+.nav-search {
+  padding: 0.5rem 0.85rem;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 6px;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-search:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.5);
+}
+
+.search-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.search-input-wrap input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-input-wrap input:focus {
+  border-color: var(--primary);
+}
+
+.search-status {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.search-hint {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: 2rem;
+}
+
+.search-result-count {
+  padding: 0.5rem 0;
+  margin-bottom: 0.75rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.search-result-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.search-result-item {
+  padding: 0.75rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  transition: border-color 0.2s;
+}
+
+.search-result-item:hover {
+  border-color: var(--primary);
+}
+
+.search-result-title {
+  display: block;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.search-result-title:hover {
+  color: var(--primary);
+}
+
+.search-result-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.35rem;
+}
+
+.search-result-tag {
+  padding: 0.15rem 0.5rem;
+  background: var(--primary);
+  color: white;
+  border-radius: 4px;
+}
+
+.search-result-date {
+  color: var(--text-secondary);
+}
+
+.search-result-id {
+  color: var(--text-secondary);
+  font-family: monospace;
+}
+
+.search-result-headline {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.search-result-title mark,
+.search-result-headline mark {
+  background: #fef08a;
+  color: inherit;
+  padding: 0 0.1rem;
+  border-radius: 2px;
+}
+
 /* 响应式 */
 @media (max-width: 768px) {
   /* 导航栏 */

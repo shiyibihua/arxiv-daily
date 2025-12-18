@@ -1218,6 +1218,43 @@ def main():
     home_md = build_home_md(target_tags, tag_stats, site_title)
     (docs_dir / "index.md").write_text(home_md, encoding="utf-8")
 
+    # 生成搜索索引
+    search_index = []
+    for tag in target_tags:
+        if tag not in tag_dates:
+            continue
+        safe_tag = tag.replace(".", "-")
+        for date_label in tag_dates[tag]:
+            for p in tag_date_papers[tag][date_label]:
+                arxiv_id = p.get("arxiv_id", "")
+                title = p.get("title", "").strip()
+                headline = p.get("headline_zh", "").strip()
+                slug = slugify(f"{arxiv_id}-{title}") or "paper"
+                # 构建论文详情页 URL
+                paper_url = f"{safe_tag}/{date_label}/papers/{slug}.html"
+                search_index.append({
+                    "id": arxiv_id,
+                    "title": title,
+                    "headline": headline,
+                    "tag": tag,
+                    "date": date_label,
+                    "url": paper_url
+                })
+    
+    # 按日期倒序排列，并去重（同一篇论文可能在多个分类中）
+    seen_ids = set()
+    unique_index = []
+    for item in sorted(search_index, key=lambda x: x["date"], reverse=True):
+        if item["id"] not in seen_ids:
+            seen_ids.add(item["id"])
+            unique_index.append(item)
+    
+    # 写入搜索索引文件
+    search_index_path = docs_dir / "search_index.json"
+    with search_index_path.open("w", encoding="utf-8") as f:
+        json.dump(unique_index, f, ensure_ascii=False, separators=(',', ':'))
+    print(f"[OK] 生成搜索索引：{len(unique_index)} 篇论文")
+
     total_pages = sum(len(dates) for dates in tag_dates.values())
     print(f"[OK] 生成完成。共 {len(tag_dates)} 个分类，{total_pages} 个日期页面。首页：{docs_dir}/index.md")
     print("👉 打开 GitHub → Settings → Pages，Source 选 Branch，目录选 docs/，保存即可。")

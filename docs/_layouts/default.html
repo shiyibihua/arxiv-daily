@@ -58,6 +58,9 @@
             {% endfor %}
           </div>
         </div>
+        <button class="nav-search" onclick="showSearch()">
+          🔍 搜索
+        </button>
         <button class="nav-favorites" onclick="showFavorites()">
           ⭐ 收藏夹 <span id="favorites-count" class="favorites-badge" style="display:none">0</span>
         </button>
@@ -125,6 +128,23 @@
       </div>
       <div class="modal-footer">
         <button class="btn btn-primary" onclick="closeManageFolders()">完成</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 搜索弹窗 -->
+  <div id="search-modal" class="modal-overlay" onclick="if(event.target===this)closeSearch()">
+    <div class="modal-content modal-large">
+      <div class="modal-header">
+        <h3>🔍 搜索论文</h3>
+        <button class="modal-close" onclick="closeSearch()">✕</button>
+      </div>
+      <div class="search-input-wrap">
+        <input type="text" id="search-input" placeholder="输入论文标题关键词..." oninput="handleSearchInput()" onkeydown="handleSearchKeydown(event)" autocomplete="off">
+        <span id="search-status" class="search-status"></span>
+      </div>
+      <div class="modal-body" id="search-results" style="min-height:200px;max-height:60vh;overflow-y:auto">
+        <p class="search-hint">输入关键词开始搜索，支持中英文</p>
       </div>
     </div>
   </div>
@@ -726,11 +746,145 @@
 
     // 键盘导航
     document.addEventListener('keydown', function(e) {
-      if (!document.getElementById('lightbox').classList.contains('show')) return;
-      if (e.key === 'Escape') closeLightbox();
-      if (e.key === 'ArrowLeft') prevImage(e);
-      if (e.key === 'ArrowRight') nextImage(e);
+      // Lightbox 导航
+      if (document.getElementById('lightbox').classList.contains('show')) {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') prevImage(e);
+        if (e.key === 'ArrowRight') nextImage(e);
+        return;
+      }
+      // 搜索弹窗
+      if (document.getElementById('search-modal').style.display === 'flex') {
+        if (e.key === 'Escape') closeSearch();
+        return;
+      }
+      // Ctrl+K 或 Cmd+K 打开搜索
+      if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+        e.preventDefault();
+        showSearch();
+      }
     });
+
+    // ===== 搜索功能 =====
+    var searchIndex = null;
+    var searchDebounceTimer = null;
+
+    function showSearch() {
+      document.getElementById('search-modal').style.display = 'flex';
+      document.getElementById('search-input').focus();
+      // 加载搜索索引
+      if (!searchIndex) {
+        loadSearchIndex();
+      }
+    }
+
+    function closeSearch() {
+      document.getElementById('search-modal').style.display = 'none';
+    }
+
+    function loadSearchIndex() {
+      var statusEl = document.getElementById('search-status');
+      statusEl.textContent = '加载中...';
+      
+      // 获取站点根路径
+      var baseUrl = '{{ "/" | relative_url }}'.replace(/\/$/, '');
+      
+      fetch(baseUrl + '/search_index.json')
+        .then(function(res) { return res.json(); })
+        .then(function(data) {
+          searchIndex = data;
+          statusEl.textContent = '共 ' + data.length + ' 篇论文';
+        })
+        .catch(function(err) {
+          statusEl.textContent = '加载失败';
+          console.error('Failed to load search index:', err);
+        });
+    }
+
+    function handleSearchInput() {
+      // 防抖
+      clearTimeout(searchDebounceTimer);
+      searchDebounceTimer = setTimeout(doSearch, 200);
+    }
+
+    function handleSearchKeydown(e) {
+      if (e.key === 'Enter') {
+        clearTimeout(searchDebounceTimer);
+        doSearch();
+      }
+    }
+
+    function doSearch() {
+      var query = document.getElementById('search-input').value.trim().toLowerCase();
+      var resultsEl = document.getElementById('search-results');
+      
+      if (!query) {
+        resultsEl.innerHTML = '<p class="search-hint">输入关键词开始搜索，支持中英文</p>';
+        return;
+      }
+      
+      if (!searchIndex) {
+        resultsEl.innerHTML = '<p class="search-hint">搜索索引加载中，请稍候...</p>';
+        return;
+      }
+      
+      // 搜索匹配
+      var keywords = query.split(/\s+/).filter(function(k) { return k.length > 0; });
+      var results = searchIndex.filter(function(item) {
+        var titleLower = item.title.toLowerCase();
+        var headlineLower = (item.headline || '').toLowerCase();
+        // 所有关键词都要匹配（标题或要点）
+        return keywords.every(function(kw) {
+          return titleLower.indexOf(kw) >= 0 || headlineLower.indexOf(kw) >= 0;
+        });
+      });
+      
+      // 限制显示数量
+      var maxResults = 50;
+      var displayResults = results.slice(0, maxResults);
+      
+      if (results.length === 0) {
+        resultsEl.innerHTML = '<p class="search-hint">未找到匹配的论文</p>';
+        return;
+      }
+      
+      // 获取站点根路径
+      var baseUrl = '{{ "/" | relative_url }}'.replace(/\/$/, '');
+      
+      var html = '<div class="search-result-count">找到 ' + results.length + ' 篇论文' + 
+        (results.length > maxResults ? '（显示前 ' + maxResults + ' 篇）' : '') + '</div>';
+      
+      html += '<div class="search-result-list">';
+      for (var i = 0; i < displayResults.length; i++) {
+        var item = displayResults[i];
+        var paperUrl = baseUrl + '/' + item.url;
+        html += '<div class="search-result-item">' +
+          '<a href="' + paperUrl + '" class="search-result-title">' + highlightKeywords(item.title, keywords) + '</a>' +
+          '<div class="search-result-meta">' +
+          '<span class="search-result-tag">' + item.tag + '</span>' +
+          '<span class="search-result-date">' + item.date + '</span>' +
+          '<span class="search-result-id">' + item.id + '</span>' +
+          '</div>';
+        if (item.headline) {
+          html += '<div class="search-result-headline">' + highlightKeywords(item.headline, keywords) + '</div>';
+        }
+        html += '</div>';
+      }
+      html += '</div>';
+      
+      resultsEl.innerHTML = html;
+    }
+
+    function highlightKeywords(text, keywords) {
+      var result = text;
+      for (var i = 0; i < keywords.length; i++) {
+        var kw = keywords[i];
+        // 使用正则进行大小写不敏感替换
+        var regex = new RegExp('(' + kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+        result = result.replace(regex, '<mark>$1</mark>');
+      }
+      return result;
+    }
 
     // 页面加载完成后初始化
     document.addEventListener('DOMContentLoaded', function () {
