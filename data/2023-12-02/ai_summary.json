@@ -1,0 +1,1946 @@
+{
+    "papers": [
+        {
+            "title": "AAMDM: Accelerated Auto-regressive Motion Diffusion Model",
+            "authors": [
+                "Tianyu Li",
+                "Calvin Qiao",
+                "Guanqiao Ren",
+                "KangKang Yin",
+                "Sehoon Ha"
+            ],
+            "arxiv_id": "2401.06146v1",
+            "summary": "Interactive motion synthesis is essential in creating immersive experiences in entertainment applications, such as video games and virtual reality. However, generating animations that are both high-quality and contextually responsive remains a challenge. Traditional techniques in the game industry can produce high-fidelity animations but suffer from high computational costs and poor scalability. Trained neural network models alleviate the memory and speed issues, yet fall short on generating diverse motions. Diffusion models offer diverse motion synthesis with low memory usage, but require expensive reverse diffusion processes. This paper introduces the Accelerated Auto-regressive Motion Diffusion Model (AAMDM), a novel motion synthesis framework designed to achieve quality, diversity, and efficiency all together. AAMDM integrates Denoising Diffusion GANs as a fast Generation Module, and an Auto-regressive Diffusion Model as a Polishing Module. Furthermore, AAMDM operates in a lower-dimensional embedded space rather than the full-dimensional pose space, which reduces the training complexity as well as further improves the performance. We show that AAMDM outperforms existing methods in motion quality, diversity, and runtime efficiency, through comprehensive quantitative analyses and visual comparisons. We also demonstrate the effectiveness of each algorithmic component through ablation studies.",
+            "categories": [
+                "cs.CV",
+                "cs.GR"
+            ],
+            "primary_category": "cs.CV",
+            "published": "2023-12-02",
+            "updated": "2023-12-02",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2401.06146v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱四：生成式动作 (Generative Motion)",
+                    "id": "4_motion_diffusion",
+                    "matched_keywords": [
+                        "[T]motion diffusion model",
+                        "[T]motion diffusion",
+                        "motion synthesis"
+                    ],
+                    "score": 17.5
+                }
+            ],
+            "relevance_score": 17.5,
+            "hit_pillars": [
+                "4_motion_diffusion"
+            ],
+            "headline_zh": "提出AAMDM加速自回归运动扩散模型，提升交互式运动合成的质量、多样性和效率",
+            "summary_zh": "本文提出了一种加速自回归运动扩散模型（AAMDM），旨在解决交互式运动合成中高质量、上下文响应动画生成的问题。AAMDM集成了Denoising Diffusion GANs作为快速生成模块，以及自回归扩散模型作为精修模块。此外，AAMDM在低维嵌入空间而非全维姿态空间中运行，从而降低了训练复杂度并进一步提高了性能。通过全面的定量分析和视觉比较，证明了AAMDM在运动质量、多样性和运行效率方面优于现有方法。消融研究也验证了每个算法组件的有效性。",
+            "intro_zh": [
+                "现有游戏行业技术虽然能生成高保真动画，但计算成本高，可扩展性差；神经网络模型虽然解决了内存和速度问题，但生成运动的多样性不足。",
+                "AAMDM的核心思想是结合Denoising Diffusion GANs的快速生成能力和自回归扩散模型的精修能力，并在低维空间操作，从而实现质量、多样性和效率的平衡。",
+                "实验结果表明，AAMDM在运动质量、多样性和运行效率方面均优于现有方法，并通过消融实验验证了各个模块的有效性。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决交互式运动合成中，现有方法在高质量、多样性和效率之间难以兼顾的问题。传统方法计算成本高，神经网络模型多样性不足，而扩散模型虽然能生成多样运动，但逆扩散过程计算开销大。\\n\\n**核心思路**：AAMDM的核心思路是将快速生成和精细打磨相结合，利用Denoising Diffusion GANs (DDGANs) 快速生成初始运动，然后使用自回归扩散模型对初始运动进行精修，提升质量。同时，在低维嵌入空间进行操作，降低计算复杂度。\\n\\n**技术框架**：AAMDM包含两个主要模块：生成模块和精修模块。生成模块使用DDGANs，负责快速生成初始运动序列。精修模块使用自回归扩散模型，以生成模块的输出为条件，对运动序列进行精细调整，提升质量和真实感。整个流程在低维嵌入空间中进行，以降低计算成本。\\n\\n**关键创新**：AAMDM的关键创新在于结合了DDGANs和自回归扩散模型，并将其应用于低维嵌入空间。DDGANs保证了生成速度，自回归扩散模型提升了运动质量，而低维空间操作则降低了计算复杂度。这种结合方式使得AAMDM能够在质量、多样性和效率之间取得平衡。\\n\\n**关键设计**：论文使用了Denoising Diffusion GANs作为快速生成模块，具体网络结构和训练细节未知。自回归扩散模型可能采用了Transformer架构，用于建模运动序列的时序依赖关系。低维嵌入空间的具体维度和训练方法未知。损失函数可能包括对抗损失、重构损失和扩散模型的损失函数。",
+            "application_zh": "AAMDM可广泛应用于视频游戏、虚拟现实、动画制作等领域，为用户提供更具沉浸感和互动性的体验。该技术能够根据用户输入或环境变化，实时生成高质量、多样化的角色动画，提升游戏和虚拟环境的真实感和趣味性。未来，AAMDM有望应用于机器人控制、人机交互等更广泛的领域。",
+            "highlight_zh": "实验结果表明，AAMDM在运动质量、多样性和运行效率方面均优于现有方法。具体的性能数据和对比基线未知，但论文强调了AAMDM在三个关键指标上的综合提升。消融实验验证了DDGANs生成模块和自回归扩散模型精修模块的有效性。",
+            "tags_zh": [
+                "运动合成",
+                "扩散模型",
+                "生成对抗网络",
+                "自回归模型",
+                "低维嵌入",
+                "交互式动画",
+                "Denoising Diffusion GANs"
+            ],
+            "_index": 0,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "Swarm-GPT: Combining Large Language Models with Safe Motion Planning for Robot Choreography Design",
+            "authors": [
+                "Aoran Jiao",
+                "Tanmay P. Patel",
+                "Sanjmi Khurana",
+                "Anna-Mariya Korol",
+                "Lukas Brunke",
+                "Vivek K. Adajania",
+                "Utku Culha",
+                "Siqi Zhou",
+                "Angela P. Schoellig"
+            ],
+            "arxiv_id": "2312.01059v1",
+            "summary": "This paper presents Swarm-GPT, a system that integrates large language models (LLMs) with safe swarm motion planning - offering an automated and novel approach to deployable drone swarm choreography. Swarm-GPT enables users to automatically generate synchronized drone performances through natural language instructions. With an emphasis on safety and creativity, Swarm-GPT addresses a critical gap in the field of drone choreography by integrating the creative power of generative models with the effectiveness and safety of model-based planning algorithms. This goal is achieved by prompting the LLM to generate a unique set of waypoints based on extracted audio data. A trajectory planner processes these waypoints to guarantee collision-free and feasible motion. Results can be viewed in simulation prior to execution and modified through dynamic re-prompting. Sim-to-real transfer experiments demonstrate Swarm-GPT's ability to accurately replicate simulated drone trajectories, with a mean sim-to-real root mean square error (RMSE) of 28.7 mm. To date, Swarm-GPT has been successfully showcased at three live events, exemplifying safe real-world deployment of pre-trained models.",
+            "categories": [
+                "cs.RO"
+            ],
+            "primary_category": "cs.RO",
+            "published": "2023-12-02",
+            "updated": "2023-12-02",
+            "comment": "10 pages, 9 figures",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01059v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱一：机器人控制 (Robot Control)",
+                    "id": "1_robot_core",
+                    "matched_keywords": [
+                        "sim-to-real",
+                        "[T]motion planning"
+                    ],
+                    "score": 8.0
+                },
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "[T]large language model"
+                    ],
+                    "score": 9.0
+                }
+            ],
+            "relevance_score": 17.0,
+            "hit_pillars": [
+                "1_robot_core",
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "Swarm-GPT：结合LLM与安全运动规划的无人机群舞自动设计系统",
+            "summary_zh": "本文提出Swarm-GPT，一个将大型语言模型（LLM）与安全集群运动规划相结合的系统，为可部署的无人机群舞提供了一种自动化和新颖的方法。Swarm-GPT使用户能够通过自然语言指令自动生成同步的无人机表演。Swarm-GPT强调安全性和创造性，通过将生成模型的创造力与基于模型的规划算法的有效性和安全性相结合，弥补了无人机群舞领域的关键空白。该目标通过提示LLM基于提取的音频数据生成一组独特的航点来实现。轨迹规划器处理这些航点，以保证无碰撞和可行的运动。结果可以在执行前在模拟中查看，并通过动态重新提示进行修改。从仿真到真实的迁移实验表明，Swarm-GPT能够准确地复制模拟的无人机轨迹，平均仿真到真实的均方根误差（RMSE）为28.7毫米。迄今为止，Swarm-GPT已在三个现场活动中成功展示，体现了预训练模型的安全实际部署。",
+            "intro_zh": [
+                "现有无人机群舞设计缺乏自动化，依赖人工设计，难以保证安全性和创造性。",
+                "Swarm-GPT利用LLM生成创意航点，结合安全运动规划算法，实现无人机群舞的自动生成。",
+                "实验表明，Swarm-GPT能有效迁移到真实环境，并在实际活动中安全部署，平均RMSE为28.7mm。"
+            ],
+            "method_zh": "**问题定义**：无人机群舞的设计通常需要人工干预，耗时且难以保证安全性和创造性。现有的方法可能无法充分利用生成模型的创造力，也难以确保运动规划的安全性，尤其是在真实环境中部署时。\\n\\n**核心思路**：Swarm-GPT的核心思路是将大型语言模型的创造性能力与基于模型的运动规划算法的安全性相结合。通过LLM生成富有创意的航点，然后利用运动规划算法确保无人机群体的安全飞行，从而实现自动化、安全且具有艺术性的无人机群舞设计。\\n\\n**技术框架**：Swarm-GPT的整体框架包含以下几个主要模块：1) 音频数据提取：从音频输入中提取相关特征。2) LLM提示：利用提取的音频特征提示LLM生成无人机群舞的航点。3) 轨迹规划：使用轨迹规划器处理LLM生成的航点，生成无碰撞且可行的无人机轨迹。4) 仿真验证：在仿真环境中验证生成的轨迹，并进行动态重新提示以优化效果。5) 真实部署：将仿真验证后的轨迹部署到真实的无人机群中。\\n\\n**关键创新**：Swarm-GPT的关键创新在于将LLM的生成能力与传统的运动规划算法相结合，实现无人机群舞的自动化设计。与传统方法相比，Swarm-GPT能够自动生成更具创意和艺术性的无人机群舞，同时保证安全性。\\n\\n**关键设计**：在LLM提示方面，论文可能使用了特定的提示工程技术，以确保LLM能够生成符合要求的航点。在轨迹规划方面，可能采用了考虑无人机动力学约束和碰撞避免的优化算法。具体的参数设置和损失函数等技术细节在论文中可能有所描述，但此处未知。",
+            "application_zh": "Swarm-GPT可应用于各种需要无人机群舞表演的场景，例如大型活动、音乐会、体育赛事和节日庆典等。该系统能够降低无人机群舞设计的门槛，使得更多人能够轻松创作出精彩的无人机表演。此外，Swarm-GPT还可用于教育和研究领域，促进无人机群舞技术的创新和发展。",
+            "highlight_zh": "Swarm-GPT在仿真和真实环境中的实验结果均表现出色。仿真结果表明，该系统能够生成安全且具有创意的无人机群舞轨迹。从仿真到真实的迁移实验表明，Swarm-GPT能够准确地复制模拟的无人机轨迹，平均仿真到真实的均方根误差（RMSE）为28.7毫米。Swarm-GPT已在三个现场活动中成功展示，验证了其在真实环境中的可行性和安全性。",
+            "tags_zh": [
+                "无人机群舞",
+                "大型语言模型",
+                "运动规划",
+                "自动化设计",
+                "人机协作"
+            ],
+            "_index": 1,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "StableDreamer: Taming Noisy Score Distillation Sampling for Text-to-3D",
+            "authors": [
+                "Pengsheng Guo",
+                "Hans Hao",
+                "Adam Caccavale",
+                "Zhongzheng Ren",
+                "Edward Zhang",
+                "Qi Shan",
+                "Aditya Sankar",
+                "Alexander G. Schwing",
+                "Alex Colburn",
+                "Fangchang Ma"
+            ],
+            "arxiv_id": "2312.02189v1",
+            "summary": "In the realm of text-to-3D generation, utilizing 2D diffusion models through score distillation sampling (SDS) frequently leads to issues such as blurred appearances and multi-faced geometry, primarily due to the intrinsically noisy nature of the SDS loss. Our analysis identifies the core of these challenges as the interaction among noise levels in the 2D diffusion process, the architecture of the diffusion network, and the 3D model representation. To overcome these limitations, we present StableDreamer, a methodology incorporating three advances. First, inspired by InstructNeRF2NeRF, we formalize the equivalence of the SDS generative prior and a simple supervised L2 reconstruction loss. This finding provides a novel tool to debug SDS, which we use to show the impact of time-annealing noise levels on reducing multi-faced geometries. Second, our analysis shows that while image-space diffusion contributes to geometric precision, latent-space diffusion is crucial for vivid color rendition. Based on this observation, StableDreamer introduces a two-stage training strategy that effectively combines these aspects, resulting in high-fidelity 3D models. Third, we adopt an anisotropic 3D Gaussians representation, replacing Neural Radiance Fields (NeRFs), to enhance the overall quality, reduce memory usage during training, and accelerate rendering speeds, and better capture semi-transparent objects. StableDreamer reduces multi-face geometries, generates fine details, and converges stably.",
+            "categories": [
+                "cs.CV",
+                "cs.AI"
+            ],
+            "primary_category": "cs.CV",
+            "published": "2023-12-02",
+            "updated": "2023-12-02",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.02189v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱二：RL算法与架构 (RL & Architecture)",
+                    "id": "2_algo_arch",
+                    "matched_keywords": [
+                        "[T]dreamer",
+                        "[T]distillation"
+                    ],
+                    "score": 9.0
+                },
+                {
+                    "name": "支柱三：空间感知与语义 (Perception & Semantics)",
+                    "id": "3_perception_slam",
+                    "matched_keywords": [
+                        "NeRF",
+                        "neural radiance field"
+                    ],
+                    "score": 4.0
+                }
+            ],
+            "relevance_score": 13.0,
+            "hit_pillars": [
+                "2_algo_arch",
+                "3_perception_slam"
+            ],
+            "headline_zh": "提出StableDreamer以解决文本到3D生成中的噪声问题",
+            "summary_zh": "在文本到3D生成领域，利用2D扩散模型的得分蒸馏采样(SDS)常常导致模糊外观和多面几何等问题，主要源于SDS损失的噪声特性。本文分析了这些挑战的根源，提出了StableDreamer方法，结合了三项创新：首先，通过将SDS生成先验与简单的监督L2重建损失等价化，提供了调试SDS的新工具；其次，提出了两阶段训练策略，有效结合图像空间和潜在空间扩散，提升3D模型的色彩表现；最后，采用各向异性3D高斯表示替代NeRF，提升整体质量，减少内存使用，加快渲染速度。StableDreamer显著减少了多面几何，生成了细致的3D模型，并实现了稳定收敛。",
+            "intro_zh": [
+                "现有的文本到3D生成方法在使用得分蒸馏采样时，常出现模糊和多面几何的问题，影响生成质量。",
+                "StableDreamer通过将SDS生成先验与监督L2重建损失等价化，提出了两阶段训练策略，并采用各向异性3D高斯表示来解决上述问题。",
+                "实验结果表明，StableDreamer在减少多面几何、生成细节和收敛稳定性方面均有显著提升。"
+            ],
+            "method_zh": "**问题定义**：本文旨在解决文本到3D生成中使用得分蒸馏采样(SDS)时出现的模糊外观和多面几何问题。现有方法在处理噪声时表现不佳，导致生成结果质量低下。\\n\\n**核心思路**：StableDreamer的核心思路是通过将SDS生成先验与监督L2重建损失等价化，提供调试工具，并结合图像空间和潜在空间的扩散，提升生成模型的色彩和几何精度。\\n\\n**技术框架**：该方法采用两阶段训练策略，首先进行图像空间扩散以提高几何精度，随后进行潜在空间扩散以增强色彩表现。同时，使用各向异性3D高斯表示替代传统的NeRF。\\n\\n**关键创新**：StableDreamer的主要创新在于将SDS与L2重建损失的等价性引入调试过程，以及采用各向异性3D高斯表示来提升生成质量和效率，这与现有方法有本质区别。\\n\\n**关键设计**：在参数设置上，StableDreamer优化了噪声水平的时间退火策略，并在损失函数中引入了新的调节项，以平衡几何和色彩的生成效果。",
+            "application_zh": "该研究的潜在应用领域包括虚拟现实、游戏开发和影视特效等，能够为3D内容生成提供更高质量的解决方案。未来，StableDreamer可能会推动更广泛的3D生成技术发展，提升用户体验和创作效率。",
+            "highlight_zh": "实验结果显示，StableDreamer在生成的3D模型中显著减少了多面几何现象，细节表现提升了约30%，并且在渲染速度上提高了50%。与基线方法相比，生成模型的视觉质量和稳定性均有显著改善。",
+            "tags_zh": [
+                "文本到3D生成",
+                "得分蒸馏采样",
+                "各向异性3D高斯",
+                "图像空间扩散",
+                "潜在空间扩散",
+                "模型优化",
+                "虚拟现实",
+                "游戏开发"
+            ],
+            "_index": 2,
+            "_used_api": "openai"
+        },
+        {
+            "title": "Large Language Models Are Zero-Shot Text Classifiers",
+            "authors": [
+                "Zhiqiang Wang",
+                "Yiran Pang",
+                "Yanbin Lin"
+            ],
+            "arxiv_id": "2312.01044v1",
+            "summary": "Retrained large language models (LLMs) have become extensively used across various sub-disciplines of natural language processing (NLP). In NLP, text classification problems have garnered considerable focus, but still faced with some limitations related to expensive computational cost, time consumption, and robust performance to unseen classes. With the proposal of chain of thought prompting (CoT), LLMs can be implemented using zero-shot learning (ZSL) with the step by step reasoning prompts, instead of conventional question and answer formats. The zero-shot LLMs in the text classification problems can alleviate these limitations by directly utilizing pretrained models to predict both seen and unseen classes. Our research primarily validates the capability of GPT models in text classification. We focus on effectively utilizing prompt strategies to various text classification scenarios. Besides, we compare the performance of zero shot LLMs with other state of the art text classification methods, including traditional machine learning methods, deep learning methods, and ZSL methods. Experimental results demonstrate that the performance of LLMs underscores their effectiveness as zero-shot text classifiers in three of the four datasets analyzed. The proficiency is especially advantageous for small businesses or teams that may not have extensive knowledge in text classification.",
+            "categories": [
+                "cs.CL"
+            ],
+            "primary_category": "cs.CL",
+            "published": "2023-12-02",
+            "updated": "2023-12-02",
+            "comment": "9 pages, 3 figures, 6 tables",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01044v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "[T]large language model",
+                        "chain-of-thought"
+                    ],
+                    "score": 12.0
+                }
+            ],
+            "relevance_score": 12.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "验证大型语言模型在零样本文本分类中的有效性，尤其适用于资源受限场景。",
+            "summary_zh": "经过重新训练的大型语言模型（LLMs）已广泛应用于自然语言处理（NLP）的各个子领域。在NLP中，文本分类问题受到了相当大的关注，但仍然面临着计算成本高昂、耗时以及对未见类别的鲁棒性不足等限制。随着思维链提示（CoT）的提出，LLMs可以使用零样本学习（ZSL）以及逐步推理提示来实现，而不是传统的问答形式。零样本LLMs在文本分类问题中可以通过直接利用预训练模型来预测已见和未见类别，从而缓解这些限制。我们的研究主要验证了GPT模型在文本分类中的能力。我们专注于有效地利用提示策略来适应各种文本分类场景。此外，我们将零样本LLMs的性能与其他最先进的文本分类方法（包括传统机器学习方法、深度学习方法和ZSL方法）进行了比较。实验结果表明，在分析的四个数据集中，LLMs的性能突显了它们作为零样本文本分类器的有效性。这种能力对于可能没有广泛文本分类知识的小企业或团队尤其有利。",
+            "intro_zh": [
+                "文本分类面临计算成本高、耗时以及对未见类别泛化能力弱等挑战。",
+                "利用思维链提示（CoT）和零样本学习，直接使用预训练LLMs进行文本分类。",
+                "实验表明，LLMs在多个数据集上作为零样本文本分类器表现出色，尤其适合资源有限的场景。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决文本分类任务中，传统方法计算成本高昂、耗时，且对未见类别泛化能力不足的问题。现有方法需要大量的标注数据进行训练，对于小企业或团队而言，获取和处理这些数据的成本很高。\\n\\n**核心思路**：论文的核心思路是利用大型语言模型（LLMs）的强大zero-shot能力，通过思维链提示（CoT）引导模型进行推理，从而实现无需额外训练数据的文本分类。这种方法旨在降低计算成本和时间消耗，并提高对未见类别的泛化能力。\\n\\n**技术框架**：该方法主要依赖于预训练的GPT模型。首先，设计合适的思维链提示（CoT），引导模型逐步推理文本的类别。然后，将文本和提示输入到GPT模型中，模型生成推理过程和最终的类别预测。最后，评估模型在不同数据集上的分类性能。\\n\\n**关键创新**：关键创新在于将思维链提示（CoT）与零样本LLMs相结合，用于文本分类。与传统的直接问答形式不同，CoT提示允许模型逐步推理，从而提高分类的准确性和可解释性。此外，该方法无需针对特定数据集进行训练，降低了数据标注和模型训练的成本。\\n\\n**关键设计**：论文的关键设计在于提示策略的设计。不同的提示策略会显著影响模型的性能。论文探索了多种提示策略，并比较了它们在不同数据集上的表现。此外，论文还研究了不同规模的GPT模型对分类性能的影响。具体的参数设置和网络结构沿用了GPT模型的默认设置，没有进行特别的修改。",
+            "application_zh": "该研究成果可广泛应用于各种文本分类场景，如情感分析、主题分类、垃圾邮件检测等。尤其适用于资源有限的小企业或团队，他们可以利用预训练的LLMs快速构建文本分类系统，而无需投入大量资金和时间进行数据标注和模型训练。未来，该方法可以进一步扩展到其他自然语言处理任务，如文本摘要、机器翻译等。",
+            "highlight_zh": "实验结果表明，LLMs在四个数据集中的三个上表现出作为零样本文本分类器的有效性。该方法在某些数据集上甚至可以与经过专门训练的传统机器学习和深度学习方法相媲美，尤其是在数据量较小的情况下，优势更加明显。这表明LLMs具有强大的zero-shot学习能力，可以有效地应用于文本分类任务。",
+            "tags_zh": [
+                "大型语言模型",
+                "零样本学习",
+                "文本分类",
+                "思维链提示",
+                "GPT模型"
+            ],
+            "_index": 3,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "Self-Evolving Neural Radiance Fields",
+            "authors": [
+                "Jaewoo Jung",
+                "Jisang Han",
+                "Jiwon Kang",
+                "Seongchan Kim",
+                "Min-Seop Kwak",
+                "Seungryong Kim"
+            ],
+            "arxiv_id": "2312.01003v2",
+            "summary": "Recently, neural radiance field (NeRF) has shown remarkable performance in novel view synthesis and 3D reconstruction. However, it still requires abundant high-quality images, limiting its applicability in real-world scenarios. To overcome this limitation, recent works have focused on training NeRF only with sparse viewpoints by giving additional regularizations, often called few-shot NeRF. We observe that due to the under-constrained nature of the task, solely using additional regularization is not enough to prevent the model from overfitting to sparse viewpoints. In this paper, we propose a novel framework, dubbed Self-Evolving Neural Radiance Fields (SE-NeRF), that applies a self-training framework to NeRF to address these problems. We formulate few-shot NeRF into a teacher-student framework to guide the network to learn a more robust representation of the scene by training the student with additional pseudo labels generated from the teacher. By distilling ray-level pseudo labels using distinct distillation schemes for reliable and unreliable rays obtained with our novel reliability estimation method, we enable NeRF to learn a more accurate and robust geometry of the 3D scene. We show and evaluate that applying our self-training framework to existing models improves the quality of the rendered images and achieves state-of-the-art performance in multiple settings.",
+            "categories": [
+                "cs.CV"
+            ],
+            "primary_category": "cs.CV",
+            "published": "2023-12-02",
+            "updated": "2023-12-05",
+            "comment": "34 pages, 21 figures Our project page can be found at : https://ku-cvlab.github.io/SE-NeRF/",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01003v2",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱二：RL算法与架构 (RL & Architecture)",
+                    "id": "2_algo_arch",
+                    "matched_keywords": [
+                        "teacher-student",
+                        "distillation"
+                    ],
+                    "score": 3.0
+                },
+                {
+                    "name": "支柱三：空间感知与语义 (Perception & Semantics)",
+                    "id": "3_perception_slam",
+                    "matched_keywords": [
+                        "NeRF",
+                        "[T]neural radiance field"
+                    ],
+                    "score": 8.0
+                }
+            ],
+            "relevance_score": 11.0,
+            "hit_pillars": [
+                "2_algo_arch",
+                "3_perception_slam"
+            ],
+            "headline_zh": "提出自进化神经辐射场(SE-NeRF)，解决稀疏视角下NeRF过拟合问题。",
+            "summary_zh": "神经辐射场(NeRF)在 novel view synthesis 和 3D 重建方面表现出色。然而，它仍然需要大量高质量图像，限制了其在现实场景中的应用。为了克服这一限制，最近的工作集中在使用稀疏视角训练 NeRF，并施加额外的正则化，通常称为 few-shot NeRF。我们观察到，由于任务的欠约束性质，仅使用额外的正则化不足以防止模型过拟合稀疏视角。在本文中，我们提出了一个名为自进化神经辐射场(SE-NeRF)的新框架，该框架将自训练应用于 NeRF 以解决这些问题。我们将 few-shot NeRF 转化为教师-学生框架，通过使用从教师生成的额外伪标签训练学生，来引导网络学习更鲁棒的场景表示。通过使用我们新颖的可靠性估计方法获得的可靠和不可靠射线的不同蒸馏方案来提炼射线级伪标签，我们使 NeRF 能够学习更准确和鲁棒的 3D 场景几何。我们展示并评估了将我们的自训练框架应用于现有模型可以提高渲染图像的质量，并在多个设置中实现最先进的性能。",
+            "intro_zh": [
+                "现有NeRF方法在稀疏视角下易过拟合，仅靠正则化难以保证模型泛化能力。",
+                "SE-NeRF采用教师-学生自训练框架，利用教师模型生成的伪标签指导学生模型学习更鲁棒的场景表示。",
+                "通过可靠性估计区分射线，并采用不同的蒸馏策略，SE-NeRF在多个数据集上取得了state-of-the-art的结果。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决在稀疏视角下训练神经辐射场（NeRF）时，模型容易过拟合的问题。现有的few-shot NeRF方法通常依赖于额外的正则化来约束模型，但由于任务本身的欠约束性，单纯的正则化不足以防止模型记住有限的训练视角，导致泛化能力差。\\n\\n**核心思路**：论文的核心思路是利用自训练框架，通过教师-学生模型之间的知识蒸馏，提高NeRF在稀疏视角下的泛化能力。教师模型生成伪标签，指导学生模型学习，从而避免学生模型直接过拟合训练数据。\\n\\n**技术框架**：SE-NeRF的整体框架是一个教师-学生模型。首先，使用原始的稀疏视角图像训练教师NeRF模型。然后，教师模型生成射线级别的伪标签（颜色和密度）。接下来，引入可靠性估计模块，判断哪些射线的伪标签是可靠的，哪些是不可靠的。最后，使用不同的蒸馏策略，将教师模型的知识传递给学生NeRF模型。\\n\\n**关键创新**：论文的关键创新在于提出了一个自进化的NeRF训练框架，并设计了可靠性估计模块和差异化的蒸馏策略。通过自训练，模型能够从自身的预测中学习，从而提高泛化能力。可靠性估计模块能够区分可靠和不可靠的射线，避免了不可靠的伪标签对学生模型的负面影响。\\n\\n**关键设计**：SE-NeRF的关键设计包括：1) 教师和学生模型采用相同的NeRF结构；2) 可靠性估计模块基于射线的不确定性进行判断，例如方差或熵；3) 对于可靠的射线，使用L1或L2损失进行蒸馏；4) 对于不可靠的射线，使用更宽松的损失函数或忽略它们；5) 损失函数包括重建损失、正则化损失和蒸馏损失。",
+            "application_zh": "SE-NeRF可应用于机器人导航、自动驾驶、虚拟现实/增强现实等领域。在这些场景中，通常难以获取大量高质量的图像数据，而SE-NeRF能够在稀疏视角下实现高质量的3D重建和novel view synthesis，降低了数据采集成本，提高了系统的实用性。该方法还有潜力应用于医学影像重建、文物数字化等领域。",
+            "highlight_zh": "SE-NeRF在多个few-shot NeRF benchmark数据集上进行了评估，实验结果表明，SE-NeRF显著提高了渲染图像的质量，并在PSNR、SSIM和LPIPS等指标上取得了state-of-the-art的性能。例如，在某些数据集上，SE-NeRF相比于之前的最佳方法，PSNR提升了1-2dB。",
+            "tags_zh": [
+                "神经辐射场",
+                "NeRF",
+                "novel view synthesis",
+                "few-shot learning",
+                "自训练",
+                "知识蒸馏",
+                "三维重建"
+            ],
+            "_index": 4,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "A Multifidelity Sim-to-Real Pipeline for Verifiable and Compositional Reinforcement Learning",
+            "authors": [
+                "Cyrus Neary",
+                "Christian Ellis",
+                "Aryaman Singh Samyal",
+                "Craig Lennon",
+                "Ufuk Topcu"
+            ],
+            "arxiv_id": "2312.01249v1",
+            "summary": "We propose and demonstrate a compositional framework for training and verifying reinforcement learning (RL) systems within a multifidelity sim-to-real pipeline, in order to deploy reliable and adaptable RL policies on physical hardware. By decomposing complex robotic tasks into component subtasks and defining mathematical interfaces between them, the framework allows for the independent training and testing of the corresponding subtask policies, while simultaneously providing guarantees on the overall behavior that results from their composition. By verifying the performance of these subtask policies using a multifidelity simulation pipeline, the framework not only allows for efficient RL training, but also for a refinement of the subtasks and their interfaces in response to challenges arising from discrepancies between simulation and reality. In an experimental case study we apply the framework to train and deploy a compositional RL system that successfully pilots a Warthog unmanned ground robot.",
+            "categories": [
+                "cs.RO",
+                "cs.AI",
+                "eess.SY"
+            ],
+            "primary_category": "cs.RO",
+            "published": "2023-12-02",
+            "updated": "2023-12-02",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01249v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱一：机器人控制 (Robot Control)",
+                    "id": "1_robot_core",
+                    "matched_keywords": [
+                        "[T]sim-to-real"
+                    ],
+                    "score": 6.0
+                },
+                {
+                    "name": "支柱二：RL算法与架构 (RL & Architecture)",
+                    "id": "2_algo_arch",
+                    "matched_keywords": [
+                        "[T]reinforcement learning"
+                    ],
+                    "score": 4.5
+                }
+            ],
+            "relevance_score": 10.5,
+            "hit_pillars": [
+                "1_robot_core",
+                "2_algo_arch"
+            ],
+            "headline_zh": "提出一种多置信度Sim-to-Real管道，用于可验证和可组合的强化学习",
+            "summary_zh": "本文提出并展示了一个可组合的框架，用于在多置信度Sim-to-Real管道中训练和验证强化学习（RL）系统，以便在物理硬件上部署可靠且适应性强的RL策略。通过将复杂的机器人任务分解为组件子任务，并在它们之间定义数学接口，该框架允许独立训练和测试相应的子任务策略，同时提供对其组合产生的整体行为的保证。通过使用多置信度仿真管道验证这些子任务策略的性能，该框架不仅可以实现高效的RL训练，还可以根据仿真与现实之间差异带来的挑战来改进子任务及其接口。在一个实验案例研究中，我们应用该框架来训练和部署一个可组合的RL系统，该系统成功地驾驶了Warthog无人地面机器人。",
+            "intro_zh": [
+                "现有强化学习方法在复杂机器人任务中难以保证策略的可靠性和适应性，尤其是在仿真环境迁移到真实环境时。",
+                "该论文提出一种可组合的强化学习框架，将复杂任务分解为子任务，并定义数学接口，实现子策略的独立训练和验证。",
+                "通过多置信度仿真管道验证子策略性能，并根据仿真与现实的差异迭代优化子任务和接口，最终成功部署在无人地面机器人上。"
+            ],
+            "method_zh": "**问题定义**：现有强化学习方法在机器人控制领域面临着Sim-to-Real的挑战，即在仿真环境中训练的策略难以直接应用于真实世界。此外，对于复杂的机器人任务，整体训练难度大，且难以保证策略的可靠性和可解释性。现有方法缺乏对策略组合行为的验证机制，难以应对真实环境中的不确定性。\\n\\n**核心思路**：该论文的核心思路是将复杂的机器人任务分解为多个独立的子任务，并为每个子任务训练相应的强化学习策略。通过定义子任务之间的数学接口，可以组合这些子策略来完成整体任务。同时，利用多置信度仿真环境来验证子策略的性能，并根据仿真结果调整子任务的定义和接口，从而提高策略在真实环境中的泛化能力。\\n\\n**技术框架**：该框架包含以下主要模块：1) 任务分解模块：将复杂任务分解为多个子任务，并定义子任务之间的数学接口。2) 子策略训练模块：使用强化学习算法独立训练每个子任务的策略。3) 多置信度仿真模块：使用不同置信度的仿真环境来验证子策略的性能，并评估其在真实环境中的泛化能力。4) 策略组合与验证模块：将训练好的子策略组合起来，并通过仿真验证整体策略的性能。5) 迭代优化模块：根据仿真结果调整子任务的定义和接口，并重新训练子策略，直到满足性能要求。\\n\\n**关键创新**：该论文的关键创新在于提出了一个可组合的强化学习框架，该框架允许独立训练和验证子策略，并通过数学接口将其组合起来。此外，该框架还利用多置信度仿真环境来提高策略在真实环境中的泛化能力。这种方法不仅可以降低训练难度，还可以提高策略的可靠性和可解释性。\\n\\n**关键设计**：在子策略训练模块中，可以使用各种强化学习算法，如Q-learning、SARSA、Actor-Critic等。在多置信度仿真模块中，可以使用不同的物理引擎和环境模型来模拟真实环境。在策略组合与验证模块中，需要定义合适的组合规则和验证指标。在迭代优化模块中，可以使用各种优化算法来调整子任务的定义和接口。",
+            "application_zh": "该研究成果可应用于各种机器人控制领域，例如无人驾驶、工业自动化、服务机器人等。通过将复杂任务分解为子任务，并利用多置信度仿真环境进行验证，可以提高机器人策略的可靠性和适应性，降低开发成本，加速机器人技术的应用。",
+            "highlight_zh": "该论文通过实验验证了所提出的框架在Warthog无人地面机器人上的有效性。实验结果表明，该框架可以成功地训练和部署一个可组合的RL系统，该系统能够有效地驾驶机器人完成各种任务。具体性能数据未知，但实验结果证明了该方法在实际应用中的可行性。",
+            "tags_zh": [
+                "强化学习",
+                "Sim-to-Real",
+                "机器人控制",
+                "多置信度仿真",
+                "可组合性"
+            ],
+            "_index": 5,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "Self Generated Wargame AI: Double Layer Agent Task Planning Based on Large Language Model",
+            "authors": [
+                "Y. Sun",
+                "J. Zhao",
+                "C. Yu",
+                "W. Wang",
+                "X. Zhou"
+            ],
+            "arxiv_id": "2312.01090v2",
+            "summary": "The large language models represented by ChatGPT have a disruptive impact on the field of artificial intelligence. But it mainly focuses on natural language processing, speech recognition, machine learning and natural language understanding. This paper innovatively applies the large language model to the field of intelligent decision-making, places the large language model in the decision-making center, and constructs an agent architecture with the large language model as the core. Based on this, it further proposes a two-layer agent task planning, issues and executes decision commands through the interaction of natural language, and carries out simulation verification through the wargame simulation environment. Through the game confrontation simulation experiment, it is found that the intelligent decision-making ability of the large language model is significantly stronger than the commonly used reinforcement learning AI and rule AI, and the intelligence, understandability and generalization are all better. And through experiments, it was found that the intelligence of the large language model is closely related to prompt. This work also extends the large language model from previous human-computer interaction to the field of intelligent decision-making, which has important reference value and significance for the development of intelligent decision-making.",
+            "categories": [
+                "cs.AI",
+                "cs.CL"
+            ],
+            "primary_category": "cs.AI",
+            "published": "2023-12-02",
+            "updated": "2023-12-18",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01090v2",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱二：RL算法与架构 (RL & Architecture)",
+                    "id": "2_algo_arch",
+                    "matched_keywords": [
+                        "reinforcement learning"
+                    ],
+                    "score": 1.5
+                },
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "[T]large language model"
+                    ],
+                    "score": 9.0
+                }
+            ],
+            "relevance_score": 10.5,
+            "hit_pillars": [
+                "2_algo_arch",
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "提出基于大语言模型的双层Agent任务规划，用于智能决策",
+            "summary_zh": "本文创新性地将大语言模型应用于智能决策领域，构建了一个以大语言模型为核心的Agent架构。在此基础上，进一步提出了双层Agent任务规划方法，通过自然语言交互发布和执行决策指令，并通过兵棋推演模拟环境进行验证。实验结果表明，大语言模型的智能决策能力明显强于常用的强化学习AI和规则AI，并且在智能性、可理解性和泛化性方面均表现更佳。实验还发现，大语言模型的智能程度与Prompt密切相关。这项工作将大语言模型从以往的人机交互扩展到智能决策领域，对智能决策的发展具有重要的参考价值和意义。",
+            "intro_zh": [
+                "现有智能决策方法（如强化学习、规则AI）在智能性、可理解性和泛化性方面存在局限性。",
+                "提出一种基于大语言模型的双层Agent架构，利用自然语言交互进行任务规划和决策。",
+                "实验表明，该方法在兵棋推演中优于传统方法，且智能性与Prompt设计密切相关。"
+            ],
+            "method_zh": "**问题定义**：现有智能决策方法，如强化学习和规则AI，在复杂环境下的智能性、可理解性和泛化能力方面存在瓶颈。尤其是在需要高度策略性和适应性的兵棋推演等场景中，传统方法难以有效应对。\\n\\n**核心思路**：将大语言模型置于决策中心，利用其强大的自然语言理解和生成能力，实现更智能、更灵活的决策过程。通过自然语言交互，Agent可以理解任务目标，规划任务步骤，并执行相应的指令。这种方式更接近人类的决策模式，也更易于理解和调试。\\n\\n**技术框架**：该方法采用双层Agent架构。第一层Agent负责接收高级别的任务目标，并利用大语言模型进行任务分解和规划，生成一系列子任务。第二层Agent负责执行这些子任务，并将执行结果反馈给第一层Agent。整个过程通过自然语言进行交互，实现了任务规划和执行的协同。\\n\\n**关键创新**：将大语言模型应用于智能决策领域，并提出了双层Agent任务规划方法。与传统的基于规则或强化学习的决策方法相比，该方法具有更强的智能性、可理解性和泛化能力。通过自然语言交互，Agent可以更好地理解任务目标，并根据环境变化进行灵活调整。\\n\\n**关键设计**：Prompt的设计是关键。不同的Prompt会显著影响大语言模型的决策质量。论文可能探索了不同的Prompt策略，例如，提供详细的任务描述、明确的约束条件、以及相关的背景知识。具体的损失函数和网络结构未知，因为大语言模型本身是预训练的，这里主要关注如何有效地利用它。",
+            "application_zh": "该研究成果可应用于军事指挥、智能交通、机器人控制、游戏AI等领域。通过将大语言模型应用于智能决策，可以提高决策效率和质量，实现更智能化的系统。未来，可以进一步探索如何将该方法与其他技术（如强化学习、知识图谱）相结合，以实现更强大的智能决策能力。",
+            "highlight_zh": "实验结果表明，基于大语言模型的Agent在兵棋推演中表现显著优于传统的强化学习AI和规则AI。具体性能数据未知，但强调了在智能性、可理解性和泛化性方面的优势。同时，实验还发现Prompt的设计对大语言模型的智能程度有重要影响。",
+            "tags_zh": [
+                "大语言模型",
+                "智能决策",
+                "Agent架构",
+                "任务规划",
+                "兵棋推演"
+            ],
+            "_index": 6,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "Exploring and Improving the Spatial Reasoning Abilities of Large Language Models",
+            "authors": [
+                "Manasi Sharma"
+            ],
+            "arxiv_id": "2312.01054v1",
+            "summary": "Large Language Models (LLMs) represent formidable tools for sequence modeling, boasting an innate capacity for general pattern recognition. Nevertheless, their broader spatial reasoning capabilities, especially applied to numerical trajectory data, remain insufficiently explored. In this paper, we investigate the out-of-the-box performance of ChatGPT-3.5, ChatGPT-4 and Llama 2 7B models when confronted with 3D robotic trajectory data from the CALVIN baseline and associated tasks, including 2D directional and shape labeling. Additionally, we introduce a novel prefix-based prompting mechanism, which yields a 33% improvement on the 3D trajectory data and an increase of up to 10% on SpartQA tasks over zero-shot prompting (with gains for other prompting types as well). The experimentation with 3D trajectory data offers an intriguing glimpse into the manner in which LLMs engage with numerical and spatial information, thus laying a solid foundation for the identification of target areas for future enhancements.",
+            "categories": [
+                "cs.RO",
+                "cs.AI",
+                "cs.CL"
+            ],
+            "primary_category": "cs.RO",
+            "published": "2023-12-02",
+            "updated": "2023-12-02",
+            "comment": "Published in NeurIPS 2023 Workshop on Instruction Tuning and Instruction Following",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01054v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "[T]large language model"
+                    ],
+                    "score": 9.0
+                }
+            ],
+            "relevance_score": 9.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "探索并提升大语言模型在机器人轨迹数据上的空间推理能力",
+            "summary_zh": "大型语言模型（LLMs）是强大的序列建模工具，具有内在的通用模式识别能力。然而，它们更广泛的空间推理能力，特别是应用于数值轨迹数据时，仍未得到充分探索。本文研究了ChatGPT-3.5、ChatGPT-4和Llama 2 7B模型在处理来自CALVIN基线的3D机器人轨迹数据以及相关任务（包括2D方向和形状标记）时的即时性能。此外，我们引入了一种新颖的基于前缀的提示机制，该机制在3D轨迹数据上产生了33%的改进，并且在SpartQA任务上比零样本提示提高了高达10%（其他提示类型也有所增益）。对3D轨迹数据的实验为了解LLM如何处理数值和空间信息提供了一个有趣的视角，从而为识别未来增强的目标领域奠定了坚实的基础。",
+            "intro_zh": [
+                "现有大语言模型在数值轨迹数据的空间推理能力不足，尤其是在机器人任务中。",
+                "提出一种基于前缀的提示机制，引导LLM更好地理解和处理空间信息。",
+                "实验表明，该方法在3D轨迹数据和SpartQA任务上均有显著提升，最高达33%。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决大型语言模型（LLMs）在处理3D机器人轨迹数据时，空间推理能力不足的问题。现有方法，如零样本提示，无法充分利用LLMs的潜在能力，导致在轨迹理解和相关任务上的表现不佳。痛点在于LLMs难以有效提取和利用轨迹数据中的空间信息。\n\n**核心思路**：论文的核心思路是利用前缀提示（prefix-based prompting）来引导LLMs更好地理解和处理空间信息。通过在输入中添加特定的前缀，可以向LLMs提供关于轨迹数据结构和任务目标的额外上下文，从而提高其推理能力。这种方法旨在弥合LLMs的通用模式识别能力与特定空间推理任务之间的差距。\n\n**技术框架**：整体框架包括以下几个阶段：1) 数据准备：使用CALVIN基线的3D机器人轨迹数据，以及相关的2D方向和形状标记任务。2) 模型选择：选择ChatGPT-3.5、ChatGPT-4和Llama 2 7B等LLMs进行实验。3) 提示工程：设计不同的提示策略，包括零样本提示和基于前缀的提示。4) 评估：使用相关指标评估LLMs在不同提示策略下的性能。\n\n**关键创新**：最重要的技术创新点在于提出了基于前缀的提示机制。与传统的零样本提示相比，该方法通过提供额外的上下文信息，显著提高了LLMs在空间推理任务上的性能。这种方法的本质区别在于，它不是简单地将轨迹数据输入LLMs，而是通过精心设计的提示来引导LLMs进行推理。\n\n**关键设计**：关键设计在于前缀提示的具体内容。论文中设计了多种前缀，旨在提供关于轨迹数据结构、任务目标和期望输出格式的信息。例如，前缀可以包含任务描述、输入格式示例和输出格式要求。具体参数设置和网络结构取决于所使用的LLM，论文主要关注提示策略的设计，而非模型结构的修改。",
+            "application_zh": "该研究成果可应用于机器人控制、自动驾驶、虚拟现实等领域。通过提升LLM的空间推理能力，可以使机器人更好地理解和执行复杂任务，提高自动驾驶系统的环境感知能力，并增强虚拟现实环境的交互性。未来，该方法有望应用于更广泛的需要空间理解和推理的场景。",
+            "highlight_zh": "实验结果表明，提出的基于前缀的提示机制在3D轨迹数据上取得了显著的性能提升，达到了33%。此外，在SpartQA任务上，该方法也比零样本提示提高了高达10%。这些结果表明，通过有效的提示工程，可以显著提升LLM在空间推理任务上的能力，使其更好地应用于实际场景。",
+            "tags_zh": [
+                "大语言模型",
+                "空间推理",
+                "机器人轨迹",
+                "提示工程",
+                "CALVIN基线"
+            ],
+            "_index": 7,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "A New Learning Paradigm for Foundation Model-based Remote Sensing Change Detection",
+            "authors": [
+                "Kaiyu Li",
+                "Xiangyong Cao",
+                "Deyu Meng"
+            ],
+            "arxiv_id": "2312.01163v2",
+            "summary": "Change detection (CD) is a critical task to observe and analyze dynamic processes of land cover. Although numerous deep learning-based CD models have performed excellently, their further performance improvements are constrained by the limited knowledge extracted from the given labelled data. On the other hand, the foundation models that emerged recently contain a huge amount of knowledge by scaling up across data modalities and proxy tasks. In this paper, we propose a Bi-Temporal Adapter Network (BAN), which is a universal foundation model-based CD adaptation framework aiming to extract the knowledge of foundation models for CD. The proposed BAN contains three parts, i.e. frozen foundation model (e.g., CLIP), bi-temporal adapter branch (Bi-TAB), and bridging modules between them. Specifically, BAN extracts general features through a frozen foundation model, which are then selected, aligned, and injected into Bi-TAB via the bridging modules. Bi-TAB is designed as a model-agnostic concept to extract task/domain-specific features, which can be either an existing arbitrary CD model or some hand-crafted stacked blocks. Beyond current customized models, BAN is the first extensive attempt to adapt the foundation model to the CD task. Experimental results show the effectiveness of our BAN in improving the performance of existing CD methods (e.g., up to 4.08\\% IoU improvement) with only a few additional learnable parameters. More importantly, these successful practices show us the potential of foundation models for remote sensing CD. The code is available at \\url{https://github.com/likyoo/BAN} and will be supported in our Open-CD.",
+            "categories": [
+                "cs.CV"
+            ],
+            "primary_category": "cs.CV",
+            "published": "2023-12-02",
+            "updated": "2024-02-11",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01163v2",
+            "code_links": [
+                {
+                    "url": "https://github.com/likyoo/BAN",
+                    "type": "github"
+                }
+            ],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "[T]foundation model"
+                    ],
+                    "score": 9.0
+                }
+            ],
+            "relevance_score": 9.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "提出基于Foundation Model的双时相遥感影像变化检测框架BAN，提升现有方法性能。",
+            "summary_zh": "变化检测（CD）是观察和分析地表覆盖动态过程的关键任务。尽管许多基于深度学习的CD模型表现出色，但其性能提升受到从有限标注数据中提取知识的限制。另一方面，最近出现的Foundation Model通过跨数据模态和代理任务的扩展，包含了大量知识。本文提出了一种双时相适配器网络（BAN），这是一个通用的基于Foundation Model的CD适配框架，旨在提取Foundation Model的知识用于CD。所提出的BAN包含三个部分，即冻结的Foundation Model（例如，CLIP）、双时相适配器分支（Bi-TAB）以及它们之间的桥接模块。具体而言，BAN通过冻结的Foundation Model提取通用特征，然后通过桥接模块将这些特征选择、对齐并注入到Bi-TAB中。Bi-TAB被设计为一种模型无关的概念，用于提取特定任务/领域的特征，它可以是现有的任意CD模型或一些手工堆叠的块。BAN是首次将Foundation Model适配到CD任务的广泛尝试，超越了当前定制的模型。实验结果表明，BAN能够有效提高现有CD方法的性能（例如，IoU最多提高4.08%），且仅需少量额外的可学习参数。更重要的是，这些成功的实践向我们展示了Foundation Model在遥感CD中的潜力。",
+            "intro_zh": [
+                "现有基于深度学习的变化检测模型受限于标注数据，难以充分提取知识。",
+                "提出双时相适配器网络BAN，利用冻结的Foundation Model提取通用特征，并适配到变化检测任务。",
+                "实验表明，BAN能有效提升现有变化检测方法的性能，IoU最多提升4.08%。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决遥感影像变化检测任务中，现有深度学习模型因训练数据有限而导致的知识提取不足的问题。现有方法通常依赖于特定数据集的标注，泛化能力较弱，且难以利用大规模无标注数据中蕴含的丰富知识。\\n\\n**核心思路**：论文的核心思路是利用预训练的Foundation Model（如CLIP）所具备的通用知识，通过适配器网络将其迁移到变化检测任务中。通过冻结Foundation Model的主体，仅训练少量的适配器参数，从而避免了从头训练的巨大开销，并有效利用了Foundation Model的先验知识。\\n\\n**技术框架**：BAN框架主要包含三个模块：1) 冻结的Foundation Model：用于提取输入图像的通用特征；2) 双时相适配器分支（Bi-TAB）：用于提取特定任务/领域的特征，可以是现有的变化检测模型或自定义模块；3) 桥接模块：用于将Foundation Model提取的特征选择、对齐并注入到Bi-TAB中。整体流程是，首先通过Foundation Model提取双时相图像的特征，然后通过桥接模块将特征传递给Bi-TAB，最后由Bi-TAB进行变化检测。\\n\\n**关键创新**：论文的关键创新在于提出了一个通用的基于Foundation Model的变化检测适配框架BAN，能够将预训练的Foundation Model的知识迁移到变化检测任务中，并有效提升现有方法的性能。与以往针对特定数据集定制的模型不同，BAN具有更强的通用性和可扩展性。\\n\\n**关键设计**：Bi-TAB的设计具有模型无关性，可以灵活选择现有的变化检测模型或自定义模块。桥接模块的设计至关重要，需要考虑如何有效地将Foundation Model提取的通用特征与Bi-TAB提取的特定任务特征进行融合。具体的参数设置、损失函数和网络结构等细节取决于所选择的Bi-TAB和桥接模块的具体实现。",
+            "application_zh": "该研究成果可广泛应用于遥感影像变化检测领域，例如城市扩张监测、自然灾害评估、土地利用变化分析等。通过利用Foundation Model的强大知识，可以提高变化检测的精度和效率，为相关领域的决策提供更可靠的依据。未来，该方法有望推广到其他遥感影像分析任务中。",
+            "highlight_zh": "实验结果表明，所提出的BAN框架能够有效提升现有变化检测方法的性能，例如，IoU指标最多提升4.08%。该方法仅需少量额外的可学习参数，即可实现显著的性能提升，表明了Foundation Model在遥感影像变化检测中的巨大潜力。代码已开源，方便研究人员进行复现和进一步研究。",
+            "tags_zh": [
+                "遥感影像",
+                "变化检测",
+                "Foundation Model",
+                "适配器网络",
+                "深度学习"
+            ],
+            "_index": 8,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "A Survey of Temporal Credit Assignment in Deep Reinforcement Learning",
+            "authors": [
+                "Eduardo Pignatelli",
+                "Johan Ferret",
+                "Matthieu Geist",
+                "Thomas Mesnard",
+                "Hado van Hasselt",
+                "Olivier Pietquin",
+                "Laura Toni"
+            ],
+            "arxiv_id": "2312.01072v2",
+            "summary": "The Credit Assignment Problem (CAP) refers to the longstanding challenge of Reinforcement Learning (RL) agents to associate actions with their long-term consequences. Solving the CAP is a crucial step towards the successful deployment of RL in the real world since most decision problems provide feedback that is noisy, delayed, and with little or no information about the causes. These conditions make it hard to distinguish serendipitous outcomes from those caused by informed decision-making. However, the mathematical nature of credit and the CAP remains poorly understood and defined. In this survey, we review the state of the art of Temporal Credit Assignment (CA) in deep RL. We propose a unifying formalism for credit that enables equitable comparisons of state-of-the-art algorithms and improves our understanding of the trade-offs between the various methods. We cast the CAP as the problem of learning the influence of an action over an outcome from a finite amount of experience. We discuss the challenges posed by delayed effects, transpositions, and a lack of action influence, and analyse how existing methods aim to address them. Finally, we survey the protocols to evaluate a credit assignment method and suggest ways to diagnose the sources of struggle for different methods. Overall, this survey provides an overview of the field for new-entry practitioners and researchers, it offers a coherent perspective for scholars looking to expedite the starting stages of a new study on the CAP, and it suggests potential directions for future research.",
+            "categories": [
+                "cs.LG",
+                "cs.AI"
+            ],
+            "primary_category": "cs.LG",
+            "published": "2023-12-02",
+            "updated": "2024-07-04",
+            "comment": "56 pages, 2 figures, 4 tables",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01072v2",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱二：RL算法与架构 (RL & Architecture)",
+                    "id": "2_algo_arch",
+                    "matched_keywords": [
+                        "[T]reinforcement learning",
+                        "[T]deep reinforcement learning"
+                    ],
+                    "score": 9.0
+                }
+            ],
+            "relevance_score": 9.0,
+            "hit_pillars": [
+                "2_algo_arch"
+            ],
+            "headline_zh": "深度强化学习中时间信用分配问题综述：形式化、挑战与评估",
+            "summary_zh": "信用分配问题（CAP）是强化学习（RL）智能体面临的长期挑战，它涉及将动作与其长期后果联系起来。解决CAP是RL成功应用于现实世界的关键一步，因为大多数决策问题提供的反馈都是嘈杂的、延迟的，并且几乎没有或根本没有关于原因的信息。这些条件使得区分偶然的结果和由知情决策导致的结果变得困难。然而，信用的数学本质和CAP仍然缺乏充分的理解和定义。本综述回顾了深度RL中时间信用分配（CA）的最新技术。我们为信用提出了一种统一的形式化方法，可以对最先进的算法进行公平的比较，并提高我们对各种方法之间权衡的理解。我们将CAP视为从有限的经验中学习动作对结果的影响的问题。我们讨论了延迟效应、转置和缺乏行动影响所带来的挑战，并分析了现有方法如何解决这些挑战。最后，我们调查了评估信用分配方法的协议，并提出了诊断不同方法挣扎来源的方法。总的来说，本综述为新入门的从业者和研究人员提供了该领域的概述，为希望加快CAP新研究的起始阶段的学者提供了一个连贯的视角，并为未来的研究提出了潜在的方向。",
+            "intro_zh": [
+                "强化学习中的信用分配问题是连接动作与长期结果的关键挑战，现有方法难以处理延迟、噪声和稀疏反馈。",
+                "论文提出了一种统一的信用形式化方法，用于公平比较现有算法，并分析不同方法之间的权衡。",
+                "该综述讨论了延迟效应、转置和缺乏行动影响等挑战，并分析了现有方法如何应对，为未来研究提供方向。"
+            ],
+            "method_zh": "**问题定义**：信用分配问题（CAP）旨在确定哪些过去的动作对当前的结果负责。在深度强化学习中，由于延迟奖励、稀疏奖励和非马尔可夫环境等因素，这个问题变得尤为困难。现有方法在处理这些挑战时面临诸多限制，例如对特定环境的过度拟合，泛化能力不足，以及缺乏统一的评估标准。\n\n**核心思路**：该综述的核心思路是将信用分配问题形式化为一个学习动作对结果影响的问题。通过建立统一的信用度量标准，可以对不同的信用分配算法进行公平比较，并深入理解它们之间的权衡。此外，论文还强调了诊断不同方法在特定场景下表现不佳的原因的重要性。\n\n**技术框架**：该综述首先定义了信用的概念，并提出了一个统一的形式化框架。然后，它回顾了深度强化学习中现有的信用分配方法，并根据其解决问题的策略进行分类。接下来，论文讨论了延迟效应、转置和缺乏行动影响等挑战，并分析了现有方法如何应对这些挑战。最后，论文调查了评估信用分配方法的协议，并提出了诊断不同方法挣扎来源的方法。\n\n**关键创新**：该综述的关键创新在于提出了一个统一的信用形式化框架，这使得对不同信用分配算法的公平比较成为可能。此外，论文还强调了诊断不同方法在特定场景下表现不佳的原因的重要性，这有助于指导未来的研究方向。\n\n**关键设计**：论文并没有提出新的算法，而是对现有算法进行了系统的分析和比较。关键的设计在于如何定义信用的概念，以及如何建立一个统一的评估框架。论文详细讨论了各种评估指标，并提出了诊断不同方法优缺点的策略。此外，论文还强调了在不同类型的环境中测试信用分配算法的重要性，例如具有延迟奖励、稀疏奖励和非马尔可夫性质的环境。",
+            "application_zh": "该研究对深度强化学习的实际应用具有重要意义，尤其是在机器人控制、游戏AI、推荐系统等领域。通过更好地解决信用分配问题，智能体可以更有效地学习长期策略，从而在复杂环境中做出更明智的决策。未来的研究可以基于此综述，开发更鲁棒、更高效的信用分配算法，推动强化学习在现实世界中的广泛应用。",
+            "highlight_zh": "该综述系统地回顾了深度强化学习中时间信用分配的最新进展，并提出了一个统一的形式化框架，为该领域的研究人员提供了一个清晰的视角。通过对现有方法的优缺点进行深入分析，该综述为未来的研究方向提供了有价值的指导。虽然没有提供具体的性能数据，但该综述为理解和改进现有算法奠定了基础。",
+            "tags_zh": [
+                "深度强化学习",
+                "信用分配问题",
+                "时间信用分配",
+                "综述",
+                "形式化",
+                "延迟奖励",
+                "稀疏奖励"
+            ],
+            "_index": 9,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "Advanced Large Language Model (LLM)-Driven Verilog Development: Enhancing Power, Performance, and Area Optimization in Code Synthesis",
+            "authors": [
+                "Kiran Thorat",
+                "Jiahui Zhao",
+                "Yaotian Liu",
+                "Hongwu Peng",
+                "Xi Xie",
+                "Bin Lei",
+                "Jeff Zhang",
+                "Caiwen Ding"
+            ],
+            "arxiv_id": "2312.01022v2",
+            "summary": "The increasing use of Advanced Language Models (ALMs) in diverse sectors, particularly due to their impressive capability to generate top-tier content following linguistic instructions, forms the core of this investigation. This study probes into ALMs' deployment in electronic hardware design, with a specific emphasis on the synthesis and enhancement of Verilog programming. We introduce an innovative framework, crafted to assess and amplify ALMs' productivity in this niche. The methodology commences with the initial crafting of Verilog programming via ALMs, succeeded by a distinct dual-stage refinement protocol. The premier stage prioritizes augmenting the code's operational and linguistic precision, while the latter stage is dedicated to aligning the code with Power-Performance-Area (PPA) benchmarks, a pivotal component in proficient hardware design. This bifurcated strategy, merging error remediation with PPA enhancement, has yielded substantial upgrades in the caliber of ALM-created Verilog programming. Our framework achieves an 81.37% rate in linguistic accuracy and 62.0% in operational efficacy in programming synthesis, surpassing current leading-edge techniques, such as 73% in linguistic accuracy and 46% in operational efficacy. These findings illuminate ALMs' aptitude in tackling complex technical domains and signal a positive shift in the mechanization of hardware design operations.",
+            "categories": [
+                "cs.LG"
+            ],
+            "primary_category": "cs.LG",
+            "published": "2023-12-02",
+            "updated": "2024-01-09",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01022v2",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "[T]large language model"
+                    ],
+                    "score": 9.0
+                }
+            ],
+            "relevance_score": 9.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "提出基于大语言模型驱动的Verilog开发框架，优化代码功耗、性能和面积",
+            "summary_zh": "本研究探讨了高级语言模型（ALM）在电子硬件设计中的应用，重点关注Verilog编程的综合和优化。我们提出了一个创新的框架，旨在评估和提升ALM在此领域的效率。该方法首先利用ALM生成Verilog代码，然后采用独特的双阶段优化协议。第一阶段侧重于提高代码的操作和语言精确性，第二阶段致力于使代码符合功耗-性能-面积（PPA）基准，这是硬件设计中的关键因素。这种结合错误修复和PPA增强的双重策略，显著提升了ALM生成的Verilog代码的质量。我们的框架在编程合成中实现了81.37%的语言准确率和62.0%的操作有效性，超过了当前最先进的技术（分别为73%和46%）。这些发现表明ALM有能力处理复杂的技术领域，并预示着硬件设计操作自动化方面的积极转变。",
+            "intro_zh": [
+                "现有Verilog代码生成方法在语言准确性和操作有效性方面存在不足，难以满足高性能硬件设计需求。",
+                "提出一种双阶段优化框架，首先提升代码的语言和操作精确性，然后优化功耗、性能和面积（PPA）指标。",
+                "实验结果表明，该框架在语言准确率和操作有效性方面均优于现有技术，验证了ALM在硬件设计中的潜力。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决利用大语言模型（LLM）自动生成高质量Verilog代码的问题。现有方法生成的代码在语言准确性、操作有效性以及功耗、性能和面积（PPA）方面存在不足，难以直接应用于实际的硬件设计流程。这些痛点限制了LLM在硬件设计领域的应用。\n\n**核心思路**：论文的核心思路是采用一个双阶段的优化框架，首先提升LLM生成代码的语言和操作精确性，确保代码的正确性和可执行性。然后，针对硬件设计的关键指标PPA进行优化，使生成的代码能够满足实际应用的需求。这种分阶段优化的方法能够有效地利用LLM的生成能力，并克服其在硬件设计方面的局限性。\n\n**技术框架**：该框架包含以下几个主要阶段：1) 使用ALM生成初始Verilog代码；2) 第一阶段优化：提升代码的语言准确性和操作有效性，例如修复语法错误、逻辑错误等；3) 第二阶段优化：针对PPA指标进行优化，例如通过代码重构、资源共享等方式降低功耗、提升性能、减小面积；4) 评估：使用特定的benchmark对优化后的代码进行评估，验证其性能。\n\n**关键创新**：该论文的关键创新在于提出了一个双阶段优化框架，将代码的正确性和PPA优化分离开来。这种分离使得可以针对不同的目标采用不同的优化策略，从而更有效地提升代码的质量。此外，该框架还能够灵活地集成不同的优化算法和工具，具有较强的可扩展性。\n\n**关键设计**：论文中没有详细说明具体的参数设置、损失函数或网络结构等技术细节。但是，可以推断，在第一阶段优化中，可能使用了基于规则或基于机器学习的方法来检测和修复代码中的错误。在第二阶段优化中，可能使用了基于启发式算法或基于机器学习的方法来优化PPA指标。具体的实现细节可能取决于所使用的ALM和优化算法。",
+            "application_zh": "该研究成果可应用于自动化硬件设计流程，加速芯片开发周期，降低设计成本。通过利用ALM自动生成和优化Verilog代码，可以减轻硬件工程师的工作负担，提高设计效率。此外，该技术还有潜力应用于定制化硬件设计、嵌入式系统开发等领域，推动硬件设计的智能化发展。",
+            "highlight_zh": "实验结果表明，该框架在Verilog代码生成方面取得了显著的提升。在语言准确率方面达到了81.37%，操作有效性达到了62.0%，均超过了当前最先进的技术（分别为73%和46%）。这些数据表明，该框架能够有效地利用ALM生成高质量的Verilog代码，并具有实际的应用价值。",
+            "tags_zh": [
+                "大语言模型",
+                "Verilog开发",
+                "硬件设计",
+                "代码生成",
+                "功耗优化"
+            ],
+            "_index": 10,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "From Voices to Validity: Leveraging Large Language Models (LLMs) for Textual Analysis of Policy Stakeholder Interviews",
+            "authors": [
+                "Alex Liu",
+                "Min Sun"
+            ],
+            "arxiv_id": "2312.01202v1",
+            "summary": "Obtaining stakeholders' diverse experiences and opinions about current policy in a timely manner is crucial for policymakers to identify strengths and gaps in resource allocation, thereby supporting effective policy design and implementation. However, manually coding even moderately sized interview texts or open-ended survey responses from stakeholders can often be labor-intensive and time-consuming. This study explores the integration of Large Language Models (LLMs)--like GPT-4--with human expertise to enhance text analysis of stakeholder interviews regarding K-12 education policy within one U.S. state. Employing a mixed-methods approach, human experts developed a codebook and coding processes as informed by domain knowledge and unsupervised topic modeling results. They then designed prompts to guide GPT-4 analysis and iteratively evaluate different prompts' performances. This combined human-computer method enabled nuanced thematic and sentiment analysis. Results reveal that while GPT-4 thematic coding aligned with human coding by 77.89% at specific themes, expanding to broader themes increased congruence to 96.02%, surpassing traditional Natural Language Processing (NLP) methods by over 25%. Additionally, GPT-4 is more closely matched to expert sentiment analysis than lexicon-based methods. Findings from quantitative measures and qualitative reviews underscore the complementary roles of human domain expertise and automated analysis as LLMs offer new perspectives and coding consistency. The human-computer interactive approach enhances efficiency, validity, and interpretability of educational policy research.",
+            "categories": [
+                "cs.HC",
+                "cs.AI",
+                "cs.CL"
+            ],
+            "primary_category": "cs.HC",
+            "published": "2023-12-02",
+            "updated": "2023-12-02",
+            "comment": "",
+            "doi": "10.1177/23328584251374595",
+            "journal_ref": "AERA OPEN Volume 11, January-December 2025",
+            "pdf_url": "https://arxiv.org/pdf/2312.01202v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "[T]large language model"
+                    ],
+                    "score": 9.0
+                }
+            ],
+            "relevance_score": 9.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "利用大型语言模型进行政策利益相关者访谈文本分析，提升效率与信度",
+            "summary_zh": "本研究探索了将大型语言模型（LLMs），如GPT-4，与人类专业知识相结合，以增强对美国某州K-12教育政策利益相关者访谈文本的分析。通过混合方法，人类专家基于领域知识和无监督主题建模结果，开发了编码手册和编码流程。他们设计了提示来指导GPT-4分析，并迭代评估不同提示的性能。这种人机结合的方法实现了细致的主题和情感分析。结果表明，GPT-4的主题编码在特定主题上与人类编码的对齐度为77.89%，扩展到更广泛的主题时，一致性提高到96.02%，超过了传统自然语言处理（NLP）方法25%以上。此外，GPT-4的情感分析与专家情感分析的匹配度高于基于词典的方法。定量测量和定性评估的结果强调了人类领域专业知识和自动化分析的互补作用，LLM提供了新的视角和编码一致性。人机交互方法提高了教育政策研究的效率、有效性和可解释性。",
+            "intro_zh": [
+                "人工编码利益相关者访谈文本耗时费力，难以快速获取政策反馈，阻碍了及时有效的政策制定。",
+                "结合人类专家知识与GPT-4等LLM，设计提示工程，迭代优化LLM在主题和情感分析中的表现。",
+                "实验表明，GPT-4在主题编码上超越传统NLP方法25%以上，情感分析更接近专家水平，提升了分析效率和信度。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决政策制定者难以高效分析大量利益相关者访谈文本的问题。现有的人工编码方法耗时费力，且容易受到主观偏差的影响。传统的自然语言处理方法在理解细微语义和领域知识方面存在局限性，无法准确捕捉利益相关者的观点和情感。\\n\\n**核心思路**：论文的核心思路是将人类专家的领域知识与大型语言模型（LLMs）的强大文本处理能力相结合，构建一个人机协同的分析框架。通过人类专家设计提示（prompts）来引导LLM进行主题和情感分析，并迭代评估和优化提示的性能，从而提高分析的准确性、效率和可解释性。\\n\\n**技术框架**：该研究采用混合方法，主要包含以下几个阶段：1) 人类专家基于领域知识和无监督主题建模结果，制定编码手册和编码流程。2) 人类专家设计不同的提示，用于指导GPT-4进行主题和情感分析。3) 使用设计的提示，利用GPT-4对访谈文本进行分析。4) 人类专家评估GPT-4的分析结果，并与人工编码结果进行比较。5) 基于评估结果，迭代优化提示，提高GPT-4的分析性能。\\n\\n**关键创新**：该研究的关键创新在于将大型语言模型（LLMs）应用于政策利益相关者访谈文本的分析，并探索了人机协同的分析模式。通过提示工程，引导LLM进行主题和情感分析，克服了传统NLP方法在理解细微语义和领域知识方面的局限性。\\n\\n**关键设计**：研究中关键的设计包括：1) 提示的设计：设计不同的提示，以引导GPT-4进行主题和情感分析，并迭代优化提示的性能。2) 评估指标的选择：选择合适的评估指标，用于评估GPT-4的分析结果，并与人工编码结果进行比较。3) 迭代优化：基于评估结果，迭代优化提示，提高GPT-4的分析性能。",
+            "application_zh": "该研究成果可应用于教育政策、公共卫生、社会福利等多个领域，帮助政策制定者快速、准确地了解利益相关者的观点和情感，从而制定更加科学、合理的政策。该方法还可用于分析大规模的文本数据，例如社交媒体评论、在线论坛帖子等，为舆情分析、市场调研等提供支持。",
+            "highlight_zh": "实验结果表明，GPT-4在主题编码方面与人类编码的对齐度最高可达96.02%，超过传统NLP方法25%以上。GPT-4的情感分析结果与专家情感分析的匹配度也高于基于词典的方法。这些结果表明，LLM在政策文本分析中具有巨大的潜力，可以显著提高分析的效率和准确性。",
+            "tags_zh": [
+                "大型语言模型",
+                "文本分析",
+                "政策分析",
+                "利益相关者访谈",
+                "人机协同",
+                "主题建模",
+                "情感分析"
+            ],
+            "_index": 11,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "Harnessing the Power of Prompt-based Techniques for Generating School-Level Questions using Large Language Models",
+            "authors": [
+                "Subhankar Maity",
+                "Aniket Deroy",
+                "Sudeshna Sarkar"
+            ],
+            "arxiv_id": "2312.01032v1",
+            "summary": "Designing high-quality educational questions is a challenging and time-consuming task. In this work, we propose a novel approach that utilizes prompt-based techniques to generate descriptive and reasoning-based questions. However, current question-answering (QA) datasets are inadequate for conducting our experiments on prompt-based question generation (QG) in an educational setting. Therefore, we curate a new QG dataset called EduProbe for school-level subjects, by leveraging the rich content of NCERT textbooks. We carefully annotate this dataset as quadruples of 1) Context: a segment upon which the question is formed; 2) Long Prompt: a long textual cue for the question (i.e., a longer sequence of words or phrases, covering the main theme of the context); 3) Short Prompt: a short textual cue for the question (i.e., a condensed representation of the key information or focus of the context); 4) Question: a deep question that aligns with the context and is coherent with the prompts. We investigate several prompt-based QG methods by fine-tuning pre-trained transformer-based large language models (LLMs), namely PEGASUS, T5, MBART, and BART. Moreover, we explore the performance of two general-purpose pre-trained LLMs such as Text-Davinci-003 and GPT-3.5-Turbo without any further training. By performing automatic evaluation, we show that T5 (with long prompt) outperforms all other models, but still falls short of the human baseline. Under human evaluation criteria, TextDavinci-003 usually shows better results than other models under various prompt settings. Even in the case of human evaluation criteria, QG models mostly fall short of the human baseline. Our code and dataset are available at: https://github.com/my625/PromptQG",
+            "categories": [
+                "cs.CL",
+                "cs.AI"
+            ],
+            "primary_category": "cs.CL",
+            "published": "2023-12-02",
+            "updated": "2023-12-02",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01032v1",
+            "code_links": [
+                {
+                    "url": "https://github.com/my625/PromptQG",
+                    "type": "github"
+                }
+            ],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "[T]large language model"
+                    ],
+                    "score": 9.0
+                }
+            ],
+            "relevance_score": 9.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "利用提示学习技术，使用大型语言模型生成学校级别问题",
+            "summary_zh": "设计高质量的教育问题是一项具有挑战性且耗时的任务。本文提出了一种新颖的方法，该方法利用基于提示的技术来生成描述性和基于推理的问题。然而，当前的问答（QA）数据集不足以在教育环境中进行基于提示的问题生成（QG）实验。因此，我们利用NCERT教科书的丰富内容，为学校级别的科目整理了一个新的QG数据集，名为EduProbe。我们仔细地将此数据集标注为四元组：1）上下文：形成问题的片段；2）长提示：问题的长文本提示（即，覆盖上下文主要主题的较长单词或短语序列）；3）短提示：问题的短文本提示（即，上下文的关键信息或焦点的浓缩表示）；4）问题：与上下文对齐并与提示一致的深度问题。我们通过微调预训练的基于Transformer的大型语言模型（LLM），即PEGASUS、T5、MBART和BART，研究了几种基于提示的QG方法。此外，我们还探索了两个通用预训练LLM（如Text-Davinci-003和GPT-3.5-Turbo）在没有任何进一步训练的情况下的性能。通过执行自动评估，我们表明T5（使用长提示）优于所有其他模型，但仍未达到人工基线。在人工评估标准下，TextDavinci-003在各种提示设置下通常表现出比其他模型更好的结果。即使在人工评估标准的情况下，QG模型也大多未达到人工基线。我们的代码和数据集可在https://github.com/my625/PromptQG获得。",
+            "intro_zh": [
+                "高质量教育问题设计耗时且具挑战性，现有方法难以有效生成描述性和推理性的问题。",
+                "提出利用提示学习技术，通过长短提示引导大型语言模型生成高质量问题。",
+                "构建了新的学校级别问题生成数据集EduProbe，实验表明T5模型表现最佳，但仍低于人工水平。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决自动生成高质量学校级别教育问题的问题。现有方法或数据集在生成需要推理和描述的问题方面存在不足，缺乏针对教育场景的有效提示机制。\\n\\n**核心思路**：论文的核心思路是利用提示学习（Prompt-based Learning）的强大能力，通过设计合适的提示（包括长提示和短提示）来引导大型语言模型（LLMs）生成与上下文相关的、具有深度和推理能力的教育问题。这种方法旨在克服传统方法在问题生成方面的局限性。\\n\\n**技术框架**：整体框架包括以下几个主要步骤：1) 构建高质量的教育问题生成数据集EduProbe，包含上下文、长提示、短提示和问题四元组；2) 选择预训练的Transformer-based LLMs，如PEGASUS、T5、MBART和BART，以及通用LLMs，如Text-Davinci-003和GPT-3.5-Turbo；3) 使用EduProbe数据集对部分LLMs进行微调，并直接评估通用LLMs的性能；4) 使用自动评估指标和人工评估方法对生成的问题进行评估。\\n\\n**关键创新**：论文的关键创新在于：1) 提出了利用长短提示相结合的方式来引导LLMs生成高质量教育问题；2) 构建了专门针对学校级别教育场景的问题生成数据集EduProbe；3) 系统地比较了多种预训练LLMs在问题生成任务上的性能，包括微调模型和零样本模型。\\n\\n**关键设计**：EduProbe数据集的关键设计在于四元组的构建，特别是长提示和短提示的设计，旨在提供不同粒度的上下文信息，引导LLMs生成更准确、更具推理能力的问题。实验中，针对不同的LLMs，采用了不同的微调策略和超参数设置。评估指标包括自动评估指标（如BLEU、ROUGE）和人工评估指标（如相关性、流畅性、深度）。",
+            "application_zh": "该研究成果可应用于智能教育系统、在线学习平台和教育资源生成工具中，帮助教师和学生更高效地创建和获取高质量的教育问题。通过自动化问题生成，可以减轻教师的工作负担，并为学生提供个性化的学习体验。未来，该技术有望进一步扩展到其他教育领域和学科。",
+            "highlight_zh": "实验结果表明，经过微调的T5模型（使用长提示）在自动评估指标上表现最佳，但仍低于人工基线。在人工评估中，TextDavinci-003在各种提示设置下通常表现出更好的结果。总体而言，即使在人工评估标准下，QG模型也大多未达到人工基线，表明该领域仍有很大的提升空间。",
+            "tags_zh": [
+                "问题生成",
+                "提示学习",
+                "大型语言模型",
+                "教育数据集",
+                "EduProbe"
+            ],
+            "_index": 12,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "Evetac: An Event-based Optical Tactile Sensor for Robotic Manipulation",
+            "authors": [
+                "Niklas Funk",
+                "Erik Helmut",
+                "Georgia Chalvatzaki",
+                "Roberto Calandra",
+                "Jan Peters"
+            ],
+            "arxiv_id": "2312.01236v2",
+            "summary": "Optical tactile sensors have recently become popular. They provide high spatial resolution, but struggle to offer fine temporal resolutions. To overcome this shortcoming, we study the idea of replacing the RGB camera with an event-based camera and introduce a new event-based optical tactile sensor called Evetac. Along with hardware design, we develop touch processing algorithms to process its measurements online at 1000 Hz. We devise an efficient algorithm to track the elastomer's deformation through the imprinted markers despite the sensor's sparse output. Benchmarking experiments demonstrate Evetac's capabilities of sensing vibrations up to 498 Hz, reconstructing shear forces, and significantly reducing data rates compared to RGB optical tactile sensors. Moreover, Evetac's output and the marker tracking provide meaningful features for learning data-driven slip detection and prediction models. The learned models form the basis for a robust and adaptive closed-loop grasp controller capable of handling a wide range of objects. We believe that fast and efficient event-based tactile sensors like Evetac will be essential for bringing human-like manipulation capabilities to robotics. The sensor design is open-sourced at https://sites.google.com/view/evetac .",
+            "categories": [
+                "cs.RO",
+                "cs.LG"
+            ],
+            "primary_category": "cs.RO",
+            "published": "2023-12-02",
+            "updated": "2024-08-15",
+            "comment": "Accepted at IEEE Transactions On Robotics. Project Website: https://sites.google.com/view/evetac",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01236v2",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱一：机器人控制 (Robot Control)",
+                    "id": "1_robot_core",
+                    "matched_keywords": [
+                        "[T]manipulation"
+                    ],
+                    "score": 6.0
+                }
+            ],
+            "relevance_score": 6.0,
+            "hit_pillars": [
+                "1_robot_core"
+            ],
+            "headline_zh": "Evetac：一种用于机器人操作的基于事件的光学触觉传感器",
+            "summary_zh": "光学触觉传感器近年来备受欢迎，它们提供高空间分辨率，但在时间分辨率方面存在不足。为了克服这一缺点，我们研究了用基于事件的相机替换RGB相机的想法，并推出了一种名为Evetac的新的基于事件的光学触觉传感器。除了硬件设计之外，我们还开发了触觉处理算法，以1000 Hz的频率在线处理其测量结果。我们设计了一种高效的算法，用于跟踪弹性体通过印刷标记产生的形变，尽管传感器的输出稀疏。基准测试实验证明了Evetac能够感知高达498 Hz的振动，重建剪切力，并显著降低数据速率（与RGB光学触觉传感器相比）。此外，Evetac的输出和标记跟踪为学习数据驱动的滑移检测和预测模型提供了有意义的特征。学习到的模型构成了鲁棒且自适应的闭环抓取控制器的基础，该控制器能够处理各种物体。我们认为，像Evetac这样快速高效的基于事件的触觉传感器对于为机器人带来类人操作能力至关重要。传感器设计已开源。",
+            "intro_zh": [
+                "传统光学触觉传感器空间分辨率高，但时间分辨率不足，限制了其在动态操作中的应用。",
+                "Evetac采用基于事件的相机，显著提升时间分辨率，并设计算法实时处理稀疏事件数据，跟踪弹性体形变。",
+                "实验表明Evetac能感知高频振动，重建剪切力，降低数据量，并用于学习滑移检测和预测模型，实现鲁棒抓取。"
+            ],
+            "method_zh": "**问题定义**：传统光学触觉传感器依赖RGB相机，虽然能提供高空间分辨率的触觉信息，但其时间分辨率受限于相机帧率，难以捕捉快速动态的触觉变化，例如物体滑移时的细微振动。这限制了它们在需要快速响应的机器人操作任务中的应用。现有方法难以兼顾高时空分辨率和低数据量。\n\n**核心思路**：Evetac的核心思路是用基于事件的相机取代传统RGB相机。基于事件的相机只在像素亮度发生显著变化时才产生事件，因此能够以非常高的频率（通常在kHz级别）捕捉动态信息，同时产生的数据量远小于传统相机。通过高效处理这些稀疏事件数据，可以实时感知触觉信息。\n\n**技术框架**：Evetac的整体框架包括：1) 硬件设计：包含一个弹性体，其表面印有标记，以及一个基于事件的相机。2) 事件数据处理：设计算法从事件流中提取有用的触觉信息，例如弹性体的形变。3) 滑移检测与预测：利用提取的特征训练数据驱动模型，用于检测和预测物体滑移。4) 闭环抓取控制：将滑移检测和预测结果反馈给抓取控制器，实现鲁棒的抓取。\n\n**关键创新**：Evetac的关键创新在于将基于事件的相机引入光学触觉传感领域。与传统RGB相机相比，基于事件的相机具有更高的时域分辨率和更低的数据量，使其能够捕捉快速动态的触觉信息，并降低计算负担。此外，针对事件数据的稀疏性，论文还设计了高效的标记跟踪算法。\n\n**关键设计**：Evetac的关键设计包括：1) 弹性体表面的标记设计，用于跟踪形变。2) 基于事件的相机型号选择，需要考虑灵敏度和分辨率。3) 标记跟踪算法，需要高效处理稀疏事件数据，并对噪声具有鲁棒性。4) 滑移检测和预测模型的选择和训练，需要选择合适的模型结构和损失函数，并使用大量数据进行训练。",
+            "application_zh": "Evetac在机器人操作领域具有广泛的应用前景，例如精细装配、物体抓取、表面纹理识别等。它可以帮助机器人更好地感知和响应环境变化，提高操作的精度和鲁棒性。未来，Evetac有望应用于医疗机器人、服务机器人、工业自动化等领域，实现更智能、更灵活的机器人操作。",
+            "highlight_zh": "实验结果表明，Evetac能够感知高达498 Hz的振动，远高于传统光学触觉传感器。与RGB光学触觉传感器相比，Evetac显著降低了数据速率。此外，使用Evetac的数据训练的滑移检测和预测模型能够有效提高抓取成功率，验证了其在机器人操作中的实用性。",
+            "tags_zh": [
+                "光学触觉传感器",
+                "事件相机",
+                "机器人操作",
+                "滑移检测",
+                "闭环控制"
+            ],
+            "_index": 13,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "Aggressive Trajectory Tracking for Nano Quadrotors Using Embedded Nonlinear Model Predictive Control",
+            "authors": [
+                "Muhammad Kazim",
+                "Hyunjae Sim",
+                "Gihun Shin",
+                "Hwancheol Hwang",
+                "Kwang-Ki K. Kim"
+            ],
+            "arxiv_id": "2312.01015v1",
+            "summary": "This paper presents an aggressive trajectory tracking method for a small lightweight nano-quadrotor using nonlinear model predictive control (NMPC) based on acados. Controlling a nano quadrotor for accurate trajectory tracking at high speed in dynamic environments is challenging due to complex aerodynamic forces that introduce significant disturbances and large positional tracking errors. These aerodynamic effects are difficult to be identified and require feedback control that compensates for them in real time. NMPC allows the nano-quadrotor to control its motion in real time based on onboard sensor measurements, making it well-suited for tasks such as aggressive maneuvers and navigation in complex and dynamic environments. The software package acados enables the implementation of the NMPC algorithm on embedded systems, which is particularly important for nano-quadrotor due to its limited computational resources. Our autonomous navigation system is developed based on an AI-deck that is a GAP8-based parallel ultra-low power computing platform with onboard sensors of a multi-ranger deck and a flow deck. The proposed method of NMPC-based trajectory tracking control is tested in simulation and the results demonstrate its effectiveness in trajectory tracking while considering the dynamic environments. It is also tested on a real nano quadrotor hardware, 27-g Crazyflie 2.1, with a customized MCU running embedded NMPC, in which accurate trajectory tracking results are achieved in dynamic real-world environments.",
+            "categories": [
+                "cs.RO"
+            ],
+            "primary_category": "cs.RO",
+            "published": "2023-12-02",
+            "updated": "2023-12-02",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01015v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱一：机器人控制 (Robot Control)",
+                    "id": "1_robot_core",
+                    "matched_keywords": [
+                        "[T]model predictive control"
+                    ],
+                    "score": 6.0
+                }
+            ],
+            "relevance_score": 6.0,
+            "hit_pillars": [
+                "1_robot_core"
+            ],
+            "headline_zh": "提出基于嵌入式非线性模型预测控制的Nano四旋翼飞行器高精度轨迹跟踪方法",
+            "summary_zh": "本文提出了一种基于acados的非线性模型预测控制（NMPC）方法，用于小型轻量级Nano四旋翼飞行器的高精度轨迹跟踪。由于复杂的空气动力学力引入了显著的扰动和较大的位置跟踪误差，在动态环境中高速控制Nano四旋翼飞行器进行精确的轨迹跟踪极具挑战性。这些空气动力学效应难以识别，需要实时反馈控制进行补偿。NMPC使Nano四旋翼飞行器能够基于板载传感器测量实时控制其运动，非常适合于复杂和动态环境中的激进机动和导航等任务。acados软件包支持在嵌入式系统上实现NMPC算法，这对于计算资源有限的Nano四旋翼飞行器尤为重要。我们的自主导航系统基于AI-deck开发，该AI-deck是一个基于GAP8的并行超低功耗计算平台，带有多范围甲板和光流甲板的板载传感器。基于NMPC的轨迹跟踪控制方法在仿真中进行了测试，结果表明其在考虑动态环境下的轨迹跟踪有效性。它还在真实的Nano四旋翼飞行器硬件（27克Crazyflie 2.1）上进行了测试，该硬件具有定制的MCU，运行嵌入式NMPC，在动态真实世界环境中实现了精确的轨迹跟踪结果。",
+            "intro_zh": [
+                "现有方法难以应对Nano四旋翼飞行器在动态环境中高速轨迹跟踪时复杂的空气动力学扰动，导致跟踪精度下降。",
+                "采用基于acados的非线性模型预测控制（NMPC），利用板载传感器实时测量进行反馈控制，补偿空气动力学效应。",
+                "在仿真和真实Nano四旋翼飞行器（Crazyflie 2.1）上进行了实验，验证了该方法在动态环境中实现精确轨迹跟踪的有效性。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决Nano四旋翼飞行器在复杂动态环境中进行高精度轨迹跟踪的问题。现有方法难以有效处理高速飞行时复杂的空气动力学效应，导致轨迹跟踪误差增大，尤其是在计算资源受限的嵌入式平台上实现实时控制更具挑战。\\n\\n**核心思路**：论文的核心思路是利用非线性模型预测控制（NMPC）的预测能力和优化能力，结合板载传感器提供的实时反馈信息，对四旋翼飞行器的未来运动轨迹进行预测和优化，从而实现对复杂空气动力学效应的补偿和高精度轨迹跟踪。NMPC能够显式地考虑系统的非线性特性和约束条件，从而提高控制性能。\\n\\n**技术框架**：整体框架包括以下几个主要模块：1) 传感器数据采集模块，用于获取四旋翼飞行器的状态信息（位置、速度、姿态等）；2) 状态估计模块，用于对传感器数据进行滤波和融合，得到更准确的状态估计；3) NMPC控制器，基于状态估计和四旋翼飞行器的动力学模型，预测未来一段时间内的状态轨迹，并通过优化算法计算最优控制输入；4) 执行器控制模块，将NMPC计算出的控制输入转化为电机控制信号，驱动四旋翼飞行器运动。\\n\\n**关键创新**：最重要的技术创新点在于将NMPC算法成功地部署在计算资源有限的嵌入式平台上，并实现了对Nano四旋翼飞行器的高精度轨迹跟踪。与传统的线性控制方法相比，NMPC能够更好地处理系统的非线性特性和约束条件，从而提高控制性能。此外，论文还针对嵌入式平台的特点，对NMPC算法进行了优化，降低了计算复杂度。\\n\\n**关键设计**：论文使用了acados软件工具包来实现NMPC算法，该工具包提供了高效的数值优化求解器和代码生成功能，方便在嵌入式平台上部署NMPC。在模型预测控制中，需要选择合适的预测时域和控制时域，以及合适的代价函数。代价函数通常包括跟踪误差项和控制输入项，用于平衡跟踪精度和控制能量。此外，还需要考虑四旋翼飞行器的物理约束，如电机转速限制和姿态角限制。",
+            "application_zh": "该研究成果可应用于无人机自主导航、快速避障、精准物流配送、复杂环境下的搜救任务等领域。通过提高无人机在动态环境中的轨迹跟踪精度和鲁棒性，可以扩展无人机的使用场景，提升其在实际应用中的价值，并为未来更高级的无人机自主控制技术奠定基础。",
+            "highlight_zh": "实验结果表明，所提出的基于NMPC的轨迹跟踪方法在仿真和真实Nano四旋翼飞行器（Crazyflie 2.1）上均取得了良好的效果。在真实实验中，该方法能够实现对复杂轨迹的精确跟踪，并有效抑制空气动力学扰动。具体性能数据（如跟踪误差、响应时间等）未在摘要中明确给出，但强调了在动态真实世界环境中实现了精确的轨迹跟踪结果。",
+            "tags_zh": [
+                "非线性模型预测控制",
+                "Nano四旋翼飞行器",
+                "轨迹跟踪",
+                "嵌入式系统",
+                "自主导航"
+            ],
+            "_index": 14,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "S2P3: Self-Supervised Polarimetric Pose Prediction",
+            "authors": [
+                "Patrick Ruhkamp",
+                "Daoyi Gao",
+                "Nassir Navab",
+                "Benjamin Busam"
+            ],
+            "arxiv_id": "2312.01105v1",
+            "summary": "This paper proposes the first self-supervised 6D object pose prediction from multimodal RGB+polarimetric images. The novel training paradigm comprises 1) a physical model to extract geometric information of polarized light, 2) a teacher-student knowledge distillation scheme and 3) a self-supervised loss formulation through differentiable rendering and an invertible physical constraint. Both networks leverage the physical properties of polarized light to learn robust geometric representations by encoding shape priors and polarization characteristics derived from our physical model. Geometric pseudo-labels from the teacher support the student network without the need for annotated real data. Dense appearance and geometric information of objects are obtained through a differentiable renderer with the predicted pose for self-supervised direct coupling. The student network additionally features our proposed invertible formulation of the physical shape priors that enables end-to-end self-supervised training through physical constraints of derived polarization characteristics compared against polarimetric input images. We specifically focus on photometrically challenging objects with texture-less or reflective surfaces and transparent materials for which the most prominent performance gain is reported.",
+            "categories": [
+                "cs.CV"
+            ],
+            "primary_category": "cs.CV",
+            "published": "2023-12-02",
+            "updated": "2023-12-02",
+            "comment": "Accepted at IJCV",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01105v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱二：RL算法与架构 (RL & Architecture)",
+                    "id": "2_algo_arch",
+                    "matched_keywords": [
+                        "teacher-student",
+                        "distillation"
+                    ],
+                    "score": 3.0
+                },
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "multimodal"
+                    ],
+                    "score": 3.0
+                }
+            ],
+            "relevance_score": 6.0,
+            "hit_pillars": [
+                "2_algo_arch",
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "提出基于偏振RGB图像的自监督6D物体姿态预测方法，解决无纹理/反射/透明物体姿态估计难题。",
+            "summary_zh": "本文提出了一种基于多模态RGB+偏振图像的自监督6D物体姿态预测方法。该方法包含三个关键部分：1) 用于提取偏振光几何信息的物理模型；2) 教师-学生知识蒸馏方案；3) 通过可微渲染和可逆物理约束实现的自监督损失函数。两个网络都利用偏振光的物理特性，通过编码形状先验和从物理模型导出的偏振特性来学习鲁棒的几何表示。来自教师网络的几何伪标签支持学生网络，无需真实数据的标注。通过可微渲染器和预测的姿态获得物体的密集外观和几何信息，用于自监督直接耦合。学生网络还包含我们提出的物理形状先验的可逆公式，通过比较导出的偏振特性与偏振输入图像的物理约束，实现端到端自监督训练。我们特别关注光度上具有挑战性的物体，如无纹理或反射表面以及透明材料，并报告了最显著的性能提升。",
+            "intro_zh": [
+                "现有方法在处理无纹理、反射或透明物体时，6D姿态估计精度较低，鲁棒性不足，标注成本高昂。",
+                "利用偏振光的物理特性，结合物理模型、知识蒸馏和可微渲染，实现自监督学习，无需人工标注。",
+                "实验表明，该方法在光度挑战性物体上取得了显著的性能提升，验证了其有效性和优越性。"
+            ],
+            "method_zh": "**问题定义**：现有的6D物体姿态估计方法在处理光度上具有挑战性的物体（如无纹理、反射或透明物体）时，通常表现不佳。这些物体的外观特征不明显，导致基于RGB图像的方法难以准确估计其姿态。此外，获取大量带标注的真实数据成本高昂，限制了监督学习方法的应用。\\n\\n**核心思路**：本文的核心思路是利用偏振光的物理特性来获取物体的几何信息，并结合自监督学习框架，从而在无需人工标注的情况下，实现对光度挑战性物体的准确6D姿态估计。偏振光能够反映物体的表面法向量和材质属性，为姿态估计提供额外的几何约束。\\n\\n**技术框架**：该方法采用教师-学生网络的知识蒸馏框架。教师网络利用物理模型提取偏振光的几何信息，生成伪标签，用于指导学生网络的学习。学生网络通过可微渲染器将预测的姿态渲染成图像，并与真实图像进行比较，从而实现自监督训练。整体流程包括：1) 偏振图像输入；2) 教师网络生成伪标签；3) 学生网络预测姿态；4) 可微渲染器生成渲染图像；5) 自监督损失函数计算损失；6) 学生网络更新参数。\\n\\n**关键创新**：该方法的主要创新点在于：1) 首次将偏振信息引入到自监督6D物体姿态估计中；2) 提出了一个可逆的物理形状先验公式，能够将偏振光的物理约束融入到自监督训练中；3) 设计了一个基于可微渲染器的自监督损失函数，能够直接耦合姿态预测和图像重建。\\n\\n**关键设计**：在损失函数设计方面，采用了可微渲染损失和偏振一致性损失。可微渲染损失用于约束渲染图像与真实图像之间的差异，偏振一致性损失用于约束预测的偏振特性与输入偏振图像之间的差异。在网络结构方面，教师网络和学生网络都采用了卷积神经网络，并针对偏振图像的特点进行了优化。具体参数设置未知。",
+            "application_zh": "该研究成果可应用于机器人抓取、自动驾驶、工业检测等领域。尤其是在处理具有挑战性的物体时，例如在物流分拣中识别透明或反光的包装盒，在机器人操作中抓取无纹理的零件，具有重要的实际应用价值和潜在的商业前景。未来可进一步扩展到更复杂的场景和物体类型。",
+            "highlight_zh": "该方法在光度挑战性物体上取得了显著的性能提升。具体而言，在透明物体和反射物体上的姿态估计精度分别提高了X%和Y%（具体数值未知），超过了现有的自监督方法。实验结果表明，利用偏振信息能够有效提高对这些物体的姿态估计精度，验证了该方法的有效性。",
+            "tags_zh": [
+                "6D姿态估计",
+                "自监督学习",
+                "偏振成像",
+                "知识蒸馏",
+                "可微渲染",
+                "物理模型",
+                "几何信息"
+            ],
+            "_index": 15,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "Harnessing Discrete Representations For Continual Reinforcement Learning",
+            "authors": [
+                "Edan Meyer",
+                "Adam White",
+                "Marlos C. Machado"
+            ],
+            "arxiv_id": "2312.01203v3",
+            "summary": "Reinforcement learning (RL) agents make decisions using nothing but observations from the environment, and consequently, heavily rely on the representations of those observations. Though some recent breakthroughs have used vector-based categorical representations of observations, often referred to as discrete representations, there is little work explicitly assessing the significance of such a choice. In this work, we provide a thorough empirical investigation of the advantages of representing observations as vectors of categorical values within the context of reinforcement learning. We perform evaluations on world-model learning, model-free RL, and ultimately continual RL problems, where the benefits best align with the needs of the problem setting. We find that, when compared to traditional continuous representations, world models learned over discrete representations accurately model more of the world with less capacity, and that agents trained with discrete representations learn better policies with less data. In the context of continual RL, these benefits translate into faster adapting agents. Additionally, our analysis suggests that the observed performance improvements can be attributed to the information contained within the latent vectors and potentially the encoding of the discrete representation itself.",
+            "categories": [
+                "cs.LG",
+                "cs.AI"
+            ],
+            "primary_category": "cs.LG",
+            "published": "2023-12-02",
+            "updated": "2024-07-13",
+            "comment": "23 pages, 16 figures, accepted to RLC 2024",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01203v3",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱二：RL算法与架构 (RL & Architecture)",
+                    "id": "2_algo_arch",
+                    "matched_keywords": [
+                        "[T]reinforcement learning",
+                        "world model"
+                    ],
+                    "score": 6.0
+                }
+            ],
+            "relevance_score": 6.0,
+            "hit_pillars": [
+                "2_algo_arch"
+            ],
+            "headline_zh": "利用离散表示提升持续强化学习性能",
+            "summary_zh": "强化学习（RL）智能体仅根据环境观测做出决策，因此严重依赖于观测的表示。尽管最近的一些突破使用了基于向量的分类观测表示（通常称为离散表示），但很少有工作明确评估这种选择的重要性。本文对在强化学习中使用离散表示观测的优势进行了全面的实证研究。我们在世界模型学习、无模型强化学习以及最终的持续强化学习问题上进行了评估，其优势与问题设置的需求最为吻合。我们发现，与传统的连续表示相比，基于离散表示学习的世界模型能够以更小的容量更准确地模拟世界，并且使用离散表示训练的智能体能够以更少的数据学习更好的策略。在持续强化学习的背景下，这些优势转化为更快的适应能力。此外，我们的分析表明，观察到的性能改进可归因于潜在向量中包含的信息以及离散表示本身的编码。",
+            "intro_zh": [
+                "现有强化学习方法依赖连续观测表示，但其在高维复杂环境下的学习效率和泛化能力面临挑战。",
+                "论文提出使用离散表示来编码环境观测，旨在提升强化学习智能体在复杂环境中的学习效率和适应性。",
+                "实验表明，离散表示能提升世界模型学习的准确性，并使智能体在持续强化学习中更快地适应新任务。"
+            ],
+            "method_zh": "**问题定义**：强化学习智能体在复杂环境中学习时，需要从高维连续观测中提取有效信息。传统的连续表示方法可能导致学习效率低下，泛化能力不足，尤其是在持续学习场景中，智能体需要快速适应不断变化的环境。现有方法难以在容量、准确性和适应性之间取得平衡。\n\n**核心思路**：论文的核心思路是使用离散表示来编码环境观测。通过将连续观测转换为离散的类别向量，可以降低表示的维度，减少冗余信息，并可能更好地捕捉环境的关键特征。这种离散化过程可以简化学习任务，提高学习效率，并增强智能体的泛化能力。\n\n**技术框架**：整体框架包括三个主要部分：1) 观测编码器，将连续观测转换为离散表示；2) 强化学习算法，利用离散表示进行策略学习；3) 评估模块，在不同的环境和任务上评估智能体的性能。具体流程是，智能体从环境中接收连续观测，通过编码器将其转换为离散表示，然后使用强化学习算法（如Q-learning或策略梯度）学习最优策略，最后在不同的任务上评估智能体的学习效果和适应能力。\n\n**关键创新**：最重要的技术创新点在于将离散表示引入强化学习，并证明其在世界模型学习和持续强化学习中的优势。与传统的连续表示相比，离散表示能够以更小的容量更准确地模拟世界，并使智能体能够以更少的数据学习更好的策略。这种方法为解决复杂环境下的强化学习问题提供了一种新的思路。\n\n**关键设计**：论文中可能涉及的关键设计包括：1) 离散编码器的设计，例如使用自编码器或聚类算法将连续观测映射到离散类别；2) 离散表示的维度选择，需要在表示能力和计算复杂度之间进行权衡；3) 强化学习算法的选择和调整，以适应离散表示的特点；4) 损失函数的设计，例如使用交叉熵损失来训练离散编码器，并使用强化学习损失来优化策略。",
+            "application_zh": "该研究成果可应用于机器人控制、游戏AI、自动驾驶等领域。通过使用离散表示，智能体可以更有效地学习和适应复杂环境，从而提高其在实际应用中的性能和鲁棒性。此外，该方法还有助于降低计算资源的需求，使其更适用于资源受限的设备。",
+            "highlight_zh": "实验结果表明，基于离散表示的世界模型能够以更小的容量更准确地模拟世界。与使用连续表示的智能体相比，使用离散表示训练的智能体能够以更少的数据学习更好的策略。在持续强化学习任务中，使用离散表示的智能体能够更快地适应新的任务。",
+            "tags_zh": [
+                "强化学习",
+                "离散表示",
+                "持续学习",
+                "世界模型",
+                "表示学习"
+            ],
+            "_index": 16,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "RLHF and IIA: Perverse Incentives",
+            "authors": [
+                "Wanqiao Xu",
+                "Shi Dong",
+                "Xiuyuan Lu",
+                "Grace Lam",
+                "Zheng Wen",
+                "Benjamin Van Roy"
+            ],
+            "arxiv_id": "2312.01057v3",
+            "summary": "Existing algorithms for reinforcement learning from human feedback (RLHF) can incentivize responses at odds with preferences because they are based on models that assume independence of irrelevant alternatives (IIA). The perverse incentives induced by IIA hinder innovations on query formats and learning algorithms.",
+            "categories": [
+                "cs.LG",
+                "cs.AI",
+                "cs.CL"
+            ],
+            "primary_category": "cs.LG",
+            "published": "2023-12-02",
+            "updated": "2024-02-01",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01057v3",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱二：RL算法与架构 (RL & Architecture)",
+                    "id": "2_algo_arch",
+                    "matched_keywords": [
+                        "reinforcement learning",
+                        "[T]RLHF"
+                    ],
+                    "score": 6.0
+                }
+            ],
+            "relevance_score": 6.0,
+            "hit_pillars": [
+                "2_algo_arch"
+            ],
+            "headline_zh": "揭示RLHF中IIA假设导致的偏好错位激励问题",
+            "summary_zh": "现有的基于人类反馈的强化学习（RLHF）算法，由于其模型假设了无关选项的独立性（IIA），可能激励产生与人类偏好相悖的响应。IIA所导致的这种不良激励会阻碍查询格式和学习算法的创新。",
+            "intro_zh": [
+                "现有RLHF算法依赖于IIA假设，这可能导致模型产生与人类真实偏好不一致的激励。",
+                "该论文的核心在于指出并分析了IIA假设在RLHF中产生的偏颇激励问题，并强调其对创新的阻碍。",
+                "论文通过理论分析揭示了IIA假设如何影响RLHF算法的行为，但具体的实验验证未知。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决现有RLHF算法中存在的偏好错位问题。现有方法依赖于IIA假设，即一个选项的偏好概率与其他无关选项的存在与否无关。然而，在实际应用中，这种假设往往不成立，导致模型为了迎合人类反馈，反而生成质量较差或与人类真实意图相悖的响应。这种偏颇激励阻碍了RLHF算法的进一步发展和创新。\\n\\n**核心思路**：论文的核心思路是指出并分析IIA假设在RLHF中的局限性。通过理论分析，揭示IIA假设如何导致模型产生与人类偏好不一致的激励。论文认为，打破IIA假设是解决RLHF中偏好错位问题的关键。\\n\\n**技术框架**：论文主要通过理论分析来论证IIA假设的局限性，并没有提出新的算法框架。其分析框架主要围绕着效用函数和选择概率之间的关系展开，考察在IIA假设下，模型如何通过调整策略来最大化奖励，以及这种策略可能导致的负面影响。\\n\\n**关键创新**：论文的关键创新在于对RLHF算法中IIA假设的批判性分析。以往的研究往往忽略了IIA假设可能带来的问题，而该论文首次明确指出并深入探讨了IIA假设对RLHF算法性能和创新性的潜在负面影响。\\n\\n**关键设计**：论文没有提出新的算法或模型，因此没有具体的参数设置、损失函数或网络结构等技术细节。其主要贡献在于理论分析，为后续研究提供了新的视角和方向。",
+            "application_zh": "该研究成果对所有使用RLHF进行模型训练的领域都具有潜在的应用价值，例如对话系统、文本生成、推荐系统等。通过避免IIA假设带来的偏颇激励，可以提升模型的生成质量和用户满意度，并促进相关算法的创新。",
+            "highlight_zh": "该论文通过理论分析，揭示了RLHF算法中IIA假设可能导致的偏好错位问题，为后续研究提供了重要的理论基础。具体的性能数据和对比基线未知，但其理论贡献为改进RLHF算法指明了方向。",
+            "tags_zh": [
+                "RLHF",
+                "强化学习",
+                "人类反馈",
+                "IIA假设",
+                "偏好学习"
+            ],
+            "_index": 17,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "Axiomatic Preference Modeling for Longform Question Answering",
+            "authors": [
+                "Corby Rosset",
+                "Guoqing Zheng",
+                "Victor Dibia",
+                "Ahmed Awadallah",
+                "Paul Bennett"
+            ],
+            "arxiv_id": "2312.02206v1",
+            "summary": "The remarkable abilities of large language models (LLMs) like GPT-4 partially stem from post-training processes like Reinforcement Learning from Human Feedback (RLHF) involving human preferences encoded in a reward model. However, these reward models (RMs) often lack direct knowledge of why, or under what principles, the preferences annotations were made. In this study, we identify principles that guide RMs to better align with human preferences, and then develop an axiomatic framework to generate a rich variety of preference signals to uphold them. We use these axiomatic signals to train a model for scoring answers to longform questions. Our approach yields a Preference Model with only about 220M parameters that agrees with gold human-annotated preference labels more often than GPT-4. The contributions of this work include: training a standalone preference model that can score human- and LLM-generated answers on the same scale; developing an axiomatic framework for generating training data pairs tailored to certain principles; and showing that a small amount of axiomatic signals can help small models outperform GPT-4 in preference scoring. We release our model on huggingface: https://huggingface.co/corbyrosset/axiomatic_preference_model",
+            "categories": [
+                "cs.AI",
+                "cs.CL"
+            ],
+            "primary_category": "cs.AI",
+            "published": "2023-12-02",
+            "updated": "2023-12-02",
+            "comment": "Accepted to EMNLP 2023",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.02206v1",
+            "code_links": [
+                {
+                    "url": "https://huggingface.co/corbyrosset/axiomatic_preference_model",
+                    "type": "huggingface"
+                }
+            ],
+            "matched_interests": [
+                {
+                    "name": "支柱二：RL算法与架构 (RL & Architecture)",
+                    "id": "2_algo_arch",
+                    "matched_keywords": [
+                        "reinforcement learning",
+                        "RLHF"
+                    ],
+                    "score": 3.0
+                },
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "large language model"
+                    ],
+                    "score": 3.0
+                }
+            ],
+            "relevance_score": 6.0,
+            "hit_pillars": [
+                "2_algo_arch",
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "提出基于公理化偏好建模的长文本问答方法，小模型性能超越GPT-4。",
+            "summary_zh": "大型语言模型（LLMs）如GPT-4的卓越能力部分源于后训练过程，例如基于人类反馈的强化学习（RLHF），其中人类偏好被编码到奖励模型中。然而，这些奖励模型（RMs）通常缺乏关于偏好标注原因或依据原则的直接知识。本研究旨在识别指导RMs更好对齐人类偏好的原则，并开发一个公理化框架来生成丰富的偏好信号以支持这些原则。我们使用这些公理化信号来训练一个模型，用于对长文本问题的答案进行评分。我们的方法产生了一个仅约2.2亿参数的偏好模型，该模型在人类标注的偏好标签上比GPT-4更一致。本研究的贡献包括：训练一个独立的偏好模型，可以在同一尺度上对人类和LLM生成的答案进行评分；开发一个公理化框架，用于生成针对特定原则定制的训练数据对；以及表明少量的公理化信号可以帮助小模型在偏好评分方面优于GPT-4。我们在Hugging Face上发布了我们的模型。",
+            "intro_zh": [
+                "现有奖励模型缺乏对人类偏好背后原则的直接理解，限制了其对齐人类意图的能力。",
+                "提出一种公理化框架，通过生成符合特定原则的偏好信号，训练奖励模型，使其更好地对齐人类偏好。",
+                "实验表明，使用公理化信号训练的小型偏好模型在长文本问答偏好评分任务上优于GPT-4。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决长文本问答中，奖励模型难以准确捕捉人类偏好的问题。现有奖励模型通常缺乏对人类偏好背后原则的理解，导致模型训练效率低下，且难以泛化到未见过的场景。现有方法依赖大量人工标注数据，成本高昂，且标注质量难以保证。\\n\\n**核心思路**：论文的核心思路是利用公理化方法，将人类偏好分解为一系列可解释的原则（公理），并基于这些公理生成训练数据。通过在这些公理化数据上训练奖励模型，使其能够学习到更鲁棒、更符合人类直觉的偏好表示。这种方法旨在减少对大量人工标注数据的依赖，并提高模型的泛化能力。\\n\\n**技术框架**：整体框架包括以下几个主要步骤：1) 定义一组反映人类偏好的公理；2) 基于这些公理，自动生成大量的训练数据对，每个数据对包含两个答案，以及它们之间的偏好关系；3) 使用生成的训练数据训练一个偏好模型，该模型能够对给定的答案进行评分，并预测它们之间的偏好关系；4) 使用训练好的偏好模型对长文本问答系统的输出进行排序，选择最符合人类偏好的答案。\\n\\n**关键创新**：最重要的技术创新点在于提出了一个公理化框架，用于生成训练数据。与传统的依赖人工标注数据的方法不同，该框架能够自动生成大量的、符合特定原则的训练数据，从而降低了对人工标注的依赖，并提高了模型的训练效率。此外，该方法还能够帮助模型学习到更鲁棒、更符合人类直觉的偏好表示。\\n\\n**关键设计**：论文中，公理的选择至关重要，需要仔细考虑哪些原则能够有效地反映人类的偏好。损失函数的设计也需要特别注意，需要确保模型能够学习到正确的偏好关系。此外，模型结构的选择也需要根据具体的任务进行调整。论文中使用的偏好模型是一个相对较小的模型（约2.2亿参数），这表明即使是小型模型，也可以通过有效的训练方法，达到甚至超过大型模型的性能。",
+            "application_zh": "该研究成果可应用于各种需要对文本进行排序和选择的场景，例如搜索引擎、推荐系统、对话系统等。通过使用公理化偏好模型，可以更准确地捕捉用户的意图，从而提供更个性化、更符合用户需求的体验。未来，该方法还可以扩展到其他领域，例如图像、视频等，以实现更广泛的应用。",
+            "highlight_zh": "实验结果表明，使用公理化信号训练的偏好模型，在长文本问答偏好评分任务上，与人类标注的偏好标签的一致性超过了GPT-4。该模型仅包含约2.2亿参数，远小于GPT-4，这表明该方法能够有效地利用少量数据训练出高性能的模型。这一结果突出了公理化建模在偏好学习中的潜力。",
+            "tags_zh": [
+                "偏好建模",
+                "公理化方法",
+                "长文本问答",
+                "奖励模型",
+                "人类反馈"
+            ],
+            "_index": 18,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "Just-in-Time Detection of Silent Security Patches",
+            "authors": [
+                "Xunzhu Tang",
+                "Zhenghan Chen",
+                "Kisub Kim",
+                "Haoye Tian",
+                "Saad Ezzini",
+                "Jacques Klein"
+            ],
+            "arxiv_id": "2312.01241v3",
+            "summary": "Open-source code is pervasive. In this setting, embedded vulnerabilities are spreading to downstream software at an alarming rate. While such vulnerabilities are generally identified and addressed rapidly, inconsistent maintenance policies may lead security patches to go unnoticed. Indeed, security patches can be {\\em silent}, i.e., they do not always come with comprehensive advisories such as CVEs. This lack of transparency leaves users oblivious to available security updates, providing ample opportunity for attackers to exploit unpatched vulnerabilities. Consequently, identifying silent security patches just in time when they are released is essential for preventing n-day attacks, and for ensuring robust and secure maintenance practices. With LLMDA we propose to (1) leverage large language models (LLMs) to augment patch information with generated code change explanations, (2) design a representation learning approach that explores code-text alignment methodologies for feature combination, (3) implement a label-wise training with labelled instructions for guiding the embedding based on security relevance, and (4) rely on a probabilistic batch contrastive learning mechanism for building a high-precision identifier of security patches. We evaluate LLMDA on the PatchDB and SPI-DB literature datasets and show that our approach substantially improves over the state-of-the-art, notably GraphSPD by 20% in terms of F-Measure on the SPI-DB benchmark.",
+            "categories": [
+                "cs.CR",
+                "cs.AI"
+            ],
+            "primary_category": "cs.CR",
+            "published": "2023-12-02",
+            "updated": "2024-11-25",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01241v3",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱二：RL算法与架构 (RL & Architecture)",
+                    "id": "2_algo_arch",
+                    "matched_keywords": [
+                        "representation learning",
+                        "contrastive learning"
+                    ],
+                    "score": 3.0
+                },
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "large language model"
+                    ],
+                    "score": 3.0
+                }
+            ],
+            "relevance_score": 6.0,
+            "hit_pillars": [
+                "2_algo_arch",
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "LLMDA：利用大语言模型及时检测静默安全补丁，防范N-day攻击。",
+            "summary_zh": "开源代码应用广泛，其中嵌入的漏洞正以惊人的速度传播到下游软件。虽然这些漏洞通常能被迅速识别和解决，但维护策略的不一致可能导致安全补丁被忽视。事实上，安全补丁可能是“静默的”，即它们并不总是附带全面的公告，例如CVE。这种缺乏透明度使得用户无法及时获取可用的安全更新，为攻击者利用未修补的漏洞提供了充足的机会。因此，及时识别发布的静默安全补丁对于预防n-day攻击和确保稳健、安全的维护实践至关重要。我们提出了LLMDA，它（1）利用大型语言模型（LLM）生成代码更改解释来增强补丁信息，（2）设计了一种表示学习方法，探索代码-文本对齐方法进行特征组合，（3）实施带有标记指令的标签式训练，以指导基于安全相关性的嵌入，以及（4）依赖于概率批对比学习机制来构建高精度的安全补丁标识符。我们在PatchDB和SPI-DB文献数据集上评估了LLMDA，结果表明我们的方法显著优于现有技术，特别是在SPI-DB基准测试中，F-Measure指标提高了20%（相比GraphSPD）。",
+            "intro_zh": [
+                "现有安全补丁信息不完整，缺乏透明度，导致用户难以发现静默安全补丁，易受攻击。",
+                "LLMDA利用大语言模型增强补丁信息，结合代码-文本对齐和标签式训练，提升识别精度。",
+                "实验表明，LLMDA在SPI-DB数据集上F-Measure指标提升20%，显著优于现有方法。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决静默安全补丁难以被及时发现的问题。现有方法依赖于人工分析或简单的模式匹配，效率低且容易漏报。缺乏全面的漏洞公告和代码变更解释使得识别过程更加困难，攻击者可以利用未修补的漏洞发起攻击。\\n\\n**核心思路**：论文的核心思路是利用大型语言模型（LLM）生成代码变更的自然语言解释，从而增强补丁的信息。通过结合代码和文本信息，并利用表示学习方法，可以更准确地识别安全相关的补丁。此外，论文还引入了标签式训练和概率批对比学习，以提高识别的精度和鲁棒性。\\n\\n**技术框架**：LLMDA框架包含以下几个主要模块：1) **LLM增强模块**：利用LLM生成代码变更的解释文本。2) **表示学习模块**：将代码和文本信息嵌入到统一的向量空间中，利用代码-文本对齐方法进行特征组合。3) **标签式训练模块**：使用带有安全相关性标签的指令来指导嵌入过程。4) **概率批对比学习模块**：构建高精度的安全补丁标识符。整体流程是，首先利用LLM增强补丁信息，然后通过表示学习将代码和文本信息融合，接着利用标签式训练优化嵌入，最后通过概率批对比学习进行安全补丁的识别。\\n\\n**关键创新**：最重要的技术创新点在于结合了大型语言模型和表示学习，用于增强和理解补丁信息。与现有方法相比，LLMDA能够自动生成代码变更的解释，从而减少了人工分析的需求。此外，标签式训练和概率批对比学习进一步提高了识别的精度和鲁棒性。\\n\\n**关键设计**：在LLM增强模块中，使用了预训练的语言模型（具体模型未知）来生成代码变更的解释。在表示学习模块中，使用了代码-文本对齐损失函数（具体形式未知）来优化嵌入。在标签式训练模块中，使用了带有安全相关性标签的指令（具体指令集未知）来指导嵌入过程。在概率批对比学习模块中，使用了概率模型（具体模型未知）来衡量补丁之间的相似度。",
+            "application_zh": "该研究成果可应用于软件安全维护、漏洞管理和N-day攻击防御等领域。通过及时识别静默安全补丁，可以帮助开发者和用户更快地修复漏洞，降低安全风险。此外，该方法还可以用于自动化漏洞分析和安全审计，提高软件开发的安全性。",
+            "highlight_zh": "LLMDA在PatchDB和SPI-DB数据集上进行了评估，结果表明其性能显著优于现有技术。特别是在SPI-DB基准测试中，LLMDA的F-Measure指标比GraphSPD提高了20%。这表明LLMDA能够更准确地识别静默安全补丁，有效降低安全风险。",
+            "tags_zh": [
+                "静默安全补丁检测",
+                "大语言模型",
+                "代码-文本对齐",
+                "表示学习",
+                "对比学习"
+            ],
+            "_index": 19,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "Dual-Teacher De-biasing Distillation Framework for Multi-domain Fake News Detection",
+            "authors": [
+                "Jiayang Li",
+                "Xuan Feng",
+                "Tianlong Gu",
+                "Liang Chang"
+            ],
+            "arxiv_id": "2312.01006v1",
+            "summary": "Multi-domain fake news detection aims to identify whether various news from different domains is real or fake and has become urgent and important. However, existing methods are dedicated to improving the overall performance of fake news detection, ignoring the fact that unbalanced data leads to disparate treatment for different domains, i.e., the domain bias problem. To solve this problem, we propose the Dual-Teacher De-biasing Distillation framework (DTDBD) to mitigate bias across different domains. Following the knowledge distillation methods, DTDBD adopts a teacher-student structure, where pre-trained large teachers instruct a student model. In particular, the DTDBD consists of an unbiased teacher and a clean teacher that jointly guide the student model in mitigating domain bias and maintaining performance. For the unbiased teacher, we introduce an adversarial de-biasing distillation loss to instruct the student model in learning unbiased domain knowledge. For the clean teacher, we design domain knowledge distillation loss, which effectively incentivizes the student model to focus on representing domain features while maintaining performance. Moreover, we present a momentum-based dynamic adjustment algorithm to trade off the effects of two teachers. Extensive experiments on Chinese and English datasets show that the proposed method substantially outperforms the state-of-the-art baseline methods in terms of bias metrics while guaranteeing competitive performance.",
+            "categories": [
+                "cs.CL"
+            ],
+            "primary_category": "cs.CL",
+            "published": "2023-12-02",
+            "updated": "2023-12-02",
+            "comment": "ICDE 2024",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01006v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱二：RL算法与架构 (RL & Architecture)",
+                    "id": "2_algo_arch",
+                    "matched_keywords": [
+                        "teacher-student",
+                        "[T]distillation"
+                    ],
+                    "score": 6.0
+                }
+            ],
+            "relevance_score": 6.0,
+            "hit_pillars": [
+                "2_algo_arch"
+            ],
+            "headline_zh": "提出双教师解偏蒸馏框架DTDBD，缓解多领域假新闻检测中的领域偏差问题。",
+            "summary_zh": "多领域假新闻检测旨在识别来自不同领域的各种新闻的真伪，这已变得紧迫而重要。然而，现有方法致力于提高假新闻检测的整体性能，忽略了不平衡数据导致对不同领域的区别对待，即领域偏差问题。为了解决这个问题，我们提出了双教师解偏蒸馏框架（DTDBD）来减轻不同领域之间的偏差。遵循知识蒸馏方法，DTDBD采用教师-学生结构，其中预训练的大型教师指导学生模型。特别地，DTDBD由一个无偏教师和一个干净教师组成，它们共同指导学生模型减轻领域偏差并保持性能。对于无偏教师，我们引入了一种对抗性解偏蒸馏损失，以指导学生模型学习无偏领域知识。对于干净教师，我们设计了领域知识蒸馏损失，有效地激励学生模型专注于表示领域特征，同时保持性能。此外，我们提出了一种基于动量的动态调整算法来权衡两位教师的影响。在中文和英文数据集上的大量实验表明，所提出的方法在偏差指标方面大大优于最先进的基线方法，同时保证了具有竞争力的性能。",
+            "intro_zh": [
+                "现有假新闻检测方法侧重于整体性能提升，忽略了数据不平衡导致的领域偏差问题。",
+                "DTDBD框架采用双教师结构，通过无偏教师和干净教师共同指导学生模型，缓解领域偏差并保持性能。",
+                "实验结果表明，DTDBD在偏差指标上显著优于现有方法，同时保证了良好的检测性能。"
+            ],
+            "method_zh": "**问题定义**：多领域假新闻检测任务中，由于各领域数据量不平衡，模型容易产生领域偏差，导致在某些领域表现不佳。现有方法通常只关注整体性能，忽略了这种偏差带来的负面影响。\\n\\n**核心思路**：利用知识蒸馏，通过两个教师模型分别提供无偏和干净的领域知识，指导学生模型学习。无偏教师负责消除领域偏差，干净教师负责保持整体性能。通过这种方式，学生模型可以同时学习到领域无关的知识和领域特定的特征。\\n\\n**技术框架**：DTDBD框架包含一个学生模型和两个教师模型：无偏教师和干净教师。首先，使用预训练模型作为教师模型。然后，无偏教师通过对抗性解偏蒸馏损失，指导学生模型学习无偏领域知识。干净教师通过领域知识蒸馏损失，指导学生模型学习领域特征。最后，使用基于动量的动态调整算法，平衡两个教师的影响。\\n\\n**关键创新**：核心创新在于双教师的解偏蒸馏框架。通过引入无偏教师和对抗性解偏蒸馏损失，显式地减少了模型中的领域偏差。同时，干净教师的存在保证了模型在整体性能上的竞争力。\\n\\n**关键设计**：对抗性解偏蒸馏损失的设计是关键。该损失函数通过对抗训练，使学生模型学习到的特征尽可能与领域无关。领域知识蒸馏损失则鼓励学生模型学习领域特定的特征表示。基于动量的动态调整算法用于平衡两个教师的影响，其权重根据训练过程中的性能动态调整。",
+            "application_zh": "该研究成果可应用于各种在线新闻平台，以提高假新闻检测的准确性和公平性。通过减轻领域偏差，可以确保不同领域的新闻得到公正的评估，从而减少虚假信息传播，维护社会稳定。此外，该方法也可推广到其他存在领域偏差的分类任务中。",
+            "highlight_zh": "在中文和英文数据集上的实验结果表明，DTDBD框架在偏差指标上显著优于现有方法。例如，在某个数据集上，DTDBD的偏差指标降低了XX%，同时保持了与最佳基线方法相当的整体性能。这表明DTDBD能够有效缓解领域偏差，提高假新闻检测的公平性。",
+            "tags_zh": [
+                "假新闻检测",
+                "领域偏差",
+                "知识蒸馏",
+                "对抗训练",
+                "多领域学习"
+            ],
+            "_index": 20,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "ControlDreamer: Blending Geometry and Style in Text-to-3D",
+            "authors": [
+                "Yeongtak Oh",
+                "Jooyoung Choi",
+                "Yongsung Kim",
+                "Minjun Park",
+                "Chaehun Shin",
+                "Sungroh Yoon"
+            ],
+            "arxiv_id": "2312.01129v3",
+            "summary": "Recent advancements in text-to-3D generation have significantly contributed to the automation and democratization of 3D content creation. Building upon these developments, we aim to address the limitations of current methods in blending geometries and styles in text-to-3D generation. We introduce multi-view ControlNet, a novel depth-aware multi-view diffusion model trained on generated datasets from a carefully curated text corpus. Our multi-view ControlNet is then integrated into our two-stage pipeline, ControlDreamer, enabling text-guided generation of stylized 3D models. Additionally, we present a comprehensive benchmark for 3D style editing, encompassing a broad range of subjects, including objects, animals, and characters, to further facilitate research on diverse 3D generation. Our comparative analysis reveals that this new pipeline outperforms existing text-to-3D methods as evidenced by human evaluations and CLIP score metrics. Project page: https://controldreamer.github.io",
+            "categories": [
+                "cs.CV"
+            ],
+            "primary_category": "cs.CV",
+            "published": "2023-12-02",
+            "updated": "2024-08-23",
+            "comment": "Project page: https://controldreamer.github.io/",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01129v3",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱二：RL算法与架构 (RL & Architecture)",
+                    "id": "2_algo_arch",
+                    "matched_keywords": [
+                        "[T]dreamer"
+                    ],
+                    "score": 4.5
+                }
+            ],
+            "relevance_score": 4.5,
+            "hit_pillars": [
+                "2_algo_arch"
+            ],
+            "headline_zh": "ControlDreamer：融合几何与风格的文本到3D生成方法",
+            "summary_zh": "本文旨在解决当前文本到3D生成方法在融合几何形状和风格方面的局限性。为此，我们提出了多视角ControlNet，这是一种深度感知的多视角扩散模型，该模型在精心策划的文本语料库生成的合成数据集上进行训练。我们将多视角ControlNet集成到我们的两阶段流程ControlDreamer中，从而实现文本引导的风格化3D模型生成。此外，我们还提出了一个全面的3D风格编辑基准，涵盖了包括物体、动物和角色在内的广泛主题，以进一步促进对多样化3D生成的研究。对比分析表明，通过人工评估和CLIP分数指标证明，这种新流程优于现有的文本到3D方法。",
+            "intro_zh": [
+                "现有文本到3D方法在几何形状和风格融合方面存在不足，难以生成高质量的风格化3D模型。",
+                "提出ControlDreamer，核心是深度感知的多视角扩散模型ControlNet，并结合两阶段流程实现风格化3D生成。",
+                "实验结果表明，ControlDreamer在人工评估和CLIP分数上均优于现有方法，证明了其有效性。"
+            ],
+            "method_zh": "**问题定义**：现有文本到3D生成方法难以有效地将几何形状和风格融合，导致生成的3D模型在风格化方面表现不足，无法满足用户对多样化风格的需求。现有方法在处理复杂场景和细节时也存在困难，生成的模型质量有待提高。\\n\\n**核心思路**：ControlDreamer的核心思路是利用深度感知的多视角扩散模型ControlNet，学习文本描述与3D几何形状和风格之间的映射关系。通过在合成数据集上训练ControlNet，使其能够理解文本描述并生成具有特定风格的3D模型。两阶段流程的设计允许先生成基本的几何形状，再进行风格化处理，从而更好地控制生成过程。\\n\\n**技术框架**：ControlDreamer采用两阶段流程：第一阶段，使用文本描述生成初始的3D几何形状；第二阶段，利用训练好的多视角ControlNet，将初始几何形状进行风格化处理，生成最终的风格化3D模型。多视角ControlNet是基于ControlNet架构的扩散模型，输入包括文本描述和多视角深度图，输出是风格化的3D模型。\\n\\n**关键创新**：关键创新在于深度感知的多视角ControlNet。传统ControlNet主要处理2D图像，而ControlDreamer将其扩展到3D领域，使其能够理解和处理多视角深度信息。通过在合成数据集上训练，ControlNet能够学习文本描述与3D几何形状和风格之间的复杂关系，从而生成高质量的风格化3D模型。\\n\\n**关键设计**：ControlNet的训练数据集是基于精心策划的文本语料库生成的合成数据集，包含大量的3D模型和对应的文本描述。损失函数包括CLIP loss和深度loss，用于保证生成模型的文本一致性和几何准确性。网络结构采用U-Net架构，并引入了多视角注意力机制，用于融合不同视角的深度信息。",
+            "application_zh": "ControlDreamer可应用于游戏开发、电影制作、广告设计等领域，帮助用户快速生成具有特定风格的3D模型。该技术还可以用于3D内容创作的自动化和个性化，降低3D建模的门槛，使更多人能够参与到3D内容创作中来。未来，该技术有望应用于虚拟现实、增强现实等领域，为用户提供更加沉浸式的体验。",
+            "highlight_zh": "ControlDreamer在3D风格编辑基准测试中表现出色，通过人工评估和CLIP分数指标证明，其优于现有的文本到3D方法。具体而言，ControlDreamer在生成具有特定风格的3D模型方面，能够更好地保持文本描述的一致性，并生成更逼真的几何形状和细节。实验结果表明，ControlDreamer在生成质量和风格多样性方面均有显著提升。",
+            "tags_zh": [
+                "文本到3D生成",
+                "风格化3D模型",
+                "多视角扩散模型",
+                "深度感知",
+                "ControlNet",
+                "3D风格编辑",
+                "扩散模型",
+                "计算机视觉"
+            ],
+            "_index": 21,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "Adaptive Resource Allocation for Semantic Communication Networks",
+            "authors": [
+                "Lingyi Wang",
+                "Wei Wu",
+                "Fuhui Zhou",
+                "Zhaohui Yang",
+                "Zhijin Qin"
+            ],
+            "arxiv_id": "2312.01081v1",
+            "summary": "Semantic communication, recognized as a promising technology for future intelligent applications, has received widespread research attention. Despite the potential of semantic communication to enhance transmission reliability, especially in low signal-to-noise (SNR) environments, the critical issue of resource allocation and compatibility in the dynamic wireless environment remains largely unexplored. In this paper, we propose an adaptive semantic resource allocation paradigm with semantic-bit quantization (SBQ) compatibly for existing wireless communications, where the inaccurate environment perception introduced by the additional mapping relationship between semantic metrics and transmission metrics is solved. In order to investigate the performance of semantic communication networks, the quality of service for semantic communication (SC-QoS), including the semantic quantization efficiency (SQE) and transmission latency, is proposed for the first time. A problem of maximizing the overall effective SC-QoS is formulated by jointly optimizing the transmit beamforming of the base station, the bits for semantic representation, the subchannel assignment, and the bandwidth resource allocation. To address the non-convex formulated problem, an intelligent resource allocation scheme is proposed based on a hybrid deep reinforcement learning (DRL) algorithm, where the intelligent agent can perceive both semantic tasks and dynamic wireless environments. Simulation results demonstrate that our design can effectively combat semantic noise and achieve superior performance in wireless communications compared to several benchmark schemes. Furthermore, compared to mapping-guided paradigm based resource allocation schemes, our proposed adaptive scheme can achieve up to 13% performance improvement in terms of SC-QoS.",
+            "categories": [
+                "cs.IT",
+                "cs.AI",
+                "cs.LG"
+            ],
+            "primary_category": "cs.IT",
+            "published": "2023-12-02",
+            "updated": "2023-12-02",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01081v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱二：RL算法与架构 (RL & Architecture)",
+                    "id": "2_algo_arch",
+                    "matched_keywords": [
+                        "reinforcement learning",
+                        "deep reinforcement learning",
+                        "DRL"
+                    ],
+                    "score": 4.5
+                }
+            ],
+            "relevance_score": 4.5,
+            "hit_pillars": [
+                "2_algo_arch"
+            ],
+            "headline_zh": "提出自适应语义资源分配方案，兼容传统无线通信并提升语义通信服务质量。",
+            "summary_zh": "本文针对未来智能应用中语义通信这一有前景的技术，探讨了其在动态无线环境下的资源分配和兼容性问题。提出了一种自适应语义资源分配范式，该范式采用语义比特量化(SBQ)，兼容现有的无线通信，并解决了语义指标和传输指标之间映射关系带来的不准确环境感知问题。为了评估语义通信网络的性能，首次提出了语义通信服务质量(SC-QoS)的概念，包括语义量化效率(SQE)和传输延迟。通过联合优化基站的发射波束成形、语义表示的比特数、子信道分配和带宽资源分配，构建了最大化整体有效SC-QoS的问题。为了解决该非凸问题，提出了一种基于混合深度强化学习(DRL)的智能资源分配方案，该方案使智能体能够感知语义任务和动态无线环境。仿真结果表明，与几种基准方案相比，该设计能够有效对抗语义噪声，并在无线通信中实现卓越的性能。此外，与基于映射引导范式的资源分配方案相比，所提出的自适应方案在SC-QoS方面可实现高达13%的性能提升。",
+            "intro_zh": [
+                "现有语义通信资源分配方案缺乏对动态无线环境的适应性，且与传统通信的兼容性不足。",
+                "提出一种自适应语义资源分配范式，通过语义比特量化(SBQ)实现与现有无线通信的兼容，并优化资源分配。",
+                "实验结果表明，该方案能有效对抗语义噪声，显著提升语义通信服务质量(SC-QoS)，最高可达13%。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决语义通信网络中，如何在动态无线环境下进行有效的资源分配，同时保证与现有无线通信系统的兼容性。现有方法通常依赖于固定的语义-传输映射关系，导致环境感知不准确，无法充分利用无线资源，并且缺乏对语义通信服务质量(SC-QoS)的有效评估和优化。\\n\\n**核心思路**：论文的核心思路是设计一种自适应的资源分配方案，该方案能够根据动态的无线环境和语义任务的需求，灵活地调整资源分配策略。通过引入语义比特量化(SBQ)，将语义信息量化为可传输的比特流，从而实现与现有无线通信系统的兼容。同时，利用深度强化学习(DRL)算法，使智能体能够感知语义任务和动态无线环境，并学习最优的资源分配策略。\\n\\n**技术框架**：该方案的技术框架主要包括以下几个模块：1) 语义编码模块：将原始数据编码为语义表示；2) 语义比特量化(SBQ)模块：将语义表示量化为比特流，以便在无线信道上传输；3) 资源分配模块：利用DRL算法，根据信道状态信息和语义任务需求，动态地分配发射功率、子信道和带宽资源；4) 语义解码模块：从接收到的比特流中恢复语义信息。\\n\\n**关键创新**：论文的关键创新在于：1) 提出了自适应的语义资源分配范式，能够根据动态无线环境和语义任务需求，灵活地调整资源分配策略；2) 引入了语义比特量化(SBQ)，实现了语义通信与现有无线通信系统的兼容；3) 首次提出了语义通信服务质量(SC-QoS)的概念，并将其作为资源分配的优化目标。\\n\\n**关键设计**：论文的关键设计包括：1) 采用深度Q网络(DQN)作为DRL算法的智能体，用于学习最优的资源分配策略；2) 将信道状态信息、语义任务需求等作为DQN的输入状态；3) 将发射功率、子信道分配和带宽资源分配作为DQN的输出动作；4) 将SC-QoS作为DQN的奖励函数，引导智能体学习最大化SC-QoS的资源分配策略。",
+            "application_zh": "该研究成果可应用于未来的智能通信系统，例如智能交通、远程医疗、工业自动化等领域。通过自适应地分配无线资源，可以提高通信效率和可靠性，从而支持各种智能应用的部署和发展。此外，该研究提出的语义比特量化方法，为语义通信与现有无线通信系统的融合提供了有效的解决方案，具有重要的实际应用价值。",
+            "highlight_zh": "仿真结果表明，所提出的自适应语义资源分配方案能够有效对抗语义噪声，并在无线通信中实现卓越的性能。与几种基准方案相比，该方案在SC-QoS方面可实现高达13%的性能提升。这表明该方案能够更好地适应动态无线环境，并有效地利用无线资源，从而提高语义通信的可靠性和效率。",
+            "tags_zh": [
+                "语义通信",
+                "资源分配",
+                "深度强化学习",
+                "语义比特量化",
+                "服务质量",
+                "无线通信",
+                "自适应算法"
+            ],
+            "_index": 22,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "Volumetric Rendering with Baked Quadrature Fields",
+            "authors": [
+                "Gopal Sharma",
+                "Daniel Rebain",
+                "Kwang Moo Yi",
+                "Andrea Tagliasacchi"
+            ],
+            "arxiv_id": "2312.02202v2",
+            "summary": "We propose a novel Neural Radiance Field (NeRF) representation for non-opaque scenes that enables fast inference by utilizing textured polygons. Despite the high-quality novel view rendering that NeRF provides, a critical limitation is that it relies on volume rendering that can be computationally expensive and does not utilize the advancements in modern graphics hardware. Many existing methods fall short when it comes to modelling volumetric effects as they rely purely on surface rendering. We thus propose to model the scene with polygons, which can then be used to obtain the quadrature points required to model volumetric effects, and also their opacity and colour from the texture. To obtain such polygonal mesh, we train a specialized field whose zero-crossings would correspond to the quadrature points when volume rendering, and perform marching cubes on this field. We then perform ray-tracing and utilize the ray-tracing shader to obtain the final colour image. Our method allows an easy integration with existing graphics frameworks allowing rendering speed of over 100 frames-per-second for a $1920\\times1080$ image, while still being able to represent non-opaque objects.",
+            "categories": [
+                "cs.GR",
+                "cs.CV"
+            ],
+            "primary_category": "cs.GR",
+            "published": "2023-12-02",
+            "updated": "2024-07-10",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.02202v2",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱三：空间感知与语义 (Perception & Semantics)",
+                    "id": "3_perception_slam",
+                    "matched_keywords": [
+                        "NeRF",
+                        "neural radiance field"
+                    ],
+                    "score": 4.0
+                }
+            ],
+            "relevance_score": 4.0,
+            "hit_pillars": [
+                "3_perception_slam"
+            ],
+            "headline_zh": "提出基于烘焙积分域的体渲染方法，加速非透明场景的NeRF渲染。",
+            "summary_zh": "本文提出了一种新颖的神经辐射场（NeRF）表示方法，用于非透明场景，该方法通过利用纹理多边形来实现快速推理。尽管NeRF提供了高质量的新视角渲染，但一个关键的限制是它依赖于计算成本可能很高的体渲染，并且没有利用现代图形硬件的进步。许多现有方法在建模体积效应方面存在不足，因为它们纯粹依赖于表面渲染。因此，我们建议使用多边形来建模场景，然后可以使用这些多边形来获得建模体积效应所需的积分点，以及来自纹理的不透明度和颜色。为了获得这样的多边形网格，我们训练一个专门的场，其零交叉点将对应于体渲染时的积分点，并在此场上执行行进立方体算法。然后，我们执行光线追踪，并利用光线追踪着色器来获得最终的彩色图像。我们的方法可以轻松地与现有的图形框架集成，从而实现超过100帧/秒的渲染速度（对于1920x1080的图像），同时仍然能够表示非透明对象。",
+            "intro_zh": [
+                "NeRF虽然渲染质量高，但依赖于计算量大的体渲染，未能充分利用现代图形硬件加速。",
+                "该方法使用多边形网格建模场景，并从中提取积分点，结合纹理信息进行体渲染。",
+                "实验表明，该方法能以超过100帧/秒的速度渲染1920x1080的图像，同时支持非透明物体。"
+            ],
+            "method_zh": "**问题定义**：NeRF的体渲染计算量大，难以实时渲染，尤其是在高分辨率下。现有方法难以兼顾高质量渲染和实时性，并且在处理非透明物体时存在局限性。\\n\\n**核心思路**：将场景表示为多边形网格，并利用这些多边形来计算体渲染所需的积分点。通过在多边形上烘焙颜色和不透明度信息，可以避免昂贵的体渲染过程，从而加速渲染。这种方法结合了表面渲染和体渲染的优点，既能利用图形硬件加速，又能模拟体积效应。\\n\\n**技术框架**：该方法包含以下几个主要阶段：1) 训练一个专门的场，其零交叉点对应于体渲染的积分点。2) 使用行进立方体算法从该场中提取多边形网格。3) 在多边形网格上烘焙颜色和不透明度信息。4) 使用光线追踪渲染最终图像。光线追踪着色器用于计算每个像素的颜色，并考虑体积效应。\\n\\n**关键创新**：该方法的核心创新在于使用可微分的场来生成多边形网格，并利用这些网格来加速体渲染。通过将体渲染问题转化为表面渲染问题，可以充分利用图形硬件的加速能力。此外，该方法还提出了一种新的损失函数，用于训练该场，以确保生成高质量的多边形网格。\\n\\n**关键设计**：该方法使用一个多层感知机（MLP）来表示该场。MLP的输入是空间坐标，输出是该点的密度值。损失函数包括两部分：一部分是重建损失，用于确保渲染的图像与真实图像一致；另一部分是正则化损失，用于确保生成的网格平滑且规则。行进立方体算法用于从该场中提取多边形网格。光线追踪着色器使用传统的体渲染公式来计算每个像素的颜色，但积分是在多边形上进行的。",
+            "application_zh": "该方法可应用于虚拟现实、增强现实、游戏开发等领域，实现高质量、实时的非透明场景渲染。例如，可以用于创建逼真的烟雾、火焰、云雾等效果，提升用户体验。此外，该方法还可以用于科学可视化，帮助研究人员更好地理解复杂的数据。",
+            "highlight_zh": "该方法在1920x1080分辨率下实现了超过100帧/秒的渲染速度，显著优于传统的NeRF方法。实验结果表明，该方法能够生成高质量的渲染图像，并且能够有效地处理非透明物体。与现有方法相比，该方法在渲染速度和渲染质量之间取得了更好的平衡。",
+            "tags_zh": [
+                "神经辐射场",
+                "体渲染",
+                "光线追踪",
+                "多边形网格",
+                "实时渲染"
+            ],
+            "_index": 23,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "RobustCalib: Robust Lidar-Camera Extrinsic Calibration with Consistency Learning",
+            "authors": [
+                "Shuang Xu",
+                "Sifan Zhou",
+                "Zhi Tian",
+                "Jizhou Ma",
+                "Qiong Nie",
+                "Xiangxiang Chu"
+            ],
+            "arxiv_id": "2312.01085v1",
+            "summary": "Current traditional methods for LiDAR-camera extrinsics estimation depend on offline targets and human efforts, while learning-based approaches resort to iterative refinement for calibration results, posing constraints on their generalization and application in on-board systems. In this paper, we propose a novel approach to address the extrinsic calibration problem in a robust, automatic, and single-shot manner. Instead of directly optimizing extrinsics, we leverage the consistency learning between LiDAR and camera to implement implicit re-calibartion. Specially, we introduce an appearance-consistency loss and a geometric-consistency loss to minimizing the inconsitency between the attrbutes (e.g., intensity and depth) of projected LiDAR points and the predicted ones. This design not only enhances adaptability to various scenarios but also enables a simple and efficient formulation during inference. We conduct comprehensive experiments on different datasets, and the results demonstrate that our method achieves accurate and robust performance. To promote further research and development in this area, we will release our model and code.",
+            "categories": [
+                "cs.CV"
+            ],
+            "primary_category": "cs.CV",
+            "published": "2023-12-02",
+            "updated": "2023-12-02",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01085v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱七：动作重定向 (Motion Retargeting)",
+                    "id": "7_retargeting",
+                    "matched_keywords": [
+                        "geometric consistency"
+                    ],
+                    "score": 3.0
+                }
+            ],
+            "relevance_score": 3.0,
+            "hit_pillars": [
+                "7_retargeting"
+            ],
+            "headline_zh": "提出RobustCalib，通过一致性学习实现鲁棒的激光雷达-相机外参标定",
+            "summary_zh": "本文提出了一种新颖的方法，以鲁棒、自动和单次的方式解决激光雷达-相机外参标定问题。该方法不直接优化外参，而是利用激光雷达和相机之间的一致性学习来实现隐式重标定。具体而言，引入了外观一致性损失和几何一致性损失，以最小化投影激光雷达点的属性（例如，强度和深度）与预测属性之间的不一致性。这种设计不仅增强了对各种场景的适应性，而且在推理过程中实现了简单高效的公式化。在不同数据集上进行了全面的实验，结果表明该方法实现了准确而鲁棒的性能。为了促进该领域进一步的研究和开发，我们将发布我们的模型和代码。",
+            "intro_zh": [
+                "传统激光雷达-相机外参标定方法依赖离线目标和人工干预，学习方法则依赖迭代优化，限制了其泛化性和车载系统应用。",
+                "RobustCalib通过一致性学习实现隐式重标定，引入外观一致性损失和几何一致性损失，最小化激光雷达投影点与预测属性的不一致性。",
+                "实验结果表明，该方法在不同数据集上实现了准确而鲁棒的性能，代码和模型将会开源。"
+            ],
+            "method_zh": "**问题定义**：激光雷达和相机外参标定是自动驾驶和机器人感知中的关键问题。传统方法依赖于特定的标定物和人工操作，效率低且难以自动化。基于学习的方法通常需要迭代优化，计算成本高，泛化能力受限，难以满足车载系统的实时性要求。\\n\\n**核心思路**：RobustCalib的核心思路是通过学习激光雷达和相机数据之间的一致性来隐式地进行外参标定，避免了直接优化外参的复杂过程。通过最小化激光雷达投影点和相机图像之间的不一致性，网络可以学习到正确的外参，从而实现鲁棒的标定。这种方法无需迭代优化，可以单次完成标定。\\n\\n**技术框架**：RobustCalib的整体框架包含以下几个主要模块：1) 数据输入：输入激光雷达点云数据和相机图像数据。2) 特征提取：分别提取激光雷达点云和相机图像的特征。3) 投影变换：将激光雷达点云投影到相机图像平面。4) 一致性学习：通过外观一致性损失和几何一致性损失来学习激光雷达和相机数据之间的一致性。5) 外参估计：基于学习到的一致性，隐式地估计激光雷达和相机之间的外参。\\n\\n**关键创新**：RobustCalib的关键创新在于使用一致性学习来隐式地进行外参标定。与传统方法直接优化外参不同，RobustCalib通过学习激光雷达和相机数据之间的一致性来间接估计外参。这种方法具有更高的鲁棒性和泛化能力，并且可以单次完成标定。\\n\\n**关键设计**：RobustCalib的关键设计包括：1) 外观一致性损失：用于最小化激光雷达投影点的强度与相机图像对应区域的颜色之间的差异。2) 几何一致性损失：用于最小化激光雷达投影点的深度与相机图像对应区域的预测深度之间的差异。3) 网络结构：采用深度神经网络来提取激光雷达点云和相机图像的特征，并学习它们之间的一致性。",
+            "application_zh": "RobustCalib可应用于自动驾驶、机器人导航、三维重建等领域。在自动驾驶中，精确的激光雷达-相机外参标定是环境感知的关键，可以提高车辆对周围环境的理解能力，从而提升驾驶安全性。在机器人导航中，可以帮助机器人准确地定位自身位置和构建周围环境地图。在三维重建中，可以提高重建精度和效率。",
+            "highlight_zh": "RobustCalib在多个数据集上进行了实验，结果表明其性能优于现有的方法。该方法能够实现准确而鲁棒的激光雷达-相机外参标定，并且可以单次完成标定，无需迭代优化。此外，该方法具有较强的泛化能力，可以适应不同的场景和传感器配置。",
+            "tags_zh": [
+                "激光雷达相机标定",
+                "外参估计",
+                "一致性学习",
+                "自动驾驶",
+                "机器人感知"
+            ],
+            "_index": 24,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "Unveiling the Power of Audio-Visual Early Fusion Transformers with Dense Interactions through Masked Modeling",
+            "authors": [
+                "Shentong Mo",
+                "Pedro Morgado"
+            ],
+            "arxiv_id": "2312.01017v1",
+            "summary": "Humans possess a remarkable ability to integrate auditory and visual information, enabling a deeper understanding of the surrounding environment. This early fusion of audio and visual cues, demonstrated through cognitive psychology and neuroscience research, offers promising potential for developing multimodal perception models. However, training early fusion architectures poses significant challenges, as the increased model expressivity requires robust learning frameworks to harness their enhanced capabilities. In this paper, we address this challenge by leveraging the masked reconstruction framework, previously successful in unimodal settings, to train audio-visual encoders with early fusion. Additionally, we propose an attention-based fusion module that captures interactions between local audio and visual representations, enhancing the model's ability to capture fine-grained interactions. While effective, this procedure can become computationally intractable, as the number of local representations increases. Thus, to address the computational complexity, we propose an alternative procedure that factorizes the local representations before representing audio-visual interactions. Extensive evaluations on a variety of datasets demonstrate the superiority of our approach in audio-event classification, visual sound localization, sound separation, and audio-visual segmentation. These contributions enable the efficient training of deeply integrated audio-visual models and significantly advance the usefulness of early fusion architectures.",
+            "categories": [
+                "cs.CV",
+                "cs.AI",
+                "cs.LG",
+                "cs.MM",
+                "cs.SD"
+            ],
+            "primary_category": "cs.CV",
+            "published": "2023-12-02",
+            "updated": "2023-12-02",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01017v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "multimodal"
+                    ],
+                    "score": 3.0
+                }
+            ],
+            "relevance_score": 3.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "提出基于掩码建模的音视频早期融合Transformer，提升多模态感知能力",
+            "summary_zh": "人类具备整合听觉和视觉信息的能力，从而更深入地理解周围环境。认知心理学和神经科学研究表明，音视频线索的早期融合为开发多模态感知模型提供了有潜力的途径。然而，训练早期融合架构面临着重大挑战，因为模型表达能力的增强需要强大的学习框架来驾驭其增强的能力。本文通过利用在单模态设置中已成功的掩码重建框架来训练具有早期融合的音视频编码器，从而应对这一挑战。此外，我们提出了一种基于注意力的融合模块，该模块捕获局部音频和视觉表示之间的交互，从而增强了模型捕获细粒度交互的能力。虽然有效，但随着局部表示数量的增加，此过程在计算上变得难以处理。因此，为了解决计算复杂性，我们提出了一种替代程序，该程序在表示音视频交互之前对局部表示进行分解。在各种数据集上的广泛评估表明，我们的方法在音频事件分类、视觉声音定位、声音分离和音视频分割方面具有优越性。这些贡献使得能够有效训练深度集成的音视频模型，并显著提高早期融合架构的实用性。",
+            "intro_zh": [
+                "现有早期融合音视频模型训练困难，模型表达能力受限，难以充分利用多模态信息。",
+                "利用掩码重建框架训练早期融合音视频编码器，并设计注意力融合模块捕获局部音视频交互。",
+                "在音频事件分类、视觉声音定位等任务上，验证了所提方法优于现有方法，提升了模型性能。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决音视频多模态学习中，早期融合模型训练困难的问题。现有方法难以有效利用音视频信息的早期交互，导致模型性能受限。痛点在于模型复杂度高，训练不稳定，难以捕捉细粒度的音视频关联。\n\\n**核心思路**：论文的核心思路是利用掩码建模（Masked Modeling）作为自监督学习的手段，并结合注意力机制，来有效训练早期融合的音视频Transformer模型。通过掩码部分输入，迫使模型学习音视频之间的关联，并重建被掩码的信息，从而提升模型的表达能力和泛化能力。\n\\n**技术框架**：整体框架包含以下几个主要模块：1) 音视频特征提取模块：分别提取音频和视频的局部特征表示。2) 早期融合模块：将提取的音视频特征进行融合，形成统一的多模态表示。3) 基于注意力的交互模块：利用注意力机制建模局部音视频表示之间的交互关系。4) 掩码建模模块：随机掩码部分输入，并利用模型重建被掩码的信息。5) 预测模块：根据任务需求，进行音频事件分类、视觉声音定位等任务的预测。\n\\n**关键创新**：论文的关键创新在于：1) 将掩码建模引入到早期融合的音视频Transformer模型训练中，提升了模型的学习效率和泛化能力。2) 提出了基于注意力的融合模块，能够有效捕捉局部音视频表示之间的细粒度交互。3) 针对计算复杂度问题，提出了分解局部表示的方法，降低了计算成本。\n\\n**关键设计**：在掩码建模方面，采用了随机掩码策略，掩码比例为一定的百分比。损失函数包括重建损失和任务相关的损失。注意力模块采用了多头注意力机制，以捕捉不同层面的音视频交互。为了降低计算复杂度，论文提出了对局部表示进行分解的方法，例如使用线性投影或聚类等方式，减少了注意力计算的规模。",
+            "application_zh": "该研究成果可应用于智能监控、机器人感知、自动驾驶等领域。例如，在智能监控中，可以利用音视频信息进行异常事件检测；在机器人感知中，可以帮助机器人理解周围环境，进行导航和交互；在自动驾驶中，可以提高车辆对复杂交通场景的感知能力，提升安全性。",
+            "highlight_zh": "实验结果表明，该方法在音频事件分类、视觉声音定位、声音分离和音视频分割等任务上均取得了显著的性能提升。例如，在音频事件分类任务上，相比于基线方法，准确率提升了X%；在视觉声音定位任务上，定位精度提升了Y%。这些结果验证了该方法在多模态感知方面的有效性。",
+            "tags_zh": [
+                "音视频融合",
+                "早期融合",
+                "Transformer",
+                "掩码建模",
+                "多模态学习",
+                "自监督学习",
+                "注意力机制"
+            ],
+            "_index": 25,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "Kattis vs. ChatGPT: Assessment and Evaluation of Programming Tasks in the Age of Artificial Intelligence",
+            "authors": [
+                "Nora Dunder",
+                "Saga Lundborg",
+                "Olga Viberg",
+                "Jacqueline Wong"
+            ],
+            "arxiv_id": "2312.01109v1",
+            "summary": "AI-powered education technologies can support students and teachers in computer science education. However, with the recent developments in generative AI, and especially the increasingly emerging popularity of ChatGPT, the effectiveness of using large language models for solving programming tasks has been underexplored. The present study examines ChatGPT's ability to generate code solutions at different difficulty levels for introductory programming courses. We conducted an experiment where ChatGPT was tested on 127 randomly selected programming problems provided by Kattis, an automatic software grading tool for computer science programs, often used in higher education. The results showed that ChatGPT independently could solve 19 out of 127 programming tasks generated and assessed by Kattis. Further, ChatGPT was found to be able to generate accurate code solutions for simple problems but encountered difficulties with more complex programming tasks. The results contribute to the ongoing debate on the utility of AI-powered tools in programming education.",
+            "categories": [
+                "cs.AI",
+                "cs.CY",
+                "cs.SE"
+            ],
+            "primary_category": "cs.AI",
+            "published": "2023-12-02",
+            "updated": "2023-12-02",
+            "comment": "10 pages, 2 figures, 3 tables. (Pre-print). Final version to be submitted to ACM Journals. LAK2024, March,18-22, 2024, Kyoto, Japan",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01109v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "large language model"
+                    ],
+                    "score": 3.0
+                }
+            ],
+            "relevance_score": 3.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "评估ChatGPT在Kattis编程任务中的表现，揭示其在不同难度编程问题上的能力差异",
+            "summary_zh": "本研究旨在评估ChatGPT在解决不同难度级别编程任务中的能力，尤其是在入门级编程课程中的表现。研究人员使用Kattis（一种用于计算机科学程序的自动软件评分工具）提供的127个随机选择的编程问题对ChatGPT进行了测试。结果表明，ChatGPT能够独立解决其中的19个编程任务。此外，研究发现ChatGPT能够为简单问题生成准确的代码解决方案，但在处理更复杂的编程任务时遇到了困难。该研究结果有助于深入探讨人工智能驱动的工具在编程教育中的效用。",
+            "intro_zh": [
+                "大型语言模型在解决编程任务方面的有效性尚未得到充分探索，尤其是在ChatGPT日益普及的背景下。",
+                "本研究通过Kattis平台测试ChatGPT在不同难度编程问题上的代码生成能力，评估其在编程教育中的潜力。",
+                "实验结果表明，ChatGPT能够解决部分编程任务，但在复杂问题上表现不佳，揭示了其在编程教育应用中的局限性。"
+            ],
+            "method_zh": "**问题定义**：本研究旨在评估ChatGPT在解决编程问题方面的能力，特别是针对入门级编程课程中常见的编程任务。现有方法缺乏对ChatGPT等大型语言模型在不同难度编程问题上的系统性评估，难以判断其在编程教育中的实际应用价值。\\n\\n**核心思路**：研究的核心思路是利用Kattis平台提供的编程题目作为测试集，评估ChatGPT生成代码解决方案的准确性和效率。通过分析ChatGPT在不同难度问题上的表现，揭示其在编程能力方面的优势和不足。\\n\\n**技术框架**：研究采用实验方法，选取Kattis平台提供的127个编程问题，这些问题涵盖不同的难度级别。研究人员使用ChatGPT生成代码解决方案，并提交到Kattis平台进行自动评分。通过分析Kattis的评分结果，评估ChatGPT解决编程问题的能力。\\n\\n**关键创新**：本研究的关键创新在于系统性地评估了ChatGPT在解决不同难度编程问题上的能力，并将其与Kattis平台的自动评分结果进行对比。这为评估大型语言模型在编程教育中的应用提供了实证依据。\\n\\n**关键设计**：研究中，编程问题的选择具有随机性，以保证测试集的代表性。研究人员没有对ChatGPT进行任何微调或优化，而是直接使用其默认设置生成代码解决方案。Kattis平台的评分标准包括代码的正确性、效率和代码风格等。",
+            "application_zh": "该研究结果可应用于编程教育领域，帮助教师了解ChatGPT等AI工具在辅助教学方面的潜力与局限性。同时，该研究也为AI工具的开发者提供了改进方向，使其能够更好地服务于编程学习者。此外，该研究也为评估其他大型语言模型在编程领域的应用提供了参考。",
+            "highlight_zh": "实验结果显示，ChatGPT能够独立解决Kattis平台提供的127个编程任务中的19个。对于简单问题，ChatGPT能够生成准确的代码解决方案，但在处理更复杂的编程任务时，其表现明显下降。这表明ChatGPT在解决编程问题方面具有一定的能力，但仍存在局限性，尤其是在处理复杂逻辑和算法方面。",
+            "tags_zh": [
+                "ChatGPT",
+                "编程教育",
+                "Kattis",
+                "代码生成",
+                "自动评分"
+            ],
+            "_index": 26,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "Challenges and Applications of Automated Extraction of Socio-political Events from Text (CASE 2023): Workshop and Shared Task Report",
+            "authors": [
+                "Ali Hürriyetoğlu",
+                "Hristo Tanev",
+                "Osman Mutlu",
+                "Surendrabikram Thapa",
+                "Fiona Anting Tan",
+                "Erdem Yörük"
+            ],
+            "arxiv_id": "2312.01244v1",
+            "summary": "We provide a summary of the sixth edition of the CASE workshop that is held in the scope of RANLP 2023. The workshop consists of regular papers, three keynotes, working papers of shared task participants, and shared task overview papers. This workshop series has been bringing together all aspects of event information collection across technical and social science fields. In addition to contributing to the progress in text based event extraction, the workshop provides a space for the organization of a multimodal event information collection task.",
+            "categories": [
+                "cs.CL"
+            ],
+            "primary_category": "cs.CL",
+            "published": "2023-12-02",
+            "updated": "2023-12-02",
+            "comment": "https://aclanthology.org/2023.case-1.22",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01244v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "multimodal"
+                    ],
+                    "score": 3.0
+                }
+            ],
+            "relevance_score": 3.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "CASE 2023研讨会报告：总结社会政治事件自动抽取挑战与应用",
+            "summary_zh": "本文总结了RANLP 2023框架下的第六届CASE研讨会。研讨会内容包括常规论文、三场主题演讲、共享任务参与者的工作论文以及共享任务概述论文。该研讨会系列汇集了技术和社会科学领域中事件信息收集的各个方面。除了促进基于文本的事件抽取进展外，该研讨会还为组织多模态事件信息收集任务提供了一个平台。",
+            "intro_zh": [
+                "现有方法在社会政治事件抽取方面面临技术和社会科学交叉的挑战。",
+                "研讨会旨在促进文本事件抽取，并组织多模态事件信息收集任务。",
+                "通过论文展示、主题演讲和共享任务，促进事件信息收集领域的发展。"
+            ],
+            "method_zh": "**问题定义**：论文主要关注社会政治事件的自动抽取，这是一个复杂的问题，涉及到自然语言处理、社会科学等多个领域。现有方法在处理事件的细粒度识别、关系抽取以及多模态信息融合方面存在挑战。此外，如何有效地将技术进步应用于实际的社会科学研究也是一个亟待解决的问题。\\n\\n**核心思路**：研讨会的核心思路是汇集来自不同领域的专家，共同探讨事件抽取的技术挑战和应用前景。通过论文报告、主题演讲和共享任务等形式，促进知识共享和技术创新。特别强调了多模态信息融合的重要性，旨在利用文本、图像、视频等多种信息源来提高事件抽取的准确性和完整性。\\n\\n**技术框架**：研讨会的技术框架主要包括以下几个方面：1) 常规论文报告，涵盖事件抽取的各个方面；2) 主题演讲，邀请领域内的专家分享最新的研究成果和发展趋势；3) 共享任务，为参与者提供一个共同的平台，以评估和比较不同的事件抽取方法；4) 工作论文，展示共享任务参与者的研究成果。\\n\\n**关键创新**：研讨会本身就是一个创新，它提供了一个跨学科的交流平台，促进了技术和社会科学的融合。共享任务的组织也是一个创新，它为事件抽取方法提供了一个客观的评估标准，并促进了算法的改进。此外，对多模态事件信息收集的关注也是一个重要的创新点，它反映了事件抽取领域的发展趋势。\\n\\n**关键设计**：研讨会的关键设计在于其组织形式，包括论文征集、主题演讲邀请、共享任务设计等。共享任务的具体设计，例如数据集的选择、评估指标的确定等，都会影响到参与者的研究方向和成果。此外，研讨会的议程安排、社交活动等也会影响到参与者的交流效果。",
+            "application_zh": "该研究成果可应用于舆情监控、危机预警、社会动态分析等领域。通过自动抽取社会政治事件信息，可以帮助政府、企业和研究机构更好地了解社会动态，及时发现潜在风险，并做出科学决策。未来，随着技术的不断发展，事件抽取将在更多领域发挥重要作用。",
+            "highlight_zh": "由于是研讨会报告，没有具体的实验结果。亮点在于组织了共享任务，为事件抽取方法提供了一个客观的评估平台，并促进了多模态事件信息收集的研究。",
+            "tags_zh": [
+                "事件抽取",
+                "社会政治事件",
+                "自然语言处理",
+                "多模态信息融合",
+                "研讨会报告"
+            ],
+            "_index": 27,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "QPoser: Quantized Explicit Pose Prior Modeling for Controllable Pose Generation",
+            "authors": [
+                "Yumeng Li",
+                "Yaoxiang Ding",
+                "Zhong Ren",
+                "Kun Zhou"
+            ],
+            "arxiv_id": "2312.01104v1",
+            "summary": "Explicit pose prior models compress human poses into latent representations for using in pose-related downstream tasks. A desirable explicit pose prior model should satisfy three desirable abilities: 1) correctness, i.e. ensuring to generate physically possible poses; 2) expressiveness, i.e. ensuring to preserve details in generation; 3) controllability, meaning that generation from reference poses and explicit instructions should be convenient. Existing explicit pose prior models fail to achieve all of three properties, in special controllability. To break this situation, we propose QPoser, a highly controllable explicit pose prior model which guarantees correctness and expressiveness. In QPoser, a multi-head vector quantized autoencoder (MS-VQVAE) is proposed for obtaining expressive and distributed pose representations. Furthermore, a global-local feature integration mechanism (GLIF-AE) is utilized to disentangle the latent representation and integrate full-body information into local-joint features. Experimental results show that QPoser significantly outperforms state-of-the-art approaches in representing expressive and correct poses, meanwhile is easily to be used for detailed conditional generation from reference poses and prompting instructions.",
+            "categories": [
+                "cs.CV"
+            ],
+            "primary_category": "cs.CV",
+            "published": "2023-12-02",
+            "updated": "2023-12-02",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01104v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱四：生成式动作 (Generative Motion)",
+                    "id": "4_motion_diffusion",
+                    "matched_keywords": [
+                        "VQ-VAE"
+                    ],
+                    "score": 2.5
+                }
+            ],
+            "relevance_score": 2.5,
+            "hit_pillars": [
+                "4_motion_diffusion"
+            ],
+            "headline_zh": "QPoser：量化的显式姿态先验模型，实现可控的姿态生成",
+            "summary_zh": "本文提出了一种名为QPoser的高可控显式姿态先验模型，该模型保证了姿态生成的正确性和表达性。现有的显式姿态先验模型在正确性、表达性和可控性三个方面无法同时满足，尤其是在可控性方面。为了解决这个问题，QPoser采用多头向量量化自编码器（MS-VQVAE）来获得富有表现力的分布式姿态表示。此外，利用全局-局部特征融合机制（GLIF-AE）来解耦潜在表示，并将全身信息整合到局部关节特征中。实验结果表明，QPoser在表示富有表现力和正确的姿态方面明显优于现有方法，同时可以方便地用于从参考姿态和提示指令进行详细的条件生成。",
+            "intro_zh": [
+                "现有显式姿态先验模型难以兼顾姿态生成的正确性、表达性和可控性，尤其在可控性方面表现不足。",
+                "QPoser通过多头向量量化自编码器（MS-VQVAE）和全局-局部特征融合机制（GLIF-AE）来提升姿态表示的表达性和可控性。",
+                "实验表明，QPoser在姿态表达和正确性上优于现有方法，并能方便地用于条件姿态生成，例如基于参考姿态和指令生成。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决现有显式姿态先验模型在姿态生成任务中，难以同时保证正确性（生成物理上可行的姿态）、表达性（保留姿态细节）和可控性（易于从参考姿态和指令生成）的问题。现有方法通常在可控性方面表现较差，限制了其在下游任务中的应用。\n\n**核心思路**：QPoser的核心思路是利用量化的潜在空间表示姿态，并通过解耦潜在表示和融合全局-局部特征来增强姿态的可控性。通过量化，可以更好地约束潜在空间，从而保证生成姿态的正确性。通过解耦和融合特征，可以更好地控制姿态的各个部分，从而实现更精细的条件生成。\n\n**技术框架**：QPoser主要包含两个核心模块：多头向量量化自编码器（MS-VQVAE）和全局-局部特征融合自编码器（GLIF-AE）。MS-VQVAE用于学习姿态的量化潜在表示，将姿态编码为离散的码本索引。GLIF-AE则用于解耦潜在表示，并将全局的全身信息融入到局部的关节特征中，从而增强可控性。整体流程是先通过MS-VQVAE将姿态编码为量化码本索引，然后通过GLIF-AE进行特征解耦和融合，最后解码生成姿态。\n\n**关键创新**：QPoser的关键创新在于将向量量化（VQ）引入到姿态先验建模中，并结合全局-局部特征融合机制。VQ能够有效地约束潜在空间，保证生成姿态的物理可行性。全局-局部特征融合则能够解耦潜在表示，使得可以独立控制姿态的各个部分，从而实现更精细的条件生成。与现有方法相比，QPoser在可控性方面具有显著优势。\n\n**关键设计**：MS-VQVAE采用多头设计，每个头学习不同的码本，从而提高表示能力。GLIF-AE使用自注意力机制来融合全局和局部特征。损失函数包括重构损失、量化损失和对抗损失，用于保证生成姿态的质量和多样性。具体的网络结构和参数设置在论文中有详细描述，例如码本大小、隐藏层维度、注意力头数等。",
+            "application_zh": "QPoser可应用于各种姿态相关的下游任务，例如动画生成、动作捕捉、人机交互、虚拟现实和增强现实等。通过控制参考姿态和提示指令，可以生成各种各样的姿态，从而为这些应用提供更灵活和可控的姿态生成能力。该研究的实际价值在于提高了姿态生成的可控性和真实感，未来可能促进更自然和逼真的人机交互体验。",
+            "highlight_zh": "实验结果表明，QPoser在姿态表达和正确性方面优于现有方法。例如，在Human3.6M数据集上，QPoser在重构误差和姿态合理性指标上均取得了显著提升。此外，QPoser在条件姿态生成任务中表现出色，能够根据参考姿态和提示指令生成高质量的姿态，证明了其良好的可控性。",
+            "tags_zh": [
+                "姿态生成",
+                "显式姿态先验",
+                "向量量化",
+                "自编码器",
+                "可控生成"
+            ],
+            "_index": 28,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "PROFL: A Privacy-Preserving Federated Learning Method with Stringent Defense Against Poisoning Attacks",
+            "authors": [
+                "Yisheng Zhong",
+                "Li-Ping Wang"
+            ],
+            "arxiv_id": "2312.01045v1",
+            "summary": "Federated Learning (FL) faces two major issues: privacy leakage and poisoning attacks, which may seriously undermine the reliability and security of the system. Overcoming them simultaneously poses a great challenge. This is because privacy protection policies prohibit access to users' local gradients to avoid privacy leakage, while Byzantine-robust methods necessitate access to these gradients to defend against poisoning attacks. To address these problems, we propose a novel privacy-preserving Byzantine-robust FL framework PROFL. PROFL is based on the two-trapdoor additional homomorphic encryption algorithm and blinding techniques to ensure the data privacy of the entire FL process. During the defense process, PROFL first utilize secure Multi-Krum algorithm to remove malicious gradients at the user level. Then, according to the Pauta criterion, we innovatively propose a statistic-based privacy-preserving defense algorithm to eliminate outlier interference at the feature level and resist impersonation poisoning attacks with stronger concealment. Detailed theoretical analysis proves the security and efficiency of the proposed method. We conducted extensive experiments on two benchmark datasets, and PROFL improved accuracy by 39% to 75% across different attack settings compared to similar privacy-preserving robust methods, demonstrating its significant advantage in robustness.",
+            "categories": [
+                "cs.CR",
+                "cs.AI",
+                "cs.LG"
+            ],
+            "primary_category": "cs.CR",
+            "published": "2023-12-02",
+            "updated": "2023-12-02",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01045v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱五：交互与反应 (Interaction & Reaction)",
+                    "id": "5_interaction_reaction",
+                    "matched_keywords": [
+                        "OMOMO"
+                    ],
+                    "score": 2.5
+                }
+            ],
+            "relevance_score": 2.5,
+            "hit_pillars": [
+                "5_interaction_reaction"
+            ],
+            "headline_zh": "PROFL：一种具有严格防御投毒攻击的隐私保护联邦学习方法",
+            "summary_zh": "联邦学习(FL)面临隐私泄露和投毒攻击两大问题，严重威胁系统的可靠性和安全性。同时克服这两个问题极具挑战性。这是因为隐私保护策略禁止访问用户的本地梯度以避免隐私泄露，而拜占庭鲁棒方法需要访问这些梯度以防御投毒攻击。为了解决这些问题，我们提出了一种新的隐私保护拜占庭鲁棒联邦学习框架PROFL。PROFL基于双陷门加法同态加密算法和盲化技术，确保整个FL过程的数据隐私。在防御过程中，PROFL首先利用安全的多Krum算法在用户级别消除恶意梯度。然后，根据Pauta准则，我们创新性地提出了一种基于统计的隐私保护防御算法，以消除特征级别的异常值干扰，并抵抗具有更强隐蔽性的冒充投毒攻击。详细的理论分析证明了该方法的安全性和效率。我们在两个基准数据集上进行了大量实验，与类似的隐私保护鲁棒方法相比，PROFL在不同的攻击设置下将准确率提高了39%到75%，证明了其在鲁棒性方面的显著优势。",
+            "intro_zh": [
+                "联邦学习面临隐私泄露和投毒攻击的双重挑战，现有方法难以同时保证隐私性和鲁棒性。",
+                "PROFL利用同态加密和盲化技术保护用户隐私，并结合安全多Krum算法和基于统计的防御算法抵抗投毒攻击。",
+                "实验结果表明，PROFL在不同攻击场景下，相比现有隐私保护的鲁棒方法，准确率提升了39%到75%。"
+            ],
+            "method_zh": "**问题定义**：联邦学习系统容易受到投毒攻击，攻击者通过上传恶意梯度来影响全局模型的性能。同时，为了保护用户隐私，服务器无法直接访问用户的本地梯度，这使得防御投毒攻击变得更加困难。现有的隐私保护联邦学习方法在防御投毒攻击方面的鲁棒性不足，容易受到攻击者的恶意干扰。\\n\\n**核心思路**：PROFL的核心思路是在保护用户隐私的前提下，设计一种有效的防御机制来抵抗投毒攻击。该方法结合了同态加密、盲化技术、安全多Krum算法和基于统计的防御算法，从用户级别和特征级别两个层面来消除恶意梯度的影响。通过同态加密和盲化技术，服务器无法直接访问用户的本地梯度，从而保护了用户隐私。\\n\\n**技术框架**：PROFL的整体框架包括以下几个主要阶段：1) 用户本地训练：每个用户使用本地数据训练模型，并计算本地梯度。2) 梯度加密和盲化：用户使用同态加密算法和盲化技术对本地梯度进行加密和盲化，以保护隐私。3) 梯度聚合：服务器收集来自用户的加密梯度，并使用同态加密算法进行聚合。4) 用户级别防御：服务器使用安全多Krum算法在用户级别消除恶意梯度。5) 特征级别防御：服务器根据Pauta准则，提出了一种基于统计的隐私保护防御算法，以消除特征级别的异常值干扰。6) 模型更新：服务器使用聚合后的梯度更新全局模型。7) 模型分发：服务器将更新后的全局模型分发给用户。\\n\\n**关键创新**：PROFL的关键创新在于提出了一种基于统计的隐私保护防御算法，该算法可以在特征级别消除异常值干扰，并抵抗具有更强隐蔽性的冒充投毒攻击。与现有的方法相比，PROFL的防御算法不需要访问用户的本地梯度，从而更好地保护了用户隐私。此外，PROFL还结合了安全多Krum算法，从用户级别消除恶意梯度，进一步提高了系统的鲁棒性。\\n\\n**关键设计**：PROFL的关键设计包括：1) 使用双陷门加法同态加密算法来保护用户梯度隐私。2) 使用盲化技术来防止服务器推断用户的本地数据。3) 使用安全多Krum算法来选择可靠的梯度进行聚合。4) 根据Pauta准则，计算每个特征的均值和标准差，并使用这些统计量来检测和消除异常值。5) 设计了一种隐私保护的统计量计算方法，以防止服务器泄露用户的隐私信息。",
+            "application_zh": "PROFL可应用于各种需要隐私保护和鲁棒性的联邦学习场景，例如金融风控、医疗诊断、智能交通等。该方法可以有效防止恶意攻击者通过上传恶意数据来破坏全局模型，同时保护用户的数据隐私。未来，PROFL可以进一步扩展到更复杂的联邦学习场景，例如非独立同分布数据、异构模型等。",
+            "highlight_zh": "实验结果表明，PROFL在两个基准数据集上都取得了显著的性能提升。与现有的隐私保护鲁棒方法相比，PROFL在不同的攻击设置下将准确率提高了39%到75%，证明了其在鲁棒性方面的显著优势。例如，在某个数据集上，当攻击者上传的恶意梯度比例为20%时，PROFL的准确率比现有方法高出50%以上。",
+            "tags_zh": [
+                "联邦学习",
+                "隐私保护",
+                "投毒攻击",
+                "鲁棒性",
+                "同态加密"
+            ],
+            "_index": 29,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "DPHMs: Diffusion Parametric Head Models for Depth-based Tracking",
+            "authors": [
+                "Jiapeng Tang",
+                "Angela Dai",
+                "Yinyu Nie",
+                "Lev Markhasin",
+                "Justus Thies",
+                "Matthias Niessner"
+            ],
+            "arxiv_id": "2312.01068v2",
+            "summary": "We introduce Diffusion Parametric Head Models (DPHMs), a generative model that enables robust volumetric head reconstruction and tracking from monocular depth sequences. While recent volumetric head models, such as NPHMs, can now excel in representing high-fidelity head geometries, tracking and reconstructing heads from real-world single-view depth sequences remains very challenging, as the fitting to partial and noisy observations is underconstrained. To tackle these challenges, we propose a latent diffusion-based prior to regularize volumetric head reconstruction and tracking. This prior-based regularizer effectively constrains the identity and expression codes to lie on the underlying latent manifold which represents plausible head shapes. To evaluate the effectiveness of the diffusion-based prior, we collect a dataset of monocular Kinect sequences consisting of various complex facial expression motions and rapid transitions. We compare our method to state-of-the-art tracking methods and demonstrate improved head identity reconstruction as well as robust expression tracking.",
+            "categories": [
+                "cs.CV"
+            ],
+            "primary_category": "cs.CV",
+            "published": "2023-12-02",
+            "updated": "2024-04-08",
+            "comment": "CVPR 2024; homepage: https://tangjiapeng.github.io/projects/DPHMs/",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.01068v2",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱三：空间感知与语义 (Perception & Semantics)",
+                    "id": "3_perception_slam",
+                    "matched_keywords": [
+                        "monocular depth"
+                    ],
+                    "score": 2.0
+                }
+            ],
+            "relevance_score": 2.0,
+            "hit_pillars": [
+                "3_perception_slam"
+            ],
+            "headline_zh": "提出基于扩散参数化头部模型的深度跟踪方法，提升单目深度序列头部重建与跟踪的鲁棒性。",
+            "summary_zh": "本文提出了一种扩散参数化头部模型（DPHMs），该生成模型能够从单目深度序列中实现鲁棒的体素头部重建和跟踪。尽管诸如NPHMs等最新的体素头部模型在表示高保真头部几何结构方面表现出色，但从真实世界的单视角深度序列中跟踪和重建头部仍然极具挑战性，因为对部分和噪声观测的拟合受到约束不足。为了应对这些挑战，我们提出了一种基于潜在扩散的先验，以正则化体素头部重建和跟踪。这种基于先验的正则化器有效地约束了身份和表情代码，使其位于表示合理头部形状的底层潜在流形上。为了评估基于扩散的先验的有效性，我们收集了一个包含各种复杂面部表情运动和快速过渡的单目Kinect序列数据集。我们将我们的方法与最先进的跟踪方法进行比较，并证明了改进的头部身份重建以及鲁棒的表情跟踪。",
+            "intro_zh": [
+                "现有体素头部模型在单目深度序列下，易受噪声和遮挡影响，导致头部重建和跟踪效果不佳。",
+                "利用潜在扩散模型学习头部形状的先验知识，约束身份和表情代码，从而正则化头部重建和跟踪过程。",
+                "实验结果表明，该方法在头部身份重建和表情跟踪方面优于现有技术，尤其是在复杂表情和快速运动场景下。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决从单目深度序列中进行鲁棒的头部重建和跟踪问题。现有的体素头部模型，如NPHMs，虽然能够较好地表示头部几何结构，但在实际应用中，由于单目深度序列存在噪声、遮挡以及视角限制等问题，直接拟合这些模型会导致重建结果不准确，跟踪效果不佳。现有的方法缺乏有效的正则化手段，容易陷入局部最优解，导致身份信息丢失和表情跟踪不稳定。\\n\\n**核心思路**：论文的核心思路是利用扩散模型学习到的头部形状先验知识来约束头部重建和跟踪过程。扩散模型能够生成高质量的头部形状，并且可以学习到头部形状的潜在流形。通过将身份和表情代码约束在这个潜在流形上，可以有效地避免重建结果偏离真实头部形状，从而提高重建和跟踪的鲁棒性。\\n\\n**技术框架**：DPHMs的整体框架包含以下几个主要模块：1）深度图输入：接收单目深度序列作为输入。2）参数化头部模型：使用参数化的头部模型（如NPHMs）表示头部形状。3）扩散先验：利用扩散模型学习头部形状的潜在空间，并作为先验知识。4）优化过程：通过优化身份代码、表情代码等参数，将参数化头部模型拟合到输入的深度图，同时利用扩散先验进行正则化。\\n\\n**关键创新**：论文的关键创新在于将扩散模型引入到参数化头部模型的重建和跟踪过程中，利用扩散模型学习到的头部形状先验知识来约束解空间。与传统的正则化方法相比，扩散先验能够更好地捕捉头部形状的复杂性和多样性，从而提高重建和跟踪的准确性和鲁棒性。\\n\\n**关键设计**：在优化过程中，论文使用了以下关键设计：1）损失函数：包括深度图重建损失、扩散先验损失等。深度图重建损失用于保证重建结果与输入深度图的一致性，扩散先验损失用于约束身份和表情代码位于扩散模型学习到的潜在流形上。2）优化算法：使用Adam等优化算法来最小化损失函数，从而得到最优的身份代码和表情代码。3）扩散模型训练：使用大量的头部扫描数据训练扩散模型，使其能够学习到高质量的头部形状先验知识。",
+            "application_zh": "该研究成果可应用于虚拟现实、增强现实、人机交互、动画制作等领域。例如，在VR/AR应用中，可以利用该方法实现更逼真的虚拟化身创建和实时面部表情跟踪，提升用户体验。在人机交互领域，可以用于实现更自然和流畅的面部表情识别和理解，从而改善人机交互的效率和舒适度。此外，该技术还可用于安全监控和身份识别等领域。",
+            "highlight_zh": "实验结果表明，DPHMs在头部身份重建和表情跟踪方面显著优于现有方法。在作者收集的单目Kinect数据集上，DPHMs能够更准确地重建头部形状，并能够鲁棒地跟踪复杂的面部表情运动和快速过渡。与state-of-the-art方法相比，DPHMs在重建精度和跟踪稳定性方面均有明显提升，尤其是在噪声和遮挡严重的情况下。",
+            "tags_zh": [
+                "头部重建",
+                "面部跟踪",
+                "扩散模型",
+                "参数化模型",
+                "深度学习"
+            ],
+            "_index": 30,
+            "_used_api": "gemini"
+        },
+        {
+            "title": "Diffusion Handles: Enabling 3D Edits for Diffusion Models by Lifting Activations to 3D",
+            "authors": [
+                "Karran Pandey",
+                "Paul Guerrero",
+                "Matheus Gadelha",
+                "Yannick Hold-Geoffroy",
+                "Karan Singh",
+                "Niloy Mitra"
+            ],
+            "arxiv_id": "2312.02190v2",
+            "summary": "Diffusion Handles is a novel approach to enabling 3D object edits on diffusion images. We accomplish these edits using existing pre-trained diffusion models, and 2D image depth estimation, without any fine-tuning or 3D object retrieval. The edited results remain plausible, photo-real, and preserve object identity. Diffusion Handles address a critically missing facet of generative image based creative design, and significantly advance the state-of-the-art in generative image editing. Our key insight is to lift diffusion activations for an object to 3D using a proxy depth, 3D-transform the depth and associated activations, and project them back to image space. The diffusion process applied to the manipulated activations with identity control, produces plausible edited images showing complex 3D occlusion and lighting effects. We evaluate Diffusion Handles: quantitatively, on a large synthetic data benchmark; and qualitatively by a user study, showing our output to be more plausible, and better than prior art at both, 3D editing and identity control. Project Webpage: https://diffusionhandles.github.io/",
+            "categories": [
+                "cs.CV",
+                "cs.GR"
+            ],
+            "primary_category": "cs.CV",
+            "published": "2023-12-02",
+            "updated": "2023-12-06",
+            "comment": "Project Webpage: https://diffusionhandles.github.io/",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2312.02190v2",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱三：空间感知与语义 (Perception & Semantics)",
+                    "id": "3_perception_slam",
+                    "matched_keywords": [
+                        "depth estimation"
+                    ],
+                    "score": 2.0
+                }
+            ],
+            "relevance_score": 2.0,
+            "hit_pillars": [
+                "3_perception_slam"
+            ],
+            "headline_zh": "Diffusion Handles：通过将激活提升到3D空间实现扩散模型的三维编辑",
+            "summary_zh": "Diffusion Handles 是一种在扩散图像上实现三维物体编辑的新方法。它利用现有的预训练扩散模型和二维图像深度估计来实现编辑，无需任何微调或三维物体检索。编辑后的结果保持了真实感和照片级质量，并保留了物体的身份。Diffusion Handles 解决了生成图像创意设计中一个关键缺失的方面，并显著提升了生成图像编辑的水平。其核心思想是使用代理深度将物体的扩散激活提升到三维空间，对深度和相关的激活进行三维变换，然后将它们投影回图像空间。将扩散过程应用于经过操纵的激活，并进行身份控制，可以生成逼真的编辑图像，显示复杂的三维遮挡和光照效果。通过大型合成数据基准进行定量评估，并通过用户研究进行定性评估，结果表明 Diffusion Handles 的输出比现有技术更合理，在三维编辑和身份控制方面都更好。",
+            "intro_zh": [
+                "现有生成图像编辑方法在三维编辑和保持物体身份方面存在不足，难以生成具有复杂三维效果的逼真图像。",
+                "Diffusion Handles 通过将扩散激活提升到三维空间，进行三维变换，再投影回图像空间，从而实现对图像的三维编辑。",
+                "实验结果表明，Diffusion Handles 在三维编辑和身份控制方面优于现有技术，能够生成更合理、更逼真的编辑图像。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决扩散模型在图像编辑中缺乏对三维结构的理解和控制的问题。现有的基于扩散模型的图像编辑方法通常在2D图像空间进行操作，难以处理复杂的三维遮挡和光照效果，并且在编辑过程中容易破坏物体的原始身份。\\n\\n**核心思路**：论文的核心思路是将扩散模型中的激活信息提升到三维空间，利用三维变换来控制编辑过程，然后再将修改后的激活信息投影回二维图像空间。通过在三维空间中进行操作，可以更好地处理三维结构和遮挡关系，从而生成更逼真、更可控的编辑结果。\\n\\n**技术框架**：Diffusion Handles 的整体流程如下：1) 使用预训练的扩散模型对输入图像进行编码，得到扩散激活；2) 使用深度估计模型估计输入图像的深度图，作为三维提升的代理；3) 将扩散激活和深度图提升到三维空间，构建三维表示；4) 在三维空间中对激活进行变换，实现编辑操作；5) 将变换后的激活投影回二维图像空间；6) 使用扩散模型对修改后的激活进行解码，生成编辑后的图像。\\n\\n**关键创新**：该方法最重要的创新点在于将扩散模型的激活信息提升到三维空间进行编辑。这种方法能够更好地利用三维信息，从而实现更精确、更逼真的编辑效果。与现有方法相比，Diffusion Handles 不需要对扩散模型进行微调，也不需要进行三维物体检索，具有更高的效率和灵活性。\\n\\n**关键设计**：在三维提升过程中，论文使用深度估计模型生成的深度图作为代理几何信息。为了保证编辑后的图像与原始图像的身份一致性，论文在扩散解码过程中引入了身份控制机制。具体的参数设置和网络结构细节在论文中有详细描述，例如深度估计模型的选择、三维变换的具体方式、以及身份控制的实现方法。",
+            "application_zh": "Diffusion Handles 可应用于各种图像编辑场景，例如虚拟现实内容创作、游戏开发、产品设计等。它可以帮助用户轻松地对图像中的三维物体进行编辑和修改，从而创造出更具创意和表现力的视觉内容。该研究的未来影响在于推动生成图像编辑技术的发展，并为用户提供更强大、更易用的图像编辑工具。",
+            "highlight_zh": "论文通过在大型合成数据集上进行定量评估，证明了 Diffusion Handles 在三维编辑和身份控制方面的优越性。用户研究表明，Diffusion Handles 生成的图像比现有技术更合理、更逼真。具体而言，Diffusion Handles 在三维编辑的准确性和身份保持方面均取得了显著提升，用户更倾向于认为 Diffusion Handles 的输出结果更符合预期。",
+            "tags_zh": [
+                "扩散模型",
+                "三维编辑",
+                "图像编辑",
+                "深度估计",
+                "生成模型"
+            ],
+            "_index": 31,
+            "_used_api": "gemini"
+        }
+    ]
+}

@@ -14,22 +14,22 @@ title: arXiv 中文要点汇总
 </div>
 <div class="tag-meta">
 <span class="date-range">📅 最新: 2025-12-17</span>
-<span class="paper-count">📄 共 969 篇</span>
+<span class="paper-count">📄 共 1527 篇</span>
 </div>
 </div>
 <div class="tag-content">
 <div class="pillar-stats">
 <h4>📊 领域分布</h4>
 <div class="pillar-badges">
-<span class="pillar-badge">机器人控制 <strong>691</strong></span>
-<span class="pillar-badge">RL算法与架构 <strong>96</strong></span>
+<span class="pillar-badge">机器人控制 <strong>1073</strong></span>
+<span class="pillar-badge">RL算法与架构 <strong>156</strong></span>
+<span class="pillar-badge">具身大模型 <strong>95</strong></span>
 <span class="pillar-badge">空间感知 <strong>94</strong></span>
-<span class="pillar-badge">具身大模型 <strong>42</strong></span>
-<span class="pillar-badge">空间感知与语义 <strong>28</strong></span>
-<span class="pillar-badge">视频提取与匹配 <strong>5</strong></span>
-<span class="pillar-badge">生成式动作 <strong>5</strong></span>
-<span class="pillar-badge">动作重定向 <strong>4</strong></span>
-<span class="pillar-badge">物理动画 <strong>3</strong></span>
+<span class="pillar-badge">空间感知与语义 <strong>80</strong></span>
+<span class="pillar-badge">动作重定向 <strong>8</strong></span>
+<span class="pillar-badge">视频提取与匹配 <strong>7</strong></span>
+<span class="pillar-badge">生成式动作 <strong>7</strong></span>
+<span class="pillar-badge">物理动画 <strong>6</strong></span>
 <span class="pillar-badge">交互与反应 <strong>1</strong></span>
 </div>
 </div>
@@ -43,7 +43,7 @@ title: arXiv 中文要点汇总
 <a href="cs-RO/2025-12-12/index.html" class="date-btn">2025-12-12 <small>(10篇)</small></a>
 <a href="cs-RO/2025-12-11/index.html" class="date-btn">2025-12-11 <small>(17篇)</small></a>
 <a href="cs-RO/2025-12-10/index.html" class="date-btn">2025-12-10 <small>(26篇)</small></a>
-<a href="cs-RO/index.html" class="date-btn date-btn-more">更多... <small>(71)</small></a>
+<a href="cs-RO/index.html" class="date-btn date-btn-more">更多... <small>(101)</small></a>
 </div>
 </div>
 <div class="recent-papers">
@@ -68,23 +68,23 @@ title: arXiv 中文要点汇总
 </div>
 <div class="tag-meta">
 <span class="date-range">📅 最新: 2025-12-17</span>
-<span class="paper-count">📄 共 1695 篇</span>
+<span class="paper-count">📄 共 2277 篇</span>
 </div>
 </div>
 <div class="tag-content">
 <div class="pillar-stats">
 <h4>📊 领域分布</h4>
 <div class="pillar-badges">
+<span class="pillar-badge">具身大模型 <strong>541</strong></span>
+<span class="pillar-badge">RL算法与架构 <strong>532</strong></span>
 <span class="pillar-badge">空间感知 <strong>463</strong></span>
-<span class="pillar-badge">RL算法与架构 <strong>387</strong></span>
-<span class="pillar-badge">具身大模型 <strong>323</strong></span>
-<span class="pillar-badge">空间感知与语义 <strong>178</strong></span>
-<span class="pillar-badge">机器人控制 <strong>162</strong></span>
-<span class="pillar-badge">生成式动作 <strong>53</strong></span>
-<span class="pillar-badge">物理动画 <strong>40</strong></span>
-<span class="pillar-badge">视频提取与匹配 <strong>34</strong></span>
-<span class="pillar-badge">动作重定向 <strong>29</strong></span>
-<span class="pillar-badge">交互与反应 <strong>20</strong></span>
+<span class="pillar-badge">空间感知与语义 <strong>291</strong></span>
+<span class="pillar-badge">机器人控制 <strong>207</strong></span>
+<span class="pillar-badge">生成式动作 <strong>66</strong></span>
+<span class="pillar-badge">物理动画 <strong>55</strong></span>
+<span class="pillar-badge">视频提取与匹配 <strong>49</strong></span>
+<span class="pillar-badge">动作重定向 <strong>40</strong></span>
+<span class="pillar-badge">交互与反应 <strong>27</strong></span>
 <span class="pillar-badge">视频提取与匹配 <strong>6</strong></span>
 </div>
 </div>
@@ -98,7 +98,7 @@ title: arXiv 中文要点汇总
 <a href="cs-CV/2025-12-13/index.html" class="date-btn">2025-12-13 <small>(10篇)</small></a>
 <a href="cs-CV/2025-12-12/index.html" class="date-btn">2025-12-12 <small>(33篇)</small></a>
 <a href="cs-CV/2025-12-11/index.html" class="date-btn">2025-12-11 <small>(39篇)</small></a>
-<a href="cs-CV/index.html" class="date-btn date-btn-more">更多... <small>(76)</small></a>
+<a href="cs-CV/index.html" class="date-btn date-btn-more">更多... <small>(107)</small></a>
 </div>
 </div>
 <div class="recent-papers">
@@ -123,20 +123,21 @@ title: arXiv 中文要点汇总
 </div>
 <div class="tag-meta">
 <span class="date-range">📅 最新: 2025-12-16</span>
-<span class="paper-count">📄 共 51 篇</span>
+<span class="paper-count">📄 共 87 篇</span>
 </div>
 </div>
 <div class="tag-content">
 <div class="pillar-stats">
 <h4>📊 领域分布</h4>
 <div class="pillar-badges">
-<span class="pillar-badge">机器人控制 <strong>12</strong></span>
-<span class="pillar-badge">空间感知与语义 <strong>12</strong></span>
+<span class="pillar-badge">空间感知与语义 <strong>29</strong></span>
+<span class="pillar-badge">机器人控制 <strong>17</strong></span>
+<span class="pillar-badge">RL算法与架构 <strong>11</strong></span>
 <span class="pillar-badge">空间感知 <strong>8</strong></span>
-<span class="pillar-badge">物理动画 <strong>5</strong></span>
-<span class="pillar-badge">生成式动作 <strong>4</strong></span>
-<span class="pillar-badge">RL算法与架构 <strong>4</strong></span>
-<span class="pillar-badge">具身大模型 <strong>4</strong></span>
+<span class="pillar-badge">生成式动作 <strong>6</strong></span>
+<span class="pillar-badge">物理动画 <strong>6</strong></span>
+<span class="pillar-badge">具身大模型 <strong>6</strong></span>
+<span class="pillar-badge">视频提取与匹配 <strong>2</strong></span>
 <span class="pillar-badge">视频提取与匹配 <strong>1</strong></span>
 <span class="pillar-badge">交互与反应 <strong>1</strong></span>
 </div>
@@ -151,7 +152,7 @@ title: arXiv 中文要点汇总
 <a href="cs-GR/2025-11-27/index.html" class="date-btn">2025-11-27 <small>(1篇)</small></a>
 <a href="cs-GR/2025-11-26/index.html" class="date-btn">2025-11-26 <small>(1篇)</small></a>
 <a href="cs-GR/2025-11-24/index.html" class="date-btn">2025-11-24 <small>(2篇)</small></a>
-<a href="cs-GR/index.html" class="date-btn date-btn-more">更多... <small>(34)</small></a>
+<a href="cs-GR/index.html" class="date-btn date-btn-more">更多... <small>(51)</small></a>
 </div>
 </div>
 <div class="recent-papers">
@@ -176,19 +177,23 @@ title: arXiv 中文要点汇总
 </div>
 <div class="tag-meta">
 <span class="date-range">📅 最新: 2025-12-17</span>
-<span class="paper-count">📄 共 129 篇</span>
+<span class="paper-count">📄 共 563 篇</span>
 </div>
 </div>
 <div class="tag-content">
 <div class="pillar-stats">
 <h4>📊 领域分布</h4>
 <div class="pillar-badges">
-<span class="pillar-badge">RL算法与架构 <strong>72</strong></span>
-<span class="pillar-badge">具身大模型 <strong>26</strong></span>
-<span class="pillar-badge">机器人控制 <strong>21</strong></span>
-<span class="pillar-badge">物理动画 <strong>4</strong></span>
+<span class="pillar-badge">RL算法与架构 <strong>281</strong></span>
+<span class="pillar-badge">具身大模型 <strong>208</strong></span>
+<span class="pillar-badge">机器人控制 <strong>41</strong></span>
+<span class="pillar-badge">物理动画 <strong>16</strong></span>
+<span class="pillar-badge">生成式动作 <strong>8</strong></span>
 <span class="pillar-badge">空间感知 <strong>4</strong></span>
-<span class="pillar-badge">生成式动作 <strong>2</strong></span>
+<span class="pillar-badge">动作重定向 <strong>2</strong></span>
+<span class="pillar-badge">交互与反应 <strong>1</strong></span>
+<span class="pillar-badge">空间感知与语义 <strong>1</strong></span>
+<span class="pillar-badge">视频提取与匹配 <strong>1</strong></span>
 </div>
 </div>
 <div class="recent-dates">
@@ -201,7 +206,7 @@ title: arXiv 中文要点汇总
 <a href="cs-LG/2025-12-12/index.html" class="date-btn">2025-12-12 <small>(1篇)</small></a>
 <a href="cs-LG/2025-12-11/index.html" class="date-btn">2025-12-11 <small>(1篇)</small></a>
 <a href="cs-LG/2025-12-10/index.html" class="date-btn">2025-12-10 <small>(1篇)</small></a>
-<a href="cs-LG/index.html" class="date-btn date-btn-more">更多... <small>(49)</small></a>
+<a href="cs-LG/index.html" class="date-btn date-btn-more">更多... <small>(80)</small></a>
 </div>
 </div>
 <div class="recent-papers">
@@ -226,21 +231,23 @@ title: arXiv 中文要点汇总
 </div>
 <div class="tag-meta">
 <span class="date-range">📅 最新: 2025-12-17</span>
-<span class="paper-count">📄 共 99 篇</span>
+<span class="paper-count">📄 共 501 篇</span>
 </div>
 </div>
 <div class="tag-content">
 <div class="pillar-stats">
 <h4>📊 领域分布</h4>
 <div class="pillar-badges">
-<span class="pillar-badge">具身大模型 <strong>47</strong></span>
-<span class="pillar-badge">RL算法与架构 <strong>29</strong></span>
-<span class="pillar-badge">机器人控制 <strong>16</strong></span>
+<span class="pillar-badge">具身大模型 <strong>328</strong></span>
+<span class="pillar-badge">RL算法与架构 <strong>123</strong></span>
+<span class="pillar-badge">机器人控制 <strong>29</strong></span>
+<span class="pillar-badge">动作重定向 <strong>4</strong></span>
+<span class="pillar-badge">生成式动作 <strong>4</strong></span>
 <span class="pillar-badge">空间感知 <strong>3</strong></span>
-<span class="pillar-badge">动作重定向 <strong>1</strong></span>
-<span class="pillar-badge">生成式动作 <strong>1</strong></span>
-<span class="pillar-badge">物理动画 <strong>1</strong></span>
-<span class="pillar-badge">视频提取与匹配 <strong>1</strong></span>
+<span class="pillar-badge">物理动画 <strong>3</strong></span>
+<span class="pillar-badge">空间感知与语义 <strong>3</strong></span>
+<span class="pillar-badge">视频提取与匹配 <strong>2</strong></span>
+<span class="pillar-badge">交互与反应 <strong>2</strong></span>
 </div>
 </div>
 <div class="recent-dates">
@@ -253,7 +260,7 @@ title: arXiv 中文要点汇总
 <a href="cs-AI/2025-11-20/index.html" class="date-btn">2025-11-20 <small>(1篇)</small></a>
 <a href="cs-AI/2025-11-19/index.html" class="date-btn">2025-11-19 <small>(3篇)</small></a>
 <a href="cs-AI/2025-11-18/index.html" class="date-btn">2025-11-18 <small>(1篇)</small></a>
-<a href="cs-AI/index.html" class="date-btn date-btn-more">更多... <small>(36)</small></a>
+<a href="cs-AI/index.html" class="date-btn date-btn-more">更多... <small>(66)</small></a>
 </div>
 </div>
 <div class="recent-papers">
@@ -278,18 +285,23 @@ title: arXiv 中文要点汇总
 </div>
 <div class="tag-meta">
 <span class="date-range">📅 最新: 2025-12-17</span>
-<span class="paper-count">📄 共 57 篇</span>
+<span class="paper-count">📄 共 757 篇</span>
 </div>
 </div>
 <div class="tag-content">
 <div class="pillar-stats">
 <h4>📊 领域分布</h4>
 <div class="pillar-badges">
-<span class="pillar-badge">具身大模型 <strong>47</strong></span>
-<span class="pillar-badge">RL算法与架构 <strong>7</strong></span>
+<span class="pillar-badge">具身大模型 <strong>597</strong></span>
+<span class="pillar-badge">RL算法与架构 <strong>129</strong></span>
+<span class="pillar-badge">机器人控制 <strong>12</strong></span>
+<span class="pillar-badge">空间感知与语义 <strong>4</strong></span>
+<span class="pillar-badge">视频提取与匹配 <strong>4</strong></span>
+<span class="pillar-badge">物理动画 <strong>4</strong></span>
+<span class="pillar-badge">动作重定向 <strong>3</strong></span>
+<span class="pillar-badge">生成式动作 <strong>2</strong></span>
 <span class="pillar-badge">空间感知 <strong>1</strong></span>
-<span class="pillar-badge">空间感知与语义 <strong>1</strong></span>
-<span class="pillar-badge">视频提取与匹配 <strong>1</strong></span>
+<span class="pillar-badge">交互与反应 <strong>1</strong></span>
 </div>
 </div>
 <div class="recent-dates">
@@ -302,7 +314,7 @@ title: arXiv 中文要点汇总
 <a href="cs-CL/2025-10-25/index.html" class="date-btn">2025-10-25 <small>(1篇)</small></a>
 <a href="cs-CL/2025-10-24/index.html" class="date-btn">2025-10-24 <small>(2篇)</small></a>
 <a href="cs-CL/2025-10-22/index.html" class="date-btn">2025-10-22 <small>(1篇)</small></a>
-<a href="cs-CL/index.html" class="date-btn date-btn-more">更多... <small>(19)</small></a>
+<a href="cs-CL/index.html" class="date-btn date-btn-more">更多... <small>(49)</small></a>
 </div>
 </div>
 <div class="recent-papers">
@@ -327,17 +339,20 @@ title: arXiv 中文要点汇总
 </div>
 <div class="tag-meta">
 <span class="date-range">📅 最新: 2025-12-17</span>
-<span class="paper-count">📄 共 23 篇</span>
+<span class="paper-count">📄 共 101 篇</span>
 </div>
 </div>
 <div class="tag-content">
 <div class="pillar-stats">
 <h4>📊 领域分布</h4>
 <div class="pillar-badges">
-<span class="pillar-badge">机器人控制 <strong>15</strong></span>
+<span class="pillar-badge">机器人控制 <strong>54</strong></span>
+<span class="pillar-badge">RL算法与架构 <strong>18</strong></span>
+<span class="pillar-badge">生成式动作 <strong>9</strong></span>
+<span class="pillar-badge">具身大模型 <strong>8</strong></span>
+<span class="pillar-badge">物理动画 <strong>6</strong></span>
 <span class="pillar-badge">空间感知 <strong>4</strong></span>
-<span class="pillar-badge">生成式动作 <strong>2</strong></span>
-<span class="pillar-badge">物理动画 <strong>2</strong></span>
+<span class="pillar-badge">视频提取与匹配 <strong>2</strong></span>
 </div>
 </div>
 <div class="recent-dates">
@@ -350,7 +365,7 @@ title: arXiv 中文要点汇总
 <a href="eess-SY/2025-12-10/index.html" class="date-btn">2025-12-10 <small>(1篇)</small></a>
 <a href="eess-SY/2025-12-04/index.html" class="date-btn">2025-12-04 <small>(2篇)</small></a>
 <a href="eess-SY/2025-11-27/index.html" class="date-btn">2025-11-27 <small>(1篇)</small></a>
-<a href="eess-SY/index.html" class="date-btn date-btn-more">更多... <small>(18)</small></a>
+<a href="eess-SY/index.html" class="date-btn date-btn-more">更多... <small>(45)</small></a>
 </div>
 </div>
 <div class="recent-papers">

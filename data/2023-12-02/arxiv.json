@@ -1,0 +1,1338 @@
+{
+  "count": 32,
+  "papers": [
+    {
+      "title": "AAMDM: Accelerated Auto-regressive Motion Diffusion Model",
+      "authors": [
+        "Tianyu Li",
+        "Calvin Qiao",
+        "Guanqiao Ren",
+        "KangKang Yin",
+        "Sehoon Ha"
+      ],
+      "arxiv_id": "2401.06146v1",
+      "summary": "Interactive motion synthesis is essential in creating immersive experiences in entertainment applications, such as video games and virtual reality. However, generating animations that are both high-quality and contextually responsive remains a challenge. Traditional techniques in the game industry can produce high-fidelity animations but suffer from high computational costs and poor scalability. Trained neural network models alleviate the memory and speed issues, yet fall short on generating diverse motions. Diffusion models offer diverse motion synthesis with low memory usage, but require expensive reverse diffusion processes. This paper introduces the Accelerated Auto-regressive Motion Diffusion Model (AAMDM), a novel motion synthesis framework designed to achieve quality, diversity, and efficiency all together. AAMDM integrates Denoising Diffusion GANs as a fast Generation Module, and an Auto-regressive Diffusion Model as a Polishing Module. Furthermore, AAMDM operates in a lower-dimensional embedded space rather than the full-dimensional pose space, which reduces the training complexity as well as further improves the performance. We show that AAMDM outperforms existing methods in motion quality, diversity, and runtime efficiency, through comprehensive quantitative analyses and visual comparisons. We also demonstrate the effectiveness of each algorithmic component through ablation studies.",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2023-12-02",
+      "updated": "2023-12-02",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2401.06146v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱四：生成式动作 (Generative Motion)",
+          "id": "4_motion_diffusion",
+          "matched_keywords": [
+            "[T]motion diffusion model",
+            "[T]motion diffusion",
+            "motion synthesis"
+          ],
+          "score": 17.5
+        }
+      ],
+      "relevance_score": 17.5,
+      "hit_pillars": [
+        "4_motion_diffusion"
+      ]
+    },
+    {
+      "title": "Swarm-GPT: Combining Large Language Models with Safe Motion Planning for Robot Choreography Design",
+      "authors": [
+        "Aoran Jiao",
+        "Tanmay P. Patel",
+        "Sanjmi Khurana",
+        "Anna-Mariya Korol",
+        "Lukas Brunke",
+        "Vivek K. Adajania",
+        "Utku Culha",
+        "Siqi Zhou",
+        "Angela P. Schoellig"
+      ],
+      "arxiv_id": "2312.01059v1",
+      "summary": "This paper presents Swarm-GPT, a system that integrates large language models (LLMs) with safe swarm motion planning - offering an automated and novel approach to deployable drone swarm choreography. Swarm-GPT enables users to automatically generate synchronized drone performances through natural language instructions. With an emphasis on safety and creativity, Swarm-GPT addresses a critical gap in the field of drone choreography by integrating the creative power of generative models with the effectiveness and safety of model-based planning algorithms. This goal is achieved by prompting the LLM to generate a unique set of waypoints based on extracted audio data. A trajectory planner processes these waypoints to guarantee collision-free and feasible motion. Results can be viewed in simulation prior to execution and modified through dynamic re-prompting. Sim-to-real transfer experiments demonstrate Swarm-GPT's ability to accurately replicate simulated drone trajectories, with a mean sim-to-real root mean square error (RMSE) of 28.7 mm. To date, Swarm-GPT has been successfully showcased at three live events, exemplifying safe real-world deployment of pre-trained models.",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2023-12-02",
+      "updated": "2023-12-02",
+      "comment": "10 pages, 9 figures",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01059v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱一：机器人控制 (Robot Control)",
+          "id": "1_robot_core",
+          "matched_keywords": [
+            "sim-to-real",
+            "[T]motion planning"
+          ],
+          "score": 8.0
+        },
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "[T]large language model"
+          ],
+          "score": 9.0
+        }
+      ],
+      "relevance_score": 17.0,
+      "hit_pillars": [
+        "1_robot_core",
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "StableDreamer: Taming Noisy Score Distillation Sampling for Text-to-3D",
+      "authors": [
+        "Pengsheng Guo",
+        "Hans Hao",
+        "Adam Caccavale",
+        "Zhongzheng Ren",
+        "Edward Zhang",
+        "Qi Shan",
+        "Aditya Sankar",
+        "Alexander G. Schwing",
+        "Alex Colburn",
+        "Fangchang Ma"
+      ],
+      "arxiv_id": "2312.02189v1",
+      "summary": "In the realm of text-to-3D generation, utilizing 2D diffusion models through score distillation sampling (SDS) frequently leads to issues such as blurred appearances and multi-faced geometry, primarily due to the intrinsically noisy nature of the SDS loss. Our analysis identifies the core of these challenges as the interaction among noise levels in the 2D diffusion process, the architecture of the diffusion network, and the 3D model representation. To overcome these limitations, we present StableDreamer, a methodology incorporating three advances. First, inspired by InstructNeRF2NeRF, we formalize the equivalence of the SDS generative prior and a simple supervised L2 reconstruction loss. This finding provides a novel tool to debug SDS, which we use to show the impact of time-annealing noise levels on reducing multi-faced geometries. Second, our analysis shows that while image-space diffusion contributes to geometric precision, latent-space diffusion is crucial for vivid color rendition. Based on this observation, StableDreamer introduces a two-stage training strategy that effectively combines these aspects, resulting in high-fidelity 3D models. Third, we adopt an anisotropic 3D Gaussians representation, replacing Neural Radiance Fields (NeRFs), to enhance the overall quality, reduce memory usage during training, and accelerate rendering speeds, and better capture semi-transparent objects. StableDreamer reduces multi-face geometries, generates fine details, and converges stably.",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2023-12-02",
+      "updated": "2023-12-02",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.02189v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱二：RL算法与架构 (RL & Architecture)",
+          "id": "2_algo_arch",
+          "matched_keywords": [
+            "[T]dreamer",
+            "[T]distillation"
+          ],
+          "score": 9.0
+        },
+        {
+          "name": "支柱三：空间感知与语义 (Perception & Semantics)",
+          "id": "3_perception_slam",
+          "matched_keywords": [
+            "NeRF",
+            "neural radiance field"
+          ],
+          "score": 4.0
+        }
+      ],
+      "relevance_score": 13.0,
+      "hit_pillars": [
+        "2_algo_arch",
+        "3_perception_slam"
+      ]
+    },
+    {
+      "title": "Large Language Models Are Zero-Shot Text Classifiers",
+      "authors": [
+        "Zhiqiang Wang",
+        "Yiran Pang",
+        "Yanbin Lin"
+      ],
+      "arxiv_id": "2312.01044v1",
+      "summary": "Retrained large language models (LLMs) have become extensively used across various sub-disciplines of natural language processing (NLP). In NLP, text classification problems have garnered considerable focus, but still faced with some limitations related to expensive computational cost, time consumption, and robust performance to unseen classes. With the proposal of chain of thought prompting (CoT), LLMs can be implemented using zero-shot learning (ZSL) with the step by step reasoning prompts, instead of conventional question and answer formats. The zero-shot LLMs in the text classification problems can alleviate these limitations by directly utilizing pretrained models to predict both seen and unseen classes. Our research primarily validates the capability of GPT models in text classification. We focus on effectively utilizing prompt strategies to various text classification scenarios. Besides, we compare the performance of zero shot LLMs with other state of the art text classification methods, including traditional machine learning methods, deep learning methods, and ZSL methods. Experimental results demonstrate that the performance of LLMs underscores their effectiveness as zero-shot text classifiers in three of the four datasets analyzed. The proficiency is especially advantageous for small businesses or teams that may not have extensive knowledge in text classification.",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2023-12-02",
+      "updated": "2023-12-02",
+      "comment": "9 pages, 3 figures, 6 tables",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01044v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "[T]large language model",
+            "chain-of-thought"
+          ],
+          "score": 12.0
+        }
+      ],
+      "relevance_score": 12.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Self-Evolving Neural Radiance Fields",
+      "authors": [
+        "Jaewoo Jung",
+        "Jisang Han",
+        "Jiwon Kang",
+        "Seongchan Kim",
+        "Min-Seop Kwak",
+        "Seungryong Kim"
+      ],
+      "arxiv_id": "2312.01003v2",
+      "summary": "Recently, neural radiance field (NeRF) has shown remarkable performance in novel view synthesis and 3D reconstruction. However, it still requires abundant high-quality images, limiting its applicability in real-world scenarios. To overcome this limitation, recent works have focused on training NeRF only with sparse viewpoints by giving additional regularizations, often called few-shot NeRF. We observe that due to the under-constrained nature of the task, solely using additional regularization is not enough to prevent the model from overfitting to sparse viewpoints. In this paper, we propose a novel framework, dubbed Self-Evolving Neural Radiance Fields (SE-NeRF), that applies a self-training framework to NeRF to address these problems. We formulate few-shot NeRF into a teacher-student framework to guide the network to learn a more robust representation of the scene by training the student with additional pseudo labels generated from the teacher. By distilling ray-level pseudo labels using distinct distillation schemes for reliable and unreliable rays obtained with our novel reliability estimation method, we enable NeRF to learn a more accurate and robust geometry of the 3D scene. We show and evaluate that applying our self-training framework to existing models improves the quality of the rendered images and achieves state-of-the-art performance in multiple settings.",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2023-12-02",
+      "updated": "2023-12-05",
+      "comment": "34 pages, 21 figures Our project page can be found at : https://ku-cvlab.github.io/SE-NeRF/",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01003v2",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱二：RL算法与架构 (RL & Architecture)",
+          "id": "2_algo_arch",
+          "matched_keywords": [
+            "teacher-student",
+            "distillation"
+          ],
+          "score": 3.0
+        },
+        {
+          "name": "支柱三：空间感知与语义 (Perception & Semantics)",
+          "id": "3_perception_slam",
+          "matched_keywords": [
+            "NeRF",
+            "[T]neural radiance field"
+          ],
+          "score": 8.0
+        }
+      ],
+      "relevance_score": 11.0,
+      "hit_pillars": [
+        "2_algo_arch",
+        "3_perception_slam"
+      ]
+    },
+    {
+      "title": "A Multifidelity Sim-to-Real Pipeline for Verifiable and Compositional Reinforcement Learning",
+      "authors": [
+        "Cyrus Neary",
+        "Christian Ellis",
+        "Aryaman Singh Samyal",
+        "Craig Lennon",
+        "Ufuk Topcu"
+      ],
+      "arxiv_id": "2312.01249v1",
+      "summary": "We propose and demonstrate a compositional framework for training and verifying reinforcement learning (RL) systems within a multifidelity sim-to-real pipeline, in order to deploy reliable and adaptable RL policies on physical hardware. By decomposing complex robotic tasks into component subtasks and defining mathematical interfaces between them, the framework allows for the independent training and testing of the corresponding subtask policies, while simultaneously providing guarantees on the overall behavior that results from their composition. By verifying the performance of these subtask policies using a multifidelity simulation pipeline, the framework not only allows for efficient RL training, but also for a refinement of the subtasks and their interfaces in response to challenges arising from discrepancies between simulation and reality. In an experimental case study we apply the framework to train and deploy a compositional RL system that successfully pilots a Warthog unmanned ground robot.",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "eess.SY"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2023-12-02",
+      "updated": "2023-12-02",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01249v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱一：机器人控制 (Robot Control)",
+          "id": "1_robot_core",
+          "matched_keywords": [
+            "[T]sim-to-real"
+          ],
+          "score": 6.0
+        },
+        {
+          "name": "支柱二：RL算法与架构 (RL & Architecture)",
+          "id": "2_algo_arch",
+          "matched_keywords": [
+            "[T]reinforcement learning"
+          ],
+          "score": 4.5
+        }
+      ],
+      "relevance_score": 10.5,
+      "hit_pillars": [
+        "1_robot_core",
+        "2_algo_arch"
+      ]
+    },
+    {
+      "title": "Self Generated Wargame AI: Double Layer Agent Task Planning Based on Large Language Model",
+      "authors": [
+        "Y. Sun",
+        "J. Zhao",
+        "C. Yu",
+        "W. Wang",
+        "X. Zhou"
+      ],
+      "arxiv_id": "2312.01090v2",
+      "summary": "The large language models represented by ChatGPT have a disruptive impact on the field of artificial intelligence. But it mainly focuses on natural language processing, speech recognition, machine learning and natural language understanding. This paper innovatively applies the large language model to the field of intelligent decision-making, places the large language model in the decision-making center, and constructs an agent architecture with the large language model as the core. Based on this, it further proposes a two-layer agent task planning, issues and executes decision commands through the interaction of natural language, and carries out simulation verification through the wargame simulation environment. Through the game confrontation simulation experiment, it is found that the intelligent decision-making ability of the large language model is significantly stronger than the commonly used reinforcement learning AI and rule AI, and the intelligence, understandability and generalization are all better. And through experiments, it was found that the intelligence of the large language model is closely related to prompt. This work also extends the large language model from previous human-computer interaction to the field of intelligent decision-making, which has important reference value and significance for the development of intelligent decision-making.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2023-12-02",
+      "updated": "2023-12-18",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01090v2",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱二：RL算法与架构 (RL & Architecture)",
+          "id": "2_algo_arch",
+          "matched_keywords": [
+            "reinforcement learning"
+          ],
+          "score": 1.5
+        },
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "[T]large language model"
+          ],
+          "score": 9.0
+        }
+      ],
+      "relevance_score": 10.5,
+      "hit_pillars": [
+        "2_algo_arch",
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Exploring and Improving the Spatial Reasoning Abilities of Large Language Models",
+      "authors": [
+        "Manasi Sharma"
+      ],
+      "arxiv_id": "2312.01054v1",
+      "summary": "Large Language Models (LLMs) represent formidable tools for sequence modeling, boasting an innate capacity for general pattern recognition. Nevertheless, their broader spatial reasoning capabilities, especially applied to numerical trajectory data, remain insufficiently explored. In this paper, we investigate the out-of-the-box performance of ChatGPT-3.5, ChatGPT-4 and Llama 2 7B models when confronted with 3D robotic trajectory data from the CALVIN baseline and associated tasks, including 2D directional and shape labeling. Additionally, we introduce a novel prefix-based prompting mechanism, which yields a 33% improvement on the 3D trajectory data and an increase of up to 10% on SpartQA tasks over zero-shot prompting (with gains for other prompting types as well). The experimentation with 3D trajectory data offers an intriguing glimpse into the manner in which LLMs engage with numerical and spatial information, thus laying a solid foundation for the identification of target areas for future enhancements.",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2023-12-02",
+      "updated": "2023-12-02",
+      "comment": "Published in NeurIPS 2023 Workshop on Instruction Tuning and Instruction Following",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01054v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "[T]large language model"
+          ],
+          "score": 9.0
+        }
+      ],
+      "relevance_score": 9.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "A New Learning Paradigm for Foundation Model-based Remote Sensing Change Detection",
+      "authors": [
+        "Kaiyu Li",
+        "Xiangyong Cao",
+        "Deyu Meng"
+      ],
+      "arxiv_id": "2312.01163v2",
+      "summary": "Change detection (CD) is a critical task to observe and analyze dynamic processes of land cover. Although numerous deep learning-based CD models have performed excellently, their further performance improvements are constrained by the limited knowledge extracted from the given labelled data. On the other hand, the foundation models that emerged recently contain a huge amount of knowledge by scaling up across data modalities and proxy tasks. In this paper, we propose a Bi-Temporal Adapter Network (BAN), which is a universal foundation model-based CD adaptation framework aiming to extract the knowledge of foundation models for CD. The proposed BAN contains three parts, i.e. frozen foundation model (e.g., CLIP), bi-temporal adapter branch (Bi-TAB), and bridging modules between them. Specifically, BAN extracts general features through a frozen foundation model, which are then selected, aligned, and injected into Bi-TAB via the bridging modules. Bi-TAB is designed as a model-agnostic concept to extract task/domain-specific features, which can be either an existing arbitrary CD model or some hand-crafted stacked blocks. Beyond current customized models, BAN is the first extensive attempt to adapt the foundation model to the CD task. Experimental results show the effectiveness of our BAN in improving the performance of existing CD methods (e.g., up to 4.08\\% IoU improvement) with only a few additional learnable parameters. More importantly, these successful practices show us the potential of foundation models for remote sensing CD. The code is available at \\url{https://github.com/likyoo/BAN} and will be supported in our Open-CD.",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2023-12-02",
+      "updated": "2024-02-11",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01163v2",
+      "code_links": [
+        {
+          "url": "https://github.com/likyoo/BAN",
+          "type": "github"
+        }
+      ],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "[T]foundation model"
+          ],
+          "score": 9.0
+        }
+      ],
+      "relevance_score": 9.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "A Survey of Temporal Credit Assignment in Deep Reinforcement Learning",
+      "authors": [
+        "Eduardo Pignatelli",
+        "Johan Ferret",
+        "Matthieu Geist",
+        "Thomas Mesnard",
+        "Hado van Hasselt",
+        "Olivier Pietquin",
+        "Laura Toni"
+      ],
+      "arxiv_id": "2312.01072v2",
+      "summary": "The Credit Assignment Problem (CAP) refers to the longstanding challenge of Reinforcement Learning (RL) agents to associate actions with their long-term consequences. Solving the CAP is a crucial step towards the successful deployment of RL in the real world since most decision problems provide feedback that is noisy, delayed, and with little or no information about the causes. These conditions make it hard to distinguish serendipitous outcomes from those caused by informed decision-making. However, the mathematical nature of credit and the CAP remains poorly understood and defined. In this survey, we review the state of the art of Temporal Credit Assignment (CA) in deep RL. We propose a unifying formalism for credit that enables equitable comparisons of state-of-the-art algorithms and improves our understanding of the trade-offs between the various methods. We cast the CAP as the problem of learning the influence of an action over an outcome from a finite amount of experience. We discuss the challenges posed by delayed effects, transpositions, and a lack of action influence, and analyse how existing methods aim to address them. Finally, we survey the protocols to evaluate a credit assignment method and suggest ways to diagnose the sources of struggle for different methods. Overall, this survey provides an overview of the field for new-entry practitioners and researchers, it offers a coherent perspective for scholars looking to expedite the starting stages of a new study on the CAP, and it suggests potential directions for future research.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2023-12-02",
+      "updated": "2024-07-04",
+      "comment": "56 pages, 2 figures, 4 tables",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01072v2",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱二：RL算法与架构 (RL & Architecture)",
+          "id": "2_algo_arch",
+          "matched_keywords": [
+            "[T]reinforcement learning",
+            "[T]deep reinforcement learning"
+          ],
+          "score": 9.0
+        }
+      ],
+      "relevance_score": 9.0,
+      "hit_pillars": [
+        "2_algo_arch"
+      ]
+    },
+    {
+      "title": "Advanced Large Language Model (LLM)-Driven Verilog Development: Enhancing Power, Performance, and Area Optimization in Code Synthesis",
+      "authors": [
+        "Kiran Thorat",
+        "Jiahui Zhao",
+        "Yaotian Liu",
+        "Hongwu Peng",
+        "Xi Xie",
+        "Bin Lei",
+        "Jeff Zhang",
+        "Caiwen Ding"
+      ],
+      "arxiv_id": "2312.01022v2",
+      "summary": "The increasing use of Advanced Language Models (ALMs) in diverse sectors, particularly due to their impressive capability to generate top-tier content following linguistic instructions, forms the core of this investigation. This study probes into ALMs' deployment in electronic hardware design, with a specific emphasis on the synthesis and enhancement of Verilog programming. We introduce an innovative framework, crafted to assess and amplify ALMs' productivity in this niche. The methodology commences with the initial crafting of Verilog programming via ALMs, succeeded by a distinct dual-stage refinement protocol. The premier stage prioritizes augmenting the code's operational and linguistic precision, while the latter stage is dedicated to aligning the code with Power-Performance-Area (PPA) benchmarks, a pivotal component in proficient hardware design. This bifurcated strategy, merging error remediation with PPA enhancement, has yielded substantial upgrades in the caliber of ALM-created Verilog programming. Our framework achieves an 81.37% rate in linguistic accuracy and 62.0% in operational efficacy in programming synthesis, surpassing current leading-edge techniques, such as 73% in linguistic accuracy and 46% in operational efficacy. These findings illuminate ALMs' aptitude in tackling complex technical domains and signal a positive shift in the mechanization of hardware design operations.",
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2023-12-02",
+      "updated": "2024-01-09",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01022v2",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "[T]large language model"
+          ],
+          "score": 9.0
+        }
+      ],
+      "relevance_score": 9.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "From Voices to Validity: Leveraging Large Language Models (LLMs) for Textual Analysis of Policy Stakeholder Interviews",
+      "authors": [
+        "Alex Liu",
+        "Min Sun"
+      ],
+      "arxiv_id": "2312.01202v1",
+      "summary": "Obtaining stakeholders' diverse experiences and opinions about current policy in a timely manner is crucial for policymakers to identify strengths and gaps in resource allocation, thereby supporting effective policy design and implementation. However, manually coding even moderately sized interview texts or open-ended survey responses from stakeholders can often be labor-intensive and time-consuming. This study explores the integration of Large Language Models (LLMs)--like GPT-4--with human expertise to enhance text analysis of stakeholder interviews regarding K-12 education policy within one U.S. state. Employing a mixed-methods approach, human experts developed a codebook and coding processes as informed by domain knowledge and unsupervised topic modeling results. They then designed prompts to guide GPT-4 analysis and iteratively evaluate different prompts' performances. This combined human-computer method enabled nuanced thematic and sentiment analysis. Results reveal that while GPT-4 thematic coding aligned with human coding by 77.89% at specific themes, expanding to broader themes increased congruence to 96.02%, surpassing traditional Natural Language Processing (NLP) methods by over 25%. Additionally, GPT-4 is more closely matched to expert sentiment analysis than lexicon-based methods. Findings from quantitative measures and qualitative reviews underscore the complementary roles of human domain expertise and automated analysis as LLMs offer new perspectives and coding consistency. The human-computer interactive approach enhances efficiency, validity, and interpretability of educational policy research.",
+      "categories": [
+        "cs.HC",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2023-12-02",
+      "updated": "2023-12-02",
+      "comment": "",
+      "doi": "10.1177/23328584251374595",
+      "journal_ref": "AERA OPEN Volume 11, January-December 2025",
+      "pdf_url": "https://arxiv.org/pdf/2312.01202v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "[T]large language model"
+          ],
+          "score": 9.0
+        }
+      ],
+      "relevance_score": 9.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Harnessing the Power of Prompt-based Techniques for Generating School-Level Questions using Large Language Models",
+      "authors": [
+        "Subhankar Maity",
+        "Aniket Deroy",
+        "Sudeshna Sarkar"
+      ],
+      "arxiv_id": "2312.01032v1",
+      "summary": "Designing high-quality educational questions is a challenging and time-consuming task. In this work, we propose a novel approach that utilizes prompt-based techniques to generate descriptive and reasoning-based questions. However, current question-answering (QA) datasets are inadequate for conducting our experiments on prompt-based question generation (QG) in an educational setting. Therefore, we curate a new QG dataset called EduProbe for school-level subjects, by leveraging the rich content of NCERT textbooks. We carefully annotate this dataset as quadruples of 1) Context: a segment upon which the question is formed; 2) Long Prompt: a long textual cue for the question (i.e., a longer sequence of words or phrases, covering the main theme of the context); 3) Short Prompt: a short textual cue for the question (i.e., a condensed representation of the key information or focus of the context); 4) Question: a deep question that aligns with the context and is coherent with the prompts. We investigate several prompt-based QG methods by fine-tuning pre-trained transformer-based large language models (LLMs), namely PEGASUS, T5, MBART, and BART. Moreover, we explore the performance of two general-purpose pre-trained LLMs such as Text-Davinci-003 and GPT-3.5-Turbo without any further training. By performing automatic evaluation, we show that T5 (with long prompt) outperforms all other models, but still falls short of the human baseline. Under human evaluation criteria, TextDavinci-003 usually shows better results than other models under various prompt settings. Even in the case of human evaluation criteria, QG models mostly fall short of the human baseline. Our code and dataset are available at: https://github.com/my625/PromptQG",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2023-12-02",
+      "updated": "2023-12-02",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01032v1",
+      "code_links": [
+        {
+          "url": "https://github.com/my625/PromptQG",
+          "type": "github"
+        }
+      ],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "[T]large language model"
+          ],
+          "score": 9.0
+        }
+      ],
+      "relevance_score": 9.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Evetac: An Event-based Optical Tactile Sensor for Robotic Manipulation",
+      "authors": [
+        "Niklas Funk",
+        "Erik Helmut",
+        "Georgia Chalvatzaki",
+        "Roberto Calandra",
+        "Jan Peters"
+      ],
+      "arxiv_id": "2312.01236v2",
+      "summary": "Optical tactile sensors have recently become popular. They provide high spatial resolution, but struggle to offer fine temporal resolutions. To overcome this shortcoming, we study the idea of replacing the RGB camera with an event-based camera and introduce a new event-based optical tactile sensor called Evetac. Along with hardware design, we develop touch processing algorithms to process its measurements online at 1000 Hz. We devise an efficient algorithm to track the elastomer's deformation through the imprinted markers despite the sensor's sparse output. Benchmarking experiments demonstrate Evetac's capabilities of sensing vibrations up to 498 Hz, reconstructing shear forces, and significantly reducing data rates compared to RGB optical tactile sensors. Moreover, Evetac's output and the marker tracking provide meaningful features for learning data-driven slip detection and prediction models. The learned models form the basis for a robust and adaptive closed-loop grasp controller capable of handling a wide range of objects. We believe that fast and efficient event-based tactile sensors like Evetac will be essential for bringing human-like manipulation capabilities to robotics. The sensor design is open-sourced at https://sites.google.com/view/evetac .",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2023-12-02",
+      "updated": "2024-08-15",
+      "comment": "Accepted at IEEE Transactions On Robotics. Project Website: https://sites.google.com/view/evetac",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01236v2",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱一：机器人控制 (Robot Control)",
+          "id": "1_robot_core",
+          "matched_keywords": [
+            "[T]manipulation"
+          ],
+          "score": 6.0
+        }
+      ],
+      "relevance_score": 6.0,
+      "hit_pillars": [
+        "1_robot_core"
+      ]
+    },
+    {
+      "title": "Aggressive Trajectory Tracking for Nano Quadrotors Using Embedded Nonlinear Model Predictive Control",
+      "authors": [
+        "Muhammad Kazim",
+        "Hyunjae Sim",
+        "Gihun Shin",
+        "Hwancheol Hwang",
+        "Kwang-Ki K. Kim"
+      ],
+      "arxiv_id": "2312.01015v1",
+      "summary": "This paper presents an aggressive trajectory tracking method for a small lightweight nano-quadrotor using nonlinear model predictive control (NMPC) based on acados. Controlling a nano quadrotor for accurate trajectory tracking at high speed in dynamic environments is challenging due to complex aerodynamic forces that introduce significant disturbances and large positional tracking errors. These aerodynamic effects are difficult to be identified and require feedback control that compensates for them in real time. NMPC allows the nano-quadrotor to control its motion in real time based on onboard sensor measurements, making it well-suited for tasks such as aggressive maneuvers and navigation in complex and dynamic environments. The software package acados enables the implementation of the NMPC algorithm on embedded systems, which is particularly important for nano-quadrotor due to its limited computational resources. Our autonomous navigation system is developed based on an AI-deck that is a GAP8-based parallel ultra-low power computing platform with onboard sensors of a multi-ranger deck and a flow deck. The proposed method of NMPC-based trajectory tracking control is tested in simulation and the results demonstrate its effectiveness in trajectory tracking while considering the dynamic environments. It is also tested on a real nano quadrotor hardware, 27-g Crazyflie 2.1, with a customized MCU running embedded NMPC, in which accurate trajectory tracking results are achieved in dynamic real-world environments.",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2023-12-02",
+      "updated": "2023-12-02",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01015v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱一：机器人控制 (Robot Control)",
+          "id": "1_robot_core",
+          "matched_keywords": [
+            "[T]model predictive control"
+          ],
+          "score": 6.0
+        }
+      ],
+      "relevance_score": 6.0,
+      "hit_pillars": [
+        "1_robot_core"
+      ]
+    },
+    {
+      "title": "S2P3: Self-Supervised Polarimetric Pose Prediction",
+      "authors": [
+        "Patrick Ruhkamp",
+        "Daoyi Gao",
+        "Nassir Navab",
+        "Benjamin Busam"
+      ],
+      "arxiv_id": "2312.01105v1",
+      "summary": "This paper proposes the first self-supervised 6D object pose prediction from multimodal RGB+polarimetric images. The novel training paradigm comprises 1) a physical model to extract geometric information of polarized light, 2) a teacher-student knowledge distillation scheme and 3) a self-supervised loss formulation through differentiable rendering and an invertible physical constraint. Both networks leverage the physical properties of polarized light to learn robust geometric representations by encoding shape priors and polarization characteristics derived from our physical model. Geometric pseudo-labels from the teacher support the student network without the need for annotated real data. Dense appearance and geometric information of objects are obtained through a differentiable renderer with the predicted pose for self-supervised direct coupling. The student network additionally features our proposed invertible formulation of the physical shape priors that enables end-to-end self-supervised training through physical constraints of derived polarization characteristics compared against polarimetric input images. We specifically focus on photometrically challenging objects with texture-less or reflective surfaces and transparent materials for which the most prominent performance gain is reported.",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2023-12-02",
+      "updated": "2023-12-02",
+      "comment": "Accepted at IJCV",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01105v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱二：RL算法与架构 (RL & Architecture)",
+          "id": "2_algo_arch",
+          "matched_keywords": [
+            "teacher-student",
+            "distillation"
+          ],
+          "score": 3.0
+        },
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "multimodal"
+          ],
+          "score": 3.0
+        }
+      ],
+      "relevance_score": 6.0,
+      "hit_pillars": [
+        "2_algo_arch",
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Harnessing Discrete Representations For Continual Reinforcement Learning",
+      "authors": [
+        "Edan Meyer",
+        "Adam White",
+        "Marlos C. Machado"
+      ],
+      "arxiv_id": "2312.01203v3",
+      "summary": "Reinforcement learning (RL) agents make decisions using nothing but observations from the environment, and consequently, heavily rely on the representations of those observations. Though some recent breakthroughs have used vector-based categorical representations of observations, often referred to as discrete representations, there is little work explicitly assessing the significance of such a choice. In this work, we provide a thorough empirical investigation of the advantages of representing observations as vectors of categorical values within the context of reinforcement learning. We perform evaluations on world-model learning, model-free RL, and ultimately continual RL problems, where the benefits best align with the needs of the problem setting. We find that, when compared to traditional continuous representations, world models learned over discrete representations accurately model more of the world with less capacity, and that agents trained with discrete representations learn better policies with less data. In the context of continual RL, these benefits translate into faster adapting agents. Additionally, our analysis suggests that the observed performance improvements can be attributed to the information contained within the latent vectors and potentially the encoding of the discrete representation itself.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2023-12-02",
+      "updated": "2024-07-13",
+      "comment": "23 pages, 16 figures, accepted to RLC 2024",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01203v3",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱二：RL算法与架构 (RL & Architecture)",
+          "id": "2_algo_arch",
+          "matched_keywords": [
+            "[T]reinforcement learning",
+            "world model"
+          ],
+          "score": 6.0
+        }
+      ],
+      "relevance_score": 6.0,
+      "hit_pillars": [
+        "2_algo_arch"
+      ]
+    },
+    {
+      "title": "RLHF and IIA: Perverse Incentives",
+      "authors": [
+        "Wanqiao Xu",
+        "Shi Dong",
+        "Xiuyuan Lu",
+        "Grace Lam",
+        "Zheng Wen",
+        "Benjamin Van Roy"
+      ],
+      "arxiv_id": "2312.01057v3",
+      "summary": "Existing algorithms for reinforcement learning from human feedback (RLHF) can incentivize responses at odds with preferences because they are based on models that assume independence of irrelevant alternatives (IIA). The perverse incentives induced by IIA hinder innovations on query formats and learning algorithms.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2023-12-02",
+      "updated": "2024-02-01",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01057v3",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱二：RL算法与架构 (RL & Architecture)",
+          "id": "2_algo_arch",
+          "matched_keywords": [
+            "reinforcement learning",
+            "[T]RLHF"
+          ],
+          "score": 6.0
+        }
+      ],
+      "relevance_score": 6.0,
+      "hit_pillars": [
+        "2_algo_arch"
+      ]
+    },
+    {
+      "title": "Axiomatic Preference Modeling for Longform Question Answering",
+      "authors": [
+        "Corby Rosset",
+        "Guoqing Zheng",
+        "Victor Dibia",
+        "Ahmed Awadallah",
+        "Paul Bennett"
+      ],
+      "arxiv_id": "2312.02206v1",
+      "summary": "The remarkable abilities of large language models (LLMs) like GPT-4 partially stem from post-training processes like Reinforcement Learning from Human Feedback (RLHF) involving human preferences encoded in a reward model. However, these reward models (RMs) often lack direct knowledge of why, or under what principles, the preferences annotations were made. In this study, we identify principles that guide RMs to better align with human preferences, and then develop an axiomatic framework to generate a rich variety of preference signals to uphold them. We use these axiomatic signals to train a model for scoring answers to longform questions. Our approach yields a Preference Model with only about 220M parameters that agrees with gold human-annotated preference labels more often than GPT-4. The contributions of this work include: training a standalone preference model that can score human- and LLM-generated answers on the same scale; developing an axiomatic framework for generating training data pairs tailored to certain principles; and showing that a small amount of axiomatic signals can help small models outperform GPT-4 in preference scoring. We release our model on huggingface: https://huggingface.co/corbyrosset/axiomatic_preference_model",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2023-12-02",
+      "updated": "2023-12-02",
+      "comment": "Accepted to EMNLP 2023",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.02206v1",
+      "code_links": [
+        {
+          "url": "https://huggingface.co/corbyrosset/axiomatic_preference_model",
+          "type": "huggingface"
+        }
+      ],
+      "matched_interests": [
+        {
+          "name": "支柱二：RL算法与架构 (RL & Architecture)",
+          "id": "2_algo_arch",
+          "matched_keywords": [
+            "reinforcement learning",
+            "RLHF"
+          ],
+          "score": 3.0
+        },
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "large language model"
+          ],
+          "score": 3.0
+        }
+      ],
+      "relevance_score": 6.0,
+      "hit_pillars": [
+        "2_algo_arch",
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Just-in-Time Detection of Silent Security Patches",
+      "authors": [
+        "Xunzhu Tang",
+        "Zhenghan Chen",
+        "Kisub Kim",
+        "Haoye Tian",
+        "Saad Ezzini",
+        "Jacques Klein"
+      ],
+      "arxiv_id": "2312.01241v3",
+      "summary": "Open-source code is pervasive. In this setting, embedded vulnerabilities are spreading to downstream software at an alarming rate. While such vulnerabilities are generally identified and addressed rapidly, inconsistent maintenance policies may lead security patches to go unnoticed. Indeed, security patches can be {\\em silent}, i.e., they do not always come with comprehensive advisories such as CVEs. This lack of transparency leaves users oblivious to available security updates, providing ample opportunity for attackers to exploit unpatched vulnerabilities. Consequently, identifying silent security patches just in time when they are released is essential for preventing n-day attacks, and for ensuring robust and secure maintenance practices. With LLMDA we propose to (1) leverage large language models (LLMs) to augment patch information with generated code change explanations, (2) design a representation learning approach that explores code-text alignment methodologies for feature combination, (3) implement a label-wise training with labelled instructions for guiding the embedding based on security relevance, and (4) rely on a probabilistic batch contrastive learning mechanism for building a high-precision identifier of security patches. We evaluate LLMDA on the PatchDB and SPI-DB literature datasets and show that our approach substantially improves over the state-of-the-art, notably GraphSPD by 20% in terms of F-Measure on the SPI-DB benchmark.",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2023-12-02",
+      "updated": "2024-11-25",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01241v3",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱二：RL算法与架构 (RL & Architecture)",
+          "id": "2_algo_arch",
+          "matched_keywords": [
+            "representation learning",
+            "contrastive learning"
+          ],
+          "score": 3.0
+        },
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "large language model"
+          ],
+          "score": 3.0
+        }
+      ],
+      "relevance_score": 6.0,
+      "hit_pillars": [
+        "2_algo_arch",
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Dual-Teacher De-biasing Distillation Framework for Multi-domain Fake News Detection",
+      "authors": [
+        "Jiayang Li",
+        "Xuan Feng",
+        "Tianlong Gu",
+        "Liang Chang"
+      ],
+      "arxiv_id": "2312.01006v1",
+      "summary": "Multi-domain fake news detection aims to identify whether various news from different domains is real or fake and has become urgent and important. However, existing methods are dedicated to improving the overall performance of fake news detection, ignoring the fact that unbalanced data leads to disparate treatment for different domains, i.e., the domain bias problem. To solve this problem, we propose the Dual-Teacher De-biasing Distillation framework (DTDBD) to mitigate bias across different domains. Following the knowledge distillation methods, DTDBD adopts a teacher-student structure, where pre-trained large teachers instruct a student model. In particular, the DTDBD consists of an unbiased teacher and a clean teacher that jointly guide the student model in mitigating domain bias and maintaining performance. For the unbiased teacher, we introduce an adversarial de-biasing distillation loss to instruct the student model in learning unbiased domain knowledge. For the clean teacher, we design domain knowledge distillation loss, which effectively incentivizes the student model to focus on representing domain features while maintaining performance. Moreover, we present a momentum-based dynamic adjustment algorithm to trade off the effects of two teachers. Extensive experiments on Chinese and English datasets show that the proposed method substantially outperforms the state-of-the-art baseline methods in terms of bias metrics while guaranteeing competitive performance.",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2023-12-02",
+      "updated": "2023-12-02",
+      "comment": "ICDE 2024",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01006v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱二：RL算法与架构 (RL & Architecture)",
+          "id": "2_algo_arch",
+          "matched_keywords": [
+            "teacher-student",
+            "[T]distillation"
+          ],
+          "score": 6.0
+        }
+      ],
+      "relevance_score": 6.0,
+      "hit_pillars": [
+        "2_algo_arch"
+      ]
+    },
+    {
+      "title": "ControlDreamer: Blending Geometry and Style in Text-to-3D",
+      "authors": [
+        "Yeongtak Oh",
+        "Jooyoung Choi",
+        "Yongsung Kim",
+        "Minjun Park",
+        "Chaehun Shin",
+        "Sungroh Yoon"
+      ],
+      "arxiv_id": "2312.01129v3",
+      "summary": "Recent advancements in text-to-3D generation have significantly contributed to the automation and democratization of 3D content creation. Building upon these developments, we aim to address the limitations of current methods in blending geometries and styles in text-to-3D generation. We introduce multi-view ControlNet, a novel depth-aware multi-view diffusion model trained on generated datasets from a carefully curated text corpus. Our multi-view ControlNet is then integrated into our two-stage pipeline, ControlDreamer, enabling text-guided generation of stylized 3D models. Additionally, we present a comprehensive benchmark for 3D style editing, encompassing a broad range of subjects, including objects, animals, and characters, to further facilitate research on diverse 3D generation. Our comparative analysis reveals that this new pipeline outperforms existing text-to-3D methods as evidenced by human evaluations and CLIP score metrics. Project page: https://controldreamer.github.io",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2023-12-02",
+      "updated": "2024-08-23",
+      "comment": "Project page: https://controldreamer.github.io/",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01129v3",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱二：RL算法与架构 (RL & Architecture)",
+          "id": "2_algo_arch",
+          "matched_keywords": [
+            "[T]dreamer"
+          ],
+          "score": 4.5
+        }
+      ],
+      "relevance_score": 4.5,
+      "hit_pillars": [
+        "2_algo_arch"
+      ]
+    },
+    {
+      "title": "Adaptive Resource Allocation for Semantic Communication Networks",
+      "authors": [
+        "Lingyi Wang",
+        "Wei Wu",
+        "Fuhui Zhou",
+        "Zhaohui Yang",
+        "Zhijin Qin"
+      ],
+      "arxiv_id": "2312.01081v1",
+      "summary": "Semantic communication, recognized as a promising technology for future intelligent applications, has received widespread research attention. Despite the potential of semantic communication to enhance transmission reliability, especially in low signal-to-noise (SNR) environments, the critical issue of resource allocation and compatibility in the dynamic wireless environment remains largely unexplored. In this paper, we propose an adaptive semantic resource allocation paradigm with semantic-bit quantization (SBQ) compatibly for existing wireless communications, where the inaccurate environment perception introduced by the additional mapping relationship between semantic metrics and transmission metrics is solved. In order to investigate the performance of semantic communication networks, the quality of service for semantic communication (SC-QoS), including the semantic quantization efficiency (SQE) and transmission latency, is proposed for the first time. A problem of maximizing the overall effective SC-QoS is formulated by jointly optimizing the transmit beamforming of the base station, the bits for semantic representation, the subchannel assignment, and the bandwidth resource allocation. To address the non-convex formulated problem, an intelligent resource allocation scheme is proposed based on a hybrid deep reinforcement learning (DRL) algorithm, where the intelligent agent can perceive both semantic tasks and dynamic wireless environments. Simulation results demonstrate that our design can effectively combat semantic noise and achieve superior performance in wireless communications compared to several benchmark schemes. Furthermore, compared to mapping-guided paradigm based resource allocation schemes, our proposed adaptive scheme can achieve up to 13% performance improvement in terms of SC-QoS.",
+      "categories": [
+        "cs.IT",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.IT",
+      "published": "2023-12-02",
+      "updated": "2023-12-02",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01081v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱二：RL算法与架构 (RL & Architecture)",
+          "id": "2_algo_arch",
+          "matched_keywords": [
+            "reinforcement learning",
+            "deep reinforcement learning",
+            "DRL"
+          ],
+          "score": 4.5
+        }
+      ],
+      "relevance_score": 4.5,
+      "hit_pillars": [
+        "2_algo_arch"
+      ]
+    },
+    {
+      "title": "Volumetric Rendering with Baked Quadrature Fields",
+      "authors": [
+        "Gopal Sharma",
+        "Daniel Rebain",
+        "Kwang Moo Yi",
+        "Andrea Tagliasacchi"
+      ],
+      "arxiv_id": "2312.02202v2",
+      "summary": "We propose a novel Neural Radiance Field (NeRF) representation for non-opaque scenes that enables fast inference by utilizing textured polygons. Despite the high-quality novel view rendering that NeRF provides, a critical limitation is that it relies on volume rendering that can be computationally expensive and does not utilize the advancements in modern graphics hardware. Many existing methods fall short when it comes to modelling volumetric effects as they rely purely on surface rendering. We thus propose to model the scene with polygons, which can then be used to obtain the quadrature points required to model volumetric effects, and also their opacity and colour from the texture. To obtain such polygonal mesh, we train a specialized field whose zero-crossings would correspond to the quadrature points when volume rendering, and perform marching cubes on this field. We then perform ray-tracing and utilize the ray-tracing shader to obtain the final colour image. Our method allows an easy integration with existing graphics frameworks allowing rendering speed of over 100 frames-per-second for a $1920\\times1080$ image, while still being able to represent non-opaque objects.",
+      "categories": [
+        "cs.GR",
+        "cs.CV"
+      ],
+      "primary_category": "cs.GR",
+      "published": "2023-12-02",
+      "updated": "2024-07-10",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.02202v2",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱三：空间感知与语义 (Perception & Semantics)",
+          "id": "3_perception_slam",
+          "matched_keywords": [
+            "NeRF",
+            "neural radiance field"
+          ],
+          "score": 4.0
+        }
+      ],
+      "relevance_score": 4.0,
+      "hit_pillars": [
+        "3_perception_slam"
+      ]
+    },
+    {
+      "title": "RobustCalib: Robust Lidar-Camera Extrinsic Calibration with Consistency Learning",
+      "authors": [
+        "Shuang Xu",
+        "Sifan Zhou",
+        "Zhi Tian",
+        "Jizhou Ma",
+        "Qiong Nie",
+        "Xiangxiang Chu"
+      ],
+      "arxiv_id": "2312.01085v1",
+      "summary": "Current traditional methods for LiDAR-camera extrinsics estimation depend on offline targets and human efforts, while learning-based approaches resort to iterative refinement for calibration results, posing constraints on their generalization and application in on-board systems. In this paper, we propose a novel approach to address the extrinsic calibration problem in a robust, automatic, and single-shot manner. Instead of directly optimizing extrinsics, we leverage the consistency learning between LiDAR and camera to implement implicit re-calibartion. Specially, we introduce an appearance-consistency loss and a geometric-consistency loss to minimizing the inconsitency between the attrbutes (e.g., intensity and depth) of projected LiDAR points and the predicted ones. This design not only enhances adaptability to various scenarios but also enables a simple and efficient formulation during inference. We conduct comprehensive experiments on different datasets, and the results demonstrate that our method achieves accurate and robust performance. To promote further research and development in this area, we will release our model and code.",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2023-12-02",
+      "updated": "2023-12-02",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01085v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱七：动作重定向 (Motion Retargeting)",
+          "id": "7_retargeting",
+          "matched_keywords": [
+            "geometric consistency"
+          ],
+          "score": 3.0
+        }
+      ],
+      "relevance_score": 3.0,
+      "hit_pillars": [
+        "7_retargeting"
+      ]
+    },
+    {
+      "title": "Unveiling the Power of Audio-Visual Early Fusion Transformers with Dense Interactions through Masked Modeling",
+      "authors": [
+        "Shentong Mo",
+        "Pedro Morgado"
+      ],
+      "arxiv_id": "2312.01017v1",
+      "summary": "Humans possess a remarkable ability to integrate auditory and visual information, enabling a deeper understanding of the surrounding environment. This early fusion of audio and visual cues, demonstrated through cognitive psychology and neuroscience research, offers promising potential for developing multimodal perception models. However, training early fusion architectures poses significant challenges, as the increased model expressivity requires robust learning frameworks to harness their enhanced capabilities. In this paper, we address this challenge by leveraging the masked reconstruction framework, previously successful in unimodal settings, to train audio-visual encoders with early fusion. Additionally, we propose an attention-based fusion module that captures interactions between local audio and visual representations, enhancing the model's ability to capture fine-grained interactions. While effective, this procedure can become computationally intractable, as the number of local representations increases. Thus, to address the computational complexity, we propose an alternative procedure that factorizes the local representations before representing audio-visual interactions. Extensive evaluations on a variety of datasets demonstrate the superiority of our approach in audio-event classification, visual sound localization, sound separation, and audio-visual segmentation. These contributions enable the efficient training of deeply integrated audio-visual models and significantly advance the usefulness of early fusion architectures.",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "cs.MM",
+        "cs.SD"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2023-12-02",
+      "updated": "2023-12-02",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01017v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "multimodal"
+          ],
+          "score": 3.0
+        }
+      ],
+      "relevance_score": 3.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Kattis vs. ChatGPT: Assessment and Evaluation of Programming Tasks in the Age of Artificial Intelligence",
+      "authors": [
+        "Nora Dunder",
+        "Saga Lundborg",
+        "Olga Viberg",
+        "Jacqueline Wong"
+      ],
+      "arxiv_id": "2312.01109v1",
+      "summary": "AI-powered education technologies can support students and teachers in computer science education. However, with the recent developments in generative AI, and especially the increasingly emerging popularity of ChatGPT, the effectiveness of using large language models for solving programming tasks has been underexplored. The present study examines ChatGPT's ability to generate code solutions at different difficulty levels for introductory programming courses. We conducted an experiment where ChatGPT was tested on 127 randomly selected programming problems provided by Kattis, an automatic software grading tool for computer science programs, often used in higher education. The results showed that ChatGPT independently could solve 19 out of 127 programming tasks generated and assessed by Kattis. Further, ChatGPT was found to be able to generate accurate code solutions for simple problems but encountered difficulties with more complex programming tasks. The results contribute to the ongoing debate on the utility of AI-powered tools in programming education.",
+      "categories": [
+        "cs.AI",
+        "cs.CY",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2023-12-02",
+      "updated": "2023-12-02",
+      "comment": "10 pages, 2 figures, 3 tables. (Pre-print). Final version to be submitted to ACM Journals. LAK2024, March,18-22, 2024, Kyoto, Japan",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01109v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "large language model"
+          ],
+          "score": 3.0
+        }
+      ],
+      "relevance_score": 3.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Challenges and Applications of Automated Extraction of Socio-political Events from Text (CASE 2023): Workshop and Shared Task Report",
+      "authors": [
+        "Ali Hürriyetoğlu",
+        "Hristo Tanev",
+        "Osman Mutlu",
+        "Surendrabikram Thapa",
+        "Fiona Anting Tan",
+        "Erdem Yörük"
+      ],
+      "arxiv_id": "2312.01244v1",
+      "summary": "We provide a summary of the sixth edition of the CASE workshop that is held in the scope of RANLP 2023. The workshop consists of regular papers, three keynotes, working papers of shared task participants, and shared task overview papers. This workshop series has been bringing together all aspects of event information collection across technical and social science fields. In addition to contributing to the progress in text based event extraction, the workshop provides a space for the organization of a multimodal event information collection task.",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2023-12-02",
+      "updated": "2023-12-02",
+      "comment": "https://aclanthology.org/2023.case-1.22",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01244v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "multimodal"
+          ],
+          "score": 3.0
+        }
+      ],
+      "relevance_score": 3.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "QPoser: Quantized Explicit Pose Prior Modeling for Controllable Pose Generation",
+      "authors": [
+        "Yumeng Li",
+        "Yaoxiang Ding",
+        "Zhong Ren",
+        "Kun Zhou"
+      ],
+      "arxiv_id": "2312.01104v1",
+      "summary": "Explicit pose prior models compress human poses into latent representations for using in pose-related downstream tasks. A desirable explicit pose prior model should satisfy three desirable abilities: 1) correctness, i.e. ensuring to generate physically possible poses; 2) expressiveness, i.e. ensuring to preserve details in generation; 3) controllability, meaning that generation from reference poses and explicit instructions should be convenient. Existing explicit pose prior models fail to achieve all of three properties, in special controllability. To break this situation, we propose QPoser, a highly controllable explicit pose prior model which guarantees correctness and expressiveness. In QPoser, a multi-head vector quantized autoencoder (MS-VQVAE) is proposed for obtaining expressive and distributed pose representations. Furthermore, a global-local feature integration mechanism (GLIF-AE) is utilized to disentangle the latent representation and integrate full-body information into local-joint features. Experimental results show that QPoser significantly outperforms state-of-the-art approaches in representing expressive and correct poses, meanwhile is easily to be used for detailed conditional generation from reference poses and prompting instructions.",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2023-12-02",
+      "updated": "2023-12-02",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01104v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱四：生成式动作 (Generative Motion)",
+          "id": "4_motion_diffusion",
+          "matched_keywords": [
+            "VQ-VAE"
+          ],
+          "score": 2.5
+        }
+      ],
+      "relevance_score": 2.5,
+      "hit_pillars": [
+        "4_motion_diffusion"
+      ]
+    },
+    {
+      "title": "PROFL: A Privacy-Preserving Federated Learning Method with Stringent Defense Against Poisoning Attacks",
+      "authors": [
+        "Yisheng Zhong",
+        "Li-Ping Wang"
+      ],
+      "arxiv_id": "2312.01045v1",
+      "summary": "Federated Learning (FL) faces two major issues: privacy leakage and poisoning attacks, which may seriously undermine the reliability and security of the system. Overcoming them simultaneously poses a great challenge. This is because privacy protection policies prohibit access to users' local gradients to avoid privacy leakage, while Byzantine-robust methods necessitate access to these gradients to defend against poisoning attacks. To address these problems, we propose a novel privacy-preserving Byzantine-robust FL framework PROFL. PROFL is based on the two-trapdoor additional homomorphic encryption algorithm and blinding techniques to ensure the data privacy of the entire FL process. During the defense process, PROFL first utilize secure Multi-Krum algorithm to remove malicious gradients at the user level. Then, according to the Pauta criterion, we innovatively propose a statistic-based privacy-preserving defense algorithm to eliminate outlier interference at the feature level and resist impersonation poisoning attacks with stronger concealment. Detailed theoretical analysis proves the security and efficiency of the proposed method. We conducted extensive experiments on two benchmark datasets, and PROFL improved accuracy by 39% to 75% across different attack settings compared to similar privacy-preserving robust methods, demonstrating its significant advantage in robustness.",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2023-12-02",
+      "updated": "2023-12-02",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01045v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱五：交互与反应 (Interaction & Reaction)",
+          "id": "5_interaction_reaction",
+          "matched_keywords": [
+            "OMOMO"
+          ],
+          "score": 2.5
+        }
+      ],
+      "relevance_score": 2.5,
+      "hit_pillars": [
+        "5_interaction_reaction"
+      ]
+    },
+    {
+      "title": "DPHMs: Diffusion Parametric Head Models for Depth-based Tracking",
+      "authors": [
+        "Jiapeng Tang",
+        "Angela Dai",
+        "Yinyu Nie",
+        "Lev Markhasin",
+        "Justus Thies",
+        "Matthias Niessner"
+      ],
+      "arxiv_id": "2312.01068v2",
+      "summary": "We introduce Diffusion Parametric Head Models (DPHMs), a generative model that enables robust volumetric head reconstruction and tracking from monocular depth sequences. While recent volumetric head models, such as NPHMs, can now excel in representing high-fidelity head geometries, tracking and reconstructing heads from real-world single-view depth sequences remains very challenging, as the fitting to partial and noisy observations is underconstrained. To tackle these challenges, we propose a latent diffusion-based prior to regularize volumetric head reconstruction and tracking. This prior-based regularizer effectively constrains the identity and expression codes to lie on the underlying latent manifold which represents plausible head shapes. To evaluate the effectiveness of the diffusion-based prior, we collect a dataset of monocular Kinect sequences consisting of various complex facial expression motions and rapid transitions. We compare our method to state-of-the-art tracking methods and demonstrate improved head identity reconstruction as well as robust expression tracking.",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2023-12-02",
+      "updated": "2024-04-08",
+      "comment": "CVPR 2024; homepage: https://tangjiapeng.github.io/projects/DPHMs/",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.01068v2",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱三：空间感知与语义 (Perception & Semantics)",
+          "id": "3_perception_slam",
+          "matched_keywords": [
+            "monocular depth"
+          ],
+          "score": 2.0
+        }
+      ],
+      "relevance_score": 2.0,
+      "hit_pillars": [
+        "3_perception_slam"
+      ]
+    },
+    {
+      "title": "Diffusion Handles: Enabling 3D Edits for Diffusion Models by Lifting Activations to 3D",
+      "authors": [
+        "Karran Pandey",
+        "Paul Guerrero",
+        "Matheus Gadelha",
+        "Yannick Hold-Geoffroy",
+        "Karan Singh",
+        "Niloy Mitra"
+      ],
+      "arxiv_id": "2312.02190v2",
+      "summary": "Diffusion Handles is a novel approach to enabling 3D object edits on diffusion images. We accomplish these edits using existing pre-trained diffusion models, and 2D image depth estimation, without any fine-tuning or 3D object retrieval. The edited results remain plausible, photo-real, and preserve object identity. Diffusion Handles address a critically missing facet of generative image based creative design, and significantly advance the state-of-the-art in generative image editing. Our key insight is to lift diffusion activations for an object to 3D using a proxy depth, 3D-transform the depth and associated activations, and project them back to image space. The diffusion process applied to the manipulated activations with identity control, produces plausible edited images showing complex 3D occlusion and lighting effects. We evaluate Diffusion Handles: quantitatively, on a large synthetic data benchmark; and qualitatively by a user study, showing our output to be more plausible, and better than prior art at both, 3D editing and identity control. Project Webpage: https://diffusionhandles.github.io/",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2023-12-02",
+      "updated": "2023-12-06",
+      "comment": "Project Webpage: https://diffusionhandles.github.io/",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2312.02190v2",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱三：空间感知与语义 (Perception & Semantics)",
+          "id": "3_perception_slam",
+          "matched_keywords": [
+            "depth estimation"
+          ],
+          "score": 2.0
+        }
+      ],
+      "relevance_score": 2.0,
+      "hit_pillars": [
+        "3_perception_slam"
+      ]
+    }
+  ],
+  "query_info": {
+    "tags": [
+      "cs.RO",
+      "cs.CV",
+      "cs.GR",
+      "cs.LG",
+      "cs.AI",
+      "cs.CL",
+      "eess.SY"
+    ],
+    "date_ranges": [
+      [
+        "2023-12-01T20:00:00-05:00",
+        "2023-12-02T20:00:00-05:00",
+        "2023-12-02"
+      ]
+    ],
+    "filtered": true
+  }
+}
