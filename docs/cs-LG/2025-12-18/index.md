@@ -45,7 +45,7 @@ title: arXiv 中文要点汇总 - cs.LG - 2025-12-18
 <tr>
   <td>3</td>
   <td><a href="./papers/251216184v1-a-multimodal-approach-to-alzheimers-diagnosis-geometric-insights-fro.html">A Multimodal Approach to Alzheimer's Diagnosis: Geometric Insights from Cube Copying and Cognitive Assessments</a></td>
-  <td>提出基于图神经网络的多模态融合框架，用于阿尔茨海默病早期诊断。</td>
+  <td>提出基于图神经网络的多模态融合方法，用于阿尔茨海默病早期诊断。</td>
   <td class="tags-cell"><span class="paper-tag">multimodal</span></td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.16184v1" data-paper-url="./papers/251216184v1-a-multimodal-approach-to-alzheimers-diagnosis-geometric-insights-fro.html" onclick="toggleFavorite(this, '2512.16184v1', 'A Multimodal Approach to Alzheimer&#39;s Diagnosis: Geometric Insights from Cube Copying and Cognitive Assessments')" title="添加到收藏夹">☆</button></td>
@@ -69,7 +69,7 @@ title: arXiv 中文要点汇总 - cs.LG - 2025-12-18
 <tr>
   <td>6</td>
   <td><a href="./papers/251216598v1-muon-is-provably-faster-with-momentum-variance-reduction.html">Muon is Provably Faster with Momentum Variance Reduction</a></td>
-  <td>提出动量方差减少的Muon优化器以提升深度学习性能</td>
+  <td>通过动量方差减少提升Muon优化器性能</td>
   <td class="tags-cell"><span class="paper-tag">large language model</span></td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.16598v1" data-paper-url="./papers/251216598v1-muon-is-provably-faster-with-momentum-variance-reduction.html" onclick="toggleFavorite(this, '2512.16598v1', 'Muon is Provably Faster with Momentum Variance Reduction')" title="添加到收藏夹">☆</button></td>
@@ -85,7 +85,7 @@ title: arXiv 中文要点汇总 - cs.LG - 2025-12-18
 <tr>
   <td>8</td>
   <td><a href="./papers/251216297v1-feature-selective-representation-misdirection-for-machine-unlearning.html">Feature-Selective Representation Misdirection for Machine Unlearning</a></td>
-  <td>提出选择性表征误导(SRMU)框架，用于解决LLM中知识遗忘难题，兼顾安全与效用。</td>
+  <td>提出选择性表征误导(SRMU)框架，解决LLM中知识遗忘难题，兼顾安全与效用。</td>
   <td class="tags-cell"><span class="paper-tag">large language model</span></td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.16297v1" data-paper-url="./papers/251216297v1-feature-selective-representation-misdirection-for-machine-unlearning.html" onclick="toggleFavorite(this, '2512.16297v1', 'Feature-Selective Representation Misdirection for Machine Unlearning')" title="添加到收藏夹">☆</button></td>
@@ -93,7 +93,7 @@ title: arXiv 中文要点汇总 - cs.LG - 2025-12-18
 <tr>
   <td>9</td>
   <td><a href="./papers/251216292v1-in-context-probing-for-membership-inference-in-fine-tuned-language-m.html">In-Context Probing for Membership Inference in Fine-Tuned Language Models</a></td>
-  <td>提出ICP-MIA框架以解决细调语言模型的成员推断攻击问题</td>
+  <td>提出ICP-MIA框架，通过上下文探查解决微调语言模型的成员推理攻击问题。</td>
   <td class="tags-cell"><span class="paper-tag">large language model</span></td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.16292v1" data-paper-url="./papers/251216292v1-in-context-probing-for-membership-inference-in-fine-tuned-language-m.html" onclick="toggleFavorite(this, '2512.16292v1', 'In-Context Probing for Membership Inference in Fine-Tuned Language Models')" title="添加到收藏夹">☆</button></td>
@@ -136,7 +136,7 @@ title: arXiv 中文要点汇总 - cs.LG - 2025-12-18
 <tr>
   <td>13</td>
   <td><a href="./papers/251216626v1-stackelberg-learning-from-human-feedback-preference-optimization-as-.html">Stackelberg Learning from Human Feedback: Preference Optimization as a Sequential Game</a></td>
-  <td>提出Stackelberg学习框架SLHF，通过序贯博弈优化人类反馈偏好</td>
+  <td>提出Stackelberg Learning from Human Feedback (SLHF)框架，用于偏好优化。</td>
   <td class="tags-cell"><span class="paper-tag">reinforcement learning</span> <span class="paper-tag">RLHF</span> <span class="paper-tag">large language model</span></td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.16626v1" data-paper-url="./papers/251216626v1-stackelberg-learning-from-human-feedback-preference-optimization-as-.html" onclick="toggleFavorite(this, '2512.16626v1', 'Stackelberg Learning from Human Feedback: Preference Optimization as a Sequential Game')" title="添加到收藏夹">☆</button></td>
@@ -144,7 +144,7 @@ title: arXiv 中文要点汇总 - cs.LG - 2025-12-18
 <tr>
   <td>14</td>
   <td><a href="./papers/251216912v1-exploration-vs-exploitation-rethinking-rlvr-through-clipping-entropy.html">Exploration v.s. Exploitation: Rethinking RLVR through Clipping, Entropy, and Spurious Reward</a></td>
-  <td>通过裁剪、熵和虚假奖励重新思考RLVR，提升LLM数学推理能力</td>
+  <td>通过裁剪、熵和虚假奖励重新思考RLVR，提升LLM推理能力</td>
   <td class="tags-cell"><span class="paper-tag">reinforcement learning</span> <span class="paper-tag">large language model</span></td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.16912v1" data-paper-url="./papers/251216912v1-exploration-vs-exploitation-rethinking-rlvr-through-clipping-entropy.html" onclick="toggleFavorite(this, '2512.16912v1', 'Exploration v.s. Exploitation: Rethinking RLVR through Clipping, Entropy, and Spurious Reward')" title="添加到收藏夹">☆</button></td>
@@ -160,7 +160,7 @@ title: arXiv 中文要点汇总 - cs.LG - 2025-12-18
 <tr>
   <td>16</td>
   <td><a href="./papers/251216768v1-on-the-hidden-biases-of-flow-matching-samplers.html">On The Hidden Biases of Flow Matching Samplers</a></td>
-  <td>揭示Flow Matching采样器中的隐式偏差，分析其能量次优性</td>
+  <td>揭示Flow Matching采样器中的隐藏偏差，分析其能量次优性</td>
   <td class="tags-cell"><span class="paper-tag">flow matching</span></td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.16768v1" data-paper-url="./papers/251216768v1-on-the-hidden-biases-of-flow-matching-samplers.html" onclick="toggleFavorite(this, '2512.16768v1', 'On The Hidden Biases of Flow Matching Samplers')" title="添加到收藏夹">☆</button></td>
@@ -168,7 +168,7 @@ title: arXiv 中文要点汇总 - cs.LG - 2025-12-18
 <tr>
   <td>17</td>
   <td><a href="./papers/251216408v1-ndrl-cotton-irrigation-and-nitrogen-application-with-nested-dual-age.html">NDRL: Cotton Irrigation and Nitrogen Application with Nested Dual-Agent Reinforcement Learning</a></td>
-  <td>提出嵌套双智能体强化学习NDRL，优化棉花灌溉施氮策略，提升产量和资源利用率</td>
+  <td>提出NDRL方法以解决棉花灌溉与氮肥施用的复杂性问题</td>
   <td class="tags-cell"><span class="paper-tag">reinforcement learning</span></td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.16408v1" data-paper-url="./papers/251216408v1-ndrl-cotton-irrigation-and-nitrogen-application-with-nested-dual-age.html" onclick="toggleFavorite(this, '2512.16408v1', 'NDRL: Cotton Irrigation and Nitrogen Application with Nested Dual-Agent Reinforcement Learning')" title="添加到收藏夹">☆</button></td>
@@ -187,7 +187,7 @@ title: arXiv 中文要点汇总 - cs.LG - 2025-12-18
 <tr>
   <td>18</td>
   <td><a href="./papers/251216103v1-aimm-an-ai-driven-multimodal-framework-for-detecting-social-media-in.html">AIMM: An AI-Driven Multimodal Framework for Detecting Social-Media-Influenced Stock Market Manipulation</a></td>
-  <td>AIMM：一种AI驱动的多模态框架，用于检测社交媒体影响的股市操纵</td>
+  <td>AIMM：用于检测社交媒体影响的股票市场操纵的人工智能驱动多模态框架</td>
   <td class="tags-cell"><span class="paper-tag">manipulation</span> <span class="paper-tag">multimodal</span></td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.16103v1" data-paper-url="./papers/251216103v1-aimm-an-ai-driven-multimodal-framework-for-detecting-social-media-in.html" onclick="toggleFavorite(this, '2512.16103v1', 'AIMM: An AI-Driven Multimodal Framework for Detecting Social-Media-Influenced Stock Market Manipulation')" title="添加到收藏夹">☆</button></td>
@@ -195,7 +195,7 @@ title: arXiv 中文要点汇总 - cs.LG - 2025-12-18
 <tr>
   <td>19</td>
   <td><a href="./papers/251216911v1-posterior-behavioral-cloning-pretraining-bc-policies-for-efficient-r.html">Posterior Behavioral Cloning: Pretraining BC Policies for Efficient RL Finetuning</a></td>
-  <td>提出后验行为克隆(PostBC)方法，提升强化学习微调的预训练策略效果</td>
+  <td>提出后验行为克隆(PostBC)方法，提升RL微调的预训练策略效果</td>
   <td class="tags-cell"><span class="paper-tag">manipulation</span> <span class="paper-tag">reinforcement learning</span></td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.16911v1" data-paper-url="./papers/251216911v1-posterior-behavioral-cloning-pretraining-bc-policies-for-efficient-r.html" onclick="toggleFavorite(this, '2512.16911v1', 'Posterior Behavioral Cloning: Pretraining BC Policies for Efficient RL Finetuning')" title="添加到收藏夹">☆</button></td>

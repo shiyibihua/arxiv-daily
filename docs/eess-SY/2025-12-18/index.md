@@ -29,7 +29,7 @@ title: arXiv 中文要点汇总 - eess.SY - 2025-12-18
 <tr>
   <td>1</td>
   <td><a href="./papers/251216624v1-learning-based-approximate-model-predictive-control-for-an-impact-wr.html">Learning-based Approximate Model Predictive Control for an Impact Wrench Tool</a></td>
-  <td>提出基于学习的近似模型预测控制，用于冲击扳手的实时扭矩控制</td>
+  <td>提出一种基于学习的近似模型预测控制方法，用于冲击扳手的实时扭矩控制。</td>
   <td class="tags-cell"><span class="paper-tag">model predictive control</span></td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.16624v1" data-paper-url="./papers/251216624v1-learning-based-approximate-model-predictive-control-for-an-impact-wr.html" onclick="toggleFavorite(this, '2512.16624v1', 'Learning-based Approximate Model Predictive Control for an Impact Wrench Tool')" title="添加到收藏夹">☆</button></td>
@@ -37,7 +37,7 @@ title: arXiv 中文要点汇总 - eess.SY - 2025-12-18
 <tr>
   <td>2</td>
   <td><a href="./papers/251216379v1-economic-versus-energetic-model-predictive-control-of-a-cold-product.html">Economic versus energetic model predictive control of a cold production plant with thermal energy storage</a></td>
-  <td>对比经济与能量型模型预测控制，优化冷库生产能耗与成本</td>
+  <td>对比经济与能量模型预测控制，优化冷库储能系统运行</td>
   <td class="tags-cell"><span class="paper-tag">model predictive control</span></td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.16379v1" data-paper-url="./papers/251216379v1-economic-versus-energetic-model-predictive-control-of-a-cold-product.html" onclick="toggleFavorite(this, '2512.16379v1', 'Economic versus energetic model predictive control of a cold production plant with thermal energy storage')" title="添加到收藏夹">☆</button></td>
@@ -56,7 +56,7 @@ title: arXiv 中文要点汇总 - eess.SY - 2025-12-18
 <tr>
   <td>3</td>
   <td><a href="./papers/251216608v1-resilience-of-coupled-systems-under-deep-uncertainty-and-dynamic-com.html">Resilience of coupled systems under deep uncertainty and dynamic complexity: An integrative literature review</a></td>
-  <td>综述耦合系统在深度不确定性和动态复杂性下的韧性研究，提出未来研究方向。</td>
+  <td>针对耦合系统在深度不确定性和动态复杂性下的韧性，提出综合性文献综述。</td>
   <td class="tags-cell"><span class="paper-tag">spatiotemporal</span></td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.16608v1" data-paper-url="./papers/251216608v1-resilience-of-coupled-systems-under-deep-uncertainty-and-dynamic-com.html" onclick="toggleFavorite(this, '2512.16608v1', 'Resilience of coupled systems under deep uncertainty and dynamic complexity: An integrative literature review')" title="添加到收藏夹">☆</button></td>
@@ -64,7 +64,7 @@ title: arXiv 中文要点汇总 - eess.SY - 2025-12-18
 <tr>
   <td>4</td>
   <td><a href="./papers/251216497v1-from-liability-to-asset-a-three-mode-grid-forming-control-framework-.html">From Liability to Asset: A Three-Mode Grid-Forming Control Framework for Centralized Data Center UPS Systems</a></td>
-  <td>针对数据中心UPS系统，提出三模式电网重构控制框架，提升弱电网适应性。</td>
+  <td>针对数据中心UPS系统，提出三模电网重构控制框架，提升弱电网适应性。</td>
   <td class="tags-cell"><span class="paper-tag">PULSE</span></td>
   <td></td>
   <td><button class="favorite-btn" data-arxiv-id="2512.16497v1" data-paper-url="./papers/251216497v1-from-liability-to-asset-a-three-mode-grid-forming-control-framework-.html" onclick="toggleFavorite(this, '2512.16497v1', 'From Liability to Asset: A Three-Mode Grid-Forming Control Framework for Centralized Data Center UPS Systems')" title="添加到收藏夹">☆</button></td>
