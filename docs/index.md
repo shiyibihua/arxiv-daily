@@ -13,20 +13,20 @@ title: arXiv 中文要点汇总
 <span class="tag-desc">机器人</span>
 </div>
 <div class="tag-meta">
-<span class="date-range">📅 最新: 2025-12-21</span>
-<span class="paper-count">📄 共 1550 篇</span>
+<span class="date-range">📅 最新: 2025-12-22</span>
+<span class="paper-count">📄 共 1570 篇</span>
 </div>
 </div>
 <div class="tag-content">
 <div class="pillar-stats">
 <h4>📊 领域分布</h4>
 <div class="pillar-badges">
-<span class="pillar-badge">机器人控制 <strong>1089</strong></span>
-<span class="pillar-badge">RL算法与架构 <strong>156</strong></span>
-<span class="pillar-badge">具身大模型 <strong>99</strong></span>
+<span class="pillar-badge">机器人控制 <strong>1101</strong></span>
+<span class="pillar-badge">RL算法与架构 <strong>159</strong></span>
+<span class="pillar-badge">具身大模型 <strong>102</strong></span>
 <span class="pillar-badge">空间感知 <strong>94</strong></span>
 <span class="pillar-badge">空间感知与语义 <strong>83</strong></span>
-<span class="pillar-badge">动作重定向 <strong>8</strong></span>
+<span class="pillar-badge">动作重定向 <strong>10</strong></span>
 <span class="pillar-badge">视频提取与匹配 <strong>7</strong></span>
 <span class="pillar-badge">生成式动作 <strong>7</strong></span>
 <span class="pillar-badge">物理动画 <strong>6</strong></span>
@@ -36,24 +36,24 @@ title: arXiv 中文要点汇总
 <div class="recent-dates">
 <h4>📆 最近更新</h4>
 <div class="date-buttons">
+<a href="cs-RO/2025-12-22/index.html" class="date-btn">2025-12-22 <small>(20篇)</small></a>
 <a href="cs-RO/2025-12-21/index.html" class="date-btn">2025-12-21 <small>(11篇)</small></a>
 <a href="cs-RO/2025-12-18/index.html" class="date-btn">2025-12-18 <small>(12篇)</small></a>
 <a href="cs-RO/2025-12-17/index.html" class="date-btn">2025-12-17 <small>(11篇)</small></a>
 <a href="cs-RO/2025-12-16/index.html" class="date-btn">2025-12-16 <small>(16篇)</small></a>
 <a href="cs-RO/2025-12-15/index.html" class="date-btn">2025-12-15 <small>(17篇)</small></a>
 <a href="cs-RO/2025-12-13/index.html" class="date-btn">2025-12-13 <small>(10篇)</small></a>
-<a href="cs-RO/2025-12-12/index.html" class="date-btn">2025-12-12 <small>(10篇)</small></a>
-<a href="cs-RO/index.html" class="date-btn date-btn-more">更多... <small>(103)</small></a>
+<a href="cs-RO/index.html" class="date-btn date-btn-more">更多... <small>(104)</small></a>
 </div>
 </div>
 <div class="recent-papers">
 <h4>📝 最新论文</h4>
 <ul class="paper-list">
-<li><a href="cs-RO/2025-12-21/papers/251217853v1-anytask-an-automated-task-and-data-generation-framework-for-advancin.html">AnyTask: an Automated Task and Data Generation Framework for...</a> <br><small>AnyTask：自动化任务与数据生成框架，推进Sim-to-Real策略学习</small></li>
-<li><a href="cs-RO/2025-12-21/papers/251217183v1-semantic-co-speech-gesture-synthesis-and-real-time-control-for-human.html">Semantic Co-Speech Gesture Synthesis and Real-Time Control f...</a> <br><small>提出一种基于语义理解的共语姿势生成与人形机器人实时控制框架</small></li>
-<li><a href="cs-RO/2025-12-21/papers/251217568v1-kinematics-aware-diffusion-policy-with-consistent-3d-observation-and.html">Kinematics-Aware Diffusion Policy with Consistent 3D Observa...</a> <br><small>提出基于运动学感知的扩散策略，解决机械臂全身操作中的空间泛化问题。</small></li>
-<li><a href="cs-RO/2025-12-21/papers/251217321v1-neuro-symbolic-control-with-large-language-models-for-language-guide.html">Neuro-Symbolic Control with Large Language Models for Langua...</a> <br><small>提出神经符号控制框架，利用大语言模型解决语言引导的空间任务</small></li>
-<li><a href="cs-RO/2025-12-21/papers/251217349v1-flying-in-clutter-on-monocular-rgb-by-learning-in-3d-radiance-fields.html">Flying in Clutter on Monocular RGB by Learning in 3D Radianc...</a> <br><small>提出基于3D辐射场和对抗域适应的单目RGB图像无人机复杂环境导航方法</small></li>
+<li><a href="cs-RO/2025-12-22/papers/251218987v1-affordance-rag-hierarchical-multimodal-retrieval-with-affordance-awa.html">Affordance RAG: Hierarchical Multimodal Retrieval with Affor...</a> <br><small>Affordance RAG：用于移动操作的具身记忆分层多模态检索</small></li>
+<li><a href="cs-RO/2025-12-22/papers/251218938v1-a-framework-for-deploying-learning-based-quadruped-loco-manipulation.html">A Framework for Deploying Learning-based Quadruped Loco-Mani...</a> <br><small>提出基于强化学习的四足机器人灵巧操作部署框架，解决仿真到现实迁移难题</small></li>
+<li><a href="cs-RO/2025-12-22/papers/251219390v1-twinaligner-visual-dynamic-alignment-empowers-physics-aware-real2sim.html">TwinAligner: Visual-Dynamic Alignment Empowers Physics-aware...</a> <br><small>TwinAligner：通过视觉-动力学对齐实现物理感知的Real2Sim2Re...</small></li>
+<li><a href="cs-RO/2025-12-22/papers/251219083v1-codrone-autonomous-drone-navigation-assisted-by-edge-and-cloud-found.html">CoDrone: Autonomous Drone Navigation Assisted by Edge and Cl...</a> <br><small>CoDrone：边缘云协同，利用基础模型增强无人机自主导航能力</small></li>
+<li><a href="cs-RO/2025-12-22/papers/251219043v1-egm-efficiently-learning-general-motion-tracking-policy-for-high-dyn.html">EGM: Efficiently Learning General Motion Tracking Policy for...</a> <br><small>EGM：高效学习通用运动跟踪策略，用于高动态人形机器人全身控制</small></li>
 </ul>
 </div>
 </div>
@@ -67,22 +67,22 @@ title: arXiv 中文要点汇总
 <span class="tag-desc">视觉</span>
 </div>
 <div class="tag-meta">
-<span class="date-range">📅 最新: 2025-12-21</span>
-<span class="paper-count">📄 共 2345 篇</span>
+<span class="date-range">📅 最新: 2025-12-22</span>
+<span class="paper-count">📄 共 2371 篇</span>
 </div>
 </div>
 <div class="tag-content">
 <div class="pillar-stats">
 <h4>📊 领域分布</h4>
 <div class="pillar-badges">
-<span class="pillar-badge">具身大模型 <strong>563</strong></span>
-<span class="pillar-badge">RL算法与架构 <strong>550</strong></span>
+<span class="pillar-badge">具身大模型 <strong>573</strong></span>
+<span class="pillar-badge">RL算法与架构 <strong>554</strong></span>
 <span class="pillar-badge">空间感知 <strong>463</strong></span>
-<span class="pillar-badge">空间感知与语义 <strong>305</strong></span>
-<span class="pillar-badge">机器人控制 <strong>212</strong></span>
-<span class="pillar-badge">生成式动作 <strong>69</strong></span>
-<span class="pillar-badge">物理动画 <strong>57</strong></span>
-<span class="pillar-badge">视频提取与匹配 <strong>51</strong></span>
+<span class="pillar-badge">空间感知与语义 <strong>310</strong></span>
+<span class="pillar-badge">机器人控制 <strong>215</strong></span>
+<span class="pillar-badge">生成式动作 <strong>70</strong></span>
+<span class="pillar-badge">物理动画 <strong>58</strong></span>
+<span class="pillar-badge">视频提取与匹配 <strong>53</strong></span>
 <span class="pillar-badge">动作重定向 <strong>42</strong></span>
 <span class="pillar-badge">交互与反应 <strong>27</strong></span>
 <span class="pillar-badge">视频提取与匹配 <strong>6</strong></span>
@@ -91,24 +91,24 @@ title: arXiv 中文要点汇总
 <div class="recent-dates">
 <h4>📆 最近更新</h4>
 <div class="date-buttons">
+<a href="cs-CV/2025-12-22/index.html" class="date-btn">2025-12-22 <small>(26篇)</small></a>
 <a href="cs-CV/2025-12-21/index.html" class="date-btn">2025-12-21 <small>(31篇)</small></a>
 <a href="cs-CV/2025-12-18/index.html" class="date-btn">2025-12-18 <small>(37篇)</small></a>
 <a href="cs-CV/2025-12-17/index.html" class="date-btn">2025-12-17 <small>(29篇)</small></a>
 <a href="cs-CV/2025-12-16/index.html" class="date-btn">2025-12-16 <small>(52篇)</small></a>
 <a href="cs-CV/2025-12-15/index.html" class="date-btn">2025-12-15 <small>(24篇)</small></a>
 <a href="cs-CV/2025-12-14/index.html" class="date-btn">2025-12-14 <small>(1篇)</small></a>
-<a href="cs-CV/2025-12-13/index.html" class="date-btn">2025-12-13 <small>(10篇)</small></a>
-<a href="cs-CV/index.html" class="date-btn date-btn-more">更多... <small>(109)</small></a>
+<a href="cs-CV/index.html" class="date-btn date-btn-more">更多... <small>(110)</small></a>
 </div>
 </div>
 <div class="recent-papers">
 <h4>📝 最新论文</h4>
 <ul class="paper-list">
-<li><a href="cs-CV/2025-12-21/papers/251217227v1-learning-when-to-look-a-disentangled-curriculum-for-strategic-percep.html">Learning When to Look: A Disentangled Curriculum for Strateg...</a> 🔗<br><small>提出解耦课程学习框架，解决多模态推理中视觉信息遗忘问题。</small></li>
-<li><a href="cs-CV/2025-12-21/papers/251217640v1-generative-human-object-interaction-detection-via-differentiable-cog.html">Generative Human-Object Interaction Detection via Differenti...</a> <br><small>提出GRASP-HO框架，通过可微分认知引导多模态LLM实现生成式人-物交互检测...</small></li>
-<li><a href="cs-CV/2025-12-21/papers/251217907v1-dexterous-world-models.html">Dexterous World Models</a> <br><small>提出灵巧世界模型DWM，实现基于视频扩散的交互式数字孪生</small></li>
-<li><a href="cs-CV/2025-12-21/papers/251217817v1-chorus-multi-teacher-pretraining-for-holistic-3d-gaussian-scene-enco.html">Chorus: Multi-Teacher Pretraining for Holistic 3D Gaussian S...</a> <br><small>Chorus：多教师预训练用于整体3D高斯场景编码</small></li>
-<li><a href="cs-CV/2025-12-21/papers/251217495v1-groundingme-exposing-the-visual-grounding-gap-in-mllms-through-multi.html">GroundingME: Exposing the Visual Grounding Gap in MLLMs thro...</a> <br><small>GroundingME：多维度评测揭示MLLM在视觉定位能力上的差距</small></li>
+<li><a href="cs-CV/2025-12-22/papers/251219512v1-anatomy-r1-enhancing-anatomy-reasoning-in-multimodal-large-language-.html">Anatomy-R1: Enhancing Anatomy Reasoning in Multimodal Large ...</a> 🔗<br><small>Anatomy-R1：通过解剖相似性课程学习和群体多样性增强提升多模态大语言模型...</small></li>
+<li><a href="cs-CV/2025-12-22/papers/251219115v1-generative-giants-retrieval-weaklings-why-do-multimodal-large-langua.html">Generative Giants, Retrieval Weaklings: Why do Multimodal La...</a> <br><small>揭示多模态大语言模型在多模态检索中表现不佳的原因</small></li>
+<li><a href="cs-CV/2025-12-22/papers/251219159v1-omnimogen-unifying-human-motion-generation-via-learning-from-interle.html">OmniMoGen: Unifying Human Motion Generation via Learning fro...</a> 🔗<br><small>OmniMoGen：通过学习交错的文本-动作指令，统一了人体运动生成任务。</small></li>
+<li><a href="cs-CV/2025-12-22/papers/251219049v1-decoupled-generative-modeling-for-human-object-interaction-synthesis.html">Decoupled Generative Modeling for Human-Object Interaction S...</a> <br><small>提出DecHOI，解耦路径规划与动作生成，实现逼真的人-物交互合成</small></li>
+<li><a href="cs-CV/2025-12-22/papers/251219684v1-zero-shot-reconstruction-of-in-scene-object-manipulation-from-video.html">Zero-shot Reconstruction of In-Scene Object Manipulation fro...</a> <br><small>提出首个系统，从单目视频零样本重建场景内物体操作过程。</small></li>
 </ul>
 </div>
 </div>
@@ -176,16 +176,16 @@ title: arXiv 中文要点汇总
 <span class="tag-desc">机器学习 (RL, Diffusion, World Model)</span>
 </div>
 <div class="tag-meta">
-<span class="date-range">📅 最新: 2025-12-21</span>
-<span class="paper-count">📄 共 591 篇</span>
+<span class="date-range">📅 最新: 2025-12-22</span>
+<span class="paper-count">📄 共 607 篇</span>
 </div>
 </div>
 <div class="tag-content">
 <div class="pillar-stats">
 <h4>📊 领域分布</h4>
 <div class="pillar-badges">
-<span class="pillar-badge">RL算法与架构 <strong>291</strong></span>
-<span class="pillar-badge">具身大模型 <strong>221</strong></span>
+<span class="pillar-badge">RL算法与架构 <strong>301</strong></span>
+<span class="pillar-badge">具身大模型 <strong>227</strong></span>
 <span class="pillar-badge">机器人控制 <strong>43</strong></span>
 <span class="pillar-badge">物理动画 <strong>19</strong></span>
 <span class="pillar-badge">生成式动作 <strong>8</strong></span>
@@ -199,24 +199,24 @@ title: arXiv 中文要点汇总
 <div class="recent-dates">
 <h4>📆 最近更新</h4>
 <div class="date-buttons">
+<a href="cs-LG/2025-12-22/index.html" class="date-btn">2025-12-22 <small>(16篇)</small></a>
 <a href="cs-LG/2025-12-21/index.html" class="date-btn">2025-12-21 <small>(9篇)</small></a>
 <a href="cs-LG/2025-12-18/index.html" class="date-btn">2025-12-18 <small>(19篇)</small></a>
 <a href="cs-LG/2025-12-17/index.html" class="date-btn">2025-12-17 <small>(21篇)</small></a>
 <a href="cs-LG/2025-12-16/index.html" class="date-btn">2025-12-16 <small>(13篇)</small></a>
 <a href="cs-LG/2025-12-15/index.html" class="date-btn">2025-12-15 <small>(2篇)</small></a>
 <a href="cs-LG/2025-12-13/index.html" class="date-btn">2025-12-13 <small>(1篇)</small></a>
-<a href="cs-LG/2025-12-12/index.html" class="date-btn">2025-12-12 <small>(1篇)</small></a>
-<a href="cs-LG/index.html" class="date-btn date-btn-more">更多... <small>(82)</small></a>
+<a href="cs-LG/index.html" class="date-btn date-btn-more">更多... <small>(83)</small></a>
 </div>
 </div>
 <div class="recent-papers">
 <h4>📝 最新论文</h4>
 <ul class="paper-list">
-<li><a href="cs-LG/2025-12-21/papers/251217574v1-enabling-disaggregated-multi-stage-mllm-inference-via-gpu-internal-s.html">Enabling Disaggregated Multi-Stage MLLM Inference via GPU-In...</a> <br><small>提出FlashCodec和UnifiedServe，通过GPU内调度和资源共享加...</small></li>
-<li><a href="cs-LG/2025-12-21/papers/251217273v1-minpo-memory-informed-neural-pseudo-operator-to-resolve-nonlocal-spa.html">MINPO: Memory-Informed Neural Pseudo-Operator to Resolve Non...</a> <br><small>提出MINPO，利用记忆信息神经伪算子解决非局部时空动力学问题</small></li>
-<li><a href="cs-LG/2025-12-21/papers/251217636v1-trust-region-adaptive-policy-optimization.html">Trust-Region Adaptive Policy Optimization</a> <br><small>提出TRAPO，交错SFT与RL优化LLM推理能力，显著提升数学推理性能。</small></li>
-<li><a href="cs-LG/2025-12-21/papers/251217444v1-assessing-long-term-electricity-market-design-for-ambitious-decarbon.html">Assessing Long-Term Electricity Market Design for Ambitious ...</a> <br><small>提出基于多智能体强化学习的电力市场长期设计评估框架，助力实现深度脱碳目标。</small></li>
-<li><a href="cs-LG/2025-12-21/papers/251217878v1-weighted-stochastic-differential-equation-to-implement-wasserstein-f.html">Weighted Stochastic Differential Equation to Implement Wasse...</a> <br><small>提出基于加权随机微分方程的Wasserstein-Fisher-Rao梯度流方法...</small></li>
+<li><a href="cs-LG/2025-12-22/papers/251218986v1-r-genima-integrating-neuroimaging-and-genetics-with-interpretable-mu.html">R-GenIMA: Integrating Neuroimaging and Genetics with Interpr...</a> <br><small>R-GenIMA：融合神经影像与遗传信息的Alzheimer病进展可解释多模态A...</small></li>
+<li><a href="cs-LG/2025-12-22/papers/251219554v1-care-what-fails-contrastive-anchored-reflection-for-verifiable-multi.html">CARE What Fails: Contrastive Anchored-REflection for Verifia...</a> <br><small>CARE：面向可验证多模态推理，通过对比锚定反射改进失败案例学习。</small></li>
+<li><a href="cs-LG/2025-12-22/papers/251218965v1-lag-operator-ssms-a-geometric-framework-for-structured-state-space-m.html">Lag Operator SSMs: A Geometric Framework for Structured Stat...</a> <br><small>提出基于Lag算子的结构化状态空间建模几何框架，简化SSM设计。</small></li>
+<li><a href="cs-LG/2025-12-22/papers/251219379v1-omnimer-indonesian-multimodal-emotion-recognition-via-auxiliary-enha.html">OmniMER: Indonesian Multimodal Emotion Recognition via Auxil...</a> 🔗<br><small>提出OmniMER以解决印尼多模态情感识别问题</small></li>
+<li><a href="cs-LG/2025-12-22/papers/251219114v1-hyperload-a-cross-modality-enhanced-large-language-model-based-frame.html">HyperLoad: A Cross-Modality Enhanced Large Language Model-Ba...</a> <br><small>HyperLoad：基于跨模态增强大语言模型的绿色数据中心冷却负荷预测框架</small></li>
 </ul>
 </div>
 </div>
@@ -230,47 +230,47 @@ title: arXiv 中文要点汇总
 <span class="tag-desc">人工智能 (Agents, Planning)</span>
 </div>
 <div class="tag-meta">
-<span class="date-range">📅 最新: 2025-12-21</span>
-<span class="paper-count">📄 共 545 篇</span>
+<span class="date-range">📅 最新: 2025-12-22</span>
+<span class="paper-count">📄 共 567 篇</span>
 </div>
 </div>
 <div class="tag-content">
 <div class="pillar-stats">
 <h4>📊 领域分布</h4>
 <div class="pillar-badges">
-<span class="pillar-badge">具身大模型 <strong>360</strong></span>
-<span class="pillar-badge">RL算法与架构 <strong>130</strong></span>
-<span class="pillar-badge">机器人控制 <strong>33</strong></span>
+<span class="pillar-badge">具身大模型 <strong>373</strong></span>
+<span class="pillar-badge">RL算法与架构 <strong>136</strong></span>
+<span class="pillar-badge">机器人控制 <strong>34</strong></span>
+<span class="pillar-badge">生成式动作 <strong>5</strong></span>
 <span class="pillar-badge">空间感知与语义 <strong>4</strong></span>
 <span class="pillar-badge">动作重定向 <strong>4</strong></span>
-<span class="pillar-badge">生成式动作 <strong>4</strong></span>
+<span class="pillar-badge">交互与反应 <strong>3</strong></span>
 <span class="pillar-badge">空间感知 <strong>3</strong></span>
 <span class="pillar-badge">物理动画 <strong>3</strong></span>
 <span class="pillar-badge">视频提取与匹配 <strong>2</strong></span>
-<span class="pillar-badge">交互与反应 <strong>2</strong></span>
 </div>
 </div>
 <div class="recent-dates">
 <h4>📆 最近更新</h4>
 <div class="date-buttons">
+<a href="cs-AI/2025-12-22/index.html" class="date-btn">2025-12-22 <small>(22篇)</small></a>
 <a href="cs-AI/2025-12-21/index.html" class="date-btn">2025-12-21 <small>(11篇)</small></a>
 <a href="cs-AI/2025-12-18/index.html" class="date-btn">2025-12-18 <small>(33篇)</small></a>
 <a href="cs-AI/2025-12-17/index.html" class="date-btn">2025-12-17 <small>(16篇)</small></a>
 <a href="cs-AI/2025-12-16/index.html" class="date-btn">2025-12-16 <small>(23篇)</small></a>
 <a href="cs-AI/2025-11-25/index.html" class="date-btn">2025-11-25 <small>(2篇)</small></a>
 <a href="cs-AI/2025-11-24/index.html" class="date-btn">2025-11-24 <small>(2篇)</small></a>
-<a href="cs-AI/2025-11-20/index.html" class="date-btn">2025-11-20 <small>(1篇)</small></a>
-<a href="cs-AI/index.html" class="date-btn date-btn-more">更多... <small>(68)</small></a>
+<a href="cs-AI/index.html" class="date-btn date-btn-more">更多... <small>(69)</small></a>
 </div>
 </div>
 <div class="recent-papers">
 <h4>📝 最新论文</h4>
 <ul class="paper-list">
-<li><a href="cs-AI/2025-12-21/papers/251217559v1-towards-explainable-conversational-ai-for-early-diagnosis-with-large.html">Towards Explainable Conversational AI for Early Diagnosis wi...</a> <br><small>提出基于LLM的对话式AI，用于早期诊断并提升可解释性</small></li>
-<li><a href="cs-AI/2025-12-21/papers/251217308v1-large-language-models-as-pokémon-battle-agents-strategic-play-and-co.html">Large Language Models as Pokémon Battle Agents: Strategic Pl...</a> <br><small>利用大型语言模型作为宝可梦对战智能体，实现策略博弈与内容生成</small></li>
-<li><a href="cs-AI/2025-12-21/papers/251217194v1-mmrag-rft-two-stage-reinforcement-fine-tuning-for-explainable-multi-.html">MMRAG-RFT: Two-stage Reinforcement Fine-tuning for Explainab...</a> <br><small>提出MMRAG-RFT，通过两阶段强化学习提升多模态检索增强生成的可解释性。</small></li>
-<li><a href="cs-AI/2025-12-21/papers/251217534v1-hydrogym-a-reinforcement-learning-platform-for-fluid-dynamics.html">HydroGym: A Reinforcement Learning Platform for Fluid Dynami...</a> <br><small>HydroGym：用于流体动力学的强化学习平台，提供可扩展的控制基准。</small></li>
-<li><a href="cs-AI/2025-12-21/papers/251217250v1-accelerating-multi-modal-llm-gaming-performance-via-input-prediction.html">Accelerating Multi-modal LLM Gaming Performance via Input Pr...</a> <br><small>提出基于输入预测和误差校正的多模态LLM游戏加速框架</small></li>
+<li><a href="cs-AI/2025-12-22/papers/251218956v1-training-multimodal-large-reasoning-models-needs-better-thoughts-a-t.html">Training Multimodal Large Reasoning Models Needs Better Thou...</a> <br><small>提出SynSelect框架，为多模态大模型生成高质量长链推理训练数据。</small></li>
+<li><a href="cs-AI/2025-12-22/papers/251219350v1-pendulum-a-benchmark-for-assessing-sycophancy-in-multimodal-large-la.html">PENDULUM: A Benchmark for Assessing Sycophancy in Multimodal...</a> 🔗<br><small>提出PENDULUM基准，评估多模态大语言模型中的谄媚现象</small></li>
+<li><a href="cs-AI/2025-12-22/papers/251219135v1-understanding-chain-of-thought-in-large-language-models-via-topologi.html">Understanding Chain-of-Thought in Large Language Models via ...</a> <br><small>利用拓扑数据分析理解大语言模型中的思维链</small></li>
+<li><a href="cs-AI/2025-12-22/papers/251219107v1-fc-mir-a-mobile-screen-awareness-framework-for-intent-aware-recommen.html">FC-MIR: A Mobile Screen Awareness Framework for Intent-Aware...</a> <br><small>提出FC-MIR框架，通过帧压缩多模态轨迹推理实现意图感知的移动屏幕推荐。</small></li>
+<li><a href="cs-AI/2025-12-22/papers/251219228v1-generation-of-programmatic-rules-for-document-forgery-detection-usin.html">Generation of Programmatic Rules for Document Forgery Detect...</a> <br><small>利用大语言模型生成程序化规则，用于文档伪造检测</small></li>
 </ul>
 </div>
 </div>
@@ -284,17 +284,17 @@ title: arXiv 中文要点汇总
 <span class="tag-desc">自然语言 (VLA, Text-to-Motion)</span>
 </div>
 <div class="tag-meta">
-<span class="date-range">📅 最新: 2025-12-21</span>
-<span class="paper-count">📄 共 779 篇</span>
+<span class="date-range">📅 最新: 2025-12-22</span>
+<span class="paper-count">📄 共 801 篇</span>
 </div>
 </div>
 <div class="tag-content">
 <div class="pillar-stats">
 <h4>📊 领域分布</h4>
 <div class="pillar-badges">
-<span class="pillar-badge">具身大模型 <strong>615</strong></span>
-<span class="pillar-badge">RL算法与架构 <strong>132</strong></span>
-<span class="pillar-badge">机器人控制 <strong>13</strong></span>
+<span class="pillar-badge">具身大模型 <strong>634</strong></span>
+<span class="pillar-badge">RL算法与架构 <strong>134</strong></span>
+<span class="pillar-badge">机器人控制 <strong>14</strong></span>
 <span class="pillar-badge">空间感知与语义 <strong>4</strong></span>
 <span class="pillar-badge">视频提取与匹配 <strong>4</strong></span>
 <span class="pillar-badge">物理动画 <strong>4</strong></span>
@@ -307,24 +307,24 @@ title: arXiv 中文要点汇总
 <div class="recent-dates">
 <h4>📆 最近更新</h4>
 <div class="date-buttons">
+<a href="cs-CL/2025-12-22/index.html" class="date-btn">2025-12-22 <small>(22篇)</small></a>
 <a href="cs-CL/2025-12-21/index.html" class="date-btn">2025-12-21 <small>(10篇)</small></a>
 <a href="cs-CL/2025-12-18/index.html" class="date-btn">2025-12-18 <small>(12篇)</small></a>
 <a href="cs-CL/2025-12-17/index.html" class="date-btn">2025-12-17 <small>(17篇)</small></a>
 <a href="cs-CL/2025-12-16/index.html" class="date-btn">2025-12-16 <small>(16篇)</small></a>
 <a href="cs-CL/2025-11-25/index.html" class="date-btn">2025-11-25 <small>(1篇)</small></a>
 <a href="cs-CL/2025-10-27/index.html" class="date-btn">2025-10-27 <small>(1篇)</small></a>
-<a href="cs-CL/2025-10-25/index.html" class="date-btn">2025-10-25 <small>(1篇)</small></a>
-<a href="cs-CL/index.html" class="date-btn date-btn-more">更多... <small>(51)</small></a>
+<a href="cs-CL/index.html" class="date-btn date-btn-more">更多... <small>(52)</small></a>
 </div>
 </div>
 <div class="recent-papers">
 <h4>📝 最新论文</h4>
 <ul class="paper-list">
-<li><a href="cs-CL/2025-12-21/papers/251217387v1-cife-code-instruction-following-evaluation.html">CIFE: Code Instruction-Following Evaluation</a> <br><small>CIFE：提出代码指令遵循评估基准，衡量LLM在代码生成中对开发者约束的遵守程度</small></li>
-<li><a href="cs-CL/2025-12-21/papers/251217385v1-ucoder-unsupervised-code-generation-by-internal-probing-of-large-lan.html">UCoder: Unsupervised Code Generation by Internal Probing of ...</a> <br><small>UCoder：通过内部探测大语言模型实现无监督代码生成</small></li>
-<li><a href="cs-CL/2025-12-21/papers/251217344v1-governance-aware-hybrid-fine-tuning-for-multilingual-large-language-.html">Governance-Aware Hybrid Fine-Tuning for Multilingual Large L...</a> <br><small>提出一种治理感知的混合微调框架，用于多语言大语言模型的低资源自适应。</small></li>
-<li><a href="cs-CL/2025-12-21/papers/251217351v1-physics-of-language-models-part-41-architecture-design-and-the-magic.html">Physics of Language Models: Part 4.1, Architecture Design an...</a> <br><small>提出Canon Layers，增强语言模型水平信息流动与推理能力</small></li>
-<li><a href="cs-CL/2025-12-21/papers/251217260v1-seed-prover-15-mastering-undergraduate-level-theorem-proving-via-lea.html">Seed-Prover 1.5: Mastering Undergraduate-Level Theorem Provi...</a> <br><small>Seed-Prover 1.5：通过经验学习掌握本科水平定理证明</small></li>
+<li><a href="cs-CL/2025-12-22/papers/251219651v1-exploring-zero-shot-acsa-with-unified-meaning-representation-in-chai.html">Exploring Zero-Shot ACSA with Unified Meaning Representation...</a> <br><small>提出基于UMR的CoT提示方法，探索零样本ACSA任务</small></li>
+<li><a href="cs-CL/2025-12-22/papers/251219537v1-event-extraction-in-large-language-model.html">Event Extraction in Large Language Model</a> <br><small>综述性论文：探讨大语言模型在事件抽取中的应用，并展望未来发展方向。</small></li>
+<li><a href="cs-CL/2025-12-22/papers/251219092v1-a-large-language-model-based-method-for-complex-logical-reasoning-ov.html">A Large Language Model Based Method for Complex Logical Reas...</a> <br><small>提出ROG框架，结合知识图谱检索与大语言模型推理，解决复杂逻辑推理难题。</small></li>
+<li><a href="cs-CL/2025-12-22/papers/251219424v1-codesimpleqa-scaling-factuality-in-code-large-language-models.html">CodeSimpleQA: Scaling Factuality in Code Large Language Mode...</a> <br><small>CodeSimpleQA：提升代码大语言模型的事实性准确度</small></li>
+<li><a href="cs-CL/2025-12-22/papers/251219126v1-awpo-enhancing-tool-use-of-large-language-models-through-explicit-in.html">AWPO: Enhancing Tool-Use of Large Language Models through Ex...</a> <br><small>提出AWPO，通过显式整合推理奖励增强大语言模型工具使用能力</small></li>
 </ul>
 </div>
 </div>
