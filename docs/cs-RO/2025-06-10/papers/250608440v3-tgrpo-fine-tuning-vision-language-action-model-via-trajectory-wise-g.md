@@ -1,0 +1,65 @@
+---
+layout: default
+title: TGRPO :Fine-tuning Vision-Language-Action Model via Trajectory-wise Group Relative Policy Optimization
+---
+
+# TGRPO :Fine-tuning Vision-Language-Action Model via Trajectory-wise Group Relative Policy Optimization
+
+<div class="paper-toolbar">
+  <a href="https://arxiv.org/abs/2506.08440" class="toolbar-btn" target="_blank">📄 arXiv: 2506.08440v3</a>
+  <a href="https://arxiv.org/pdf/2506.08440.pdf" class="toolbar-btn" target="_blank">📥 PDF</a>
+  <button class="toolbar-btn favorite-btn" data-arxiv-id="2506.08440v3" data-paper-url="__CURRENT_PAGE__" onclick="toggleFavorite(this, '2506.08440v3', 'TGRPO :Fine-tuning Vision-Language-Action Model via Trajectory-wise Group Relative Policy Optimization')" title="添加到收藏夹">☆ 收藏</button>
+  <button class="toolbar-btn" onclick="copyLinkToClipboard(this)">🔗 分享</button>
+</div>
+
+
+**作者**: Zengjue Chen, Runliang Niu, He Kong, Qi Wang, Qianli Xing, Zipei Fan
+
+**分类**: cs.RO, cs.AI
+
+**发布日期**: 2025-06-10 (更新: 2025-09-27)
+
+---
+
+## 💡 一句话要点
+
+**提出TGRPO以解决VLA模型在复杂环境中的适应性问题**
+
+🎯 **匹配领域**: **支柱二：RL算法与架构 (RL & Architecture)** **支柱九：具身大模型 (Embodied Foundation Models)**
+
+**关键词**: `视觉-语言-动作` `强化学习` `轨迹优化` `稠密奖励` `机器人任务` `自适应策略` `任务分析`
+
+## 📋 核心要点
+
+1. 现有的VLA模型训练方法依赖手动示范，难以应对复杂环境中的OOD场景和执行偏差。
+2. TGRPO通过在线强化学习框架，利用任务分析自动生成稠密奖励，采用群体策略减少方差。
+3. 在LIBERO基准上，TGRPO的成功率达到80.7%，超越了SFT和其他RL后训练方法。
+
+## 📝 摘要（中文）
+
+视觉-语言-动作（VLA）模型在多种机器人任务中展现了强大的跨场景泛化能力，但其训练主要依赖于手动收集的成功示范，难以适应复杂环境中的分布外（OOD）场景或执行偏差。为了解决这些问题，本文提出了基于轨迹的群体相对策略优化（TGRPO）框架，该框架利用大型语言模型生成的任务分析自动构建稠密奖励函数，从而加速收敛并改善信用分配。实验结果表明，TGRPO在LIBERO基准的四个任务类别上实现了80.7%的平均成功率，较监督微调（SFT）提高了4.2%。
+
+## 🔬 方法详解
+
+**问题定义**：本文旨在解决VLA模型在复杂环境中的适应性问题，现有方法依赖于手动示范，难以处理OOD场景和执行偏差，导致训练效率低下和性能不稳定。
+
+**核心思路**：TGRPO通过引入在线强化学习框架，利用大型语言模型生成的任务分析来自动构建稠密奖励函数，从而提供细粒度反馈，加速模型收敛并改善信用分配。
+
+**技术框架**：TGRPO的整体架构包括任务分析模块、稠密奖励构建模块和群体策略优化模块，采用并行采样和归一化多个轨迹，减少方差。
+
+**关键创新**：TGRPO的主要创新在于群体策略的引入，通过相对比较多个轨迹来降低方差，并结合轨迹级和步级的优势估计，捕捉全局和局部优化信号，避免依赖价值网络。
+
+**关键设计**：在参数设置上，TGRPO采用了自适应的奖励函数设计，并在损失函数中引入了轨迹级和步级的优势估计，确保模型在长时间任务中的稳定性和收敛性。
+
+## 📊 实验亮点
+
+TGRPO在LIBERO基准的四个任务类别上实现了80.7%的平均成功率，较监督微调（SFT）提高了4.2%。此外，TGRPO的表现优于其他代表性的基于强化学习的后训练方法，展示了其在复杂任务中的有效性和优势。
+
+## 🎯 应用场景
+
+TGRPO的研究成果在机器人任务、智能助手和自动化控制等领域具有广泛的应用潜力。通过提高VLA模型在复杂环境中的适应性，能够更好地支持自主决策和人机协作，推动智能机器人技术的发展。未来，TGRPO有望在更多实际场景中实现高效的任务执行。
+
+## 📄 摘要（原文）
+
+> Visual-Language-Action (VLA) models have demonstrated strong cross-scenario generalization capabilities in various robotic tasks through large-scale pre-training and task-specific fine-tuning. However, their training paradigm mainly relies on manually collected successful demonstrations, making it difficult to adapt to complex environments when encountering out-of-distribution (OOD) scenarios or execution biases. While Reinforcement Learning (RL) provides a closed-loop optimization framework via active trial-and-error mechanism, it suffers from sparse rewards, high variance, and unstable optimization in long-horizon robotic tasks. To address these limitations, we propose Trajectory-based Group Relative Policy Optimization (TGRPO), an online RL-based training framework for VLA models. TGRPO leverages task analysis generated by a large language model to automatically construct dense reward functions, providing fine-grained feedback to accelerate convergence and improve credit assignment. The core of our method is a group-based strategy that samples and normalizes multiple trajectories in parallel, reducing variance through relative comparison. By integrating trajectory-level and step-level advantage estimation, TGRPO captures both global and local optimization signals without relying on a value network. Experiments on four task categories of the LIBERO benchmark demonstrate that TGRPO achieves an average success rate of 80.7\%, which is 4.2\% higher than that of Supervised Fine-Tuning (SFT) and outperforms other representative RL-based post-training methods.
+

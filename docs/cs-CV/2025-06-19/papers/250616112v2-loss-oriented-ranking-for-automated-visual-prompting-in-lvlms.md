@@ -1,0 +1,67 @@
+---
+layout: default
+title: Loss-Oriented Ranking for Automated Visual Prompting in LVLMs
+---
+
+# Loss-Oriented Ranking for Automated Visual Prompting in LVLMs
+
+<div class="paper-toolbar">
+  <a href="https://arxiv.org/abs/2506.16112" class="toolbar-btn" target="_blank">📄 arXiv: 2506.16112v2</a>
+  <a href="https://arxiv.org/pdf/2506.16112.pdf" class="toolbar-btn" target="_blank">📥 PDF</a>
+  <button class="toolbar-btn favorite-btn" data-arxiv-id="2506.16112v2" data-paper-url="__CURRENT_PAGE__" onclick="toggleFavorite(this, '2506.16112v2', 'Loss-Oriented Ranking for Automated Visual Prompting in LVLMs')" title="添加到收藏夹">☆ 收藏</button>
+  <button class="toolbar-btn" onclick="copyLinkToClipboard(this)">🔗 分享</button>
+</div>
+
+
+**作者**: Yuan Zhang, Chun-Kai Fan, Tao Huang, Ming Lu, Sicheng Yu, Junwen Pan, Kuan Cheng, Qi She, Shanghang Zhang
+
+**分类**: cs.CV
+
+**发布日期**: 2025-06-19 (更新: 2025-11-21)
+
+**备注**: 17 pages
+
+---
+
+## 💡 一句话要点
+
+**提出AutoV以解决视觉提示选择的自动化问题**
+
+🎯 **匹配领域**: **支柱九：具身大模型 (Embodied Foundation Models)**
+
+**关键词**: `视觉提示` `自动化选择` `多模态模型` `图像理解` `深度学习`
+
+## 📋 核心要点
+
+1. 现有方法在设计视觉提示时依赖人工，效率低且难以探索不同提示的潜力，导致性能不佳。
+2. 本文提出AutoV，通过自动选择最佳视觉提示，利用预训练LVLM的预测损失进行排名，优化视觉提示选择过程。
+3. 实验结果显示，AutoV显著提升了LVLM的性能，如LLaVA-OV在VizWiz任务上提升10.2%的准确率。
+
+## 📝 摘要（中文）
+
+受大型语言模型（LLMs）中文本提示的启发，视觉提示被探索用于增强大型视觉语言模型（LVLMs）的推理能力。现有方法设计的启发式视觉提示，如在原始输入图像上叠加文本查询引导的注意力热图，手动设计有效提示既困难又耗时，且往往未能充分挖掘不同视觉提示的优势，导致性能不佳。为此，本文提出了AutoV，能够根据给定的文本查询和输入图像自动选择最佳视觉提示。我们开发了一种自动数据收集和标注管道，通过预训练的LVLM评估各种视觉提示，并根据模型生成的预测损失对其进行排名。利用这一排名作为监督信号，训练AutoV自动选择最佳视觉提示。实验表明，AutoV在多个图像理解任务中提升了多种LVLM的性能。
+
+## 🔬 方法详解
+
+**问题定义**：本文旨在解决现有视觉提示设计方法的低效和不优化问题。现有方法依赖人工设计，难以充分利用不同视觉提示的优势，导致模型性能不佳。
+
+**核心思路**：论文提出的AutoV通过自动化选择最佳视觉提示，利用预训练的LVLM对不同视觉提示进行评估和排名，从而优化提示选择过程。这样的设计能够减少人工干预，提高效率和效果。
+
+**技术框架**：整体架构包括数据收集与标注管道、视觉提示输入、LVLM评估和排名模块。首先收集多种视觉提示，然后将其输入LVLM，依据模型的预测损失进行排名，最后训练AutoV选择最佳提示。
+
+**关键创新**：AutoV的核心创新在于其自动化选择视觉提示的能力，利用模型预测损失作为监督信号，与现有的手动设计方法相比，显著提高了选择效率和模型性能。
+
+**关键设计**：在训练过程中，AutoV使用了一种新的损失函数来优化提示选择，并设计了高效的网络结构以处理多种视觉提示的输入和评估。
+
+## 📊 实验亮点
+
+实验结果显示，AutoV在多个任务中显著提升了LVLM的性能。例如，LLaVA-OV在VizWiz任务上实现了10.2%的准确率提升，而Qwen2.5-VL在MMMU任务上提升了3.8%。这些结果突显了AutoV作为一种最佳视觉提示方法的潜力。
+
+## 🎯 应用场景
+
+该研究的潜在应用领域包括智能图像理解、自动化内容生成和人机交互等。通过优化视觉提示选择，AutoV能够提升多模态模型在实际应用中的表现，具有广泛的实际价值和未来影响。
+
+## 📄 摘要（原文）
+
+> Inspired by text prompts in large language models (LLMs), visual prompts have been explored to enhance the reasoning capabilities of large vision-language models (LVLMs). Current methods design heuristic visual prompts, such as overlaying a text-query-guided attention heatmap on the original input image. However, designing effective prompts manually is challenging and time-consuming, and it often fails to explore the benefits of different visual prompts, leading to sub-optimal performance. To this end, we propose \textbf{AutoV} that learns to automatically select the optimal visual prompt from various candidates based on given textual queries and the input image. To train AutoV, we develop an automatic data collection and labeling pipeline that evaluates various visual prompts with a pre-trained LVLM. We input a set of visual prompts into the LVLM and rank them according to the prediction losses generated by the model. Using the ranking as a supervision signal, we train AutoV to automatically choose the optimal visual prompt from various visual prompts for LVLMs. Experiments indicate that AutoV enhances the performance of various LVLMs across multiple image understanding tasks. For instance, LLaVA-OV with AutoV achieves $\textbf{10.2}\%$ accuracy gain on VizWiz, and AutoV boosts Qwen2.5-VL by $\textbf{3.8}\%$ on MMMU, highlighting its potential as an optimal visual prompting method.
+

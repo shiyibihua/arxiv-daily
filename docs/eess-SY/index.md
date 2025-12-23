@@ -57,6 +57,30 @@ title: arXiv 中文要点汇总 - eess.SY
 <option value="2025-09-03/index.html" >2025-09-03</option>
 <option value="2025-09-02/index.html" >2025-09-02</option>
 <option value="2025-09-01/index.html" >2025-09-01</option>
+<option value="2025-06-30/index.html" >2025-06-30</option>
+<option value="2025-06-29/index.html" >2025-06-29</option>
+<option value="2025-06-28/index.html" >2025-06-28</option>
+<option value="2025-06-27/index.html" >2025-06-27</option>
+<option value="2025-06-26/index.html" >2025-06-26</option>
+<option value="2025-06-25/index.html" >2025-06-25</option>
+<option value="2025-06-24/index.html" >2025-06-24</option>
+<option value="2025-06-23/index.html" >2025-06-23</option>
+<option value="2025-06-22/index.html" >2025-06-22</option>
+<option value="2025-06-20/index.html" >2025-06-20</option>
+<option value="2025-06-19/index.html" >2025-06-19</option>
+<option value="2025-06-18/index.html" >2025-06-18</option>
+<option value="2025-06-17/index.html" >2025-06-17</option>
+<option value="2025-06-16/index.html" >2025-06-16</option>
+<option value="2025-06-13/index.html" >2025-06-13</option>
+<option value="2025-06-12/index.html" >2025-06-12</option>
+<option value="2025-06-11/index.html" >2025-06-11</option>
+<option value="2025-06-10/index.html" >2025-06-10</option>
+<option value="2025-06-09/index.html" >2025-06-09</option>
+<option value="2025-06-06/index.html" >2025-06-06</option>
+<option value="2025-06-05/index.html" >2025-06-05</option>
+<option value="2025-06-03/index.html" >2025-06-03</option>
+<option value="2025-06-02/index.html" >2025-06-02</option>
+<option value="2025-06-01/index.html" >2025-06-01</option>
 <option value="2023-12-01/index.html" >2023-12-01</option>
   </select>
   <a class="btn" href="2025-12-21/index.html">前往最新（2025-12-21）</a>
@@ -253,6 +277,53 @@ title: arXiv 中文要点汇总 - eess.SY
 <a href="2025-09-28/index.html" class="cal-day has-data">28</a>
 <a href="2025-09-29/index.html" class="cal-day has-data">29</a>
 <a href="2025-09-30/index.html" class="cal-day has-data">30</a>
+<div class="cal-day empty"></div>
+<div class="cal-day empty"></div>
+<div class="cal-day empty"></div>
+<div class="cal-day empty"></div>
+</div>
+</div>
+<div class="calendar-month">
+<h3 class="month-title">2025年6月</h3>
+<div class="calendar-grid">
+<div class="cal-header">日</div>
+<div class="cal-header">一</div>
+<div class="cal-header">二</div>
+<div class="cal-header">三</div>
+<div class="cal-header">四</div>
+<div class="cal-header">五</div>
+<div class="cal-header">六</div>
+<a href="2025-06-01/index.html" class="cal-day has-data">1</a>
+<a href="2025-06-02/index.html" class="cal-day has-data">2</a>
+<a href="2025-06-03/index.html" class="cal-day has-data">3</a>
+<div class="cal-day">4</div>
+<a href="2025-06-05/index.html" class="cal-day has-data">5</a>
+<a href="2025-06-06/index.html" class="cal-day has-data">6</a>
+<div class="cal-day">7</div>
+<div class="cal-day">8</div>
+<a href="2025-06-09/index.html" class="cal-day has-data">9</a>
+<a href="2025-06-10/index.html" class="cal-day has-data">10</a>
+<a href="2025-06-11/index.html" class="cal-day has-data">11</a>
+<a href="2025-06-12/index.html" class="cal-day has-data">12</a>
+<a href="2025-06-13/index.html" class="cal-day has-data">13</a>
+<div class="cal-day">14</div>
+<div class="cal-day">15</div>
+<a href="2025-06-16/index.html" class="cal-day has-data">16</a>
+<a href="2025-06-17/index.html" class="cal-day has-data">17</a>
+<a href="2025-06-18/index.html" class="cal-day has-data">18</a>
+<a href="2025-06-19/index.html" class="cal-day has-data">19</a>
+<a href="2025-06-20/index.html" class="cal-day has-data">20</a>
+<div class="cal-day">21</div>
+<a href="2025-06-22/index.html" class="cal-day has-data">22</a>
+<a href="2025-06-23/index.html" class="cal-day has-data">23</a>
+<a href="2025-06-24/index.html" class="cal-day has-data">24</a>
+<a href="2025-06-25/index.html" class="cal-day has-data">25</a>
+<a href="2025-06-26/index.html" class="cal-day has-data">26</a>
+<a href="2025-06-27/index.html" class="cal-day has-data">27</a>
+<a href="2025-06-28/index.html" class="cal-day has-data">28</a>
+<a href="2025-06-29/index.html" class="cal-day has-data">29</a>
+<a href="2025-06-30/index.html" class="cal-day has-data">30</a>
+<div class="cal-day empty"></div>
 <div class="cal-day empty"></div>
 <div class="cal-day empty"></div>
 <div class="cal-day empty"></div>
