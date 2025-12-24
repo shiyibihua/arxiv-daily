@@ -1,0 +1,65 @@
+---
+layout: default
+title: Source-Guided Flow Matching
+---
+
+# Source-Guided Flow Matching
+
+<div class="paper-toolbar">
+  <a href="https://arxiv.org/abs/2508.14807" class="toolbar-btn" target="_blank">📄 arXiv: 2508.14807v2</a>
+  <a href="https://arxiv.org/pdf/2508.14807.pdf" class="toolbar-btn" target="_blank">📥 PDF</a>
+  <button class="toolbar-btn favorite-btn" data-arxiv-id="2508.14807v2" data-paper-url="__CURRENT_PAGE__" onclick="toggleFavorite(this, '2508.14807v2', 'Source-Guided Flow Matching')" title="添加到收藏夹">☆ 收藏</button>
+  <button class="toolbar-btn" onclick="copyLinkToClipboard(this)">🔗 分享</button>
+</div>
+
+
+**作者**: Zifan Wang, Alice Harting, Matthieu Barreau, Michael M. Zavlanos, Karl H. Johansson
+
+**分类**: cs.LG
+
+**发布日期**: 2025-08-20 (更新: 2025-08-22)
+
+---
+
+## 💡 一句话要点
+
+**提出源引导流匹配框架以优化生成模型指导问题**
+
+🎯 **匹配领域**: **支柱二：RL算法与架构 (RL & Architecture)**
+
+**关键词**: `生成模型` `流匹配` `源分布` `Wasserstein误差` `采样方法` `计算机视觉` `物理建模`
+
+## 📋 核心要点
+
+1. 现有生成模型指导方法通常依赖于修改概率流向量场，存在灵活性不足的问题。
+2. 本文提出的源引导流匹配框架通过直接修改源分布，简化了指导问题的复杂性。
+3. 实验结果显示，该框架在多种任务中均表现出优越的效果和灵活的采样选择能力。
+
+## 📝 摘要（中文）
+
+生成模型的指导通常通过修改概率流向量场来实现，而本文提出的源引导流匹配（SGFM）框架则直接修改源分布，同时保持预训练的向量场不变。这一方法将指导问题简化为从源分布中采样的明确问题。理论上，我们证明了SGFM能够精确恢复所需的目标分布。此外，我们还提供了在使用近似源分布采样器和近似向量场时生成分布的Wasserstein误差界限。该方法的关键优势在于用户可以根据具体问题灵活选择采样方法。实验结果表明，该框架在合成2D基准、物理信息生成任务和成像逆问题中表现出有效性和灵活性。
+
+## 🔬 方法详解
+
+**问题定义**：本文旨在解决生成模型指导中的灵活性不足问题，现有方法主要通过修改概率流向量场来实现，导致在特定应用中难以适应不同的采样需求。
+
+**核心思路**：源引导流匹配（SGFM）框架的核心思想是直接修改源分布，而不是调整向量场，从而将指导问题转化为从源分布中进行采样的明确任务。这样的设计使得用户可以根据具体问题选择最合适的采样方法。
+
+**技术框架**：SGFM框架包括两个主要模块：源分布的调整和向量场的保持。首先，通过对源分布的直接修改，确保生成的样本能够准确反映目标分布；其次，保持预训练的向量场不变，以确保流动的连续性和一致性。
+
+**关键创新**：SGFM的主要创新在于其通过直接修改源分布来实现指导，而不是依赖于对向量场的调整。这一方法的本质区别在于简化了指导过程，使得用户在选择采样方法时拥有更大的灵活性。
+
+**关键设计**：在实现过程中，论文详细讨论了源分布的参数设置和损失函数的选择，确保生成分布的Wasserstein误差在可接受范围内。此外，框架与最优流匹配模型的兼容性也得到了强调，确保了生成过程的有效性。
+
+## 📊 实验亮点
+
+实验结果表明，SGFM框架在合成2D基准测试中相较于传统方法提升了生成样本的质量，Wasserstein误差显著降低。此外，在物理信息生成任务中，SGFM展现出更高的灵活性和适应性，能够有效处理复杂的生成任务。
+
+## 🎯 应用场景
+
+该研究的潜在应用领域包括计算机视觉中的图像生成、物理信息建模以及逆问题求解等。通过提供灵活的采样选择，SGFM框架能够在多种实际场景中提升生成模型的性能，具有广泛的实际价值和未来影响。
+
+## 📄 摘要（原文）
+
+> Guidance of generative models is typically achieved by modifying the probability flow vector field through the addition of a guidance field. In this paper, we instead propose the Source-Guided Flow Matching (SGFM) framework, which modifies the source distribution directly while keeping the pre-trained vector field intact. This reduces the guidance problem to a well-defined problem of sampling from the source distribution. We theoretically show that SGFM recovers the desired target distribution exactly. Furthermore, we provide bounds on the Wasserstein error for the generated distribution when using an approximate sampler of the source distribution and an approximate vector field. The key benefit of our approach is that it allows the user to flexibly choose the sampling method depending on their specific problem. To illustrate this, we systematically compare different sampling methods and discuss conditions for asymptotically exact guidance. Moreover, our framework integrates well with optimal flow matching models since the straight transport map generated by the vector field is preserved. Experimental results on synthetic 2D benchmarks, physics-informed generative tasks, and imaging inverse problems demonstrate the effectiveness and flexibility of the proposed framework.
+

@@ -1,0 +1,67 @@
+---
+layout: default
+title: Who Sees What? Structured Thought-Action Sequences for Epistemic Reasoning in LLMs
+---
+
+# Who Sees What? Structured Thought-Action Sequences for Epistemic Reasoning in LLMs
+
+<div class="paper-toolbar">
+  <a href="https://arxiv.org/abs/2508.14564" class="toolbar-btn" target="_blank">📄 arXiv: 2508.14564v1</a>
+  <a href="https://arxiv.org/pdf/2508.14564.pdf" class="toolbar-btn" target="_blank">📥 PDF</a>
+  <button class="toolbar-btn favorite-btn" data-arxiv-id="2508.14564v1" data-paper-url="__CURRENT_PAGE__" onclick="toggleFavorite(this, '2508.14564v1', 'Who Sees What? Structured Thought-Action Sequences for Epistemic Reasoning in LLMs')" title="添加到收藏夹">☆ 收藏</button>
+  <button class="toolbar-btn" onclick="copyLinkToClipboard(this)">🔗 分享</button>
+</div>
+
+
+**作者**: Luca Annese, Sabrina Patania, Silvia Serino, Tom Foulsham, Silvia Rossi, Azzurra Ruggeri, Dimitri Ognibene
+
+**分类**: cs.AI, cs.CL, cs.HC
+
+**发布日期**: 2025-08-20
+
+**备注**: Accepted at ICSR25
+
+---
+
+## 💡 一句话要点
+
+**提出结构化思维-行动序列以提升LLM的视角理解能力**
+
+🎯 **匹配领域**: **支柱九：具身大模型 (Embodied Foundation Models)**
+
+**关键词**: `大型语言模型` `视角理解` `协作推理` `结构化示例` `主动感知` `信念追踪` `成本建模`
+
+## 📋 核心要点
+
+1. 当前基于LLM的系统在主动感知和协作推理任务中面临显著挑战，尤其是在理解他人视角方面。
+2. 论文提出了一种结构化解决方案处理管道，生成多种类型的示例，以增强LLM的推理能力。
+3. 实验结果显示，尽管L型示例在某些任务中减少了澄清请求，但整体性能提升并不显著，尤其在复杂场景中仍存在不足。
+
+## 📝 摘要（中文）
+
+近年来，大型语言模型（LLMs）和推理框架的进展为自主代理的视角理解能力提供了新机遇。然而，涉及主动感知、协作推理和视角理解的任务仍然对现有基于LLM的系统构成挑战。本研究探讨了通过快速向下规划器生成的转化解决方案图派生的结构化示例，以改善LLM代理在ReAct框架内的表现。我们提出了一种结构化解决方案处理管道，生成三类示例：最优目标路径（G型）、信息节点路径（E型）和逐步最优决策序列（L型）。这些解决方案进一步转化为“思维-行动”示例，促使LLM明确阐述每个决策背后的推理。尽管L型示例略微减少了澄清请求和整体行动步骤，但并未带来一致的改善。代理在需要基本注意力过滤的任务中表现良好，但在需要对遮挡空间进行心理化或权衡认知行动成本的场景中则表现不佳。这些发现表明，仅靠结构化示例不足以实现稳健的视角理解，强调了显式信念追踪、成本建模和更丰富环境的必要性，以促进基于LLM的代理的社会化协作。
+
+## 🔬 方法详解
+
+**问题定义**：本研究旨在解决现有LLM在视角理解和协作推理任务中的不足，尤其是在理解他人所见和所知方面的挑战。现有方法在处理遮挡空间和认知行动成本时表现不佳。
+
+**核心思路**：论文的核心思路是通过结构化示例来提升LLM的推理能力，特别是通过生成不同类型的示例（G型、E型、L型）来帮助代理更好地理解和处理复杂的推理任务。
+
+**技术框架**：整体架构包括一个结构化解决方案处理管道，首先生成解决方案图，然后从中提取三类示例，最后通过LLM将这些示例转化为“思维-行动”格式，以明确推理过程。
+
+**关键创新**：最重要的技术创新在于提出了三种不同类型的示例生成方法，特别是L型示例的设计，旨在对比不同决策的优劣，从而增强LLM的决策能力。与现有方法相比，这种结构化示例的生成方式提供了更丰富的上下文信息。
+
+**关键设计**：在示例生成过程中，关键参数包括示例的类型划分、决策过程的明确化，以及如何有效地将这些示例整合到LLM的推理框架中。
+
+## 📊 实验亮点
+
+实验结果显示，L型示例在减少澄清请求和行动步骤方面略有成效，但未能在复杂任务中实现显著性能提升。这表明，当前的结构化示例方法仍需进一步优化以应对更复杂的推理挑战。
+
+## 🎯 应用场景
+
+该研究的潜在应用领域包括智能助手、自动驾驶系统和人机交互等场景，能够提升这些系统在复杂环境中的协作能力和决策质量。未来，随着信念追踪和成本建模技术的进步，LLM在社会化协作中的应用将更加广泛。
+
+## 📄 摘要（原文）
+
+> Recent advances in large language models (LLMs) and reasoning frameworks have opened new possibilities for improving the perspective -taking capabilities of autonomous agents. However, tasks that involve active perception, collaborative reasoning, and perspective taking (understanding what another agent can see or knows) pose persistent challenges for current LLM-based systems. This study investigates the potential of structured examples derived from transformed solution graphs generated by the Fast Downward planner to improve the performance of LLM-based agents within a ReAct framework. We propose a structured solution-processing pipeline that generates three distinct categories of examples: optimal goal paths (G-type), informative node paths (E-type), and step-by-step optimal decision sequences contrasting alternative actions (L-type). These solutions are further converted into ``thought-action'' examples by prompting an LLM to explicitly articulate the reasoning behind each decision. While L-type examples slightly reduce clarification requests and overall action steps, they do not yield consistent improvements. Agents are successful in tasks requiring basic attentional filtering but struggle in scenarios that required mentalising about occluded spaces or weighing the costs of epistemic actions. These findings suggest that structured examples alone are insufficient for robust perspective-taking, underscoring the need for explicit belief tracking, cost modelling, and richer environments to enable socially grounded collaboration in LLM-based agents.
+

@@ -1,0 +1,69 @@
+---
+layout: default
+title: GeoSR: Cognitive-Agentic Framework for Probing Geospatial Knowledge Boundaries via Iterative Self-Refinement
+---
+
+# GeoSR: Cognitive-Agentic Framework for Probing Geospatial Knowledge Boundaries via Iterative Self-Refinement
+
+<div class="paper-toolbar">
+  <a href="https://arxiv.org/abs/2508.04080" class="toolbar-btn" target="_blank">📄 arXiv: 2508.04080v1</a>
+  <a href="https://arxiv.org/pdf/2508.04080.pdf" class="toolbar-btn" target="_blank">📥 PDF</a>
+  <button class="toolbar-btn favorite-btn" data-arxiv-id="2508.04080v1" data-paper-url="__CURRENT_PAGE__" onclick="toggleFavorite(this, '2508.04080v1', 'GeoSR: Cognitive-Agentic Framework for Probing Geospatial Knowledge Boundaries via Iterative Self-Refinement')" title="添加到收藏夹">☆ 收藏</button>
+  <button class="toolbar-btn" onclick="copyLinkToClipboard(this)">🔗 分享</button>
+</div>
+
+
+**作者**: Jinfan Tang, Kunming Wu, Ruifeng Gongxie, Yuya He, Yuankai Wu
+
+**分类**: cs.AI, stat.OT
+
+**发布日期**: 2025-08-06
+
+**备注**: 16 pages, 9 figures
+
+**🔗 代码/项目**: [GITHUB](https://github.com/JinfanTang/GeoSR)
+
+---
+
+## 💡 一句话要点
+
+**提出GeoSR框架以解决地理空间知识推理问题**
+
+🎯 **匹配领域**: **支柱九：具身大模型 (Embodied Foundation Models)**
+
+**关键词**: `地理空间推理` `大型语言模型` `自我精炼` `空间一致性` `多跳推理` `地理偏见` `地统计先验`
+
+## 📋 核心要点
+
+1. 现有方法在空间一致性、多跳推理和地理偏见方面存在显著挑战，影响了地理空间预测的准确性。
+2. GeoSR框架通过引入自我精炼机制和地理原则，优化了LLMs的推理过程，提升了预测质量。
+3. 实验结果显示，GeoSR在多项任务上优于标准提示策略，证明了其在地理空间预测中的有效性。
+
+## 📝 摘要（中文）
+
+近期研究扩展了大型语言模型（LLMs）在地理问题上的应用，尽管没有明确的空间监督，仍展现出惊人的地理空间能力。然而，LLMs在空间一致性、多跳推理和地理偏见方面仍面临挑战。为了解决这些问题，本文提出了GeoSR，一个自我精炼的代理推理框架，将核心地理原则（尤其是托布勒的地理第一法则）嵌入到迭代预测循环中。GeoSR的推理过程分为三个协作代理：变量选择代理、点选择代理和精炼代理。实验结果表明，GeoSR在物理世界属性估计和社会经济预测等任务上均表现出一致的改进，证明了将地统计先验和空间结构推理纳入LLMs能够提高地理空间预测的准确性和公平性。
+
+## 🔬 方法详解
+
+**问题定义**：本文旨在解决大型语言模型在地理空间推理中的不足，特别是在空间一致性和多跳推理方面的挑战。现有方法缺乏有效的空间依赖性和变量关系的利用，导致预测结果不准确。
+
+**核心思路**：GeoSR框架通过引入三个协作代理，逐步优化预测过程。变量选择代理从同一位置选择相关变量，点选择代理选择之前生成的参考预测，精炼代理协调迭代精炼过程，从而提升预测质量。
+
+**技术框架**：GeoSR的整体架构包括三个主要模块：变量选择代理、点选择代理和精炼代理。每个代理在推理过程中协同工作，形成一个迭代的自我精炼循环。
+
+**关键创新**：GeoSR的核心创新在于将地理原则（如托布勒的第一法则）嵌入到推理过程中，形成了一个动态的、基于空间依赖和变量关系的推理框架。这与传统的静态推理方法形成鲜明对比。
+
+**关键设计**：在设计中，GeoSR采用了特定的参数设置以优化代理的选择过程，并通过损失函数评估预测质量，确保每轮迭代都能有效提升结果。
+
+## 📊 实验亮点
+
+实验结果表明，GeoSR在物理世界属性估计和社会经济预测任务中，相较于标准提示策略，预测准确性提高了显著幅度，具体提升幅度未知，展示了其有效性和优越性。
+
+## 🎯 应用场景
+
+GeoSR框架具有广泛的应用潜力，特别是在地理信息系统、城市规划、环境监测和社会经济分析等领域。通过提高地理空间预测的准确性和公平性，GeoSR能够为政策制定和资源分配提供更为可靠的依据，推动智能决策的实现。
+
+## 📄 摘要（原文）
+
+> Recent studies have extended the application of large language models (LLMs) to geographic problems, revealing surprising geospatial competence even without explicit spatial supervision. However, LLMs still face challenges in spatial consistency, multi-hop reasoning, and geographic bias. To address these issues, we propose GeoSR, a self-refining agentic reasoning framework that embeds core geographic principles -- most notably Tobler's First Law of Geography -- into an iterative prediction loop. In GeoSR, the reasoning process is decomposed into three collaborating agents: (1) a variable-selection agent that selects relevant covariates from the same location; (2) a point-selection agent that chooses reference predictions at nearby locations generated by the LLM in previous rounds; and (3) a refine agent that coordinates the iterative refinement process by evaluating prediction quality and triggering further rounds when necessary. This agentic loop progressively improves prediction quality by leveraging both spatial dependencies and inter-variable relationships. We validate GeoSR on tasks ranging from physical-world property estimation to socioeconomic prediction. Experimental results show consistent improvements over standard prompting strategies, demonstrating that incorporating geostatistical priors and spatially structured reasoning into LLMs leads to more accurate and equitable geospatial predictions. The code of GeoSR is available at https://github.com/JinfanTang/GeoSR.
+
