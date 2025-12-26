@@ -35,11 +35,11 @@ title: Muon is Provably Faster with Momentum Variance Reduction
 
 1. 现有的深度学习优化器在训练大型语言模型时存在收敛速度慢的问题，尤其是Adam类方法的表现不尽如人意。
 2. 本研究提出将动量方差减少（MVR）技术整合到Gluon框架中，以提升Muon和Scion等优化器的收敛速率。
-3. 实验结果表明，所提方法的收敛速率从${	ext{O}}(rac{1}{K^{1/4}})$提升至${	ext{O}}(rac{1}{K^{1/3}})$，并在多项实验中验证了其优越性。
+3. 实验结果表明，所提方法的收敛速率从${	ext{O} }(rac{1}{K^{1/4} })$提升至${	ext{O} }(rac{1}{K^{1/3} })$，并在多项实验中验证了其优越性。
 
 ## 📝 摘要（中文）
 
-近期的实证研究表明，基于线性最小化oracle（LMO）并在特定非欧几里得范数球上优化的深度学习优化器，如Muon和Scion，在训练大型语言模型时优于Adam类方法。本研究展示了通过将传统动量替换为动量方差减少（MVR），可以对这些优化器进行可证明的改进。我们将MVR整合到最近提出的Gluon框架中，该框架能够捕捉Muon、Scion及其他特定的非欧几里得LMO方法，并在更一般的平滑性假设下工作，从而更好地捕捉神经网络的层次结构。在非凸情况下，我们以三种不同方式将MVR融入Gluon，所有方法均将收敛速率从${	ext{O}}(rac{1}{K^{1/4}})$提高至${	ext{O}}(rac{1}{K^{1/3}})$，并在星凸情况下提供了改进的速率。最后，我们进行了多项数值实验，验证了所提算法在迭代复杂度上的优越性能。
+近期的实证研究表明，基于线性最小化oracle（LMO）并在特定非欧几里得范数球上优化的深度学习优化器，如Muon和Scion，在训练大型语言模型时优于Adam类方法。本研究展示了通过将传统动量替换为动量方差减少（MVR），可以对这些优化器进行可证明的改进。我们将MVR整合到最近提出的Gluon框架中，该框架能够捕捉Muon、Scion及其他特定的非欧几里得LMO方法，并在更一般的平滑性假设下工作，从而更好地捕捉神经网络的层次结构。在非凸情况下，我们以三种不同方式将MVR融入Gluon，所有方法均将收敛速率从${	ext{O} }(rac{1}{K^{1/4} })$提高至${	ext{O} }(rac{1}{K^{1/3} })$，并在星凸情况下提供了改进的速率。最后，我们进行了多项数值实验，验证了所提算法在迭代复杂度上的优越性能。
 
 ## 🔬 方法详解
 
@@ -69,7 +69,7 @@ title: Muon is Provably Faster with Momentum Variance Reduction
 
 ## 📊 实验亮点
 
-实验结果显示，所提算法的收敛速率从${	ext{O}}(rac{1}{K^{1/4}})$提升至${	ext{O}}(rac{1}{K^{1/3}})$，在多项数值实验中验证了其在迭代复杂度上的优越性，相较于基线方法表现出显著的性能提升。
+实验结果显示，所提算法的收敛速率从${	ext{O} }(rac{1}{K^{1/4} })$提升至${	ext{O} }(rac{1}{K^{1/3} })$，在多项数值实验中验证了其在迭代复杂度上的优越性，相较于基线方法表现出显著的性能提升。
 
 ## 🎯 应用场景
 
@@ -77,5 +77,5 @@ title: Muon is Provably Faster with Momentum Variance Reduction
 
 ## 📄 摘要（原文）
 
-> Recent empirical research has demonstrated that deep learning optimizers based on the linear minimization oracle (LMO) over specifically chosen Non-Euclidean norm balls, such as Muon and Scion, outperform Adam-type methods in the training of large language models. In this work, we show that such optimizers can be provably improved by replacing their vanilla momentum by momentum variance reduction (MVR). Instead of proposing and analyzing MVR variants of Muon and Scion separately, we incorporate MVR into the recently proposed Gluon framework, which captures Muon, Scion and other specific Non-Euclidean LMO-based methods as special cases, and at the same time works with a more general smoothness assumption which better captures the layer-wise structure of neural networks. In the non-convex case, we incorporate MVR into Gluon in three different ways. All of them improve the convergence rate from ${\cal O} (\frac{1}{K^{1/4}})$ to ${\cal O} (\frac{1}{K^{1/3}})$. Additionally, we provide improved rates in the star-convex case. Finally, we conduct several numerical experiments that verify the superior performance of our proposed algorithms in terms of iteration complexity.
+> Recent empirical research has demonstrated that deep learning optimizers based on the linear minimization oracle (LMO) over specifically chosen Non-Euclidean norm balls, such as Muon and Scion, outperform Adam-type methods in the training of large language models. In this work, we show that such optimizers can be provably improved by replacing their vanilla momentum by momentum variance reduction (MVR). Instead of proposing and analyzing MVR variants of Muon and Scion separately, we incorporate MVR into the recently proposed Gluon framework, which captures Muon, Scion and other specific Non-Euclidean LMO-based methods as special cases, and at the same time works with a more general smoothness assumption which better captures the layer-wise structure of neural networks. In the non-convex case, we incorporate MVR into Gluon in three different ways. All of them improve the convergence rate from ${\cal O} (\frac{1}{K^{1/4} })$ to ${\cal O} (\frac{1}{K^{1/3} })$. Additionally, we provide improved rates in the star-convex case. Finally, we conduct several numerical experiments that verify the superior performance of our proposed algorithms in terms of iteration complexity.
 

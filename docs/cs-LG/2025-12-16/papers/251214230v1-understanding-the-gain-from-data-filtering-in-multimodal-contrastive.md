@@ -39,7 +39,7 @@ title: Understanding the Gain from Data Filtering in Multimodal Contrastive Lear
 
 ## 📝 摘要（中文）
 
-现代多模态表示学习的成功依赖于互联网规模的数据集。然而，由于大量原始网络数据的低质量，数据筛选成为训练流程中的关键步骤。基于教师模型的过滤方法利用预训练模型计算质量评分，已成为一种成功的解决方案。本文通过标准双模态数据生成模型，表征了过滤后的对比学习性能，证明了数据过滤的可行性和有效性。具体而言，未过滤情况下的误差被上下界限为$rac{1}{η	ext{sqrt}{n}}$，而使用教师模型过滤后的误差在大$η$范围内上界为$rac{1}{	ext{sqrt}{ηn}}$，在小$η$范围内上界为$rac{1}{	ext{sqrt}{n}}$。
+现代多模态表示学习的成功依赖于互联网规模的数据集。然而，由于大量原始网络数据的低质量，数据筛选成为训练流程中的关键步骤。基于教师模型的过滤方法利用预训练模型计算质量评分，已成为一种成功的解决方案。本文通过标准双模态数据生成模型，表征了过滤后的对比学习性能，证明了数据过滤的可行性和有效性。具体而言，未过滤情况下的误差被上下界限为$rac{1}{η	ext{sqrt}{n} }$，而使用教师模型过滤后的误差在大$η$范围内上界为$rac{1}{	ext{sqrt}{ηn} }$，在小$η$范围内上界为$rac{1}{	ext{sqrt}{n} }$。
 
 ## 🔬 方法详解
 
@@ -69,7 +69,7 @@ title: Understanding the Gain from Data Filtering in Multimodal Contrastive Lear
 
 ## 📊 实验亮点
 
-实验结果显示，使用教师模型过滤后，模型的误差在大$η$范围内上界为$rac{1}{	ext{sqrt}{ηn}}$，在小$η$范围内上界为$rac{1}{	ext{sqrt}{n}}$，相较于未过滤情况下的误差$rac{1}{η	ext{sqrt}{n}}$，显著降低了模型的误差，验证了数据过滤的有效性。
+实验结果显示，使用教师模型过滤后，模型的误差在大$η$范围内上界为$rac{1}{	ext{sqrt}{ηn} }$，在小$η$范围内上界为$rac{1}{	ext{sqrt}{n} }$，相较于未过滤情况下的误差$rac{1}{η	ext{sqrt}{n} }$，显著降低了模型的误差，验证了数据过滤的有效性。
 
 ## 🎯 应用场景
 
@@ -77,5 +77,5 @@ title: Understanding the Gain from Data Filtering in Multimodal Contrastive Lear
 
 ## 📄 摘要（原文）
 
-> The success of modern multimodal representation learning relies on internet-scale datasets. Due to the low quality of a large fraction of raw web data, data curation has become a critical step in the training pipeline. Filtering using a trained model (i.e., teacher-based filtering) has emerged as a successful solution, leveraging a pre-trained model to compute quality scores. To explain the empirical success of teacher-based filtering, we characterize the performance of filtered contrastive learning under the standard bimodal data generation model. Denoting $η\in(0,1]$ as the fraction of data with correctly matched modalities among $n$ paired samples, we utilize a linear contrastive learning setup to show a provable benefit of data filtering: $(i)$ the error without filtering is upper and lower bounded by $\frac{1}{η\sqrt{n}}$, and $(ii)$ the error with teacher-based filtering is upper bounded by $\frac{1}{\sqrt{ηn}}$ in the large $η$ regime, and by $\frac{1}{\sqrt{n}}$ in the small $η$ regime.
+> The success of modern multimodal representation learning relies on internet-scale datasets. Due to the low quality of a large fraction of raw web data, data curation has become a critical step in the training pipeline. Filtering using a trained model (i.e., teacher-based filtering) has emerged as a successful solution, leveraging a pre-trained model to compute quality scores. To explain the empirical success of teacher-based filtering, we characterize the performance of filtered contrastive learning under the standard bimodal data generation model. Denoting $η\in(0,1]$ as the fraction of data with correctly matched modalities among $n$ paired samples, we utilize a linear contrastive learning setup to show a provable benefit of data filtering: $(i)$ the error without filtering is upper and lower bounded by $\frac{1}{η\sqrt{n} }$, and $(ii)$ the error with teacher-based filtering is upper bounded by $\frac{1}{\sqrt{ηn} }$ in the large $η$ regime, and by $\frac{1}{\sqrt{n} }$ in the small $η$ regime.
 

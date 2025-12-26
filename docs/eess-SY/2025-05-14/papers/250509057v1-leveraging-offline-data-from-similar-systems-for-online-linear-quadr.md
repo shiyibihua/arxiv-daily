@@ -37,7 +37,7 @@ title: Leveraging Offline Data from Similar Systems for Online Linear Quadratic 
 
 ## 📝 摘要（中文）
 
-在本研究中，我们探讨了“Sim2real差距”对线性二次调节器（LQR）控制器稳定性和性能的影响。针对具有未知系统矩阵的LQR问题，我们提出了一种新算法，该算法结合了来自不同未知系统的状态-动作对的轨迹数据。通过利用Thompson采样，我们的方法不仅考虑了系统动态的均值，还考虑了不确定性。我们证明该算法在经过T个时间步后能够实现$	ilde{	ext{O}}({f(S,M_δ)	ext{sqrt}{T/S}})$的贝叶斯遗憾，当系统之间的差异性$M_δ$足够小的时候，算法的表现优于不利用轨迹的简单策略。
+在本研究中，我们探讨了“Sim2real差距”对线性二次调节器（LQR）控制器稳定性和性能的影响。针对具有未知系统矩阵的LQR问题，我们提出了一种新算法，该算法结合了来自不同未知系统的状态-动作对的轨迹数据。通过利用Thompson采样，我们的方法不仅考虑了系统动态的均值，还考虑了不确定性。我们证明该算法在经过T个时间步后能够实现$	ilde{	ext{O} }({f(S,M_δ)	ext{sqrt}{T/S} })$的贝叶斯遗憾，当系统之间的差异性$M_δ$足够小的时候，算法的表现优于不利用轨迹的简单策略。
 
 ## 🔬 方法详解
 
@@ -53,7 +53,7 @@ title: Leveraging Offline Data from Similar Systems for Online Linear Quadratic 
 
 ## 📊 实验亮点
 
-实验结果显示，所提算法在系统差异性较小的情况下，能够实现$	ilde{	ext{O}}({	ext{sqrt}{T/S}})$的贝叶斯遗憾，相比于不利用轨迹的简单策略，性能提升显著，验证了算法的有效性和优越性。
+实验结果显示，所提算法在系统差异性较小的情况下，能够实现$	ilde{	ext{O} }({	ext{sqrt}{T/S} })$的贝叶斯遗憾，相比于不利用轨迹的简单策略，性能提升显著，验证了算法的有效性和优越性。
 
 ## 🎯 应用场景
 
@@ -61,5 +61,5 @@ title: Leveraging Offline Data from Similar Systems for Online Linear Quadratic 
 
 ## 📄 摘要（原文）
 
-> ``Sim2real gap", in which the system learned in simulations is not the exact representation of the real system, can lead to loss of stability and performance when controllers learned using data from the simulated system are used on the real system. In this work, we address this challenge in the linear quadratic regulator (LQR) setting. Specifically, we consider an LQR problem for a system with unknown system matrices. Along with the state-action pairs from the system to be controlled, a trajectory of length $S$ of state-action pairs from a different unknown system is available. Our proposed algorithm is constructed upon Thompson sampling and utilizes the mean as well as the uncertainty of the dynamics of the system from which the trajectory of length $S$ is obtained. We establish that the algorithm achieves $\tilde{\mathcal{O}}({f(S,M_δ)\sqrt{T/S}})$ Bayes regret after $T$ time steps, where $M_δ$ characterizes the \emph{dissimilarity} between the two systems and $f(S,M_δ)$ is a function of $S$ and $M_δ$. When $M_δ$ is sufficiently small, the proposed algorithm achieves $\tilde{\mathcal{O}}({\sqrt{T/S}})$ Bayes regret and outperforms a naive strategy which does not utilize the available trajectory.
+> ``Sim2real gap", in which the system learned in simulations is not the exact representation of the real system, can lead to loss of stability and performance when controllers learned using data from the simulated system are used on the real system. In this work, we address this challenge in the linear quadratic regulator (LQR) setting. Specifically, we consider an LQR problem for a system with unknown system matrices. Along with the state-action pairs from the system to be controlled, a trajectory of length $S$ of state-action pairs from a different unknown system is available. Our proposed algorithm is constructed upon Thompson sampling and utilizes the mean as well as the uncertainty of the dynamics of the system from which the trajectory of length $S$ is obtained. We establish that the algorithm achieves $\tilde{\mathcal{O} }({f(S,M_δ)\sqrt{T/S} })$ Bayes regret after $T$ time steps, where $M_δ$ characterizes the \emph{dissimilarity} between the two systems and $f(S,M_δ)$ is a function of $S$ and $M_δ$. When $M_δ$ is sufficiently small, the proposed algorithm achieves $\tilde{\mathcal{O} }({\sqrt{T/S} })$ Bayes regret and outperforms a naive strategy which does not utilize the available trajectory.
 

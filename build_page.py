@@ -21,7 +21,15 @@ def ensure_dir(p: Path):
     p.mkdir(parents=True, exist_ok=True)
 
 def md_escape(s: str) -> str:
-    return s.replace("|", r"\|")
+    """转义 Markdown 和 Liquid 特殊字符"""
+    s = s.replace("|", r"\|")
+    # 转义 Liquid 模板语法，避免 Jekyll 解析错误
+    # {% ... %} 是 Liquid 标签，{{ ... }} 是 Liquid 变量
+    s = s.replace("{%", "{ %")
+    s = s.replace("%}", "% }")
+    s = s.replace("{{", "{ {")
+    s = s.replace("}}", "} }")
+    return s
 
 def yaml_escape_title(s: str) -> str:
     """转义 YAML front matter 中的标题，确保特殊字符被正确处理"""
