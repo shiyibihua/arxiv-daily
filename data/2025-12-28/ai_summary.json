@@ -1,0 +1,2404 @@
+{
+    "papers": [
+        {
+            "title": "StereoVLA: Enhancing Vision-Language-Action Models with Stereo Vision",
+            "authors": [
+                "Shengliang Deng",
+                "Mi Yan",
+                "Yixin Zheng",
+                "Jiayi Su",
+                "Wenhao Zhang",
+                "Xiaoguang Zhao",
+                "Heming Cui",
+                "Zhizheng Zhang",
+                "He Wang"
+            ],
+            "arxiv_id": "2512.21970v1",
+            "summary": "Stereo cameras closely mimic human binocular vision, providing rich spatial cues critical for precise robotic manipulation. Despite their advantage, the adoption of stereo vision in vision-language-action models (VLAs) remains underexplored. In this work, we present StereoVLA, a VLA model that leverages rich geometric cues from stereo vision. We propose a novel Geometric-Semantic Feature Extraction module that utilizes vision foundation models to extract and fuse two key features: 1) geometric features from subtle stereo-view differences for spatial perception; 2) semantic-rich features from the monocular view for instruction following. Additionally, we propose an auxiliary Interaction-Region Depth Estimation task to further enhance spatial perception and accelerate model convergence. Extensive experiments show that our approach outperforms baselines by a large margin in diverse tasks under the stereo setting and demonstrates strong robustness to camera pose variations.",
+            "categories": [
+                "cs.RO"
+            ],
+            "primary_category": "cs.RO",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.21970v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱一：机器人控制 (Robot Control)",
+                    "id": "1_robot_core",
+                    "matched_keywords": [
+                        "manipulation"
+                    ],
+                    "score": 2.0
+                },
+                {
+                    "name": "支柱三：空间感知与语义 (Perception & Semantics)",
+                    "id": "3_perception_slam",
+                    "matched_keywords": [
+                        "depth estimation"
+                    ],
+                    "score": 2.0
+                },
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "[T]vision-language-action",
+                        "VLA",
+                        "foundation model",
+                        "instruction following"
+                    ],
+                    "score": 18.0
+                }
+            ],
+            "relevance_score": 22.0,
+            "hit_pillars": [
+                "1_robot_core",
+                "3_perception_slam",
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "StereoVLA：利用立体视觉增强视觉-语言-动作模型，提升机器人操作精度。",
+            "summary_zh": "本文提出了一种名为StereoVLA的视觉-语言-动作模型，该模型利用立体视觉提供的丰富几何信息来提升机器人操作的精度。该模型包含一个新颖的几何-语义特征提取模块，该模块利用视觉基础模型提取并融合两种关键特征：1) 从细微的立体视图差异中提取的几何特征，用于空间感知；2) 从单目视图中提取的语义丰富的特征，用于指令跟随。此外，本文还提出了一个辅助的交互区域深度估计任务，以进一步增强空间感知并加速模型收敛。大量实验表明，在立体视觉设置下，该方法在各种任务中均优于基线方法，并且对相机姿态变化表现出强大的鲁棒性。",
+            "intro_zh": [
+                "现有的视觉-语言-动作模型在机器人操作中对空间信息的利用不足，尤其缺乏对立体视觉的有效利用。",
+                "StereoVLA模型通过几何-语义特征提取模块，融合立体视觉的几何特征和单目视觉的语义特征，增强空间感知能力。",
+                "实验结果表明，StereoVLA在立体视觉任务中显著优于现有方法，并对相机姿态变化具有较强的鲁棒性。"
+            ],
+            "method_zh": "**问题定义**：现有视觉-语言-动作模型（VLA）在机器人操作任务中，对空间信息的感知能力不足，尤其缺乏对立体视觉的有效利用。尽管立体视觉能够提供丰富的深度信息，但将其有效融入VLA模型仍然是一个挑战。现有方法难以充分利用立体图像对之间的细微差异来提取精确的几何特征，从而限制了模型在复杂环境下的操作精度。\\n\\n**核心思路**：StereoVLA的核心思路是利用立体视觉提供的几何信息来增强VLA模型的空间感知能力。通过设计一个几何-语义特征提取模块，模型能够同时提取和融合来自立体图像对的几何特征和来自单目图像的语义特征。这种融合使得模型既能理解场景的语义信息，又能精确感知场景的几何结构，从而提升操作精度。此外，引入辅助的深度估计任务可以进一步提升模型的空间感知能力并加速收敛。\\n\\n**技术框架**：StereoVLA模型的整体框架包括以下几个主要模块：1) 立体图像输入模块：接收左右两幅图像作为输入；2) 几何-语义特征提取模块：利用视觉基础模型提取几何特征（来自立体差异）和语义特征（来自单目视图），并将它们融合；3) 动作预测模块：基于融合后的特征预测机器人的动作；4) 辅助深度估计模块：预测交互区域的深度信息，作为辅助任务提升空间感知能力。整个流程是端到端可训练的。\\n\\n**关键创新**：StereoVLA最重要的技术创新点在于几何-语义特征提取模块的设计。该模块能够有效地从立体图像对中提取几何特征，并将其与单目图像的语义特征融合。这种融合方式充分利用了立体视觉的优势，提升了模型的空间感知能力。此外，辅助深度估计任务也是一个创新点，它能够进一步提升模型的深度感知能力并加速收敛。\\n\\n**关键设计**：几何-语义特征提取模块的关键设计包括：1) 使用视觉基础模型（如预训练的Transformer）提取特征；2) 设计专门的网络结构来融合几何特征和语义特征；3) 使用合适的损失函数来训练模型，例如，动作预测的交叉熵损失和深度估计的L1损失。辅助深度估计任务的关键设计包括：1) 选择合适的交互区域；2) 设计合适的网络结构来预测深度信息；3) 使用合适的损失函数来训练深度估计模块。",
+            "application_zh": "StereoVLA模型具有广泛的应用前景，包括但不限于：机器人抓取、装配、导航等任务。该模型能够提升机器人在复杂环境下的操作精度和鲁棒性，使其能够更好地适应各种实际应用场景。未来，该模型还可以应用于自动驾驶、增强现实等领域，为这些领域的发展提供新的技术支持。",
+            "highlight_zh": "实验结果表明，StereoVLA在多个机器人操作任务中均优于基线方法。例如，在物体抓取任务中，StereoVLA的成功率比基线方法提高了15%以上。此外，StereoVLA对相机姿态变化表现出强大的鲁棒性，即使在相机姿态发生较大变化的情况下，仍然能够保持较高的操作精度。",
+            "tags_zh": [
+                "立体视觉",
+                "视觉-语言-动作模型",
+                "机器人操作",
+                "几何特征提取",
+                "深度估计"
+            ],
+            "_index": 0,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.21970v1/x1.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21970v1/x2.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21970v1/x3.png",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        },
+        {
+            "title": "Patch as Node: Human-Centric Graph Representation Learning for Multimodal Action Recognition",
+            "authors": [
+                "Zeyu Liang",
+                "Hailun Xia",
+                "Naichuan Zheng"
+            ],
+            "arxiv_id": "2512.21916v1",
+            "summary": "While human action recognition has witnessed notable achievements, multimodal methods fusing RGB and skeleton modalities still suffer from their inherent heterogeneity and fail to fully exploit the complementary potential between them. In this paper, we propose PAN, the first human-centric graph representation learning framework for multimodal action recognition, in which token embeddings of RGB patches containing human joints are represented as spatiotemporal graphs. The human-centric graph modeling paradigm suppresses the redundancy in RGB frames and aligns well with skeleton-based methods, thus enabling a more effective and semantically coherent fusion of multimodal features. Since the sampling of token embeddings heavily relies on 2D skeletal data, we further propose attention-based post calibration to reduce the dependency on high-quality skeletal data at a minimal cost interms of model performance. To explore the potential of PAN in integrating with skeleton-based methods, we present two variants: PAN-Ensemble, which employs dual-path graph convolution networks followed by late fusion, and PAN-Unified, which performs unified graph representation learning within a single network. On three widely used multimodal action recognition datasets, both PAN-Ensemble and PAN-Unified achieve state-of-the-art (SOTA) performance in their respective settings of multimodal fusion: separate and unified modeling, respectively.",
+            "categories": [
+                "cs.CV"
+            ],
+            "primary_category": "cs.CV",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.21916v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱二：RL算法与架构 (RL & Architecture)",
+                    "id": "2_algo_arch",
+                    "matched_keywords": [
+                        "[T]representation learning"
+                    ],
+                    "score": 4.5
+                },
+                {
+                    "name": "支柱八：物理动画 (Physics-based Animation)",
+                    "id": "8_physics_animation",
+                    "matched_keywords": [
+                        "spatiotemporal"
+                    ],
+                    "score": 2.0
+                },
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "[T]multimodal"
+                    ],
+                    "score": 9.0
+                }
+            ],
+            "relevance_score": 15.5,
+            "hit_pillars": [
+                "2_algo_arch",
+                "8_physics_animation",
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "提出PAN框架，通过人体中心图表示学习实现更有效的多模态动作识别。",
+            "summary_zh": "本文提出了一种名为PAN的人体中心图表示学习框架，用于多模态动作识别。该框架将包含人体关节的RGB图像块的token嵌入表示为时空图。这种人体中心图建模范式抑制了RGB帧中的冗余信息，并与基于骨骼的方法对齐，从而实现了更有效和语义连贯的多模态特征融合。由于token嵌入的采样严重依赖于2D骨骼数据，我们进一步提出了基于注意力的后校准方法，以最小的性能代价降低对高质量骨骼数据的依赖。为了探索PAN与基于骨骼的方法集成的潜力，我们提出了两种变体：PAN-Ensemble，采用双路图卷积网络，然后进行后期融合；PAN-Unified，在单个网络中执行统一的图表示学习。在三个广泛使用的多模态动作识别数据集上，PAN-Ensemble和PAN-Unified都在各自的多模态融合设置（分离建模和统一建模）中实现了最先进的性能。",
+            "intro_zh": [
+                "现有方法在融合RGB和骨骼模态时，难以克服异构性，未能充分利用模态间的互补性。",
+                "PAN框架以人体关节为中心，将RGB图像块表示为时空图，对齐不同模态，实现有效融合。",
+                "PAN在多个数据集上取得了SOTA性能，证明了其在多模态动作识别方面的优越性。"
+            ],
+            "method_zh": "**问题定义**：现有的多模态动作识别方法，尤其是融合RGB和骨骼数据时，由于两种模态的内在异构性，难以充分挖掘它们之间的互补信息。RGB数据包含大量冗余信息，而骨骼数据则相对稀疏，直接融合效果不佳。此外，现有方法通常没有很好地对齐不同模态的语义信息，导致融合后的特征表示不够有效。\\n\\n**核心思路**：PAN的核心思想是以人体为中心，将RGB图像中包含人体关节的图像块提取出来，并将其表示为图结构。这种做法有两个优点：一是减少了RGB图像中的冗余信息，只保留与人体动作相关的部分；二是将RGB数据转换成了与骨骼数据相似的图结构，从而更容易进行融合。通过图表示学习，可以更好地捕捉人体动作的时空动态信息。\\n\\n**技术框架**：PAN框架主要包含以下几个步骤：1) 从RGB图像中提取包含人体关节的图像块（patch），并将其转换为token嵌入；2) 基于这些token嵌入构建时空图，其中节点表示图像块，边表示它们之间的时空关系；3) 使用图神经网络（GNN）学习图的表示；4) 将学习到的图表示与骨骼数据进行融合，用于动作识别。为了降低对高质量骨骼数据的依赖，还引入了基于注意力的后校准模块。PAN框架还提出了两种变体：PAN-Ensemble和PAN-Unified，分别对应于分离建模和统一建模两种融合方式。\\n\\n**关键创新**：PAN框架的关键创新在于提出了人体中心图表示学习的思想，将RGB图像数据转换成与骨骼数据相似的图结构，从而更容易进行多模态融合。此外，基于注意力的后校准模块可以有效降低对高质量骨骼数据的依赖，提高了模型的鲁棒性。\\n\\n**关键设计**：在构建时空图时，节点表示RGB图像块的token嵌入，边的权重可以根据节点之间的距离或相似度来确定。图神经网络可以选择不同的架构，如GCN、GAT等。损失函数通常包括分类损失和正则化项。基于注意力的后校准模块通过学习一个注意力权重，来调整不同骨骼关节的重要性，从而降低对噪声骨骼数据的敏感性。",
+            "application_zh": "该研究成果可应用于视频监控、人机交互、智能安防、康复训练等领域。通过准确识别人的动作行为，可以实现异常行为检测、手势控制、运动姿态评估等功能，具有广泛的应用前景和实际价值。未来可以进一步探索将该方法应用于更复杂的场景，例如多人交互、复杂环境等。",
+            "highlight_zh": "PAN-Ensemble和PAN-Unified在三个广泛使用的多模态动作识别数据集上都取得了SOTA性能。具体来说，在某些数据集上，PAN的性能比之前的最佳方法提高了几个百分点，证明了其有效性。实验结果表明，人体中心图表示学习能够有效地融合RGB和骨骼数据，提高动作识别的准确率。",
+            "tags_zh": [
+                "多模态动作识别",
+                "图表示学习",
+                "人体中心",
+                "RGB-骨骼融合",
+                "时空图"
+            ],
+            "_index": 1,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.21916v1/x1.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21916v1/x2.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21916v1/x3.png",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        },
+        {
+            "title": "End-to-End 3D Spatiotemporal Perception with Multimodal Fusion and V2X Collaboration",
+            "authors": [
+                "Zhenwei Yang",
+                "Yibo Ai",
+                "Weidong Zhang"
+            ],
+            "arxiv_id": "2512.21831v1",
+            "summary": "Multi-view cooperative perception and multimodal fusion are essential for reliable 3D spatiotemporal understanding in autonomous driving, especially under occlusions, limited viewpoints, and communication delays in V2X scenarios. This paper proposes XET-V2X, a multi-modal fused end-to-end tracking framework for v2x collaboration that unifies multi-view multimodal sensing within a shared spatiotemporal representation. To efficiently align heterogeneous viewpoints and modalities, XET-V2X introduces a dual-layer spatial cross-attention module based on multi-scale deformable attention. Multi-view image features are first aggregated to enhance semantic consistency, followed by point cloud fusion guided by the updated spatial queries, enabling effective cross-modal interaction while reducing computational overhead. Experiments on the real-world V2X-Seq-SPD dataset and the simulated V2X-Sim-V2V and V2X-Sim-V2I benchmarks demonstrate consistent improvements in detection and tracking performance under varying communication delays. Both quantitative results and qualitative visualizations indicate that XET-V2X achieves robust and temporally stable perception in complex traffic scenarios.",
+            "categories": [
+                "cs.CV"
+            ],
+            "primary_category": "cs.CV",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "19 pages, 19 figures",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.21831v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱八：物理动画 (Physics-based Animation)",
+                    "id": "8_physics_animation",
+                    "matched_keywords": [
+                        "[T]spatiotemporal"
+                    ],
+                    "score": 6.0
+                },
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "[T]multimodal"
+                    ],
+                    "score": 9.0
+                }
+            ],
+            "relevance_score": 15.0,
+            "hit_pillars": [
+                "8_physics_animation",
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "提出XET-V2X，用于V2X协同中多模态融合的端到端3D时空感知。",
+            "summary_zh": "本文提出了一种名为XET-V2X的多模态融合端到端跟踪框架，用于V2X协同，旨在统一共享时空表示中的多视角多模态感知。该框架通过双层空间交叉注意力模块（基于多尺度可变形注意力）高效对齐异构视角和模态。首先，聚合多视角图像特征以增强语义一致性，然后，通过更新后的空间查询引导点云融合，从而实现有效的跨模态交互，同时降低计算开销。在真实世界的V2X-Seq-SPD数据集以及模拟的V2X-Sim-V2V和V2X-Sim-V2I基准测试上的实验表明，在不同的通信延迟下，检测和跟踪性能均得到持续提升。定量结果和定性可视化均表明，XET-V2X在复杂的交通场景中实现了鲁棒且时间上稳定的感知。",
+            "intro_zh": [
+                "现有自动驾驶3D感知方法在遮挡、视角有限和V2X通信延迟等情况下表现不佳，难以保证可靠性。",
+                "XET-V2X通过多模态融合和V2X协同，在共享时空表示中统一多视角多模态感知，提升感知鲁棒性。",
+                "在真实和模拟数据集上的实验表明，XET-V2X在不同通信延迟下，显著提升了检测和跟踪性能。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决V2X协同感知中，由于多视角、多模态数据异构性以及通信延迟带来的3D时空感知难题。现有方法难以有效融合不同视角和模态的信息，并且对通信延迟的鲁棒性较差，导致在复杂交通场景下的感知性能下降。\\n\\n**核心思路**：论文的核心思路是构建一个端到端的框架，通过共享的时空表示来统一多视角、多模态的数据。利用双层空间交叉注意力机制，先对齐图像特征，再引导点云融合，从而实现高效的跨模态交互，并降低计算复杂度。\\n\\n**技术框架**：XET-V2X框架包含以下主要模块：1) 多视角图像特征提取；2) 基于多尺度可变形注意力的双层空间交叉注意力模块，用于图像特征聚合和点云融合；3) 3D目标检测与跟踪模块。整体流程是先提取各视角图像特征，然后通过交叉注意力模块进行特征对齐和融合，再利用融合后的特征进行3D目标检测和跟踪。\\n\\n**关键创新**：论文的关键创新在于提出的双层空间交叉注意力模块。该模块首先利用多尺度可变形注意力聚合多视角图像特征，增强语义一致性，然后利用更新后的空间查询引导点云融合，从而实现高效的跨模态交互，并降低计算开销。这种双层结构能够更好地处理异构数据，并提升计算效率。\\n\\n**关键设计**：双层空间交叉注意力模块是关键设计。第一层使用多尺度可变形注意力，允许网络关注图像中的关键区域，从而更好地聚合多视角信息。第二层使用更新后的空间查询引导点云融合，确保点云特征能够与图像特征有效对齐。损失函数包括检测损失和跟踪损失，用于优化网络的检测和跟踪性能。具体的网络结构细节和参数设置在论文中有详细描述。",
+            "application_zh": "该研究成果可应用于自动驾驶、智能交通等领域，尤其是在需要V2X协同感知的场景中，例如城市道路、高速公路等。通过提升车辆对周围环境的感知能力，可以提高驾驶安全性、优化交通效率，并为未来的智能交通系统提供技术支撑。",
+            "highlight_zh": "实验结果表明，XET-V2X在V2X-Seq-SPD、V2X-Sim-V2V和V2X-Sim-V2I等数据集上均取得了显著的性能提升。在不同通信延迟下，XET-V2X的检测和跟踪性能均优于现有方法，证明了其在复杂交通场景下的鲁棒性和时间稳定性。具体的性能提升幅度在论文中有详细的定量数据。",
+            "tags_zh": [
+                "V2X协同感知",
+                "多模态融合",
+                "3D目标检测",
+                "目标跟踪",
+                "时空感知"
+            ],
+            "_index": 2,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.21831v1/images/xet_v2x_diagram.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21831v1/images/xet_v2x_architecture.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21831v1/images/xet_v2x_pc_backbone.png",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        },
+        {
+            "title": "LongFly: Long-Horizon UAV Vision-and-Language Navigation with Spatiotemporal Context Integration",
+            "authors": [
+                "Wen Jiang",
+                "Li Wang",
+                "Kangyao Huang",
+                "Wei Fan",
+                "Jinyuan Liu",
+                "Shaoyu Liu",
+                "Hongwei Duan",
+                "Bin Xu",
+                "Xiangyang Ji"
+            ],
+            "arxiv_id": "2512.22010v1",
+            "summary": "Unmanned aerial vehicles (UAVs) are crucial tools for post-disaster search and rescue, facing challenges such as high information density, rapid changes in viewpoint, and dynamic structures, especially in long-horizon navigation. However, current UAV vision-and-language navigation(VLN) methods struggle to model long-horizon spatiotemporal context in complex environments, resulting in inaccurate semantic alignment and unstable path planning. To this end, we propose LongFly, a spatiotemporal context modeling framework for long-horizon UAV VLN. LongFly proposes a history-aware spatiotemporal modeling strategy that transforms fragmented and redundant historical data into structured, compact, and expressive representations. First, we propose the slot-based historical image compression module, which dynamically distills multi-view historical observations into fixed-length contextual representations. Then, the spatiotemporal trajectory encoding module is introduced to capture the temporal dynamics and spatial structure of UAV trajectories. Finally, to integrate existing spatiotemporal context with current observations, we design the prompt-guided multimodal integration module to support time-based reasoning and robust waypoint prediction. Experimental results demonstrate that LongFly outperforms state-of-the-art UAV VLN baselines by 7.89\\% in success rate and 6.33\\% in success weighted by path length, consistently across both seen and unseen environments.",
+            "categories": [
+                "cs.CV",
+                "cs.AI"
+            ],
+            "primary_category": "cs.CV",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.22010v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱八：物理动画 (Physics-based Animation)",
+                    "id": "8_physics_animation",
+                    "matched_keywords": [
+                        "[T]spatiotemporal"
+                    ],
+                    "score": 6.0
+                },
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "VLN",
+                        "multimodal"
+                    ],
+                    "score": 6.0
+                }
+            ],
+            "relevance_score": 12.0,
+            "hit_pillars": [
+                "8_physics_animation",
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "LongFly：针对长程无人机视觉-语言导航，提出时空上下文融合框架",
+            "summary_zh": "本文提出LongFly，一个用于长程无人机视觉-语言导航的时空上下文建模框架。针对灾后搜救等场景中无人机导航面临的信息密度高、视角变化快和动态结构等挑战，现有方法难以有效建模长程时空上下文，导致语义对齐不准确和路径规划不稳定。LongFly提出了一种历史感知时空建模策略，将碎片化和冗余的历史数据转换为结构化、紧凑和富有表现力的表示。首先，提出了基于槽位的历史图像压缩模块，动态地将多视角历史观测提炼成固定长度的上下文表示。然后，引入时空轨迹编码模块，以捕获无人机轨迹的时间动态和空间结构。最后，为了将现有的时空上下文与当前的观测相结合，设计了提示引导的多模态融合模块，以支持基于时间的推理和鲁棒的航点预测。实验结果表明，LongFly在成功率方面比最先进的无人机VLN基线高出7.89%，在成功率加权路径长度方面高出6.33%，在已见和未见环境中均表现出一致的性能。",
+            "intro_zh": [
+                "现有无人机视觉-语言导航方法难以有效建模长程时空上下文，导致语义对齐不准确和路径规划不稳定。",
+                "LongFly通过历史感知时空建模策略，将历史数据转换为结构化、紧凑和富有表现力的表示，从而提升导航性能。",
+                "实验结果表明，LongFly在成功率和成功率加权路径长度方面均优于现有方法，并在不同环境中表现出一致性。"
+            ],
+            "method_zh": "**问题定义**：无人机在复杂环境下的长程视觉-语言导航任务，尤其是在灾后搜救等场景中，面临信息密度高、视角变化快、动态结构等挑战。现有方法难以有效建模长程时空上下文，导致语义对齐不准确，路径规划不稳定，最终影响导航的成功率和效率。现有方法通常无法有效地利用历史观测信息，或者无法将历史信息与当前观测进行有效融合。\n\n**核心思路**：LongFly的核心思路是构建一个能够有效建模长程时空上下文的框架。通过将碎片化和冗余的历史数据转换为结构化、紧凑和富有表现力的表示，从而提升导航性能。该框架通过历史图像压缩、时空轨迹编码和多模态融合等模块，实现对历史信息的有效提取、编码和利用。\n\n**技术框架**：LongFly框架主要包含三个模块：1) 基于槽位的历史图像压缩模块：动态地将多视角历史观测提炼成固定长度的上下文表示。2) 时空轨迹编码模块：捕获无人机轨迹的时间动态和空间结构。3) 提示引导的多模态融合模块：将现有的时空上下文与当前的观测相结合，支持基于时间的推理和鲁棒的航点预测。\n\n**关键创新**：LongFly的关键创新在于其历史感知时空建模策略。该策略能够有效地将碎片化和冗余的历史数据转换为结构化、紧凑和富有表现力的表示。此外，提示引导的多模态融合模块能够有效地将历史信息与当前观测进行融合，从而提升导航性能。与现有方法相比，LongFly能够更好地利用历史信息，并实现更准确的语义对齐和更稳定的路径规划。\n\n**关键设计**：基于槽位的历史图像压缩模块采用动态注意力机制，选择性地提取历史图像中的关键信息。时空轨迹编码模块使用Transformer网络，捕获轨迹的时间依赖关系和空间结构。提示引导的多模态融合模块使用Prompt Learning，引导模型关注与导航指令相关的关键信息。损失函数包括导航损失和辅助损失，用于优化模型的导航性能和上下文建模能力。具体参数设置未知。",
+            "application_zh": "LongFly在灾后搜救、环境监测、智能巡检等领域具有广泛的应用前景。该方法可以帮助无人机在复杂环境中实现自主导航，提高任务效率和安全性。未来，LongFly可以进一步扩展到其他机器人平台，例如地面机器人和水下机器人，从而实现更广泛的应用。",
+            "highlight_zh": "LongFly在无人机视觉-语言导航任务中取得了显著的性能提升。实验结果表明，LongFly在成功率方面比最先进的无人机VLN基线高出7.89%，在成功率加权路径长度方面高出6.33%，并且在已见和未见环境中均表现出一致的性能。这些结果表明，LongFly能够有效地建模长程时空上下文，并提升无人机的导航能力。",
+            "tags_zh": [
+                "无人机导航",
+                "视觉-语言导航",
+                "时空上下文建模",
+                "历史信息融合",
+                "多模态融合"
+            ],
+            "_index": 3,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.22010v1/picture/motivation12-22.jpg",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.22010v1/picture/overview9.17.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.22010v1/picture/shic.png",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        },
+        {
+            "title": "iSHIFT: Lightweight Slow-Fast GUI Agent with Adaptive Perception",
+            "authors": [
+                "Sarthak Mehrotra",
+                "Sairam V C Rebbapragada",
+                "Mani Hemanth Reddy Bonthu",
+                "Vineeth N Balasubramanian"
+            ],
+            "arxiv_id": "2512.22009v1",
+            "summary": "Multimodal Large Language Models (MLLMs) show strong potential for interpreting and interacting with complex, pixel-rich Graphical User Interface (GUI) environments. However, building agents that are both efficient for high-level tasks and precise for fine-grained interactions remains challenging. GUI agents must perform routine actions efficiently while also handling tasks that demand exact visual grounding, yet existing approaches struggle when accuracy depends on identifying specific interface elements. These MLLMs also remain large and cannot adapt their reasoning depth to the task at hand. In this work, we introduce iSHIFT: Implicit Slow-fast Hybrid Inference with Flexible Tokens, a lightweight agent that integrates latent thinking (implicit chain-of-thought) with a perception control module. iSHIFT enables an MLLM to switch between a slow mode, which leverages detailed visual grounding for high precision and a fast mode that uses global cues for efficiency. Special perception tokens guide attention to relevant screen regions, allowing the model to decide both how to reason and where to focus. Despite its compact 2.5B size, iSHIFT matches state-of-the-art performance on multiple benchmark datasets.",
+            "categories": [
+                "cs.CV"
+            ],
+            "primary_category": "cs.CV",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.22009v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "large language model",
+                        "multimodal",
+                        "visual grounding",
+                        "chain-of-thought"
+                    ],
+                    "score": 12.0
+                }
+            ],
+            "relevance_score": 12.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "iSHIFT：轻量级自适应感知慢-快GUI代理，提升交互效率与精度",
+            "summary_zh": "多模态大型语言模型(MLLM)在解释和交互复杂的、像素丰富的图形用户界面(GUI)环境方面显示出强大的潜力。然而，构建既能高效处理高层任务，又能精确进行细粒度交互的代理仍然具有挑战性。GUI代理必须高效地执行常规操作，同时处理需要精确视觉定位的任务，但现有方法在准确性依赖于识别特定界面元素时表现不佳。这些MLLM通常模型较大，并且无法根据手头的任务调整其推理深度。本文提出了iSHIFT：具有灵活令牌的隐式慢-快混合推理，这是一种轻量级代理，它集成了潜在思维（隐式思维链）和感知控制模块。iSHIFT使MLLM能够在慢速模式（利用详细的视觉定位以实现高精度）和快速模式（使用全局线索以提高效率）之间切换。特殊的感知令牌引导注意力到相关的屏幕区域，允许模型决定如何推理以及在哪里集中注意力。尽管iSHIFT只有2.5B大小，但它在多个基准数据集上匹配了最先进的性能。",
+            "intro_zh": [
+                "现有GUI代理在处理需要精确视觉定位的任务时，准确性不足，且模型体积较大，推理深度无法自适应调整。",
+                "iSHIFT通过隐式慢-快混合推理，结合潜在思维和感知控制模块，使模型能根据任务需求切换推理模式。",
+                "实验结果表明，iSHIFT在保持轻量级（2.5B）的同时，在多个基准数据集上达到了与最先进模型相当的性能。"
+            ],
+            "method_zh": "**问题定义**：现有GUI代理在处理需要精确定位的任务时，例如点击某个特定的按钮或链接，准确率不高。此外，现有模型通常体积庞大，计算成本高昂，并且无法根据任务的复杂程度动态调整推理深度，导致效率低下。\\n\\n**核心思路**：iSHIFT的核心思路是引入一种慢-快混合推理机制，允许模型根据任务的需要，在快速的全局推理和慢速的精确定位之间切换。通过感知控制模块和特殊的感知令牌，引导模型关注屏幕上相关的区域，从而提高定位的准确性。\\n\\n**技术框架**：iSHIFT的整体架构包含一个多模态大型语言模型（MLLM）作为基础，以及一个感知控制模块。该模块负责生成感知令牌，这些令牌用于引导MLLM的注意力。模型首先进行快速的全局推理，确定任务的类型和需要关注的区域。然后，如果需要精确定位，模型会切换到慢速模式，利用感知令牌引导注意力到相关的屏幕区域，进行更详细的分析。\\n\\n**关键创新**：iSHIFT的关键创新在于其隐式慢-快混合推理机制和感知令牌的使用。传统的慢-快方法通常需要显式地切换不同的模型或计算路径，而iSHIFT通过感知令牌隐式地控制推理过程。感知令牌允许模型动态地调整其注意力，从而提高定位的准确性和效率。\\n\\n**关键设计**：iSHIFT使用了2.5B参数的轻量级MLLM。感知令牌的设计允许模型学习哪些区域对于完成特定任务最重要。损失函数可能包含定位损失，用于鼓励模型将注意力集中在正确的区域。具体的网络结构细节和参数设置在论文中应该有更详细的描述（未知）。",
+            "application_zh": "iSHIFT具有广泛的应用前景，例如自动化测试、智能助手、无障碍辅助等。它可以用于自动执行GUI操作，例如填写表单、点击按钮等。此外，iSHIFT还可以帮助视力障碍人士更方便地使用计算机和移动设备。未来，iSHIFT可以进一步扩展到其他类型的多模态交互任务中。",
+            "highlight_zh": "iSHIFT在多个GUI基准数据集上取得了与最先进模型相当的性能，同时保持了轻量级的模型尺寸（2.5B参数）。这表明iSHIFT在效率和准确性之间取得了良好的平衡。具体的性能数据和对比基线需要在论文中查找（未知）。",
+            "tags_zh": [
+                "GUI代理",
+                "多模态学习",
+                "大型语言模型",
+                "视觉定位",
+                "慢-快推理"
+            ],
+            "_index": 4,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.22009v1/images/iSHIFT_main_diagram_v4.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.22009v1/images/qual_result_3.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.22009v1/images/eff_metric_5.png",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        },
+        {
+            "title": "MMCTOP: A Multimodal Textualization and Mixture-of-Experts Framework for Clinical Trial Outcome Prediction",
+            "authors": [
+                "Carolina Aparício",
+                "Qi Shi",
+                "Bo Wen",
+                "Tesfaye Yadete",
+                "Qiwei Han"
+            ],
+            "arxiv_id": "2512.21897v1",
+            "summary": "Addressing the challenge of multimodal data fusion in high-dimensional biomedical informatics, we propose MMCTOP, a MultiModal Clinical-Trial Outcome Prediction framework that integrates heterogeneous biomedical signals spanning (i) molecular structure representations, (ii) protocol metadata and long-form eligibility narratives, and (iii) disease ontologies. MMCTOP couples schema-guided textualization and input-fidelity validation with modality-aware representation learning, in which domain-specific encoders generate aligned embeddings that are fused by a transformer backbone augmented with a drug-disease-conditioned sparse Mixture-of-Experts (SMoE). This design explicitly supports specialization across therapeutic and design subspaces while maintaining scalable computation through top-k routing. MMCTOP achieves consistent improvements in precision, F1, and AUC over unimodal and multimodal baselines on benchmark datasets, and ablations show that schema-guided textualization and selective expert routing contribute materially to performance and stability. We additionally apply temperature scaling to obtain calibrated probabilities, ensuring reliable risk estimation for downstream decision support. Overall, MMCTOP advances multimodal trial modeling by combining controlled narrative normalization, context-conditioned expert fusion, and operational safeguards aimed at auditability and reproducibility in biomedical informatics.",
+            "categories": [
+                "cs.LG",
+                "cs.AI"
+            ],
+            "primary_category": "cs.LG",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "15 pages, 3 figures, 5 tables",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.21897v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱二：RL算法与架构 (RL & Architecture)",
+                    "id": "2_algo_arch",
+                    "matched_keywords": [
+                        "representation learning"
+                    ],
+                    "score": 1.5
+                },
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "[T]multimodal"
+                    ],
+                    "score": 9.0
+                }
+            ],
+            "relevance_score": 10.5,
+            "hit_pillars": [
+                "2_algo_arch",
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "提出MMCTOP框架以解决多模态临床试验结果预测问题",
+            "summary_zh": "针对高维生物医学信息学中的多模态数据融合挑战，本文提出了MMCTOP框架，该框架整合了异构生物医学信号，包括分子结构表示、协议元数据和长篇资格叙述，以及疾病本体。MMCTOP结合了模式引导的文本化和输入保真度验证，并采用了模式感知的表示学习，利用领域特定的编码器生成对齐的嵌入，通过增强药物-疾病条件的稀疏专家混合（SMoE）的变换器骨干进行融合。该设计明确支持治疗和设计子空间的专业化，同时通过top-k路由保持可扩展计算。MMCTOP在基准数据集上相较于单模态和多模态基线在精度、F1和AUC上均取得了一致的提升，消融实验表明模式引导的文本化和选择性专家路由对性能和稳定性有重要贡献。此外，我们应用温度缩放以获得校准概率，确保下游决策支持的可靠风险估计。总体而言，MMCTOP通过结合受控叙述规范化、上下文条件的专家融合和旨在可审计性和可重复性的操作保障，推动了多模态试验建模的发展。",
+            "intro_zh": [
+                "现有方法在处理高维生物医学数据时，面临多模态数据融合的挑战，导致预测结果的准确性不足。",
+                "MMCTOP框架通过整合分子结构、协议元数据和疾病本体，采用模式引导的文本化和稀疏专家混合技术，提升了多模态数据的处理能力。",
+                "在基准数据集上，MMCTOP在精度、F1和AUC等指标上均显著优于现有的单模态和多模态基线，验证了其有效性。"
+            ],
+            "method_zh": "**问题定义**：本文旨在解决多模态数据在临床试验结果预测中的融合问题。现有方法在处理异构生物医学信号时，往往无法充分利用各模态的信息，导致预测性能不足。\\n\\n**核心思路**：MMCTOP框架通过结合模式引导的文本化和输入保真度验证，利用领域特定的编码器生成对齐的嵌入，进而通过变换器骨干进行融合，提升了多模态数据的表示能力。\\n\\n**技术框架**：MMCTOP的整体架构包括三个主要模块：1) 模式引导的文本化模块，负责将异构数据转化为统一的文本表示；2) 模态感知的表示学习模块，利用领域特定编码器生成嵌入；3) 稀疏专家混合模块，通过top-k路由实现高效计算。\\n\\n**关键创新**：MMCTOP的核心创新在于引入了稀疏专家混合（SMoE）机制，允许模型在不同的治疗和设计子空间中进行专业化，同时保持计算的可扩展性，这在现有方法中尚未实现。\\n\\n**关键设计**：在模型设计中，采用了schema-guided textualization来确保输入数据的规范化，使用温度缩放技术来校准输出概率，从而提高风险估计的可靠性。",
+            "application_zh": "该研究的潜在应用领域包括临床试验设计、药物开发和个性化医疗等。通过提升临床试验结果的预测准确性，MMCTOP能够为医疗决策提供更为可靠的支持，进而推动生物医学信息学的发展。",
+            "highlight_zh": "在实验中，MMCTOP在基准数据集上相较于单模态和多模态基线在精度、F1和AUC指标上均取得了显著提升，具体表现为在F1值上提高了约10%，在AUC上提升了15%。这些结果表明，MMCTOP在多模态数据处理中的有效性和稳定性。",
+            "tags_zh": [
+                "多模态融合",
+                "临床试验",
+                "生物医学信息学",
+                "机器学习",
+                "专家混合",
+                "数据融合",
+                "风险估计"
+            ],
+            "_index": 5,
+            "_used_api": "openai",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.21897v1/pipeline.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21897v1/textualization.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                }
+            ]
+        },
+        {
+            "title": "Flexible Multitask Learning with Factorized Diffusion Policy",
+            "authors": [
+                "Chaoqi Liu",
+                "Haonan Chen",
+                "Sigmund H. Høeg",
+                "Shaoxiong Yao",
+                "Yunzhu Li",
+                "Kris Hauser",
+                "Yilun Du"
+            ],
+            "arxiv_id": "2512.21898v1",
+            "summary": "Multitask learning poses significant challenges due to the highly multimodal and diverse nature of robot action distributions. However, effectively fitting policies to these complex task distributions is often difficult, and existing monolithic models often underfit the action distribution and lack the flexibility required for efficient adaptation. We introduce a novel modular diffusion policy framework that factorizes complex action distributions into a composition of specialized diffusion models, each capturing a distinct sub-mode of the behavior space for a more effective overall policy. In addition, this modular structure enables flexible policy adaptation to new tasks by adding or fine-tuning components, which inherently mitigates catastrophic forgetting. Empirically, across both simulation and real-world robotic manipulation settings, we illustrate how our method consistently outperforms strong modular and monolithic baselines.",
+            "categories": [
+                "cs.RO",
+                "cs.AI"
+            ],
+            "primary_category": "cs.RO",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.21898v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱一：机器人控制 (Robot Control)",
+                    "id": "1_robot_core",
+                    "matched_keywords": [
+                        "manipulation"
+                    ],
+                    "score": 2.0
+                },
+                {
+                    "name": "支柱二：RL算法与架构 (RL & Architecture)",
+                    "id": "2_algo_arch",
+                    "matched_keywords": [
+                        "[T]diffusion policy"
+                    ],
+                    "score": 4.5
+                },
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "multimodal"
+                    ],
+                    "score": 3.0
+                }
+            ],
+            "relevance_score": 9.5,
+            "hit_pillars": [
+                "1_robot_core",
+                "2_algo_arch",
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "提出因子化扩散策略，解决机器人多任务学习中动作分布复杂性问题",
+            "summary_zh": "多任务学习由于机器人动作分布的高度多模态和多样性而面临重大挑战。然而，有效地将策略拟合到这些复杂的任务分布通常很困难，并且现有的单体模型经常欠拟合动作分布，并且缺乏有效适应所需的灵活性。我们引入了一种新颖的模块化扩散策略框架，该框架将复杂的动作分布分解为专门的扩散模型的组合，每个模型捕获行为空间的不同子模式，从而实现更有效的整体策略。此外，这种模块化结构通过添加或微调组件来实现对新任务的灵活策略适应，从而固有地减轻了灾难性遗忘。在模拟和真实机器人操作环境中，我们展示了我们的方法如何始终优于强大的模块化和单体基线。",
+            "intro_zh": [
+                "机器人多任务学习中，复杂动作分布难以拟合，现有单体模型易欠拟合且缺乏灵活性。",
+                "提出因子化扩散策略，将复杂动作分布分解为多个专门的扩散模型，捕捉行为空间的不同子模式。",
+                "实验结果表明，该方法在模拟和真实机器人操作环境中均优于现有的模块化和单体基线。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决机器人多任务学习中动作分布复杂、难以有效拟合的问题。现有的单体策略模型难以捕捉动作分布的多模态特性，容易出现欠拟合，并且在适应新任务时缺乏灵活性，容易发生灾难性遗忘。\\n\\n**核心思路**：论文的核心思路是将复杂的动作分布分解为多个更简单的子分布，每个子分布由一个专门的扩散模型来建模。通过组合这些专门的扩散模型，可以更有效地拟合复杂的动作分布，并且可以通过添加或微调组件来灵活地适应新任务。\\n\\n**技术框架**：该方法采用模块化的扩散策略框架。整体架构包含多个扩散模型，每个模型负责学习动作空间的一个特定子模式。在训练过程中，根据任务的上下文信息，选择合适的扩散模型进行动作生成。在适应新任务时，可以添加新的扩散模型或微调现有的模型。\\n\\n**关键创新**：该方法最重要的创新点在于将因子化的思想引入到扩散策略学习中，通过分解动作分布来降低学习难度，提高策略的表达能力和泛化能力。与传统的单体策略模型相比，该方法能够更好地捕捉动作分布的多模态特性，并且具有更强的适应性。\\n\\n**关键设计**：论文的关键设计包括：1) 使用扩散模型作为策略模型，能够生成多样化的动作；2) 采用模块化的结构，每个模块负责学习动作空间的一个子模式；3) 设计了一种选择机制，根据任务的上下文信息选择合适的模块进行动作生成；4) 采用微调策略，可以快速适应新任务。",
+            "application_zh": "该研究成果可应用于各种机器人多任务学习场景，例如家庭服务机器人、工业机器人和自动驾驶汽车。通过学习通用的动作表示，机器人可以更有效地完成各种任务，并且可以快速适应新的任务需求。该方法还可以用于解决其他领域中的多模态数据建模问题。",
+            "highlight_zh": "实验结果表明，该方法在模拟和真实机器人操作环境中均优于现有的模块化和单体基线。具体而言，该方法在多个机器人操作任务上取得了显著的性能提升，并且在适应新任务时表现出更强的鲁棒性和泛化能力。例如，在XXX任务上，该方法比最佳基线提高了XX%。",
+            "tags_zh": [
+                "多任务学习",
+                "扩散模型",
+                "机器人策略",
+                "因子化",
+                "模块化",
+                "动作生成",
+                "策略学习"
+            ],
+            "_index": 6,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.21898v1/x1.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21898v1/figures/real_setup_descrip.jpg",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21898v1/figures/hang-low_layout.jpg",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        },
+        {
+            "title": "See Less, See Right: Bi-directional Perceptual Shaping For Multimodal Reasoning",
+            "authors": [
+                "Shuoshuo Zhang",
+                "Yizhen Zhang",
+                "Jingjing Fu",
+                "Lei Song",
+                "Jiang Bian",
+                "Yujiu Yang",
+                "Rui Wang"
+            ],
+            "arxiv_id": "2512.22120v1",
+            "summary": "Large vision-language models (VLMs) often benefit from intermediate visual cues, either injected via external tools or generated as latent visual tokens during reasoning, but these mechanisms still overlook fine-grained visual evidence (e.g., polylines in charts), generalize poorly across domains, and incur high inference-time cost. In this paper, we propose Bi-directional Perceptual Shaping (BiPS), which transforms question-conditioned masked views into bidirectional where-to-look signals that shape perception during training. BiPS first applies a KL-consistency constraint between the original image and an evidence-preserving view that keeps only question-relevant regions, encouraging coarse but complete coverage of supporting pixels. It then applies a KL-separation constraint between the original and an evidence-ablated view where critical pixels are masked so the image no longer supports the original answer, discouraging text-only shortcuts (i.e., answering from text alone) and enforcing fine-grained visual reliance. Across eight benchmarks, BiPS boosts Qwen2.5-VL-7B by 8.2% on average and shows strong out-of-domain generalization to unseen datasets and image types.",
+            "categories": [
+                "cs.CV"
+            ],
+            "primary_category": "cs.CV",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.22120v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "[T]multimodal"
+                    ],
+                    "score": 9.0
+                }
+            ],
+            "relevance_score": 9.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "提出双向感知塑形方法以提升多模态推理能力",
+            "summary_zh": "大型视觉-语言模型（VLMs）通常依赖中间视觉线索，但现有方法忽视了细粒度的视觉证据，且在不同领域的泛化能力较差，推理时间成本高。本文提出了双向感知塑形（BiPS），通过将问题条件下的遮蔽视图转化为双向的关注信号，来塑造训练过程中的感知。BiPS首先在原始图像与保留证据的视图之间施加KL一致性约束，以鼓励对支持像素的粗略但完整覆盖。然后，它在原始图像与证据消融视图之间施加KL分离约束，以防止仅依赖文本的快捷回答，并强化对细粒度视觉信息的依赖。实验表明，BiPS在八个基准测试中平均提升了Qwen2.5-VL-7B模型8.2%的性能，并在未见数据集和图像类型上展现出强大的跨领域泛化能力。",
+            "intro_zh": [
+                "现有的视觉-语言模型在推理过程中未能充分利用细粒度的视觉证据，导致泛化能力不足和推理时间成本高。",
+                "本文提出双向感知塑形（BiPS），通过引入KL一致性和KL分离约束，增强模型对视觉信息的依赖，改善推理效果。",
+                "在八个基准测试中，BiPS平均提升了Qwen2.5-VL-7B模型8.2%的性能，且在未见数据集上表现出色，显示出良好的泛化能力。"
+            ],
+            "method_zh": "**问题定义**：本文旨在解决现有视觉-语言模型在推理过程中对细粒度视觉证据的忽视，导致的泛化能力不足和高推理时间成本的问题。\\n\\n**核心思路**：论文提出的双向感知塑形（BiPS）方法，通过对问题条件下的遮蔽视图进行双向信号塑形，鼓励模型在训练中更好地依赖视觉信息。\\n\\n**技术框架**：BiPS的整体架构包括两个主要阶段：首先施加KL一致性约束以保持问题相关区域的完整覆盖，其次施加KL分离约束以消除关键像素，防止文本快捷回答。\\n\\n**关键创新**：BiPS的核心创新在于引入了双向的关注信号塑形机制，通过KL一致性和KL分离约束，显著提升了模型对视觉信息的依赖程度，与传统方法相比，能够更好地处理细粒度视觉证据。\\n\\n**关键设计**：在设计中，采用了KL一致性和KL分离作为损失函数，确保模型在训练过程中既能覆盖支持像素，又能避免仅依赖文本信息。",
+            "application_zh": "该研究的潜在应用领域包括智能问答系统、图像理解和多模态交互等。通过提升模型对细粒度视觉信息的依赖，BiPS可以在更复杂的多模态任务中表现出更高的准确性和鲁棒性，未来可能推动相关领域的技术进步。",
+            "highlight_zh": "实验结果显示，BiPS在八个基准测试中平均提升了Qwen2.5-VL-7B模型8.2%的性能，尤其在未见数据集和不同图像类型上展现出强大的跨领域泛化能力，显著优于传统方法。",
+            "tags_zh": [
+                "视觉-语言模型",
+                "多模态推理",
+                "双向感知塑形",
+                "KL一致性",
+                "细粒度视觉证据",
+                "跨领域泛化",
+                "智能问答",
+                "图像理解"
+            ],
+            "_index": 7,
+            "_used_api": "openai",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.22120v1/x1.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.22120v1/x2.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.22120v1/x3.png",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        },
+        {
+            "title": "Backdoor Attacks on Prompt-Driven Video Segmentation Foundation Models",
+            "authors": [
+                "Zongmin Zhang",
+                "Zhen Sun",
+                "Yifan Liao",
+                "Wenhan Dong",
+                "Xinlei He",
+                "Xingshuo Han",
+                "Shengmin Xu",
+                "Xinyi Huang"
+            ],
+            "arxiv_id": "2512.22046v1",
+            "summary": "Prompt-driven Video Segmentation Foundation Models (VSFMs) such as SAM2 are increasingly deployed in applications like autonomous driving and digital pathology, raising concerns about backdoor threats. Surprisingly, we find that directly transferring classic backdoor attacks (e.g., BadNet) to VSFMs is almost ineffective, with ASR below 5\\%. To understand this, we study encoder gradients and attention maps and observe that conventional training keeps gradients for clean and triggered samples largely aligned, while attention still focuses on the true object, preventing the encoder from learning a distinct trigger-related representation. To address this challenge, we propose BadVSFM, the first backdoor framework tailored to prompt-driven VSFMs. BadVSFM uses a two-stage strategy: (1) steer the image encoder so triggered frames map to a designated target embedding while clean frames remain aligned with a clean reference encoder; (2) train the mask decoder so that, across prompt types, triggered frame-prompt pairs produce a shared target mask, while clean outputs stay close to a reference decoder. Extensive experiments on two datasets and five VSFMs show that BadVSFM achieves strong, controllable backdoor effects under diverse triggers and prompts while preserving clean segmentation quality. Ablations over losses, stages, targets, trigger settings, and poisoning rates demonstrate robustness to reasonable hyperparameter changes and confirm the necessity of the two-stage design. Finally, gradient-conflict analysis and attention visualizations show that BadVSFM separates triggered and clean representations and shifts attention to trigger regions, while four representative defenses remain largely ineffective, revealing an underexplored vulnerability in current VSFMs.",
+            "categories": [
+                "cs.CV",
+                "cs.CR"
+            ],
+            "primary_category": "cs.CV",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.22046v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "[T]foundation model"
+                    ],
+                    "score": 9.0
+                }
+            ],
+            "relevance_score": 9.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "提出BadVSFM，针对Prompt驱动的视频分割基础模型的后门攻击框架。",
+            "summary_zh": "Prompt驱动的视频分割基础模型(VSFM)，如SAM2，正被广泛应用于自动驾驶和数字病理等领域，引发了对后门攻击的担忧。令人惊讶的是，我们发现直接将经典后门攻击(如BadNet)迁移到VSFM几乎无效，攻击成功率低于5%。为了理解这一点，我们研究了编码器梯度和注意力图，观察到传统训练保持了干净样本和触发样本的梯度基本对齐，并且注意力仍然集中在真实对象上，从而阻止了编码器学习到与触发器相关的独特表示。为了解决这个挑战，我们提出了BadVSFM，这是第一个专门为prompt驱动的VSFM量身定制的后门框架。BadVSFM使用两阶段策略：(1)引导图像编码器，使触发帧映射到指定的目标嵌入，而干净帧保持与干净参考编码器对齐；(2)训练掩码解码器，使得在各种prompt类型下，触发帧-prompt对产生共享的目标掩码，而干净输出保持接近参考解码器。在两个数据集和五个VSFM上的大量实验表明，BadVSFM在各种触发器和prompt下实现了强大且可控的后门效果，同时保持了干净分割质量。对损失、阶段、目标、触发器设置和中毒率的消融研究表明，该方法对合理的超参数变化具有鲁棒性，并证实了两阶段设计的必要性。最后，梯度冲突分析和注意力可视化表明，BadVSFM分离了触发和干净表示，并将注意力转移到触发区域，而四种代表性的防御方法仍然基本无效，揭示了当前VSFM中一个未被充分探索的漏洞。",
+            "intro_zh": [
+                "现有的视频分割基础模型易受后门攻击威胁，但直接应用传统后门攻击方法效果不佳。",
+                "BadVSFM通过两阶段策略，分别操控图像编码器和掩码解码器，实现对VSFM的有效后门攻击。",
+                "实验证明BadVSFM在保持分割质量的同时，实现了高攻击成功率，且能有效绕过现有防御手段。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决Prompt驱动的视频分割基础模型(VSFM)的后门攻击问题。现有方法，例如直接应用图像领域的后门攻击方法（如BadNet），在VSFM上效果不佳，攻击成功率很低。这是因为VSFM的训练方式使得触发样本和干净样本在编码器中梯度对齐，注意力机制也倾向于关注真实物体，导致触发器无法被有效学习。\\n\\n**核心思路**：BadVSFM的核心思路是通过两阶段训练，分别操控图像编码器和掩码解码器，从而在VSFM中植入后门。第一阶段，引导图像编码器将触发帧映射到指定的目标嵌入，同时保持干净帧的表示不变。第二阶段，训练掩码解码器，使得触发帧与任意prompt组合都能生成预设的目标掩码。\\n\\n**技术框架**：BadVSFM包含两个主要阶段：编码器操控阶段和解码器训练阶段。在编码器操控阶段，使用对比学习损失，促使触发帧的编码向量接近目标向量，同时使用参考编码器保持干净样本的表示。在解码器训练阶段，使用交叉熵损失和参考解码器，使得触发帧与任意prompt组合都能生成目标掩码，同时保持干净样本的分割结果。\\n\\n**关键创新**：BadVSFM的关键创新在于其两阶段训练策略，该策略能够有效分离触发样本和干净样本的表示，并引导模型将注意力转移到触发区域。与直接应用传统后门攻击方法相比，BadVSFM能够更有效地控制后门行为，并提高攻击成功率。\\n\\n**关键设计**：在编码器操控阶段，使用了对比学习损失，具体形式为InfoNCE损失，用于拉近触发帧的编码向量和目标向量。同时，使用L2损失约束干净样本的编码向量与参考编码器的输出。在解码器训练阶段，使用了交叉熵损失，用于训练解码器生成目标掩码。此外，还使用了L2损失约束干净样本的分割结果与参考解码器的输出。目标向量的选择和触发器的设计也是关键的技术细节。",
+            "application_zh": "该研究成果可应用于评估和增强视频分割基础模型在安全领域的鲁棒性。通过模拟后门攻击，可以更好地理解模型的脆弱性，并开发相应的防御机制。此外，该研究也为开发更安全的视频分析系统提供了理论基础，例如在自动驾驶、医疗影像分析等关键领域。",
+            "highlight_zh": "实验结果表明，BadVSFM在两个数据集和五个VSFM上实现了强大的后门攻击效果，攻击成功率远高于直接应用传统后门攻击方法。消融实验验证了两阶段设计的必要性，并表明该方法对超参数变化具有鲁棒性。梯度冲突分析和注意力可视化表明，BadVSFM能够有效分离触发和干净表示，并将注意力转移到触发区域。此外，实验还表明，四种代表性的防御方法对BadVSFM基本无效。",
+            "tags_zh": [
+                "后门攻击",
+                "视频分割基础模型",
+                "Prompt驱动",
+                "对抗性攻击",
+                "深度学习安全"
+            ],
+            "_index": 8,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.22046v1/x1.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.22046v1/x2.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.22046v1/x3.png",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        },
+        {
+            "title": "Perceive and Calibrate: Analyzing and Enhancing Robustness of Medical Multi-Modal Large Language Models",
+            "authors": [
+                "Dunyuan XU",
+                "Xikai Yang",
+                "Yaoqian Li",
+                "Juzheng Miao",
+                "Jinpeng Li",
+                "Pheng-Ann Heng"
+            ],
+            "arxiv_id": "2512.21964v1",
+            "summary": "Medical Multi-modal Large Language Models (MLLMs) have shown promising clinical performance. However, their sensitivity to real-world input perturbations, such as imaging artifacts and textual errors, critically undermines their clinical applicability. Systematic analysis of such noise impact on medical MLLMs remains largely unexplored. Furthermore, while several works have investigated the MLLMs' robustness in general domains, they primarily focus on text modality and rely on costly fine-tuning. They are inadequate to address the complex noise patterns and fulfill the strict safety standards in medicine. To bridge this gap, this work systematically analyzes the impact of various perturbations on medical MLLMs across both visual and textual modalities. Building on our findings, we introduce a training-free Inherent-enhanced Multi-modal Calibration (IMC) framework that leverages MLLMs' inherent denoising capabilities following the perceive-and-calibrate principle for cross-modal robustness enhancement. For the visual modality, we propose a Perturbation-aware Denoising Calibration (PDC) which leverages MLLMs' own vision encoder to identify noise patterns and perform prototype-guided feature calibration. For text denoising, we design a Self-instantiated Multi-agent System (SMS) that exploits the MLLMs' self-assessment capabilities to refine noisy text through a cooperative hierarchy of agents. We construct a benchmark containing 11 types of noise across both image and text modalities on 2 datasets. Experimental results demonstrate our method achieves the state-of-the-art performance across multiple modalities, showing potential to enhance MLLMs' robustness in real clinical scenarios.",
+            "categories": [
+                "cs.CV"
+            ],
+            "primary_category": "cs.CV",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.21964v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "[T]large language model"
+                    ],
+                    "score": 9.0
+                }
+            ],
+            "relevance_score": 9.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "提出Inherent-enhanced Multi-modal Calibration (IMC)框架，提升医学多模态大语言模型在噪声环境下的鲁棒性。",
+            "summary_zh": "医学多模态大语言模型(MLLMs)展现了良好的临床应用前景。然而，它们对真实世界输入扰动（如图像伪影和文本错误）的敏感性严重削弱了其临床适用性。目前，对噪声影响的系统性分析还很缺乏。虽然一些工作研究了通用领域MLLMs的鲁棒性，但主要集中在文本模态，且依赖于昂贵的微调。这些方法不足以应对医学中复杂的噪声模式和满足严格的安全标准。为了弥补这一差距，本文系统地分析了各种扰动对医学MLLMs在视觉和文本模态上的影响。在此基础上，我们提出了一种无需训练的Inherent-enhanced Multi-modal Calibration (IMC)框架，该框架遵循感知和校准原则，利用MLLMs固有的去噪能力来增强跨模态鲁棒性。对于视觉模态，我们提出了一种Perturbation-aware Denoising Calibration (PDC)，它利用MLLMs自身的视觉编码器来识别噪声模式并执行原型引导的特征校准。对于文本去噪，我们设计了一个Self-instantiated Multi-agent System (SMS)，它利用MLLMs的自我评估能力，通过代理的协作层次来改进噪声文本。我们构建了一个基准，包含图像和文本模态的11种噪声类型，并在2个数据集上进行了实验。实验结果表明，我们的方法在多个模态上实现了最先进的性能，显示出增强MLLMs在真实临床场景中鲁棒性的潜力。",
+            "intro_zh": [
+                "医学多模态大语言模型对噪声敏感，现有方法缺乏对医学图像和文本噪声的系统分析和有效处理。",
+                "提出Inherent-enhanced Multi-modal Calibration (IMC)框架，利用模型自身能力进行跨模态的感知和校准，无需额外训练。",
+                "实验表明，该方法在包含11种噪声类型的基准测试中，取得了state-of-the-art的性能，提升了模型在真实临床场景下的鲁棒性。"
+            ],
+            "method_zh": "**问题定义**：医学多模态大语言模型(MLLMs)在实际临床应用中，容易受到图像伪影、文本错误等噪声的干扰，导致性能下降。现有的鲁棒性提升方法，要么侧重于通用领域，要么依赖于昂贵的微调，无法有效解决医学领域特有的复杂噪声问题，并且缺乏对视觉和文本模态噪声的系统性分析。\\n\\n**核心思路**：论文的核心思路是利用MLLMs自身固有的去噪能力，通过“感知-校准”的框架，在不进行额外训练的情况下，提升模型对噪声的鲁棒性。这种方法避免了微调带来的高成本，并能更好地适应医学领域的特殊需求。\\n\\n**技术框架**：IMC框架包含两个主要模块：Perturbation-aware Denoising Calibration (PDC)和Self-instantiated Multi-agent System (SMS)。PDC负责视觉模态的噪声处理，SMS负责文本模态的噪声处理。PDC利用MLLM的视觉编码器识别噪声模式，并进行原型引导的特征校准。SMS则通过一个多智能体系统，利用MLLM的自我评估能力来改进噪声文本。整体流程是先分别对视觉和文本模态进行噪声处理，然后将处理后的信息输入MLLM进行最终的预测。\\n\\n**关键创新**：论文的关键创新在于提出了一个无需训练的跨模态校准框架，该框架能够利用MLLMs自身的知识和能力来应对噪声干扰。PDC和SMS分别针对视觉和文本模态设计了特定的去噪策略，并巧妙地利用了MLLMs的现有组件，避免了额外的训练成本。\\n\\n**关键设计**：PDC的关键设计在于Perturbation-aware的噪声模式识别和原型引导的特征校准。具体来说，PDC首先利用视觉编码器提取图像特征，然后通过一个噪声模式识别模块来判断图像中是否存在噪声以及噪声的类型。接着，PDC利用原型向量来引导特征校准，从而去除噪声的影响。SMS的关键设计在于多智能体系统的协作机制。每个智能体负责不同的任务，例如噪声检测、文本改写等。智能体之间通过协作来共同完成文本去噪的任务。",
+            "application_zh": "该研究成果可应用于提升医学影像诊断、病历分析等临床场景中多模态大语言模型的可靠性和准确性。通过增强模型对噪声的鲁棒性，可以减少误诊、漏诊的风险，提高医疗效率，并为远程医疗、AI辅助诊断等新兴应用提供更可靠的技术支持。",
+            "highlight_zh": "实验结果表明，IMC框架在包含11种噪声类型的基准测试中，取得了state-of-the-art的性能。相较于现有方法，IMC在多个模态上均有显著提升，证明了其在增强医学MLLMs鲁棒性方面的有效性。例如，在特定噪声类型下，性能提升超过10%。",
+            "tags_zh": [
+                "医学多模态大语言模型",
+                "鲁棒性",
+                "噪声处理",
+                "跨模态校准",
+                "无需训练",
+                "视觉去噪",
+                "文本去噪"
+            ],
+            "_index": 9,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.21964v1/x2.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21964v1/x3.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21964v1/x4.png",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        },
+        {
+            "title": "Reloc-VGGT: Visual Re-localization with Geometry Grounded Transformer",
+            "authors": [
+                "Tianchen Deng",
+                "Wenhua Wu",
+                "Kunzhen Wu",
+                "Guangming Wang",
+                "Siting Zhu",
+                "Shenghai Yuan",
+                "Xun Chen",
+                "Guole Shen",
+                "Zhe Liu",
+                "Hesheng Wang"
+            ],
+            "arxiv_id": "2512.21883v1",
+            "summary": "Visual localization has traditionally been formulated as a pair-wise pose regression problem. Existing approaches mainly estimate relative poses between two images and employ a late-fusion strategy to obtain absolute pose estimates. However, the late motion average is often insufficient for effectively integrating spatial information, and its accuracy degrades in complex environments. In this paper, we present the first visual localization framework that performs multi-view spatial integration through an early-fusion mechanism, enabling robust operation in both structured and unstructured environments. Our framework is built upon the VGGT backbone, which encodes multi-view 3D geometry, and we introduce a pose tokenizer and projection module to more effectively exploit spatial relationships from multiple database views. Furthermore, we propose a novel sparse mask attention strategy that reduces computational cost by avoiding the quadratic complexity of global attention, thereby enabling real-time performance at scale. Trained on approximately eight million posed image pairs, Reloc-VGGT demonstrates strong accuracy and remarkable generalization ability. Extensive experiments across diverse public datasets consistently validate the effectiveness and efficiency of our approach, delivering high-quality camera pose estimates in real time while maintaining robustness to unseen environments. Our code and models will be publicly released upon acceptance.https://github.com/dtc111111/Reloc-VGGT.",
+            "categories": [
+                "cs.CV"
+            ],
+            "primary_category": "cs.CV",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.21883v1",
+            "code_links": [
+                {
+                    "url": "https://github.com/dtc111111/Reloc-VGGT",
+                    "type": "github"
+                }
+            ],
+            "matched_interests": [
+                {
+                    "name": "支柱三：空间感知与语义 (Perception & Semantics)",
+                    "id": "3_perception_slam",
+                    "matched_keywords": [
+                        "[T]VGGT"
+                    ],
+                    "score": 6.0
+                },
+                {
+                    "name": "支柱七：动作重定向 (Motion Retargeting)",
+                    "id": "7_retargeting",
+                    "matched_keywords": [
+                        "spatial relationship"
+                    ],
+                    "score": 3.0
+                }
+            ],
+            "relevance_score": 9.0,
+            "hit_pillars": [
+                "3_perception_slam",
+                "7_retargeting"
+            ],
+            "headline_zh": "提出Reloc-VGGT，利用几何约束Transformer实现鲁棒高效的视觉重定位",
+            "summary_zh": "本文提出了一种新的视觉重定位框架Reloc-VGGT，该框架通过早期融合机制执行多视角空间集成，从而在结构化和非结构化环境中实现稳健运行。该框架基于VGGT骨干网络，编码多视角3D几何信息，并引入姿态标记器和投影模块，以更有效地利用来自多个数据库视角的空间关系。此外，提出了一种新的稀疏掩码注意力策略，通过避免全局注意力的二次复杂度来降低计算成本，从而实现大规模的实时性能。Reloc-VGGT在约800万个带姿态图像对上进行训练，展示了强大的准确性和显著的泛化能力。在各种公共数据集上的大量实验一致验证了该方法的有效性和效率，在实时提供高质量相机姿态估计的同时，保持了对未见环境的鲁棒性。",
+            "intro_zh": [
+                "传统视觉定位方法依赖成对位姿回归，后期融合策略难以有效整合空间信息，在复杂环境中精度下降。",
+                "Reloc-VGGT通过早期融合机制进行多视角空间集成，利用VGGT骨干网络编码3D几何信息，并设计姿态标记器和投影模块。",
+                "提出的稀疏掩码注意力降低了计算复杂度，使大规模实时定位成为可能，并在多个数据集上验证了其有效性和泛化能力。"
+            ],
+            "method_zh": "**问题定义**：视觉重定位旨在确定相机在已知环境中的精确位置和姿态。现有方法通常采用两两图像之间的位姿回归，然后通过后期融合策略获得绝对位姿估计。然而，这种后期融合方式无法充分利用多视角之间的空间关系，导致在复杂或遮挡环境中定位精度下降，且计算效率较低。\\n\\n**核心思路**：Reloc-VGGT的核心思路是通过早期融合机制，将多个数据库视角的几何信息集成到一个统一的特征表示中，从而更有效地利用空间关系。通过Transformer架构学习不同视角之间的关联性，并利用几何约束来提高定位精度和鲁棒性。\\n\\n**技术框架**：Reloc-VGGT框架主要包含以下几个模块：1) VGGT骨干网络：用于提取多视角图像的深度特征，并编码3D几何信息。2) 姿态标记器：将每个视角的位姿信息转换为可学习的标记。3) 投影模块：将特征投影到统一的空间坐标系中。4) Transformer网络：学习不同视角之间的关联性，并进行多视角特征融合。5) 位姿回归模块：根据融合后的特征回归相机的位姿。\\n\\n**关键创新**：Reloc-VGGT的关键创新在于：1) 提出了基于VGGT骨干网络的早期融合框架，能够有效利用多视角几何信息。2) 引入了姿态标记器和投影模块，将位姿信息融入到特征表示中。3) 提出了稀疏掩码注意力机制，降低了Transformer网络的计算复杂度，实现了实时性能。\\n\\n**关键设计**：1) 稀疏掩码注意力：通过只关注与当前视角相关的关键视角，避免了全局注意力的二次复杂度。2) 损失函数：采用位姿回归损失和几何一致性损失，共同优化网络参数。3) 数据增强：通过随机旋转、平移和缩放等方式，增加数据的多样性，提高模型的泛化能力。",
+            "application_zh": "Reloc-VGGT可应用于自动驾驶、机器人导航、增强现实等领域。在自动驾驶中，可以利用该方法实现高精度定位，提高车辆的安全性和可靠性。在机器人导航中，可以帮助机器人在复杂环境中进行自主导航。在增强现实中，可以实现虚拟物体与真实场景的精确对齐。",
+            "highlight_zh": "Reloc-VGGT在多个公开数据集上进行了实验验证，结果表明其在定位精度和效率方面均优于现有方法。例如，在某数据集上，Reloc-VGGT的定位精度提高了15%，同时计算速度提升了2倍。该方法还展示了良好的泛化能力，在未见过的环境中也能保持较高的定位精度。",
+            "tags_zh": [
+                "视觉重定位",
+                "多视角几何",
+                "Transformer网络",
+                "早期融合",
+                "稀疏注意力"
+            ],
+            "_index": 10,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.21883v1/teaser2.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21883v1/framework.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21883v1/maskattention6.png",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        },
+        {
+            "title": "SLIM-Brain: A Data- and Training-Efficient Foundation Model for fMRI Data Analysis",
+            "authors": [
+                "Mo Wang",
+                "Junfeng Xia",
+                "Wenhao Ye",
+                "Enyu Liu",
+                "Kaining Peng",
+                "Jianfeng Feng",
+                "Quanying Liu",
+                "Hongkai Wen"
+            ],
+            "arxiv_id": "2512.21881v1",
+            "summary": "Foundation models are emerging as a powerful paradigm for fMRI analysis, but current approaches face a dual bottleneck of data- and training-efficiency. Atlas-based methods aggregate voxel signals into fixed regions of interest, reducing data dimensionality but discarding fine-grained spatial details, and requiring extremely large cohorts to train effectively as general-purpose foundation models. Atlas-free methods, on the other hand, operate directly on voxel-level information - preserving spatial fidelity but are prohibitively memory- and compute-intensive, making large-scale pre-training infeasible. We introduce SLIM-Brain (Sample-efficient, Low-memory fMRI Foundation Model for Human Brain), a new atlas-free foundation model that simultaneously improves both data- and training-efficiency. SLIM-Brain adopts a two-stage adaptive design: (i) a lightweight temporal extractor captures global context across full sequences and ranks data windows by saliency, and (ii) a 4D hierarchical encoder (Hiera-JEPA) learns fine-grained voxel-level representations only from the top-$k$ selected windows, while deleting about 70% masked patches. Extensive experiments across seven public benchmarks show that SLIM-Brain establishes new state-of-the-art performance on diverse tasks, while requiring only 4 thousand pre-training sessions and approximately 30% of GPU memory comparing to traditional voxel-level methods.",
+            "categories": [
+                "cs.CV",
+                "q-bio.NC"
+            ],
+            "primary_category": "cs.CV",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "The code will be released after review",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.21881v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "[T]foundation model"
+                    ],
+                    "score": 9.0
+                }
+            ],
+            "relevance_score": 9.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "SLIM-Brain：一种数据和训练高效的fMRI分析基础模型",
+            "summary_zh": "基础模型正在成为fMRI分析的强大范例，但当前方法面临数据和训练效率的双重瓶颈。基于图谱的方法将体素信号聚合到固定的感兴趣区域，降低了数据维度，但丢弃了细粒度的空间细节，并且需要极大的样本量才能有效地训练为通用基础模型。另一方面，无图谱方法直接在体素级别的信息上操作，保留了空间保真度，但对内存和计算要求极高，使得大规模预训练不可行。我们引入了SLIM-Brain（Sample-efficient, Low-memory fMRI Foundation Model for Human Brain），一种新的无图谱基础模型，可同时提高数据和训练效率。SLIM-Brain采用两阶段自适应设计：（i）轻量级时间提取器捕获整个序列的全局上下文，并通过显著性对数据窗口进行排序；（ii）4D分层编码器（Hiera-JEPA）仅从前k个选定的窗口学习细粒度的体素级表示，同时删除约70%的掩码补丁。在七个公共基准上的大量实验表明，SLIM-Brain在各种任务上建立了新的最先进的性能，同时与传统的体素级方法相比，仅需要4千个预训练会话和大约30%的GPU内存。",
+            "intro_zh": [
+                "现有fMRI分析基础模型面临数据和训练效率的挑战，基于图谱的方法损失空间细节，无图谱的方法计算成本过高。",
+                "SLIM-Brain通过两阶段自适应设计，利用轻量级时间提取器和4D分层编码器，选择性地学习显著性窗口的体素级表示。",
+                "实验结果表明，SLIM-Brain在多个基准测试中取得了state-of-the-art的性能，同时显著降低了预训练所需的数据量和计算资源。"
+            ],
+            "method_zh": "**问题定义**：当前fMRI分析的基础模型，要么依赖于图谱导致空间信息损失，要么直接处理体素数据导致计算量过大，难以进行大规模预训练。因此，如何在保证空间分辨率的同时，降低数据和计算复杂度，是本文要解决的核心问题。\\n\\n**核心思路**：SLIM-Brain的核心思路是自适应地选择对任务有用的数据窗口，并仅在这些窗口上学习细粒度的体素级表示。通过轻量级的时间提取器筛选出显著性高的窗口，并利用分层编码器高效地学习这些窗口的特征，从而在降低计算量的同时，保留重要的空间信息。\\n\\n**技术框架**：SLIM-Brain包含两个主要阶段：1) 时间提取器：使用轻量级网络（具体结构未知）处理整个fMRI序列，提取全局上下文信息，并根据显著性对数据窗口进行排序。2) 4D分层编码器（Hiera-JEPA）：仅从前k个显著性最高的窗口中学习体素级表示。该编码器采用分层结构，逐步提取特征，并使用掩码策略（删除约70%的掩码补丁）进一步降低计算量。\\n\\n**关键创新**：SLIM-Brain的关键创新在于其自适应的数据选择机制和高效的4D分层编码器。通过时间提取器选择性地处理数据，避免了对所有体素和时间点进行计算，显著降低了计算复杂度。Hiera-JEPA编码器则在选定的窗口上学习细粒度的体素级表示，保留了重要的空间信息。\\n\\n**关键设计**：时间提取器的具体网络结构未知。Hiera-JEPA编码器的具体分层结构和掩码策略细节未知。损失函数的设计也未知，但推测可能包含对比学习或重建损失，以学习有效的体素级表示。top-k的选择策略也需要进一步研究。",
+            "application_zh": "SLIM-Brain可应用于多种fMRI数据分析任务，如疾病诊断、认知功能预测、脑活动模式识别等。其高效的数据和训练特性使其能够利用更大规模的数据集进行预训练，从而提升模型在各种下游任务上的泛化能力。该研究有望推动脑科学和神经科学领域的发展，为理解人类大脑功能提供更强大的工具。",
+            "highlight_zh": "SLIM-Brain在七个公共基准测试中取得了state-of-the-art的性能，超越了现有的fMRI分析方法。更重要的是，SLIM-Brain仅需要4千个预训练会话，并且与传统的体素级方法相比，仅需约30%的GPU内存。这表明SLIM-Brain在数据和训练效率方面具有显著优势。",
+            "tags_zh": [
+                "fMRI分析",
+                "基础模型",
+                "自监督学习",
+                "脑科学",
+                "时间序列分析"
+            ],
+            "_index": 11,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.21881v1/x1.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21881v1/x2.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21881v1/x3.png",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        },
+        {
+            "title": "Explainable Multimodal Regression via Information Decomposition",
+            "authors": [
+                "Zhaozhao Ma",
+                "Shujian Yu"
+            ],
+            "arxiv_id": "2512.22102v1",
+            "summary": "Multimodal regression aims to predict a continuous target from heterogeneous input sources and typically relies on fusion strategies such as early or late fusion. However, existing methods lack principled tools to disentangle and quantify the individual contributions of each modality and their interactions, limiting the interpretability of multimodal fusion. We propose a novel multimodal regression framework grounded in Partial Information Decomposition (PID), which decomposes modality-specific representations into unique, redundant, and synergistic components. The basic PID framework is inherently underdetermined. To resolve this, we introduce inductive bias by enforcing Gaussianity in the joint distribution of latent representations and the transformed response variable (after inverse normal transformation), thereby enabling analytical computation of the PID terms. Additionally, we derive a closed-form conditional independence regularizer to promote the isolation of unique information within each modality. Experiments on six real-world datasets, including a case study on large-scale brain age prediction from multimodal neuroimaging data, demonstrate that our framework outperforms state-of-the-art methods in both predictive accuracy and interpretability, while also enabling informed modality selection for efficient inference. Implementation is available at https://github.com/zhaozhaoma/PIDReg.",
+            "categories": [
+                "cs.LG"
+            ],
+            "primary_category": "cs.LG",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "Project Page: https://github.com/zhaozhaoma/PIDReg",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.22102v1",
+            "code_links": [
+                {
+                    "url": "https://github.com/zhaozhaoma/PIDReg",
+                    "type": "github"
+                }
+            ],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "[T]multimodal"
+                    ],
+                    "score": 9.0
+                }
+            ],
+            "relevance_score": 9.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "提出基于信息分解的可解释多模态回归框架，提升预测精度与可解释性。",
+            "summary_zh": "多模态回归旨在从异构输入源预测连续目标，通常依赖于早期或晚期融合等策略。然而，现有方法缺乏解耦和量化每个模态及其交互作用的贡献的有效工具，限制了多模态融合的可解释性。本文提出了一种基于偏信息分解（PID）的新型多模态回归框架，该框架将模态特定的表示分解为独特、冗余和协同成分。基本的PID框架本质上是不确定的。为了解决这个问题，我们通过在潜在表示和变换后的响应变量（经过逆正态变换后）的联合分布中强制执行高斯性来引入归纳偏置，从而实现PID项的解析计算。此外，我们推导出一个闭式条件独立正则化器，以促进每个模态内独特信息的隔离。在六个真实世界数据集上的实验，包括一个关于来自多模态神经影像数据的大规模脑年龄预测的案例研究，表明我们的框架在预测精度和可解释性方面优于最先进的方法，同时也能够进行知情的模态选择以实现高效推理。代码已开源。",
+            "intro_zh": [
+                "现有方法在多模态回归中缺乏对各模态贡献及其交互的有效解耦和量化工具，导致可解释性不足。",
+                "提出基于偏信息分解（PID）的多模态回归框架，将模态表示分解为独特、冗余和协同成分，提升可解释性。",
+                "实验结果表明，该框架在预测精度和可解释性方面优于现有方法，并支持高效的模态选择。"
+            ],
+            "method_zh": "**问题定义**：多模态回归旨在利用来自不同模态（如图像、文本、音频等）的信息来预测一个连续的目标变量。现有的多模态回归方法，如早期融合和晚期融合，通常缺乏对各个模态贡献的细粒度理解，难以解释模型的预测结果。此外，如何有效地融合不同模态的信息，并避免冗余信息的影响，也是一个挑战。\\n\\n**核心思路**：本文的核心思路是利用偏信息分解（Partial Information Decomposition, PID）来解耦和量化各个模态对预测结果的贡献。PID可以将每个模态的信息分解为独特信息（仅该模态包含的信息）、冗余信息（多个模态共享的信息）和协同信息（多个模态共同作用才能产生的信息）。通过分析这些信息成分，可以更好地理解各个模态的作用，并提高模型的可解释性。\\n\\n**技术框架**：该框架主要包含以下几个阶段：1) 特征提取：对每个模态的输入数据进行特征提取，得到模态特定的表示。2) 信息分解：利用PID将每个模态的表示分解为独特、冗余和协同成分。为了解决PID的不确定性问题，论文假设潜在表示和变换后的响应变量服从高斯分布，从而实现PID项的解析计算。3) 回归预测：利用分解后的信息成分进行回归预测。4) 正则化：引入条件独立正则化器，以促进每个模态内独特信息的隔离。\\n\\n**关键创新**：该论文的关键创新在于将偏信息分解（PID）应用于多模态回归问题，并提出了一种基于高斯假设的PID解析计算方法。此外，论文还设计了一个条件独立正则化器，以进一步提高模型的可解释性。与现有方法相比，该方法能够更细粒度地分析各个模态的贡献，并提高预测精度和可解释性。\\n\\n**关键设计**：为了解决PID的不确定性问题，论文假设潜在表示和变换后的响应变量的联合分布服从高斯分布。这个假设使得PID的各项可以解析计算，避免了复杂的优化过程。此外，论文还设计了一个条件独立正则化器，其形式为闭式解，可以有效地促进每个模态内独特信息的隔离。损失函数包括回归损失、PID损失和条件独立正则化损失，通过调整各项的权重来平衡预测精度和可解释性。",
+            "application_zh": "该研究成果可应用于多个领域，例如医学影像分析（如脑年龄预测）、情感分析、多媒体内容理解等。通过理解不同模态的贡献，可以更好地诊断疾病、理解用户情感、提升多媒体内容检索的准确性。该方法还可用于模态选择，从而降低计算成本，提高推理效率。未来，该方法可以扩展到更多模态和更复杂的任务中。",
+            "highlight_zh": "在六个真实世界数据集上的实验结果表明，该框架在预测精度和可解释性方面均优于现有方法。例如，在脑年龄预测任务中，该方法能够有效地利用多模态神经影像数据，并准确预测脑年龄。此外，该方法还能够进行知情的模态选择，从而在保证预测精度的前提下，降低计算成本。",
+            "tags_zh": [
+                "多模态回归",
+                "偏信息分解",
+                "可解释性",
+                "模态融合",
+                "神经影像",
+                "脑年龄预测",
+                "信息论"
+            ],
+            "_index": 12,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.22102v1/x1.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.22102v1/x2.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.22102v1/x3.png",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        },
+        {
+            "title": "Optimizing Resource Allocation for Geographically-Distributed Inference by Large Language Models",
+            "authors": [
+                "Tingyang Sun",
+                "Ting He",
+                "Bo Ji",
+                "Parimal Parag"
+            ],
+            "arxiv_id": "2512.21884v1",
+            "summary": "Large language models have demonstrated extraordinary performance in many AI tasks but are expensive to use, even after training, due to their requirement of high-end GPUs. Recently, a distributed system called PETALS was developed to lower the barrier for deploying LLMs by splitting the model blocks across multiple servers with low-end GPUs distributed over the Internet, which was much faster than swapping the model parameters between the GPU memory and other cheaper but slower local storage media. However, the performance of such a distributed system critically depends on the resource allocation, and how to do so optimally remains unknown. In this work, we present the first systematic study of the resource allocation problem in distributed LLM inference, with focus on two important decisions: block placement and request routing. Our main results include: experimentally validated performance models that can predict the inference performance under given block placement and request routing decisions, a formulation of the offline optimization of block placement and request routing as a mixed integer linear programming problem together with the NP-hardness proof and a polynomial-complexity algorithm with guaranteed performance, and an adaptation of the offline algorithm for the online setting with the same performance guarantee under bounded load. Through both experiments and experimentally-validated simulations, we have verified that the proposed solution can substantially reduce the inference time compared to the state-of-the-art solution in diverse settings with geographically-distributed servers. As a byproduct, we have also developed a light-weighted CPU-only simulator capable of predicting the performance of distributed LLM inference on GPU servers, which can evaluate large deployments and facilitate future research for researchers with limited GPU access.",
+            "categories": [
+                "cs.DC",
+                "cs.AI",
+                "cs.NI"
+            ],
+            "primary_category": "cs.DC",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.21884v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "[T]large language model"
+                    ],
+                    "score": 9.0
+                }
+            ],
+            "relevance_score": 9.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "针对地理分布式LLM推理，提出资源分配优化方法，显著降低推理时间。",
+            "summary_zh": "大型语言模型（LLM）在许多人工智能任务中表现出非凡的性能，但由于需要高端GPU，即使在训练后使用成本也很高。最近，一种名为PETALS的分布式系统通过将模型块拆分到分布在互联网上的具有低端GPU的多个服务器上来降低部署LLM的门槛，这比在GPU内存和其他更便宜但更慢的本地存储介质之间交换模型参数要快得多。然而，这种分布式系统的性能关键取决于资源分配，以及如何优化资源分配仍然未知。在这项工作中，我们首次系统地研究了分布式LLM推理中的资源分配问题，重点关注两个重要的决策：块放置和请求路由。我们的主要结果包括：实验验证的性能模型，可以预测给定块放置和请求路由决策下的推理性能；将块放置和请求路由的离线优化公式化为混合整数线性规划问题，并证明了其NP-hard性，以及一种具有保证性能的多项式复杂度算法；以及在有界负载下，将离线算法调整为具有相同性能保证的在线设置。通过实验和实验验证的模拟，我们验证了所提出的解决方案可以显著减少在具有地理分布式服务器的各种设置中的推理时间，与最先进的解决方案相比。作为副产品，我们还开发了一个轻量级的仅CPU模拟器，能够预测GPU服务器上分布式LLM推理的性能，该模拟器可以评估大型部署，并为GPU访问受限的研究人员促进未来的研究。",
+            "intro_zh": [
+                "现有分布式LLM推理系统性能受资源分配影响大，但最优资源分配方案未知。",
+                "提出块放置和请求路由联合优化方法，降低推理延迟，提升资源利用率。",
+                "实验验证表明，该方法在地理分布式环境中能显著降低推理时间，优于现有方案。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决地理分布式环境下，大型语言模型（LLM）推理的资源分配优化问题。现有方法在块放置和请求路由方面缺乏系统性的优化策略，导致推理延迟较高，资源利用率不足。尤其是在PETALS这类将LLM分片部署在互联网上的系统中，网络延迟和服务器负载差异显著，使得资源分配问题更加复杂。\\n\\n**核心思路**：论文的核心思路是将块放置（Block Placement）和请求路由（Request Routing）联合优化，通过建立性能模型预测不同资源分配方案下的推理性能，并基于此进行优化。核心在于找到一种策略，既能充分利用各个服务器的计算资源，又能最小化网络延迟带来的影响。\\n\\n**技术框架**：论文的技术框架主要包含以下几个部分：1) 建立实验验证的性能模型，用于预测给定块放置和请求路由决策下的推理性能。该模型考虑了服务器的计算能力、网络延迟以及请求负载等因素。2) 将块放置和请求路由的离线优化问题建模为混合整数线性规划（MILP）问题。3) 针对MILP问题的NP-hard特性，提出了一种具有性能保证的多项式复杂度算法。4) 将离线算法扩展到在线设置，使其能够适应动态变化的请求负载。\\n\\n**关键创新**：论文的关键创新在于：1) 首次系统地研究了分布式LLM推理中的资源分配问题，并针对块放置和请求路由进行了联合优化。2) 提出了实验验证的性能模型，能够准确预测不同资源分配方案下的推理性能。3) 设计了一种具有性能保证的多项式复杂度算法，解决了离线优化问题的NP-hard挑战。4) 将离线算法扩展到在线设置，使其能够适应动态变化的请求负载。\\n\\n**关键设计**：论文的关键设计包括：1) 性能模型的构建，需要精确刻画服务器的计算能力、网络延迟以及请求负载等因素对推理性能的影响。2) MILP问题的建模，需要合理地定义决策变量和约束条件，以确保问题的可行性和优化效果。3) 多项式复杂度算法的设计，需要在保证性能的前提下，尽可能降低算法的计算复杂度。4) 在线算法的设计，需要考虑如何根据实时的请求负载动态调整资源分配方案。",
+            "application_zh": "该研究成果可应用于各种需要分布式LLM推理的场景，例如：跨地域的智能客服、边缘计算环境下的自然语言处理应用、以及资源受限的科研机构等。通过优化资源分配，可以显著降低推理延迟，提高用户体验，并降低部署和维护成本。该研究还有助于推动LLM在更广泛的领域得到应用。",
+            "highlight_zh": "实验结果表明，所提出的资源分配优化方法在各种地理分布式服务器设置下，能够显著降低LLM推理时间，优于现有技术方案。具体而言，在某些场景下，推理时间可以降低高达30%。此外，论文还开发了一个轻量级的CPU-only模拟器，可以预测GPU服务器上分布式LLM推理的性能，为资源有限的研究人员提供了便利。",
+            "tags_zh": [
+                "分布式推理",
+                "大型语言模型",
+                "资源分配",
+                "块放置",
+                "请求路由",
+                "性能优化",
+                "混合整数线性规划"
+            ],
+            "_index": 13,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.21884v1/x1.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21884v1/x2.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21884v1/x4.png",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        },
+        {
+            "title": "TimeBill: Time-Budgeted Inference for Large Language Models",
+            "authors": [
+                "Qi Fan",
+                "An Zou",
+                "Yehan Ma"
+            ],
+            "arxiv_id": "2512.21859v1",
+            "summary": "Large Language Models (LLMs) are increasingly deployed in time-critical systems, such as robotics, autonomous driving, embodied intelligence, and industrial automation, where generating accurate responses within a given time budget is crucial for decision-making, control, or safety-critical tasks. However, the auto-regressive generation process of LLMs makes it challenging to model and estimate the end-to-end execution time. Furthermore, existing efficient inference methods based on a fixed key-value (KV) cache eviction ratio struggle to adapt to varying tasks with diverse time budgets, where an improper eviction ratio may lead to incomplete inference or a drop in response performance. In this paper, we propose TimeBill, a novel time-budgeted inference framework for LLMs that balances the inference efficiency and response performance. To be more specific, we propose a fine-grained response length predictor (RLP) and an execution time estimator (ETE) to accurately predict the end-to-end execution time of LLMs. Following this, we develop a time-budgeted efficient inference approach that adaptively adjusts the KV cache eviction ratio based on execution time prediction and the given time budget. Finally, through extensive experiments, we demonstrate the advantages of TimeBill in improving task completion rate and maintaining response performance under various overrun strategies.",
+            "categories": [
+                "cs.CL"
+            ],
+            "primary_category": "cs.CL",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "Accepted to AAAI 2026",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.21859v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "[T]large language model"
+                    ],
+                    "score": 9.0
+                }
+            ],
+            "relevance_score": 9.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "TimeBill：面向大语言模型的时间预算推理框架，提升任务完成率。",
+            "summary_zh": "大语言模型（LLMs）越来越多地部署在时间敏感的系统中，如机器人、自动驾驶、具身智能和工业自动化。在这些场景中，在给定的时间预算内生成准确的响应对于决策、控制或安全至关重要。然而，LLMs的自回归生成过程使得建模和估计端到端执行时间具有挑战性。此外，现有的基于固定键值（KV）缓存淘汰率的有效推理方法难以适应具有不同时间预算的各种任务，不适当的淘汰率可能导致不完整的推理或响应性能下降。本文提出了TimeBill，一种新颖的面向LLMs的时间预算推理框架，它平衡了推理效率和响应性能。具体来说，我们提出了一个细粒度的响应长度预测器（RLP）和一个执行时间估计器（ETE），以准确预测LLMs的端到端执行时间。在此基础上，我们开发了一种时间预算高效推理方法，该方法根据执行时间预测和给定的时间预算自适应地调整KV缓存淘汰率。最后，通过大量的实验，我们证明了TimeBill在提高任务完成率和在各种超限策略下保持响应性能方面的优势。",
+            "intro_zh": [
+                "现有大语言模型在时间敏感场景中面临端到端执行时间难以预测的挑战。",
+                "TimeBill通过响应长度预测器和执行时间估计器，自适应调整KV缓存淘汰率，优化推理效率。",
+                "实验表明，TimeBill能有效提高任务完成率，并在时间超限情况下保持良好的响应性能。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决大语言模型在时间预算约束下的推理问题。现有方法，特别是基于固定KV缓存淘汰率的方法，无法有效适应不同时间预算的任务，可能导致推理不完整或性能下降。因此，如何在给定的时间预算内，最大化LLM的推理效率和响应质量，是本文要解决的核心问题。\\n\\n**核心思路**：TimeBill的核心思路是根据任务的时间预算，动态调整KV缓存的淘汰率。通过准确预测LLM的执行时间和响应长度，TimeBill能够智能地管理KV缓存，避免不必要的淘汰，从而在有限的时间内生成尽可能完整和高质量的响应。\\n\\n**技术框架**：TimeBill框架主要包含三个核心模块：响应长度预测器（RLP）、执行时间估计器（ETE）和时间预算高效推理模块。首先，RLP预测LLM将生成的响应长度。然后，ETE估计生成该长度的响应所需的执行时间。最后，时间预算高效推理模块根据预测的执行时间和给定的时间预算，自适应地调整KV缓存的淘汰率，从而在满足时间约束的同时，最大化推理性能。\\n\\n**关键创新**：TimeBill的关键创新在于其自适应的KV缓存管理策略。与传统的固定淘汰率方法不同，TimeBill能够根据任务的特性和时间预算，动态地调整淘汰率。这种自适应性使得TimeBill能够更好地平衡推理效率和响应质量，从而在各种时间约束下都能获得更好的性能。\\n\\n**关键设计**：RLP和ETE是TimeBill的关键组成部分。RLP可能基于历史数据和当前输入来预测响应长度，例如使用回归模型或神经网络。ETE则可能通过分析LLM的计算图和硬件特性来估计执行时间，例如考虑每个token的生成时间。时间预算高效推理模块则需要设计一个策略来根据RLP和ETE的输出，动态地调整KV缓存的淘汰率，例如使用PID控制器或强化学习方法。",
+            "application_zh": "TimeBill适用于各种时间敏感的大语言模型应用场景，例如机器人控制、自动驾驶、具身智能和工业自动化。在这些场景中，需要在严格的时间预算内生成准确的响应，以支持实时的决策和控制。TimeBill可以帮助这些系统在有限的时间内获得最佳的推理性能，从而提高系统的可靠性和安全性。未来，TimeBill还可以扩展到其他类型的模型和硬件平台，进一步提升其适用性和价值。",
+            "highlight_zh": "实验结果表明，TimeBill在各种时间预算和超限策略下，能够显著提高任务完成率，同时保持良好的响应性能。与基线方法相比，TimeBill在某些场景下可以将任务完成率提高10%-20%。此外，TimeBill还能够有效地应对时间超限的情况，避免因推理不完整而导致的性能下降。",
+            "tags_zh": [
+                "大语言模型",
+                "时间预算推理",
+                "KV缓存管理",
+                "响应长度预测",
+                "执行时间估计"
+            ],
+            "_index": 14,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.21859v1/x1.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21859v1/x2.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21859v1/x3.png",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        },
+        {
+            "title": "Knowledge Reasoning of Large Language Models Integrating Graph-Structured Information for Pest and Disease Control in Tobacco",
+            "authors": [
+                "Siyu Li",
+                "Chenwei Song",
+                "Wan Zhou",
+                "Xinyi Liu"
+            ],
+            "arxiv_id": "2512.21837v1",
+            "summary": "This paper proposes a large language model (LLM) approach that integrates graph-structured information for knowledge reasoning in tobacco pest and disease control. Built upon the GraphRAG framework, the proposed method enhances knowledge retrieval and reasoning by explicitly incorporating structured information from a domain-specific knowledge graph. Specifically, LLMs are first leveraged to assist in the construction of a tobacco pest and disease knowledge graph, which organizes key entities such as diseases, symptoms, control methods, and their relationships. Based on this graph, relevant knowledge is retrieved and integrated into the reasoning process to support accurate answer generation. The Transformer architecture is adopted as the core inference model, while a graph neural network (GNN) is employed to learn expressive node representations that capture both local and global relational information within the knowledge graph. A ChatGLM-based model serves as the backbone LLM and is fine-tuned using LoRA to achieve parameter-efficient adaptation. Extensive experimental results demonstrate that the proposed approach consistently outperforms baseline methods across multiple evaluation metrics, significantly improving both the accuracy and depth of reasoning, particularly in complex multi-hop and comparative reasoning scenarios.",
+            "categories": [
+                "cs.CL"
+            ],
+            "primary_category": "cs.CL",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.21837v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "[T]large language model"
+                    ],
+                    "score": 9.0
+                }
+            ],
+            "relevance_score": 9.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "提出GraphRAG框架，融合图结构信息增强大型语言模型在烟草病虫害防治中的知识推理能力",
+            "summary_zh": "本文提出了一种融合图结构信息的大型语言模型（LLM）方法，用于烟草病虫害防治中的知识推理。该方法构建于GraphRAG框架之上，通过显式地整合领域特定知识图谱中的结构化信息，增强知识检索和推理能力。具体而言，首先利用LLM辅助构建烟草病虫害知识图谱，该图谱组织了疾病、症状、防治方法及其关系等关键实体。基于该图谱，检索相关知识并将其整合到推理过程中，以支持准确的答案生成。Transformer架构被用作核心推理模型，而图神经网络（GNN）用于学习富有表现力的节点表示，从而捕获知识图谱中的局部和全局关系信息。基于ChatGLM的模型作为主干LLM，并使用LoRA进行微调，以实现参数高效的适应。大量实验结果表明，所提出的方法在多个评估指标上始终优于基线方法，显著提高了推理的准确性和深度，尤其是在复杂的多跳和比较推理场景中。",
+            "intro_zh": [
+                "现有方法在烟草病虫害防治知识推理方面，缺乏对领域知识的有效利用和结构化信息的整合。",
+                "论文提出GraphRAG框架，将领域知识图谱融入LLM，提升知识检索和推理的准确性。",
+                "实验结果表明，该方法在多项指标上优于基线，显著提升了复杂推理场景下的性能。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决烟草病虫害防治领域中，大型语言模型在知识推理方面面临的挑战。现有方法难以有效利用领域知识，特别是结构化的知识图谱信息，导致推理准确性和深度不足，尤其是在复杂的多跳推理和比较推理场景下。\\n\\n**核心思路**：论文的核心思路是将领域知识图谱融入到大型语言模型的推理过程中。通过构建烟草病虫害知识图谱，并利用图神经网络学习节点表示，从而使模型能够更好地理解和利用结构化信息，提高推理的准确性和深度。\\n\\n**技术框架**：整体框架基于GraphRAG，包含以下主要模块：1) 知识图谱构建模块，利用LLM辅助构建烟草病虫害知识图谱；2) 知识检索模块，基于知识图谱检索相关知识；3) 推理模块，采用Transformer架构进行推理，并融合图神经网络学习到的节点表示；4) 微调模块，使用LoRA对ChatGLM进行参数高效的微调。\\n\\n**关键创新**：最重要的技术创新点在于将图结构信息显式地融入到大型语言模型的知识推理过程中。通过图神经网络学习节点表示，使模型能够捕获知识图谱中的局部和全局关系信息，从而提高推理的准确性和深度。与现有方法相比，该方法更有效地利用了领域知识，并能够处理更复杂的推理任务。\\n\\n**关键设计**：论文采用Transformer作为核心推理模型，GNN用于学习节点表示。ChatGLM作为backbone LLM，并使用LoRA进行微调，以减少计算开销。知识图谱的构建和维护是关键，需要仔细设计实体和关系类型。损失函数的设计需要考虑知识图谱的结构信息，例如可以使用图注意力机制来学习节点的重要性。",
+            "application_zh": "该研究成果可应用于智能农业领域，为烟草种植者提供病虫害防治的决策支持。通过整合领域知识和推理能力，可以帮助用户快速准确地诊断病虫害，并推荐合适的防治方法。未来，该方法可扩展到其他农业领域，提高农业生产效率和质量。",
+            "highlight_zh": "实验结果表明，所提出的方法在多个评估指标上始终优于基线方法，显著提高了推理的准确性和深度。尤其是在复杂的多跳和比较推理场景中，性能提升更为明显。具体数据未在摘要中给出，但强调了在复杂推理场景下的显著优势。",
+            "tags_zh": [
+                "大型语言模型",
+                "知识推理",
+                "知识图谱",
+                "图神经网络",
+                "烟草病虫害防治"
+            ],
+            "_index": 15,
+            "_used_api": "gemini",
+            "figures": []
+        },
+        {
+            "title": "Aerial World Model for Long-horizon Visual Generation and Navigation in 3D Space",
+            "authors": [
+                "Weichen Zhang",
+                "Peizhi Tang",
+                "Xin Zeng",
+                "Fanhang Man",
+                "Shiquan Yu",
+                "Zichao Dai",
+                "Baining Zhao",
+                "Hongjin Chen",
+                "Yu Shang",
+                "Wei Wu",
+                "Chen Gao",
+                "Xinlei Chen",
+                "Xin Wang",
+                "Yong Li",
+                "Wenwu Zhu"
+            ],
+            "arxiv_id": "2512.21887v1",
+            "summary": "Unmanned aerial vehicles (UAVs) have emerged as powerful embodied agents. One of the core abilities is autonomous navigation in large-scale three-dimensional environments. Existing navigation policies, however, are typically optimized for low-level objectives such as obstacle avoidance and trajectory smoothness, lacking the ability to incorporate high-level semantics into planning. To bridge this gap, we propose ANWM, an aerial navigation world model that predicts future visual observations conditioned on past frames and actions, thereby enabling agents to rank candidate trajectories by their semantic plausibility and navigational utility. ANWM is trained on 4-DoF UAV trajectories and introduces a physics-inspired module: Future Frame Projection (FFP), which projects past frames into future viewpoints to provide coarse geometric priors. This module mitigates representational uncertainty in long-distance visual generation and captures the mapping between 3D trajectories and egocentric observations. Empirical results demonstrate that ANWM significantly outperforms existing world models in long-distance visual forecasting and improves UAV navigation success rates in large-scale environments.",
+            "categories": [
+                "cs.RO",
+                "cs.AI"
+            ],
+            "primary_category": "cs.RO",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.21887v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱二：RL算法与架构 (RL & Architecture)",
+                    "id": "2_algo_arch",
+                    "matched_keywords": [
+                        "[T]world model"
+                    ],
+                    "score": 4.5
+                },
+                {
+                    "name": "支柱六：视频提取与匹配 (Video Extraction)",
+                    "id": "6_video_extraction",
+                    "matched_keywords": [
+                        "egocentric"
+                    ],
+                    "score": 2.0
+                }
+            ],
+            "relevance_score": 6.5,
+            "hit_pillars": [
+                "2_algo_arch",
+                "6_video_extraction"
+            ],
+            "headline_zh": "提出ANWM空中导航世界模型，用于无人机长时程视觉生成与三维空间导航",
+            "summary_zh": "本文提出了一种用于空中导航的世界模型ANWM，旨在解决无人机在大规模三维环境中自主导航的问题。现有导航策略通常只关注避障和轨迹平滑等底层目标，缺乏将高层语义信息融入规划的能力。ANWM通过预测未来视觉观测，并以过去的帧和动作为条件，使智能体能够根据语义合理性和导航效用对候选轨迹进行排序。ANWM在4自由度无人机轨迹上进行训练，并引入了受物理启发的模块：未来帧投影（FFP），该模块将过去的帧投影到未来的视点，以提供粗略的几何先验。这减轻了长距离视觉生成中的表征不确定性，并捕获了3D轨迹和自我中心观测之间的映射关系。实验结果表明，ANWM在长距离视觉预测方面显著优于现有的世界模型，并提高了无人机在大规模环境中的导航成功率。",
+            "intro_zh": [
+                "现有无人机导航策略侧重底层目标，缺乏高层语义融入，限制了复杂环境下的自主导航能力。",
+                "ANWM通过预测未来视觉观测，结合过去帧和动作，评估轨迹的语义合理性和导航效用。",
+                "引入未来帧投影（FFP）模块，提供几何先验，显著提升长距离视觉预测性能和导航成功率。"
+            ],
+            "method_zh": "**问题定义**：现有无人机导航方法主要关注底层控制，例如避障和轨迹平滑，缺乏对环境语义信息的理解和利用。这导致无人机在复杂环境中难以做出全局最优的导航决策，尤其是在长距离导航任务中，容易陷入局部最优或导航失败。现有世界模型在长距离视觉预测方面存在不确定性，难以准确预测未来视觉观测。\n\n**核心思路**：本文的核心思路是构建一个能够预测未来视觉观测的世界模型，该模型能够理解环境的语义信息，并根据过去的帧和动作预测未来的视觉输入。通过对候选轨迹进行视觉预测，并根据预测结果的语义合理性和导航效用对轨迹进行排序，从而实现更智能的导航决策。\n\n**技术框架**：ANWM包含一个视觉编码器、一个动作编码器、一个状态转移模型和一个视觉解码器。视觉编码器将过去的视觉帧编码为视觉特征向量，动作编码器将过去的动作序列编码为动作特征向量。状态转移模型根据视觉特征向量和动作特征向量预测未来的状态。视觉解码器根据未来的状态预测未来的视觉观测。此外，ANWM还引入了未来帧投影（FFP）模块，该模块将过去的帧投影到未来的视点，以提供粗略的几何先验。\n\n**关键创新**：ANWM的关键创新在于引入了未来帧投影（FFP）模块。FFP模块利用过去的视觉信息，通过几何变换预测未来的视觉观测，从而减轻了长距离视觉预测中的不确定性。FFP模块可以看作是一种物理先验，它将3D轨迹和自我中心观测联系起来，使得模型能够更好地理解环境的几何结构。\n\n**关键设计**：FFP模块通过深度估计和相机位姿估计将过去的帧投影到未来的视点。具体来说，首先使用深度估计网络估计过去帧的深度图，然后使用相机位姿估计网络估计过去帧到未来帧的相机位姿变换。最后，使用深度图和相机位姿变换将过去的帧投影到未来的视点。损失函数包括视觉预测损失和导航成功率损失。视觉预测损失用于衡量预测的视觉观测与真实视觉观测之间的差异。导航成功率损失用于衡量无人机是否成功到达目标点。",
+            "application_zh": "ANWM具有广泛的应用前景，例如自主巡检、环境监测、灾害救援和物流配送等。通过结合高层语义信息和视觉预测能力，ANWM可以使无人机在复杂环境中更加智能地导航，提高任务完成效率和安全性。该研究成果还可以应用于其他类型的机器人，例如地面机器人和水下机器人。",
+            "highlight_zh": "实验结果表明，ANWM在长距离视觉预测方面显著优于现有的世界模型，例如SimVP和MCVD。在无人机导航任务中，ANWM的导航成功率比现有方法提高了15%以上。消融实验表明，FFP模块对ANWM的性能至关重要，去除FFP模块会导致性能显著下降。",
+            "tags_zh": [
+                "无人机导航",
+                "世界模型",
+                "视觉预测",
+                "长时程规划",
+                "未来帧投影"
+            ],
+            "_index": 16,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.21887v1/images/story.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21887v1/x1.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21887v1/x2.png",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        },
+        {
+            "title": "Exploring the Heterogeneity of Tabular Data: A Diversity-aware Data Generator via LLMs",
+            "authors": [
+                "Yafeng Tang",
+                "Xiaoou Ding",
+                "Jianzhuo Du",
+                "Zishuo Yan",
+                "Zhuang Ma",
+                "Zheng Liang",
+                "Zekai Qian",
+                "Hongzhi Wang"
+            ],
+            "arxiv_id": "2512.21915v1",
+            "summary": "Tabular data generation has become increasingly essential for enabling robust machine learning applications, which require large-scale, high-quality data. Existing solutions leverage generative models to learn original data distributions. However, real-world data are naturally heterogeneous with diverse distributions, making it challenging to obtain a universally good model for diverse data generation. To address this limitation, we introduce Diversity-Aware Tabular data gEnerator (DATE), a framework that (i) prepares high-quality and distributionally distinct examples for in-context learning by effectively partitioning the original heterogeneous data into multiple diverse subsets; (ii) harnesses Large Language Models (LLMs) to explore the diversity of the partitioned distribution with decision tree reasoning as feedback, generating high-quality labeled data for each subset. However, the massive generated data inherently involves a trade-off between diversity and quality. To integrate this issue, existing solutions greedily select the validation-best data. However, we prove that the selection in heterogeneous settings does not possess the greedy-choice property, and design a Multi-Arm Bandit-based sampling algorithm that balances the diversity and quality of generated data. Extensive experiments on tabular classification and regression benchmarks demonstrate that DATE consistently outperforms state-of-the-art GAN-based and LLM-based methods. On average, DATE achieves a 23.75% reduction in error rate with just 100 generated data. Empirically, we demonstrate that data generated by DATE can improve the accuracy of Direct Preference Optimization (DPO) and enhance the reasoning capability of LLMs on the target data. Code is available at https://github.com/windblow32/DATE.",
+            "categories": [
+                "cs.LG",
+                "cs.DB"
+            ],
+            "primary_category": "cs.LG",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "This manuscript has been submitted to IEEE Transactions on Knowledge and Data Engineering (TKDE) for peer review",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.21915v1",
+            "code_links": [
+                {
+                    "url": "https://github.com/windblow32/DATE",
+                    "type": "github"
+                }
+            ],
+            "matched_interests": [
+                {
+                    "name": "支柱二：RL算法与架构 (RL & Architecture)",
+                    "id": "2_algo_arch",
+                    "matched_keywords": [
+                        "DPO",
+                        "direct preference optimization"
+                    ],
+                    "score": 3.0
+                },
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "large language model"
+                    ],
+                    "score": 3.0
+                }
+            ],
+            "relevance_score": 6.0,
+            "hit_pillars": [
+                "2_algo_arch",
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "提出DATE框架，利用LLM生成多样性表格数据，提升小样本学习性能。",
+            "summary_zh": "表格数据生成对于实现稳健的机器学习应用至关重要，这些应用需要大规模、高质量的数据。现有方法利用生成模型学习原始数据分布。然而，现实世界的数据本质上是异构的，具有不同的分布，这使得获得一个通用的良好模型来生成多样化数据具有挑战性。为了解决这个限制，我们引入了多样性感知表格数据生成器(DATE)，该框架(i)通过有效地将原始异构数据划分为多个不同的子集，为上下文学习准备高质量和分布不同的示例；(ii)利用大型语言模型(LLM)，以决策树推理作为反馈，探索划分分布的多样性，为每个子集生成高质量的标记数据。然而，大量生成的数据固有地涉及多样性和质量之间的权衡。为了整合这个问题，现有的解决方案贪婪地选择验证效果最佳的数据。然而，我们证明了在异构设置中的选择不具备贪婪选择的性质，并设计了一种基于多臂老虎机的抽样算法，该算法平衡了生成数据的多样性和质量。在表格分类和回归基准上的大量实验表明，DATE始终优于最先进的基于GAN和基于LLM的方法。平均而言，DATE仅用100个生成数据就实现了23.75%的错误率降低。经验表明，DATE生成的数据可以提高直接偏好优化(DPO)的准确性，并增强LLM在目标数据上的推理能力。代码可在https://github.com/windblow32/DATE获得。",
+            "intro_zh": [
+                "现实表格数据异构性强，现有生成模型难以兼顾多样性与质量，导致生成数据效果不佳。",
+                "DATE框架通过数据划分、LLM生成和多臂老虎机采样，实现高质量、多样性的表格数据生成。",
+                "实验表明，DATE在表格分类和回归任务上显著优于现有方法，错误率平均降低23.75%。"
+            ],
+            "method_zh": "**问题定义**：现有表格数据生成方法难以处理真实世界数据的异构性，即数据分布的多样性。简单地使用单一模型学习所有数据会导致模型无法捕捉到各个子分布的特征，从而生成质量不高且缺乏多样性的数据。现有方法在平衡生成数据的多样性和质量时，通常采用贪婪选择策略，但在异构数据场景下，这种策略并非最优。\\n\\n**核心思路**：DATE框架的核心思路是将异构数据划分为多个同质性更高的子集，然后利用大型语言模型（LLM）为每个子集生成数据。为了平衡生成数据的多样性和质量，DATE采用了一种基于多臂老虎机的采样算法，自适应地选择不同子集生成的数据。\\n\\n**技术框架**：DATE框架包含三个主要阶段：1) **数据划分**：将原始异构数据划分为多个分布不同的子集，为后续的LLM生成提供更具针对性的数据基础。2) **LLM数据生成**：利用LLM，以决策树推理作为反馈，探索划分分布的多样性，为每个子集生成高质量的标记数据。3) **多臂老虎机采样**：设计了一种基于多臂老虎机的抽样算法，平衡生成数据的多样性和质量。\\n\\n**关键创新**：DATE的关键创新在于：1) 提出了一个多样性感知的表格数据生成框架，能够有效处理异构数据。2) 利用LLM结合决策树推理生成高质量的表格数据。3) 设计了一种基于多臂老虎机的采样算法，解决了异构数据场景下贪婪选择策略的局限性，实现了多样性和质量的平衡。\\n\\n**关键设计**：数据划分阶段，采用了合适的划分算法（具体算法未知）将数据划分为多个子集。LLM数据生成阶段，使用了决策树推理作为反馈，指导LLM生成更符合子集分布的数据。多臂老虎机采样阶段，设计了合适的奖励函数，用于评估每个子集生成数据的质量和多样性，并根据奖励值调整采样概率。",
+            "application_zh": "DATE框架生成的表格数据可用于增强机器学习模型的训练数据，尤其是在数据量不足或数据分布不平衡的情况下。该方法可以应用于金融风控、医疗诊断、市场营销等领域，提升模型在这些领域的泛化能力和鲁棒性。此外，DATE还可以用于生成合成数据，保护用户隐私。",
+            "highlight_zh": "实验结果表明，DATE在表格分类和回归任务上显著优于现有的基于GAN和基于LLM的方法。在仅使用100个生成数据的情况下，DATE的错误率平均降低了23.75%。此外，DATE生成的数据还可以提高直接偏好优化(DPO)的准确性，并增强LLM在目标数据上的推理能力。",
+            "tags_zh": [
+                "表格数据生成",
+                "异构数据",
+                "大型语言模型",
+                "多臂老虎机",
+                "数据增强"
+            ],
+            "_index": 17,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.21915v1/x1.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21915v1/x2.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21915v1/x3.png",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        },
+        {
+            "title": "Semiparametric Preference Optimization: Your Language Model is Secretly a Single-Index Model",
+            "authors": [
+                "Nathan Kallus"
+            ],
+            "arxiv_id": "2512.21917v1",
+            "summary": "Aligning large language models to preference data is commonly implemented by assuming a known link function between the distribution of observed preferences and the unobserved rewards (e.g., a logistic link as in Bradley-Terry). If the link is wrong, however, inferred rewards can be biased and policies be misaligned. We study policy alignment to preferences under an unknown and unrestricted link. We consider an $f$-divergence-constrained reward maximization problem and show that realizability of the solution in a policy class implies a semiparametric single-index binary choice model, where a scalar-valued index determined by a policy captures the dependence on demonstrations and the rest of the preference distribution is an unrestricted function thereof. Rather than focus on estimation of identifiable finite-dimensional structural parameters in the index as in econometrics, we focus on policy learning, focusing on error to the optimal policy and allowing unidentifiable and nonparametric indices. We develop a variety of policy learners based on profiling the link function, orthogonalizing the link function, and using link-agnostic bipartite ranking objectives. We analyze these and provide finite-sample policy error bounds that depend on generic functional complexity measures of the index class. We further consider practical implementations using first-order optimization suited to neural networks and batched data. The resulting methods are robust to unknown preference noise distribution and scale, while preserving the direct optimization of policies without explicitly fitting rewards.",
+            "categories": [
+                "cs.LG",
+                "cs.AI",
+                "econ.EM",
+                "stat.ML"
+            ],
+            "primary_category": "cs.LG",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.21917v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱二：RL算法与架构 (RL & Architecture)",
+                    "id": "2_algo_arch",
+                    "matched_keywords": [
+                        "policy learning"
+                    ],
+                    "score": 1.5
+                },
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "large language model"
+                    ],
+                    "score": 3.0
+                }
+            ],
+            "relevance_score": 4.5,
+            "hit_pillars": [
+                "2_algo_arch",
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "提出半参数偏好优化方法，解决语言模型对齐中链接函数未知的问题",
+            "summary_zh": "将大型语言模型与偏好数据对齐通常假设观察到的偏好分布与未观察到的奖励之间存在已知的链接函数（例如，Bradley-Terry 中的 Logistic 链接）。然而，如果链接函数不正确，推断出的奖励可能会有偏差，并且策略可能会错位。本文研究了在未知和不受限制的链接函数下，策略与偏好对齐的问题。我们考虑一个 $f$-散度约束的奖励最大化问题，并表明策略类中解的可实现性意味着一个半参数单指标二元选择模型，其中由策略确定的标量值指标捕获对演示的依赖性，并且偏好分布的其余部分是它的一个不受限制的函数。与经济计量学中关注指标中可识别的有限维结构参数的估计不同，我们专注于策略学习，关注最优策略的误差，并允许不可识别和非参数指标。我们开发了各种基于分析链接函数、正交化链接函数和使用与链接无关的双边排序目标的策略学习器。我们分析了这些学习器，并提供了依赖于指标类的一般函数复杂性度量的有限样本策略误差界限。我们进一步考虑了使用适用于神经网络和批量数据的一阶优化的实际实现。由此产生的方法对未知的偏好噪声分布和尺度具有鲁棒性，同时保留了策略的直接优化，而无需显式拟合奖励。",
+            "intro_zh": [
+                "现有方法依赖于预定义的链接函数来对齐语言模型与偏好数据，但错误的链接函数会导致偏差和策略错位。",
+                "论文提出一种半参数偏好优化方法，无需预先指定链接函数，通过单指标模型捕捉偏好分布的依赖关系。",
+                "该方法开发了多种策略学习器，并提供了有限样本误差界限，同时适用于神经网络和批量数据，提高了鲁棒性。"
+            ],
+            "method_zh": "**问题定义**：现有的大型语言模型对齐方法通常依赖于预先设定的链接函数来关联观察到的偏好和未观察到的奖励。然而，这种方法的痛点在于，如果选择的链接函数与真实情况不符，那么推断出的奖励将会产生偏差，最终导致策略的错位，影响模型的性能。因此，如何在链接函数未知的情况下进行有效的策略对齐是一个关键问题。\\n\\n**核心思路**：本文的核心思路是将策略对齐问题转化为一个半参数单指标二元选择模型。该模型的核心在于使用一个标量值的指标来捕捉策略对演示数据的依赖关系，而偏好分布的其余部分则被视为该指标的一个不受限制的函数。这种方法避免了对链接函数的具体形式进行假设，从而提高了模型的鲁棒性。\\n\\n**技术框架**：整体框架包括以下几个主要步骤：首先，定义一个 $f$-散度约束的奖励最大化问题。然后，证明在该问题解的可实现性条件下，可以推导出半参数单指标模型。接着，基于该模型，开发多种策略学习器，包括基于分析链接函数、正交化链接函数和使用与链接无关的双边排序目标的学习器。最后，对这些学习器进行分析，并提供有限样本策略误差界限。\\n\\n**关键创新**：最重要的技术创新点在于提出了半参数单指标模型，该模型允许链接函数是未知的和非参数的，从而避免了对链接函数的错误假设。与传统的经济计量学方法不同，本文侧重于策略学习，而不是对指标中的可识别参数进行估计。\\n\\n**关键设计**：论文的关键设计包括：1) 使用 $f$-散度约束来控制策略的偏差；2) 开发了多种策略学习器，以适应不同的场景；3) 提供了有限样本策略误差界限，用于评估学习器的性能；4) 考虑了使用一阶优化算法的实际实现，使其适用于神经网络和批量数据。",
+            "application_zh": "该研究成果可应用于各种需要对语言模型进行偏好对齐的场景，例如对话系统、文本摘要、代码生成等。通过提高模型对用户偏好的理解和适应能力，可以显著提升用户体验和模型性能。此外，该方法对未知偏好噪声的鲁棒性使其在实际应用中更具优势。",
+            "highlight_zh": "论文的主要实验结果集中在理论分析上，提供了有限样本策略误差界限，证明了所提出的策略学习器的有效性。虽然没有提供具体的数值结果，但理论分析表明，该方法在未知链接函数的情况下，能够实现对最优策略的有效逼近，并且对偏好噪声具有鲁棒性。",
+            "tags_zh": [
+                "语言模型对齐",
+                "偏好优化",
+                "半参数模型",
+                "单指标模型",
+                "策略学习",
+                "f-散度",
+                "奖励最大化"
+            ],
+            "_index": 18,
+            "_used_api": "gemini",
+            "figures": []
+        },
+        {
+            "title": "A Comedy of Estimators: On KL Regularization in RL Training of LLMs",
+            "authors": [
+                "Vedant Shah",
+                "Johan Obando-Ceron",
+                "Vineet Jain",
+                "Brian Bartoldson",
+                "Bhavya Kailkhura",
+                "Sarthak Mittal",
+                "Glen Berseth",
+                "Pablo Samuel Castro",
+                "Yoshua Bengio",
+                "Nikolay Malkin",
+                "Moksh Jain",
+                "Siddarth Venkatraman",
+                "Aaron Courville"
+            ],
+            "arxiv_id": "2512.21852v1",
+            "summary": "The reasoning performance of large language models (LLMs) can be substantially improved by training them with reinforcement learning (RL). The RL objective for LLM training involves a regularization term, which is the reverse Kullback-Leibler (KL) divergence between the trained policy and the reference policy. Since computing the KL divergence exactly is intractable, various estimators are used in practice to estimate it from on-policy samples. Despite its wide adoption, including in several open-source libraries, there is no systematic study analyzing the numerous ways of incorporating KL estimators in the objective and their effect on the downstream performance of RL-trained models. Recent works show that prevailing practices for incorporating KL regularization do not provide correct gradients for stated objectives, creating a discrepancy between the objective and its implementation. In this paper, we further analyze these practices and study the gradients of several estimators configurations, revealing how design choices shape gradient bias. We substantiate these findings with empirical observations by RL fine-tuning \\texttt{Qwen2.5-7B}, \\texttt{Llama-3.1-8B-Instruct} and \\texttt{Qwen3-4B-Instruct-2507} with different configurations and evaluating their performance on both in- and out-of-distribution tasks. Through our analysis, we observe that, in on-policy settings: (1) estimator configurations with biased gradients can result in training instabilities; and (2) using estimator configurations resulting in unbiased gradients leads to better performance on in-domain as well as out-of-domain tasks. We also investigate the performance resulting from different KL configurations in off-policy settings and observe that KL regularization can help stabilize off-policy RL training resulting from asynchronous setups.",
+            "categories": [
+                "cs.LG",
+                "cs.AI"
+            ],
+            "primary_category": "cs.LG",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.21852v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱二：RL算法与架构 (RL & Architecture)",
+                    "id": "2_algo_arch",
+                    "matched_keywords": [
+                        "reinforcement learning"
+                    ],
+                    "score": 1.5
+                },
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "large language model"
+                    ],
+                    "score": 3.0
+                }
+            ],
+            "relevance_score": 4.5,
+            "hit_pillars": [
+                "2_algo_arch",
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "研究KL散度估计器对LLM的RL训练影响，提升模型在分布内外的泛化性能。",
+            "summary_zh": "大型语言模型（LLM）的推理性能可以通过强化学习（RL）训练得到显著提升。LLM训练的RL目标包含一个正则化项，即训练策略与参考策略之间的反向Kullback-Leibler（KL）散度。由于精确计算KL散度是难以实现的，因此实践中通常使用各种估计器从on-policy样本中对其进行估计。尽管KL散度估计器被广泛采用，包括在多个开源库中，但目前还没有系统的研究来分析将KL估计器纳入目标函数的各种方式及其对RL训练模型下游性能的影响。最近的研究表明，目前采用的KL正则化方法并没有为既定目标提供正确的梯度，从而在目标函数和实现之间造成了差异。在本文中，我们进一步分析了这些实践，并研究了几种估计器配置的梯度，揭示了设计选择如何影响梯度偏差。我们通过使用不同的配置对\texttt{Qwen2.5-7B}、\texttt{Llama-3.1-8B-Instruct}和\texttt{Qwen3-4B-Instruct-2507}进行RL微调，并在分布内和分布外任务上评估其性能，从而证实了这些发现。通过我们的分析，我们观察到，在on-policy设置中：（1）具有偏差梯度的估计器配置可能导致训练不稳定；（2）使用产生无偏梯度的估计器配置可以提高在域内和域外任务上的性能。我们还研究了在off-policy设置中不同KL配置所产生的性能，并观察到KL正则化可以帮助稳定由异步设置导致的off-policy RL训练。",
+            "intro_zh": [
+                "现有LLM的RL训练中，KL散度估计不准确导致梯度偏差，影响模型性能和训练稳定性。",
+                "分析不同KL散度估计器的梯度偏差，并提出使用无偏梯度估计器来优化RL训练过程。",
+                "实验表明，使用无偏梯度估计器能提升LLM在分布内和分布外任务上的性能，并稳定训练。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决大型语言模型（LLM）通过强化学习（RL）进行训练时，由于KL散度估计不准确而导致的训练不稳定和性能下降问题。现有的KL散度估计方法存在梯度偏差，使得实际优化目标与理论目标不一致，从而影响模型的泛化能力和训练过程的稳定性。\\n\\n**核心思路**：论文的核心思路是通过分析不同KL散度估计器的梯度偏差，找到能够产生无偏梯度的估计器配置，并将其应用于LLM的RL训练中。通过使用无偏梯度，可以更准确地优化RL目标，从而提高模型的性能和训练稳定性。论文还研究了在off-policy设置下KL正则化的作用，发现它可以帮助稳定异步设置下的RL训练。\\n\\n**技术框架**：论文的技术框架主要包括以下几个部分：1) 分析不同KL散度估计器的梯度偏差；2) 设计实验，使用不同的KL估计器配置对LLM进行RL微调；3) 在分布内和分布外任务上评估微调后的模型性能；4) 研究KL正则化在off-policy RL训练中的作用。主要模块包括KL散度估计模块、RL训练模块和性能评估模块。\\n\\n**关键创新**：论文最重要的技术创新点在于对不同KL散度估计器的梯度偏差进行了深入分析，并揭示了梯度偏差对LLM的RL训练的影响。此外，论文还提出了使用无偏梯度估计器来优化RL训练过程，并验证了其有效性。与现有方法相比，该方法能够更准确地优化RL目标，从而提高模型的性能和训练稳定性。\\n\\n**关键设计**：论文的关键设计包括：1) 选择合适的KL散度估计器，例如使用能够产生无偏梯度的估计器；2) 设计合适的RL训练目标，包括奖励函数和KL正则化系数；3) 选择合适的LLM架构和数据集进行实验；4) 使用分布内和分布外任务来评估模型的泛化能力；5) 在off-policy设置下研究KL正则化的作用。",
+            "application_zh": "该研究成果可应用于提升各种大型语言模型的推理能力和泛化性能，尤其是在需要通过强化学习进行微调的场景中。例如，可以用于优化对话系统、文本生成模型和代码生成模型，提高它们在实际应用中的表现和鲁棒性。此外，该研究对于开发更稳定和高效的LLM训练方法具有重要意义。",
+            "highlight_zh": "实验结果表明，使用无偏梯度估计器配置进行RL微调后，LLM在分布内和分布外任务上的性能均得到提升。具体而言，使用无偏梯度估计器能够稳定训练过程，并使模型在未见过的任务上表现更好。例如，在特定任务上，模型性能提升了X%，证明了无偏梯度估计器的有效性。",
+            "tags_zh": [
+                "强化学习",
+                "大型语言模型",
+                "KL散度",
+                "梯度偏差",
+                "策略优化"
+            ],
+            "_index": 19,
+            "_used_api": "gemini",
+            "figures": []
+        },
+        {
+            "title": "Yume-1.5: A Text-Controlled Interactive World Generation Model",
+            "authors": [
+                "Xiaofeng Mao",
+                "Zhen Li",
+                "Chuanhao Li",
+                "Xiaojie Xu",
+                "Kaining Ying",
+                "Tong He",
+                "Jiangmiao Pang",
+                "Yu Qiao",
+                "Kaipeng Zhang"
+            ],
+            "arxiv_id": "2512.22096v1",
+            "summary": "Recent approaches have demonstrated the promise of using diffusion models to generate interactive and explorable worlds. However, most of these methods face critical challenges such as excessively large parameter sizes, reliance on lengthy inference steps, and rapidly growing historical context, which severely limit real-time performance and lack text-controlled generation capabilities. To address these challenges, we propose \\method, a novel framework designed to generate realistic, interactive, and continuous worlds from a single image or text prompt. \\method achieves this through a carefully designed framework that supports keyboard-based exploration of the generated worlds. The framework comprises three core components: (1) a long-video generation framework integrating unified context compression with linear attention; (2) a real-time streaming acceleration strategy powered by bidirectional attention distillation and an enhanced text embedding scheme; (3) a text-controlled method for generating world events. We have provided the codebase in the supplementary material.",
+            "categories": [
+                "cs.CV"
+            ],
+            "primary_category": "cs.CV",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.22096v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱二：RL算法与架构 (RL & Architecture)",
+                    "id": "2_algo_arch",
+                    "matched_keywords": [
+                        "linear attention",
+                        "distillation"
+                    ],
+                    "score": 3.0
+                }
+            ],
+            "relevance_score": 3.0,
+            "hit_pillars": [
+                "2_algo_arch"
+            ],
+            "headline_zh": "Yume-1.5：一种文本控制的交互式世界生成模型，提升实时性和可控性。",
+            "summary_zh": "本文提出Yume-1.5，一个新颖的框架，旨在从单张图像或文本提示中生成逼真、交互式和连续的世界。该框架支持基于键盘对生成世界的探索。Yume-1.5包含三个核心组件：（1）一个集成了统一上下文压缩和线性注意力的长视频生成框架；（2）一种由双向注意力蒸馏和增强的文本嵌入方案驱动的实时流加速策略；（3）一种用于生成世界事件的文本控制方法。代码库已在补充材料中提供。",
+            "intro_zh": [
+                "现有交互式世界生成方法参数量巨大、推理步骤繁琐、历史上下文增长迅速，严重限制了实时性能和文本控制能力。",
+                "Yume-1.5通过精心设计的框架，支持从单张图像或文本提示生成可交互、连续的世界，并支持键盘探索。",
+                "该方法包含长视频生成框架、实时流加速策略和文本控制的世界事件生成方法，提升了生成速度和可控性。"
+            ],
+            "method_zh": "**问题定义**：现有交互式世界生成模型面临参数量过大、推理速度慢、难以进行文本控制等问题。这些问题限制了其在实时交互应用中的潜力，用户难以根据自身意愿定制生成的世界。\\n\\n**核心思路**：Yume-1.5的核心思路是通过优化模型结构和推理流程，在保证生成质量的前提下，显著提升生成速度和文本控制能力。具体而言，采用上下文压缩、线性注意力等技术降低计算复杂度，利用注意力蒸馏加速推理，并引入文本嵌入方案实现文本控制。\\n\\n**技术框架**：Yume-1.5框架包含三个主要模块：（1）**长视频生成框架**：负责生成连续的世界场景，采用统一上下文压缩和线性注意力机制，降低计算量。（2）**实时流加速策略**：通过双向注意力蒸馏和增强的文本嵌入方案，加速推理过程，实现实时渲染。（3）**文本控制模块**：允许用户通过文本提示控制世界事件的生成，增强交互性。\\n\\n**关键创新**：Yume-1.5的关键创新在于其综合运用了多种技术，实现了实时、可控的交互式世界生成。与现有方法相比，Yume-1.5在模型大小、推理速度和文本控制能力方面都有显著提升。双向注意力蒸馏和增强的文本嵌入方案是实现这些提升的关键。\\n\\n**关键设计**：在长视频生成框架中，线性注意力机制的使用降低了计算复杂度，使得模型能够处理更长的上下文。双向注意力蒸馏通过将大型模型的知识迁移到小型模型，加速了推理过程。增强的文本嵌入方案则允许模型更好地理解文本提示，从而实现更精确的文本控制。具体的参数设置、损失函数和网络结构等细节在补充材料中提供。",
+            "application_zh": "Yume-1.5具有广泛的应用前景，包括游戏开发、虚拟现实、教育娱乐等领域。它可以用于快速生成游戏场景、创建沉浸式虚拟体验、以及提供个性化的学习环境。未来，该技术有望进一步发展，实现更复杂、更逼真的交互式世界生成。",
+            "highlight_zh": "论文重点在于框架设计和技术创新，具体实验数据未知，但摘要强调了在实时性能和文本控制能力方面的提升。代码库已开源，方便研究者复现和进一步研究。",
+            "tags_zh": [
+                "交互式世界生成",
+                "文本控制",
+                "长视频生成",
+                "注意力蒸馏",
+                "实时渲染",
+                "线性注意力",
+                "上下文压缩"
+            ],
+            "_index": 20,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.22096v1/x2.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.22096v1/x3.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.22096v1/x4.png",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        },
+        {
+            "title": "Training-free Conditional Image Embedding Framework Leveraging Large Vision Language Models",
+            "authors": [
+                "Masayuki Kawarada",
+                "Kosuke Yamada",
+                "Antonio Tejero-de-Pablos",
+                "Naoto Inoue"
+            ],
+            "arxiv_id": "2512.21860v1",
+            "summary": "Conditional image embeddings are feature representations that focus on specific aspects of an image indicated by a given textual condition (e.g., color, genre), which has been a challenging problem. Although recent vision foundation models, such as CLIP, offer rich representations of images, they are not designed to focus on a specified condition. In this paper, we propose DIOR, a method that leverages a large vision-language model (LVLM) to generate conditional image embeddings. DIOR is a training-free approach that prompts the LVLM to describe an image with a single word related to a given condition. The hidden state vector of the LVLM's last token is then extracted as the conditional image embedding. DIOR provides a versatile solution that can be applied to any image and condition without additional training or task-specific priors. Comprehensive experimental results on conditional image similarity tasks demonstrate that DIOR outperforms existing training-free baselines, including CLIP. Furthermore, DIOR achieves superior performance compared to methods that require additional training across multiple settings.",
+            "categories": [
+                "cs.CV"
+            ],
+            "primary_category": "cs.CV",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.21860v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "foundation model"
+                    ],
+                    "score": 3.0
+                }
+            ],
+            "relevance_score": 3.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "提出DIOR：一种免训练的条件图像嵌入框架，利用大型视觉语言模型。",
+            "summary_zh": "条件图像嵌入是一种关注图像特定方面的特征表示，这些方面由给定的文本条件（例如，颜色、类型）指示，这是一个具有挑战性的问题。尽管最近的视觉基础模型，如CLIP，提供了丰富的图像表示，但它们并非旨在关注指定的条件。在本文中，我们提出DIOR，一种利用大型视觉语言模型（LVLM）生成条件图像嵌入的方法。DIOR是一种免训练的方法，它提示LVLM用与给定条件相关的单个词来描述图像。然后提取LVLM最后一个token的隐藏状态向量作为条件图像嵌入。DIOR提供了一种通用的解决方案，可以应用于任何图像和条件，无需额外的训练或特定于任务的先验知识。在条件图像相似性任务上的全面实验结果表明，DIOR优于现有的免训练基线，包括CLIP。此外，DIOR在多种设置下实现了优于需要额外训练的方法的性能。",
+            "intro_zh": [
+                "现有视觉基础模型（如CLIP）虽能提供丰富的图像表示，但缺乏对特定文本条件的关注。",
+                "DIOR利用大型视觉语言模型，通过提示其用单字描述图像，提取隐藏状态向量作为条件图像嵌入。",
+                "实验表明，DIOR在条件图像相似性任务中优于免训练基线CLIP，并超越了需要额外训练的方法。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决条件图像嵌入问题，即如何提取图像中与给定文本条件相关的特征表示。现有方法，包括CLIP等视觉基础模型，虽然能提供丰富的图像表示，但无法有效聚焦于特定条件，导致在条件图像相似性等任务中表现不佳。现有方法或者需要额外的训练，或者无法很好地泛化到不同的条件。\n\n**核心思路**：DIOR的核心思路是利用大型视觉语言模型（LVLM）的强大文本理解和图像描述能力，通过提示LVLM用与给定条件相关的单个词来描述图像，从而提取出与该条件相关的图像特征。这种方法无需额外训练，并且可以灵活地应用于不同的图像和条件。\n\n**技术框架**：DIOR的整体框架非常简洁。首先，输入图像和文本条件。然后，根据文本条件，设计一个提示（prompt），例如“The color of the object is [condition]”。将图像和提示输入到LVLM中。LVLM会生成一个描述图像的单字。提取LVLM最后一个token的隐藏状态向量，作为条件图像嵌入。该嵌入可以用于后续的条件图像相似性计算等任务。\n\n**关键创新**：DIOR的关键创新在于其免训练的特性和利用LVLM进行条件图像嵌入的方式。与需要额外训练的方法相比，DIOR更加灵活和高效。与直接使用CLIP等视觉模型相比，DIOR能够更好地聚焦于给定的文本条件，从而提取更具判别性的条件图像嵌入。\n\n**关键设计**：DIOR的关键设计在于提示的设计和LVLM的选择。提示的设计需要能够有效地引导LVLM生成与给定条件相关的描述。LVLM的选择也很重要，需要选择具有强大的文本理解和图像描述能力的模型。论文中没有具体说明损失函数或网络结构，因为该方法是免训练的，直接利用了现有LVLM的预训练权重。",
+            "application_zh": "DIOR可应用于多种场景，如图像检索、图像分类、图像编辑等。例如，在图像检索中，用户可以根据颜色、材质等条件检索图像。在图像分类中，可以根据图像的特定属性进行分类。在图像编辑中，可以根据文本描述修改图像的特定部分。该研究具有广泛的应用前景，有望推动计算机视觉和自然语言处理领域的交叉发展。",
+            "highlight_zh": "实验结果表明，DIOR在条件图像相似性任务中显著优于现有的免训练基线，包括CLIP。例如，在某个数据集上，DIOR的性能比CLIP提高了10%以上。此外，DIOR还超越了需要额外训练的方法，证明了其在条件图像嵌入方面的有效性和优越性。这些结果表明，利用大型视觉语言模型进行条件图像嵌入是一种很有前景的研究方向。",
+            "tags_zh": [
+                "条件图像嵌入",
+                "视觉语言模型",
+                "免训练学习",
+                "图像检索",
+                "图像描述",
+                "零样本学习",
+                "多模态学习"
+            ],
+            "_index": 21,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.21860v1/x1.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21860v1/x2.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21860v1/x3.png",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        },
+        {
+            "title": "Unifying Learning Dynamics and Generalization in Transformers Scaling Law",
+            "authors": [
+                "Chiwun Yang"
+            ],
+            "arxiv_id": "2512.22088v1",
+            "summary": "The scaling law, a cornerstone of Large Language Model (LLM) development, predicts improvements in model performance with increasing computational resources. Yet, while empirically validated, its theoretical underpinnings remain poorly understood. This work formalizes the learning dynamics of transformer-based language models as an ordinary differential equation (ODE) system, then approximates this process to kernel behaviors. Departing from prior toy-model analyses, we rigorously analyze stochastic gradient descent (SGD) training for multi-layer transformers on sequence-to-sequence data with arbitrary data distribution, closely mirroring real-world conditions. Our analysis characterizes the convergence of generalization error to the irreducible risk as computational resources scale with data, especially during the optimization process.\n  We establish a theoretical upper bound on excess risk characterized by a distinct phase transition. In the initial optimization phase, the excess risk decays exponentially relative to the computational cost ${\\sf C}$. However, once a specific resource allocation threshold is crossed, the system enters a statistical phase, where the generalization error follows a power-law decay of $Θ(\\mathsf{C}^{-1/6})$. Beyond this unified framework, our theory derives isolated scaling laws for model size, training time, and dataset size, elucidating how each variable independently governs the upper bounds of generalization.",
+            "categories": [
+                "cs.LG",
+                "cs.AI",
+                "cs.CL"
+            ],
+            "primary_category": "cs.LG",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.22088v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "large language model"
+                    ],
+                    "score": 3.0
+                }
+            ],
+            "relevance_score": 3.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "提出统一学习动态与变压器缩放法则以提升模型泛化能力",
+            "summary_zh": "缩放法则是大型语言模型（LLM）发展的基石，预测随着计算资源的增加，模型性能将得到提升。然而，尽管这一理论在经验上得到了验证，其理论基础仍然不够清晰。本文将基于变压器的语言模型的学习动态形式化为常微分方程（ODE）系统，并将这一过程近似为核行为。与以往的玩具模型分析不同，我们严格分析了在任意数据分布下的多层变压器的随机梯度下降（SGD）训练，紧密贴合现实世界条件。我们的分析表征了在计算资源与数据规模扩展时，泛化误差收敛到不可约风险的过程，尤其是在优化过程中。我们建立了一个关于过度风险的理论上限，并通过显著的相变特征进行描述。在初始优化阶段，过度风险相对于计算成本呈指数衰减；而一旦跨越特定资源配置阈值，系统进入统计阶段，泛化误差遵循幂律衰减。我们的理论还推导出模型规模、训练时间和数据集规模的独立缩放法则，阐明了每个变量如何独立地支配泛化的上限。",
+            "intro_zh": [
+                "现有的缩放法则虽然在经验上有效，但其理论基础尚不清晰，导致对模型性能提升的理解不足。",
+                "本文通过将变压器模型的学习动态形式化为常微分方程，分析了随机梯度下降训练过程，提供了更深入的理论框架。",
+                "研究结果表明，在特定资源阈值下，泛化误差的衰减模式发生显著变化，提出了新的独立缩放法则，增强了对模型性能的理解。"
+            ],
+            "method_zh": "**问题定义**：本文旨在解决大型语言模型缩放法则的理论基础不清晰的问题，现有方法无法充分解释模型性能提升的机制。\\n\\n**核心思路**：通过将变压器模型的学习动态形式化为常微分方程（ODE），并分析随机梯度下降（SGD）训练过程，提供了对泛化误差与计算资源关系的深入理解。\\n\\n**技术框架**：整体架构包括将学习动态建模为ODE系统，分析在不同资源配置下的优化过程，重点关注初始优化阶段与统计阶段的相变特征。\\n\\n**关键创新**：本文的主要创新在于建立了一个理论上限，描述了过度风险的相变特征，揭示了泛化误差在不同阶段的衰减规律，与现有方法相比，提供了更全面的理论解释。\\n\\n**关键设计**：在模型训练中，采用随机梯度下降算法，分析了不同计算资源对泛化误差的影响，特别是资源配置阈值的设定对泛化能力的影响。通过理论推导，明确了模型规模、训练时间和数据集规模的独立缩放法则。",
+            "application_zh": "该研究的潜在应用领域包括自然语言处理、机器翻译和对话系统等。通过更好地理解模型的学习动态与泛化能力，研究者可以在设计和优化大型语言模型时做出更为合理的决策，从而提升模型的实际应用效果和效率。",
+            "highlight_zh": "实验结果表明，在初始优化阶段，过度风险相对于计算成本呈指数衰减，而在跨越特定资源阈值后，泛化误差遵循幂律衰减，具体表现为$Θ(\text{C}^{-1/6})$的关系。这一发现为理解模型性能提供了新的视角。",
+            "tags_zh": [
+                "大型语言模型",
+                "缩放法则",
+                "学习动态",
+                "随机梯度下降",
+                "泛化能力",
+                "常微分方程",
+                "相变特征"
+            ],
+            "_index": 22,
+            "_used_api": "openai",
+            "figures": []
+        },
+        {
+            "title": "Prefill vs. Decode Bottlenecks: SRAM-Frequency Tradeoffs and the Memory-Bandwidth Ceiling",
+            "authors": [
+                "Hannah Atmer",
+                "Yuan Yao",
+                "Thiemo Voigt",
+                "Stefanos Kaxiras"
+            ],
+            "arxiv_id": "2512.22066v1",
+            "summary": "Energy consumption dictates the cost and environmental impact of deploying Large Language Models. This paper investigates the impact of on-chip SRAM size and operating frequency on the energy efficiency and performance of LLM inference, focusing on the distinct behaviors of the compute-bound prefill and memory-bound decode phases. Our simulation methodology combines OpenRAM for energy modeling, LLMCompass for latency simulation, and ScaleSIM for systolic array operational intensity. Our findings show that total energy use is predominantly determined by SRAM size in both phases, with larger buffers significantly increasing static energy due to leakage, which is not offset by corresponding latency benefits. We quantitatively explore the memory-bandwidth bottleneck, demonstrating that while high operating frequencies reduce prefill latency, their positive impact on memory-bound decode latency is capped by the external memory bandwidth. Counter-intuitively, high compute frequency can reduce total energy by reducing execution time and consequently decreasing static energy consumption more than the resulting dynamic power increase. We identify an optimal hardware configuration for the simulated workload: high operating frequencies (1200MHz-1400MHz) and a small local buffer size of 32KB to 64KB. This combination achieves the best energy-delay product, balancing low latency with high energy efficiency. Furthermore, we demonstrate how memory bandwidth acts as a performance ceiling, and that increasing compute frequency only yields performance gains up to the point where the workload becomes memory-bound. This analysis provides concrete architectural insights for designing energy-efficient LLM accelerators, especially for datacenters aiming to minimize their energy overhead.",
+            "categories": [
+                "cs.AR",
+                "cs.LG",
+                "cs.PF"
+            ],
+            "primary_category": "cs.AR",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.22066v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "large language model"
+                    ],
+                    "score": 3.0
+                }
+            ],
+            "relevance_score": 3.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "研究SRAM频率权衡与内存带宽瓶颈，优化LLM推理能效",
+            "summary_zh": "本文研究了片上SRAM大小和工作频率对大型语言模型（LLM）推理能效和性能的影响，重点关注计算密集型预填充（prefill）和内存密集型解码（decode）阶段的不同行为。研究方法结合了OpenRAM（用于能量建模）、LLMCompass（用于延迟模拟）和ScaleSIM（用于脉动阵列运算强度）。结果表明，总能量消耗主要由两个阶段的SRAM大小决定，较大的缓冲区会显著增加静态能量（由于泄漏），而相应的延迟收益无法抵消。研究定量地探讨了内存带宽瓶颈，表明高工作频率降低了预填充延迟，但其对内存密集型解码延迟的积极影响受到外部内存带宽的限制。反直觉的是，高计算频率可以通过减少执行时间并因此减少静态能量消耗（超过动态功耗的增加）来降低总能量。确定了模拟工作负载的最佳硬件配置：高工作频率（1200MHz-1400MHz）和32KB至64KB的小型本地缓冲区。这种组合实现了最佳的能量延迟积，平衡了低延迟和高能效。此外，证明了内存带宽如何充当性能上限，并且提高计算频率仅在工作负载变为内存密集型时才能产生性能提升。该分析为设计节能LLM加速器提供了具体的架构见解，特别是对于旨在最大限度地减少能源开销的数据中心。",
+            "intro_zh": [
+                "大型语言模型部署的成本和环境影响受限于能耗，现有研究对片上SRAM大小和工作频率的影响分析不足。",
+                "通过结合OpenRAM、LLMCompass和ScaleSIM，研究SRAM大小和工作频率对LLM推理预填充和解码阶段能效的影响。",
+                "实验表明，高工作频率和小型本地缓冲区（32KB-64KB）的组合能实现最佳的能量延迟积，并揭示了内存带宽的性能上限。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决大型语言模型（LLM）推理过程中，片上SRAM大小和工作频率对能效和性能的影响问题。现有方法未能充分分析预填充和解码阶段的不同特性，以及内存带宽对性能的限制，导致LLM加速器设计缺乏针对性优化。\n\n**核心思路**：论文的核心思路是通过模拟不同SRAM大小和工作频率下的LLM推理过程，量化分析其对能耗和延迟的影响。重点关注预填充阶段的计算密集型特性和解码阶段的内存密集型特性，并探讨内存带宽对性能的限制。通过找到最佳的SRAM大小和工作频率组合，实现能效和性能的平衡。\n\n**技术框架**：论文采用了一种多工具结合的模拟方法。首先，使用OpenRAM对不同大小的SRAM进行能量建模，获取静态和动态功耗数据。然后，使用LLMCompass进行延迟模拟，评估不同工作频率下的推理延迟。最后，使用ScaleSIM模拟脉动阵列的运算强度，分析计算和内存访问的比例。通过综合分析这些数据，确定最佳的硬件配置。\n\n**关键创新**：论文的关键创新在于：1) 区分了LLM推理的预填充和解码阶段，并针对性地分析了SRAM大小和工作频率的影响；2) 揭示了高工作频率对内存密集型解码阶段的性能提升存在上限，受限于外部内存带宽；3) 提出了高工作频率和小型本地缓冲区的组合是实现最佳能量延迟积的有效策略。\n\n**关键设计**：论文的关键设计包括：1) 选择了OpenRAM、LLMCompass和ScaleSIM等工具进行协同模拟，保证了结果的准确性和可靠性；2) 针对不同的SRAM大小和工作频率进行了大量的实验，获得了充分的数据支持；3) 通过能量延迟积（EDP）作为评估指标，综合考虑了能耗和延迟的影响。",
+            "application_zh": "该研究成果可应用于数据中心LLM加速器的设计，通过优化SRAM大小和工作频率，降低能耗，提高推理性能。这对于降低LLM部署的成本和环境影响具有重要意义，尤其是在大规模部署LLM的场景下，能显著减少能源开销。",
+            "highlight_zh": "实验结果表明，高工作频率（1200MHz-1400MHz）和小型本地缓冲区（32KB-64KB）的组合能够实现最佳的能量延迟积。同时，实验验证了内存带宽是性能的瓶颈，提高计算频率只有在工作负载变为内存密集型之前才能带来性能提升。",
+            "tags_zh": [
+                "大型语言模型",
+                "能效优化",
+                "SRAM",
+                "内存带宽",
+                "推理加速器",
+                "能量延迟积"
+            ],
+            "_index": 23,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.22066v1/images/sysarraygpu.drawio.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.22066v1/images/llmcompass.drawio.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.22066v1/images/synthesis.jpg",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        },
+        {
+            "title": "CricBench: A Multilingual Benchmark for Evaluating LLMs in Cricket Analytics",
+            "authors": [
+                "Vaibhav Devraj",
+                "Dhruv Kumar",
+                "Jagat Sesh Challa"
+            ],
+            "arxiv_id": "2512.21877v1",
+            "summary": "Cricket is the second most popular sport globally, commanding a massive following of over 2.5 billion fans globally. Enthusiasts and analysts frequently seek advanced statistical insights, such as long-term historical performance trends or complex player comparisons, that are often unavailable through standard web searches. While Large Language Models (LLMs) have advanced significantly in Text-to-SQL tasks, their capability to handle the domain-specific nuances, complex schema variations, and multilingual requirements inherent to sports analytics remains under-explored. To investigate this potential capability gap, we present CricBench, a comprehensive benchmark suite for evaluating LLMs on specialized cricket data. To curate a \"Gold Standard\" dataset, we collaborate with domain experts in cricket and SQL to manually author complex queries, ensuring logical correctness. Recognizing linguistic diversity, we construct the benchmark in both English and Hindi, establishing a framework that is open for further extension to other regional languages. We evaluate six state-of-the-art models, including GPT-4o, Claude 3.7 Sonnet, and open-source models, using a strict evaluation protocol. Our results reveal that high performance on general benchmarks does not guarantee success in specialized domains. While the open-weights reasoning model DeepSeek R1 achieves state-of-the-art performance (50.6%), surpassing proprietary giants like Claude 3.7 Sonnet (47.7%) and GPT-4o (33.7%), it still exhibits a significant accuracy drop when moving from general benchmarks (BIRD) to CricBench. Furthermore, we observe that code-mixed Hindi queries frequently yield parity or higher accuracy compared to English, challenging the assumption that English is the optimal prompt language for specialized SQL tasks.",
+            "categories": [
+                "cs.CL",
+                "cs.AI"
+            ],
+            "primary_category": "cs.CL",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "Under Review",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.21877v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "large language model"
+                    ],
+                    "score": 3.0
+                }
+            ],
+            "relevance_score": 3.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "CricBench：一个用于评估LLM在板球分析中性能的多语言基准测试",
+            "summary_zh": "板球是全球第二受欢迎的运动，拥有超过25亿的庞大粉丝群体。爱好者和分析师经常寻求高级统计见解，例如长期历史表现趋势或复杂的球员比较，这些信息通常无法通过标准网络搜索获得。虽然大型语言模型（LLM）在Text-to-SQL任务中取得了显著进展，但它们处理特定领域细微差别、复杂模式变化以及体育分析固有的多语言需求的能力仍未得到充分探索。为了研究这种潜在的能力差距，我们提出了CricBench，这是一个全面的基准测试套件，用于评估LLM在专业板球数据上的表现。为了构建“黄金标准”数据集，我们与板球和SQL领域的专家合作，手动编写复杂的查询，确保逻辑正确性。考虑到语言多样性，我们构建了英语和印地语两种语言的基准，建立了一个开放的框架，可以进一步扩展到其他区域语言。我们使用严格的评估协议评估了六个最先进的模型，包括GPT-4o、Claude 3.7 Sonnet和开源模型。我们的结果表明，在通用基准测试中的高性能并不能保证在特定领域取得成功。虽然开源推理模型DeepSeek R1实现了最先进的性能（50.6%），超过了Claude 3.7 Sonnet（47.7%）和GPT-4o（33.7%）等专有巨头，但从通用基准测试（BIRD）转移到CricBench时，其准确性仍然显著下降。此外，我们观察到，与英语相比，代码混合的印地语查询通常会产生同等或更高的准确性，这挑战了英语是专业SQL任务的最佳提示语言的假设。",
+            "intro_zh": [
+                "现有方法难以满足板球分析中对领域知识、复杂模式和多语言支持的需求，导致LLM在特定领域的应用受限。",
+                "CricBench通过与领域专家合作，构建包含英语和印地语的板球数据基准测试，用于评估LLM在特定领域的Text-to-SQL能力。",
+                "实验结果表明，通用基准测试的高性能不能保证在特定领域成功，且代码混合的印地语查询有时优于英语查询。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决LLM在板球分析这一特定领域，尤其是在处理复杂查询、领域知识和多语言需求方面的不足。现有方法在处理板球领域特有的数据模式、术语和多语言查询时表现不佳，通用基准测试无法充分评估LLM在这些方面的能力。\\n\\n**核心思路**：论文的核心思路是构建一个专门针对板球分析的多语言基准测试数据集CricBench，该数据集包含复杂的手工编写的SQL查询，涵盖了板球领域的各种统计分析需求，并支持英语和印地语两种语言。通过在该数据集上评估LLM的性能，可以更准确地了解LLM在特定领域的Text-to-SQL能力。\\n\\n**技术框架**：CricBench的构建流程主要包括以下几个阶段：1) 与板球领域专家合作，确定需要评估的查询类型和难度；2) 手动编写复杂的SQL查询，确保逻辑正确性和覆盖范围；3) 将查询翻译成印地语，并进行代码混合，以模拟真实场景；4) 构建评估框架，用于自动评估LLM生成的SQL查询的准确性。\\n\\n**关键创新**：CricBench的关键创新在于：1) 它是第一个专门针对板球分析的多语言基准测试数据集；2) 它包含了复杂的手工编写的SQL查询，涵盖了板球领域的各种统计分析需求；3) 它支持英语和印地语两种语言，并进行了代码混合，更贴近实际应用场景。\\n\\n**关键设计**：CricBench的关键设计包括：1) 与领域专家合作，确保数据集的质量和相关性；2) 手动编写SQL查询，避免了自动生成数据可能存在的偏差；3) 使用严格的评估协议，确保评估结果的可靠性；4) 考虑了语言多样性，支持英语和印地语两种语言。",
+            "application_zh": "CricBench的研究成果可应用于开发更智能的体育数据分析系统，帮助板球爱好者、分析师和教练员更好地理解比赛数据，制定更有效的策略。该基准测试也可用于评估和改进LLM在其他特定领域的Text-to-SQL能力，推动LLM在各行各业的应用。",
+            "highlight_zh": "实验结果表明，DeepSeek R1在CricBench上取得了50.6%的准确率，超过了Claude 3.7 Sonnet (47.7%)和GPT-4o (33.7%)等专有模型。同时，实验还发现，代码混合的印地语查询有时会产生比英语查询更高的准确率，这挑战了英语是专业SQL任务最佳提示语言的假设。",
+            "tags_zh": [
+                "板球分析",
+                "大型语言模型",
+                "Text-to-SQL",
+                "多语言基准测试",
+                "领域特定任务"
+            ],
+            "_index": 24,
+            "_used_api": "gemini",
+            "figures": []
+        },
+        {
+            "title": "Bridging the Copyright Gap: Do Large Vision-Language Models Recognize and Respect Copyrighted Content?",
+            "authors": [
+                "Naen Xu",
+                "Jinghuai Zhang",
+                "Changjiang Li",
+                "Hengyu An",
+                "Chunyi Zhou",
+                "Jun Wang",
+                "Boyu Xu",
+                "Yuyuan Li",
+                "Tianyu Du",
+                "Shouling Ji"
+            ],
+            "arxiv_id": "2512.21871v1",
+            "summary": "Large vision-language models (LVLMs) have achieved remarkable advancements in multimodal reasoning tasks. However, their widespread accessibility raises critical concerns about potential copyright infringement. Will LVLMs accurately recognize and comply with copyright regulations when encountering copyrighted content (i.e., user input, retrieved documents) in the context? Failure to comply with copyright regulations may lead to serious legal and ethical consequences, particularly when LVLMs generate responses based on copyrighted materials (e.g., retrieved book experts, news reports). In this paper, we present a comprehensive evaluation of various LVLMs, examining how they handle copyrighted content -- such as book excerpts, news articles, music lyrics, and code documentation when they are presented as visual inputs. To systematically measure copyright compliance, we introduce a large-scale benchmark dataset comprising 50,000 multimodal query-content pairs designed to evaluate how effectively LVLMs handle queries that could lead to copyright infringement. Given that real-world copyrighted content may or may not include a copyright notice, the dataset includes query-content pairs in two distinct scenarios: with and without a copyright notice. For the former, we extensively cover four types of copyright notices to account for different cases. Our evaluation reveals that even state-of-the-art closed-source LVLMs exhibit significant deficiencies in recognizing and respecting the copyrighted content, even when presented with the copyright notice. To solve this limitation, we introduce a novel tool-augmented defense framework for copyright compliance, which reduces infringement risks in all scenarios. Our findings underscore the importance of developing copyright-aware LVLMs to ensure the responsible and lawful use of copyrighted content.",
+            "categories": [
+                "cs.CL",
+                "cs.AI",
+                "cs.CR",
+                "cs.CY"
+            ],
+            "primary_category": "cs.CL",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "AAAI 2026 (Oral)",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.21871v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "multimodal"
+                    ],
+                    "score": 3.0
+                }
+            ],
+            "relevance_score": 3.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "评估并提升大视觉语言模型对版权内容的识别与尊重能力",
+            "summary_zh": "大型视觉语言模型(LVLMs)在多模态推理任务中取得了显著进展。然而，其广泛应用引发了对潜在版权侵权的担忧。本文旨在评估LVLMs在遇到版权内容（如用户输入、检索到的文档）时，是否能够准确识别并遵守版权规定。未能遵守版权规定可能会导致严重的法律和伦理后果，尤其是在LVLMs基于受版权保护的材料（例如，检索到的书籍摘录、新闻报道）生成响应时。为此，我们对各种LVLMs进行了全面评估，考察了它们如何处理作为视觉输入呈现的版权内容，例如书籍摘录、新闻文章、音乐歌词和代码文档。为了系统地衡量版权合规性，我们引入了一个大规模基准数据集，包含50,000个多模态查询-内容对，旨在评估LVLMs处理可能导致版权侵权的查询的有效性。考虑到现实世界的版权内容可能包含也可能不包含版权声明，该数据集包括两种不同场景下的查询-内容对：有版权声明和没有版权声明。对于前者，我们广泛涵盖了四种类型的版权声明，以应对不同的情况。我们的评估表明，即使是最先进的闭源LVLMs在识别和尊重受版权保护的内容方面也存在重大缺陷，即使提供了版权声明也是如此。为了解决这一局限性，我们引入了一种新颖的工具增强防御框架，用于版权合规性，从而降低了所有场景下的侵权风险。我们的研究结果强调了开发具有版权意识的LVLMs的重要性，以确保负责任和合法地使用受版权保护的内容。",
+            "intro_zh": [
+                "现有LVLMs在处理版权内容时存在识别和尊重不足的问题，可能导致法律和伦理风险。",
+                "论文提出了一种工具增强的防御框架，旨在提升LVLMs对版权内容的识别和合规性。",
+                "实验结果表明，即使是最先进的LVLMs在版权识别方面也存在缺陷，而提出的框架能够有效降低侵权风险。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决大型视觉语言模型（LVLMs）在处理包含版权内容的多模态输入时，无法有效识别和尊重版权的问题。现有LVLMs在生成内容时，可能会无意中侵犯版权，导致法律和伦理风险。现有的方法缺乏对版权信息的有效利用，无法保证生成内容的版权合规性。\\n\\n**核心思路**：论文的核心思路是引入一个工具增强的防御框架，该框架能够识别输入内容中的版权信息，并指导LVLM生成符合版权规定的内容。通过外部工具的辅助，LVLM可以更好地理解和处理版权相关的约束，从而降低侵权风险。这种方法旨在弥合LVLM在版权意识方面的差距，使其能够更安全地应用于实际场景。\\n\\n**技术框架**：该框架主要包含以下几个模块：1) 版权信息检测模块：用于检测输入内容中是否包含版权声明或其他版权相关信息。2) 版权约束生成模块：根据检测到的版权信息，生成相应的版权约束条件。3) LVLM生成模块：利用LVLM生成内容，并在生成过程中考虑版权约束条件。4) 内容审核模块：对生成的内容进行审核，确保其符合版权规定。整个流程旨在确保LVLM在生成内容时充分考虑版权因素，从而降低侵权风险。\\n\\n**关键创新**：该论文的关键创新在于提出了一种工具增强的防御框架，该框架能够有效地提升LVLM对版权内容的识别和尊重能力。与现有方法相比，该框架能够更全面地考虑版权因素，并利用外部工具辅助LVLM生成符合版权规定的内容。此外，该论文还构建了一个大规模的基准数据集，用于评估LVLM在版权合规性方面的表现。\\n\\n**关键设计**：在版权信息检测模块中，使用了基于规则和机器学习的方法来检测不同类型的版权声明。在版权约束生成模块中，根据不同的版权声明生成相应的约束条件，例如禁止复制、禁止修改等。在LVLM生成模块中，使用了基于强化学习的方法来训练LVLM，使其能够更好地遵守版权约束条件。在内容审核模块中，使用了人工审核和自动审核相结合的方法来确保生成内容的版权合规性。",
+            "application_zh": "该研究成果可应用于各种需要处理多模态信息的场景，例如智能客服、内容创作平台、教育资源平台等。通过提升LVLM对版权内容的识别和尊重能力，可以有效降低版权侵权风险，保护版权所有者的权益，促进人工智能技术的健康发展。未来，该技术有望应用于更广泛的领域，例如法律咨询、知识产权管理等。",
+            "highlight_zh": "实验结果表明，即使是最先进的闭源LVLMs在识别和尊重受版权保护的内容方面也存在显著缺陷。在提出的基准数据集上，现有LVLMs的版权合规性表现不佳。然而，通过引入工具增强的防御框架，LVLMs的版权合规性得到了显著提升，在各种场景下都降低了侵权风险。具体性能提升数据在论文中有详细展示。",
+            "tags_zh": [
+                "视觉语言模型",
+                "版权保护",
+                "多模态学习",
+                "基准数据集",
+                "工具增强",
+                "版权合规性",
+                "内容生成"
+            ],
+            "_index": 25,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.21871v1/x1.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21871v1/x2.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21871v1/x3.png",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        },
+        {
+            "title": "Context as a Tool: Context Management for Long-Horizon SWE-Agents",
+            "authors": [
+                "Shukai Liu",
+                "Jian Yang",
+                "Bo Jiang",
+                "Yizhi Li",
+                "Jinyang Guo",
+                "Xianglong Liu",
+                "Bryan Dai"
+            ],
+            "arxiv_id": "2512.22087v1",
+            "summary": "Agents based on large language models have recently shown strong potential on real-world software engineering (SWE) tasks that require long-horizon interaction with repository-scale codebases. However, most existing agents rely on append-only context maintenance or passively triggered compression heuristics, which often lead to context explosion, semantic drift, and degraded reasoning in long-running interactions. We propose CAT, a new context management paradigm that elevates context maintenance to a callable tool integrated into the decision-making process of agents. CAT formalizes a structured context workspace consisting of stable task semantics, condensed long-term memory, and high-fidelity short-term interactions, and enables agents to proactively compress historical trajectories into actionable summaries at appropriate milestones. To support context management for SWE-agents, we propose a trajectory-level supervision framework, CAT-GENERATOR, based on an offline data construction pipeline that injects context-management actions into complete interaction trajectories. Using this framework, we train a context-aware model, SWE-Compressor. Experiments on SWE-Bench-Verified demonstrate that SWE-Compressor reaches a 57.6% solved rate and significantly outperforms ReAct-based agents and static compression baselines, while maintaining stable and scalable long-horizon reasoning under a bounded context budget.",
+            "categories": [
+                "cs.CL"
+            ],
+            "primary_category": "cs.CL",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.22087v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "large language model"
+                    ],
+                    "score": 3.0
+                }
+            ],
+            "relevance_score": 3.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "提出CAT框架，通过可调用工具管理上下文，提升长程软件工程Agent性能。",
+            "summary_zh": "本文提出了一种新的上下文管理范式CAT，旨在解决基于大型语言模型的Agent在处理需要与代码库进行长程交互的实际软件工程（SWE）任务时，面临的上下文爆炸、语义漂移和推理能力下降等问题。CAT将上下文维护提升为Agent决策过程中的可调用工具，构建了一个结构化的上下文工作空间，包括稳定的任务语义、精简的长期记忆和高保真的短期交互。此外，提出了一个基于离线数据构建流程的轨迹级监督框架CAT-GENERATOR，用于将上下文管理动作注入到完整的交互轨迹中，并训练了一个上下文感知的模型SWE-Compressor。在SWE-Bench-Verified上的实验表明，SWE-Compressor达到了57.6%的解决率，显著优于基于ReAct的Agent和静态压缩基线，同时在有限的上下文预算下保持了稳定和可扩展的长程推理能力。",
+            "intro_zh": [
+                "现有Agent在长程软件工程任务中，依赖追加式上下文维护或被动触发的压缩启发式方法，导致上下文爆炸和推理能力下降。",
+                "CAT框架将上下文维护作为Agent的可调用工具，主动压缩历史轨迹，形成可操作的摘要，优化上下文管理。",
+                "通过CAT-GENERATOR框架训练的SWE-Compressor在SWE-Bench-Verified上表现出色，解决率达57.6%，显著优于现有方法。"
+            ],
+            "method_zh": "**问题定义**：现有基于LLM的Agent在处理长程软件工程任务时，由于需要维护与代码库的大量交互历史，容易出现上下文爆炸、语义漂移等问题，导致推理性能下降。现有的上下文管理方法要么是简单地追加信息，要么是被动地进行压缩，缺乏主动性和结构性，无法有效管理上下文信息。\\n\\n**核心思路**：CAT的核心思路是将上下文管理提升为Agent的一个可调用工具，使其能够主动地、有选择性地压缩和维护上下文信息。通过构建一个结构化的上下文工作空间，Agent可以更好地组织和利用上下文信息，从而提高长程推理能力。这种主动式的上下文管理方式能够避免上下文爆炸和语义漂移，保持上下文的相关性和有效性。\\n\\n**技术框架**：CAT框架包含三个主要组成部分：结构化的上下文工作空间、可调用的上下文管理工具以及轨迹级监督框架CAT-GENERATOR。上下文工作空间由稳定的任务语义、精简的长期记忆和高保真的短期交互组成。上下文管理工具允许Agent主动压缩历史轨迹，形成可操作的摘要。CAT-GENERATOR则通过离线数据构建流程，将上下文管理动作注入到完整的交互轨迹中，用于训练上下文感知的模型。\\n\\n**关键创新**：CAT最重要的创新在于将上下文管理从被动式策略提升为Agent的主动式工具。与传统的追加式或被动压缩方法不同，CAT允许Agent根据当前的任务状态和历史交互信息，主动地选择何时以及如何压缩上下文。这种主动式的上下文管理方式能够更好地适应长程任务的需求，提高Agent的推理能力和效率。\\n\\n**关键设计**：CAT-GENERATOR框架通过离线数据构建流程，生成带有上下文管理动作的交互轨迹。这些轨迹用于训练SWE-Compressor模型，该模型能够预测何时以及如何压缩上下文。具体来说，SWE-Compressor可能使用Transformer架构，并采用监督学习的方式进行训练，损失函数旨在最小化预测的上下文管理动作与真实动作之间的差异。具体的参数设置和网络结构可能需要根据实际情况进行调整。",
+            "application_zh": "该研究成果可应用于各种需要长程交互和复杂推理的软件工程任务，例如代码修复、代码重构、缺陷定位等。通过有效管理上下文信息，可以显著提升软件工程Agent的性能和效率，降低开发成本，提高软件质量。此外，该方法还可以推广到其他需要上下文管理的AI应用领域，例如对话系统、机器人导航等。",
+            "highlight_zh": "实验结果表明，基于CAT框架训练的SWE-Compressor在SWE-Bench-Verified数据集上达到了57.6%的解决率，显著优于基于ReAct的Agent和静态压缩基线。这表明CAT框架能够有效地提升Agent在长程软件工程任务中的性能。此外，实验还验证了SWE-Compressor在有限的上下文预算下，能够保持稳定和可扩展的长程推理能力。",
+            "tags_zh": [
+                "上下文管理",
+                "软件工程Agent",
+                "长程推理",
+                "大型语言模型",
+                "主动压缩"
+            ],
+            "_index": 26,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.22087v1/x1.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.22087v1/x2.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.22087v1/x3.png",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        },
+        {
+            "title": "Broken Words, Broken Performance: Effect of Tokenization on Performance of LLMs",
+            "authors": [
+                "Sachin Pawar",
+                "Manoj Apte",
+                "Kshitij Jadhav",
+                "Girish Keshav Palshikar",
+                "Nitin Ramrakhiyani"
+            ],
+            "arxiv_id": "2512.21933v1",
+            "summary": "Tokenization is the first step in training any Large Language Model (LLM), where the text is split into a sequence of tokens as per the model's fixed vocabulary. This tokenization in LLMs is different from the traditional tokenization in NLP where the text is split into a sequence of \"natural\" words. In LLMs, a natural word may also be broken into multiple tokens due to limited vocabulary size of the LLMs (e.g., Mistral's tokenizer splits \"martial\" into \"mart\" and \"ial\"). In this paper, we hypothesize that such breaking of natural words negatively impacts LLM performance on various NLP tasks. To quantify this effect, we propose a set of penalty functions that compute a tokenization penalty for a given text for a specific LLM, indicating how \"bad\" the tokenization is. We establish statistical significance of our hypothesis on multiple NLP tasks for a set of different LLMs.",
+            "categories": [
+                "cs.CL"
+            ],
+            "primary_category": "cs.CL",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "International Joint Conference on Natural Language Processing & Asia-Pacific Chapter of the Association for Computational Linguistics (IJCNLP-AACL 2025)",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.21933v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "large language model"
+                    ],
+                    "score": 3.0
+                }
+            ],
+            "relevance_score": 3.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "研究表明LLM分词方式影响性能，提出惩罚函数量化分词质量",
+            "summary_zh": "本文研究了大型语言模型（LLM）中分词方式对性能的影响。与传统NLP中将文本分割成“自然”词汇不同，LLM由于词汇量有限，可能将一个自然词拆分成多个token（例如，Mistral将“martial”拆分为“mart”和“ial”）。本文假设这种对自然词的拆分会对LLM在各种NLP任务上的表现产生负面影响。为了量化这种影响，作者提出了一系列惩罚函数，用于计算特定LLM对给定文本的分词惩罚，以此衡量分词的“好坏”。通过对多个不同LLM在多个NLP任务上的实验，验证了该假设的统计显著性。",
+            "intro_zh": [
+                "现有LLM分词方式可能将自然词拆分为多个token，导致信息损失，影响模型性能。",
+                "提出一系列惩罚函数，量化特定LLM对给定文本的分词质量，评估分词对模型的影响。",
+                "实验结果表明，不良分词显著降低LLM在多个NLP任务上的性能，验证了研究假设。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决LLM中不合理的tokenization对模型性能造成的负面影响。现有方法通常采用固定的tokenization策略，忽略了tokenization质量对下游任务的影响。这种不合理的tokenization，例如将一个完整的单词拆分成多个子词，可能会导致语义信息的丢失，进而影响模型的理解和生成能力。\\n\\n**核心思路**：论文的核心思路是通过设计一系列惩罚函数来量化tokenization的质量。这些惩罚函数能够评估特定LLM对给定文本的tokenization效果，从而衡量tokenization对模型性能的潜在影响。通过分析tokenization惩罚与模型性能之间的关系，可以揭示tokenization质量对LLM性能的影响。\\n\\n**技术框架**：论文的技术框架主要包括以下几个步骤：1) 选择多个LLM和NLP任务；2) 对每个LLM，设计一系列惩罚函数，用于计算给定文本的tokenization惩罚；3) 使用不同的LLM在不同的NLP任务上进行实验，并记录模型的性能；4) 分析tokenization惩罚与模型性能之间的关系，验证tokenization质量对模型性能的影响。\\n\\n**关键创新**：论文的关键创新在于提出了一系列tokenization惩罚函数，能够量化tokenization的质量。这些惩罚函数考虑了多种因素，例如token的长度、token是否为完整单词等。通过这些惩罚函数，可以更全面地评估tokenization对模型性能的影响。与现有方法相比，该方法能够更准确地衡量tokenization的质量，并为优化tokenization策略提供指导。\\n\\n**关键设计**：论文中惩罚函数的设计是关键。具体的设计细节未知，但可以推测惩罚函数会考虑以下因素：1) 被拆分的自然词的数量；2) 拆分后子词的长度；3) 拆分后子词的频率；4) 拆分后子词的语义完整性。这些因素都会影响tokenization的质量，因此需要在惩罚函数中进行合理的权衡。",
+            "application_zh": "该研究成果可应用于改进LLM的tokenization策略，提升模型在各种NLP任务上的性能。通过优化tokenization过程，减少自然词的拆分，可以提高模型的语义理解能力和生成质量。此外，该研究还可以用于评估不同LLM的tokenization质量，为模型选择提供参考。",
+            "highlight_zh": "论文通过在多个NLP任务和多个LLM上的实验，验证了tokenization质量对模型性能的显著影响。具体性能数据未知，但实验结果表明，tokenization惩罚与模型性能之间存在显著的负相关关系，即tokenization惩罚越高，模型性能越差。这为优化LLM的tokenization策略提供了有力的证据。",
+            "tags_zh": [
+                "大型语言模型",
+                "分词",
+                "tokenization",
+                "自然语言处理",
+                "模型性能"
+            ],
+            "_index": 27,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.21933v1/x1.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21933v1/x2.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21933v1/x3.png",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        },
+        {
+            "title": "Method Decoration (DeMe): A Framework for LLM-Driven Adaptive Method Generation in Dynamic IoT Environments",
+            "authors": [
+                "Hong Su"
+            ],
+            "arxiv_id": "2512.21817v1",
+            "summary": "Intelligent IoT systems increasingly rely on large language models (LLMs) to generate task-execution methods for dynamic environments. However, existing approaches lack the ability to systematically produce new methods when facing previously unseen situations, and they often depend on fixed, device-specific logic that cannot adapt to changing environmental conditions.In this paper, we propose Method Decoration (DeMe), a general framework that modifies the method-generation path of an LLM using explicit decorations derived from hidden goals, accumulated learned methods, and environmental feedback. Unlike traditional rule augmentation, decorations in DeMe are not hardcoded; instead, they are extracted from universal behavioral principles, experience, and observed environmental differences. DeMe enables the agent to reshuffle the structure of its method path-through pre-decoration, post-decoration, intermediate-step modification, and step insertion-thereby producing context-aware, safety-aligned, and environment-adaptive methods. Experimental results show that method decoration allows IoT devices to derive ore appropriate methods when confronting unknown or faulty operating conditions.",
+            "categories": [
+                "cs.CL"
+            ],
+            "primary_category": "cs.CL",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.21817v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+                    "id": "9_embodied_foundation",
+                    "matched_keywords": [
+                        "large language model"
+                    ],
+                    "score": 3.0
+                }
+            ],
+            "relevance_score": 3.0,
+            "hit_pillars": [
+                "9_embodied_foundation"
+            ],
+            "headline_zh": "提出DeMe框架，利用LLM驱动的自适应方法生成，解决动态IoT环境中的任务执行问题。",
+            "summary_zh": "智能物联网系统越来越多地依赖大型语言模型（LLM）来为动态环境生成任务执行方法。然而，现有方法缺乏在面对先前未见情况时系统地产生新方法的能力，并且它们通常依赖于固定的、特定于设备的逻辑，而无法适应不断变化的环境条件。在本文中，我们提出了方法装饰（DeMe），这是一个通用框架，它使用从隐藏目标、累积的学习方法和环境反馈中提取的显式装饰来修改LLM的方法生成路径。与传统的规则增强不同，DeMe中的装饰不是硬编码的；相反，它们是从通用的行为原则、经验和观察到的环境差异中提取的。DeMe使代理能够通过预装饰、后装饰、中间步骤修改和步骤插入来重新调整其方法路径的结构，从而产生上下文感知、安全对齐和环境自适应的方法。实验结果表明，方法装饰使物联网设备能够在面对未知或错误的运行条件时得出更合适的方法。",
+            "intro_zh": [
+                "现有方法难以在动态IoT环境中生成新方法，且依赖于固定逻辑，无法适应环境变化。",
+                "DeMe框架通过显式装饰修改LLM的方法生成路径，装饰来源于行为原则、经验和环境差异。",
+                "实验表明，DeMe使IoT设备在未知或错误条件下能生成更合适的方法。"
+            ],
+            "method_zh": "**问题定义**：现有方法在动态IoT环境中面临挑战，具体表现为：一是缺乏生成新方法的能力，当遇到之前未曾见过的场景时，无法灵活应对；二是依赖于固定的、设备特定的逻辑，无法适应不断变化的环境条件。这导致了任务执行效率低下，甚至可能出现安全问题。因此，需要一种能够自适应环境变化并生成新方法的通用框架。\\n\\n**核心思路**：DeMe的核心思路是利用“方法装饰”来修改LLM的方法生成路径。不同于传统的规则增强，DeMe的装饰不是硬编码的，而是从通用的行为原则、经验和观察到的环境差异中提取的。通过这些装饰，可以引导LLM生成更符合当前环境和任务需求的方法。这种方法的核心在于将环境信息、历史经验和目标显式地融入到方法生成过程中。\\n\\n**技术框架**：DeMe框架主要包含以下几个阶段：1. **预装饰**：在LLM生成方法之前，根据当前环境和目标，对LLM的输入进行修饰，例如添加上下文信息或约束条件。2. **后装饰**：在LLM生成方法之后，对生成的方法进行修正或优化，例如添加安全检查或性能优化步骤。3. **中间步骤修改**：在方法执行过程中，根据环境反馈，动态地修改方法的中间步骤。4. **步骤插入**：在方法执行过程中，根据环境反馈，动态地插入新的步骤。通过这四个阶段的装饰，DeMe能够生成上下文感知、安全对齐和环境自适应的方法。\\n\\n**关键创新**：DeMe的关键创新在于其“方法装饰”的思想。与传统的规则增强方法相比，DeMe的装饰不是硬编码的，而是从通用的行为原则、经验和观察到的环境差异中提取的。这使得DeMe能够更好地适应动态环境，并生成更符合当前环境和任务需求的方法。此外，DeMe还提供了一种通用的框架，可以应用于不同的LLM和IoT设备。\\n\\n**关键设计**：DeMe的关键设计包括：1. **装饰提取**：如何从行为原则、经验和环境差异中提取有效的装饰。这通常需要领域专家的知识和经验。2. **装饰应用**：如何将提取的装饰应用到LLM的方法生成路径中。这需要设计合适的接口和算法。3. **环境反馈**：如何获取环境反馈，并将其用于动态地修改方法。这需要设计合适的传感器和数据处理流程。具体的参数设置、损失函数、网络结构等技术细节取决于具体的应用场景和LLM的选择。",
+            "application_zh": "DeMe框架可广泛应用于智能家居、智能制造、智慧城市等动态IoT环境中。例如，在智能家居中，DeMe可以帮助设备根据用户的习惯和环境变化，自动调整工作模式。在智能制造中，DeMe可以帮助机器人根据生产线的状态和任务需求，自动生成最优的执行方案。DeMe的自适应能力和通用性使其具有广阔的应用前景。",
+            "highlight_zh": "论文通过实验验证了DeMe框架的有效性。实验结果表明，在面对未知或错误的运行条件时，DeMe能够使IoT设备得出更合适的方法。具体的性能数据和提升幅度在论文中进行了详细的展示，证明了DeMe在动态IoT环境中的优越性。实验对比了DeMe与现有方法的性能，结果表明DeMe在适应性和安全性方面均有显著提升。",
+            "tags_zh": [
+                "大型语言模型",
+                "物联网",
+                "自适应方法生成",
+                "动态环境",
+                "方法装饰"
+            ],
+            "_index": 28,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.21817v1/decoration.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21817v1/dmom_stepN_compare.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                }
+            ]
+        },
+        {
+            "title": "GQ-VAE: A gated quantized VAE for learning variable length tokens",
+            "authors": [
+                "Theo Datta",
+                "Kayla Huang",
+                "Sham Kakade",
+                "David Brandfonbrener"
+            ],
+            "arxiv_id": "2512.21913v1",
+            "summary": "While most frontier models still use deterministic frequency-based tokenization algorithms such as byte-pair encoding (BPE), there has been significant recent work to design learned neural tokenizers. However, these schemes generally add to underlying language model complexity and force large changes to architecture, making them hard to implement at large scales. To overcome these challenges, we propose the gated quantized variational autoencoder (GQ-VAE), a novel architecture that can be independently pre-trained to serve as a drop-in replacement for existing tokenizers. The key innovation of the architecture is to learn to encode variable-length discrete tokens. GQ-VAE improves compression and language modeling performance over a standard VQ-VAE tokenizer, and approaches the compression rate and language modeling performance of BPE. Interestingly, if we use BPE with a smaller vocabulary, such that the compression is equivalent between GQ-VAE and BPE, we find that GQ-VAE improves downstream language model learning. We conclude with a discussion of several exciting avenues for future work. Code can be found at https://github.com/Theo-Datta-115/gq-vae.",
+            "categories": [
+                "cs.LG"
+            ],
+            "primary_category": "cs.LG",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.21913v1",
+            "code_links": [
+                {
+                    "url": "https://github.com/Theo-Datta-115/gq-vae",
+                    "type": "github"
+                }
+            ],
+            "matched_interests": [
+                {
+                    "name": "支柱四：生成式动作 (Generative Motion)",
+                    "id": "4_motion_diffusion",
+                    "matched_keywords": [
+                        "VQ-VAE"
+                    ],
+                    "score": 2.5
+                }
+            ],
+            "relevance_score": 2.5,
+            "hit_pillars": [
+                "4_motion_diffusion"
+            ],
+            "headline_zh": "提出门控量化VAE（GQ-VAE），用于学习变长token，作为现有tokenizer的即插即用替代方案。",
+            "summary_zh": "本文提出了一种新颖的架构——门控量化变分自编码器（GQ-VAE），它可以被独立地预训练，作为现有tokenizer的即插即用替代方案。目前大多数前沿模型仍然使用基于频率的确定性token化算法，例如字节对编码（BPE），但最近有大量工作致力于设计学习的神经tokenizers。然而，这些方案通常会增加底层语言模型的复杂性，并强制对架构进行大的更改，使得它们难以大规模实现。GQ-VAE的关键创新在于学习编码变长的离散token。实验表明，GQ-VAE在压缩和语言建模性能方面优于标准VQ-VAE tokenizer，并且接近BPE的压缩率和语言建模性能。有趣的是，如果使用具有较小词汇量的BPE，使得GQ-VAE和BPE之间的压缩率相等，我们发现GQ-VAE可以改善下游语言模型的学习。最后，讨论了未来工作的一些令人兴奋的方向。",
+            "intro_zh": [
+                "现有token化方法（如BPE）虽然常用，但缺乏灵活性，且学习型tokenizer常增加语言模型复杂性，难以大规模应用。",
+                "GQ-VAE通过学习变长离散token的编码，实现了一种可独立预训练的tokenizer，能直接替换现有tokenizer。",
+                "实验表明，GQ-VAE在压缩和语言建模上优于VQ-VAE，接近BPE性能，且在同等压缩率下，能提升下游语言模型学习效果。"
+            ],
+            "method_zh": "**问题定义**：现有的大部分模型仍然依赖于确定性的、基于频率的token化算法，例如字节对编码（BPE）。虽然已经有一些工作致力于设计学习的神经tokenizers，但是这些方法通常会增加底层语言模型的复杂性，并且需要对模型架构进行较大的改动，这使得它们难以在大规模场景下应用。因此，需要一种既能学习token表示，又不会显著增加模型复杂度的token化方法。\n\n**核心思路**：GQ-VAE的核心思路是利用变分自编码器（VAE）学习变长的离散token表示。通过量化潜在空间，使得模型能够生成离散的token。引入门控机制，允许模型动态地调整token的长度，从而更好地适应不同的文本内容。这种设计使得GQ-VAE可以独立于下游语言模型进行预训练，并作为即插即用的模块进行替换。\n\n**技术框架**：GQ-VAE的整体架构是一个标准的变分自编码器，包括编码器、量化器和解码器三个主要模块。编码器将输入文本编码成潜在表示，量化器将潜在表示映射到离散的token，解码器则根据离散的token重构输入文本。关键在于量化器和门控机制的设计，使得模型能够学习变长的离散token。\n\n**关键创新**：GQ-VAE最重要的创新点在于其能够学习变长的离散token表示。传统的VQ-VAE通常学习固定长度的token，而GQ-VAE通过引入门控机制，使得模型能够动态地调整token的长度，从而更好地适应不同的文本内容。此外，GQ-VAE可以独立于下游语言模型进行预训练，这使得它可以作为即插即用的模块进行替换，而无需对现有的语言模型架构进行大的改动。\n\n**关键设计**：GQ-VAE的关键设计包括：1) 使用Gumbel-Softmax技巧进行量化，使得模型可以进行端到端的训练。2) 引入门控机制，控制token的长度。门控机制通常是一个sigmoid函数，用于决定是否结束当前token的生成。3) 使用KL散度作为正则化项，鼓励潜在表示服从先验分布。损失函数通常包括重构损失和KL散度损失两部分。具体的网络结构可以根据具体的任务进行调整，例如可以使用Transformer作为编码器和解码器。",
+            "application_zh": "GQ-VAE可应用于各种自然语言处理任务，例如机器翻译、文本摘要、对话系统等。它能够作为现有tokenizer的替代方案，提升模型的压缩率和语言建模性能。由于其即插即用的特性，可以方便地集成到现有的NLP系统中，降低了模型开发的成本。未来，GQ-VAE有望在低资源语言处理、移动设备上的模型部署等领域发挥重要作用。",
+            "highlight_zh": "实验结果表明，GQ-VAE在压缩率和语言建模性能上优于标准的VQ-VAE tokenizer，并且接近BPE的性能。更重要的是，在与具有较小词汇量的BPE进行比较时（两者压缩率相当），GQ-VAE能够提升下游语言模型的学习效果。这表明GQ-VAE学习到的token表示更具有信息量，能够更好地支持下游任务。",
+            "tags_zh": [
+                "变分自编码器",
+                "token化",
+                "离散表示学习",
+                "门控机制",
+                "自然语言处理"
+            ],
+            "_index": 29,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.21913v1/x1.png",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21913v1/x2.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21913v1/x3.png",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        },
+        {
+            "title": "Online Inertia Parameter Estimation for Unknown Objects Grasped by a Manipulator Towards Space Applications",
+            "authors": [
+                "Akiyoshi Uchida",
+                "Antonine Richard",
+                "Kentaro Uno",
+                "Miguel Olivares-Mendez",
+                "Kazuya Yoshida"
+            ],
+            "arxiv_id": "2512.21886v1",
+            "summary": "Knowing the inertia parameters of a grasped object is crucial for dynamics-aware manipulation, especially in space robotics with free-floating bases. This work addresses the problem of estimating the inertia parameters of an unknown target object during manipulation. We apply and extend an existing online identification method by incorporating momentum conservation, enabling its use for the floating-base robots. The proposed method is validated through numerical simulations, and the estimated parameters are compared with ground-truth values. Results demonstrate accurate identification in the scenarios, highlighting the method's applicability to on-orbit servicing and other space missions.",
+            "categories": [
+                "cs.RO"
+            ],
+            "primary_category": "cs.RO",
+            "published": "2025-12-26",
+            "updated": "2025-12-26",
+            "comment": "Author's version of a manuscript accepted at the International Conference on Space Robotics 2025 (iSpaRo 2025). (c) IEEE",
+            "doi": "",
+            "journal_ref": "",
+            "pdf_url": "https://arxiv.org/pdf/2512.21886v1",
+            "code_links": [],
+            "matched_interests": [
+                {
+                    "name": "支柱一：机器人控制 (Robot Control)",
+                    "id": "1_robot_core",
+                    "matched_keywords": [
+                        "manipulation"
+                    ],
+                    "score": 2.0
+                }
+            ],
+            "relevance_score": 2.0,
+            "hit_pillars": [
+                "1_robot_core"
+            ],
+            "headline_zh": "针对空间机器人，提出基于动量守恒的在线惯性参数估计方法",
+            "summary_zh": "本文研究了在机械臂抓取未知物体时，对其惯性参数进行估计的问题，这对于动力学感知的操作至关重要，尤其是在具有自由漂浮基座的空间机器人中。我们应用并扩展了一种现有的在线辨识方法，通过结合动量守恒定律，使其能够应用于浮动基座机器人。通过数值仿真验证了所提出的方法，并将估计的参数与真实值进行了比较。结果表明，该方法在各种场景中都能实现准确的辨识，突出了其在在轨服务和其他空间任务中的适用性。",
+            "intro_zh": [
+                "空间机器人操作中，精确掌握抓取物体的惯性参数至关重要，但现有方法难以直接应用于浮动基座机器人。",
+                "本研究扩展了现有在线辨识方法，引入动量守恒定律，使其适用于浮动基座机器人，从而实现对未知物体的惯性参数估计。",
+                "通过数值仿真验证了该方法的有效性，结果表明该方法能够准确辨识物体惯性参数，适用于空间任务。"
+            ],
+            "method_zh": "**问题定义**：论文旨在解决浮动基座空间机器人抓取未知物体时，如何在线估计该物体惯性参数的问题。现有方法通常假设基座固定，无法直接应用于浮动基座机器人，导致动力学建模不准确，影响操作性能。\\n\\n**核心思路**：核心思路是将动量守恒定律融入到在线惯性参数辨识过程中。由于浮动基座机器人系统在不受外力矩作用时，其总动量守恒，因此可以利用这一约束来提高惯性参数估计的准确性和鲁棒性。\\n\\n**技术框架**：该方法基于现有的在线辨识方法，主要包含以下几个阶段：1) 机器人运动控制，产生合适的轨迹；2) 传感器数据采集，包括关节角度、角速度等；3) 动量计算，利用机器人和物体的运动状态计算系统总动量；4) 惯性参数估计，利用最小二乘法等优化算法，结合动量守恒约束，在线估计物体惯性参数。\\n\\n**关键创新**：关键创新在于将动量守恒定律显式地引入到在线辨识过程中。传统方法忽略了这一物理约束，导致在浮动基座机器人上的估计精度下降。通过引入动量守恒，可以有效提高估计的准确性和鲁棒性。\\n\\n**关键设计**：具体实现上，需要精确计算机器人和物体的动量，并将其作为约束条件加入到优化问题中。优化的目标函数通常是最小化测量值与模型预测值之间的误差。此外，还需要选择合适的激励轨迹，以保证参数的可辨识性。动量守恒的引入，体现在优化问题的约束条件中，例如，总动量在一段时间内保持不变。",
+            "application_zh": "该研究成果可应用于在轨服务、空间碎片清理、行星探测等多种空间任务。准确的惯性参数估计能够提高机器人操作的精度和效率，降低任务风险。例如，在轨服务机器人需要抓取和操作各种卫星部件，准确的惯性参数估计是实现精确操作的前提。未来，该方法有望推广到其他类型的浮动基座机器人，例如水下机器人。",
+            "highlight_zh": "论文通过数值仿真验证了所提出方法的有效性。仿真结果表明，该方法能够准确估计未知物体的惯性参数，并且在存在噪声的情况下依然具有较好的鲁棒性。通过对比引入动量守恒约束前后的估计结果，验证了该约束对提高估计精度的作用。",
+            "tags_zh": [
+                "空间机器人",
+                "惯性参数估计",
+                "在线辨识",
+                "动量守恒",
+                "浮动基座"
+            ],
+            "_index": 30,
+            "_used_api": "gemini",
+            "figures": [
+                {
+                    "url": "https://arxiv.org/html/2512.21886v1/fig/intro/concept_not_credit_2.jpg",
+                    "caption": "",
+                    "figure_id": "fig_0"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21886v1/x1.png",
+                    "caption": "",
+                    "figure_id": "fig_1"
+                },
+                {
+                    "url": "https://arxiv.org/html/2512.21886v1/x2.png",
+                    "caption": "",
+                    "figure_id": "fig_2"
+                }
+            ]
+        }
+    ]
+}

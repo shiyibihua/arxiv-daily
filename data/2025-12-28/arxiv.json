@@ -1,0 +1,1356 @@
+{
+  "count": 31,
+  "papers": [
+    {
+      "title": "StereoVLA: Enhancing Vision-Language-Action Models with Stereo Vision",
+      "authors": [
+        "Shengliang Deng",
+        "Mi Yan",
+        "Yixin Zheng",
+        "Jiayi Su",
+        "Wenhao Zhang",
+        "Xiaoguang Zhao",
+        "Heming Cui",
+        "Zhizheng Zhang",
+        "He Wang"
+      ],
+      "arxiv_id": "2512.21970v1",
+      "summary": "Stereo cameras closely mimic human binocular vision, providing rich spatial cues critical for precise robotic manipulation. Despite their advantage, the adoption of stereo vision in vision-language-action models (VLAs) remains underexplored. In this work, we present StereoVLA, a VLA model that leverages rich geometric cues from stereo vision. We propose a novel Geometric-Semantic Feature Extraction module that utilizes vision foundation models to extract and fuse two key features: 1) geometric features from subtle stereo-view differences for spatial perception; 2) semantic-rich features from the monocular view for instruction following. Additionally, we propose an auxiliary Interaction-Region Depth Estimation task to further enhance spatial perception and accelerate model convergence. Extensive experiments show that our approach outperforms baselines by a large margin in diverse tasks under the stereo setting and demonstrates strong robustness to camera pose variations.",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.21970v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱一：机器人控制 (Robot Control)",
+          "id": "1_robot_core",
+          "matched_keywords": [
+            "manipulation"
+          ],
+          "score": 2.0
+        },
+        {
+          "name": "支柱三：空间感知与语义 (Perception & Semantics)",
+          "id": "3_perception_slam",
+          "matched_keywords": [
+            "depth estimation"
+          ],
+          "score": 2.0
+        },
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "[T]vision-language-action",
+            "VLA",
+            "foundation model",
+            "instruction following"
+          ],
+          "score": 18.0
+        }
+      ],
+      "relevance_score": 22.0,
+      "hit_pillars": [
+        "1_robot_core",
+        "3_perception_slam",
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Patch as Node: Human-Centric Graph Representation Learning for Multimodal Action Recognition",
+      "authors": [
+        "Zeyu Liang",
+        "Hailun Xia",
+        "Naichuan Zheng"
+      ],
+      "arxiv_id": "2512.21916v1",
+      "summary": "While human action recognition has witnessed notable achievements, multimodal methods fusing RGB and skeleton modalities still suffer from their inherent heterogeneity and fail to fully exploit the complementary potential between them. In this paper, we propose PAN, the first human-centric graph representation learning framework for multimodal action recognition, in which token embeddings of RGB patches containing human joints are represented as spatiotemporal graphs. The human-centric graph modeling paradigm suppresses the redundancy in RGB frames and aligns well with skeleton-based methods, thus enabling a more effective and semantically coherent fusion of multimodal features. Since the sampling of token embeddings heavily relies on 2D skeletal data, we further propose attention-based post calibration to reduce the dependency on high-quality skeletal data at a minimal cost interms of model performance. To explore the potential of PAN in integrating with skeleton-based methods, we present two variants: PAN-Ensemble, which employs dual-path graph convolution networks followed by late fusion, and PAN-Unified, which performs unified graph representation learning within a single network. On three widely used multimodal action recognition datasets, both PAN-Ensemble and PAN-Unified achieve state-of-the-art (SOTA) performance in their respective settings of multimodal fusion: separate and unified modeling, respectively.",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.21916v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱二：RL算法与架构 (RL & Architecture)",
+          "id": "2_algo_arch",
+          "matched_keywords": [
+            "[T]representation learning"
+          ],
+          "score": 4.5
+        },
+        {
+          "name": "支柱八：物理动画 (Physics-based Animation)",
+          "id": "8_physics_animation",
+          "matched_keywords": [
+            "spatiotemporal"
+          ],
+          "score": 2.0
+        },
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "[T]multimodal"
+          ],
+          "score": 9.0
+        }
+      ],
+      "relevance_score": 15.5,
+      "hit_pillars": [
+        "2_algo_arch",
+        "8_physics_animation",
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "End-to-End 3D Spatiotemporal Perception with Multimodal Fusion and V2X Collaboration",
+      "authors": [
+        "Zhenwei Yang",
+        "Yibo Ai",
+        "Weidong Zhang"
+      ],
+      "arxiv_id": "2512.21831v1",
+      "summary": "Multi-view cooperative perception and multimodal fusion are essential for reliable 3D spatiotemporal understanding in autonomous driving, especially under occlusions, limited viewpoints, and communication delays in V2X scenarios. This paper proposes XET-V2X, a multi-modal fused end-to-end tracking framework for v2x collaboration that unifies multi-view multimodal sensing within a shared spatiotemporal representation. To efficiently align heterogeneous viewpoints and modalities, XET-V2X introduces a dual-layer spatial cross-attention module based on multi-scale deformable attention. Multi-view image features are first aggregated to enhance semantic consistency, followed by point cloud fusion guided by the updated spatial queries, enabling effective cross-modal interaction while reducing computational overhead. Experiments on the real-world V2X-Seq-SPD dataset and the simulated V2X-Sim-V2V and V2X-Sim-V2I benchmarks demonstrate consistent improvements in detection and tracking performance under varying communication delays. Both quantitative results and qualitative visualizations indicate that XET-V2X achieves robust and temporally stable perception in complex traffic scenarios.",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "19 pages, 19 figures",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.21831v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱八：物理动画 (Physics-based Animation)",
+          "id": "8_physics_animation",
+          "matched_keywords": [
+            "[T]spatiotemporal"
+          ],
+          "score": 6.0
+        },
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "[T]multimodal"
+          ],
+          "score": 9.0
+        }
+      ],
+      "relevance_score": 15.0,
+      "hit_pillars": [
+        "8_physics_animation",
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "LongFly: Long-Horizon UAV Vision-and-Language Navigation with Spatiotemporal Context Integration",
+      "authors": [
+        "Wen Jiang",
+        "Li Wang",
+        "Kangyao Huang",
+        "Wei Fan",
+        "Jinyuan Liu",
+        "Shaoyu Liu",
+        "Hongwei Duan",
+        "Bin Xu",
+        "Xiangyang Ji"
+      ],
+      "arxiv_id": "2512.22010v1",
+      "summary": "Unmanned aerial vehicles (UAVs) are crucial tools for post-disaster search and rescue, facing challenges such as high information density, rapid changes in viewpoint, and dynamic structures, especially in long-horizon navigation. However, current UAV vision-and-language navigation(VLN) methods struggle to model long-horizon spatiotemporal context in complex environments, resulting in inaccurate semantic alignment and unstable path planning. To this end, we propose LongFly, a spatiotemporal context modeling framework for long-horizon UAV VLN. LongFly proposes a history-aware spatiotemporal modeling strategy that transforms fragmented and redundant historical data into structured, compact, and expressive representations. First, we propose the slot-based historical image compression module, which dynamically distills multi-view historical observations into fixed-length contextual representations. Then, the spatiotemporal trajectory encoding module is introduced to capture the temporal dynamics and spatial structure of UAV trajectories. Finally, to integrate existing spatiotemporal context with current observations, we design the prompt-guided multimodal integration module to support time-based reasoning and robust waypoint prediction. Experimental results demonstrate that LongFly outperforms state-of-the-art UAV VLN baselines by 7.89\\% in success rate and 6.33\\% in success weighted by path length, consistently across both seen and unseen environments.",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.22010v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱八：物理动画 (Physics-based Animation)",
+          "id": "8_physics_animation",
+          "matched_keywords": [
+            "[T]spatiotemporal"
+          ],
+          "score": 6.0
+        },
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "VLN",
+            "multimodal"
+          ],
+          "score": 6.0
+        }
+      ],
+      "relevance_score": 12.0,
+      "hit_pillars": [
+        "8_physics_animation",
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "iSHIFT: Lightweight Slow-Fast GUI Agent with Adaptive Perception",
+      "authors": [
+        "Sarthak Mehrotra",
+        "Sairam V C Rebbapragada",
+        "Mani Hemanth Reddy Bonthu",
+        "Vineeth N Balasubramanian"
+      ],
+      "arxiv_id": "2512.22009v1",
+      "summary": "Multimodal Large Language Models (MLLMs) show strong potential for interpreting and interacting with complex, pixel-rich Graphical User Interface (GUI) environments. However, building agents that are both efficient for high-level tasks and precise for fine-grained interactions remains challenging. GUI agents must perform routine actions efficiently while also handling tasks that demand exact visual grounding, yet existing approaches struggle when accuracy depends on identifying specific interface elements. These MLLMs also remain large and cannot adapt their reasoning depth to the task at hand. In this work, we introduce iSHIFT: Implicit Slow-fast Hybrid Inference with Flexible Tokens, a lightweight agent that integrates latent thinking (implicit chain-of-thought) with a perception control module. iSHIFT enables an MLLM to switch between a slow mode, which leverages detailed visual grounding for high precision and a fast mode that uses global cues for efficiency. Special perception tokens guide attention to relevant screen regions, allowing the model to decide both how to reason and where to focus. Despite its compact 2.5B size, iSHIFT matches state-of-the-art performance on multiple benchmark datasets.",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.22009v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "large language model",
+            "multimodal",
+            "visual grounding",
+            "chain-of-thought"
+          ],
+          "score": 12.0
+        }
+      ],
+      "relevance_score": 12.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "MMCTOP: A Multimodal Textualization and Mixture-of-Experts Framework for Clinical Trial Outcome Prediction",
+      "authors": [
+        "Carolina Aparício",
+        "Qi Shi",
+        "Bo Wen",
+        "Tesfaye Yadete",
+        "Qiwei Han"
+      ],
+      "arxiv_id": "2512.21897v1",
+      "summary": "Addressing the challenge of multimodal data fusion in high-dimensional biomedical informatics, we propose MMCTOP, a MultiModal Clinical-Trial Outcome Prediction framework that integrates heterogeneous biomedical signals spanning (i) molecular structure representations, (ii) protocol metadata and long-form eligibility narratives, and (iii) disease ontologies. MMCTOP couples schema-guided textualization and input-fidelity validation with modality-aware representation learning, in which domain-specific encoders generate aligned embeddings that are fused by a transformer backbone augmented with a drug-disease-conditioned sparse Mixture-of-Experts (SMoE). This design explicitly supports specialization across therapeutic and design subspaces while maintaining scalable computation through top-k routing. MMCTOP achieves consistent improvements in precision, F1, and AUC over unimodal and multimodal baselines on benchmark datasets, and ablations show that schema-guided textualization and selective expert routing contribute materially to performance and stability. We additionally apply temperature scaling to obtain calibrated probabilities, ensuring reliable risk estimation for downstream decision support. Overall, MMCTOP advances multimodal trial modeling by combining controlled narrative normalization, context-conditioned expert fusion, and operational safeguards aimed at auditability and reproducibility in biomedical informatics.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "15 pages, 3 figures, 5 tables",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.21897v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱二：RL算法与架构 (RL & Architecture)",
+          "id": "2_algo_arch",
+          "matched_keywords": [
+            "representation learning"
+          ],
+          "score": 1.5
+        },
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "[T]multimodal"
+          ],
+          "score": 9.0
+        }
+      ],
+      "relevance_score": 10.5,
+      "hit_pillars": [
+        "2_algo_arch",
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Flexible Multitask Learning with Factorized Diffusion Policy",
+      "authors": [
+        "Chaoqi Liu",
+        "Haonan Chen",
+        "Sigmund H. Høeg",
+        "Shaoxiong Yao",
+        "Yunzhu Li",
+        "Kris Hauser",
+        "Yilun Du"
+      ],
+      "arxiv_id": "2512.21898v1",
+      "summary": "Multitask learning poses significant challenges due to the highly multimodal and diverse nature of robot action distributions. However, effectively fitting policies to these complex task distributions is often difficult, and existing monolithic models often underfit the action distribution and lack the flexibility required for efficient adaptation. We introduce a novel modular diffusion policy framework that factorizes complex action distributions into a composition of specialized diffusion models, each capturing a distinct sub-mode of the behavior space for a more effective overall policy. In addition, this modular structure enables flexible policy adaptation to new tasks by adding or fine-tuning components, which inherently mitigates catastrophic forgetting. Empirically, across both simulation and real-world robotic manipulation settings, we illustrate how our method consistently outperforms strong modular and monolithic baselines.",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.21898v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱一：机器人控制 (Robot Control)",
+          "id": "1_robot_core",
+          "matched_keywords": [
+            "manipulation"
+          ],
+          "score": 2.0
+        },
+        {
+          "name": "支柱二：RL算法与架构 (RL & Architecture)",
+          "id": "2_algo_arch",
+          "matched_keywords": [
+            "[T]diffusion policy"
+          ],
+          "score": 4.5
+        },
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "multimodal"
+          ],
+          "score": 3.0
+        }
+      ],
+      "relevance_score": 9.5,
+      "hit_pillars": [
+        "1_robot_core",
+        "2_algo_arch",
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "See Less, See Right: Bi-directional Perceptual Shaping For Multimodal Reasoning",
+      "authors": [
+        "Shuoshuo Zhang",
+        "Yizhen Zhang",
+        "Jingjing Fu",
+        "Lei Song",
+        "Jiang Bian",
+        "Yujiu Yang",
+        "Rui Wang"
+      ],
+      "arxiv_id": "2512.22120v1",
+      "summary": "Large vision-language models (VLMs) often benefit from intermediate visual cues, either injected via external tools or generated as latent visual tokens during reasoning, but these mechanisms still overlook fine-grained visual evidence (e.g., polylines in charts), generalize poorly across domains, and incur high inference-time cost. In this paper, we propose Bi-directional Perceptual Shaping (BiPS), which transforms question-conditioned masked views into bidirectional where-to-look signals that shape perception during training. BiPS first applies a KL-consistency constraint between the original image and an evidence-preserving view that keeps only question-relevant regions, encouraging coarse but complete coverage of supporting pixels. It then applies a KL-separation constraint between the original and an evidence-ablated view where critical pixels are masked so the image no longer supports the original answer, discouraging text-only shortcuts (i.e., answering from text alone) and enforcing fine-grained visual reliance. Across eight benchmarks, BiPS boosts Qwen2.5-VL-7B by 8.2% on average and shows strong out-of-domain generalization to unseen datasets and image types.",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.22120v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "[T]multimodal"
+          ],
+          "score": 9.0
+        }
+      ],
+      "relevance_score": 9.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Backdoor Attacks on Prompt-Driven Video Segmentation Foundation Models",
+      "authors": [
+        "Zongmin Zhang",
+        "Zhen Sun",
+        "Yifan Liao",
+        "Wenhan Dong",
+        "Xinlei He",
+        "Xingshuo Han",
+        "Shengmin Xu",
+        "Xinyi Huang"
+      ],
+      "arxiv_id": "2512.22046v1",
+      "summary": "Prompt-driven Video Segmentation Foundation Models (VSFMs) such as SAM2 are increasingly deployed in applications like autonomous driving and digital pathology, raising concerns about backdoor threats. Surprisingly, we find that directly transferring classic backdoor attacks (e.g., BadNet) to VSFMs is almost ineffective, with ASR below 5\\%. To understand this, we study encoder gradients and attention maps and observe that conventional training keeps gradients for clean and triggered samples largely aligned, while attention still focuses on the true object, preventing the encoder from learning a distinct trigger-related representation. To address this challenge, we propose BadVSFM, the first backdoor framework tailored to prompt-driven VSFMs. BadVSFM uses a two-stage strategy: (1) steer the image encoder so triggered frames map to a designated target embedding while clean frames remain aligned with a clean reference encoder; (2) train the mask decoder so that, across prompt types, triggered frame-prompt pairs produce a shared target mask, while clean outputs stay close to a reference decoder. Extensive experiments on two datasets and five VSFMs show that BadVSFM achieves strong, controllable backdoor effects under diverse triggers and prompts while preserving clean segmentation quality. Ablations over losses, stages, targets, trigger settings, and poisoning rates demonstrate robustness to reasonable hyperparameter changes and confirm the necessity of the two-stage design. Finally, gradient-conflict analysis and attention visualizations show that BadVSFM separates triggered and clean representations and shifts attention to trigger regions, while four representative defenses remain largely ineffective, revealing an underexplored vulnerability in current VSFMs.",
+      "categories": [
+        "cs.CV",
+        "cs.CR"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.22046v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "[T]foundation model"
+          ],
+          "score": 9.0
+        }
+      ],
+      "relevance_score": 9.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Perceive and Calibrate: Analyzing and Enhancing Robustness of Medical Multi-Modal Large Language Models",
+      "authors": [
+        "Dunyuan XU",
+        "Xikai Yang",
+        "Yaoqian Li",
+        "Juzheng Miao",
+        "Jinpeng Li",
+        "Pheng-Ann Heng"
+      ],
+      "arxiv_id": "2512.21964v1",
+      "summary": "Medical Multi-modal Large Language Models (MLLMs) have shown promising clinical performance. However, their sensitivity to real-world input perturbations, such as imaging artifacts and textual errors, critically undermines their clinical applicability. Systematic analysis of such noise impact on medical MLLMs remains largely unexplored. Furthermore, while several works have investigated the MLLMs' robustness in general domains, they primarily focus on text modality and rely on costly fine-tuning. They are inadequate to address the complex noise patterns and fulfill the strict safety standards in medicine. To bridge this gap, this work systematically analyzes the impact of various perturbations on medical MLLMs across both visual and textual modalities. Building on our findings, we introduce a training-free Inherent-enhanced Multi-modal Calibration (IMC) framework that leverages MLLMs' inherent denoising capabilities following the perceive-and-calibrate principle for cross-modal robustness enhancement. For the visual modality, we propose a Perturbation-aware Denoising Calibration (PDC) which leverages MLLMs' own vision encoder to identify noise patterns and perform prototype-guided feature calibration. For text denoising, we design a Self-instantiated Multi-agent System (SMS) that exploits the MLLMs' self-assessment capabilities to refine noisy text through a cooperative hierarchy of agents. We construct a benchmark containing 11 types of noise across both image and text modalities on 2 datasets. Experimental results demonstrate our method achieves the state-of-the-art performance across multiple modalities, showing potential to enhance MLLMs' robustness in real clinical scenarios.",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.21964v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "[T]large language model"
+          ],
+          "score": 9.0
+        }
+      ],
+      "relevance_score": 9.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Reloc-VGGT: Visual Re-localization with Geometry Grounded Transformer",
+      "authors": [
+        "Tianchen Deng",
+        "Wenhua Wu",
+        "Kunzhen Wu",
+        "Guangming Wang",
+        "Siting Zhu",
+        "Shenghai Yuan",
+        "Xun Chen",
+        "Guole Shen",
+        "Zhe Liu",
+        "Hesheng Wang"
+      ],
+      "arxiv_id": "2512.21883v1",
+      "summary": "Visual localization has traditionally been formulated as a pair-wise pose regression problem. Existing approaches mainly estimate relative poses between two images and employ a late-fusion strategy to obtain absolute pose estimates. However, the late motion average is often insufficient for effectively integrating spatial information, and its accuracy degrades in complex environments. In this paper, we present the first visual localization framework that performs multi-view spatial integration through an early-fusion mechanism, enabling robust operation in both structured and unstructured environments. Our framework is built upon the VGGT backbone, which encodes multi-view 3D geometry, and we introduce a pose tokenizer and projection module to more effectively exploit spatial relationships from multiple database views. Furthermore, we propose a novel sparse mask attention strategy that reduces computational cost by avoiding the quadratic complexity of global attention, thereby enabling real-time performance at scale. Trained on approximately eight million posed image pairs, Reloc-VGGT demonstrates strong accuracy and remarkable generalization ability. Extensive experiments across diverse public datasets consistently validate the effectiveness and efficiency of our approach, delivering high-quality camera pose estimates in real time while maintaining robustness to unseen environments. Our code and models will be publicly released upon acceptance.https://github.com/dtc111111/Reloc-VGGT.",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.21883v1",
+      "code_links": [
+        {
+          "url": "https://github.com/dtc111111/Reloc-VGGT",
+          "type": "github"
+        }
+      ],
+      "matched_interests": [
+        {
+          "name": "支柱三：空间感知与语义 (Perception & Semantics)",
+          "id": "3_perception_slam",
+          "matched_keywords": [
+            "[T]VGGT"
+          ],
+          "score": 6.0
+        },
+        {
+          "name": "支柱七：动作重定向 (Motion Retargeting)",
+          "id": "7_retargeting",
+          "matched_keywords": [
+            "spatial relationship"
+          ],
+          "score": 3.0
+        }
+      ],
+      "relevance_score": 9.0,
+      "hit_pillars": [
+        "3_perception_slam",
+        "7_retargeting"
+      ]
+    },
+    {
+      "title": "SLIM-Brain: A Data- and Training-Efficient Foundation Model for fMRI Data Analysis",
+      "authors": [
+        "Mo Wang",
+        "Junfeng Xia",
+        "Wenhao Ye",
+        "Enyu Liu",
+        "Kaining Peng",
+        "Jianfeng Feng",
+        "Quanying Liu",
+        "Hongkai Wen"
+      ],
+      "arxiv_id": "2512.21881v1",
+      "summary": "Foundation models are emerging as a powerful paradigm for fMRI analysis, but current approaches face a dual bottleneck of data- and training-efficiency. Atlas-based methods aggregate voxel signals into fixed regions of interest, reducing data dimensionality but discarding fine-grained spatial details, and requiring extremely large cohorts to train effectively as general-purpose foundation models. Atlas-free methods, on the other hand, operate directly on voxel-level information - preserving spatial fidelity but are prohibitively memory- and compute-intensive, making large-scale pre-training infeasible. We introduce SLIM-Brain (Sample-efficient, Low-memory fMRI Foundation Model for Human Brain), a new atlas-free foundation model that simultaneously improves both data- and training-efficiency. SLIM-Brain adopts a two-stage adaptive design: (i) a lightweight temporal extractor captures global context across full sequences and ranks data windows by saliency, and (ii) a 4D hierarchical encoder (Hiera-JEPA) learns fine-grained voxel-level representations only from the top-$k$ selected windows, while deleting about 70% masked patches. Extensive experiments across seven public benchmarks show that SLIM-Brain establishes new state-of-the-art performance on diverse tasks, while requiring only 4 thousand pre-training sessions and approximately 30% of GPU memory comparing to traditional voxel-level methods.",
+      "categories": [
+        "cs.CV",
+        "q-bio.NC"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "The code will be released after review",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.21881v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "[T]foundation model"
+          ],
+          "score": 9.0
+        }
+      ],
+      "relevance_score": 9.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Explainable Multimodal Regression via Information Decomposition",
+      "authors": [
+        "Zhaozhao Ma",
+        "Shujian Yu"
+      ],
+      "arxiv_id": "2512.22102v1",
+      "summary": "Multimodal regression aims to predict a continuous target from heterogeneous input sources and typically relies on fusion strategies such as early or late fusion. However, existing methods lack principled tools to disentangle and quantify the individual contributions of each modality and their interactions, limiting the interpretability of multimodal fusion. We propose a novel multimodal regression framework grounded in Partial Information Decomposition (PID), which decomposes modality-specific representations into unique, redundant, and synergistic components. The basic PID framework is inherently underdetermined. To resolve this, we introduce inductive bias by enforcing Gaussianity in the joint distribution of latent representations and the transformed response variable (after inverse normal transformation), thereby enabling analytical computation of the PID terms. Additionally, we derive a closed-form conditional independence regularizer to promote the isolation of unique information within each modality. Experiments on six real-world datasets, including a case study on large-scale brain age prediction from multimodal neuroimaging data, demonstrate that our framework outperforms state-of-the-art methods in both predictive accuracy and interpretability, while also enabling informed modality selection for efficient inference. Implementation is available at https://github.com/zhaozhaoma/PIDReg.",
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "Project Page: https://github.com/zhaozhaoma/PIDReg",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.22102v1",
+      "code_links": [
+        {
+          "url": "https://github.com/zhaozhaoma/PIDReg",
+          "type": "github"
+        }
+      ],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "[T]multimodal"
+          ],
+          "score": 9.0
+        }
+      ],
+      "relevance_score": 9.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Optimizing Resource Allocation for Geographically-Distributed Inference by Large Language Models",
+      "authors": [
+        "Tingyang Sun",
+        "Ting He",
+        "Bo Ji",
+        "Parimal Parag"
+      ],
+      "arxiv_id": "2512.21884v1",
+      "summary": "Large language models have demonstrated extraordinary performance in many AI tasks but are expensive to use, even after training, due to their requirement of high-end GPUs. Recently, a distributed system called PETALS was developed to lower the barrier for deploying LLMs by splitting the model blocks across multiple servers with low-end GPUs distributed over the Internet, which was much faster than swapping the model parameters between the GPU memory and other cheaper but slower local storage media. However, the performance of such a distributed system critically depends on the resource allocation, and how to do so optimally remains unknown. In this work, we present the first systematic study of the resource allocation problem in distributed LLM inference, with focus on two important decisions: block placement and request routing. Our main results include: experimentally validated performance models that can predict the inference performance under given block placement and request routing decisions, a formulation of the offline optimization of block placement and request routing as a mixed integer linear programming problem together with the NP-hardness proof and a polynomial-complexity algorithm with guaranteed performance, and an adaptation of the offline algorithm for the online setting with the same performance guarantee under bounded load. Through both experiments and experimentally-validated simulations, we have verified that the proposed solution can substantially reduce the inference time compared to the state-of-the-art solution in diverse settings with geographically-distributed servers. As a byproduct, we have also developed a light-weighted CPU-only simulator capable of predicting the performance of distributed LLM inference on GPU servers, which can evaluate large deployments and facilitate future research for researchers with limited GPU access.",
+      "categories": [
+        "cs.DC",
+        "cs.AI",
+        "cs.NI"
+      ],
+      "primary_category": "cs.DC",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.21884v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "[T]large language model"
+          ],
+          "score": 9.0
+        }
+      ],
+      "relevance_score": 9.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "TimeBill: Time-Budgeted Inference for Large Language Models",
+      "authors": [
+        "Qi Fan",
+        "An Zou",
+        "Yehan Ma"
+      ],
+      "arxiv_id": "2512.21859v1",
+      "summary": "Large Language Models (LLMs) are increasingly deployed in time-critical systems, such as robotics, autonomous driving, embodied intelligence, and industrial automation, where generating accurate responses within a given time budget is crucial for decision-making, control, or safety-critical tasks. However, the auto-regressive generation process of LLMs makes it challenging to model and estimate the end-to-end execution time. Furthermore, existing efficient inference methods based on a fixed key-value (KV) cache eviction ratio struggle to adapt to varying tasks with diverse time budgets, where an improper eviction ratio may lead to incomplete inference or a drop in response performance. In this paper, we propose TimeBill, a novel time-budgeted inference framework for LLMs that balances the inference efficiency and response performance. To be more specific, we propose a fine-grained response length predictor (RLP) and an execution time estimator (ETE) to accurately predict the end-to-end execution time of LLMs. Following this, we develop a time-budgeted efficient inference approach that adaptively adjusts the KV cache eviction ratio based on execution time prediction and the given time budget. Finally, through extensive experiments, we demonstrate the advantages of TimeBill in improving task completion rate and maintaining response performance under various overrun strategies.",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "Accepted to AAAI 2026",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.21859v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "[T]large language model"
+          ],
+          "score": 9.0
+        }
+      ],
+      "relevance_score": 9.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Knowledge Reasoning of Large Language Models Integrating Graph-Structured Information for Pest and Disease Control in Tobacco",
+      "authors": [
+        "Siyu Li",
+        "Chenwei Song",
+        "Wan Zhou",
+        "Xinyi Liu"
+      ],
+      "arxiv_id": "2512.21837v1",
+      "summary": "This paper proposes a large language model (LLM) approach that integrates graph-structured information for knowledge reasoning in tobacco pest and disease control. Built upon the GraphRAG framework, the proposed method enhances knowledge retrieval and reasoning by explicitly incorporating structured information from a domain-specific knowledge graph. Specifically, LLMs are first leveraged to assist in the construction of a tobacco pest and disease knowledge graph, which organizes key entities such as diseases, symptoms, control methods, and their relationships. Based on this graph, relevant knowledge is retrieved and integrated into the reasoning process to support accurate answer generation. The Transformer architecture is adopted as the core inference model, while a graph neural network (GNN) is employed to learn expressive node representations that capture both local and global relational information within the knowledge graph. A ChatGLM-based model serves as the backbone LLM and is fine-tuned using LoRA to achieve parameter-efficient adaptation. Extensive experimental results demonstrate that the proposed approach consistently outperforms baseline methods across multiple evaluation metrics, significantly improving both the accuracy and depth of reasoning, particularly in complex multi-hop and comparative reasoning scenarios.",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.21837v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "[T]large language model"
+          ],
+          "score": 9.0
+        }
+      ],
+      "relevance_score": 9.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Aerial World Model for Long-horizon Visual Generation and Navigation in 3D Space",
+      "authors": [
+        "Weichen Zhang",
+        "Peizhi Tang",
+        "Xin Zeng",
+        "Fanhang Man",
+        "Shiquan Yu",
+        "Zichao Dai",
+        "Baining Zhao",
+        "Hongjin Chen",
+        "Yu Shang",
+        "Wei Wu",
+        "Chen Gao",
+        "Xinlei Chen",
+        "Xin Wang",
+        "Yong Li",
+        "Wenwu Zhu"
+      ],
+      "arxiv_id": "2512.21887v1",
+      "summary": "Unmanned aerial vehicles (UAVs) have emerged as powerful embodied agents. One of the core abilities is autonomous navigation in large-scale three-dimensional environments. Existing navigation policies, however, are typically optimized for low-level objectives such as obstacle avoidance and trajectory smoothness, lacking the ability to incorporate high-level semantics into planning. To bridge this gap, we propose ANWM, an aerial navigation world model that predicts future visual observations conditioned on past frames and actions, thereby enabling agents to rank candidate trajectories by their semantic plausibility and navigational utility. ANWM is trained on 4-DoF UAV trajectories and introduces a physics-inspired module: Future Frame Projection (FFP), which projects past frames into future viewpoints to provide coarse geometric priors. This module mitigates representational uncertainty in long-distance visual generation and captures the mapping between 3D trajectories and egocentric observations. Empirical results demonstrate that ANWM significantly outperforms existing world models in long-distance visual forecasting and improves UAV navigation success rates in large-scale environments.",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.21887v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱二：RL算法与架构 (RL & Architecture)",
+          "id": "2_algo_arch",
+          "matched_keywords": [
+            "[T]world model"
+          ],
+          "score": 4.5
+        },
+        {
+          "name": "支柱六：视频提取与匹配 (Video Extraction)",
+          "id": "6_video_extraction",
+          "matched_keywords": [
+            "egocentric"
+          ],
+          "score": 2.0
+        }
+      ],
+      "relevance_score": 6.5,
+      "hit_pillars": [
+        "2_algo_arch",
+        "6_video_extraction"
+      ]
+    },
+    {
+      "title": "Exploring the Heterogeneity of Tabular Data: A Diversity-aware Data Generator via LLMs",
+      "authors": [
+        "Yafeng Tang",
+        "Xiaoou Ding",
+        "Jianzhuo Du",
+        "Zishuo Yan",
+        "Zhuang Ma",
+        "Zheng Liang",
+        "Zekai Qian",
+        "Hongzhi Wang"
+      ],
+      "arxiv_id": "2512.21915v1",
+      "summary": "Tabular data generation has become increasingly essential for enabling robust machine learning applications, which require large-scale, high-quality data. Existing solutions leverage generative models to learn original data distributions. However, real-world data are naturally heterogeneous with diverse distributions, making it challenging to obtain a universally good model for diverse data generation. To address this limitation, we introduce Diversity-Aware Tabular data gEnerator (DATE), a framework that (i) prepares high-quality and distributionally distinct examples for in-context learning by effectively partitioning the original heterogeneous data into multiple diverse subsets; (ii) harnesses Large Language Models (LLMs) to explore the diversity of the partitioned distribution with decision tree reasoning as feedback, generating high-quality labeled data for each subset. However, the massive generated data inherently involves a trade-off between diversity and quality. To integrate this issue, existing solutions greedily select the validation-best data. However, we prove that the selection in heterogeneous settings does not possess the greedy-choice property, and design a Multi-Arm Bandit-based sampling algorithm that balances the diversity and quality of generated data. Extensive experiments on tabular classification and regression benchmarks demonstrate that DATE consistently outperforms state-of-the-art GAN-based and LLM-based methods. On average, DATE achieves a 23.75% reduction in error rate with just 100 generated data. Empirically, we demonstrate that data generated by DATE can improve the accuracy of Direct Preference Optimization (DPO) and enhance the reasoning capability of LLMs on the target data. Code is available at https://github.com/windblow32/DATE.",
+      "categories": [
+        "cs.LG",
+        "cs.DB"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "This manuscript has been submitted to IEEE Transactions on Knowledge and Data Engineering (TKDE) for peer review",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.21915v1",
+      "code_links": [
+        {
+          "url": "https://github.com/windblow32/DATE",
+          "type": "github"
+        }
+      ],
+      "matched_interests": [
+        {
+          "name": "支柱二：RL算法与架构 (RL & Architecture)",
+          "id": "2_algo_arch",
+          "matched_keywords": [
+            "DPO",
+            "direct preference optimization"
+          ],
+          "score": 3.0
+        },
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "large language model"
+          ],
+          "score": 3.0
+        }
+      ],
+      "relevance_score": 6.0,
+      "hit_pillars": [
+        "2_algo_arch",
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Semiparametric Preference Optimization: Your Language Model is Secretly a Single-Index Model",
+      "authors": [
+        "Nathan Kallus"
+      ],
+      "arxiv_id": "2512.21917v1",
+      "summary": "Aligning large language models to preference data is commonly implemented by assuming a known link function between the distribution of observed preferences and the unobserved rewards (e.g., a logistic link as in Bradley-Terry). If the link is wrong, however, inferred rewards can be biased and policies be misaligned. We study policy alignment to preferences under an unknown and unrestricted link. We consider an $f$-divergence-constrained reward maximization problem and show that realizability of the solution in a policy class implies a semiparametric single-index binary choice model, where a scalar-valued index determined by a policy captures the dependence on demonstrations and the rest of the preference distribution is an unrestricted function thereof. Rather than focus on estimation of identifiable finite-dimensional structural parameters in the index as in econometrics, we focus on policy learning, focusing on error to the optimal policy and allowing unidentifiable and nonparametric indices. We develop a variety of policy learners based on profiling the link function, orthogonalizing the link function, and using link-agnostic bipartite ranking objectives. We analyze these and provide finite-sample policy error bounds that depend on generic functional complexity measures of the index class. We further consider practical implementations using first-order optimization suited to neural networks and batched data. The resulting methods are robust to unknown preference noise distribution and scale, while preserving the direct optimization of policies without explicitly fitting rewards.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "econ.EM",
+        "stat.ML"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.21917v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱二：RL算法与架构 (RL & Architecture)",
+          "id": "2_algo_arch",
+          "matched_keywords": [
+            "policy learning"
+          ],
+          "score": 1.5
+        },
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "large language model"
+          ],
+          "score": 3.0
+        }
+      ],
+      "relevance_score": 4.5,
+      "hit_pillars": [
+        "2_algo_arch",
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "A Comedy of Estimators: On KL Regularization in RL Training of LLMs",
+      "authors": [
+        "Vedant Shah",
+        "Johan Obando-Ceron",
+        "Vineet Jain",
+        "Brian Bartoldson",
+        "Bhavya Kailkhura",
+        "Sarthak Mittal",
+        "Glen Berseth",
+        "Pablo Samuel Castro",
+        "Yoshua Bengio",
+        "Nikolay Malkin",
+        "Moksh Jain",
+        "Siddarth Venkatraman",
+        "Aaron Courville"
+      ],
+      "arxiv_id": "2512.21852v1",
+      "summary": "The reasoning performance of large language models (LLMs) can be substantially improved by training them with reinforcement learning (RL). The RL objective for LLM training involves a regularization term, which is the reverse Kullback-Leibler (KL) divergence between the trained policy and the reference policy. Since computing the KL divergence exactly is intractable, various estimators are used in practice to estimate it from on-policy samples. Despite its wide adoption, including in several open-source libraries, there is no systematic study analyzing the numerous ways of incorporating KL estimators in the objective and their effect on the downstream performance of RL-trained models. Recent works show that prevailing practices for incorporating KL regularization do not provide correct gradients for stated objectives, creating a discrepancy between the objective and its implementation. In this paper, we further analyze these practices and study the gradients of several estimators configurations, revealing how design choices shape gradient bias. We substantiate these findings with empirical observations by RL fine-tuning \\texttt{Qwen2.5-7B}, \\texttt{Llama-3.1-8B-Instruct} and \\texttt{Qwen3-4B-Instruct-2507} with different configurations and evaluating their performance on both in- and out-of-distribution tasks. Through our analysis, we observe that, in on-policy settings: (1) estimator configurations with biased gradients can result in training instabilities; and (2) using estimator configurations resulting in unbiased gradients leads to better performance on in-domain as well as out-of-domain tasks. We also investigate the performance resulting from different KL configurations in off-policy settings and observe that KL regularization can help stabilize off-policy RL training resulting from asynchronous setups.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.21852v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱二：RL算法与架构 (RL & Architecture)",
+          "id": "2_algo_arch",
+          "matched_keywords": [
+            "reinforcement learning"
+          ],
+          "score": 1.5
+        },
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "large language model"
+          ],
+          "score": 3.0
+        }
+      ],
+      "relevance_score": 4.5,
+      "hit_pillars": [
+        "2_algo_arch",
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Yume-1.5: A Text-Controlled Interactive World Generation Model",
+      "authors": [
+        "Xiaofeng Mao",
+        "Zhen Li",
+        "Chuanhao Li",
+        "Xiaojie Xu",
+        "Kaining Ying",
+        "Tong He",
+        "Jiangmiao Pang",
+        "Yu Qiao",
+        "Kaipeng Zhang"
+      ],
+      "arxiv_id": "2512.22096v1",
+      "summary": "Recent approaches have demonstrated the promise of using diffusion models to generate interactive and explorable worlds. However, most of these methods face critical challenges such as excessively large parameter sizes, reliance on lengthy inference steps, and rapidly growing historical context, which severely limit real-time performance and lack text-controlled generation capabilities. To address these challenges, we propose \\method, a novel framework designed to generate realistic, interactive, and continuous worlds from a single image or text prompt. \\method achieves this through a carefully designed framework that supports keyboard-based exploration of the generated worlds. The framework comprises three core components: (1) a long-video generation framework integrating unified context compression with linear attention; (2) a real-time streaming acceleration strategy powered by bidirectional attention distillation and an enhanced text embedding scheme; (3) a text-controlled method for generating world events. We have provided the codebase in the supplementary material.",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.22096v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱二：RL算法与架构 (RL & Architecture)",
+          "id": "2_algo_arch",
+          "matched_keywords": [
+            "linear attention",
+            "distillation"
+          ],
+          "score": 3.0
+        }
+      ],
+      "relevance_score": 3.0,
+      "hit_pillars": [
+        "2_algo_arch"
+      ]
+    },
+    {
+      "title": "Training-free Conditional Image Embedding Framework Leveraging Large Vision Language Models",
+      "authors": [
+        "Masayuki Kawarada",
+        "Kosuke Yamada",
+        "Antonio Tejero-de-Pablos",
+        "Naoto Inoue"
+      ],
+      "arxiv_id": "2512.21860v1",
+      "summary": "Conditional image embeddings are feature representations that focus on specific aspects of an image indicated by a given textual condition (e.g., color, genre), which has been a challenging problem. Although recent vision foundation models, such as CLIP, offer rich representations of images, they are not designed to focus on a specified condition. In this paper, we propose DIOR, a method that leverages a large vision-language model (LVLM) to generate conditional image embeddings. DIOR is a training-free approach that prompts the LVLM to describe an image with a single word related to a given condition. The hidden state vector of the LVLM's last token is then extracted as the conditional image embedding. DIOR provides a versatile solution that can be applied to any image and condition without additional training or task-specific priors. Comprehensive experimental results on conditional image similarity tasks demonstrate that DIOR outperforms existing training-free baselines, including CLIP. Furthermore, DIOR achieves superior performance compared to methods that require additional training across multiple settings.",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.21860v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "foundation model"
+          ],
+          "score": 3.0
+        }
+      ],
+      "relevance_score": 3.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Unifying Learning Dynamics and Generalization in Transformers Scaling Law",
+      "authors": [
+        "Chiwun Yang"
+      ],
+      "arxiv_id": "2512.22088v1",
+      "summary": "The scaling law, a cornerstone of Large Language Model (LLM) development, predicts improvements in model performance with increasing computational resources. Yet, while empirically validated, its theoretical underpinnings remain poorly understood. This work formalizes the learning dynamics of transformer-based language models as an ordinary differential equation (ODE) system, then approximates this process to kernel behaviors. Departing from prior toy-model analyses, we rigorously analyze stochastic gradient descent (SGD) training for multi-layer transformers on sequence-to-sequence data with arbitrary data distribution, closely mirroring real-world conditions. Our analysis characterizes the convergence of generalization error to the irreducible risk as computational resources scale with data, especially during the optimization process.\n  We establish a theoretical upper bound on excess risk characterized by a distinct phase transition. In the initial optimization phase, the excess risk decays exponentially relative to the computational cost ${\\sf C}$. However, once a specific resource allocation threshold is crossed, the system enters a statistical phase, where the generalization error follows a power-law decay of $Θ(\\mathsf{C}^{-1/6})$. Beyond this unified framework, our theory derives isolated scaling laws for model size, training time, and dataset size, elucidating how each variable independently governs the upper bounds of generalization.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.22088v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "large language model"
+          ],
+          "score": 3.0
+        }
+      ],
+      "relevance_score": 3.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Prefill vs. Decode Bottlenecks: SRAM-Frequency Tradeoffs and the Memory-Bandwidth Ceiling",
+      "authors": [
+        "Hannah Atmer",
+        "Yuan Yao",
+        "Thiemo Voigt",
+        "Stefanos Kaxiras"
+      ],
+      "arxiv_id": "2512.22066v1",
+      "summary": "Energy consumption dictates the cost and environmental impact of deploying Large Language Models. This paper investigates the impact of on-chip SRAM size and operating frequency on the energy efficiency and performance of LLM inference, focusing on the distinct behaviors of the compute-bound prefill and memory-bound decode phases. Our simulation methodology combines OpenRAM for energy modeling, LLMCompass for latency simulation, and ScaleSIM for systolic array operational intensity. Our findings show that total energy use is predominantly determined by SRAM size in both phases, with larger buffers significantly increasing static energy due to leakage, which is not offset by corresponding latency benefits. We quantitatively explore the memory-bandwidth bottleneck, demonstrating that while high operating frequencies reduce prefill latency, their positive impact on memory-bound decode latency is capped by the external memory bandwidth. Counter-intuitively, high compute frequency can reduce total energy by reducing execution time and consequently decreasing static energy consumption more than the resulting dynamic power increase. We identify an optimal hardware configuration for the simulated workload: high operating frequencies (1200MHz-1400MHz) and a small local buffer size of 32KB to 64KB. This combination achieves the best energy-delay product, balancing low latency with high energy efficiency. Furthermore, we demonstrate how memory bandwidth acts as a performance ceiling, and that increasing compute frequency only yields performance gains up to the point where the workload becomes memory-bound. This analysis provides concrete architectural insights for designing energy-efficient LLM accelerators, especially for datacenters aiming to minimize their energy overhead.",
+      "categories": [
+        "cs.AR",
+        "cs.LG",
+        "cs.PF"
+      ],
+      "primary_category": "cs.AR",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.22066v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "large language model"
+          ],
+          "score": 3.0
+        }
+      ],
+      "relevance_score": 3.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "CricBench: A Multilingual Benchmark for Evaluating LLMs in Cricket Analytics",
+      "authors": [
+        "Vaibhav Devraj",
+        "Dhruv Kumar",
+        "Jagat Sesh Challa"
+      ],
+      "arxiv_id": "2512.21877v1",
+      "summary": "Cricket is the second most popular sport globally, commanding a massive following of over 2.5 billion fans globally. Enthusiasts and analysts frequently seek advanced statistical insights, such as long-term historical performance trends or complex player comparisons, that are often unavailable through standard web searches. While Large Language Models (LLMs) have advanced significantly in Text-to-SQL tasks, their capability to handle the domain-specific nuances, complex schema variations, and multilingual requirements inherent to sports analytics remains under-explored. To investigate this potential capability gap, we present CricBench, a comprehensive benchmark suite for evaluating LLMs on specialized cricket data. To curate a \"Gold Standard\" dataset, we collaborate with domain experts in cricket and SQL to manually author complex queries, ensuring logical correctness. Recognizing linguistic diversity, we construct the benchmark in both English and Hindi, establishing a framework that is open for further extension to other regional languages. We evaluate six state-of-the-art models, including GPT-4o, Claude 3.7 Sonnet, and open-source models, using a strict evaluation protocol. Our results reveal that high performance on general benchmarks does not guarantee success in specialized domains. While the open-weights reasoning model DeepSeek R1 achieves state-of-the-art performance (50.6%), surpassing proprietary giants like Claude 3.7 Sonnet (47.7%) and GPT-4o (33.7%), it still exhibits a significant accuracy drop when moving from general benchmarks (BIRD) to CricBench. Furthermore, we observe that code-mixed Hindi queries frequently yield parity or higher accuracy compared to English, challenging the assumption that English is the optimal prompt language for specialized SQL tasks.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "Under Review",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.21877v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "large language model"
+          ],
+          "score": 3.0
+        }
+      ],
+      "relevance_score": 3.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Bridging the Copyright Gap: Do Large Vision-Language Models Recognize and Respect Copyrighted Content?",
+      "authors": [
+        "Naen Xu",
+        "Jinghuai Zhang",
+        "Changjiang Li",
+        "Hengyu An",
+        "Chunyi Zhou",
+        "Jun Wang",
+        "Boyu Xu",
+        "Yuyuan Li",
+        "Tianyu Du",
+        "Shouling Ji"
+      ],
+      "arxiv_id": "2512.21871v1",
+      "summary": "Large vision-language models (LVLMs) have achieved remarkable advancements in multimodal reasoning tasks. However, their widespread accessibility raises critical concerns about potential copyright infringement. Will LVLMs accurately recognize and comply with copyright regulations when encountering copyrighted content (i.e., user input, retrieved documents) in the context? Failure to comply with copyright regulations may lead to serious legal and ethical consequences, particularly when LVLMs generate responses based on copyrighted materials (e.g., retrieved book experts, news reports). In this paper, we present a comprehensive evaluation of various LVLMs, examining how they handle copyrighted content -- such as book excerpts, news articles, music lyrics, and code documentation when they are presented as visual inputs. To systematically measure copyright compliance, we introduce a large-scale benchmark dataset comprising 50,000 multimodal query-content pairs designed to evaluate how effectively LVLMs handle queries that could lead to copyright infringement. Given that real-world copyrighted content may or may not include a copyright notice, the dataset includes query-content pairs in two distinct scenarios: with and without a copyright notice. For the former, we extensively cover four types of copyright notices to account for different cases. Our evaluation reveals that even state-of-the-art closed-source LVLMs exhibit significant deficiencies in recognizing and respecting the copyrighted content, even when presented with the copyright notice. To solve this limitation, we introduce a novel tool-augmented defense framework for copyright compliance, which reduces infringement risks in all scenarios. Our findings underscore the importance of developing copyright-aware LVLMs to ensure the responsible and lawful use of copyrighted content.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CR",
+        "cs.CY"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "AAAI 2026 (Oral)",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.21871v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "multimodal"
+          ],
+          "score": 3.0
+        }
+      ],
+      "relevance_score": 3.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Context as a Tool: Context Management for Long-Horizon SWE-Agents",
+      "authors": [
+        "Shukai Liu",
+        "Jian Yang",
+        "Bo Jiang",
+        "Yizhi Li",
+        "Jinyang Guo",
+        "Xianglong Liu",
+        "Bryan Dai"
+      ],
+      "arxiv_id": "2512.22087v1",
+      "summary": "Agents based on large language models have recently shown strong potential on real-world software engineering (SWE) tasks that require long-horizon interaction with repository-scale codebases. However, most existing agents rely on append-only context maintenance or passively triggered compression heuristics, which often lead to context explosion, semantic drift, and degraded reasoning in long-running interactions. We propose CAT, a new context management paradigm that elevates context maintenance to a callable tool integrated into the decision-making process of agents. CAT formalizes a structured context workspace consisting of stable task semantics, condensed long-term memory, and high-fidelity short-term interactions, and enables agents to proactively compress historical trajectories into actionable summaries at appropriate milestones. To support context management for SWE-agents, we propose a trajectory-level supervision framework, CAT-GENERATOR, based on an offline data construction pipeline that injects context-management actions into complete interaction trajectories. Using this framework, we train a context-aware model, SWE-Compressor. Experiments on SWE-Bench-Verified demonstrate that SWE-Compressor reaches a 57.6% solved rate and significantly outperforms ReAct-based agents and static compression baselines, while maintaining stable and scalable long-horizon reasoning under a bounded context budget.",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.22087v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "large language model"
+          ],
+          "score": 3.0
+        }
+      ],
+      "relevance_score": 3.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Broken Words, Broken Performance: Effect of Tokenization on Performance of LLMs",
+      "authors": [
+        "Sachin Pawar",
+        "Manoj Apte",
+        "Kshitij Jadhav",
+        "Girish Keshav Palshikar",
+        "Nitin Ramrakhiyani"
+      ],
+      "arxiv_id": "2512.21933v1",
+      "summary": "Tokenization is the first step in training any Large Language Model (LLM), where the text is split into a sequence of tokens as per the model's fixed vocabulary. This tokenization in LLMs is different from the traditional tokenization in NLP where the text is split into a sequence of \"natural\" words. In LLMs, a natural word may also be broken into multiple tokens due to limited vocabulary size of the LLMs (e.g., Mistral's tokenizer splits \"martial\" into \"mart\" and \"ial\"). In this paper, we hypothesize that such breaking of natural words negatively impacts LLM performance on various NLP tasks. To quantify this effect, we propose a set of penalty functions that compute a tokenization penalty for a given text for a specific LLM, indicating how \"bad\" the tokenization is. We establish statistical significance of our hypothesis on multiple NLP tasks for a set of different LLMs.",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "International Joint Conference on Natural Language Processing & Asia-Pacific Chapter of the Association for Computational Linguistics (IJCNLP-AACL 2025)",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.21933v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "large language model"
+          ],
+          "score": 3.0
+        }
+      ],
+      "relevance_score": 3.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "Method Decoration (DeMe): A Framework for LLM-Driven Adaptive Method Generation in Dynamic IoT Environments",
+      "authors": [
+        "Hong Su"
+      ],
+      "arxiv_id": "2512.21817v1",
+      "summary": "Intelligent IoT systems increasingly rely on large language models (LLMs) to generate task-execution methods for dynamic environments. However, existing approaches lack the ability to systematically produce new methods when facing previously unseen situations, and they often depend on fixed, device-specific logic that cannot adapt to changing environmental conditions.In this paper, we propose Method Decoration (DeMe), a general framework that modifies the method-generation path of an LLM using explicit decorations derived from hidden goals, accumulated learned methods, and environmental feedback. Unlike traditional rule augmentation, decorations in DeMe are not hardcoded; instead, they are extracted from universal behavioral principles, experience, and observed environmental differences. DeMe enables the agent to reshuffle the structure of its method path-through pre-decoration, post-decoration, intermediate-step modification, and step insertion-thereby producing context-aware, safety-aligned, and environment-adaptive methods. Experimental results show that method decoration allows IoT devices to derive ore appropriate methods when confronting unknown or faulty operating conditions.",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.21817v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱九：具身大模型 (Embodied Foundation Models)",
+          "id": "9_embodied_foundation",
+          "matched_keywords": [
+            "large language model"
+          ],
+          "score": 3.0
+        }
+      ],
+      "relevance_score": 3.0,
+      "hit_pillars": [
+        "9_embodied_foundation"
+      ]
+    },
+    {
+      "title": "GQ-VAE: A gated quantized VAE for learning variable length tokens",
+      "authors": [
+        "Theo Datta",
+        "Kayla Huang",
+        "Sham Kakade",
+        "David Brandfonbrener"
+      ],
+      "arxiv_id": "2512.21913v1",
+      "summary": "While most frontier models still use deterministic frequency-based tokenization algorithms such as byte-pair encoding (BPE), there has been significant recent work to design learned neural tokenizers. However, these schemes generally add to underlying language model complexity and force large changes to architecture, making them hard to implement at large scales. To overcome these challenges, we propose the gated quantized variational autoencoder (GQ-VAE), a novel architecture that can be independently pre-trained to serve as a drop-in replacement for existing tokenizers. The key innovation of the architecture is to learn to encode variable-length discrete tokens. GQ-VAE improves compression and language modeling performance over a standard VQ-VAE tokenizer, and approaches the compression rate and language modeling performance of BPE. Interestingly, if we use BPE with a smaller vocabulary, such that the compression is equivalent between GQ-VAE and BPE, we find that GQ-VAE improves downstream language model learning. We conclude with a discussion of several exciting avenues for future work. Code can be found at https://github.com/Theo-Datta-115/gq-vae.",
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.21913v1",
+      "code_links": [
+        {
+          "url": "https://github.com/Theo-Datta-115/gq-vae",
+          "type": "github"
+        }
+      ],
+      "matched_interests": [
+        {
+          "name": "支柱四：生成式动作 (Generative Motion)",
+          "id": "4_motion_diffusion",
+          "matched_keywords": [
+            "VQ-VAE"
+          ],
+          "score": 2.5
+        }
+      ],
+      "relevance_score": 2.5,
+      "hit_pillars": [
+        "4_motion_diffusion"
+      ]
+    },
+    {
+      "title": "Online Inertia Parameter Estimation for Unknown Objects Grasped by a Manipulator Towards Space Applications",
+      "authors": [
+        "Akiyoshi Uchida",
+        "Antonine Richard",
+        "Kentaro Uno",
+        "Miguel Olivares-Mendez",
+        "Kazuya Yoshida"
+      ],
+      "arxiv_id": "2512.21886v1",
+      "summary": "Knowing the inertia parameters of a grasped object is crucial for dynamics-aware manipulation, especially in space robotics with free-floating bases. This work addresses the problem of estimating the inertia parameters of an unknown target object during manipulation. We apply and extend an existing online identification method by incorporating momentum conservation, enabling its use for the floating-base robots. The proposed method is validated through numerical simulations, and the estimated parameters are compared with ground-truth values. Results demonstrate accurate identification in the scenarios, highlighting the method's applicability to on-orbit servicing and other space missions.",
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2025-12-26",
+      "updated": "2025-12-26",
+      "comment": "Author's version of a manuscript accepted at the International Conference on Space Robotics 2025 (iSpaRo 2025). (c) IEEE",
+      "doi": "",
+      "journal_ref": "",
+      "pdf_url": "https://arxiv.org/pdf/2512.21886v1",
+      "code_links": [],
+      "matched_interests": [
+        {
+          "name": "支柱一：机器人控制 (Robot Control)",
+          "id": "1_robot_core",
+          "matched_keywords": [
+            "manipulation"
+          ],
+          "score": 2.0
+        }
+      ],
+      "relevance_score": 2.0,
+      "hit_pillars": [
+        "1_robot_core"
+      ]
+    }
+  ],
+  "filtered": true
+}
